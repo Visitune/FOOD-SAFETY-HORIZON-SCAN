@@ -191,6 +191,7 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(249,115,22,.
     <a href="2026-W30.html">📊 Weekly</a>
     <a href="hub.html">📈 Monthly + AI</a>
     <a href="alerts.html">🔔 Alerts</a>
+    <a href="guide.html">📘 Guide</a>
     <a href="data/recalls.json" style="color:#4caf80;border-color:#4caf80;">↓ JSON Feed</a>
   </div>
 

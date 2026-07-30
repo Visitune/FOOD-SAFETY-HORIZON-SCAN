@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>User Guide · Food Safety Horizon Scanning</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;}
+.hdr{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
+.brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;}.brand span{color:#F97316;}
+.nav{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
+.nav a{color:#9CA3AF;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}
+.nav a:hover,.nav a.on{color:#F97316;border-color:#F97316;}
+.wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px;}
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.eyebrow .rule{height:2px;width:32px;background:#F97316;}
+.eyebrow span{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#F97316;}
+h1{font-size:34px;font-weight:800;letter-spacing:-0.02em;margin-bottom:10px;}
+.lede{color:#9CA3AF;font-size:16px;margin-bottom:44px;max-width:640px;}
+h2{font-size:20px;font-weight:800;margin:44px 0 14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.08);}
+h2 .num{color:#F97316;font-family:'JetBrains Mono',monospace;margin-right:8px;}
+p{color:#D1D5DB;margin-bottom:14px;}
+p strong{color:#fff;}
+.card{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:8px;padding:18px 20px;margin-bottom:14px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:640px){.grid2{grid-template-columns:1fr;}}
+.kv-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F97316;margin-bottom:6px;}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px;}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:4px;font-size:12px;font-weight:700;font-family:'JetBrains Mono',monospace;}
+.b-1{background:rgba(239,83,80,.15);color:#ef5350;border:1px solid rgba(239,83,80,.3);}
+.b-2{background:rgba(212,160,23,.15);color:#d4a017;border:1px solid rgba(212,160,23,.3);}
+.b-3{background:rgba(91,155,213,.15);color:#5b9bd5;border:1px solid rgba(91,155,213,.3);}
+.b-l{background:rgba(249,115,22,.15);color:#ff8c5a;border:1px solid rgba(249,115,22,.3);}
+.b-s{background:rgba(91,155,213,.15);color:#7ab8e8;border:1px solid rgba(91,155,213,.3);}
+.b-e{background:rgba(212,160,23,.15);color:#f0c040;border:1px solid rgba(212,160,23,.3);}
+.b-b{background:rgba(156,39,176,.15);color:#ce93d8;border:1px solid rgba(156,39,176,.3);}
+.b-n{background:rgba(76,175,128,.15);color:#80d4a8;border:1px solid rgba(76,175,128,.3);}
+.b-a{background:rgba(255,152,0,.15);color:#ffb74d;border:1px solid rgba(255,152,0,.3);}
+.b-c{background:rgba(233,30,99,.15);color:#f48fb1;border:1px solid rgba(233,30,99,.3);}
+.b-o{background:rgba(255,255,255,.05);color:#6B7280;border:1px solid rgba(255,255,255,.10);}
+ul{margin:0 0 14px 20px;color:#D1D5DB;}
+li{margin-bottom:6px;}
+code{font-family:'JetBrains Mono',monospace;font-size:.9em;background:rgba(255,255,255,.06);padding:1px 6px;border-radius:3px;color:#ff8c5a;}
+a.link{color:#F97316;text-decoration:none;}
+a.link:hover{text-decoration:underline;}
+.faq-q{font-weight:700;color:#fff;margin-top:16px;margin-bottom:4px;}
+.footer{text-align:center;padding:24px;font-size:11px;color:#6B7280;border-top:1px solid rgba(255,255,255,.05);font-family:monospace;margin-top:40px;}
+.footer a{color:#F97316;text-decoration:none;}
+</style></head><body>
+
+<div class="hdr">
+  <div class="brand">Food Safety <span>·</span> Horizon Scanning</div>
+  <div class="nav">
+    <a href="index.html">🔴 Live Dashboard</a>
+    <a href="2026-W30.html">📊 Weekly</a>
+    <a href="hub.html">📈 Monthly + AI</a>
+    <a href="alerts.html">🔔 Alerts</a>
+    <a href="guide.html" class="on">📘 Guide</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eyebrow"><div class="rule"></div><span>User Guide</span></div>
+  <h1>How Food Safety Horizon Scanning works</h1>
+  <p class="lede">This platform continuously aggregates food safety recalls and alerts from
+  90+ regulatory agencies worldwide, verifies each record, and publishes it here.
+  This guide explains what you're looking at and how to get the most out of it.</p>
+
+  <h2><span class="num">01</span>What this platform does</h2>
+  <p>Food safety incidents (recalls, alerts, border rejections) are published separately by
+  dozens of national regulators — the FDA, USDA FSIS, the EU's RASFF network, France's
+  RappelConso, Canada's CFIA, the UK's FSA, and 50+ others — each with its own website,
+  language, and format. This platform collects those notices automatically, normalizes
+  them into a common structure (date, company, product, pathogen, severity, source link),
+  and republishes them here as one continuously updated feed.</p>
+  <p>Every record links back to the original regulator notice, so anything you see here
+  can be independently verified at the source.</p>
+
+  <h2><span class="num">02</span>Reading the live dashboard</h2>
+  <p>The <a class="link" href="index.html">Live Dashboard</a> is the main entry point. At
+  the top, the KPI tiles summarize the current dataset:</p>
+  <div class="grid2">
+    <div class="card">
+      <div class="kv-label">Total Recalls in DB</div>
+      <p style="margin:0">The full count of tracked incidents currently in the system.</p>
+    </div>
+    <div class="card">
+      <div class="kv-label">Tier-1 Critical</div>
+      <p style="margin:0">Incidents flagged as the highest severity — see the tier legend below.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:18px"><strong>Severity tiers</strong> — every incident is assigned a
+  tier based on the regulator's own classification (e.g. FDA Class I/II/III) or, when that's
+  not available, on the pathogen and product type:</p>
+  <div class="legend">
+    <span class="badge b-1">TIER 1 · CRITICAL</span>
+    <span class="badge b-2">TIER 2 · MAJOR</span>
+    <span class="badge b-3">TIER 3 · MINOR</span>
+  </div>
+  <p>Tier 1 covers cases most likely to cause serious illness (e.g. <em>Listeria</em> in a
+  ready-to-eat product, or any confirmed outbreak). Tier 2 covers moderate risk. Tier 3
+  covers lower-risk or precautionary notices.</p>
+
+  <p style="margin-top:18px"><strong>Pathogen badges</strong> — the table's Pathogen column
+  uses a color code so you can scan a page of results at a glance:</p>
+  <div class="legend">
+    <span class="badge b-l">Listeria</span>
+    <span class="badge b-s">Salmonella</span>
+    <span class="badge b-e">E. coli / STEC</span>
+    <span class="badge b-b">C. botulinum</span>
+    <span class="badge b-n">Norovirus</span>
+    <span class="badge b-a">Aflatoxin</span>
+    <span class="badge b-c">Cereulide / B. cereus</span>
+    <span class="badge b-o">Other</span>
+  </div>
+
+  <p style="margin-top:18px"><strong>Filtering and sorting</strong> — use the search box and
+  dropdown filters above the table to narrow by keyword, source, or tier. Click any column
+  header to sort by it. The red pulsing dot next to a headline in the top ticker marks an
+  active, ongoing incident.</p>
+
+  <h2><span class="num">03</span>The other views</h2>
+  <ul>
+    <li><strong>Weekly</strong> — a narrative briefing published each week, summarizing the
+    period's incidents with process-engineering interpretation (thermal processing, HACCP
+    control points) rather than just a raw list.</li>
+    <li><strong>Monthly + AI</strong> — a browsable archive of monthly briefings, each with
+    trend charts and a written analysis of the month's activity.</li>
+    <li><strong>Alerts</strong> — subscribe to receive an email whenever a new incident
+    matches criteria you choose (pathogen, product, country, or brand).</li>
+    <li><strong>JSON Feed</strong> (footer link) — the same dataset behind this dashboard,
+    as raw JSON, for anyone who wants to build on top of it directly.</li>
+  </ul>
+
+  <h2><span class="num">04</span>Data reliability</h2>
+  <p>Every record carries the original regulator's source URL. New records go through an
+  automated verification pass before publication, and a per-record audit trail tracks every
+  automated correction. If you ever find a record that looks wrong, the source link is the
+  fastest way to check it against the original notice.</p>
+
+  <h2><span class="num">05</span>Frequently asked questions</h2>
+  <div class="faq-q">How often is the dashboard updated?</div>
+  <p>New scraping runs happen several times a day; the dashboard header shows the exact
+  timestamp of the last update.</p>
+  <div class="faq-q">Why do some records have less detail than others?</div>
+  <p>Regulators publish in different formats and levels of detail. Where a field can't be
+  reliably determined, it's left blank rather than guessed.</p>
+  <div class="faq-q">Can I get alerted about a specific country or product?</div>
+  <p>Yes — use the <a class="link" href="alerts.html">Alerts</a> page to set up a custom
+  subscription.</p>
+  <div class="faq-q">Is the underlying data available in French?</div>
+  <p>Product and company names appear in their original language when the source regulator
+  publishes in that language (for example, French records from RappelConso). A fully
+  translated French interface is on the roadmap but not available yet.</p>
+
+  <p style="margin-top:40px;color:#6B7280;font-size:13px;">Questions not covered here?
+  Every page links back to <code>index.html</code> — start from the live dashboard and
+  the source link on any record for the full detail.</p>
+</div>
+
+<div class="footer">
+  Food Safety Horizon Scanning &nbsp;·&nbsp;
+  FDA · USDA · RASFF · CFIA · ΕΦΕΤ · FSA UK · FSANZ · BVL · RappelConso · AFSCA · 63+ sources
+  &nbsp;·&nbsp; <a href="index.html">Dashboard</a> · <a href="2026-W30.html">Weekly</a> · <a href="hub.html">Monthly</a>
+</div>
+
+</body></html>

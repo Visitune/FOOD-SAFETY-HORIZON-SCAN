@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Food Safety Horizon Scanning · Hazard &amp; Pathogen Intelligence Briefing &middot; Week 30, 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 
 :root {
-  --black:#0a0e1a; --orange:#E8601A;
-  --ink:#111827; --body:#1f2937; --muted:#6b7280; --dim:#9ca3af;
-  --bg:#ffffff; --s1:#f9fafb; --s2:#f3f4f6; --brd:#e5e7eb;
+  --black:#0B1120; --orange:#F97316;
+  --ink:#0B1120; --body:#374151; --muted:#6b7280; --dim:#9ca3af;
+  --bg:#F8F9FC; --s1:#FFFFFF; --s2:#F1F4F9; --brd:#e5e7eb;
   --red:#dc2626; --amber:#f59e0b; --violet:#9333ea; --green:#059669;
 }
 * { box-sizing:border-box; }
 html, body { margin:0; padding:0; background:var(--bg); }
 body {
-  font-family:'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color:var(--body); font-size:14px; line-height:1.65;
   max-width:1180px; margin:0 auto; padding:0 40px 60px;
 }
@@ -31,37 +31,37 @@ a:hover { text-decoration:underline; }
   margin-bottom:32px;
 }
 .brand-block .brand {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:24px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:24px;
   color:var(--black); letter-spacing:-0.01em; text-transform:uppercase;
   line-height:1.1;
 }
 .brand-block .brand em { color:var(--orange); font-style:normal; font-weight:800; }
 .brand-block .tagline {
-  font-family:'DM Mono', monospace; font-size:10px; font-weight:600;
+  font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:600;
   color:var(--muted); text-transform:uppercase; letter-spacing:0.14em;
   margin-top:8px;
 }
 .mast-right { text-align:right; }
 .report-label {
   display:inline-block; background:var(--black); color:#fff;
-  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:700;
   padding:5px 11px; letter-spacing:0.12em; text-transform:uppercase;
   margin-bottom:10px;
 }
 .report-meta {
-  font-family:'DM Mono', monospace; font-size:11px;
+  font-family:'JetBrains Mono', monospace; font-size:11px;
   color:var(--muted); line-height:1.8;
 }
 .report-meta strong { color:var(--ink); font-weight:700; }
 
 .r-title {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:38px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:38px;
   color:var(--black); letter-spacing:-0.02em; line-height:1.15;
   margin:2px 0 10px;
 }
 .r-title .accent { color:var(--orange); }
 .r-kicker {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:13px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:13px;
   color:var(--black); letter-spacing:0.08em; text-transform:uppercase;
   margin:8px 0 6px;
 }
@@ -73,7 +73,7 @@ a:hover { text-decoration:underline; }
 .r-authority {
   display:flex; align-items:center; gap:10px; flex-wrap:wrap;
   padding:10px 14px; background:var(--s1); border-left:3px solid var(--orange);
-  font-family:'DM Mono', monospace; font-size:11px; color:var(--ink);
+  font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--ink);
   margin-bottom:30px;
 }
 .auth-label {
@@ -89,12 +89,12 @@ a:hover { text-decoration:underline; }
 }
 .kpi { background:#fff; padding:22px 20px; }
 .kpi-label {
-  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:700;
   color:var(--muted); text-transform:uppercase; letter-spacing:0.1em;
   margin-bottom:8px;
 }
 .kpi-value {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:42px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:42px;
   color:var(--black); line-height:1; letter-spacing:-0.02em;
 }
 .kpi-value.red { color:var(--red); }
@@ -103,7 +103,7 @@ a:hover { text-decoration:underline; }
 .kpi-value a { color:inherit; text-decoration:none; border-bottom:2px solid var(--orange); padding-bottom:1px; }
 .kpi-value a:hover { opacity:0.8; text-decoration:none; }
 .kpi-delta {
-  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:700;
   margin-top:10px; letter-spacing:0.04em;
 }
 .kpi-top { font-size:11px; color:var(--muted); margin-top:10px; font-style:italic; }
@@ -113,11 +113,11 @@ a:hover { text-decoration:underline; }
   margin:40px 0 16px;
 }
 .sec-num {
-  font-family:'DM Mono', monospace; font-size:11px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700;
   color:var(--orange); letter-spacing:0.12em;
 }
 .sec-title {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:22px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:22px;
   color:var(--black); letter-spacing:-0.01em;
 }
 .sec-rule { flex:1; height:1px; background:var(--brd); }
@@ -136,7 +136,7 @@ a:hover { text-decoration:underline; }
   font-size:13.5px; line-height:1.7;
 }
 .analysis p.pa-note .pa-label {
-  display:inline; font-family:'DM Mono', monospace; font-weight:700;
+  display:inline; font-family:'JetBrains Mono', monospace; font-weight:700;
   letter-spacing:0.08em; text-transform:uppercase;
   color:var(--red); font-size:10px; margin-right:8px;
 }
@@ -148,7 +148,7 @@ table.data {
 }
 table.data th {
   background:var(--black); color:#fff;
-  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:700;
   text-transform:uppercase; letter-spacing:0.1em;
   padding:12px 12px; text-align:left; border-bottom:2px solid var(--orange);
 }
@@ -159,7 +159,7 @@ table.data td {
 table.data tr:last-child td { border-bottom:none; }
 table.data tr:nth-child(even) td { background:#fafbfc; }
 table.data td.num {
-  font-family:'DM Mono', monospace; font-weight:600; text-align:right;
+  font-family:'JetBrains Mono', monospace; font-weight:600; text-align:right;
   white-space:nowrap;
 }
 table.data td.empty {
@@ -177,14 +177,14 @@ table.top5 th:nth-child(6), table.top5 td:nth-child(6) { width:19%; }  /* Jurisd
 table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
 
 .rank-num {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:22px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:22px;
   color:var(--orange); text-align:center;
   white-space:nowrap; font-variant-numeric:tabular-nums;
   letter-spacing:-0.02em;
 }
 .rank-num.rank-num--multi { font-size:18px; }
 .date-cell {
-  font-family:'DM Mono', monospace; font-size:11px; color:var(--muted);
+  font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--muted);
   white-space:nowrap;
 }
 .path-dot {
@@ -197,36 +197,36 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
 .prod-cell { color:var(--body); }
 .juris-country { font-weight:600; color:var(--ink); }
 .src-sub {
-  font-family:'DM Mono', monospace; font-size:10px;
+  font-family:'JetBrains Mono', monospace; font-size:10px;
   color:var(--muted); margin-top:3px;
 }
 .juris-link { margin-top:6px; }
 .chip-tier1 {
   display:inline-block; background:var(--red); color:#fff;
-  font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:9px; font-weight:700;
   padding:2px 6px; border-radius:2px; margin-left:6px; letter-spacing:0.06em;
 }
 .chip-tier2 {
   display:inline-block; background:var(--amber); color:#fff;
-  font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:9px; font-weight:700;
   padding:2px 6px; border-radius:2px; margin-left:6px; letter-spacing:0.06em;
 }
 .chip-outbreak {
   display:inline-block; background:var(--violet); color:#fff;
-  font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:9px; font-weight:700;
   padding:2px 6px; border-radius:2px; margin-left:4px; letter-spacing:0.06em;
 }
 .src-link {
-  font-family:'DM Mono', monospace; font-size:11px; font-weight:700;
+  font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:700;
   color:var(--orange); letter-spacing:0.02em;
 }
-.src-na { color:var(--dim); font-family:'DM Mono', monospace; font-size:10px; font-style:italic; }
+.src-na { color:var(--dim); font-family:'JetBrains Mono', monospace; font-size:10px; font-style:italic; }
 
 .dist-grid {
   display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:10px;
 }
 .dist-grid h3 {
-  font-family:'DM Mono', monospace; font-size:11px; color:var(--muted);
+  font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--muted);
   text-transform:uppercase; letter-spacing:0.1em; margin:0 0 10px;
 }
 .bar-track {
@@ -244,12 +244,12 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
 }
 .cta-text { flex:1; min-width:280px; }
 .cta-text h3 {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:20px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:20px;
   margin:0 0 6px; color:#fff; letter-spacing:-0.01em;
 }
 .cta-text p { margin:0; color:#d1d5db; font-size:13px; }
 .cta-btn {
-  background:var(--orange); color:#fff; font-family:'DM Mono', monospace;
+  background:var(--orange); color:#fff; font-family:'JetBrains Mono', monospace;
   font-size:11px; font-weight:700; padding:14px 22px;
   text-transform:uppercase; letter-spacing:0.1em;
   border:none; cursor:pointer; white-space:nowrap;
@@ -271,12 +271,12 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
   flex-wrap:wrap; gap:20px; font-size:12px;
 }
 .foot-brand {
-  font-family:'Syne', sans-serif; font-weight:800; font-size:15px;
+  font-family:'Inter', sans-serif; font-weight:800; font-size:15px;
   color:var(--black); text-transform:uppercase; letter-spacing:0.02em;
 }
 .foot-brand em { color:var(--orange); font-style:normal; }
 .foot-meta {
-  font-family:'DM Mono', monospace; font-size:10px;
+  font-family:'JetBrains Mono', monospace; font-size:10px;
   color:var(--muted); line-height:1.8; margin-top:6px;
 }
 .foot-legal {
@@ -292,12 +292,12 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
     margin: 14mm 14mm 18mm 14mm;
     @bottom-left {
       content: "Food Safety Horizon Scanning · Food Safety Validation Intelligence";
-      font-family: 'DM Mono', monospace; font-size: 8pt; color: #6b7280;
+      font-family: 'JetBrains Mono', monospace; font-size: 8pt; color: #6b7280;
       letter-spacing: 0.04em;
     }
     @bottom-right {
       content: "Page " counter(page) " / " counter(pages);
-      font-family: 'DM Mono', monospace; font-size: 8pt; color: #6b7280;
+      font-family: 'JetBrains Mono', monospace; font-size: 8pt; color: #6b7280;
       letter-spacing: 0.04em;
     }
   }
@@ -434,7 +434,7 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
   table.top5 td::before {
     content:attr(data-label);
     position:absolute; left:14px; top:7px; width:88px;
-    font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+    font-family:'JetBrains Mono', monospace; font-size:9px; font-weight:700;
     color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
   }
   /* Rank number sits in top-right corner as an orange badge */

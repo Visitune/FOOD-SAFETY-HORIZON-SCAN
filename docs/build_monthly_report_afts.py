@@ -68,8 +68,8 @@ CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 # If weekly doesn't export them (older versions or current refactored state),
 # fall back to the canonical Food Safety Horizon Scanning palette so the monthly build never crashes
 # on a missing constant.
-BRAND_ORANGE = getattr(weekly, "BRAND_ORANGE", "#E8601A")
-BRAND_BLACK  = getattr(weekly, "BRAND_BLACK",  "#0a0e1a")
+BRAND_ORANGE = getattr(weekly, "BRAND_ORANGE", "#F97316")
+BRAND_BLACK  = getattr(weekly, "BRAND_BLACK",  "#0B1120")
 TIER1_RED    = getattr(weekly, "TIER1_RED",    "#dc2626")
 TIER2_AMBER  = getattr(weekly, "TIER2_AMBER",  "#f59e0b")
 OUTBREAK_VIO = getattr(weekly, "OUTBREAK_VIO", "#7c3aed")
@@ -659,7 +659,7 @@ def svg_mom_sparkline(mom: Dict[str, Any], w: int = 320, h: int = 72) -> str:
 
     labels_svg = "".join(
         f'<text x="{x:.1f}" y="{h-2}" text-anchor="middle" font-size="8" '
-        f'font-family="DM Mono,monospace" fill="#64748b">{escape(lbl[5:])}</text>'
+        f'font-family="JetBrains Mono,monospace" fill="#64748b">{escape(lbl[5:])}</text>'
         for (x, _), lbl in zip(points, labels)
     )
     return (
@@ -672,7 +672,7 @@ def svg_mom_sparkline(mom: Dict[str, Any], w: int = 320, h: int = 72) -> str:
         f'<path d="{path}" fill="none" stroke="{direction_colour}" stroke-width="1.8"/>'
         f'<circle cx="{last_x:.1f}" cy="{last_y:.1f}" r="3.5" fill="{direction_colour}"/>'
         f'<text x="{last_x+6:.1f}" y="{last_y-4:.1f}" font-size="10" font-weight="700" '
-        f'font-family="DM Mono,monospace" fill="{direction_colour}">{counts[-1]}</text>'
+        f'font-family="JetBrains Mono,monospace" fill="{direction_colour}">{counts[-1]}</text>'
         f'{labels_svg}'
         f'</svg>'
     )
@@ -701,7 +701,7 @@ def svg_hotspot_heatmap(hs: Dict[str, Any], w: int = 620) -> str:
         x = label_w + j * cell_w + cell_w / 2
         out.append(
             f'<text x="{x:.1f}" y="{label_h-8}" text-anchor="middle" '
-            f'font-size="9" font-family="DM Mono,monospace" '
+            f'font-size="9" font-family="JetBrains Mono,monospace" '
             f'font-weight="700" fill="{BRAND_BLACK}">'
             f'<tspan font-style="italic">{escape(col[:14])}</tspan></text>'
         )
@@ -720,7 +720,7 @@ def svg_hotspot_heatmap(hs: Dict[str, Any], w: int = 620) -> str:
             intensity = obs / max_obs if max_obs else 0
             # Orange colour scale
             shade = int(245 - intensity * 145)
-            fill = f'rgb(254,{max(120,shade)},{max(90,shade-30)})' if obs else "#f3f4f6"
+            fill = f'rgb(254,{max(120,shade)},{max(90,shade-30)})' if obs else "#F1F4F9"
             if obs == 0:
                 text_col = "#94a3b8"
             elif intensity > 0.55:
@@ -738,14 +738,14 @@ def svg_hotspot_heatmap(hs: Dict[str, Any], w: int = 620) -> str:
             out.append(
                 f'<text x="{x+cell_w/2:.1f}" y="{cy+cell_h/2+4:.1f}" '
                 f'text-anchor="middle" font-size="13" font-weight="700" '
-                f'font-family="DM Mono,monospace" fill="{text_col}">{obs}</text>'
+                f'font-family="JetBrains Mono,monospace" fill="{text_col}">{obs}</text>'
             )
             # Small std-residual indicator under each non-zero cell
             if obs > 0:
                 out.append(
                     f'<text x="{x+cell_w/2:.1f}" y="{cy+cell_h-5:.1f}" '
                     f'text-anchor="middle" font-size="7" '
-                    f'font-family="DM Mono,monospace" fill="{text_col}" opacity="0.65">'
+                    f'font-family="JetBrains Mono,monospace" fill="{text_col}" opacity="0.65">'
                     f'σ={cell["stdres"]:+.1f}</text>'
                 )
 
@@ -772,7 +772,7 @@ def svg_outbreak_timeline(cl: Dict[str, Any], month_start: date, month_end: date
             f'<line x1="{tx:.1f}" y1="{axis_y}" x2="{tx:.1f}" y2="{axis_y+4}" '
             f'stroke="#cbd5e1" stroke-width="1"/>'
             f'<text x="{tx:.1f}" y="{axis_y+18}" text-anchor="middle" '
-            f'font-size="8" font-family="DM Mono,monospace" fill="#64748b">'
+            f'font-size="8" font-family="JetBrains Mono,monospace" fill="#64748b">'
             f'{(month_start + timedelta(days=day_offset)).strftime("%d %b")}</text>'
         )
 
@@ -811,7 +811,7 @@ def svg_outbreak_timeline(cl: Dict[str, Any], month_start: date, month_end: date
         legend_parts.append(
             f'<circle cx="{lx+5:.1f}" cy="{h-4:.1f}" r="3" fill="{colour}"/>'
             f'<text x="{lx+12:.1f}" y="{h-1:.1f}" font-size="9" '
-            f'font-family="DM Mono,monospace" fill="#475569">'
+            f'font-family="JetBrains Mono,monospace" fill="#475569">'
             f'<tspan font-style="italic">{escape(p[:18])}</tspan></text>'
         )
         lx += 12 + 8 + len(p[:18]) * 5.5 + 10
@@ -846,10 +846,10 @@ def svg_weekly_cadence(cadence: Dict[str, Any], w: int = 300, h: int = 72) -> st
             f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" '
             f'fill="{BRAND_ORANGE}" opacity="0.85" rx="1"/>'
             f'<text x="{x+bar_w/2:.1f}" y="{y-3:.1f}" text-anchor="middle" '
-            f'font-size="9" font-weight="700" font-family="DM Mono,monospace" '
+            f'font-size="9" font-weight="700" font-family="JetBrains Mono,monospace" '
             f'fill="{BRAND_BLACK}">{c}</text>'
             f'<text x="{x+bar_w/2:.1f}" y="{h-2:.1f}" text-anchor="middle" '
-            f'font-size="8" font-family="DM Mono,monospace" fill="#64748b">W{lbl}</text>'
+            f'font-size="8" font-family="JetBrains Mono,monospace" fill="#64748b">W{lbl}</text>'
         )
     return f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;height:auto;display:block;margin:0 auto;">{"".join(bars)}</svg>'
 
@@ -886,9 +886,9 @@ def svg_severity_gauge(sv: Dict[str, Any], w: int = 200, h: int = 110) -> str:
         f'stroke="{BRAND_BLACK}" stroke-width="2.5"/>'
         f'<circle cx="{cx}" cy="{cy}" r="5" fill="{BRAND_BLACK}"/>'
         f'<text x="{cx}" y="{cy-35}" text-anchor="middle" font-size="22" '
-        f'font-weight="800" font-family="Syne,sans-serif" fill="{BRAND_BLACK}">{score}</text>'
+        f'font-weight="800" font-family="Inter,sans-serif" fill="{BRAND_BLACK}">{score}</text>'
         f'<text x="{cx}" y="{cy-18}" text-anchor="middle" font-size="9" '
-        f'font-family="DM Mono,monospace" letter-spacing="1.5" fill="#64748b" '
+        f'font-family="JetBrains Mono,monospace" letter-spacing="1.5" fill="#64748b" '
         f'text-transform="uppercase">{escape(bucket).upper()}</text>'
         f'</svg>'
     )
@@ -998,40 +998,40 @@ def build_all_month_html(month_start: date, month_end: date,
 <!-- Cloudflare Web Analytics — see docs/index.html for setup instructions. -->
 
 <style>
-body{{font-family:'Inter',sans-serif;background:#f5f5f7;margin:0;padding:32px 20px;color:#1f2937;}}
+body{{font-family:'Inter',sans-serif;background:#f5f5f7;margin:0;padding:32px 20px;color:#374151;}}
 .wrap{{max-width:1080px;margin:0 auto;background:#fff;padding:32px 40px;border:1px solid #e5e7eb;}}
-.brand{{font-family:Syne,Georgia,serif;font-weight:800;font-size:16px;letter-spacing:-0.01em;
+.brand{{font-family:Inter,sans-serif;font-weight:800;font-size:16px;letter-spacing:-0.01em;
 text-transform:uppercase;color:{BRAND_BLACK};margin-bottom:8px;}}
 .brand em{{color:{BRAND_ORANGE};font-style:normal;}}
-h1{{font-family:Syne,Georgia,serif;font-weight:800;font-size:26px;margin:0 0 6px;}}
-.sub{{font-family:'DM Mono',monospace;font-size:10px;color:#6b7280;text-transform:uppercase;
+h1{{font-family:Inter,sans-serif;font-weight:800;font-size:26px;margin:0 0 6px;}}
+.sub{{font-family:'JetBrains Mono',monospace;font-size:10px;color:#6b7280;text-transform:uppercase;
 letter-spacing:0.1em;margin:0 0 20px;}}
-.back{{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.08em;
+.back{{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;
 color:{BRAND_ORANGE};text-decoration:none;display:inline-block;margin-bottom:16px;
 padding:8px 16px;border:1px solid #e5e7eb;border-radius:2px;text-transform:uppercase;}}
 .back:hover{{background:{BRAND_ORANGE};color:#fff;border-color:{BRAND_ORANGE};}}
 table.data{{width:100%;border-collapse:collapse;font-size:13px;}}
-table.data th{{background:{BRAND_BLACK};color:#fff;font-family:'DM Mono',monospace;
+table.data th{{background:{BRAND_BLACK};color:#fff;font-family:'JetBrains Mono',monospace;
 font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;
 padding:10px 8px;text-align:left;}}
-table.data td{{padding:10px 8px;border-bottom:1px solid #f3f4f6;vertical-align:top;}}
+table.data td{{padding:10px 8px;border-bottom:1px solid #F1F4F9;vertical-align:top;}}
 table.data tr:hover{{background:rgba(232,96,26,.04);}}
-.rank-num{{font-family:Syne,sans-serif;font-weight:800;font-size:22px;color:{BRAND_ORANGE};
+.rank-num{{font-family:Inter,sans-serif;font-weight:800;font-size:22px;color:{BRAND_ORANGE};
 text-align:center;white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;}}
 .rank-num.rank-num--multi{{font-size:18px;}}
-.date-cell{{font-family:'DM Mono',monospace;font-size:11px;color:#6b7280;white-space:nowrap;}}
+.date-cell{{font-family:'JetBrains Mono',monospace;font-size:11px;color:#6b7280;white-space:nowrap;}}
 .path-dot{{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:middle;}}
-.path-name{{font-weight:600;color:#1f2937;font-style:italic;}}
+.path-name{{font-weight:600;color:#374151;font-style:italic;}}
 .co-cell strong{{color:{BRAND_BLACK};font-weight:700;display:block;}}
 .brand-sub{{font-size:11px;color:#6b7280;margin-top:2px;font-style:italic;}}
-.juris-country{{font-weight:600;color:#1f2937;}}
-.src-sub{{font-family:'DM Mono',monospace;font-size:10px;color:#6b7280;margin-top:2px;}}
-.src-link{{color:{BRAND_ORANGE};font-size:11px;text-decoration:none;font-family:'DM Mono',monospace;}}
-.src-na{{font-family:'DM Mono',monospace;font-size:10px;color:#94a3b8;font-style:italic;}}
+.juris-country{{font-weight:600;color:#374151;}}
+.src-sub{{font-family:'JetBrains Mono',monospace;font-size:10px;color:#6b7280;margin-top:2px;}}
+.src-link{{color:{BRAND_ORANGE};font-size:11px;text-decoration:none;font-family:'JetBrains Mono',monospace;}}
+.src-na{{font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8;font-style:italic;}}
 .chip-tier1,.chip-tier2,.chip-outbreak{{display:inline-block;color:#fff;font-size:9px;
 font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.06em;margin-left:5px;}}
 .chip-tier1{{background:{TIER1_RED};}}
-.chip-tier2{{background:{TIER2_AMBER};color:#1f2937;}}
+.chip-tier2{{background:{TIER2_AMBER};color:#374151;}}
 .chip-outbreak{{background:{OUTBREAK_VIO};}}
 </style></head><body><div class="wrap">
 <div class="brand">Food Safety <em>·</em> Horizon Scanning</div>
@@ -1379,13 +1379,13 @@ def build_monthly_html(month_start: date, month_end: date,
 <title>Food Safety Horizon Scanning Monthly · {escape(month_name)} {year}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <!-- Cloudflare Web Analytics — see docs/index.html for setup instructions. -->
 
 <style>
 :root{{
---bg:#ffffff; --s1:#f9fafb; --s2:#f3f4f6; --brd:#e5e7eb;
---ink:#1f2937; --black:{BRAND_BLACK}; --muted:#6b7280; --body:#374151;
+--bg:#F8F9FC; --s1:#FFFFFF; --s2:#F1F4F9; --brd:#e5e7eb;
+--ink:#374151; --black:{BRAND_BLACK}; --muted:#6b7280; --body:#374151;
 --orange:{BRAND_ORANGE}; --red:{TIER1_RED}; --amber:{TIER2_AMBER};
 --violet:{OUTBREAK_VIO}; --green:#059669;
 }}
@@ -1397,28 +1397,28 @@ a{{color:var(--orange);}} a:hover{{color:{BRAND_BLACK};}}
 
 .mast{{border-bottom:1px solid var(--brd);padding-bottom:18px;margin-bottom:26px;
 display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}}
-.brand{{font-family:Syne,Georgia,serif;font-weight:800;font-size:18px;color:{BRAND_BLACK};
+.brand{{font-family:Inter,sans-serif;font-weight:800;font-size:18px;color:{BRAND_BLACK};
 text-transform:uppercase;letter-spacing:-0.01em;}}
 .brand em{{color:{BRAND_ORANGE};font-style:normal;}}
-.tagline{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);
+.tagline{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);
 text-transform:uppercase;letter-spacing:0.14em;margin-top:4px;}}
-.pubdate{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);
+.pubdate{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);
 text-transform:uppercase;letter-spacing:0.12em;margin-top:6px;}}
 .pubdate strong{{color:{BRAND_BLACK};font-weight:700;}}
-.pill{{background:{BRAND_BLACK};color:#fff;font-family:'DM Mono',monospace;font-size:10px;
+.pill{{background:{BRAND_BLACK};color:#fff;font-family:'JetBrains Mono',monospace;font-size:10px;
 padding:5px 12px;letter-spacing:0.12em;text-transform:uppercase;}}
-h1.r-title{{font-family:Syne,Georgia,serif;font-weight:800;font-size:30px;color:{BRAND_BLACK};
+h1.r-title{{font-family:Inter,sans-serif;font-weight:800;font-size:30px;color:{BRAND_BLACK};
 letter-spacing:-0.02em;margin:14px 0 6px;}}
 h1.r-title .accent{{color:{BRAND_ORANGE};}}
-.sub{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);
+.sub{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);
 text-transform:uppercase;letter-spacing:0.1em;margin:0 0 26px;}}
 
 .kpi-strip{{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--brd);
 border:1px solid var(--brd);margin-bottom:28px;}}
 .kpi{{background:#fff;padding:16px 14px;}}
-.kpi-label{{font-family:'DM Mono',monospace;font-size:9px;font-weight:700;color:var(--muted);
+.kpi-label{{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--muted);
 text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;}}
-.kpi-value{{font-family:Syne,Georgia,serif;font-weight:800;font-size:26px;line-height:1;color:{BRAND_BLACK};}}
+.kpi-value{{font-family:Inter,sans-serif;font-weight:800;font-size:26px;line-height:1;color:{BRAND_BLACK};}}
 .kpi-value.red{{color:var(--red);}} .kpi-value.vio{{color:var(--violet);}}
 .kpi-value.orange{{color:var(--orange);font-style:italic;font-size:15px;line-height:1.3;}}
 .kpi-value.mom{{font-size:22px;}}
@@ -1426,11 +1426,11 @@ text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;}}
 @media(max-width:760px){{.kpi-strip{{grid-template-columns:repeat(3,1fr);}}}}
 
 .sec-head{{display:flex;align-items:center;gap:12px;margin:32px 0 12px;}}
-.sec-num{{font-family:'DM Mono',monospace;font-size:10px;color:{BRAND_ORANGE};font-weight:700;letter-spacing:0.12em;}}
-.sec-title{{font-family:Syne,Georgia,serif;font-weight:800;font-size:20px;color:{BRAND_BLACK};letter-spacing:-0.01em;margin:0;}}
+.sec-num{{font-family:'JetBrains Mono',monospace;font-size:10px;color:{BRAND_ORANGE};font-weight:700;letter-spacing:0.12em;}}
+.sec-title{{font-family:Inter,sans-serif;font-weight:800;font-size:20px;color:{BRAND_BLACK};letter-spacing:-0.01em;margin:0;}}
 .sec-rule{{flex:1;height:1px;background:var(--brd);}}
 .sec-caption{{color:var(--muted);font-size:13px;margin:-4px 0 14px;}}
-.sec-link{{font-family:'DM Mono',monospace;font-size:10px;color:var(--orange);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;}}
+.sec-link{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--orange);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;}}
 .sec-link:hover{{text-decoration:underline;}}
 
 .analysis{{background:var(--s1);padding:24px 28px;margin-bottom:12px;}}
@@ -1438,16 +1438,16 @@ text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;}}
 .analysis p:last-child{{margin-bottom:0;}}
 .analysis p.pa-note{{margin:18px -28px 0 -28px;padding:18px 28px 2px 28px;background:#fff;
 border-top:1px solid var(--brd);font-size:13.5px;line-height:1.7;}}
-.analysis p.pa-note .pa-label{{display:inline;font-family:'DM Mono',monospace;font-weight:700;
+.analysis p.pa-note .pa-label{{display:inline;font-family:'JetBrains Mono',monospace;font-weight:700;
 letter-spacing:0.08em;text-transform:uppercase;color:var(--red);font-size:10px;margin-right:8px;}}
 
 /* Trend panel */
 .trend-grid{{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:6px;justify-items:center;}}
 .trend-grid > * {{ width:100%; max-width:680px; }}
 .trend-panel{{background:var(--s1);padding:18px 22px;border-left:3px solid var(--orange);}}
-.trend-num{{font-family:Syne,sans-serif;font-weight:800;font-size:30px;color:{BRAND_BLACK};}}
+.trend-num{{font-family:Inter,sans-serif;font-weight:800;font-size:30px;color:{BRAND_BLACK};}}
 .trend-num.up{{color:var(--red);}} .trend-num.down{{color:var(--green);}}
-.trend-lbl{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);
+.trend-lbl{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);
 letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;}}
 .trend-row{{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:10px;}}
 
@@ -1471,15 +1471,15 @@ letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;}}
 .conc-card.concentrated{{border-left-color:var(--red);}}
 .conc-card.very_uneven{{border-left-color:var(--red);}}
 .conc-card.moderate{{border-left-color:var(--amber);}}
-.conc-val{{font-family:Syne,sans-serif;font-weight:800;font-size:22px;color:{BRAND_BLACK};}}
-.conc-lbl{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;}}
+.conc-val{{font-family:Inter,sans-serif;font-weight:800;font-size:22px;color:{BRAND_BLACK};}}
+.conc-lbl{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;}}
 .conc-note{{font-size:11px;color:var(--muted);margin-top:4px;}}
 
 /* Growth lists */
 .growth-grid{{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:6px;}}
 @media(max-width:600px){{.growth-grid{{grid-template-columns:1fr;}}}}
 .growth-panel{{background:var(--s1);padding:16px 20px;}}
-.growth-panel h4{{font-family:'DM Mono',monospace;font-size:10px;margin:0 0 10px;
+.growth-panel h4{{font-family:'JetBrains Mono',monospace;font-size:10px;margin:0 0 10px;
 color:{BRAND_ORANGE};letter-spacing:0.1em;text-transform:uppercase;}}
 .growth-panel ul{{margin:0;padding:0;list-style:none;font-size:12.5px;}}
 .growth-panel li{{padding:5px 0;border-top:1px dashed var(--brd);}}
@@ -1492,63 +1492,63 @@ color:{BRAND_ORANGE};letter-spacing:0.1em;text-transform:uppercase;}}
 .mdl-card{{padding:12px 16px;font-size:12.5px;border-radius:2px;}}
 .mdl-hdr{{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;}}
 .mdl-name{{font-weight:700;color:{BRAND_BLACK};}}
-.mdl-status{{font-family:'DM Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.1em;}}
+.mdl-status{{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.1em;}}
 .mdl-sub{{font-size:11px;color:var(--muted);margin-bottom:6px;}}
 .mdl-detail{{font-size:11.5px;color:var(--ink);line-height:1.55;}}
 table.mini{{width:100%;font-size:11px;border-collapse:collapse;margin-top:6px;}}
-table.mini th{{background:{BRAND_BLACK};color:#fff;font-family:'DM Mono',monospace;
+table.mini th{{background:{BRAND_BLACK};color:#fff;font-family:'JetBrains Mono',monospace;
 font-size:9px;font-weight:700;padding:4px 6px;text-align:left;letter-spacing:0.06em;}}
 table.mini td{{padding:4px 6px;border-bottom:1px solid var(--brd);}}
-table.mini td.num{{text-align:right;font-family:'DM Mono',monospace;}}
+table.mini td.num{{text-align:right;font-family:'JetBrains Mono',monospace;}}
 
 /* Tables */
 table{{width:100%;border-collapse:collapse;font-size:11.5px;}}
-table.paths td{{padding:6px 8px;border-bottom:1px solid #f3f4f6;vertical-align:middle;font-size:12px;}}
-table.paths td.num{{text-align:right;font-family:'DM Mono',monospace;}}
+table.paths td{{padding:6px 8px;border-bottom:1px solid #F1F4F9;vertical-align:middle;font-size:12px;}}
+table.paths td.num{{text-align:right;font-family:'JetBrains Mono',monospace;}}
 table.paths td.muted{{color:var(--muted);}}
 .agg-note{{font-size:10.5px;color:var(--muted);font-style:italic;font-weight:normal;}}
 table.repro{{width:100%;border-collapse:collapse;font-size:10.5px;margin-top:6px;}}
 table.repro td{{padding:4px 6px;border-bottom:1px dotted #e5e7eb;vertical-align:top;}}
 table.repro td.repro-lbl{{color:var(--ink);}}
-table.repro td.repro-num{{text-align:right;font-family:'DM Mono',monospace;font-variant-numeric:tabular-nums;color:var(--muted);}}
+table.repro td.repro-num{{text-align:right;font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums;color:var(--muted);}}
 .path-dot{{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:middle;}}
 .bar{{background:var(--s2);height:6px;border-radius:1px;width:100%;min-width:120px;}}
 .bar-fill{{height:6px;border-radius:1px;}}
 
 /* Top 10 table (reuses weekly .top5 styles) */
 table.top5 {{ table-layout:fixed; width:100%; margin-top:8px; font-size:11px; }}
-table.top5 th {{ background:{BRAND_BLACK}; color:#fff; font-family:'DM Mono',monospace; font-size:9.5px; font-weight:700; padding:8px 6px; text-align:left; letter-spacing:0.08em; }}
-table.top5 td {{ padding:8px 6px; border-bottom:1px solid #f3f4f6; vertical-align:top; word-wrap:break-word; overflow-wrap:break-word; word-break:normal; hyphens:none; font-size:11px; line-height:1.35; }}
+table.top5 th {{ background:{BRAND_BLACK}; color:#fff; font-family:'JetBrains Mono',monospace; font-size:9.5px; font-weight:700; padding:8px 6px; text-align:left; letter-spacing:0.08em; }}
+table.top5 td {{ padding:8px 6px; border-bottom:1px solid #F1F4F9; vertical-align:top; word-wrap:break-word; overflow-wrap:break-word; word-break:normal; hyphens:none; font-size:11px; line-height:1.35; }}
 table.top5 th:nth-child(1), table.top5 td:nth-child(1) {{ width:5%; }}
 table.top5 th:nth-child(2), table.top5 td:nth-child(2) {{ width:11%; }}
 table.top5 th:nth-child(3), table.top5 td:nth-child(3) {{ width:21%; }}
 table.top5 th:nth-child(4), table.top5 td:nth-child(4) {{ width:17%; }}
 table.top5 th:nth-child(5), table.top5 td:nth-child(5) {{ width:28%; }}
 table.top5 th:nth-child(6), table.top5 td:nth-child(6) {{ width:18%; }}
-table.top5 td.num.rank {{ font-family:'DM Mono',monospace; font-size:13px; font-weight:700; color:{BRAND_ORANGE}; white-space:nowrap; }}
-table.top5 td.date {{ font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); white-space:nowrap; }}
+table.top5 td.num.rank {{ font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:{BRAND_ORANGE}; white-space:nowrap; }}
+table.top5 td.date {{ font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); white-space:nowrap; }}
 table.top5 td.pathogen {{ word-break:normal; }}
 table.top5 td.pathogen .path-name {{ white-space:normal; }}
 table.top5 td.company .company-name {{ font-weight:700; color:{BRAND_BLACK}; }}
 table.top5 td.company .brand {{ font-size:11px; color:var(--muted); margin-top:2px; font-style:italic; }}
 table.top5 td.src .country {{ font-weight:600; color:var(--ink); font-size:11.5px; }}
-table.top5 td.src .agency {{ font-family:'DM Mono',monospace; font-size:10px; color:var(--muted); margin-top:2px; }}
+table.top5 td.src .agency {{ font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); margin-top:2px; }}
 table.top5 td.src .agency a {{ color:{BRAND_ORANGE}; text-decoration:none; }}
-.rank-num{{font-family:Syne,sans-serif;font-weight:800;font-size:22px;color:{BRAND_ORANGE};
+.rank-num{{font-family:Inter,sans-serif;font-weight:800;font-size:22px;color:{BRAND_ORANGE};
 text-align:center;white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;}}
 .rank-num.rank-num--multi{{font-size:18px;}}
-.date-cell{{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);white-space:nowrap;}}
+.date-cell{{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);white-space:nowrap;}}
 .path-name{{font-weight:600;color:var(--ink);font-style:italic;}}
 .co-cell strong{{color:{BRAND_BLACK};font-weight:700;display:block;}}
 .brand-sub{{font-size:11px;color:var(--muted);margin-top:2px;font-style:italic;}}
 .juris-country{{font-weight:600;color:var(--ink);}}
-.src-sub{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-top:2px;}}
-.src-link{{color:{BRAND_ORANGE};font-size:11px;text-decoration:none;font-family:'DM Mono',monospace;}}
-.src-na{{font-family:'DM Mono',monospace;font-size:10px;color:#94a3b8;font-style:italic;}}
+.src-sub{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);margin-top:2px;}}
+.src-link{{color:{BRAND_ORANGE};font-size:11px;text-decoration:none;font-family:'JetBrains Mono',monospace;}}
+.src-na{{font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8;font-style:italic;}}
 .chip-tier-1,.chip-tier-2,.chip-outbreak,.chip-tier1,.chip-tier2{{display:inline-block;color:#fff;font-size:9px;
 font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.06em;margin-left:5px;white-space:nowrap;}}
 .chip-tier-1,.chip-tier1{{background:{TIER1_RED};}}
-.chip-tier-2,.chip-tier2{{background:{TIER2_AMBER};color:#1f2937;}}
+.chip-tier-2,.chip-tier2{{background:{TIER2_AMBER};color:#374151;}}
 .chip-outbreak{{background:{OUTBREAK_VIO};}}
 
 .meth{{background:var(--s1);padding:20px 24px;font-size:13px;line-height:1.7;color:var(--body);}}
@@ -1556,19 +1556,19 @@ font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.06em;margin-l
 .meth strong{{color:{BRAND_BLACK};}}
 
 .footer{{border-top:2px solid {BRAND_BLACK};margin-top:34px;padding-top:18px;
-font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);line-height:1.7;}}
-.footer .fb{{font-family:Syne,Georgia,serif;font-weight:800;font-size:12px;
+font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);line-height:1.7;}}
+.footer .fb{{font-family:Inter,sans-serif;font-weight:800;font-size:12px;
 color:{BRAND_BLACK};text-transform:uppercase;}}
 .footer .fb em{{color:{BRAND_ORANGE};font-style:normal;}}
 
 /* Appendix */
 .appendix-head{{display:flex;align-items:center;gap:12px;margin:42px 0 12px;
 page-break-before:always;}}
-.appendix-num{{font-family:'DM Mono',monospace;font-size:10px;color:{BRAND_ORANGE};
+.appendix-num{{font-family:'JetBrains Mono',monospace;font-size:10px;color:{BRAND_ORANGE};
 font-weight:700;letter-spacing:0.12em;}}
-.appendix-title{{font-family:Syne,Georgia,serif;font-weight:800;font-size:20px;
+.appendix-title{{font-family:Inter,sans-serif;font-weight:800;font-size:20px;
 color:{BRAND_BLACK};letter-spacing:-0.01em;margin:0;}}
-.appendix-count{{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);
+.appendix-count{{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);
 letter-spacing:0.08em;text-transform:uppercase;}}
 
 /* ─────────────────────────────────────────────────────────────────
@@ -1594,7 +1594,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
     }}
     @bottom-right {{
       content: "Page " counter(page) " / " counter(pages);
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 8pt;
       color: #6b7280;
       padding-bottom: 4mm;
@@ -1844,7 +1844,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
         <div class="trend-lbl">vs prior month</div>
       </div>
       <div style="text-align:right">
-        <div style="font-family:'DM Mono',monospace;font-size:12px;font-weight:700;color:var(--muted)">{z_label}</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:var(--muted)">{z_label}</div>
         <div class="trend-lbl">{"Anomalous (|Z|&gt;2)" if mom.get('anomaly_flag') else "Within baseline"}</div>
       </div>
     </div>
@@ -1875,7 +1875,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 <p class="sec-caption">Cells show observed recall counts. σ values are standardised residuals vs an independence-baseline expected count; cells with σ&gt;2 are statistically over-represented and are bordered in red. <strong>Caveat:</strong> hotspot flags are screening signals only — many cells have small expected counts, multiple country×hazard cells are tested simultaneously, and no multiple-comparison correction is applied. Treat any flag as a prompt for editorial review, not as a confirmatory epidemiological finding; for formal inference an exact / Monte-Carlo test or a Bonferroni / FDR adjustment is recommended.</p>
 <div class="heat-panel">
   {svg_hotspot_heatmap(hs)}
-  <div style="margin-top:16px;font-family:'DM Mono',monospace;font-size:10px;
+  <div style="margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:10px;
   color:{BRAND_ORANGE};letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">Hotspot alerts</div>
   <ul class="hotspot-list">{hotspot_items}</ul>
 </div>
@@ -1885,7 +1885,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 <p class="sec-caption">One marker per outbreak event; hover/print for detail. Clusters are ≥3 same-pathogen outbreaks within a 14-day window.</p>
 <div class="timeline-panel">
   {svg_outbreak_timeline(cl, month_start, month_end)}
-  <div style="margin-top:16px;font-family:'DM Mono',monospace;font-size:10px;
+  <div style="margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:10px;
   color:{BRAND_ORANGE};letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">
     Detected clusters ({cl.get('cluster_count', 0)})</div>
   <ul class="hotspot-list">{cluster_html}</ul>
@@ -1926,7 +1926,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:20px">
   <div style="flex:0 0 auto;background:var(--s1);padding:16px 20px;text-align:center;">
     {svg_severity_gauge(sv)}
-    <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-top:4px;letter-spacing:0.1em;text-transform:uppercase">Composite Severity · 0–100</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);margin-top:4px;letter-spacing:0.1em;text-transform:uppercase">Composite Severity · 0–100</div>
   </div>
   <div style="flex:1;min-width:280px;font-size:12.5px;color:var(--body);line-height:1.7;">
     <strong>How to read this panel.</strong> Each card shows a predictive model
@@ -2037,7 +2037,7 @@ def build_monthly_email_html(stats: Dict[str, Any], signals: Dict[str, Any],
             f'recalls (95% CI {lt.get("next_month_ci95")}).</div>'
         )
 
-    return f"""<!DOCTYPE html><html><body style="margin:0;padding:0;background:#f5f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1f2937">
+    return f"""<!DOCTYPE html><html><body style="margin:0;padding:0;background:#f5f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#374151">
 <div style="max-width:600px;margin:20px auto;background:#fff;border:1px solid #e5e7eb">
 
 <div style="background:{BRAND_BLACK};color:#fff;padding:20px 24px">
@@ -2055,26 +2055,26 @@ Monthly Briefing · {escape(month_name)}</div>
 
 <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;margin-bottom:20px">
 <tr>
-<td style="width:25%;padding:14px 12px;background:#f9fafb;border:1px solid #e5e7eb;text-align:center">
+<td style="width:25%;padding:14px 12px;background:#FFFFFF;border:1px solid #e5e7eb;text-align:center">
 <div style="font-family:Georgia,serif;font-weight:800;font-size:26px;color:{BRAND_BLACK}">{stats['total']}</div>
 <div style="font-family:monospace;font-size:9px;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-top:4px">Total</div>
 </td>
-<td style="width:25%;padding:14px 12px;background:#f9fafb;border:1px solid #e5e7eb;text-align:center">
+<td style="width:25%;padding:14px 12px;background:#FFFFFF;border:1px solid #e5e7eb;text-align:center">
 <div style="font-family:Georgia,serif;font-weight:800;font-size:26px;color:{TIER1_RED}">{stats['tier1']}</div>
 <div style="font-family:monospace;font-size:9px;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-top:4px">Tier-1</div>
 </td>
-<td style="width:25%;padding:14px 12px;background:#f9fafb;border:1px solid #e5e7eb;text-align:center">
+<td style="width:25%;padding:14px 12px;background:#FFFFFF;border:1px solid #e5e7eb;text-align:center">
 <div style="font-family:Georgia,serif;font-weight:800;font-size:26px;color:{OUTBREAK_VIO}">{stats['outbreaks']}</div>
 <div style="font-family:monospace;font-size:9px;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-top:4px">Outbreaks</div>
 </td>
-<td style="width:25%;padding:14px 12px;background:#f9fafb;border:1px solid #e5e7eb;text-align:center">
+<td style="width:25%;padding:14px 12px;background:#FFFFFF;border:1px solid #e5e7eb;text-align:center">
 <div style="font-family:Georgia,serif;font-weight:800;font-size:18px;color:{BRAND_ORANGE};font-style:italic">{escape(str(stats['top_pathogen'][0]))}</div>
 <div style="font-family:monospace;font-size:9px;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-top:4px">Leading</div>
 </td>
 </tr>
 </table>
 
-<div style="background:#f9fafb;border-left:3px solid {BRAND_ORANGE};padding:14px 18px;margin-bottom:20px">
+<div style="background:#FFFFFF;border-left:3px solid {BRAND_ORANGE};padding:14px 18px;margin-bottom:20px">
 <div style="font-family:monospace;font-size:10px;color:#6b7280;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:6px">Month signal</div>
 <div style="font-size:14px;line-height:1.55"><strong>{mom.get('delta_pct','—')}%</strong> vs prior month
 {f"· Z = {mom.get('z_score'):+.1f} (anomalous)" if mom.get('anomaly_flag') else ""}

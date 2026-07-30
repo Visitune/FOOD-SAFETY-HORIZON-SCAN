@@ -1,0 +1,159 @@
+name: AFTS Weekly Report
+
+# ==========================================================================
+# Runs every FRIDAY at 08:00 ATHENS TIME (not UTC).
+# Two DST crons + hour guard — identical pattern to afts-monthly-report.yml.
+#
+# Timeline each Friday (all Athens time):
+#   08:00  this workflow fires → builds HTML, PDF, updates index
+#   ~08:15 committed + pushed → GitHub Pages rebuilds
+#   10:00  report is live on dashboard index (as the new W<nn> card)
+#   12:00  Google Apps Script mailer (EXTERNAL — lives in Apps Script,
+#          not this repo) reads docs/data/weekly-summary-latest.json and
+#          sends the email to subscribers
+#
+# Authoritative template: docs/2026-W16.html
+# Each weekly report covers 7 days ENDING on Friday (Sat..Fri span),
+# matching the W16 gold standard. Builder's --week-end flag expects a Friday.
+# Builder reads docs/data/recalls.xlsx Recalls sheet ONLY — never Pending,
+# never News. News is displayed separately on the dashboard but NOT in
+# the weekly report (recalls only, per George's spec).
+# ==========================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_week_end:
+        description: "YYYY-MM-DD (a Friday): force-build this week"
+        required: false
+      backfill_from:
+        description: "YYYY-MM-DD (a Friday): oldest week to check in gap-fill"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: afts-weekly-report
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Athens-time guard
+        id: guard
+        run: |
+          HOUR=$(TZ=Europe/Athens date +%H)
+          DOW=$(TZ=Europe/Athens date +%u)   # 1=Mon .. 7=Sun
+          echo "athens_hour=$HOUR dow=$DOW"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$HOUR" -ge "06" ] && [ "$HOUR" -le "12" ] && [ "$DOW" = "5" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Athens Friday 08:xx — running."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Not Athens Friday 08:xx (now DOW=$DOW hour=$HOUR). Skipping."
+          fi
+
+      - name: Checkout
+        if: steps.guard.outputs.run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.guard.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        if: steps.guard.outputs.run == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Resolve this-week's end-date (Friday)
+        if: steps.guard.outputs.run == 'true' && github.event.inputs.force_week_end == ''
+        id: week
+        run: |
+          # Weekly reports cover 7 days ending on FRIDAY (Sat..Fri span, per W16 gold standard).
+          # Scheduled runs fire Friday 08:00 Athens, so today IS the week-end Friday.
+          # For manual workflow_dispatch on non-Fridays, snap back to the most recent Friday.
+          WEEK_END=$(TZ=Europe/Athens python -c "
+          from datetime import date, timedelta
+          t = date.today()
+          days_since_friday = (t.weekday() - 4) % 7   # Monday=0, Friday=4; 0 if today is Friday
+          print((t - timedelta(days=days_since_friday)).isoformat())
+          ")
+          echo "week_end=$WEEK_END" >> "$GITHUB_OUTPUT"
+          echo "Week ending Friday: $WEEK_END"
+
+      - name: Gap-fill — build weeks missing from docs/
+        if: steps.guard.outputs.run == 'true' && github.event.inputs.force_week_end == ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+          BACKFILL_FROM:     ${{ github.event.inputs.backfill_from || '' }}
+          THIS_WEEK_END:     ${{ steps.week.outputs.week_end }}
+          # Number of most-recent Fridays the builder ALWAYS rebuilds against
+          # the current Recalls sheet. Must match docs/index.html RICH_LIMIT.
+          FSIS_WEEKLY_VISIBLE: "4"
+        run: |
+          python -m pipeline.build_missing_weekly_reports \
+            --this-week-end "$THIS_WEEK_END" \
+            --from "${BACKFILL_FROM:-}" \
+            --xlsx docs/data/recalls.xlsx \
+            --docs-dir docs \
+            --builder docs/build_weekly_report_afts.py
+
+      - name: Force-build single week (manual dispatch)
+        if: steps.guard.outputs.run == 'true' && github.event.inputs.force_week_end != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python docs/build_weekly_report_afts.py \
+            --week-end "${{ github.event.inputs.force_week_end }}" \
+            --xlsx     docs/data/recalls.xlsx \
+            --index    docs/index.html
+
+      - name: Commit outputs
+        if: steps.guard.outputs.run == 'true'
+        run: |
+          git config --local user.email "fsis-bot@advfood.tech"
+          git config --local user.name  "AFTS Intelligence System"
+          # Subscriber PDFs decommissioned 2026-05-02 — HTML is the
+          # canonical deliverable. Browser print-to-PDF gives users a
+          # better result than WeasyPrint did, and the live HTML is
+          # what subscribers click in the email.
+          git add 'docs/20*-W*.html' \
+                  docs/data/weekly-summary-latest.json \
+                  docs/data/weekly-index.json \
+                  docs/index.html || true
+          if git diff --staged --quiet; then
+            echo "No weekly-report changes to commit."
+            exit 0
+          fi
+          COMMIT_MSG="AFTS Weekly Report build $(TZ=Europe/Athens date +%Y-%m-%d)"
+          git commit -m "$COMMIT_MSG"
+
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed — pull and retry..."
+            git pull --rebase --autostash origin main
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: git push failed after 3 attempts."
+          exit 1
+
+      - name: Summary
+        if: steps.guard.outputs.run == 'true' && always()
+        run: |
+          echo "Weekly run complete — Athens time $(TZ=Europe/Athens date)."
+          echo "Apps Script mailer fires 12:00 Athens reading weekly-summary-latest.json."

@@ -1,0 +1,2139 @@
+{
+  "entries": [
+    {
+      "ts": "2026-05-31T07:12:41Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-05-31T07:12:44Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-05-31T07:12:48Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-05-31T07:12:52Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-05-31T07:12:55Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-01T07:12:43Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-01T07:12:47Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-01T07:12:50Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-01T07:12:54Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-01T07:12:57Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-02T07:12:42Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-02T07:12:46Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-02T07:12:50Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-02T07:12:53Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-02T07:12:57Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-03T07:12:42Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-03T07:12:45Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-03T07:12:49Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-03T07:12:53Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-03T07:12:57Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-04T07:12:43Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-04T07:12:48Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-04T07:12:51Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-04T07:12:55Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-04T07:12:59Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-05T07:12:45Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-05T07:12:48Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-05T07:12:51Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-05T07:12:55Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-05T07:12:59Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-06T07:27:50Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-06T07:27:54Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-06T07:27:58Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-06T07:28:01Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-06T07:28:04Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-07T07:12:39Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-07T07:12:43Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-07T07:12:46Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-07T07:12:50Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-07T07:12:54Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-08T07:12:43Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-08T07:12:46Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-08T07:12:50Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-08T07:12:54Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-08T07:12:58Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-09T07:12:46Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-09T07:12:50Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-09T07:12:53Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-09T07:12:56Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-09T07:13:00Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-10T07:12:42Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-10T07:12:46Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-10T07:12:50Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-10T07:12:54Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-10T07:12:58Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-11T07:12:39Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-11T07:12:42Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-11T07:12:46Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-11T07:12:49Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-11T07:12:53Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-12T07:12:45Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-12T07:12:48Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-12T07:12:52Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-12T07:12:56Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-12T07:12:59Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-13T07:12:42Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-13T07:12:45Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-13T07:12:49Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-13T07:12:52Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-13T07:12:56Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-14T07:12:41Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-14T07:12:45Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-14T07:12:48Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-14T07:12:52Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-14T07:12:55Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-15T07:12:43Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-15T07:12:46Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-15T07:12:49Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-15T07:12:53Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-15T07:12:57Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-16T07:12:51Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-16T07:12:55Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-16T07:12:59Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-16T07:13:03Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-16T07:13:07Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-17T07:12:46Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-17T07:12:50Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-17T07:12:54Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-17T07:12:58Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-17T07:13:02Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-18T07:12:41Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-18T07:12:44Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-18T07:12:48Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-18T07:12:51Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-18T07:12:55Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-19T07:12:47Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-19T07:12:50Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-19T07:12:54Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-19T07:12:58Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-19T07:13:01Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-20T07:12:42Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-20T07:12:46Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-20T07:12:50Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-20T07:12:55Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-20T07:12:58Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-21T07:12:39Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-21T07:12:42Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-21T07:12:46Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-21T07:12:49Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-21T07:12:53Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-22T07:12:41Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-22T07:12:45Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-22T07:12:49Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-22T07:12:53Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-22T07:12:57Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-23T07:13:01Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-23T07:13:05Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-23T07:13:09Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-23T07:13:12Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-23T07:13:16Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-24T07:12:44Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-24T07:12:48Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-24T07:12:51Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-24T07:12:55Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-24T07:12:59Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-25T07:12:47Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-25T07:12:51Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-25T07:12:54Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-25T07:12:57Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-25T07:13:01Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-26T07:09:38Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-26T07:09:42Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-26T07:09:46Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-26T07:09:50Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-26T07:09:54Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-27T07:09:38Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-27T07:09:41Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-27T07:09:45Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-27T07:09:49Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-27T07:09:54Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-28T07:09:33Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-28T07:09:37Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-28T07:09:41Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-28T07:09:45Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-28T07:09:49Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-29T07:09:42Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-29T07:09:46Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-29T07:09:49Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-29T07:09:55Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-29T07:09:59Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-30T07:09:34Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-30T07:09:39Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-30T07:09:44Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-30T07:09:47Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-06-30T07:09:52Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-01T07:09:48Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-01T07:09:54Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-01T07:09:59Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-01T07:10:04Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-01T07:10:09Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-02T07:10:31Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-02T07:10:34Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-02T07:10:38Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-02T07:10:42Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-02T07:10:45Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-03T07:10:29Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-03T07:10:35Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-03T07:10:40Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-03T07:10:45Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-03T07:10:50Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-04T07:10:34Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-04T07:10:39Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-04T07:10:44Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-04T07:10:48Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-04T07:10:53Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-05T07:10:23Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-05T07:10:28Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-05T07:10:32Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-05T07:10:36Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-05T07:10:40Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-06T07:10:24Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-06T07:10:27Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-06T07:10:32Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-06T07:10:37Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-06T07:10:42Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-07T07:10:22Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-07T07:10:23Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-07T07:10:23Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-07T07:10:23Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-07T07:10:23Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-08T07:10:18Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-08T07:10:19Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-08T07:10:19Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-08T07:10:19Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-08T07:10:19Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-09T07:10:19Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-09T07:10:19Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-09T07:10:19Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-09T07:10:19Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-09T07:10:19Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-10T07:10:16Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-10T07:10:16Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-10T07:10:16Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-10T07:10:16Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-10T07:10:16Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-11T07:10:19Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-11T07:10:19Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-11T07:10:19Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-11T07:10:19Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-11T07:10:19Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-12T07:10:17Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-12T07:10:17Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-12T07:10:17Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-12T07:10:17Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-12T07:10:17Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-13T07:10:22Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-13T07:10:23Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-13T07:10:23Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-13T07:10:23Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-13T07:10:23Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-14T07:10:21Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-14T07:10:21Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-14T07:10:21Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-14T07:10:21Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-14T07:10:21Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-15T07:10:27Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-15T07:10:27Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-15T07:10:27Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-15T07:10:28Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-15T07:10:28Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-16T07:10:21Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-16T07:10:21Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-16T07:10:22Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-16T07:10:22Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-16T07:10:22Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-17T07:10:31Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-17T07:10:35Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-17T07:10:40Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-17T07:10:44Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-17T07:10:48Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-18T07:10:34Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-18T07:10:38Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-18T07:10:42Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-18T07:10:46Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-18T07:10:51Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-19T07:10:35Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-19T07:10:39Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-19T07:10:43Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-19T07:10:47Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-19T07:10:51Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-20T07:10:29Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-20T07:10:35Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-20T07:10:39Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-20T07:10:43Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-20T07:10:47Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-21T07:10:35Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-21T07:10:39Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-21T07:10:42Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-21T07:10:45Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-21T07:10:49Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-22T07:10:38Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-22T07:10:45Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-22T07:10:49Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-22T07:10:54Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-22T07:10:59Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-23T07:10:25Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-23T07:10:30Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-23T07:10:34Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-23T07:10:38Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-23T07:10:43Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-24T07:10:34Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-24T07:10:39Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-24T07:10:45Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-24T07:10:49Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-24T07:10:53Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-25T07:10:27Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-25T07:10:31Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-25T07:10:35Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-25T07:10:40Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-25T07:10:44Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-26T07:10:32Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-26T07:10:37Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-26T07:10:42Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-26T07:10:46Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-26T07:10:51Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-27T07:10:31Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-27T07:10:35Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-27T07:10:39Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-27T07:10:44Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-27T07:10:48Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-28T07:10:36Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-28T07:10:40Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-28T07:10:45Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-28T07:10:49Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-28T07:10:54Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-29T07:10:45Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-29T07:10:49Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-29T07:10:52Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-29T07:10:56Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-29T07:11:00Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-30T07:10:49Z",
+      "eur": 0.0,
+      "region": "Europe",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-30T07:10:56Z",
+      "eur": 0.0,
+      "region": "NorthAmerica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-30T07:11:06Z",
+      "eur": 0.0,
+      "region": "LATAM",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-30T07:11:12Z",
+      "eur": 0.0,
+      "region": "AsiaPacific",
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "ts": "2026-07-30T07:11:23Z",
+      "eur": 0.0,
+      "region": "MiddleEastAfrica",
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ]
+}

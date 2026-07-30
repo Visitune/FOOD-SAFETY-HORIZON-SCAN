@@ -1,0 +1,92 @@
+{
+  "exported_at_utc": "2026-05-14T19:12:38.532736+00:00",
+  "git_sha": "98efa3a0d081796f17dfde0002992d49df77ba50",
+  "xlsx_path": "docs/data/recalls.xlsx",
+  "totals": {
+    "recalls_rows": 612,
+    "weekly_review_rows": 7,
+    "weekly_rejected_rows": 38,
+    "approved_after_filter": 612,
+    "rejected_after_filter": 38
+  },
+  "promote_classifier": {
+    "total": 650,
+    "train": 586,
+    "val": 64,
+    "labels": {
+      "promote": 612,
+      "reject": 38
+    },
+    "rejection_categories": {
+      "other": 36,
+      "http_error": 1,
+      "network": 1
+    },
+    "by_source_sheet": {
+      "Recalls": 612,
+      "Weekly_Rejected": 38
+    },
+    "by_weight_bucket": {
+      "1.0 (default)": 620,
+      "1.5+ (audit)": 7,
+      "2.0+ (manual)": 22,
+      "3.0+ (tier-fix)": 1
+    }
+  },
+  "tier_assignment": {
+    "total": 608,
+    "train": 549,
+    "val": 59,
+    "tier_distribution": {
+      "1": 428,
+      "2": 155,
+      "3": 25
+    },
+    "top_pathogens": {
+      "Listeria monocytogenes": 216,
+      "Salmonella": 155,
+      "Aflatoxin": 49,
+      "Ochratoxin": 27,
+      "Shiga toxin-producing E. coli (STEC)": 24,
+      "Cereulide (Bacillus cereus toxin)": 11,
+      "Norovirus": 10,
+      "Cereulide (B. cereus toxin)": 10,
+      "Salmonella spp.": 8,
+      "Clostridium botulinum": 7,
+      "Bacillus cereus / cereulide": 7,
+      "Histamine / scombrotoxin": 6,
+      "Escherichia coli (generic)": 4,
+      "Aflatoxins": 4,
+      "Bacillus cereus": 3
+    },
+    "by_source_sheet": {
+      "Recalls": 608
+    },
+    "by_weight_bucket": {
+      "1.0 (default)": 578,
+      "1.5+ (audit)": 7,
+      "2.0+ (manual)": 22,
+      "3.0+ (tier-fix)": 1
+    }
+  },
+  "field_corrections": {
+    "total": 47,
+    "train": 44,
+    "val": 3,
+    "field_distribution": {
+      "Pathogen": 11,
+      "Brand": 30,
+      "Company": 15,
+      "Product": 5,
+      "Date": 6
+    },
+    "by_source_sheet": {
+      "Recalls": 43,
+      "Weekly_Rejected": 4
+    },
+    "by_weight_bucket": {
+      "1.0 (default)": 46,
+      "1.5+ (audit)": 1
+    }
+  }
+}

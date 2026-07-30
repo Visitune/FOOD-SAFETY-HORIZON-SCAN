@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     Cloudflare Web Analytics — free, cookieless, no GDPR consent banner needed.
+     SETUP (one-time):
+       1. Sign in at https://dash.cloudflare.com (free account)
+       2. Analytics → Web Analytics → Add a site
+       3. Enter: gstoforos.github.io  (or whatever advfood.tech maps to)
+       4. Copy the token from the "JavaScript snippet" box
+       5. Find-replace __CF_BEACON_TOKEN__ across the repo:
+            find . -type f \( -name '*.html' -o -name '*.py' \) \
+              -exec sed -i 's/__CF_BEACON_TOKEN__/your-real-token-here/g' {} +
+       6. Commit + push. Analytics start populating within ~10 min.
+     If the placeholder is left in place, CF returns a 401 silently.
+     No pollution, no errors visible to subscribers. ═════════════════════════ -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "__CF_BEACON_TOKEN__"}'></script>
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!-- Cache-busting (see docs/index.html for full rationale): this page
+     is embedded inside Wix (advfood.tech/2026-recalls-market-withdrawals)
+     and Wix's CDN aggressively caches iframe contents. -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<title>Food Safety Intelligence System · Advanced Food-Tech Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,700;0,800;0,900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--bg:#03060e;--card:#0a1020;--card2:#0d1528;--acc:#00e5a0;--acc2:#00c9ff;--orange:#E8601A;--txt:#e2eaf8;--muted:#5a7090;--border:#0f2035;--pill-bg:rgba(0,229,160,.08);--pill-border:rgba(0,229,160,.25);}
+html,body{background:var(--bg);color:var(--txt);font-family:'Exo 2',sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden;margin:0;padding:0;}
+a{color:inherit;text-decoration:none;}
+.hero{text-align:center;padding:52px 24px 40px;display:flex;flex-direction:column;align-items:center;}
+.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--acc2);margin-bottom:14px;}
+.hero h1{font-size:36px;font-weight:800;line-height:1.15;margin-bottom:14px;}
+.hero h1 .hl{color:var(--acc);}
+.hero-sub{font-size:14px;color:var(--muted);max-width:520px;line-height:1.7;margin-bottom:24px;}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;background:var(--pill-bg);border:1px solid var(--pill-border);color:var(--acc);padding:6px 14px;border-radius:20px;}
+.badge.b2{background:rgba(0,201,255,.07);border-color:rgba(0,201,255,.2);color:var(--acc2);}
+.badge.b3{background:rgba(232,96,26,.07);border-color:rgba(232,96,26,.2);color:var(--orange);}
+.sec{padding:32px 24px;}
+.sec-label{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;}
+.sec-label .dot{width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;}
+.carousel-wrap{position:relative;padding:0 4px;}
+.carousel-viewport{overflow:hidden;}
+.carousel-track{display:flex;gap:16px;transition:transform .35s cubic-bezier(.4,0,.2,1);}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--card2);color:var(--txt);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;}
+.carousel-btn:hover{background:#1a2a44;}
+.carousel-btn.prev{left:-16px;} .carousel-btn.next{right:-16px;}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;}
+.carousel-dots span{width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;}
+.carousel-dots span.active{background:var(--acc);}
+.month-card{flex:0 0 calc(33.333% - 11px);min-width:220px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 18px 18px;display:flex;flex-direction:column;gap:6px;cursor:pointer;transition:border-color .25s,transform .2s;position:relative;overflow:hidden;}
+.month-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--acc2),var(--acc));}
+.month-card[data-stripe="1"]::before{background:linear-gradient(90deg,#7c3aed,#4f46e5);}
+.month-card[data-stripe="2"]::before{background:linear-gradient(90deg,#2563eb,#0ea5e9);}
+.month-card[data-stripe="3"]::before{background:linear-gradient(90deg,var(--acc2),var(--acc));}
+.month-card[data-stripe="4"]::before{background:linear-gradient(90deg,#374151,#4b5563);}
+.month-card:hover{border-color:rgba(0,229,160,.3);transform:translateY(-2px);}
+/* Live preview thumbnail at top of each card. The img is a server-side
+   screenshot of the actual report HTML (via thum.io); the parent div
+   holds a gradient fallback that shows if the screenshot fails to load
+   (the JS swaps in the .mc-thumb--fallback class via onerror). */
+.mc-thumb{position:relative;width:calc(100% + 36px);margin:-20px -18px 12px;height:140px;overflow:hidden;background:linear-gradient(135deg,#1a1f2e,#0f1219);border-bottom:1px solid var(--border);}
+.mc-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+.mc-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(15,18,25,.55));pointer-events:none;}
+/* Fallback "report cover" — shown when the live thum.io screenshot of
+   the subscriber HTML fails to load. JS swaps in a structured markup
+   block (.fb-* children) keyed off the card's data-stripe so each
+   month gets its own accent palette via CSS custom properties. */
+.mc-thumb--fallback{--fb:#00e5a0;--fb-soft:rgba(0,229,160,.06);--fb-line:rgba(0,229,160,.28);background:linear-gradient(180deg,#0a1424 0%,#050a14 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px 16px;}
+.month-card[data-stripe="1"] .mc-thumb--fallback{--fb:#a78bfa;--fb-soft:rgba(124,58,237,.08);--fb-line:rgba(124,58,237,.32);background:linear-gradient(180deg,#15102a 0%,#080612 100%);}
+.month-card[data-stripe="2"] .mc-thumb--fallback{--fb:#7dd3fc;--fb-soft:rgba(14,165,233,.08);--fb-line:rgba(14,165,233,.32);background:linear-gradient(180deg,#0a1830 0%,#040814 100%);}
+.month-card[data-stripe="4"] .mc-thumb--fallback{--fb:#9ca3af;--fb-soft:rgba(156,163,175,.08);--fb-line:rgba(156,163,175,.32);background:linear-gradient(180deg,#161a22 0%,#08090d 100%);}
+.mc-thumb--fallback::after{background:radial-gradient(ellipse at top right,var(--fb-soft),transparent 55%),radial-gradient(ellipse at bottom left,rgba(255,255,255,.025),transparent 55%);}
+.mc-thumb--fallback::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--fb) 50%,transparent);display:block;font-size:0;}
+.fb-eyebrow{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;color:var(--fb);text-transform:uppercase;display:flex;align-items:center;gap:7px;position:relative;z-index:1;}
+.fb-eyebrow::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--fb);box-shadow:0 0 8px var(--fb);}
+.fb-month{font-family:'Exo 2',sans-serif;font-size:38px;font-weight:900;line-height:.95;color:#fff;letter-spacing:-.02em;margin-top:6px;position:relative;z-index:1;}
+.fb-meta{display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;position:relative;z-index:1;gap:10px;}
+.fb-meta-left{display:flex;flex-direction:column;gap:5px;min-width:0;}
+.fb-year{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.1em;}
+.fb-bars{display:flex;gap:3px;align-items:flex-end;height:12px;width:60px;}
+.fb-bars span{flex:1;background:var(--fb);border-radius:1px;opacity:.6;}
+.fb-bars span:nth-child(1){height:35%;}.fb-bars span:nth-child(2){height:65%;}.fb-bars span:nth-child(3){height:90%;}.fb-bars span:nth-child(4){height:50%;}.fb-bars span:nth-child(5){height:75%;}
+.fb-key{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;color:var(--fb);letter-spacing:.06em;border:1px solid var(--fb-line);padding:2px 7px;border-radius:3px;background:var(--fb-soft);flex-shrink:0;}
+.mc-period{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.mc-title{font-size:17px;font-weight:800;line-height:1.2;color:#fff;}
+.mc-sub{font-size:12px;color:var(--muted);line-height:1.4;}
+.mc-pdf-badge{display:inline-flex;align-items:center;gap:5px;margin-top:6px;background:rgba(0,229,160,.09);border:1px solid rgba(0,229,160,.2);color:var(--acc);font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;width:fit-content;}
+.mc-stats{display:flex;gap:14px;margin-top:8px;}
+.mc-stat{display:flex;flex-direction:column;}
+.mc-num{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#fff;line-height:1;}
+.mc-num.am{color:#f59e0b;} .mc-num.rd{color:#ef4444;}
+.mc-lbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+.mc-pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;}
+.mc-pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;}
+.mc-pill.lis{background:rgba(77,171,247,.15);color:#4dabf7;border:1px solid rgba(77,171,247,.25);}
+.mc-pill.sal{background:rgba(255,107,107,.15);color:#ff8787;border:1px solid rgba(255,107,107,.25);}
+.mc-pill.eco{background:rgba(255,212,59,.15);color:#ffd43b;border:1px solid rgba(255,212,59,.25);}
+.mc-pill.bot{background:rgba(218,119,242,.15);color:#da77f2;border:1px solid rgba(218,119,242,.25);}
+.mc-cta{margin-top:auto;padding-top:12px;font-size:13px;font-weight:700;color:var(--acc);display:flex;align-items:center;gap:5px;}
+.mc-cta::after{content:'\2192';}
+.month-card.coming{opacity:.45;cursor:default;}
+.mc-coming-lbl{font-size:12px;color:var(--muted);font-style:italic;margin-top:8px;}
+.loading-card{flex:0 0 calc(33.333% - 11px);min-width:220px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;color:var(--muted);font-size:12px;text-align:center;min-height:200px;display:flex;align-items:center;justify-content:center;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.about-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;}
+.about-icon{font-size:22px;margin-bottom:10px;display:block;}
+.about-title{font-size:14px;font-weight:700;margin-bottom:6px;color:#fff;}
+.about-txt{font-size:12px;color:var(--muted);line-height:1.6;}
+.src-row{display:flex;flex-wrap:wrap;gap:8px;}
+.src-pill{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border);color:var(--txt);font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;}
+.arch-list{display:flex;flex-direction:column;gap:6px;}
+.arch-line{font-size:13px;color:var(--muted);padding:4px 0;}
+.arch-line:hover{color:var(--acc);}
+.site-footer{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-top:1px solid var(--border);margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em;}
+.footer-left a{color:var(--acc);font-weight:700;}
+@media(min-width:640px){.hero h1{font-size:44px;} .sec{padding:36px 32px;}}
+@media(max-width:540px){.month-card,.loading-card{flex:0 0 80vw;} .about-grid{grid-template-columns:1fr;} .site-footer{flex-direction:column;gap:10px;text-align:center;}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <p class="hero-eyebrow">AI-Powered Surveillance</p>
+  <h1>Food Safety<br/><span class="hl">Intelligence System</span></h1>
+  <p class="hero-sub">A global pathogen recall monitoring platform by Advanced Food-Tech Solutions. We track, curate, and rank major food product recalls, market withdrawals, and safety alerts &mdash; every month, worldwide.</p>
+  <div class="badges">
+    <span class="badge b2">&#x1F9EB; Pathogen-Focused</span>
+    <span class="badge b2">&#x1F30D; Multi-Region Coverage</span>
+    <span class="badge">&#10022; AI-Enriched Intelligence</span>
+    <span class="badge b3">&#9889; Monthly Reports</span>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-label"><span class="dot"></span>Monthly Reports &mdash; 2026</div>
+  <div class="carousel-wrap">
+    <button class="carousel-btn prev" onclick="scrollCar(-1)">&#8592;</button>
+    <button class="carousel-btn next" onclick="scrollCar(1)">&#8594;</button>
+    <div class="carousel-viewport"><div class="carousel-track" id="cTrack"><div class="loading-card">Loading&hellip;</div></div></div>
+    <div class="carousel-dots" id="cDots"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="sec-label">What is the Food Safety Intelligence System?</div>
+  <div class="about-grid">
+    <div class="about-card"><span class="about-icon">&#x1F9EB;</span><div class="about-title">Pathogen-Focused Monitoring</div><div class="about-txt">We track only pathogen-related recalls &mdash; Salmonella, Listeria monocytogenes, E. coli O157:H7, and other biological hazards. Allergen, label, and foreign material incidents are excluded.</div></div>
+    <div class="about-card"><span class="about-icon">&#x1F30D;</span><div class="about-title">Global Regulatory Coverage</div><div class="about-txt">Data cross-referenced monthly from FDA (USA), EFSA/RASFF (EU), FSA UK, CFIA (Canada), and FSANZ (Australia/New Zealand).</div></div>
+    <div class="about-card"><span class="about-icon">&#10022;</span><div class="about-title">AI-Enriched Intelligence</div><div class="about-txt">Each recall validated and enriched using AI &mdash; normalising pathogen strain names, verifying geographic data, repairing source links, and ranking by severity.</div></div>
+    <div class="about-card"><span class="about-icon">&#x1F4CA;</span><div class="about-title">Monthly Ranked Reports</div><div class="about-txt">Every month: a curated Top 10 recall list, full pathogen breakdown, regional statistics, and trend analysis for food safety professionals worldwide.</div></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="sec-label">Data Sources</div>
+  <div class="src-row">
+    <span class="src-pill">&#127482;&#127480; FDA / iRES</span>
+    <span class="src-pill">&#127466;&#127482; EFSA / RASFF</span>
+    <span class="src-pill">&#127468;&#127463; FSA UK</span>
+    <span class="src-pill">&#127464;&#127462; CFIA</span>
+    <span class="src-pill">&#127462;&#127482; FSANZ</span>
+    <span class="src-pill">&#127760; Regional Authorities</span>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="sec-label">Previous Archives</div>
+  <div class="arch-list">
+    <a class="arch-line" href="https://www.advfood.tech/2026-recalls-market-withdrawals" target="_blank" rel="noopener noreferrer">&rsaquo; Recalls, Market Withdrawals &amp; Safety Alerts 2026</a>
+    <a class="arch-line" href="https://www.advfood.tech/2025-recalls-market-withdrawals" target="_blank" rel="noopener noreferrer">&rsaquo; 2025 Recalls, Market Withdrawals &amp; Safety Alerts</a>
+    <a class="arch-line" href="https://www.advfood.tech/recalls-market-withdrawals-2024" target="_blank" rel="noopener noreferrer">&rsaquo; 2024 Recalls, Market Withdrawals &amp; Safety Alerts</a>
+    <a class="arch-line" href="https://www.advfood.tech/recalls-market-withdrawals-2023" target="_blank" rel="noopener noreferrer">&rsaquo; 2023 Recalls, Market Withdrawals &amp; Safety Alerts</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-left">Powered by <a href="https://www.advfood.tech" target="_blank" rel="noopener noreferrer">Advanced Food-Tech Solutions</a></div>
+  <div class="footer-right">&copy; 2026 ADVANCED FOOD-TECH SOLUTIONS</div>
+</footer>
+
+<script>
+/* ──────────────────────────────────────────────
+   FULLY AUTOMATED CARD RENDER
+   Reads monthly-index.json from same GitHub Pages
+   deployment. Jan/Feb pinned to legacy Wix PDFs.
+   Mar+ auto-link to 2026-MXX.html on same origin.
+   ────────────────────────────────────────────── */
+var IDX_URL = 'data/monthly-index.json';
+// Public site URL — used to build absolute URLs for thum.io thumbnail
+// previews and any other external integrations. Must match the
+// GitHub Pages deployment target.
+var SITE_URL = 'https://fsis.advfood.tech';
+
+/* Legacy Jan/Feb PDFs hosted on Wix (one-time, never changed).
+   M03 was migrated to the auto-generated marketing PDF on
+   2026-05-02 — its pdf_url now lives in monthly-index.json
+   alongside April and every future automated month. */
+var LEGACY_PDF = {
+  '2026-M01':'https://www.advfood.tech/_files/ugd/2f8d35_ba11aad7c3b04e628aee49ea60708931.pdf',
+  '2026-M02':'https://www.advfood.tech/_files/ugd/2f8d35_990e8bcb73474933945b1531dd45dbd6.pdf'
+};
+
+function mkey(e){ return e.year+'-M'+String(e.month_num).padStart(2,'0'); }
+
+function linkFor(entry){
+  var key = mkey(entry);
+  // 1. manifest pdf_url (set by the pipeline for new months)
+  // 2. LEGACY_PDF map (Jan/Feb/Mar Wix-hosted PDFs)
+  // Never link to the full HTML report — that's for subscribers only.
+  var url = entry.pdf_url || LEGACY_PDF[key] || null;
+  return { href: url, isPdf: !!url };
+}
+
+function pathogenPills(tp){
+  if (!tp) return '<span class="mc-pill lis">Listeria</span><span class="mc-pill sal">Salmonella</span><span class="mc-pill eco">E. coli</span>';
+  var p = tp.toLowerCase(), cls='lis';
+  if (p.indexOf('salmonella')!==-1) cls='sal';
+  else if (p.indexOf('e. coli')!==-1 || p.indexOf('stec')!==-1) cls='eco';
+  else if (p.indexOf('botulinum')!==-1) cls='bot';
+  return '<span class="mc-pill '+cls+'">'+tp.replace(/ spp\.?$/,'')+'</span>';
+}
+
+/* Fallback report-cover renderer. Called by the thumb <img>'s onerror
+   when thum.io fails or 504s. Reads data-period ("FEBRUARY 2026") and
+   data-key ("2026-M02") from the .mc-thumb wrapper, then swaps in a
+   structured cover (eyebrow + month + year/bars/key) styled by the
+   .mc-thumb--fallback CSS block. Per-stripe accent comes via the
+   parent card's data-stripe attribute. */
+function thumbFallback(img){
+  var div = img.parentElement;
+  var period = (div.getAttribute('data-period')||'').split(' ');
+  var month = period[0]||'';
+  var year = period[1]||'';
+  var key = (div.getAttribute('data-key')||'').replace(/^\d{4}-/, '');
+  div.classList.add('mc-thumb--fallback');
+  div.innerHTML =
+      '<div class="fb-eyebrow">FSIS &middot; Intel Report</div>'
+    + '<div class="fb-month">'+month+'</div>'
+    + '<div class="fb-meta">'
+    +   '<div class="fb-meta-left">'
+    +     '<div class="fb-year">'+year+'</div>'
+    +     '<div class="fb-bars"><span></span><span></span><span></span><span></span><span></span></div>'
+    +   '</div>'
+    +   '<div class="fb-key">'+key+'</div>'
+    + '</div>';
+}
+
+function renderCard(e, stripe){
+  var lnk = linkFor(e);
+  if (!lnk.href) return '';  // no PDF yet → omit card entirely
+  var hasStats = e.total != null && e.tier1 != null && e.outbreaks != null;
+  var stats = hasStats
+    ? '<div class="mc-stats">'
+      + '<div class="mc-stat"><span class="mc-num">'+e.total+'</span><span class="mc-lbl">Total Recalls</span></div>'
+      + '<div class="mc-stat"><span class="mc-num am">'+e.tier1+'</span><span class="mc-lbl">Class I</span></div>'
+      + '<div class="mc-stat"><span class="mc-num rd">'+e.outbreaks+'</span><span class="mc-lbl">Outbreak-Linked</span></div>'
+      + '</div>'
+    : '';
+
+  // Thumbnail preview — live screenshot of the actual subscriber HTML
+  // page. Replaces the arrow-only CTA with a visible mini-preview of
+  // the real report so visitors see what they're about to download.
+  // thum.io renders 800x600 PNG of the URL; we cache 1 day.
+  var reportPageUrl = SITE_URL + '/' + e.filename;
+  var thumbUrl = 'https://image.thum.io/get/width/520/crop/680/maxAge/24/'
+               + encodeURIComponent(reportPageUrl);
+  var thumb = '<div class="mc-thumb" data-period="'+e.month_name+'" data-key="'+mkey(e)+'">'
+            + '<img src="'+thumbUrl+'" alt="Preview of '+e.month_name+' report" '
+            + 'loading="lazy" '
+            + 'onerror="thumbFallback(this)">'
+            + '</div>';
+
+  return '<a class="month-card" data-stripe="'+stripe+'" href="'+lnk.href+'" target="_blank" rel="noopener noreferrer">'
+    + thumb
+    + '<div class="mc-period">'+e.month_name+'</div>'
+    + '<div class="mc-title">Recalls &amp; Safety Alerts</div>'
+    + '<div class="mc-sub">Market withdrawals &amp; safety alerts</div>'
+    + (lnk.isPdf ? '<div class="mc-pdf-badge">&#128196; PDF Report</div>' : '')
+    + stats
+    + '<div class="mc-pills">'+pathogenPills(e.top_pathogen)+'</div>'
+    + '<span class="mc-cta">Download Report</span>'
+    + '</a>';
+}
+
+function renderComing(label){
+  return '<div class="month-card coming"><div class="mc-period">'+label+'</div><div class="mc-title">Coming Soon</div><div class="mc-coming-lbl">Published 1st of next month</div></div>';
+}
+
+var _cur = 0;
+function visibleCount(){
+  var t = document.getElementById('cTrack');
+  if (!t || !t.children.length) return 1;
+  var cw = t.children[0].offsetWidth;
+  var vw = t.parentElement.offsetWidth;
+  if (!cw || !vw) return 1;
+  return Math.max(1, Math.round(vw / cw));
+}
+function scrollCar(d){ goTo(_cur+d); }
+function goTo(i){
+  var t = document.getElementById('cTrack');
+  var vis = visibleCount();
+  var max = Math.max(0, t.children.length - vis);
+  _cur = Math.max(0, Math.min(max, i));
+  t.style.transform = 'translateX(-'+(_cur*(t.children[0].offsetWidth+16))+'px)';
+  var d = document.getElementById('cDots').children;
+  for (var j=0;j<d.length;j++) d[j].className = j===_cur?'active':'';
+}
+
+function render(index){
+  index.sort(function(a,b){ return (a.month_end||'').localeCompare(b.month_end||''); });
+  var track = document.getElementById('cTrack');
+  var html = '';
+  index.forEach(function(e,i){ html += renderCard(e, (i%4)+1); });
+  // no "coming soon" — cards only appear when the 1-page PDF is published
+  track.innerHTML = html;
+  var vis = visibleCount();
+  var pages = Math.max(1, track.children.length - vis + 1);
+  var dots = document.getElementById('cDots'); dots.innerHTML = '';
+  for (var i=0;i<pages;i++){
+    var s = document.createElement('span'); if(i===0) s.className='active';
+    s.setAttribute('data-i',i); s.onclick = function(){ goTo(+this.getAttribute('data-i')); };
+    dots.appendChild(s);
+  }
+  _cur = 0;
+}
+
+window.addEventListener('resize', function(){
+  // re-render dots when viewport changes (mobile rotate, desktop resize)
+  var track = document.getElementById('cTrack');
+  if (!track || track.querySelector('.loading-card')) return;
+  var vis = visibleCount();
+  var pages = Math.max(1, track.children.length - vis + 1);
+  var dots = document.getElementById('cDots');
+  if (dots.children.length === pages) return;
+  dots.innerHTML = '';
+  for (var i=0;i<pages;i++){
+    var s = document.createElement('span');
+    if(i===0) s.className='active';
+    s.setAttribute('data-i',i);
+    s.onclick = function(){ goTo(+this.getAttribute('data-i')); };
+    dots.appendChild(s);
+  }
+  _cur = 0; goTo(0);
+});
+
+fetch(IDX_URL, {cache:'no-store'})
+  .then(function(r){ return r.ok ? r.json() : null; })
+  .then(function(idx){ render(Array.isArray(idx) && idx.length ? idx : []); })
+  .catch(function(){ render([]); });
+
+// Notify parent (Wix iframe) of height changes so it can resize
+function sendH(){
+  var h = document.body.scrollHeight;
+  if (window.parent !== window) window.parent.postMessage({type:'fsis-resize',height:h}, '*');
+}
+window.addEventListener('load', sendH);
+window.addEventListener('resize', sendH);
+new MutationObserver(sendH).observe(document.body,{childList:true,subtree:true});
+</script>
+</body>
+</html>

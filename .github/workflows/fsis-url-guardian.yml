@@ -1,0 +1,186 @@
+name: FSIS URL Guardian (every 4h)
+
+# Fires every 4 hours at 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 Athens —
+# 6 runs/day, dispatched by the Apps Script FsisScheduler project. This
+# workflow itself is workflow_dispatch only.
+#
+# Tasks (audit 2026-05-07):
+#   1. Validate URLs on PENDING rows (blanks truly-broken 4xx/5xx, keeps
+#      bot-blocked 403s from known gov domains)
+#   2. Commit updated xlsx back to the repo (recalls.json untouched —
+#      run_all.py is the sole authority for mirroring Recalls -> JSON)
+#
+# Retired components (still in code as dead/inert):
+#   - OpenAI gap-finder: retired Apr 2026; tavily/exa/gemini gap-finders
+#     handle this in dedicated workflows.
+#   - Claude Tier-1 spot-check: disabled 2026-05-07; the daily
+#     claude-check.yml workflow at 07:00 Athens covers Tier-1 verification.
+#
+# Cost: $0/run. URL health is HTTP HEAD/GET only — no LLM calls.
+#
+# CRITICAL FIX 2026-05-20 — STOMP REGRESSION
+# ===========================================
+# At 17:14 Athens on 2026-05-20, this workflow silently overwrote
+# claude-check's 17:12 commit (663 Recalls + 11 promoted + 31 archived)
+# back to 652 Recalls. Root cause: the previous "binary-safe retry" at
+# the bottom of this file did pure binary overwrite (cp /tmp/our.xlsx
+# docs/data/recalls.xlsx) of the freshly-pulled remote xlsx, destroying
+# every row the remote had that we didn't.
+#
+# news-feed.yml and merge-master.yml already use pipeline.xlsx_merge
+# for row-level union merge — they did not stomp. Guardian was the
+# only writer still doing binary overwrite. This file now uses the
+# same xlsx_merge pattern.
+#
+# Layer 3 verify (in pipeline.commit_github) only protects callers of
+# git_commit_and_push (claude-check, merge_master, scrapers). This
+# workflow commits inline from YAML, so it bypasses Layer 3. The fix
+# below makes the inline commit row-safe so a Layer 3 alarm isn't
+# needed to catch a stomp that can never happen.
+
+on:
+  workflow_dispatch:
+    inputs:
+      since_days:
+        description: "URL-check window in days"
+        required: false
+        default: "14"
+      gap_days:
+        description: "Gap-finder window in days"
+        required: false
+        default: "3"
+      skip_ai:
+        description: "Skip OpenAI/Claude passes (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  # IMPORTANT: share fsis-data-writers with every other workflow that
+  # modifies docs/data/recalls.xlsx or recalls.json. Having our own group
+  # (fsis-url-guardian) let this workflow race news-feed / merge-master
+  # and lose the push → "non-fast-forward" → workflow failure. Joining
+  # the shared group means GitHub queues us behind any in-flight writer.
+  group: fsis-data-writers
+  cancel-in-progress: false
+
+jobs:
+  guardian:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          pip install openpyxl requests
+
+      - name: Run URL Guardian
+        shell: bash
+        env:
+          # Anthropic key removed 2026-05-07 — Tier-1 Claude spot-check disabled.
+          # Guardian is now URL-health-only with no LLM cost.
+          # OpenAI key kept here (gap-finder already inert via find_missing_recalls=None;
+          # the env var costs nothing while the secret is untouched).
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GUARDIAN_SINCE_DAYS: ${{ github.event.inputs.since_days || '14' }}
+          GUARDIAN_GAP_DAYS: ${{ github.event.inputs.gap_days || '3' }}
+          GUARDIAN_SKIP_AI: ${{ github.event.inputs.skip_ai || 'false' }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -euo pipefail
+          echo "== Workspace layout =="
+          ls -la
+          echo "== docs/data/ =="
+          ls -la docs/data/ || echo "docs/data/ does not exist"
+          echo "== Running guardian =="
+          python -m pipeline.url_guardian \
+            --xlsx docs/data/recalls.xlsx \
+            --json docs/data/recalls.json
+
+      - name: Commit updated dataset
+        # ─────────────────────────────────────────────────────────────────────
+        # FIXED 2026-05-20 — was the source of the silent stomp on
+        # 2026-05-20 17:14 UTC. Old block did `cp /tmp/our.xlsx
+        # docs/data/recalls.xlsx` on retry, which destroys every row
+        # the remote has that we don't.
+        #
+        # New block mirrors news-feed.yml and merge-master.yml exactly:
+        # on push failure we row-union our xlsx with the freshly-pulled
+        # remote xlsx via pipeline.xlsx_merge, then re-commit the union.
+        # ─────────────────────────────────────────────────────────────────────
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config --local user.email "fsis-bot@advfood.tech"
+          git config --local user.name  "FSIS Bot"
+          git add docs/data/recalls.xlsx docs/data/recalls.json || true
+          if git diff --staged --quiet; then
+            echo "No changes this cycle."
+            exit 0
+          fi
+          COMMIT_MSG="URL guardian @ $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "$COMMIT_MSG"
+
+          # Safe push retry — row-level union merge instead of binary overwrite.
+          # (Old "binary-safe retry" silently destroyed remote rows that were
+          # added between our checkout and our push, e.g. claude-check's
+          # auto-promotion of Pending → Recalls. See 2026-05-20 stomp regression
+          # at the top of this file.)
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed — safe row-level merge retry..."
+            cp docs/data/recalls.xlsx /tmp/our-recalls.xlsx
+            cp docs/data/recalls.json /tmp/our-recalls.json 2>/dev/null || true
+            git reset --hard HEAD~1
+            git pull --ff-only origin main || git pull origin main
+            # Union our just-validated xlsx with the freshly-pulled remote.
+            # xlsx_merge is row-level union across all sheets — claude-check's
+            # 663-row Recalls + our URL-health updates (blanked 404 URLs,
+            # bot-blocked-403 stamps) merge into a single xlsx where no rows
+            # are lost on either side.
+            python -m pipeline.xlsx_merge \
+              docs/data/recalls.xlsx /tmp/our-recalls.xlsx docs/data/recalls.xlsx
+            # Regenerate the json mirror from the merged xlsx (same as
+            # merge-master.yml does — keeps json in lockstep with xlsx).
+            python -c "from pathlib import Path; \
+                       from pipeline.merge_master import mirror_json_from_xlsx; \
+                       mirror_json_from_xlsx(Path('docs/data/recalls.xlsx'), \
+                                              Path('docs/data/recalls.json'))" \
+              || echo "(json regen warning; continuing)"
+            git add docs/data/recalls.xlsx docs/data/recalls.json || true
+            if ! git diff --staged --quiet; then
+              git commit -m "$COMMIT_MSG (retry $attempt, row-merged)"
+            fi
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: git push failed after 3 attempts."
+          exit 1
+
+      - name: Upload run artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fsis-guardian-${{ github.run_id }}
+          path: |
+            docs/data/recalls.xlsx
+            docs/data/recalls.json
+          retention-days: 7

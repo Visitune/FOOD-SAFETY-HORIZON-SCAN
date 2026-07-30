@@ -1,0 +1,98 @@
+{
+  "filename": "2026-W30.html",
+  "report_url": "https://fsis.advfood.tech/2026-W30.html",
+  "dashboard_url": "https://www.advfood.tech/fsis-recalls",
+  "week_num": 30,
+  "year": 2026,
+  "week_start": "2026-07-17",
+  "week_end": "2026-07-23",
+  "week_start_display": "17 Jul",
+  "week_end_display": "23 Jul 2026",
+  "generated_utc": "2026-07-29T01:46:30.563943+00:00",
+  "stats": {
+    "total": 68,
+    "tier1": 57,
+    "outbreaks": 3,
+    "delta": 13,
+    "delta_pct": 24
+  },
+  "leading_pathogen": {
+    "name": "Listeria monocytogenes",
+    "cases": 38,
+    "pct": 56
+  },
+  "ai_lead_paragraph": "",
+  "top_threats": [
+    {
+      "rank": 1,
+      "date": "2026-07-22",
+      "pathogen": "Salmonella",
+      "pathogen_raw": "Salmonella",
+      "tier": 1,
+      "outbreak": true,
+      "company": "Midwest Poultry Services, L.P.",
+      "brand": "Kroger / Simple Truth / Brookshire's / Country Morning / Sunups (multiple)",
+      "product": "White shell eggs & brown cage-free shell eggs, 1,589,577 dozen (codes P-1950 or 0840962, Julian 157-184, best/sell-by 2026-07-20 to 2026-08-17)",
+      "country": "United States",
+      "source": "FDA",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/midwest-poultry-services-lp-recalls-shell-eggs-due-possible-salmonella-enteritidis-contamination"
+    },
+    {
+      "rank": 2,
+      "date": "2026-07-20",
+      "pathogen": "Salmonella",
+      "pathogen_raw": "Salmonella",
+      "tier": 1,
+      "outbreak": true,
+      "company": "Multiple chicken suppliers (under EODY/regional investigation)",
+      "brand": "Multiple",
+      "product": "Chicken fillet and chicken souvlaki (multiple suppliers, Lamia)",
+      "country": "Greece",
+      "source": "Region of Central Greece / EODY",
+      "url": "https://www.foodsafetynews.com/2026/07/greece-reports-salmonella-outbreak-and-2025-figures/"
+    },
+    {
+      "rank": 3,
+      "date": "2026-07-18",
+      "pathogen": "Cyclospora",
+      "pathogen_raw": "Cyclospora",
+      "tier": 1,
+      "outbreak": true,
+      "company": "Taylor Fresh Foods",
+      "brand": "CV / JB / MARK / MKTSD / PK / SUB / SY / TF",
+      "product": "Iceberg lettuce from central Mexico (shredded/chopped/blend food-service & retail; multiple lot codes, best-by 7/16/2026–8/3/2026)",
+      "country": "United States",
+      "source": "FDA",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/taylor-fresh-foods-recalls-iceberg-lettuce-central-mexico-because-possible-health-risk"
+    },
+    {
+      "rank": 4,
+      "date": "2026-07-23",
+      "pathogen": "Listeria monocytogenes",
+      "pathogen_raw": "Listeria monocytogenes",
+      "tier": 1,
+      "outbreak": false,
+      "company": "Carrefour France",
+      "brand": "CARREFOUR",
+      "product": "crevettes cuites 25/35 vendues au rayon traditionnel",
+      "country": "France",
+      "source": "RappelConso (FR)",
+      "url": "https://rappel.conso.gouv.fr/fiche-rappel/22938/Interne"
+    },
+    {
+      "rank": 5,
+      "date": "2026-07-23",
+      "pathogen": "Listeria monocytogenes",
+      "pathogen_raw": "Listeria monocytogenes",
+      "tier": 1,
+      "outbreak": false,
+      "company": "Auchan",
+      "brand": "Auchan",
+      "product": "auchan langue de porc en gelee tranchee 180g",
+      "country": "France",
+      "source": "RappelConso (FR)",
+      "url": "https://rappel.conso.gouv.fr/fiche-rappel/22932/Interne"
+    }
+  ],
+  "country_count": 15
+}

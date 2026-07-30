@@ -1,0 +1,2878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFTS Food Safety Hazard &amp; Pathogen Intelligence Briefing &middot; Week 15, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --black:#0a0e1a; --orange:#E8601A;
+  --ink:#111827; --body:#1f2937; --muted:#6b7280; --dim:#9ca3af;
+  --bg:#ffffff; --s1:#f9fafb; --s2:#f3f4f6; --brd:#e5e7eb;
+  --red:#dc2626; --amber:#f59e0b; --violet:#9333ea; --green:#059669;
+}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; background:var(--bg); }
+body {
+  font-family:'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color:var(--body); font-size:14px; line-height:1.65;
+  max-width:1180px; margin:0 auto; padding:0 40px 60px;
+}
+a { color:var(--orange); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.masthead {
+  border-top:6px solid var(--black);
+  padding:28px 0 22px;
+  display:flex; justify-content:space-between; align-items:flex-start;
+  border-bottom:1px solid var(--brd);
+  margin-bottom:32px;
+}
+.brand-block .brand {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:24px;
+  color:var(--black); letter-spacing:-0.01em; text-transform:uppercase;
+  line-height:1.1;
+}
+.brand-block .brand em { color:var(--orange); font-style:normal; font-weight:800; }
+.brand-block .tagline {
+  font-family:'DM Mono', monospace; font-size:10px; font-weight:600;
+  color:var(--muted); text-transform:uppercase; letter-spacing:0.14em;
+  margin-top:8px;
+}
+.mast-right { text-align:right; }
+.report-label {
+  display:inline-block; background:var(--black); color:#fff;
+  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  padding:5px 11px; letter-spacing:0.12em; text-transform:uppercase;
+  margin-bottom:10px;
+}
+.report-meta {
+  font-family:'DM Mono', monospace; font-size:11px;
+  color:var(--muted); line-height:1.8;
+}
+.report-meta strong { color:var(--ink); font-weight:700; }
+
+.r-title {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:38px;
+  color:var(--black); letter-spacing:-0.02em; line-height:1.15;
+  margin:2px 0 10px;
+}
+.r-title .accent { color:var(--orange); }
+.r-kicker {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:13px;
+  color:var(--black); letter-spacing:0.08em; text-transform:uppercase;
+  margin:8px 0 6px;
+}
+.r-kicker-dot { color:var(--orange); font-style:normal; margin:0 2px; }
+.r-sub {
+  color:var(--muted); font-size:14px; margin-bottom:16px;
+}
+.r-sub strong { color:var(--ink); font-weight:600; }
+.r-authority {
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  padding:10px 14px; background:var(--s1); border-left:3px solid var(--orange);
+  font-family:'DM Mono', monospace; font-size:11px; color:var(--ink);
+  margin-bottom:30px;
+}
+.auth-label {
+  font-size:9px; font-weight:700; color:var(--orange);
+  text-transform:uppercase; letter-spacing:0.14em;
+  border-right:1px solid var(--brd); padding-right:10px;
+}
+
+.kpi-strip {
+  display:grid; grid-template-columns:repeat(4, 1fr);
+  gap:1px; background:var(--brd); border:1px solid var(--brd);
+  margin-bottom:32px;
+}
+.kpi { background:#fff; padding:22px 20px; }
+.kpi-label {
+  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  color:var(--muted); text-transform:uppercase; letter-spacing:0.1em;
+  margin-bottom:8px;
+}
+.kpi-value {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:42px;
+  color:var(--black); line-height:1; letter-spacing:-0.02em;
+}
+.kpi-value.red { color:var(--red); }
+.kpi-value.violet { color:var(--violet); }
+.kpi-value.orange { color:var(--orange); font-size:20px; line-height:1.2; font-style:italic; }
+.kpi-value a { color:inherit; text-decoration:none; border-bottom:2px solid var(--orange); padding-bottom:1px; }
+.kpi-value a:hover { opacity:0.8; text-decoration:none; }
+.kpi-delta {
+  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  margin-top:10px; letter-spacing:0.04em;
+}
+.kpi-top { font-size:11px; color:var(--muted); margin-top:10px; font-style:italic; }
+
+.sec-head {
+  display:flex; align-items:baseline; gap:14px;
+  margin:40px 0 16px;
+}
+.sec-num {
+  font-family:'DM Mono', monospace; font-size:11px; font-weight:700;
+  color:var(--orange); letter-spacing:0.12em;
+}
+.sec-title {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:22px;
+  color:var(--black); letter-spacing:-0.01em;
+}
+.sec-rule { flex:1; height:1px; background:var(--brd); }
+.sec-caption { color:var(--muted); font-size:13px; margin:-4px 0 14px; }
+.sec-caption em { color:var(--ink); font-style:italic; }
+
+.analysis {
+  background:var(--s1); border-left:4px solid var(--orange);
+  padding:26px 30px; margin-bottom:10px;
+}
+.analysis p { margin:0 0 14px; font-size:14.5px; line-height:1.75; }
+.analysis p:last-child { margin-bottom:0; }
+.analysis p.pa-note {
+  margin:18px -30px 0 -30px; padding:18px 30px 2px 30px;
+  background:#fff; border-top:1px solid var(--brd);
+  font-size:13.5px; line-height:1.7;
+}
+.analysis p.pa-note .pa-label {
+  display:inline; font-family:'DM Mono', monospace; font-weight:700;
+  letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--red); font-size:10px; margin-right:8px;
+}
+
+table.data {
+  width:100%; border-collapse:collapse; margin:0 0 10px;
+  background:#fff; border:1px solid var(--brd);
+  font-size:13px;
+}
+table.data th {
+  background:var(--black); color:#fff;
+  font-family:'DM Mono', monospace; font-size:10px; font-weight:700;
+  text-transform:uppercase; letter-spacing:0.1em;
+  padding:12px 12px; text-align:left; border-bottom:2px solid var(--orange);
+}
+table.data td {
+  padding:14px 12px; border-bottom:1px solid var(--brd);
+  vertical-align:top;
+}
+table.data tr:last-child td { border-bottom:none; }
+table.data tr:nth-child(even) td { background:#fafbfc; }
+table.data td.num {
+  font-family:'DM Mono', monospace; font-weight:600; text-align:right;
+  white-space:nowrap;
+}
+table.data td.empty {
+  text-align:center; color:var(--muted); padding:28px; font-style:italic;
+}
+
+/* Top 5 column sizing - keeps table within A4 and desktop viewport */
+table.top5 { table-layout:fixed; width:100%; }
+table.top5 th:nth-child(1), table.top5 td:nth-child(1) { width:5%;  }  /* # */
+table.top5 th:nth-child(2), table.top5 td:nth-child(2) { width:9%;  }  /* Date */
+table.top5 th:nth-child(3), table.top5 td:nth-child(3) { width:19%; }  /* Pathogen */
+table.top5 th:nth-child(4), table.top5 td:nth-child(4) { width:18%; }  /* Company */
+table.top5 th:nth-child(5), table.top5 td:nth-child(5) { width:30%; }  /* Product */
+table.top5 th:nth-child(6), table.top5 td:nth-child(6) { width:19%; }  /* Jurisdiction+Source */
+table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
+
+.rank-num {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:22px;
+  color:var(--orange); text-align:center;
+  white-space:nowrap; font-variant-numeric:tabular-nums;
+  letter-spacing:-0.02em;
+}
+.rank-num.rank-num--multi { font-size:18px; }
+.date-cell {
+  font-family:'DM Mono', monospace; font-size:11px; color:var(--muted);
+  white-space:nowrap;
+}
+.path-dot {
+  display:inline-block; width:9px; height:9px; border-radius:50%;
+  margin-right:7px; vertical-align:middle;
+}
+.path-name { font-weight:600; color:var(--ink); font-style:italic; }
+.co-cell strong { color:var(--black); font-weight:700; display:block; }
+.brand-sub { font-size:11px; color:var(--muted); margin-top:2px; font-style:italic; }
+.prod-cell { color:var(--body); }
+.juris-country { font-weight:600; color:var(--ink); }
+.src-sub {
+  font-family:'DM Mono', monospace; font-size:10px;
+  color:var(--muted); margin-top:3px;
+}
+.juris-link { margin-top:6px; }
+.chip-tier1 {
+  display:inline-block; background:var(--red); color:#fff;
+  font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+  padding:2px 6px; border-radius:2px; margin-left:6px; letter-spacing:0.06em;
+}
+.chip-tier2 {
+  display:inline-block; background:var(--amber); color:#fff;
+  font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+  padding:2px 6px; border-radius:2px; margin-left:6px; letter-spacing:0.06em;
+}
+.chip-outbreak {
+  display:inline-block; background:var(--violet); color:#fff;
+  font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+  padding:2px 6px; border-radius:2px; margin-left:4px; letter-spacing:0.06em;
+}
+.src-link {
+  font-family:'DM Mono', monospace; font-size:11px; font-weight:700;
+  color:var(--orange); letter-spacing:0.02em;
+}
+.src-na { color:var(--dim); font-family:'DM Mono', monospace; font-size:10px; font-style:italic; }
+
+.dist-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:10px;
+}
+.dist-grid h3 {
+  font-family:'DM Mono', monospace; font-size:11px; color:var(--muted);
+  text-transform:uppercase; letter-spacing:0.1em; margin:0 0 10px;
+}
+.bar-track {
+  width:100%; height:8px; background:var(--s2);
+  border-radius:1px; overflow:hidden;
+}
+.bar-fill { height:100%; }
+
+.cta-box {
+  margin:40px 0 30px;
+  padding:26px 30px;
+  background:var(--black); color:#fff;
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap:18px;
+}
+.cta-text { flex:1; min-width:280px; }
+.cta-text h3 {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:20px;
+  margin:0 0 6px; color:#fff; letter-spacing:-0.01em;
+}
+.cta-text p { margin:0; color:#d1d5db; font-size:13px; }
+.cta-btn {
+  background:var(--orange); color:#fff; font-family:'DM Mono', monospace;
+  font-size:11px; font-weight:700; padding:14px 22px;
+  text-transform:uppercase; letter-spacing:0.1em;
+  border:none; cursor:pointer; white-space:nowrap;
+}
+.cta-btn:hover { background:#d35416; text-decoration:none; color:#fff; }
+
+.meth {
+  background:var(--s1); border:1px solid var(--brd);
+  padding:22px 26px; margin-bottom:24px; font-size:13px;
+  color:var(--body);
+}
+.meth strong { color:var(--black); }
+.meth p { margin:0 0 10px; }
+.meth p:last-child { margin-bottom:0; }
+
+.footer {
+  margin-top:50px; padding-top:26px; border-top:2px solid var(--black);
+  display:flex; justify-content:space-between; align-items:flex-start;
+  flex-wrap:wrap; gap:20px; font-size:12px;
+}
+.foot-brand {
+  font-family:'Syne', sans-serif; font-weight:800; font-size:15px;
+  color:var(--black); text-transform:uppercase; letter-spacing:0.02em;
+}
+.foot-brand em { color:var(--orange); font-style:normal; }
+.foot-meta {
+  font-family:'DM Mono', monospace; font-size:10px;
+  color:var(--muted); line-height:1.8; margin-top:6px;
+}
+.foot-legal {
+  font-size:11px; color:var(--muted); max-width:440px;
+  text-align:right; line-height:1.6;
+}
+
+@media print {
+  /* Running footer on every printed page: process-authority attribution
+     anchors the AFTS differentiator visually throughout the document. */
+  @page {
+    size: A4;
+    margin: 14mm 14mm 18mm 14mm;
+    @bottom-left {
+      content: "AFTS · Food Safety Validation Intelligence";
+      font-family: 'DM Mono', monospace; font-size: 8pt; color: #6b7280;
+      letter-spacing: 0.04em;
+    }
+    @bottom-right {
+      content: "Page " counter(page) " / " counter(pages);
+      font-family: 'DM Mono', monospace; font-size: 8pt; color: #6b7280;
+      letter-spacing: 0.04em;
+    }
+  }
+  body { max-width:none; padding:0; margin:0; font-family:'Times New Roman', Times, serif; font-size:12pt; }
+  .cta-box { display:none; }
+
+  /* Lock print-mode layout: even if the browser's print page is narrow,
+     these must not collapse into mobile responsive layouts. */
+  .masthead { flex-direction:row !important; }
+  .mast-right { text-align:right !important; }
+  .kpi-strip { grid-template-columns:repeat(4, 1fr) !important; }
+  .dist-grid { display:block !important; grid-template-columns:1fr !important; gap:0 !important; }
+  .dist-grid > div { width:100% !important; display:block !important; }
+  .dist-grid > div:nth-child(2) { margin-top:18px !important; }
+  .dist-grid > div { page-break-inside:avoid; break-inside:avoid; }
+
+  /* Page 1 compression: tighten the above-the-fold so the first Intelligence
+     Analysis paragraph opens on page 1 rather than orphaning the heading. */
+  .masthead { border-top-width:4px; padding:18px 0 12px; margin-bottom:22px; }
+  .brand-block .brand { font-size:18px; }
+  .brand-block .tagline { font-size:10px; margin-top:5px; letter-spacing:0.12em; }
+  .report-label { font-size:9px; padding:4px 10px; margin-bottom:8px; }
+  .report-meta { font-size:10px; line-height:1.7; }
+  .r-kicker { font-size:12px; margin:6px 0 5px; letter-spacing:0.07em; }
+  .r-title { font-size:26px; margin:2px 0 8px; }
+  .r-sub { font-size:13px; margin-bottom:12px; line-height:1.55; }
+  .r-authority { padding:9px 12px; font-size:11px; margin-bottom:22px; }
+  .auth-label { font-size:8px; padding-right:9px; }
+  .kpi-strip { margin-bottom:24px; }
+  .kpi { padding:16px 14px; }
+  .kpi-label { font-size:9px; margin-bottom:6px; }
+  .kpi-value { font-size:28px; }
+  .kpi-value.orange { font-size:18px; }
+  .kpi-delta { font-size:9px; margin-top:7px; }
+  .kpi-top { font-size:10px; margin-top:7px; }
+  .sec-head { margin:28px 0 12px; page-break-after:avoid; break-after:avoid; }
+  .sec-num { font-size:10px; }
+  .sec-title { font-size:20px; white-space:nowrap; }
+  .analysis { padding:22px 26px; }
+  .analysis p { font-size:13px; margin:0 0 12px; line-height:1.7; }
+  .analysis p.pa-note { margin:14px -26px 0 -26px; padding:14px 26px 2px 26px; font-size:12px; line-height:1.65; }
+  .analysis p.pa-note .pa-label { font-size:9px; }
+
+  table.data th { background:var(--black) !important; color:#fff !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  /* Prevent any table row from splitting across a page break */
+  table.data tr { page-break-inside:avoid; break-inside:avoid; }
+  .analysis { border-left-width:3px; }
+  /* Top-5 print tightening - fit all 6 columns on A4 */
+  table.top5 { font-size:9px; page-break-inside:avoid; }
+  table.top5 th { padding:6px 5px; font-size:8px; }
+  table.top5 td { padding:6px 5px; line-height:1.35; }
+  table.top5 tr { page-break-inside:avoid; }
+  table.top5 .rank-num { font-size:14px; }
+  table.top5 .path-name { font-size:9px; }
+  table.top5 .date-cell { font-size:8px; }
+  table.top5 .prod-cell { font-size:9px; line-height:1.35; }
+  table.top5 .co-cell strong { font-size:9px; }
+  table.top5 .juris-country { font-size:9px; }
+  table.top5 .brand-sub, table.top5 .src-sub { font-size:8px; margin-top:1px; }
+  table.top5 .chip-tier1, table.top5 .chip-tier2, table.top5 .chip-outbreak { font-size:7px; padding:1px 3px; margin-left:3px; }
+  table.top5 .src-link { font-size:8px; }
+  table.top5 .juris-link { margin-top:3px; }
+  /* Tighten the caption above the Top 5 so more room for rows */
+  .sec-caption { font-size:10px; margin:-2px 0 8px; }
+  /* Force section boundaries on page breaks for clean 4-page distribution:
+     P1 = masthead + KPI + § 01 Analysis
+     P2 = § 02 Top 5
+     P3 = § 03 Distribution
+     P4 = § 04 Methodology + Footer */
+  section.page-break, div.page-break { page-break-before:always; }
+  .sec-head.break-before { page-break-before:always; break-before:page; }
+
+  /* Footer: switch from flex to a clean vertical stack for print.
+     WeasyPrint and some browser print engines overlap the two halves
+     when flex wraps at narrow widths - block layout avoids it entirely.
+     page-break-inside: avoid keeps brand block + disclaimer together on one page. */
+  .footer {
+    display:block !important;
+    margin-top:26px;
+    page-break-inside:avoid;
+    break-inside:avoid;
+  }
+  .footer > div { display:block !important; width:auto !important; }
+  .footer > div:first-child { margin-bottom:12px; }
+  .foot-legal {
+    text-align:left !important;
+    max-width:none !important;
+    padding-top:10px;
+    border-top:1px solid var(--brd);
+  }
+  /* Keep the methodology section with its adjacent section intact */
+  .meth { page-break-inside:avoid; break-inside:avoid; }
+}
+
+@media screen and (max-width:900px) {
+  body { padding:0 20px 40px; }
+  .kpi-strip { grid-template-columns:repeat(2,1fr); }
+  .dist-grid { grid-template-columns:1fr; }
+  .masthead { flex-direction:column; gap:16px; }
+  .mast-right { text-align:left; }
+  .r-title { font-size:28px; }
+}
+
+/* Mobile Top-5: switch from a 6-column table to stacked cards.
+   On phones, a horizontal table would either scroll sideways (bad UX) or
+   compress columns into unreadable widths. Instead, each row becomes a
+   card with labeled fields - all data visible, no horizontal scroll. */
+@media screen and (max-width:700px) {
+  table.top5, table.top5 thead, table.top5 tbody, table.top5 tr, table.top5 td {
+    display:block; width:auto !important;
+  }
+  /* Kill all fixed column widths - they would make card-mode cells unreadably narrow */
+  table.top5 th:nth-child(1), table.top5 td:nth-child(1),
+  table.top5 th:nth-child(2), table.top5 td:nth-child(2),
+  table.top5 th:nth-child(3), table.top5 td:nth-child(3),
+  table.top5 th:nth-child(4), table.top5 td:nth-child(4),
+  table.top5 th:nth-child(5), table.top5 td:nth-child(5),
+  table.top5 th:nth-child(6), table.top5 td:nth-child(6) {
+    width:auto !important;
+  }
+  table.top5 { border:none; table-layout:auto !important; }
+  table.top5 thead { display:none; }
+  table.top5 tr {
+    border:1px solid var(--brd); border-left:4px solid var(--orange);
+    background:#fff; margin-bottom:12px; padding:8px 4px;
+    position:relative;
+  }
+  table.top5 tr:nth-child(even) td { background:transparent; }
+  table.top5 td {
+    border:none !important; padding:7px 14px 7px 108px !important;
+    position:relative; min-height:28px;
+    word-wrap:normal; overflow-wrap:normal;
+  }
+  table.top5 td::before {
+    content:attr(data-label);
+    position:absolute; left:14px; top:7px; width:88px;
+    font-family:'DM Mono', monospace; font-size:9px; font-weight:700;
+    color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
+  }
+  /* Rank number sits in top-right corner as an orange badge */
+  table.top5 .rank-num {
+    position:absolute; top:8px; right:14px; padding:0 !important;
+    font-size:28px; min-height:0; text-align:right;
+  }
+  table.top5 .rank-num::before { display:none; }
+  table.top5 .date-cell { font-size:11px; }
+  table.top5 .path-name { font-size:13px; }
+  table.top5 .co-cell strong { font-size:13px; }
+  table.top5 .prod-cell { line-height:1.45; font-size:13px; }
+  table.top5 .juris-country { font-size:13px; }
+  table.top5 .juris-link { margin-top:6px; }
+}
+
+@media screen and (max-width:480px) {
+  body { padding:0 14px 30px; }
+  .kpi-strip { grid-template-columns:1fr 1fr; }
+  .kpi { padding:16px 14px; }
+  .kpi-value { font-size:28px; }
+  .r-title { font-size:24px; }
+  .analysis { padding:18px 20px; }
+  .analysis p { font-size:13px; }
+  .analysis p.pa-note { margin:14px -20px 0 -20px; padding:14px 20px 2px 20px; }
+}
+
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="brand-block">
+    <div class="brand">Advanced Food-Tech Solutions <em>&middot;</em> AFTS</div>
+    <div class="tagline">Food Safety Intelligence System &middot; Weekly Briefing</div>
+  </div>
+  <div class="mast-right">
+    <div class="report-label">Subscribers Edition</div>
+    <div class="report-meta">
+      <strong>ISSUE</strong> &middot; Week 15, 2026<br>
+      <strong>PERIOD</strong> &middot; 3 Apr &ndash; 9 Apr 2026<br>
+      <strong>UPDATED</strong> &middot; 28 Jul 2026
+    </div>
+  </div>
+</header>
+
+<div class="r-kicker">AFTS <span class="r-kicker-dot">&middot;</span> Food Safety Validation Intelligence</div>
+<h1 class="r-title">Food Safety Hazard &amp; Pathogen Surveillance <span class="accent">&middot;</span> Week 15</h1>
+<p class="r-sub">
+  AI-powered analysis of <strong>128</strong> regulatory recall actions across
+  <strong>15</strong> jurisdictions, aggregated from 66 primary sources
+  monitored continuously by the AFTS intelligence platform.
+</p>
+
+<div class="kpi-strip">
+  <div class="kpi">
+    <div class="kpi-label">Total Recalls</div>
+    <div class="kpi-value"><a href="#all-recalls">128</a></div>
+    <div class="kpi-delta" style="color:#dc2626">&#9650; +96 (+300%) vs prior week</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Tier-1 Critical</div>
+    <div class="kpi-value red">115</div>
+    <div class="kpi-delta" style="color:var(--muted)">Immediate public-health risk</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Active Outbreaks</div>
+    <div class="kpi-value violet">3</div>
+    <div class="kpi-delta" style="color:var(--muted)">Confirmed cluster events</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Leading Pathogen</div>
+    <div class="kpi-value orange">Listeria monocytogenes</div>
+    <div class="kpi-top">99 recall incidents &middot; 77% of total</div>
+  </div>
+</div>
+
+<div class="sec-head">
+  <span class="sec-num">&sect; 01</span>
+  <h2 class="sec-title">Intelligence Analysis</h2>
+  <span class="sec-rule"></span>
+</div>
+<div class="analysis">
+  <p>This week produced 128 food-safety hazard recall incidents across the AFTS monitoring network, with 115 classified as Tier-1 and 3 confirmed outbreak events. Listeria monocytogenes dominated the surveillance window, accounting for 99 of 128 incidents (77%). Although total activity may vary week to week, the high Tier-1 share indicates that serious microbiological and chemical hazards continue to drive regulatory action.</p>
+  <p>Outbreak watch: 3 confirmed cluster events tracked this week — Listeria monocytogenes linked to Feta PDO in barrel; Salmonella linked to Moringa Dietary Supplement; Salmonella linked to Spring rolls — Kaohsiung outbreak cluster. Although Listeria monocytogenes remained the leading incident driver, these outbreaks should remain under active monitoring given cross-border exposure potential.</p>
+  <p>Regulatory activity this week spanned multiple jurisdictions (RappelConso, CFIA, RASFF, FSA, FSAI, and national authorities), signalling continued inspection intensity. AFTS recommends that food manufacturers use this briefing as a prompt to re-verify the single highest-leverage control for their commodity this week and to confirm documentation packages are ready for rapid regulatory response.</p>
+<p class="pa-note"><span class="pa-label">Process Authority Note:</span> This window contains 99 Listeria monocytogenes incidents, with Amandis (France), GAEC La Ferme du Souheil (France), Arbutus Farms Kitchen / Jade Fine Foods (Canada) among those cited. Ready-to-eat (RTE) manufacturers — particularly deli, soft cheese and dairy (including raw-milk cheese), charcuterie and cured-meat, smoked and cured seafood, cooked-meat, refrigerated prepared salads, and cut produce — should review their environmental monitoring programme (EMP), Zone 1–4 sampling plan, and corrective-action triggers under Regulation (EC) No 2073/2005 as amended by Reg. (EU) 2024/2895 (applicable from 1 July 2026): for RTE foods able to support growth of Listeria monocytogenes, operators must demonstrate compliance throughout shelf life; where a business cannot demonstrate to the competent authority that levels remain ≤100 CFU/g, the applicable criterion is not detected in 25 g. Regulation (EC) No 852/2004 HACCP requirements and national RASFF notification obligations also apply. Parallel frameworks apply under CFIA Policy on Control of Listeria monocytogenes in Ready-to-Eat Foods and the SFCR Preventive Control Plan; retained EU Reg. 2073/2005, UK Food Hygiene Regulations, and FSA listeria-in-RTE control guidance. The process-authority deliverable for this hazard class is a validated lethality at the kill step (where one exists) or a documented post-lethality control programme where the organism cannot be eliminated in-pack. Typical compliance gaps: incomplete Zone 1 sampling, sanitation SOPs not validated against worst-case soil load, equipment hollows harbouring persistent strains, and post-lethality recontamination pathways not mapped. Tier-1 classification with RTE product categories may trigger targeted regulatory follow-up by the national competent authority (with RASFF notification), CFIA, and the FSA, including environmental monitoring (EMP) audits, Zone 1–4 sampling verification, and review of post-lethality control programmes on the subsequent inspection.</p>
+</div>
+
+<div class="sec-head">
+  <span class="sec-num">&sect; 02</span>
+  <h2 class="sec-title">Top 5 Critical Threats</h2>
+  <span class="sec-rule"></span>
+</div>
+<p class="sec-caption">
+  Ranked by outbreak status first &mdash; confirmed human-illness clusters are escalated above every
+  non-outbreak recall &mdash; then by pathogen severity (<em>C. botulinum</em> &rarr; <em>Listeria</em> &rarr; STEC &rarr; <em>Salmonella</em>) and tier classification.
+  Each row links to the originating regulatory notice.
+</p>
+<table class="data top5">
+  <thead><tr><th>#</th><th>Date</th><th>Pathogen</th><th>Company / Brand</th><th>Product</th><th>Jurisdiction &amp; Source</th></tr></thead>
+  <tbody>
+        <tr>
+      <td class="rank-num" data-label="#">1</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span> <span class="chip-outbreak">OUTBREAK</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>ΝΙΚΟΛΑΟΣ ΤΣΑΤΣΟΥΛΗΣ &amp; ΥΙΟΙ Ο.Ε.</strong><div class="brand-sub">ΦΕΤΑ ΒΥΤΙΝΑΣ Π.Ο.Π. ΒΑΡΕΛΙ</div></td>
+      <td class="prod-cell" data-label="Product">Feta PDO in barrel (batch ΦΕ-2751, produced 2026-01-24, use-by 2027-07-24)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Greece</div>
+        <div class="src-sub">EFET (GR)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.efet.gr/index.php/el/enimerosi/deltia-typou/anakleiseis-cat/item/5379-deltio-typou-anaklisi-mi-asfaloys-proiontos-tyri-feta-logo-parousias-listeria" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">2</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span> <span class="chip-outbreak">OUTBREAK</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Ambrosia Brands LLC</strong><div class="brand-sub">ROSABELLA</div></td>
+      <td class="prod-cell" data-label="Product">Moringa Dietary Supplement</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Philippines</div>
+        <div class="src-sub">FDA PH</div>
+        <div class="juris-link"><a class="src-link" href="https://www.fda.gov.ph/fda-advisory-no-2026-0436-public-health-advisory-on-us-fda-announcement-on-extensively-drug-resistant-salmonella-in-moringa-powder/" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">3</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span> <span class="chip-outbreak">OUTBREAK</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Multiple (Kaohsiung outbreak)</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Spring rolls — Kaohsiung outbreak cluster</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Taiwan</div>
+        <div class="src-sub">BeaconBio (TW)</div>
+        <div class="juris-link"><a class="src-link" href="https://beaconbio.org/en/report/?reportid=3b6a3e2e-b70c-4f9f-a5ea-4263d3779787&amp;eventid=3ef2c366-0f67-4b48-ab53-ab77c5772c16&amp;page=2" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">4</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Arbutus Farms Kitchen / Jade Fine Foods</strong><div class="brand-sub">Arbutus Farms Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Cheese products</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Canada</div>
+        <div class="src-sub">CFIA</div>
+        <div class="juris-link"><a class="src-link" href="https://recalls-rappels.canada.ca/en/alert-recall/arbutus-farms-kitchenjade-fine-foods-brand-and-arbutus-foods-brand-products-cheese" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">5</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Amandis</strong><div class="brand-sub">LES ATELIERS DE SEBASTIEN</div></td>
+      <td class="prod-cell" data-label="Product">PORK BELLY — multiple cuts: 4-face belly (Lot 0752600263), belly piece (Lot 0752600228), sliced belly (Lot 0752600229), additional belly slices, all use-by 2026-03-26 (RappelConso fiche 21863)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21863/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sec-head">
+  <span class="sec-num">&sect; 03</span>
+  <h2 class="sec-title">Distribution Analysis</h2>
+  <span class="sec-rule"></span>
+</div>
+<div class="dist-grid">
+  <div>
+    <h3>Pathogen Profile</h3>
+    <table class="data">
+      <thead><tr><th>Pathogen</th><th class="num">Cases</th><th class="num">%</th><th>Share</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Listeria monocytogenes</em></td>
+          <td class="num">99</td>
+          <td class="num">77%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:77%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Salmonella spp.</em></td>
+          <td class="num">9</td>
+          <td class="num">7%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:7%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Aflatoxin</em></td>
+          <td class="num">7</td>
+          <td class="num">5%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:5%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">E. coli STEC</em></td>
+          <td class="num">6</td>
+          <td class="num">5%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:5%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Histamine / scombrotoxin</em></td>
+          <td class="num">3</td>
+          <td class="num">2%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:2%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Ochratoxin / Ochratoxin A</em></td>
+          <td class="num">2</td>
+          <td class="num">2%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:2%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Bacillus cereus</em></td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:1%;background:#dc2626"></div></div></td>
+        </tr>
+        <tr>
+          <td><span class="path-dot" style="background:#dc2626"></span><em class="path-name">Cronobacter sakazakii</em></td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+          <td><div class="bar-track"><div class="bar-fill" style="width:1%;background:#dc2626"></div></div></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>Geographic &middot; Regulatory</h3>
+    <table class="data">
+      <thead><tr><th>Country</th><th>Authority</th><th class="num">Cases</th><th class="num">%</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>France</td>
+          <td>RappelConso / DGCCRF</td>
+          <td class="num">101</td>
+          <td class="num">79%</td>
+        </tr>
+        <tr>
+          <td>Turkey</td>
+          <td>RASFF (EU) — origin</td>
+          <td class="num">6</td>
+          <td class="num">5%</td>
+        </tr>
+        <tr>
+          <td>Canada</td>
+          <td>CFIA</td>
+          <td class="num">4</td>
+          <td class="num">3%</td>
+        </tr>
+        <tr>
+          <td>Switzerland</td>
+          <td>BLV</td>
+          <td class="num">3</td>
+          <td class="num">2%</td>
+        </tr>
+        <tr>
+          <td>Spain</td>
+          <td>AESAN</td>
+          <td class="num">2</td>
+          <td class="num">2%</td>
+        </tr>
+        <tr>
+          <td>United Kingdom</td>
+          <td>FSA</td>
+          <td class="num">2</td>
+          <td class="num">2%</td>
+        </tr>
+        <tr>
+          <td>Ireland</td>
+          <td>RASFF (EU) — origin</td>
+          <td class="num">2</td>
+          <td class="num">2%</td>
+        </tr>
+        <tr>
+          <td>Poland</td>
+          <td>RASFF (EU) — origin</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>Greece</td>
+          <td>EFET</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>Philippines</td>
+          <td>FDA PH</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>Lithuania</td>
+          <td>RASFF (EU) — origin</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>Brazil</td>
+          <td>ANVISA</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>Netherlands</td>
+          <td>RASFF (EU) — origin</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>United States</td>
+          <td>FDA / USDA FSIS</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+        <tr>
+          <td>Taiwan</td>
+          <td>MOHW / TFDA</td>
+          <td class="num">1</td>
+          <td class="num">1%</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="cta-box">
+  <div class="cta-text">
+    <h3>Live Dashboard &middot; Full Dataset Access</h3>
+    <p>Filter by pathogen, country, tier, and source. Access the cumulative XLSX dataset. Set custom alerts.</p>
+  </div>
+  <a class="cta-btn" href="https://www.advfood.tech/fsis-recalls" target="_blank" rel="noopener">Access Portal &rarr;</a>
+</div>
+
+<div id="all-recalls" class="sec-head">
+  <span class="sec-num">&sect; 04</span>
+  <h2 class="sec-title">All 128 Recalls &middot; 3 Apr &ndash; 9 Apr 2026</h2>
+  <span class="sec-rule"></span>
+</div>
+<p class="sec-caption">
+  Complete record for the reporting period. Sorted by pathogen severity, outbreak status, and tier classification.
+  Each row links to the originating regulatory notice.
+</p>
+<table class="data top5">
+  <thead><tr><th>#</th><th>Date</th><th>Pathogen</th><th>Company / Brand</th><th>Product</th><th>Jurisdiction &amp; Source</th></tr></thead>
+  <tbody>
+        <tr>
+      <td class="rank-num" data-label="#">1</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span> <span class="chip-outbreak">OUTBREAK</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>ΝΙΚΟΛΑΟΣ ΤΣΑΤΣΟΥΛΗΣ &amp; ΥΙΟΙ Ο.Ε.</strong><div class="brand-sub">ΦΕΤΑ ΒΥΤΙΝΑΣ Π.Ο.Π. ΒΑΡΕΛΙ</div></td>
+      <td class="prod-cell" data-label="Product">Feta PDO in barrel (batch ΦΕ-2751, produced 2026-01-24, use-by 2027-07-24)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Greece</div>
+        <div class="src-sub">EFET (GR)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.efet.gr/index.php/el/enimerosi/deltia-typou/anakleiseis-cat/item/5379-deltio-typou-anaklisi-mi-asfaloys-proiontos-tyri-feta-logo-parousias-listeria" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">2</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Amandis</strong><div class="brand-sub">LES ATELIERS DE SEBASTIEN</div></td>
+      <td class="prod-cell" data-label="Product">PORK BELLY — multiple cuts: 4-face belly (Lot 0752600263), belly piece (Lot 0752600228), sliced belly (Lot 0752600229), additional belly slices, all use-by 2026-03-26 (RappelConso fiche 21863)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21863/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">3</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>GAEC La Ferme du Souheil</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Sainte Maure de Touraine AOP (RappelConso fiche 21968)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21968/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">4</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>GAEC La Ferme du Souheil</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Fresh raw-milk goat cheese and faisselle (RappelConso fiche 21967)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21967/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num" data-label="#">5</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Arbutus Farms Kitchen / Jade Fine Foods</strong><div class="brand-sub">Arbutus Farms Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Cheese products</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Canada</div>
+        <div class="src-sub">CFIA</div>
+        <div class="juris-link"><a class="src-link" href="https://recalls-rappels.canada.ca/en/alert-recall/arbutus-farms-kitchenjade-fine-foods-brand-and-arbutus-foods-brand-products-cheese" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">6</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: United Kingdom | Notifying: France</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Presence of Listeria monocytogenes in grated cheese from the United Kingdom</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">United Kingdom</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836500" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">7</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>The Curing Barn</strong><div class="brand-sub">The Curing Barn</div></td>
+      <td class="prod-cell" data-label="Product">British Bresaola</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">United Kingdom</div>
+        <div class="src-sub">FSA (UK)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.food.gov.uk/news-alerts/alert/fsa-prin-15-2026" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">8</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luna Sweet</div></td>
+      <td class="prod-cell" data-label="Product">Tapioca Pearls Coconut Milk and Chia Seed Pudding Mango (RappelConso fiche 21973)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21973/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">9</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Spaghetti Bolognese (GTIN 3760373400650) (RappelConso fiche 21974)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21974/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">10</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>FROMAGERIE JACQUES DELIN FROMAGERIE DELIN</strong><div class="brand-sub">DELIN</div></td>
+      <td class="prod-cell" data-label="Product">BRILLAT-SAVARIN AFFINE IGP 500 g</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21979/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">11</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Sobeys Capital Inc.</strong><div class="brand-sub">Multiple (Sobeys/IGA/Safeway/Foodland)</div></td>
+      <td class="prod-cell" data-label="Product">Certain cheese products (15 SKUs)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Canada</div>
+        <div class="src-sub">CFIA</div>
+        <div class="juris-link"><a class="src-link" href="https://recalls-rappels.canada.ca/en/alert-recall/certain-cheese-products-recalled-due-listeria-monocytogenes" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">12</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Lithuania | Notifying: Germany</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Listeria monocytogenes in matjes fillets from Lithuania</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Lithuania</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836200" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">13</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: France | Notifying: France</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Presence of Listeria monocytogenes in cheese with walnuts from France</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836212" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">14</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: France | Notifying: France</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Detection of Listeria monocytogenes in the production environment</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836283" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">15</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Indian kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Chicken Tikka Masala and White Rice (GTIN 3760373401909) (RappelConso fiche 21934)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21934/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">16</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Luisa e basilio ready meal (RappelConso fiche 21942)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21942/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">17</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Luisa e basilio ready meal (RappelConso fiche 21943)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21943/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">18</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Luisa e basilio ready meal (RappelConso fiche 21945)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21945/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">19</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Luisa e basilio ready meal (RappelConso fiche 21944)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21944/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">20</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Luisa e basilio ready meal (RappelConso fiche 21947)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21947/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">21</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Foodles</div></td>
+      <td class="prod-cell" data-label="Product">Foodles ready meal (RappelConso fiche 21949)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21949/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">22</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Bretzels Moricettes MFP Poulaillon</strong><div class="brand-sub">POULAILLON</div></td>
+      <td class="prod-cell" data-label="Product">Duck Parmentier ready meal</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21948/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">23</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri du Moment (RappelConso fiche 21951)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21951/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">24</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Foodles</div></td>
+      <td class="prod-cell" data-label="Product">Cooked salmon poke (RappelConso fiche 21950)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21950/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">25</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri assortment (RappelConso fiche 21953)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21953/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">26</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri assortment (RappelConso fiche 21952)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21952/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">27</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Netherlands | Notifying: Italy</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">listeria m. in gamberi congelati precotti red it to eat/Listeria monocytogenes in frozen, precooked shrimp</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Netherlands</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/835939" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">28</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri with avocado and wasabi (GTIN 3760373401084) (RappelConso fiche 21962)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21962/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">29</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri Beef Teriyaki (RappelConso fiche 21961)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21961/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">30</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri du Moment (RappelConso fiche 21960)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21960/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">31</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri Chicken Yakitori (RappelConso fiche 21959)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21959/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">32</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri Salmon Cream Cheese (RappelConso fiche 21958)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21958/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">33</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri Spicy Tuna Mayo (RappelConso fiche 21957)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21957/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">34</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Shakishaki</div></td>
+      <td class="prod-cell" data-label="Product">Cooked Salmon Poke (RappelConso fiche 21954)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21954/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">35</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21899)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21899/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">36</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21898)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21898/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">37</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21897)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21897/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">38</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21901)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21901/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">39</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21902)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21902/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">40</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21903)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21903/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">41</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21904)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21904/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">42</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21905)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21905/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">43</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21906)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21906/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">44</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21907)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21907/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">45</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21908)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21908/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">46</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21909)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21909/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">47</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21911)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21911/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">48</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21910)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21910/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">49</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21913)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21913/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">50</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21912)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21912/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">51</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21915)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21915/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">52</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21914)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21914/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">53</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (specific SKU not extractable from broken scraper data) (RappelConso fiche 21917)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21917/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">54</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21916)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21916/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">55</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21919)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21919/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">56</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21918)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21918/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">57</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21921)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21921/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">58</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Unknown (LUNA FOOD multi-brand recall)</div></td>
+      <td class="prod-cell" data-label="Product">Ready meal / sandwich (RappelConso fiche 21920)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21920/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">59</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Bim bang</div></td>
+      <td class="prod-cell" data-label="Product">Bim bang Asian-style ready meal / kimbap (RappelConso fiche 21924)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21924/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">60</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">The bread Bandits</div></td>
+      <td class="prod-cell" data-label="Product">Salmon Yuzu Duo Baguette (GTIN 3760373403781) (RappelConso fiche 21923)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21923/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">61</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">The bread Bandits</div></td>
+      <td class="prod-cell" data-label="Product">The bread Bandits sandwich/snack (RappelConso fiche 21922)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21922/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">62</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Bim bang</div></td>
+      <td class="prod-cell" data-label="Product">Caramel Pork with White Rice (GTIN 3760373400858) (RappelConso fiche 21927)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21927/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">63</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Bim bang</div></td>
+      <td class="prod-cell" data-label="Product">Bim bang Asian-style ready meal / kimbap (RappelConso fiche 21926)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21926/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">64</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Bim bang</div></td>
+      <td class="prod-cell" data-label="Product">Bim bang Asian-style ready meal / kimbap (RappelConso fiche 21925)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21925/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">65</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Chinese Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Chinese Kitchen ready meal (RappelConso fiche 21930)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21930/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">66</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Chinese Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Chinese Kitchen ready meal (RappelConso fiche 21929)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21929/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">67</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Chinese Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Chinese Kitchen ready meal (RappelConso fiche 21928)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21928/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">68</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">French Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Sautéed Chicken, Thyme Potatoes, Mustard Sauce (GTIN 3760373401534) (RappelConso fiche 21933)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21933/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">69</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">French Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">French Kitchen ready meal (RappelConso fiche 21932)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21932/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">70</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Chinese Kitchen</div></td>
+      <td class="prod-cell" data-label="Product">Beef Fried Rice (GTIN 3760373402203) (RappelConso fiche 21931)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21931/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">71</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Luna Food</strong><div class="brand-sub">Luisa e basilio</div></td>
+      <td class="prod-cell" data-label="Product">Luisa e basilio ready meal (RappelConso fiche 21935)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21935/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">72</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>FROMAGERIE CONDUTIER Fromagerie condutier</strong><div class="brand-sub">Fromagerie Condutier</div></td>
+      <td class="prod-cell" data-label="Product">Cantal cru — multi-SKU: Cantal entre deux, Cantal jeune, tome fraiche, tome broyée salée, beurre</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21865/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">73</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>MONOPRIX HOLDING MONOPRIX</strong><div class="brand-sub">MONOPRIX</div></td>
+      <td class="prod-cell" data-label="Product">Monoprix-branded onigiri / ready meal (RappelConso fiche 21883)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21883/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">74</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>MONOPRIX HOLDING MONOPRIX</strong><div class="brand-sub">MONOPRIX</div></td>
+      <td class="prod-cell" data-label="Product">Monoprix-branded onigiri / ready meal (SKU not extractable from broken scraper) (RappelConso fiche 21886)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21886/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">75</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>MONOPRIX HOLDING MONOPRIX</strong><div class="brand-sub">MONOPRIX</div></td>
+      <td class="prod-cell" data-label="Product">Monoprix-branded onigiri / ready meal (RappelConso fiche 21889)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21889/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">76</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Federated Co-operatives Ltd.</strong><div class="brand-sub">CO-OP</div></td>
+      <td class="prod-cell" data-label="Product">Creamy Garlic and Spinach Salad</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Canada</div>
+        <div class="src-sub">CFIA</div>
+        <div class="juris-link"><a class="src-link" href="https://recalls-rappels.canada.ca/en/alert-recall/co-op-brand-creamy-garlic-and-spinach-salad-recalled-due-listeria-monocytogenes" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">77</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>MONOPRIX HOLDING MONOPRIX</strong><div class="brand-sub">MONOPRIX</div></td>
+      <td class="prod-cell" data-label="Product">ONIGIRI THON OEUF YAKITORI 130 g (GTIN 3350034004404, all lots, use-by from 2026-04-03) (RappelConso fiche 21888)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21888/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">78</td>
+      <td class="date-cell" data-label="Date">4 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>MONOPRIX HOLDING MONOPRIX</strong><div class="brand-sub">MONOPRIX</div></td>
+      <td class="prod-cell" data-label="Product">Monoprix-branded onigiri / ready meal (RappelConso fiche 21887)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21887/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">79</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">SALADE NICOISE tray 335 g (GTIN 3760373400445, all lots) (RappelConso fiche 21881)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21881/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">80</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour ready meal (SKU not extractable from broken scraper) (RappelConso fiche 21880)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21880/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">81</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">PENNE CARBONARA tray 320 g (GTIN 3760373400506, all lots) (RappelConso fiche 21879)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21879/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">82</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">SALADE A L&#x27;ITALIENNE tray 330 g (all lots) (RappelConso fiche 21878)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21878/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">83</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour Le Marché ready meal (RappelConso fiche 21877)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21877/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">84</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour ready meal (SKU not extractable) (RappelConso fiche 21876)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21876/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">85</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">POULET TIKKA MASALA tray 330 g (RappelConso fiche 21875)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21875/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">86</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>WORLDMARECHAL</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri spicy tuna mayo (GTIN 3760373401121, all lots, use-by 2026-04-02 to 2026-04-06) (RappelConso fiche 21874)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21874/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">87</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>WORLDMARECHAL</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri / wrap / sandwich (RappelConso fiche 21873)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21873/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">88</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour Le Marché ready meal (RappelConso fiche 21872)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21872/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">89</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>WORLDMARECHAL</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri / wrap / sandwich (SKU not extractable from broken scraper) (RappelConso fiche 21871)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21871/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">90</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour Le Marché ready meal (RappelConso fiche 21870)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21870/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">91</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>WORLDMARECHAL</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Falafel and crudités wrap (GTIN 3760373402593, all lots, use-by 2026-04-02 to 2026-04-06) (RappelConso fiche 21869)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21869/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">92</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour Le Marché ready meal (RappelConso fiche 21868)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21868/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">93</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">CARREFOUR LE MARCHE</div></td>
+      <td class="prod-cell" data-label="Product">Carrefour Le Marché ready meal (RappelConso fiche 21867)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21867/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">94</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>WORLDMARECHAL</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Onigiri / wrap / sandwich (RappelConso fiche 21866)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21866/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">95</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>FROMAGERIE LE CENTURION CENTURION</strong><div class="brand-sub">Petit Marché</div></td>
+      <td class="prod-cell" data-label="Product">Cheese cubes with walnuts PMA 120 g</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21862/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">96</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">JAMBON BLANC SUPERIEUR FOUE AVEC COUENNE — sold at deli counter (GTIN 11111111117777) (RappelConso fiche 21861)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21861/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">97</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>ISOMA INTERMARCHE</strong><div class="brand-sub">CAPITAINE HOUAT</div></td>
+      <td class="prod-cell" data-label="Product">Whole cooked shrimp 10/20 — bulk sold (loose)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21860/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">98</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>THOUARS DISTRIBUTION LECLERC</strong><div class="brand-sub">LE REGAL DU CHEVRIER</div></td>
+      <td class="prod-cell" data-label="Product">CABRI AFFINé (Lot 62, use-by 2026-04-19)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21859/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">99</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Listeria monocytogenes</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Carrefour France</strong><div class="brand-sub">Carrefour Classic</div></td>
+      <td class="prod-cell" data-label="Product">Cheese cubes with walnuts 150 g (RappelConso fiche 21855)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21855/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">100</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Shiga toxin-producing E. coli</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>La Racotière</strong><div class="brand-sub">CLACBITOU</div></td>
+      <td class="prod-cell" data-label="Product">Farm goat cheese — CLACBITOU (lots 80/8v, 80/9m, 80/9v, best-before 2026-04-30)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21978/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">101</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Shiga toxin-producing E. coli</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>BLV (multiple producers — public warning)</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Unpasteurised whole-milk quark from raw milk — multi-producer public warning</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Switzerland</div>
+        <div class="src-sub">BLV (CH)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.blv.admin.ch/dam/blv/de/dokumente/oeffentliche-warnungen/ow-vollmilchquark.pdf.download.pdf/260408_Oeffentliche%20Warnung%20STEC%20in%20Vollmilchquark%20unpasteurisiert%20DE.pdf" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">102</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Shiga toxin-producing E. coli</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Bio Partner Schweiz AG</strong><div class="brand-sub">Sennerei Bachtel</div></td>
+      <td class="prod-cell" data-label="Product">Unpasteurised whole-milk quark, 180 g and 300 g</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Switzerland</div>
+        <div class="src-sub">BLV (CH)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.blv.admin.ch/dam/blv/de/dokumente/rueckrufe/rr-vollmilchquark.pdf.download.pdf/Aushang%20Laden%20Vollmilchquark%20180%20g%20u.%20300%20g%20DE.pdf" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">103</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Shiga toxin-producing E. coli</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Fromagerie Beaude</strong><div class="brand-sub">TOME DE MONTAGNE DE CHEVRE</div></td>
+      <td class="prod-cell" data-label="Product">Goat tomme cheese (Lot 2604201C, best-before 2026-05-02 to 2026-05-18) (RappelConso fiche 21938)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21938/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">104</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Shiga toxin-producing E. coli</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Fromagerie Beaude</strong><div class="brand-sub">Chèvre aux 7 fleurs</div></td>
+      <td class="prod-cell" data-label="Product">Goat cheese with 7 flowers (Lot 2604201C, best-before 2026-05-16 to 2026-05-18) (RappelConso fiche 21939)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21939/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">105</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Shiga toxin-producing E. coli</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Fromagerie Beaude</strong><div class="brand-sub">La grisée chèvre</div></td>
+      <td class="prod-cell" data-label="Product">Goat Raclette cheese (Lot 2604201C, best-before 2026-05-02 to 2026-05-10) (RappelConso fiche 21946)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21946/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">106</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span> <span class="chip-outbreak">OUTBREAK</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Ambrosia Brands LLC</strong><div class="brand-sub">ROSABELLA</div></td>
+      <td class="prod-cell" data-label="Product">Moringa Dietary Supplement</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Philippines</div>
+        <div class="src-sub">FDA PH</div>
+        <div class="juris-link"><a class="src-link" href="https://www.fda.gov.ph/fda-advisory-no-2026-0436-public-health-advisory-on-us-fda-announcement-on-extensively-drug-resistant-salmonella-in-moringa-powder/" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">107</td>
+      <td class="date-cell" data-label="Date">6 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span> <span class="chip-outbreak">OUTBREAK</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Multiple (Kaohsiung outbreak)</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Spring rolls — Kaohsiung outbreak cluster</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Taiwan</div>
+        <div class="src-sub">BeaconBio (TW)</div>
+        <div class="juris-link"><a class="src-link" href="https://beaconbio.org/en/report/?reportid=3b6a3e2e-b70c-4f9f-a5ea-4263d3779787&amp;eventid=3ef2c366-0f67-4b48-ab53-ab77c5772c16&amp;page=2" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">108</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Poland | Notifying: Czechia</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">aliments diététiques et nutrition</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21811/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">109</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>ANNEE DISTRIBUTION Super U</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Chorizo for cooking — prepared on-site at the butcher counter (GTIN 0203941000000, all lots, use-by 2026-03-31)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21963/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">110</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Phoenicia Group / Alarjawi</strong><div class="brand-sub">Alarjawi</div></td>
+      <td class="prod-cell" data-label="Product">Royal Zaatar (450 g)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Canada</div>
+        <div class="src-sub">CFIA</div>
+        <div class="juris-link"><a class="src-link" href="https://recalls-rappels.canada.ca/en/alert-recall/alarjawi-brand-royal-zaatar-recalled-due-salmonella" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">111</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Poland | Notifying: Czechia</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Salmonella Agona in chilled turkey breast fillet from Poland</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Poland</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836418" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">112</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Pettitt&#x27;s</strong><div class="brand-sub">Pettitt&#x27;s</div></td>
+      <td class="prod-cell" data-label="Product">Cook at Home Basil &amp; Pesto Chicken Fillets, 380 g pack (use-by 2026-03-30)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Ireland</div>
+        <div class="src-sub">FSAI (IE)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-a-batch-of-pettitt-s-basil-pesto-chicken" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">113</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Ambrosia Brands (US-imported)</strong><div class="brand-sub">Rosabella</div></td>
+      <td class="prod-cell" data-label="Product">Rosabella Moringa Capsules — 52 lots banned</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Brazil</div>
+        <div class="src-sub">ANVISA (BR)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/proibida-venda-de-suplemento-importado-dos-eua-por-contaminacao-por-salmonella" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">114</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Salmonella</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>BLV (multi-producer public warning)</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">Various soft cheeses</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Switzerland</div>
+        <div class="src-sub">BLV (CH)</div>
+        <div class="juris-link"><a class="src-link" href="https://www.blv.admin.ch/dam/blv/de/dokumente/oeffentliche-warnungen/ow-salmonellen-weichkaese.pdf.download.pdf/oW_Salmonellen%20in%20verschiedenen%20Weichk%C3%A4sen.pdf" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">115</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Bacillus cereus</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>CONTOYDIS E.LECLERC</strong><div class="brand-sub">fabrication magasin</div></td>
+      <td class="prod-cell" data-label="Product">Duchesse pralinée x2 (in-store bakery, GTIN 2100000931958)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21882/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">116</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Cronobacter sakazakii</span>
+        <span class="chip-tier1">T1</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Ireland | Notifying: Ireland</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Detection of Cronobacter in a batch of Infant Formula</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Ireland</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836052" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">117</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Spain | Notifying: Netherlands</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Aflatoxin in almonds from Spain</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Spain</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/835258" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">118</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Ochratoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Türkiye | Notifying: Bulgaria</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Ochratoxin A in dried figs from Türkiye</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Turkey</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836376" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">119</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Türkiye | Notifying: Bulgaria</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Aflatoxins in dried figs from Türkiye</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Turkey</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836380" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">120</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Ochratoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Spain | Notifying: Poland</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Stwierdzenie przekroczenia ochratoksyny A na poziomie 146 µg/kg w papryce ostrej pochodzącej z Hiszpanii // exceeding the level of ochratoxin A at 146 µg/kg in hot peppers from Spain</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Spain</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/834567" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">121</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Türkiye | Notifying: Germany</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Aflatoxins in dried figs from Turkey</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Turkey</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/835929" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">122</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Türkiye | Notifying: Greece</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Aflatoxins (B1=15.2; Tot.=38.0 μg/kg - ppb) in dried figs from Türkiye</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Turkey</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/835805" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">123</td>
+      <td class="date-cell" data-label="Date">7 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: United States | Notifying: Italy</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Aflatoxins in shelled Pistachios from USA via Turkey</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">United States</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/835699" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">124</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxins</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Turkey | Notifying: unknown | Distributed: Border rejection (not entered EU)</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Dried figs from Turkey</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Turkey</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/836000" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">125</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Aflatoxins</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Turkey | Notifying: unknown | Distributed: Border rejection (not entered EU)</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">Dried figs from Turkey</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">Turkey</div>
+        <div class="src-sub">RASFF (EU)</div>
+        <div class="juris-link"><a class="src-link" href="https://webgate.ec.europa.eu/rasff-window/screen/notification/835992" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">126</td>
+      <td class="date-cell" data-label="Date">9 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Histamine / scombrotoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Amandis</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">produits de la pêche et d&#x27;aquaculture (RappelConso fiche 21987)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21987/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">127</td>
+      <td class="date-cell" data-label="Date">8 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Histamine / scombrotoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>Origin: Lithuania | Notifying: Germany</strong><div class="brand-sub">—</div></td>
+      <td class="prod-cell" data-label="Product">produits de la pêche et d&#x27;aquaculture (RappelConso fiche 21975)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21975/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="rank-num rank-num--multi" data-label="#">128</td>
+      <td class="date-cell" data-label="Date">3 Apr 2026</td>
+      <td data-label="Pathogen">
+        <span class="path-dot" style="background:#dc2626"></span>
+        <span class="path-name">Histamine / scombrotoxin</span>
+        <span class="chip-tier2">T2</span>
+      </td>
+      <td class="co-cell" data-label="Company"><strong>ATACLA Intermarché</strong><div class="brand-sub">Unbranded</div></td>
+      <td class="prod-cell" data-label="Product">SARDINE FILLETS — sold at deli counter (Lot l065-064)</td>
+      <td class="juris-cell" data-label="Jurisdiction">
+        <div class="juris-country">France</div>
+        <div class="src-sub">RappelConso (FR)</div>
+        <div class="juris-link"><a class="src-link" href="https://rappel.conso.gouv.fr/fiche-rappel/21848/Interne" target="_blank" rel="noopener">View source &rarr;</a></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sec-head">
+  <span class="sec-num">&sect; 05</span>
+  <h2 class="sec-title">Methodology &amp; Sources</h2>
+  <span class="sec-rule"></span>
+</div>
+<div class="meth">
+  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, pathogen classification, and the engineering interpretation of each recall are developed by the AFTS process-authority practice, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP. This is what the AFTS platform brings that pure data feeds do not &mdash; interpretation under engineering authority.</p>
+  <p><strong>Data &amp; AI pipeline.</strong> The system aggregates regulatory recall notices from 66 primary sources across 60+ countries (FDA, USDA FSIS, RASFF, FSA, FSANZ, CFIA, RappelConso, BVL, AESAN, EFET, and national authorities) and processes each record through Gemini (extraction), OpenAI GPT (normalisation), and Claude (Tier-1 validation). Records are de-duplicated and harmonised into the cumulative dataset.</p>
+  <p><strong>This briefing.</strong> Statistical analysis filters the cumulative dataset to the reporting week (3 Apr &ndash; 9 Apr 2026). AI-generated narrative is produced against AFTS process-authority prompts and edited for publication. Figures and pathogen names are preserved verbatim from source data.</p>
+</div>
+
+<footer class="footer">
+  <div>
+    <div class="foot-brand">Advanced Food-Tech Solutions <em>&middot;</em> AFTS</div>
+    <div class="foot-meta">Food Safety Validation Intelligence<br>advfood.tech &middot; info@advfood.tech &middot; Athens, Greece<br>&copy; 2026 Advanced Food-Tech Solutions</div>
+  </div>
+  <div class="foot-legal">This briefing is provided for informational purposes only and does not constitute regulatory, legal, or medical advice. Subscribers should verify recall status with the originating regulatory authority before taking action. Next issue: Friday, 17 Apr 2026.</div>
+</footer>
+
+</body>
+</html>

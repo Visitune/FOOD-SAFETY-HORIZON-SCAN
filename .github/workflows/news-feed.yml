@@ -1,0 +1,85 @@
+name: FSIS News Feed (every 1h)
+
+# ==========================================================================
+# Runs every hour at :00. Pulls the news feeds, appends new rows to the
+# NEWS sheet of docs/data/recalls.xlsx, then purges rows older than 7
+# days (rolling window per George's spec).
+#
+# The NEWS sheet is kept separate from Recalls. The weekly + monthly
+# report builders read ONLY the Recalls sheet — they don't touch NEWS.
+# News is surfaced on the dashboard index as a live feed, not in reports.
+# ==========================================================================
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fsis-data-writers
+  cancel-in-progress: false
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests feedparser openpyxl
+
+      - name: Fetch news feeds → NEWS sheet
+        run: |
+          python scrapers/news.py docs/data/recalls.xlsx
+
+      - name: Purge NEWS rows older than 7 days
+        run: |
+          python -m pipeline.purge_old_news --xlsx docs/data/recalls.xlsx --days 7
+
+      - name: Commit updated recalls.xlsx if changed
+        run: |
+          git config user.name  "AFTS Intelligence System"
+          git config user.email "fsis-bot@advfood.tech"
+          if git diff --quiet docs/data/recalls.xlsx; then
+            echo "No news changes this hour."
+            exit 0
+          fi
+          git add docs/data/recalls.xlsx
+          COMMIT_MSG="auto news update + 7d purge $(TZ=Europe/Athens date '+%Y-%m-%d %H:%M Athens')"
+          git commit -m "$COMMIT_MSG"
+
+          # Safe push retry — row-level union merge instead of binary overwrite
+          # (so manual operator uploads or other workflows don't get clobbered)
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed — safe row-level merge retry..."
+            cp docs/data/recalls.xlsx /tmp/our-recalls.xlsx
+            git reset --hard HEAD~1
+            git pull --ff-only origin main || git pull origin main
+            python -m pipeline.xlsx_merge \
+              docs/data/recalls.xlsx /tmp/our-recalls.xlsx docs/data/recalls.xlsx
+            git add docs/data/recalls.xlsx
+            if ! git diff --staged --quiet; then
+              git commit -m "$COMMIT_MSG (retry $attempt, row-merged)"
+            fi
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: git push failed after 3 attempts."
+          exit 1

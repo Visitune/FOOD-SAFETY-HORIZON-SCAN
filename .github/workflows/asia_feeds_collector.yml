@@ -1,0 +1,100 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  MANUAL-DISPATCH ONLY.
+#  This workflow is triggered EXCLUSIVELY by Apps Script
+#  (FsisScheduler.gs → dispatchScheduled).
+#  Do NOT add a 'schedule:' block here — schedules live in Apps Script
+#  so the entire AFTS AI pipeline shares one source of truth.
+# ═══════════════════════════════════════════════════════════════════════
+
+name: Asia official-feed collector
+
+# ONE job that handles both scheduled (TZ-aware) and manual (all-at-once) runs.
+#
+# Scheduled triggers run at 09:00 local time in each TZ group (no DST in any
+# Asian country, so static UTC offsets):
+#   00:00 UTC = 09:00 UTC+9 (Korea, Japan)
+#   01:00 UTC = 09:00 UTC+8 (Singapore, Hong Kong, Taiwan, Philippines)
+#   02:00 UTC = 09:00 UTC+7 (Indonesia, Thailand, Vietnam)
+#
+# Manual workflow_dispatch runs the comma-separated list in `sources` input
+# (defaults to ALL 9 at once).
+
+on:
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: 'Comma-separated sources (default: all 9)'
+        default: 'singapore,hong_kong,taiwan,south_korea,japan,philippines,indonesia,thailand,vietnam'
+        required: false
+      dry_run:
+        description: 'Dry run (no xlsx write)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: asia-feeds-collector
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: Asia collector
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine sources to run
+        id: pick
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual dispatch: use the input list (default = all 9)
+            SRC="${{ github.event.inputs.sources }}"
+            echo "Manual run with sources: $SRC"
+            echo "sources=$SRC" >> $GITHUB_OUTPUT
+          else
+            # Scheduled run: pick TZ group by current UTC hour
+            HOUR=$(date -u +%H)
+            echo "Scheduled run at $HOUR:00 UTC"
+            case "$HOUR" in
+              00) SRC="south_korea,japan" ;;
+              01) SRC="singapore,hong_kong,taiwan,philippines" ;;
+              02) SRC="indonesia,thailand,vietnam" ;;
+              *)  SRC="" ;;
+            esac
+            echo "Selected sources for $HOUR:00 UTC: $SRC"
+            echo "sources=$SRC" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run collectors
+        env:
+          SOURCES: ${{ steps.pick.outputs.sources }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: |
+          if [ -z "$SOURCES" ]; then
+            echo "No sources to run (scheduled trigger didn't match a known UTC hour)"
+            exit 0
+          fi
+          DRY=""
+          [ "$DRY_RUN" = "true" ] && DRY="--dry-run"
+          echo "$SOURCES" | tr ',' '\n' | while read -r SRC; do
+            [ -z "$SRC" ] && continue
+            echo ""
+            echo "── Running source: $SRC ──"
+            python -m pipeline.official_feeds.main --source "$SRC" --max-age-days 30 $DRY
+          done
+
+      - name: Commit xlsx changes (race-safe)
+        if: inputs.dry_run != 'true'
+        run: |
+          bash scripts/safe_push.sh "Asia collector — $(date -u +'%Y-%m-%d %H:%M UTC')" docs/data/recalls.xlsx

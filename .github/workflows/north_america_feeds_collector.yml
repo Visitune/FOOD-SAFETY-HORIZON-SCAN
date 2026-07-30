@@ -1,0 +1,139 @@
+# AFTS Food Safety Intelligence — North America Feeds Collector
+#
+# Runs us_fda, us_fsis, canada through the official_feeds pipeline.
+# Stage 3b calls the AFTS North America Recall Agent (Llama on Hetzner via
+# Tailscale, using self-hosted Searx for web search).
+#
+# Schedule: 08:00 + 17:00 Athens (EET/EEST), no UTC.
+
+name: "FSIS NA — feeds collector (us_fda, us_fsis, canada)"
+
+# Required so github-actions[bot] can push the recalls.xlsx commit. Without
+# this the default GITHUB_TOKEN is read-only and safe_push.sh fails with
+# "Permission ... denied to github-actions[bot] ... 403" (audit 2026-06-21).
+# Every other pushing workflow in this repo already declares it.
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: "Comma-separated source IDs (default: all NA)"
+        required: false
+        default: "us_fda,us_fsis,canada"
+      dry_run:
+        description: "Dry run? (true|false)"
+        required: false
+        default: "false"
+  schedule:
+    # 08:00 Athens — winter (EET, UTC+2)  → 06:00 UTC
+    - cron: '0 6 * 1,2,3,11,12 *'
+    # 08:00 Athens — summer (EEST, UTC+3) → 05:00 UTC
+    - cron: '0 5 * 4,5,6,7,8,9,10 *'
+    # 17:00 Athens — winter             → 15:00 UTC
+    - cron: '0 15 * 1,2,3,11,12 *'
+    # 17:00 Athens — summer             → 14:00 UTC
+    - cron: '0 14 * 4,5,6,7,8,9,10 *'
+
+concurrency:
+  group: fsis-data-writers
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Athens-time gate (skip wrong-DST cron)
+        id: gate
+        env:
+          TZ: Europe/Athens
+        run: |
+          H=$(TZ=Europe/Athens date +%H)
+          echo "Athens hour: $H"
+          if [ "$H" = "08" ] || [ "$H" = "17" ]; then
+            echo "go=true" >> $GITHUB_OUTPUT
+          else
+            echo "go=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout
+        if: steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        if: steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        if: steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          pip install -r requirements.txt
+
+      # ═══════════════════════════════════════════════════════════════════
+      #  Join the AFTS tailnet so the runner can reach afts-llama-vps.
+      # ═══════════════════════════════════════════════════════════════════
+      - name: Tailscale up
+        if: steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch'
+        uses: tailscale/github-action@v3
+        with:
+          authkey:  ${{ secrets.TAILSCALE_AUTHKEY }}
+          hostname: github-actions-${{ github.run_id }}
+          tags:    "tag:ci"
+
+      - name: Verify Llama VPS reachable
+        if: steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          LLAMA_BASE_URL: ${{ secrets.LLAMA_BASE_URL }}
+          SEARX_URL:      ${{ secrets.SEARX_URL }}
+        run: |
+          echo "▶ Llama health:"
+          BASE="${LLAMA_BASE_URL%/v1}"
+          curl -fsS --max-time 10 "$BASE/v1/models" | head -c 300 || \
+            (echo "Llama not reachable"; exit 1)
+          echo ""
+          echo "▶ Searx health:"
+          curl -fsS --max-time 10 "$SEARX_URL?q=test&format=json" | head -c 200 || \
+            (echo "Searx not reachable"; exit 1)
+          echo ""
+
+      # ═══════════════════════════════════════════════════════════════════
+      #  Run the collector ONCE PER SOURCE (main.py takes --source singular).
+      # ═══════════════════════════════════════════════════════════════════
+      - name: Run NA collector
+        if: steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          LLAMA_BASE_URL:   ${{ secrets.LLAMA_BASE_URL }}
+          LLAMA_MODEL:      qwen2.5-7b-instruct
+          SEARX_URL:        ${{ secrets.SEARX_URL }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          SOURCES="${{ github.event.inputs.sources || 'us_fda,us_fsis,canada' }}"
+          DRY="${{ github.event.inputs.dry_run || 'false' }}"
+          EXTRA=""
+          if [ "$DRY" = "true" ]; then EXTRA="--dry-run"; fi
+          for SRC in $(echo "$SOURCES" | tr ',' ' '); do
+            echo ""
+            echo "════════════════════════════════════════════════════════"
+            echo "  Source: $SRC"
+            echo "════════════════════════════════════════════════════════"
+            python -m pipeline.official_feeds.main --source "$SRC" $EXTRA
+          done
+
+      - name: Commit xlsx changes (race-safe)
+        # MUST share the same gate as Checkout/Run: on a scheduled run where the
+        # Athens-time gate sets go=false (the wrong-DST cron lines, or an off-hour
+        # dispatch), Checkout is skipped and the repo is never on disk. The old
+        # condition (`inputs.dry_run != 'true'`) still fired on those runs because
+        # a scheduled event has no inputs → '' != 'true' is true → it tried
+        # `scripts/safe_push.sh` against an empty workspace → exit 127
+        # "No such file or directory". Gate on the run condition AND exclude dry-run.
+        if: >-
+          (steps.gate.outputs.go == 'true' || github.event_name == 'workflow_dispatch')
+          && github.event.inputs.dry_run != 'true'
+        run: |
+          bash scripts/safe_push.sh "NA collector: $(date -u +%Y-%m-%dT%H:%MZ)" docs/data/recalls.xlsx

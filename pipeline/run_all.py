@@ -1,0 +1,520 @@
+"""
+Master orchestrator — runs the full daily pipeline with Pending-sheet architecture.
+
+Triggered by GitHub Actions cron at 17:00 UTC daily.
+
+Flow:
+  1. Discover and instantiate all scraper classes
+  2. Run them in parallel batches (rate-limit friendly)
+     - Each GenericGeminiScraper: Gemini first, Claude Haiku fallback on 0-row pages
+  3. Enrich raw rows with Gemini (pathogen / country / class / tier normalization)
+  4. Append enriched rows to the Pending sheet (deduped vs Pending + Recalls)
+  5. URL validation (HEAD/GET) against Pending rows only
+  6. AI review of newly-scraped pending rows: Claude full-batch (rejection-grade)
+     + Claude Tier-1 spot check (richer schema for fix suggestions)
+  7. Collect rejection reasons from validation + review
+  8. Promote approved rows Pending -> Recalls; keep rejected in Pending with reason
+  9. Save docs/data/recalls.xlsx (Recalls + Pending + NEWS) and docs/data/recalls.json
+ 10. Git commit + push
+
+Approval policy (what counts as a rejection):
+  - URL is generic / landing-page / 404 / 410 / 5xx  ->  rejected
+    (bot-blocked 403 on known gov domains is NOT a rejection — likely valid)
+  - Missing required field (Date, Company, Product, Pathogen, URL)  ->  rejected
+  - Reviewer flags with high-severity issue codes                    ->  rejected
+  Otherwise the row is approved and promoted to Recalls.
+
+Environment flags:
+  SKIP_AI       : skip Gemini enrichment (keep deterministic normalization only)
+  SKIP_REVIEW   : skip URL validation + Claude review (auto-approve everything)
+  SKIP_COMMIT   : don't git push (useful for local dry-runs)
+  SINCE_DAYS    : how many days back to scrape (default 7)
+  MAX_PARALLEL  : thread pool size for scrapers (default 8)
+"""
+from __future__ import annotations
+import os
+import sys
+import logging
+import importlib
+import pkgutil
+import inspect
+from pathlib import Path
+from typing import List, Dict, Any, Tuple
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
+
+# Make repo root importable
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from scrapers._base import BaseScraper, make_session  # noqa: E402
+from scrapers._models import Recall                    # noqa: E402
+from enrichment.enrich_rows import enrich_recalls      # noqa: E402
+from review.url_validator import validate_all, should_blank_url  # noqa: E402
+from review.claude_client import review_tier1 as claude_review_tier1   # noqa: E402
+from review.claude_client import review_batch as claude_review_full   # noqa: E402
+from pipeline.merge_master import (                    # noqa: E402
+    load_existing, load_pending,
+    append_to_pending, promote_approved,
+    sort_rows, save_xlsx_with_pending, mirror_json_from_xlsx,
+    append_news_to_xlsx,
+    STATUS_PENDING, STATUS_REJECTED,
+)
+from pipeline.commit_github import git_commit_and_push  # noqa: E402
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    handlers=[logging.StreamHandler()],
+)
+log = logging.getLogger("orchestrator")
+
+# ---------------------------------------------------------------------------
+# Paths — everything lives in docs/data/ now (root /data/ is gone).
+# ---------------------------------------------------------------------------
+DATA_DIR = ROOT / "docs" / "data"
+XLSX_PATH = DATA_DIR / "recalls.xlsx"
+JSON_PATH = DATA_DIR / "recalls.json"
+
+SINCE_DAYS = int(os.getenv("SINCE_DAYS", "7"))
+MAX_PARALLEL = int(os.getenv("MAX_PARALLEL", "8"))
+SKIP_AI = os.getenv("SKIP_AI", "").lower() in ("1", "true", "yes")
+SKIP_REVIEW = os.getenv("SKIP_REVIEW", "").lower() in ("1", "true", "yes")
+SKIP_COMMIT = os.getenv("SKIP_COMMIT", "").lower() in ("1", "true", "yes")
+# SKIP_PROMOTE (audit 2026-05-07): scrape-only mode. New rows go to Pending
+# and stay there. promote_approved is bypassed entirely. The scheduled
+# url-gate / claude-check / merge-master workflows are then the ONLY path
+# to Recalls. Used by morning-critical-scrape and any other workflow whose
+# only job is to populate Pending.
+SKIP_PROMOTE = os.getenv("SKIP_PROMOTE", "").lower() in ("1", "true", "yes")
+
+# Optional comma-separated list of AGENCY values to include.
+# Empty/unset = run all discovered scrapers (the default 17:00 UTC behaviour).
+# Set in morning-critical-scrape.yml for the 12-agency subset run.
+AGENCIES_FILTER = {
+    a.strip()
+    for a in os.getenv("AGENCIES_FILTER", "").split(",")
+    if a.strip()
+}
+
+# High-severity review codes that cause promotion to be withheld.
+REJECTION_CODES = {"URL_INVALID", "URL_MISMATCH", "MISSING_FIELD",
+                   "HALLUCINATED_PATHOGEN", "EXTRACTION_GARBAGE"}
+
+# Required fields for a row to be promotable at all.
+REQUIRED_FIELDS = ("Date", "Company", "Product", "Pathogen", "URL")
+
+
+# ---------------------------------------------------------------------------
+# Scraper discovery
+# ---------------------------------------------------------------------------
+def discover_scrapers() -> List[BaseScraper]:
+    """Auto-discover all BaseScraper subclasses in scrapers/* packages."""
+    found: List[BaseScraper] = []
+    import scrapers  # noqa: F401
+    pkgs = ["north_america", "europe_eu", "europe_non_eu", "eu_wide",
+            "asia", "oceania", "africa", "latam", "middle_east",
+            "rss_regulators"]
+    for region in pkgs:
+        try:
+            pkg = importlib.import_module(f"scrapers.{region}")
+        except ImportError as e:
+            log.warning("Failed to import scrapers.%s: %s", region, e)
+            continue
+        for _, modname, _ in pkgutil.iter_modules(pkg.__path__):
+            try:
+                mod = importlib.import_module(f"scrapers.{region}.{modname}")
+            except Exception as e:
+                log.warning("Failed to import %s.%s: %s", region, modname, e)
+                continue
+            for _, cls in inspect.getmembers(mod, inspect.isclass):
+                if (issubclass(cls, BaseScraper) and cls is not BaseScraper
+                        and cls.__module__ == mod.__name__ and cls.AGENCY):
+                    found.append(cls())
+    log.info("Discovered %d scrapers", len(found))
+    return found
+
+
+def run_one_scraper(scraper: BaseScraper, since_days: int) -> List[Recall]:
+    name = f"{scraper.AGENCY}/{scraper.COUNTRY}"
+    try:
+        log.info("[START] %s", name)
+        rows = scraper.scrape(since_days=since_days)
+        log.info("[DONE]  %s -> %d recalls", name, len(rows))
+        return rows
+    except Exception as e:
+        log.error("[FAIL]  %s: %s", name, e)
+        return []
+
+
+def run_all_scrapers(scrapers: List[BaseScraper], since_days: int) -> List[Recall]:
+    """Run all scrapers in parallel batches."""
+    all_rows: List[Recall] = []
+    with ThreadPoolExecutor(max_workers=MAX_PARALLEL) as ex:
+        futs = {ex.submit(run_one_scraper, s, since_days): s for s in scrapers}
+        for f in as_completed(futs):
+            all_rows.extend(f.result())
+    log.info("Total scraped (raw): %d", len(all_rows))
+    return all_rows
+
+
+# ---------------------------------------------------------------------------
+# NEWS feed scraper discovery + execution
+# ---------------------------------------------------------------------------
+def discover_news_scrapers():
+    """Auto-discover all BaseNewsScraper subclasses in scrapers/news_feeds/."""
+    from scrapers.news_feeds._news_base import BaseNewsScraper
+    found = []
+    try:
+        pkg = importlib.import_module("scrapers.news_feeds")
+    except ImportError as e:
+        log.warning("Failed to import scrapers.news_feeds: %s", e)
+        return found
+    for _, modname, _ in pkgutil.iter_modules(pkg.__path__):
+        if modname.startswith("_"):
+            continue
+        try:
+            mod = importlib.import_module(f"scrapers.news_feeds.{modname}")
+        except Exception as e:
+            log.warning("Failed to import news_feeds.%s: %s", modname, e)
+            continue
+        for _, cls in inspect.getmembers(mod, inspect.isclass):
+            if (issubclass(cls, BaseNewsScraper) and cls is not BaseNewsScraper
+                    and cls.__module__ == mod.__name__):
+                found.append(cls())
+    log.info("Discovered %d news scrapers", len(found))
+    return found
+
+
+def run_news_scrapers(scrapers, since_days: int = 7) -> List[Dict]:
+    """Run all news scrapers and collect NewsItem dicts."""
+    all_items = []
+    for scraper in scrapers:
+        try:
+            items = scraper.scrape_news(since_days=since_days)
+            all_items.extend(item.to_dict() for item in items)
+        except Exception as e:
+            log.error("[NEWS FAIL] %s: %s", scraper.SOURCE_NAME, e)
+    log.info("Total news items scraped: %d", len(all_items))
+    return all_items
+
+
+# ---------------------------------------------------------------------------
+# Validation + review helpers
+# ---------------------------------------------------------------------------
+import re as _re_rasff_url
+
+# RASFF (EU) requires a different schema: Company holds origin/distributed
+# countries (not a real company), and the URL must point to a specific
+# notification page, not a search/landing/consumer shell. See the row
+# example documented at end of recalls.json:
+#   {"Source": "RASFF (EU)",
+#    "Company": "Origin: Italy | Distributed: France, Germany",
+#    "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/814607"}
+_RASFF_NOTIFICATION_URL_RE = _re_rasff_url.compile(
+    r"^https://webgate\.ec\.europa\.eu/rasff-window/screen/notification/\d+/?$",
+    _re_rasff_url.IGNORECASE,
+)
+
+
+def _is_rasff_source(source: str) -> bool:
+    """True if this row is from RASFF (the EU rapid-alert system)."""
+    return (source or "").strip().upper().startswith("RASFF")
+
+
+def _required_fields_for_source(source: str) -> tuple:
+    """Source-aware required-field set. RASFF schema swaps Company for
+    Country (origin), because RASFF doesn't publish company names — it
+    publishes origin + distributed country information instead. Other
+    sources keep the default REQUIRED_FIELDS."""
+    if _is_rasff_source(source):
+        return ("Date", "Product", "Pathogen", "URL", "Country")
+    return REQUIRED_FIELDS
+
+
+def _missing_required(row: Dict[str, Any]) -> List[str]:
+    """Return list of missing required-field names. Source-aware: RASFF
+    rows are evaluated against the RASFF schema (origin/distributed
+    countries instead of Company)."""
+    required = _required_fields_for_source(row.get("Source", ""))
+    missing = []
+    for f in required:
+        v = row.get(f)
+        if v is None or (isinstance(v, str) and not v.strip()) or v == "—":
+            missing.append(f)
+    # Extra check: for RASFF, the URL must point to a specific notification
+    # page. Anything else (landing page, search shell, consumer portal)
+    # is rejected the same way as a missing required field.
+    if _is_rasff_source(row.get("Source", "")):
+        url = str(row.get("URL", "") or "").strip()
+        if url and not _RASFF_NOTIFICATION_URL_RE.match(url):
+            missing.append("URL (must be /screen/notification/<id>)")
+    return missing
+
+
+def apply_reviewer_fixes(rows: List[Dict[str, Any]],
+                         review_issues: List[Dict[str, Any]],
+                         tier1_flags: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Apply non-destructive suggested_fixes from reviewers back onto rows.
+    Does NOT reject — rejection is decided separately in compute_rejections().
+    row_index in issues/flags is assumed to be aligned to `rows` (caller's job).
+
+    `review_issues`  — full-batch reviewer output (suggested_fixes plural,
+                       OpenAI-compatible schema).
+    `tier1_flags`    — Tier-1 spot-check output (suggested_fix singular,
+                       severity schema).
+    """
+    out = [dict(r) for r in rows]
+    fixed = 0
+    for issue in review_issues:
+        idx = issue.get("row_index")
+        if idx is None or idx >= len(out) or idx < 0:
+            continue
+        fixes = issue.get("suggested_fixes", {}) or {}
+        for k, v in fixes.items():
+            if k in out[idx] and v:
+                out[idx][k] = v
+                fixed += 1
+    for flag in tier1_flags:
+        idx = flag.get("row_index")
+        if idx is None or idx >= len(out) or idx < 0:
+            continue
+        fixes = flag.get("suggested_fix", {}) or {}
+        for k, v in fixes.items():
+            if k in out[idx] and v:
+                out[idx][k] = v
+                fixed += 1
+    log.info("Applied %d field fixes from review", fixed)
+    return out
+
+
+def compute_rejections(
+    pending: List[Dict[str, Any]],
+    new_indices: List[int],
+    review_issues: List[Dict[str, Any]],
+) -> Dict[int, str]:
+    """
+    Decide which pending rows should be rejected.
+    Returns {pending_row_index: reason_string}.
+
+    Only NEW rows (those just scraped this run) are evaluated; previously-pending
+    or already-rejected rows are left alone.
+    """
+    rejections: Dict[int, str] = {}
+
+    new_index_set = set(new_indices)
+
+    # 1) URL-validation failures (check._url_check was written in-place earlier)
+    for idx in new_indices:
+        row = pending[idx]
+        check = row.get("_url_check") or {}
+        if should_blank_url(check):
+            reason = check.get("error") or check.get("reason") or "bad URL"
+            rejections[idx] = f"URL check: {reason}"
+
+    # 2) Missing required fields
+    for idx in new_indices:
+        if idx in rejections:
+            continue
+        missing = _missing_required(pending[idx])
+        if missing:
+            rejections[idx] = f"Missing required: {', '.join(missing)}"
+
+    # 3) High-severity issues from the full-batch reviewer.
+    #    review_issues row_index is relative to new_indices ordering; translate it.
+    for issue in review_issues:
+        rel_idx = issue.get("row_index")
+        if rel_idx is None or rel_idx < 0 or rel_idx >= len(new_indices):
+            continue
+        pending_idx = new_indices[rel_idx]
+        if pending_idx in rejections:
+            continue
+        codes = set(issue.get("issues") or [])
+        hit = codes & REJECTION_CODES
+        if hit:
+            rejections[pending_idx] = f"Reviewer: {', '.join(sorted(hit))}"
+
+    log.info("Rejections computed: %d / %d new rows",
+             len(rejections), len(new_index_set))
+    return rejections
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+def main() -> int:
+    t0 = datetime.now(timezone.utc)
+    scraped_at = t0.strftime("%Y-%m-%dT%H:%M:%SZ")
+    log.info("=" * 60)
+    log.info("FSIS daily run started: %s", scraped_at)
+    log.info("Config: since_days=%d, parallel=%d, ai=%s, review=%s, promote=%s, commit=%s",
+             SINCE_DAYS, MAX_PARALLEL,
+             not SKIP_AI, not SKIP_REVIEW, not SKIP_PROMOTE, not SKIP_COMMIT)
+    log.info("Data dir: %s", DATA_DIR)
+
+    # ---- 1. Load state: approved (Recalls) + existing Pending --------------
+    approved = load_existing(XLSX_PATH) if XLSX_PATH.exists() else []
+    existing_pending = load_pending(XLSX_PATH) if XLSX_PATH.exists() else []
+    log.info("State: %d approved + %d existing pending", len(approved), len(existing_pending))
+
+    # ---- 2. Discover + run scrapers ---------------------------------------
+    scrapers = discover_scrapers()
+    if AGENCIES_FILTER:
+        before = len(scrapers)
+        scrapers = [s for s in scrapers if s.AGENCY in AGENCIES_FILTER]
+        log.info("AGENCIES_FILTER active: %d/%d scrapers retained (%s)",
+                 len(scrapers), before, ", ".join(sorted(s.AGENCY for s in scrapers)))
+        if not scrapers:
+            log.error("AGENCIES_FILTER matched no scrapers — check names against each scraper's AGENCY attribute")
+            return 4
+    raw_recalls = run_all_scrapers(scrapers, since_days=SINCE_DAYS)
+    if not raw_recalls:
+        log.warning("No recalls scraped this run")
+
+    # ---- 3. Enrich raw recalls --------------------------------------------
+    enriched = enrich_recalls(raw_recalls, use_ai=not SKIP_AI)
+
+    # ---- 4. Append to Pending (dedup vs Pending + Recalls) ----------------
+    pending_before = existing_pending
+    pending = append_to_pending(
+        existing_pending=pending_before,
+        approved=approved,
+        new_recalls=enriched,
+        scraped_at=scraped_at,
+    )
+    # Indices of rows that are NEW this run (everything after the existing pending length)
+    new_indices = list(range(len(pending_before), len(pending)))
+    log.info("New pending rows this run: %d", len(new_indices))
+
+    # ---- 5. URL validation on the NEW pending rows only ------------------
+    if not SKIP_REVIEW and new_indices:
+        log.info("URL validation on %d new pending rows...", len(new_indices))
+        subset = [pending[i] for i in new_indices]
+        validated = validate_all(subset, max_workers=10)
+        # Copy _url_check results back into pending in-place
+        for i, idx in enumerate(new_indices):
+            pending[idx]["_url_check"] = validated[i].get("_url_check", {})
+
+    # ---- 5b. Pathogen-in-source verification on NEW pending rows ---------
+    # Layer D anti-hallucination check: fetch each row's URL, plain-textify,
+    # and verify the Pathogen value (or a multilingual equivalent) actually
+    # appears on the page. Catches Gemini-fabricated rows where Pathogen +
+    # Reason are both wrong but mutually consistent (Espido Halim case).
+    # Skips (does NOT reject) rows whose page can't be fetched — transient
+    # network issues should not poison the dataset.
+    pathogen_rejections: Dict[int, str] = {}
+    if not SKIP_REVIEW and new_indices:
+        from pipeline.verify_pathogen_in_source import verify_pending_rows
+        log.info("Pathogen-in-source verification on %d new rows...",
+                 len(new_indices))
+        pathogen_rejections = verify_pending_rows(pending, new_indices)
+
+    # ---- 6. AI review on the NEW pending rows only -----------------------
+    # Architecture (post-OpenAI removal, Apr 2026):
+    #   review_full   — Claude Haiku 4.5 reviewing ALL new rows with the
+    #                   rejection-code schema (URL_INVALID, MISSING_FIELD,
+    #                   etc.). This is the rejection-grade pass that feeds
+    #                   compute_rejections().
+    #   review_tier1  — Claude Haiku 4.5 reviewing ONLY Tier-1 rows with a
+    #                   richer free-text severity schema. This is purely a
+    #                   suggested-fix pass (does NOT cause rejections).
+    review_issues: List[Dict[str, Any]] = []
+    tier1_flags: List[Dict[str, Any]] = []
+    if not SKIP_REVIEW and new_indices:
+        new_rows = [pending[i] for i in new_indices]
+        log.info("AI review pass on %d new rows", len(new_rows))
+        review_issues = claude_review_full(new_rows) if new_rows else []
+        tier1_flags = claude_review_tier1(new_rows) if new_rows else []
+
+        # Apply non-destructive fixes to the new rows, then write them back
+        fixed_new = apply_reviewer_fixes(new_rows, review_issues, tier1_flags)
+        for i, idx in enumerate(new_indices):
+            # Preserve _url_check / ScrapedAt / Status on the original row
+            for k, v in fixed_new[i].items():
+                if k.startswith("_"):
+                    continue
+                pending[idx][k] = v
+
+    # ---- 7. Decide rejections --------------------------------------------
+    rejections: Dict[int, str] = {}
+    if not SKIP_REVIEW and new_indices:
+        rejections = compute_rejections(pending, new_indices, review_issues)
+        # Merge in Layer D pathogen-in-source verification rejections.
+        # AI review (compute_rejections) wins on collision — its codes
+        # (URL_INVALID/MISSING_FIELD/HALLUCINATED_PATHOGEN/EXTRACTION_GARBAGE)
+        # are higher-fidelity. Layer D backstops cases AI review missed.
+        for idx, reason in pathogen_rejections.items():
+            if idx not in rejections:
+                rejections[idx] = f"Pathogen verification: {reason}"
+
+    # ---- 8. Promote approved rows -> Recalls -----------------------------
+    archived_rejected: list = []  # populated only when SKIP_PROMOTE unset
+    if SKIP_PROMOTE:
+        # Scrape-only mode: new rows stay in Pending. The scheduled
+        # url-gate -> claude-check -> merge-master chain is the only
+        # path to Recalls. (Audit 2026-05-07.)
+        log.info("SKIP_PROMOTE set — leaving %d new rows in Pending; "
+                 "Recalls untouched", len(new_indices))
+        new_approved = []
+        final_approved = sort_rows(approved)
+        final_pending = sort_rows(pending)
+    else:
+        # Audit 2026-05-08: 3-tuple return — archived_rejected feeds
+        # save_xlsx_with_pending so 2-reviewer-rejected rows are preserved
+        # in the Rejected sheet rather than silently dropped.
+        new_approved, pending_after, archived_rejected = promote_approved(
+            pending=pending,
+            approved_existing=approved,
+            rejected_flags=rejections,
+        )
+        final_approved = sort_rows(approved + new_approved)
+        final_pending = sort_rows(pending_after)
+
+    log.info("Summary: +%d approved (total %d), Pending now %d (rejected kept: %d)",
+             len(new_approved), len(final_approved), len(final_pending),
+             sum(1 for r in final_pending if r.get("Status") == STATUS_REJECTED))
+
+    # ---- 9. Save ---------------------------------------------------------
+    # Architecture: xlsx is the single source of truth. Write xlsx first,
+    # then mirror recalls.json FROM the saved xlsx (never from the
+    # in-memory list) so they cannot drift from each other.
+    save_xlsx_with_pending(final_approved, final_pending, XLSX_PATH,
+                           newly_rejected_rows=archived_rejected)
+    mirror_json_from_xlsx(XLSX_PATH, JSON_PATH)
+
+    # ---- 9b. NEWS feed scrapers -----------------------------------------
+    # Run RSS-based news scrapers and append to the NEWS sheet.
+    # This supplements the Apps Script Gemini-based news collection with
+    # deterministic RSS feed parsing from dedicated food safety publishers.
+    news_scrapers = discover_news_scrapers()
+    if news_scrapers:
+        news_items = run_news_scrapers(news_scrapers, since_days=7)
+        if news_items:
+            news_added = append_news_to_xlsx(XLSX_PATH, news_items)
+            log.info("NEWS: added %d items from %d RSS feeds",
+                     news_added, len(news_scrapers))
+    else:
+        log.info("No news scrapers discovered; NEWS sheet unchanged")
+
+    # ---- 10. Commit ------------------------------------------------------
+    if not SKIP_COMMIT:
+        ok = git_commit_and_push(
+            repo_dir=ROOT,
+            files=["docs/data/recalls.xlsx", "docs/data/recalls.json"],
+            message=(f"FSIS daily update {t0.strftime('%Y-%m-%d')} "
+                     f"(+{len(new_approved)} approved, {len(final_pending)} pending)"),
+        )
+        if not ok:
+            log.error("Git push failed")
+            return 1
+
+    elapsed = (datetime.now(timezone.utc) - t0).total_seconds()
+    log.info("=" * 60)
+    log.info("DONE in %.1fs | approved total: %d | pending: %d | new approved: %d",
+             elapsed, len(final_approved), len(final_pending), len(new_approved))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

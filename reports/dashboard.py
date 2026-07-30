@@ -118,7 +118,7 @@ def generate(db_path="fsis_global.db"):
     html = f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AFTS · Global Food Safety Intelligence</title>
+<title>Food Safety Horizon Scanning · Global Recall Intelligence</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
@@ -174,7 +174,7 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.0
 </style></head><body>
 
 <div class="hdr">
-  <div class="brand">AFTS <span>·</span> Food Safety Intelligence</div>
+  <div class="brand">Food Safety <span>·</span> Horizon Scanning</div>
   <div class="meta">63 Sources · FDA · USDA · RASFF · CFIA · ΕΦΕΤ · 50+ countries · Refresh: 4h<br>Last update: {now_utc}</div>
 </div>
 <div class="ticker">
@@ -188,11 +188,10 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.0
 <div class="wrap">
   <div class="nav" style="margin-top:14px;">
     <a href="index.html" class="on">🔴 Live Dashboard</a>
-    <a href="weekly/">📊 Weekly</a>
-    <a href="monthly/">📈 Monthly + AI</a>
-    <a href="yearly/">📅 Yearly</a>
-    <a href="alerts/">🔔 Alerts</a>
-    <a href="alerts/feed.json" style="color:#4caf80;border-color:#4caf80;">↓ JSON Feed</a>
+    <a href="2026-W30.html">📊 Weekly</a>
+    <a href="hub.html">📈 Monthly + AI</a>
+    <a href="alerts.html">🔔 Alerts</a>
+    <a href="data/recalls.json" style="color:#4caf80;border-color:#4caf80;">↓ JSON Feed</a>
   </div>
 
   {kpis}
@@ -281,9 +280,9 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.0
 </div>
 
 <div class="footer">
-  <a href="https://advfood.tech">AFTS · Advanced Food-Tech Solutions</a> &nbsp;·&nbsp;
+  Food Safety Horizon Scanning &nbsp;·&nbsp;
   FDA · USDA · RASFF · CFIA · ΕΦΕΤ · FSA UK · FSANZ · BVL · RappelConso · AFSCA · 63+ sources
-  &nbsp;·&nbsp; <a href="weekly/">Weekly</a> · <a href="monthly/">Monthly</a> · <a href="yearly/">Yearly</a>
+  &nbsp;·&nbsp; <a href="2026-W30.html">Weekly</a> · <a href="hub.html">Monthly</a>
   &nbsp;·&nbsp; Bio Risk Tier: Tier-1 > FDA Class I
 </div>
 

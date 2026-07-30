@@ -1,4 +1,4 @@
-# AFTS FSIS Automation Fix
+# Food Safety Horizon Scanning Automation Fix
 
 This bundle applies the full automation you described:
 
@@ -16,7 +16,7 @@ All scheduled workflows use the **two-line DST cron + Athens hour-guard** patter
 ## What's in this bundle
 
 ```
-AFTS-FIX/
+Food Safety Horizon Scanning-FIX/
 ├── README.md                    ← this file
 ├── cleanup.sh                   ← deletes all scrambled root-level dupes
 ├── requirements-additions.txt   ← append to requirements.txt (weasyprint)
@@ -43,7 +43,7 @@ AFTS-FIX/
 
 ```bash
 cd ~/Food-Safety-Intelligence-System
-bash /path/to/AFTS-FIX/cleanup.sh
+bash /path/to/Food Safety Horizon Scanning-FIX/cleanup.sh
 git status                      # review what's staged for deletion
 git commit -m "chore: remove scrambled duplicates (root -> subdirs)"
 git push
@@ -61,8 +61,8 @@ The cleanup removes:
 ### 2. Drop in the new workflows + pipeline scripts
 
 ```bash
-cp -r /path/to/AFTS-FIX/.github/workflows/*.yml .github/workflows/
-cp /path/to/AFTS-FIX/pipeline/*.py pipeline/
+cp -r /path/to/Food Safety Horizon Scanning-FIX/.github/workflows/*.yml .github/workflows/
+cp /path/to/Food Safety Horizon Scanning-FIX/pipeline/*.py pipeline/
 
 git add .github/workflows/ pipeline/
 git commit -m "feat: Athens-time automation + gap-fill + PDF pipeline"
@@ -74,7 +74,7 @@ git push
 Append `weasyprint==63.1` to your `requirements.txt`:
 
 ```bash
-cat /path/to/AFTS-FIX/requirements-additions.txt >> requirements.txt
+cat /path/to/Food Safety Horizon Scanning-FIX/requirements-additions.txt >> requirements.txt
 git add requirements.txt
 git commit -m "deps: add weasyprint for PDF generation"
 git push

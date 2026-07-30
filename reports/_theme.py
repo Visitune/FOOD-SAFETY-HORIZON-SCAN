@@ -1,5 +1,5 @@
 """
-AFTS Theme — shared CSS/JS/config pour tous les générateurs de rapports.
+Food Safety Horizon Scanning Theme — shared CSS/JS/config pour tous les générateurs de rapports.
 Single source of truth pour couleurs, badges pathogènes, palettes sources.
 """
 from __future__ import annotations
@@ -165,7 +165,7 @@ def dark_header(report_type: str = "", title: str = "", meta: str = "") -> str:
 
 def dark_footer(year: int | str = "") -> str:
     return f"""<div class="footer">
-  <a href="https://advfood.tech">AFTS &middot; Advanced Food-Tech Solutions</a> &nbsp;&middot;&nbsp;
+  <a href="https://advfood.tech">Food Safety Horizon Scanning &middot; Food Safety Horizon Scanning</a> &nbsp;&middot;&nbsp;
   <a href="../index.html">Live Dashboard</a> &nbsp;&middot;&nbsp;
   <a href="../weekly/">Weekly Reports</a> &nbsp;&middot;&nbsp;
   <a href="../monthly/">Monthly Reports</a> &nbsp;&middot;&nbsp;

@@ -25,12 +25,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <meta http-equiv="Pragma" content="no-cache"/>
 <meta http-equiv="Expires" content="0"/>
-<title>Food Safety Intelligence System · Advanced Food-Tech Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;0,700;0,800;0,900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<title>Food Safety Intelligence System · Food Safety Horizon Scanning</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;0,900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-:root{--bg:#03060e;--card:#0a1020;--card2:#0d1528;--acc:#00e5a0;--acc2:#00c9ff;--orange:#E8601A;--txt:#e2eaf8;--muted:#5a7090;--border:#0f2035;--pill-bg:rgba(0,229,160,.08);--pill-border:rgba(0,229,160,.25);}
-html,body{background:var(--bg);color:var(--txt);font-family:'Exo 2',sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden;margin:0;padding:0;}
+:root{--bg:#0B1120;--card:#131B2C;--card2:#1A2436;--acc:#F97316;--acc2:#8B5CF6;--orange:#F97316;--txt:#E5E7EB;--muted:#6B7280;--border:rgba(255,255,255,.08);--pill-bg:rgba(249,115,22,.10);--pill-border:rgba(249,115,22,.28);}
+html,body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden;margin:0;padding:0;}
 a{color:inherit;text-decoration:none;}
 .hero{text-align:center;padding:52px 24px 40px;display:flex;flex-direction:column;align-items:center;}
 .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--acc2);margin-bottom:14px;}
@@ -71,7 +71,7 @@ a{color:inherit;text-decoration:none;}
    the subscriber HTML fails to load. JS swaps in a structured markup
    block (.fb-* children) keyed off the card's data-stripe so each
    month gets its own accent palette via CSS custom properties. */
-.mc-thumb--fallback{--fb:#00e5a0;--fb-soft:rgba(0,229,160,.06);--fb-line:rgba(0,229,160,.28);background:linear-gradient(180deg,#0a1424 0%,#050a14 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px 16px;}
+.mc-thumb--fallback{--fb:#F97316;--fb-soft:rgba(249,115,22,.08);--fb-line:rgba(249,115,22,.30);background:linear-gradient(180deg,#0a1424 0%,#050a14 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px 16px;}
 .month-card[data-stripe="1"] .mc-thumb--fallback{--fb:#a78bfa;--fb-soft:rgba(124,58,237,.08);--fb-line:rgba(124,58,237,.32);background:linear-gradient(180deg,#15102a 0%,#080612 100%);}
 .month-card[data-stripe="2"] .mc-thumb--fallback{--fb:#7dd3fc;--fb-soft:rgba(14,165,233,.08);--fb-line:rgba(14,165,233,.32);background:linear-gradient(180deg,#0a1830 0%,#040814 100%);}
 .month-card[data-stripe="4"] .mc-thumb--fallback{--fb:#9ca3af;--fb-soft:rgba(156,163,175,.08);--fb-line:rgba(156,163,175,.32);background:linear-gradient(180deg,#161a22 0%,#08090d 100%);}
@@ -79,7 +79,7 @@ a{color:inherit;text-decoration:none;}
 .mc-thumb--fallback::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--fb) 50%,transparent);display:block;font-size:0;}
 .fb-eyebrow{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;color:var(--fb);text-transform:uppercase;display:flex;align-items:center;gap:7px;position:relative;z-index:1;}
 .fb-eyebrow::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--fb);box-shadow:0 0 8px var(--fb);}
-.fb-month{font-family:'Exo 2',sans-serif;font-size:38px;font-weight:900;line-height:.95;color:#fff;letter-spacing:-.02em;margin-top:6px;position:relative;z-index:1;}
+.fb-month{font-family:'Inter',sans-serif;font-size:38px;font-weight:900;line-height:.95;color:#fff;letter-spacing:-.02em;margin-top:6px;position:relative;z-index:1;}
 .fb-meta{display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;position:relative;z-index:1;gap:10px;}
 .fb-meta-left{display:flex;flex-direction:column;gap:5px;min-width:0;}
 .fb-year{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.1em;}
@@ -90,7 +90,7 @@ a{color:inherit;text-decoration:none;}
 .mc-period{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
 .mc-title{font-size:17px;font-weight:800;line-height:1.2;color:#fff;}
 .mc-sub{font-size:12px;color:var(--muted);line-height:1.4;}
-.mc-pdf-badge{display:inline-flex;align-items:center;gap:5px;margin-top:6px;background:rgba(0,229,160,.09);border:1px solid rgba(0,229,160,.2);color:var(--acc);font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;width:fit-content;}
+.mc-pdf-badge{display:inline-flex;align-items:center;gap:5px;margin-top:6px;background:rgba(249,115,22,.10);border:1px solid rgba(249,115,22,.25);color:var(--acc);font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;width:fit-content;}
 .mc-stats{display:flex;gap:14px;margin-top:8px;}
 .mc-stat{display:flex;flex-direction:column;}
 .mc-num{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:#fff;line-height:1;}
@@ -128,7 +128,7 @@ a{color:inherit;text-decoration:none;}
 <section class="hero">
   <p class="hero-eyebrow">AI-Powered Surveillance</p>
   <h1>Food Safety<br/><span class="hl">Intelligence System</span></h1>
-  <p class="hero-sub">A global pathogen recall monitoring platform by Advanced Food-Tech Solutions. We track, curate, and rank major food product recalls, market withdrawals, and safety alerts &mdash; every month, worldwide.</p>
+  <p class="hero-sub">A global pathogen recall monitoring platform by Food Safety Horizon Scanning. We track, curate, and rank major food product recalls, market withdrawals, and safety alerts &mdash; every month, worldwide.</p>
   <div class="badges">
     <span class="badge b2">&#x1F9EB; Pathogen-Focused</span>
     <span class="badge b2">&#x1F30D; Multi-Region Coverage</span>
@@ -180,7 +180,7 @@ a{color:inherit;text-decoration:none;}
 </section>
 
 <footer class="site-footer">
-  <div class="footer-left">Powered by <a href="https://www.advfood.tech" target="_blank" rel="noopener noreferrer">Advanced Food-Tech Solutions</a></div>
+  <div class="footer-left">Powered by <a href="https://www.advfood.tech" target="_blank" rel="noopener noreferrer">Food Safety Horizon Scanning</a></div>
   <div class="footer-right">&copy; 2026 ADVANCED FOOD-TECH SOLUTIONS</div>
 </footer>
 

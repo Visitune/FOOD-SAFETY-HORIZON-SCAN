@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence System - Weekly Report Generator
+Food Safety Horizon Scanning - Weekly Report Generator
 Template: 2026-W16.html (gold standard)
 Output: docs/YYYY-WW.html + data/weekly-summary-latest.json
 Reads: docs/data/recalls.xlsx Recalls sheet ONLY.
@@ -755,7 +755,7 @@ def generate_analysis_claude(stats, recalls):
     auths = _jurisdictions_from_recalls(recalls)
     auth_hint = ", ".join(auths[:5]) if auths else "multiple jurisdictions"
 
-    prompt = """You are a food safety intelligence analyst for AFTS. Generate the Intelligence Analysis section.
+    prompt = """You are a food safety intelligence analyst for Food Safety Horizon Scanning. Generate the Intelligence Analysis section.
 
 DATA: Total={}, Tier-1={}, Outbreaks={}, Leading={} ({}, {}%)
 Pathogens: {}
@@ -765,9 +765,9 @@ Jurisdictions this week: {}
 Generate EXACTLY these three paragraphs (plain text, no HTML, no headers, no paragraph numbers):
 1. Executive overview — total, tier-1, outbreaks, leading pathogen %, interpret as regulatory-pressure signal.
 2. Pathogen-specific process-engineering analysis for {} — name the specific product categories at risk (e.g. for Listeria: RTE deli / dairy / cooked-meat; for Salmonella: low-moisture foods / peanut butter / flour / spices; for STEC: raw beef / leafy greens / sprouts), the specific failure modes (e.g. Zone 1 environmental harbourage, sanitation SOP drift, post-lethality recontamination for Listeria), and cite the specific regulatory frameworks (21 CFR 117 Preventive Controls, 21 CFR 113/114 thermal lethality, validated lethality for L. monocytogenes under FDA CPG 555.320 / 9 CFR 430, FDA Produce Safety Rule 21 CFR 112, etc. as applicable).
-3. Regulatory/geographic assessment — name the actual authorities active this week ({}). Close with AFTS recommendation to re-verify the single highest-leverage control for the commodity and confirm documentation packages are ready for rapid regulatory response.
+3. Regulatory/geographic assessment — name the actual authorities active this week ({}). Close with Food Safety Horizon Scanning recommendation to re-verify the single highest-leverage control for the commodity and confirm documentation packages are ready for rapid regulatory response.
 
-Tone: professional, process-engineering voice, no emojis, no bullets, no colons at paragraph starts. 3-5 sentences each. Preserve the word 'AFTS' exactly where referenced. Do NOT write a Process Authority Note — that is appended separately.""".format(
+Tone: professional, process-engineering voice, no emojis, no bullets, no colons at paragraph starts. 3-5 sentences each. Preserve the word 'Food Safety Horizon Scanning' exactly where referenced. Do NOT write a Process Authority Note — that is appended separately.""".format(
         t, stats["tier1"], stats["outbreaks"], tp, tc, pct,
         dict(stats["pathogen_counts"]), dict(stats["country_counts"]), auth_hint,
         tp, auth_hint)
@@ -801,7 +801,7 @@ def _fallback_p1_to_p3(stats, recalls):
     """P1-P3 only. The PA Note is always handled by _process_authority_note()."""
     tp, tc = stats["top_pathogen"]; t = stats["total"]
     pct = round(tc/max(t,1)*100)
-    p1 = ("This week produced {} food-safety hazard recall incidents across the AFTS "
+    p1 = ("This week produced {} food-safety hazard recall incidents across the Food Safety Horizon Scanning "
           "monitoring network, with {} classified as Tier-1 and {}. {} dominated the "
           "surveillance window, accounting for {} of {} "
           "incidents ({}%). Although total activity may vary week to week, the high "
@@ -846,7 +846,7 @@ def _fallback_p1_to_p3(stats, recalls):
         auth_clause = ("Regulatory activity this week spanned multiple jurisdictions, "
                        "signalling continued inspection intensity. ")
     p3 = (auth_clause +
-          "AFTS recommends that food manufacturers use this briefing as a prompt to "
+          "Food Safety Horizon Scanning recommends that food manufacturers use this briefing as a prompt to "
           "re-verify the single highest-leverage control for their commodity this week "
           "and to confirm documentation packages are ready for rapid regulatory response.")
     parts = [p1]
@@ -1767,12 +1767,12 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
 
 @media print {
   /* Running footer on every printed page: process-authority attribution
-     anchors the AFTS differentiator visually throughout the document. */
+     anchors the Food Safety Horizon Scanning differentiator visually throughout the document. */
   @page {
     size: A4;
     margin: 14mm 14mm 18mm 14mm;
     @bottom-left {
-      content: "AFTS · Food Safety Validation Intelligence";
+      content: "Food Safety Horizon Scanning · Food Safety Validation Intelligence";
       font-family: 'DM Mono', monospace; font-size: 8pt; color: #6b7280;
       letter-spacing: 0.04em;
     }
@@ -1950,7 +1950,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AFTS Food Safety Hazard &amp; Pathogen Intelligence Briefing &middot; Week {wnum}, {year}</title>
+<title>Food Safety Horizon Scanning &middot; Hazard &amp; Pathogen Intelligence Briefing &middot; Week {wnum}, {year}</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <!-- Cloudflare Web Analytics — see docs/index.html for setup instructions. -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
@@ -1963,7 +1963,7 @@ __CSS_PLACEHOLDER__
 
 <header class="masthead">
   <div class="brand-block">
-    <div class="brand">Advanced Food-Tech Solutions <em>&middot;</em> AFTS</div>
+    <div class="brand">Food Safety <em>&middot;</em> Horizon Scanning</div>
     <div class="tagline">Food Safety Intelligence System &middot; Weekly Briefing</div>
   </div>
   <div class="mast-right">
@@ -1976,12 +1976,12 @@ __CSS_PLACEHOLDER__
   </div>
 </header>
 
-<div class="r-kicker">AFTS <span class="r-kicker-dot">&middot;</span> Food Safety Validation Intelligence</div>
+<div class="r-kicker">Food Safety Horizon Scanning <span class="r-kicker-dot">&middot;</span> Food Safety Validation Intelligence</div>
 <h1 class="r-title">Food Safety Hazard &amp; Pathogen Surveillance <span class="accent">&middot;</span> Week {wnum}</h1>
 <p class="r-sub">
   AI-powered analysis of <strong>{total}</strong> regulatory recall actions across
   <strong>{n_jurisdictions}</strong> jurisdictions, aggregated from 66 primary sources
-  monitored continuously by the AFTS intelligence platform.
+  monitored continuously by the Food Safety Horizon Scanning intelligence platform.
 </p>
 
 <div class="kpi-strip">
@@ -2089,15 +2089,15 @@ __CSS_PLACEHOLDER__
   <span class="sec-rule"></span>
 </div>
 <div class="meth">
-  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, pathogen classification, and the engineering interpretation of each recall are developed by the AFTS process-authority practice, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP. This is what the AFTS platform brings that pure data feeds do not &mdash; interpretation under engineering authority.</p>
+  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, pathogen classification, and the engineering interpretation of each recall are developed by the Food Safety Horizon Scanning process-authority practice, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP. This is what the Food Safety Horizon Scanning platform brings that pure data feeds do not &mdash; interpretation under engineering authority.</p>
   <p><strong>Data &amp; AI pipeline.</strong> The system aggregates regulatory recall notices from 66 primary sources across 60+ countries (FDA, USDA FSIS, RASFF, FSA, FSANZ, CFIA, RappelConso, BVL, AESAN, EFET, and national authorities) and processes each record through Gemini (extraction), OpenAI GPT (normalisation), and Claude (Tier-1 validation). Records are de-duplicated and harmonised into the cumulative dataset.</p>
-  <p><strong>This briefing.</strong> Statistical analysis filters the cumulative dataset to the reporting week ({period}). AI-generated narrative is produced against AFTS process-authority prompts and edited for publication. Figures and pathogen names are preserved verbatim from source data.</p>
+  <p><strong>This briefing.</strong> Statistical analysis filters the cumulative dataset to the reporting week ({period}). AI-generated narrative is produced against Food Safety Horizon Scanning process-authority prompts and edited for publication. Figures and pathogen names are preserved verbatim from source data.</p>
 </div>
 
 <footer class="footer">
   <div>
-    <div class="foot-brand">Advanced Food-Tech Solutions <em>&middot;</em> AFTS</div>
-    <div class="foot-meta">Food Safety Validation Intelligence<br>advfood.tech &middot; info@advfood.tech &middot; Athens, Greece<br>&copy; {year} Advanced Food-Tech Solutions</div>
+    <div class="foot-brand">Food Safety <em>&middot;</em> Horizon Scanning</div>
+    <div class="foot-meta">Food Safety Validation Intelligence<br>advfood.tech &middot; info@advfood.tech &middot; Athens, Greece<br>&copy; {year} Food Safety Horizon Scanning</div>
   </div>
   <div class="foot-legal">This briefing is provided for informational purposes only and does not constitute regulatory, legal, or medical advice. Subscribers should verify recall status with the originating regulatory authority before taking action. Next issue: Friday, {next_issue}.</div>
 </footer>
@@ -2546,7 +2546,7 @@ def refresh_stale_weeks(all_recalls, current_week_end, n_previous=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Build AFTS weekly report")
+    ap = argparse.ArgumentParser(description="Build Food Safety Horizon Scanning weekly report")
     ap.add_argument("--week-end", required=True, help="Friday YYYY-MM-DD")
     ap.add_argument("--xlsx", default=str(ROOT/"docs"/"data"/"recalls.xlsx"))
     ap.add_argument("--output", default=None)

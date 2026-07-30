@@ -1,11 +1,11 @@
-# Architecture — Food Safety Intelligence System (AFTS)
+# Architecture — Food Safety Horizon Scanning
 
 This document describes the actual current pipeline. It was written on
 2026-07-30 after a code-level audit (see `EVALUATION_AMELIORATIONS.txt`),
 not from a design spec — every claim below was verified against the code
 and workflows in this repo. `README.md` is a historical patch-bundle note
-("AFTS FSIS Automation Fix") describing a past fix; it is not an
-architecture overview and can be confusing if read as one.
+describing a past fix; it is not an architecture overview and can be
+confusing if read as one.
 
 ## Data flow
 

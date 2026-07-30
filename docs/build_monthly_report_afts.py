@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence System — Monthly Report Generator
+Food Safety Horizon Scanning — Monthly Report Generator
 ================================================================
 Runs on the 1st of each month 07:00 UTC via GitHub Actions.
 
@@ -66,7 +66,7 @@ CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 # Brand tokens — mirror the weekly report so the HTML shares a visual identity.
 # If weekly doesn't export them (older versions or current refactored state),
-# fall back to the canonical AFTS palette so the monthly build never crashes
+# fall back to the canonical Food Safety Horizon Scanning palette so the monthly build never crashes
 # on a missing constant.
 BRAND_ORANGE = getattr(weekly, "BRAND_ORANGE", "#E8601A")
 BRAND_BLACK  = getattr(weekly, "BRAND_BLACK",  "#0a0e1a")
@@ -443,7 +443,7 @@ def generate_monthly_narrative(stats: Dict[str, Any],
         else f"  Inactive: {lt.get('message','(insufficient data)')}"
     )
 
-    prompt = f"""You are producing the AFTS monthly pathogen surveillance briefing for {month_name} {year}. Your analysis must sound like a practising process authority — not a generic AI — interpreting every finding through validated food process engineering (21 CFR 113/114, PMO, HACCP CCPs, environmental monitoring) and naming specific failure modes and control points.
+    prompt = f"""You are producing the Food Safety Horizon Scanning monthly pathogen surveillance briefing for {month_name} {year}. Your analysis must sound like a practising process authority — not a generic AI — interpreting every finding through validated food process engineering (21 CFR 113/114, PMO, HACCP CCPs, environmental monitoring) and naming specific failure modes and control points.
 
 PRE-COMPUTED ANALYTICAL SIGNALS — treat these as authoritative. Do NOT recompute or second-guess them.
 
@@ -564,7 +564,7 @@ def _fallback_narrative(stats: Dict[str, Any], signals: Dict[str, Any],
         outbreak_phrase = "no outbreak-associated events"
 
     p1 = (f"{month_name} {year} produced {stats['total']} food-safety hazard recall incidents "
-          f"across the AFTS monitoring network, a {mom.get('delta_pct')}% move "
+          f"across the Food Safety Horizon Scanning monitoring network, a {mom.get('delta_pct')}% move "
           f"{'above' if mom.get('direction')=='up' else 'below' if mom.get('direction')=='down' else 'flat vs'} "
           f"the prior month{z_phrase}. {top_name} dominated with {top_count} of "
           f"{stats['total']} incidents ({pct}%). The composite severity index closed at "
@@ -994,7 +994,7 @@ def build_all_month_html(month_start: date, month_end: date,
     month_name = month_start.strftime("%B %Y")
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
-<title>AFTS · All Recalls · {escape(month_name)}</title>
+<title>Food Safety Horizon Scanning · All Recalls · {escape(month_name)}</title>
 <!-- Cloudflare Web Analytics — see docs/index.html for setup instructions. -->
 
 <style>
@@ -1034,7 +1034,7 @@ font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.06em;margin-l
 .chip-tier2{{background:{TIER2_AMBER};color:#1f2937;}}
 .chip-outbreak{{background:{OUTBREAK_VIO};}}
 </style></head><body><div class="wrap">
-<div class="brand">Advanced Food-Tech Solutions <em>·</em> AFTS</div>
+<div class="brand">Food Safety <em>·</em> Horizon Scanning</div>
 <h1>All recalls · {escape(month_name)}</h1>
 <div class="sub">{month_start.strftime('%d %b %Y')} – {month_end.strftime('%d %b %Y')}
  &middot; {len(rows)} recalls</div>
@@ -1376,7 +1376,7 @@ def build_monthly_html(month_start: date, month_end: date,
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFTS Monthly · {escape(month_name)} {year}</title>
+<title>Food Safety Horizon Scanning Monthly · {escape(month_name)} {year}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -1586,7 +1586,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
     size: A4 portrait;
     margin: 14mm 12mm 18mm 12mm;
     @bottom-left {{
-      content: "AFTS · Food Safety Intelligence System";
+      content: "Food Safety Horizon Scanning · Global Recall Intelligence";
       font-family: 'Times New Roman', Times, Georgia, serif;
       font-size: 8pt;
       color: #6b7280;
@@ -1785,7 +1785,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 
 <div class="mast">
   <div>
-    <div class="brand">Advanced Food-Tech Solutions <em>·</em> AFTS</div>
+    <div class="brand">Food Safety <em>·</em> Horizon Scanning</div>
     <div class="tagline">Food Safety Intelligence System · Monthly Briefing</div>
     <div class="pubdate"><strong>{published_label}</strong> &middot; {pub_date}</div>
   </div>
@@ -1930,7 +1930,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
   </div>
   <div style="flex:1;min-width:280px;font-size:12.5px;color:var(--body);line-height:1.7;">
     <strong>How to read this panel.</strong> Each card shows a predictive model
-    AFTS runs on the monthly series. Active cards publish a forecast with its
+    Food Safety Horizon Scanning runs on the monthly series. Active cards publish a forecast with its
     confidence envelope; dormant cards show the data threshold required to
     activate — an honest roadmap as the dataset grows. When <em>n</em> reaches
     12 months, STL decomposition unlocks; 24 months unlocks Holt-Winters,
@@ -1958,13 +1958,13 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 <div class="meth">
   <p><strong>Definitions.</strong> A <em>recall incident</em> is a single regulator-published recall fiche / notice covering one identified product or product family. Where a single multi-country event is reported by two regulators (for example FSAI in Ireland plus FSA in the United Kingdom), each regulator's notice counts as one incident — the incident table accordingly shows the multi-jurisdictional footprint rather than de-duplicating to a single row. <em>Tier-1</em> indicates an immediate public-health risk (Listeria, Salmonella, STEC, Campylobacter, Cronobacter, Vibrio, Hepatitis A, marine biotoxins, mycotoxins above regulatory limits, undeclared major allergens). <em>Outbreak-associated</em> means the regulator's notice cites confirmed human cases or epidemiologically-linked illnesses, not merely a positive product test.</p>
 
-  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, hazard classification, and the engineering interpretation of each recall are developed by the AFTS process-authority practice, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP.</p>
+  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, hazard classification, and the engineering interpretation of each recall are developed by the Food Safety Horizon Scanning process-authority practice, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP.</p>
 
   <p><strong>Statistical methods.</strong> Month-over-month <em>Z-scores</em> use the rolling-prior-months mean and sample standard deviation; the score is suppressed (n/a) when the baseline contains fewer than six months. The <em>hotspot matrix</em> uses standardised chi-square residuals against an independence-baseline expected count; cells with σ&gt;2 are flagged as over-represented but are screening signals only (no multiple-comparison correction; small expected counts in many cells). <em>Source concentration</em> uses the Herfindahl-Hirschman Index on agency counts (HHI = Σ s²ᵢ × 10000, where sᵢ is each agency's share; &lt;1500 diverse, 1500–2500 moderate, &gt;2500 concentrated). <em>Geographic distribution</em> uses the Gini coefficient on country counts (0 = perfectly even, 1 = single-country regime; &lt;0.4 even, 0.4–0.6 moderate, &gt;0.6 uneven). <em>Outbreak clusters</em> are detected via a sliding 14-day window over same-pathogen outbreak events (cluster threshold: ≥3 events). The <em>composite severity index</em> (0–100) is a transparent two-component blend: <strong>100 × (0.60 × Tier-1 share + 0.40 × outbreak rate)</strong>, where Tier-1 share = Tier-1 incidents ÷ total incidents and outbreak rate = outbreak-flagged incidents ÷ total incidents (using the same criterion as the headline outbreaks KPI). For {escape(month_name)} {month_start.year} this evaluates to 100 × (0.60 × {stats['tier1']}/{stats['total']} + 0.40 × {stats['outbreaks']}/{stats['total']}) = {round(100*(0.60*stats['tier1']/total_safe + 0.40*stats['outbreaks']/total_safe), 1)}. Buckets: ≥65 critical, ≥45 elevated, ≥25 moderate, &lt;25 low. Predictive models are gated to activate only when data history meets the minimum size required for valid estimation; the linear-trend OLS reports a 95% CI but does not claim slope significance until n ≥ 12 monthly observations (so dof ≥ 10, where the t-critical at α = 0.05 falls below 2.23).</p>
 
   <p><strong>Reporting-system caveats.</strong> National recall-publication regimes differ in granularity. France's RappelConso publishes one fiche per identified product/lot configuration, often producing several fiches per single root-cause event; the headline French count therefore reflects a transparent, item-level reporting practice rather than a higher true incidence. EU member-state counts likewise reflect both the actual hazard signal and each authority's publication discipline. Treat country totals as a recall-publication signal, not as a direct food-safety league table.</p>
 
-  <p><strong>Data &amp; AI pipeline.</strong> The system aggregates regulatory recall notices from 70+ countries and 15+ agencies (FDA, USDA FSIS, RASFF, FSA, FSANZ, CFIA, RappelConso, BVL, AESAN, EFET and national authorities) into the cumulative Recalls sheet. AI narrative is produced against AFTS process-authority prompts and edited for publication. Figures, hazard names, and source URLs are preserved verbatim from regulator data.</p>
+  <p><strong>Data &amp; AI pipeline.</strong> The system aggregates regulatory recall notices from 70+ countries and 15+ agencies (FDA, USDA FSIS, RASFF, FSA, FSANZ, CFIA, RappelConso, BVL, AESAN, EFET and national authorities) into the cumulative Recalls sheet. AI narrative is produced against Food Safety Horizon Scanning process-authority prompts and edited for publication. Figures, hazard names, and source URLs are preserved verbatim from regulator data.</p>
 </div>
 
 <!-- §09a — HHI / Gini reproducibility table -->
@@ -1999,7 +1999,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 </tr></thead><tbody>{all_rows_html}</tbody></table>
 
 <div class="footer">
-  <div class="fb">Advanced Food-Tech Solutions <em>·</em> AFTS</div>
+  <div class="fb">Food Safety <em>·</em> Horizon Scanning</div>
   Food Process Engineering · Thermal Processing · Regulatory Compliance<br>
   advfood.tech · info@advfood.tech · Athens, Greece<br>
   Generated {(month_end + timedelta(days=1)).strftime('%d %B %Y')}
@@ -2042,7 +2042,7 @@ def build_monthly_email_html(stats: Dict[str, Any], signals: Dict[str, Any],
 
 <div style="background:{BRAND_BLACK};color:#fff;padding:20px 24px">
 <div style="font-family:Georgia,serif;font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:-0.01em">
-Advanced Food-Tech Solutions <span style="color:{BRAND_ORANGE}">·</span> AFTS</div>
+Food Safety <span style="color:{BRAND_ORANGE}">·</span> Horizon Scanning</div>
 <div style="font-family:monospace;font-size:9px;color:#94a3b8;text-transform:uppercase;letter-spacing:0.14em;margin-top:3px">
 Monthly Briefing · {escape(month_name)}</div>
 </div>
@@ -2087,7 +2087,7 @@ Monthly Briefing · {escape(month_name)}</div>
 </div>
 
 <div style="font-size:11px;color:#94a3b8;text-align:center;margin-top:20px">
-Advanced Food-Tech Solutions · advfood.tech · info@advfood.tech
+Food Safety Horizon Scanning · advfood.tech · info@advfood.tech
 </div>
 </div>
 </div>
@@ -2300,7 +2300,7 @@ def update_monthly_index_json(month_start: date, month_end: date,
 # ENTRY POINT
 # ---------------------------------------------------------------------------
 def main() -> int:
-    ap = argparse.ArgumentParser(description="AFTS monthly intelligence briefing")
+    ap = argparse.ArgumentParser(description="Food Safety Horizon Scanning monthly intelligence briefing")
     ap.add_argument("--month-end", required=True,
                     help="Last day of the month to report on (YYYY-MM-DD)")
     ap.add_argument("--xlsx", default=str(ROOT / "data" / "recalls.xlsx"))
@@ -2325,7 +2325,7 @@ def main() -> int:
         log.error("Invalid --month-end: %s", args.month_end); return 2
 
     month_start, month_end_full = month_bounds(month_end.year, month_end.month)
-    log.info("AFTS monthly report | %s %d (%s – %s)",
+    log.info("Food Safety Horizon Scanning monthly report | %s %d (%s – %s)",
              month_start.strftime("%B"), month_start.year,
              month_start.isoformat(), month_end_full.isoformat())
 

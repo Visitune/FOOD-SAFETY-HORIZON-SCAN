@@ -86,15 +86,15 @@ def generate(db_path="fsis_global.db"):
 
     # Side panels
     path_rows = "".join(
-        f'<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #1e1e1e;">'
+        f'<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;">'
         f'<span style="font-size:12px;">{esc(p[0])}</span>'
-        f'<span style="color:#E8601A;font-weight:700;font-family:monospace;">{p[1]}</span></div>'
+        f'<span style="color:#F97316;font-weight:700;font-family:monospace;">{p[1]}</span></div>'
         for p in st["top_paths"]
     )
     src_rows = "".join(
-        f'<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #1e1e1e;">'
+        f'<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #0B1120;">'
         f'<span style="font-size:11px;">{esc(s[0])}</span>'
-        f'<span style="color:#E8601A;font-weight:700;font-family:monospace;font-size:11px;">{s[1]}</span></div>'
+        f'<span style="color:#F97316;font-weight:700;font-family:monospace;font-size:11px;">{s[1]}</span></div>'
         for s in st["top_srcs"]
     )
 
@@ -119,57 +119,57 @@ def generate(db_path="fsis_global.db"):
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Food Safety Horizon Scanning · Global Recall Intelligence</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0;}}
-body{{background:#0e0e0e;color:#f0f0f0;font-family:'DM Sans',sans-serif;font-size:14px;}}
-.hdr{{background:#161616;border-bottom:2px solid #E8601A;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}}
-.brand{{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;}}.brand span{{color:#E8601A;}}
-.meta{{font-family:'DM Mono',monospace;font-size:10px;color:#666;text-align:right;line-height:1.8;}}
+body{{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:14px;}}
+.hdr{{background:#131B2C;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}}
+.brand{{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;}}.brand span{{color:#F97316;}}
+.meta{{font-family:'JetBrains Mono',monospace;font-size:10px;color:#9CA3AF;text-align:right;line-height:1.8;}}
 .ticker{{background:#120800;border-bottom:1px solid #3a1800;padding:8px 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;}}
-.dot{{width:6px;height:6px;border-radius:50%;background:#E8601A;box-shadow:0 0 5px #E8601A;animation:blink 1.5s infinite;flex-shrink:0;}}
+.dot{{width:6px;height:6px;border-radius:50%;background:#F97316;box-shadow:0 0 5px #F97316;animation:blink 1.5s infinite;flex-shrink:0;}}
 @keyframes blink{{0%,100%{{opacity:1}}50%{{opacity:.3}}}}
 .wrap{{padding:18px 24px;max-width:1600px;margin:0 auto;}}
 .kpi-row{{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px;}}
-.kpi{{background:#161616;border:1px solid #222;border-radius:6px;padding:12px 16px;border-top:2px solid #E8601A;}}
+.kpi{{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:12px 16px;border-top:2px solid #F97316;}}
 .kpi.r{{border-top-color:#ef5350;}}.kpi.a{{border-top-color:#d4a017;}}.kpi.b{{border-top-color:#5b9bd5;}}.kpi.g{{border-top-color:#4caf80;}}.kpi.p{{border-top-color:#ce93d8;}}
-.kv{{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:#E8601A;line-height:1;}}
+.kv{{font-family:'Inter',sans-serif;font-size:26px;font-weight:800;color:#F97316;line-height:1;}}
 .kpi.r .kv{{color:#ef5350;}}.kpi.a .kv{{color:#d4a017;}}.kpi.b .kv{{color:#5b9bd5;}}.kpi.g .kv{{color:#4caf80;}}.kpi.p .kv{{color:#ce93d8;}}
-.kl{{font-size:10px;color:#666;letter-spacing:.08em;text-transform:uppercase;margin-top:3px;}}
+.kl{{font-size:10px;color:#9CA3AF;letter-spacing:.08em;text-transform:uppercase;margin-top:3px;}}
 .grid2{{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:16px;}}
-.panel{{background:#161616;border:1px solid #222;border-radius:6px;padding:16px;}}
+.panel{{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:16px;}}
 .side-grid{{display:grid;grid-template-columns:1fr 1fr;gap:8px;}}
-.sec{{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;color:#E8601A;text-transform:uppercase;margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid #222;}}
+.sec{{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;color:#F97316;text-transform:uppercase;margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.05);}}
 .filters{{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}}
-.filters input,.filters select{{background:#1e1e1e;border:1px solid #2a2a2a;color:#f0f0f0;padding:7px 10px;border-radius:4px;font-size:12px;font-family:'DM Mono',monospace;outline:none;}}
-.filters input{{flex:1;min-width:200px;}}.filters input::placeholder{{color:#444;}}
-.tbl-wrap{{overflow-x:auto;border:1px solid #1e1e1e;border-radius:6px;}}
+.filters input,.filters select{{background:#0B1120;border:1px solid rgba(255,255,255,.10);color:#E5E7EB;padding:7px 10px;border-radius:4px;font-size:12px;font-family:'JetBrains Mono',monospace;outline:none;}}
+.filters input{{flex:1;min-width:200px;}}.filters input::placeholder{{color:#4B5563;}}
+.tbl-wrap{{overflow-x:auto;border:1px solid #0B1120;border-radius:6px;}}
 table{{width:100%;border-collapse:collapse;font-size:12px;}}
-thead{{background:#1a1a1a;}}
-th{{text-align:left;padding:9px 10px;font-size:10px;font-weight:600;color:#555;letter-spacing:.1em;white-space:nowrap;cursor:pointer;}}
-th:hover{{color:#f0f0f0;}}
-td{{padding:7px 10px;border-bottom:1px solid #161616;vertical-align:middle;}}
-tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.04);}}
+thead{{background:#0D1420;}}
+th{{text-align:left;padding:9px 10px;font-size:10px;font-weight:600;color:#6B7280;letter-spacing:.1em;white-space:nowrap;cursor:pointer;}}
+th:hover{{color:#E5E7EB;}}
+td{{padding:7px 10px;border-bottom:1px solid #131B2C;vertical-align:middle;}}
+tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(249,115,22,.04);}}
 .badge{{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;white-space:nowrap;font-family:monospace;}}
-.b-l{{background:rgba(232,96,26,.15);color:#ff8c5a;border:1px solid rgba(232,96,26,.3);}}
+.b-l{{background:rgba(249,115,22,.15);color:#ff8c5a;border:1px solid rgba(249,115,22,.3);}}
 .b-e{{background:rgba(212,160,23,.15);color:#f0c040;border:1px solid rgba(212,160,23,.3);}}
 .b-s{{background:rgba(91,155,213,.15);color:#7ab8e8;border:1px solid rgba(91,155,213,.3);}}
 .b-b{{background:rgba(156,39,176,.15);color:#ce93d8;border:1px solid rgba(156,39,176,.3);}}
 .b-n{{background:rgba(76,175,128,.15);color:#80d4a8;border:1px solid rgba(76,175,128,.3);}}
 .b-a{{background:rgba(255,152,0,.15);color:#ffb74d;border:1px solid rgba(255,152,0,.3);}}
 .b-c{{background:rgba(233,30,99,.15);color:#f48fb1;border:1px solid rgba(233,30,99,.3);}}
-.b-o{{background:rgba(255,255,255,.05);color:#666;border:1px solid #2a2a2a;}}
-.ob{{display:inline-block;background:rgba(232,96,26,.15);border:1px solid rgba(232,96,26,.4);color:#E8601A;font-size:9px;padding:1px 5px;border-radius:2px;font-family:monospace;font-weight:700;margin-left:4px;}}
+.b-o{{background:rgba(255,255,255,.05);color:#9CA3AF;border:1px solid rgba(255,255,255,.10);}}
+.ob{{display:inline-block;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.4);color:#F97316;font-size:9px;padding:1px 5px;border-radius:2px;font-family:monospace;font-weight:700;margin-left:4px;}}
 .nav{{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;font-size:11px;font-family:monospace;}}
-.nav a{{color:#666;text-decoration:none;padding:4px 10px;border:1px solid #2a2a2a;border-radius:3px;}}
-.nav a:hover,.nav a.on{{color:#E8601A;border-color:#E8601A;}}
+.nav a{{color:#9CA3AF;text-decoration:none;padding:4px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}}
+.nav a:hover,.nav a.on{{color:#F97316;border-color:#F97316;}}
 .pag{{display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap;gap:8px;}}
 .pbtns{{display:flex;gap:4px;flex-wrap:wrap;}}
-.pb{{background:#1e1e1e;border:1px solid #2a2a2a;color:#666;padding:5px 9px;border-radius:3px;cursor:pointer;font-size:11px;font-family:monospace;}}
-.pb:hover,.pb.on{{background:#E8601A;color:#fff;border-color:#E8601A;}}
-.pi{{font-family:monospace;font-size:11px;color:#555;}}
-.footer{{text-align:center;padding:16px;font-size:11px;color:#555;border-top:1px solid #1e1e1e;font-family:monospace;}}
-.footer a{{color:#E8601A;text-decoration:none;}}
+.pb{{background:#0B1120;border:1px solid rgba(255,255,255,.10);color:#9CA3AF;padding:5px 9px;border-radius:3px;cursor:pointer;font-size:11px;font-family:monospace;}}
+.pb:hover,.pb.on{{background:#F97316;color:#fff;border-color:#F97316;}}
+.pi{{font-family:monospace;font-size:11px;color:#6B7280;}}
+.footer{{text-align:center;padding:16px;font-size:11px;color:#6B7280;border-top:1px solid #0B1120;font-family:monospace;}}
+.footer a{{color:#F97316;text-decoration:none;}}
 @media(max-width:700px){{.kpi-row{{grid-template-columns:repeat(2,1fr);}}.grid2{{grid-template-columns:1fr;}}}}
 </style></head><body>
 
@@ -178,9 +178,9 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.0
   <div class="meta">63 Sources · FDA · USDA · RASFF · CFIA · ΕΦΕΤ · 50+ countries · Refresh: 4h<br>Last update: {now_utc}</div>
 </div>
 <div class="ticker">
-  <span style="font-family:monospace;font-size:10px;color:#E8601A;font-weight:700;letter-spacing:.1em;">LIVE</span>
-  <div style="display:flex;align-items:center;gap:6px;"><div class="dot"></div><span style="color:#E8601A;font-size:11px;font-weight:700;font-family:monospace;">TIER-1</span><span style="font-size:11px;color:#ccc;">ByHeart Infant Formula · C. botulinum · 51 infants hospitalized · USA</span></div>
-  <div style="display:flex;align-items:center;gap:6px;"><div class="dot"></div><span style="color:#E8601A;font-size:11px;font-weight:700;font-family:monospace;">TIER-1</span><span style="font-size:11px;color:#ccc;">RAW FARM LLC · E. coli O157:H7 · 9 ill, 3 hosp · Active · USA</span></div>
+  <span style="font-family:monospace;font-size:10px;color:#F97316;font-weight:700;letter-spacing:.1em;">LIVE</span>
+  <div style="display:flex;align-items:center;gap:6px;"><div class="dot"></div><span style="color:#F97316;font-size:11px;font-weight:700;font-family:monospace;">TIER-1</span><span style="font-size:11px;color:#ccc;">ByHeart Infant Formula · C. botulinum · 51 infants hospitalized · USA</span></div>
+  <div style="display:flex;align-items:center;gap:6px;"><div class="dot"></div><span style="color:#F97316;font-size:11px;font-weight:700;font-family:monospace;">TIER-1</span><span style="font-size:11px;color:#ccc;">RAW FARM LLC · E. coli O157:H7 · 9 ill, 3 hosp · Active · USA</span></div>
   <div style="display:flex;align-items:center;gap:6px;"><div class="dot" style="background:#d4a017;box-shadow:0 0 5px #d4a017;"></div><span style="color:#d4a017;font-size:11px;font-weight:700;font-family:monospace;">INVESTIGATION</span><span style="font-size:11px;color:#ccc;">ΕΦΕΤ + ΕΟΔΥ · Φέτα Βυτίνας ΠΟΠ · Listeria · Greece</span></div>
   <div style="display:flex;align-items:center;gap:6px;"><div class="dot" style="background:#ce93d8;box-shadow:0 0 5px #ce93d8;"></div><span style="color:#ce93d8;font-size:11px;font-weight:700;font-family:monospace;">TIER-1</span><span style="font-size:11px;color:#ccc;">SMA / Aptamil / Danone Global · Cereulide (B. cereus) · Infant Formula · UK/SG/IE/DE/TW/AU</span></div>
 </div>
@@ -212,8 +212,8 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.0
           <div style="color:#ef5350;font-weight:700;font-size:11px;font-family:monospace;">TIER-1 CRITICAL</div>
           <div style="font-size:11px;color:#aaa;margin-top:4px;">C. botulinum · Listeria monocytogenes · E. coli O157 · Aflatoxin B1 · Cereulide · Hepatitis A</div>
         </div>
-        <div style="background:#1a0a00;border:1px solid #3a1e00;border-left:3px solid #E8601A;border-radius:4px;padding:10px;margin-bottom:8px;">
-          <div style="color:#E8601A;font-weight:700;font-size:11px;font-family:monospace;">TIER-2 SERIOUS</div>
+        <div style="background:#1a0a00;border:1px solid #3a1e00;border-left:3px solid #F97316;border-radius:4px;padding:10px;margin-bottom:8px;">
+          <div style="color:#F97316;font-weight:700;font-size:11px;font-family:monospace;">TIER-2 SERIOUS</div>
           <div style="font-size:11px;color:#aaa;margin-top:4px;">Salmonella · Campylobacter · Vibrio · Norovirus · Cyclospora</div>
         </div>
         <div style="background:#181400;border:1px solid #2a2200;border-left:3px solid #d4a017;border-radius:4px;padding:10px;">
@@ -290,8 +290,8 @@ tr:last-child td{{border-bottom:none;}}tr:hover td{{background:rgba(232,96,26,.0
 const ALL={js_data_json};
 const SRC_CSS={src_css_json};
 function pb(p){{p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}}
-function tb(t){{if(t==1)return'<span style="background:rgba(229,57,53,.1);color:#ef5350;border:1px solid rgba(229,57,53,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;">TIER-1</span>';if(t==2)return'<span style="background:rgba(232,96,26,.1);color:#E8601A;border:1px solid rgba(232,96,26,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-2</span>';return'<span style="background:rgba(212,160,23,.1);color:#d4a017;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-3</span>';}}
-function sc(s){{const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#666;border:1px solid #2a2a2a;";const l=s.replace("_GR","").replace("_FR","").replace("_BE","").replace("_DE","").replace("_UK","").replace(" (EU)","");return`<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;${{css}}">${{l}}</span>`;}}
+function tb(t){{if(t==1)return'<span style="background:rgba(229,57,53,.1);color:#ef5350;border:1px solid rgba(229,57,53,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;">TIER-1</span>';if(t==2)return'<span style="background:rgba(249,115,22,.1);color:#F97316;border:1px solid rgba(249,115,22,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-2</span>';return'<span style="background:rgba(212,160,23,.1);color:#d4a017;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-3</span>';}}
+function sc(s){{const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#9CA3AF;border:1px solid rgba(255,255,255,.10);";const l=s.replace("_GR","").replace("_FR","").replace("_BE","").replace("_DE","").replace("_UK","").replace(" (EU)","");return`<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;${{css}}">${{l}}</span>`;}}
 
 let filtered=[...ALL],cur=1;
 
@@ -323,9 +323,9 @@ function render(){{
   const tbody=document.getElementById('tbody');
   tbody.innerHTML=filtered.slice(s,e).map(r=>{{
     const ob=r[6]?'<span class="ob">OUTBREAK</span>':'';
-    const link=r[7]&&r[7]!='#'?`<a href="${{r[7]}}" target="_blank" style="color:#E8601A;font-size:11px;text-decoration:none;">↗</a>`:'—';
+    const link=r[7]&&r[7]!='#'?`<a href="${{r[7]}}" target="_blank" style="color:#F97316;font-size:11px;text-decoration:none;">↗</a>`:'—';
     return`<tr>
-<td style="font-family:monospace;font-size:11px;color:#666;white-space:nowrap;">${{r[0]}}</td>
+<td style="font-family:monospace;font-size:11px;color:#9CA3AF;white-space:nowrap;">${{r[0]}}</td>
 <td>${{sc(r[1])}}</td>
 <td style="font-weight:500;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;" title="${{r[2]}}">${{r[2]}}${{ob}}</td>
 <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#bbb;font-size:11px;" title="${{r[3]}}">${{r[3]}}</td>

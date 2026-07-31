@@ -462,9 +462,27 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
   .analysis p.pa-note { margin:14px -20px 0 -20px; padding:14px 20px 2px 20px; }
 }
 
+
+.site-nav{background:#fff;border-bottom:1px solid #e5e7eb;padding:12px 24px;margin:0 0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.site-nav .site-brand{font-family:'Inter',sans-serif;font-weight:800;font-size:15px;color:#0B1120;}
+.site-nav .site-brand span{color:#F97316;}
+.site-nav .links{display:flex;gap:8px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:10px;}
+.site-nav .links a{color:#6b7280;text-decoration:none;padding:4px 9px;border:1px solid #e5e7eb;border-radius:3px;}
+.site-nav .links a:hover,.site-nav .links a.on{color:#F97316;border-color:#F97316;}
 </style>
 </head>
 <body>
+<!-- NAV_PATCH_V1 -->
+<div class="site-nav">
+  <div class="site-brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
+  <div class="links">
+    <a href="index.html">&#128308; Live Dashboard</a>
+    <a href="2026-W21.html" class="on">&#128202; Weekly</a>
+    <a href="hub.html">&#128200; Monthly + AI</a>
+    <a href="alerts.html">&#128276; Alerts</a>
+    <a href="guide.html">&#128216; Guide</a>
+  </div>
+</div>
 
 <header class="masthead">
   <div class="brand-block">

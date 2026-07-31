@@ -1033,7 +1033,24 @@ font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.06em;margin-l
 .chip-tier1{{background:{TIER1_RED};}}
 .chip-tier2{{background:{TIER2_AMBER};color:#374151;}}
 .chip-outbreak{{background:{OUTBREAK_VIO};}}
-</style></head><body><div class="wrap">
+.site-nav{{background:#fff;border-bottom:1px solid #e5e7eb;padding:12px 24px;margin:-32px -20px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}}
+.site-nav .site-brand{{font-family:Inter,sans-serif;font-weight:800;font-size:15px;color:{BRAND_BLACK};}}
+.site-nav .site-brand span{{color:{BRAND_ORANGE};}}
+.site-nav .links{{display:flex;gap:8px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:10px;}}
+.site-nav .links a{{color:#6b7280;text-decoration:none;padding:4px 9px;border:1px solid #e5e7eb;border-radius:3px;}}
+.site-nav .links a:hover,.site-nav .links a.on{{color:{BRAND_ORANGE};border-color:{BRAND_ORANGE};}}
+</style></head><body>
+<div class="site-nav">
+  <div class="site-brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
+  <div class="links">
+    <a href="index.html">&#128308; Live Dashboard</a>
+    <a href="2026-W30.html">&#128202; Weekly</a>
+    <a href="hub.html" class="on">&#128200; Monthly + AI</a>
+    <a href="alerts.html">&#128276; Alerts</a>
+    <a href="guide.html">&#128216; Guide</a>
+  </div>
+</div>
+<div class="wrap">
 <div class="brand">Food Safety <em>·</em> Horizon Scanning</div>
 <h1>All recalls · {escape(month_name)}</h1>
 <div class="sub">{month_start.strftime('%d %b %Y')} – {month_end.strftime('%d %b %Y')}
@@ -1395,6 +1412,12 @@ body{{padding:28px 16px 60px;}}
 .page{{max-width:980px;margin:0 auto;background:#fff;padding:36px 44px;border:1px solid var(--brd);}}
 a{{color:var(--orange);}} a:hover{{color:{BRAND_BLACK};}}
 
+.site-nav{{background:#fff;border-bottom:1px solid var(--brd);padding:12px 24px;margin:-40px -24px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}}
+.site-nav .site-brand{{font-family:Inter,sans-serif;font-weight:800;font-size:15px;color:{BRAND_BLACK};}}
+.site-nav .site-brand span{{color:{BRAND_ORANGE};}}
+.site-nav .links{{display:flex;gap:8px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:10px;}}
+.site-nav .links a{{color:var(--muted);text-decoration:none;padding:4px 9px;border:1px solid var(--brd);border-radius:3px;}}
+.site-nav .links a:hover,.site-nav .links a.on{{color:{BRAND_ORANGE};border-color:{BRAND_ORANGE};}}
 .mast{{border-bottom:1px solid var(--brd);padding-bottom:18px;margin-bottom:26px;
 display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}}
 .brand{{font-family:Inter,sans-serif;font-weight:800;font-size:18px;color:{BRAND_BLACK};
@@ -1781,12 +1804,23 @@ letter-spacing:0.08em;text-transform:uppercase;}}
   h1.r-title {{ font-size:21px; line-height:1.2; }}
   .page {{ padding:18px 14px; }}
 }}
-</style></head><body><div class="page">
+</style></head><body>
+<div class="site-nav">
+  <div class="site-brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
+  <div class="links">
+    <a href="index.html">&#128308; Live Dashboard</a>
+    <a href="2026-W30.html">&#128202; Weekly</a>
+    <a href="hub.html" class="on">&#128200; Monthly + AI</a>
+    <a href="alerts.html">&#128276; Alerts</a>
+    <a href="guide.html">&#128216; Guide</a>
+  </div>
+</div>
+<div class="page">
 
 <div class="mast">
   <div>
     <div class="brand">Food Safety <em>·</em> Horizon Scanning</div>
-    <div class="tagline">Food Safety Intelligence System · Monthly Briefing</div>
+    <div class="tagline">Horizon Scanning · Monthly Briefing</div>
     <div class="pubdate"><strong>{published_label}</strong> &middot; {pub_date}</div>
   </div>
   <div class="pill">{escape(month_name)} {year}</div>

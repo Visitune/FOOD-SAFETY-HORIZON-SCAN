@@ -12,6 +12,15 @@ documented in pipeline/. Keep this file only if you intend to wire it back
 into that chain or use it as a local/manual reporting tool; otherwise
 fsis_global.db can be treated as stale.
 
+SUPERSEDED (2026-07-31): a manual run of this script is what produced the
+docs/index.html that shipped to production, silently limiting the live
+table to fsis_global.db's 74 stale rows (2 sources) instead of the real
+~1280-row dataset in docs/data/recalls.json (51 sources). docs/index.html's
+table now fetches docs/data/recalls.json at RUNTIME in the browser instead
+of being baked in at generation time — see the fetch() call at the bottom
+of its <script> block. Do NOT re-run this script against docs/index.html;
+doing so overwrites that fix with the same stale legacy dataset again.
+
 Theme: imports constants/helpers from _theme.py.
 """
 import json, logging, sqlite3, sys

@@ -1504,6 +1504,16 @@ body {
 a { color:var(--orange); text-decoration:none; }
 a:hover { text-decoration:underline; }
 
+.site-nav {
+  background:#fff; border-bottom:1px solid var(--brd);
+  padding:12px 24px; margin:0 0 20px; display:flex;
+  justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
+}
+.site-nav .site-brand { font-family:'Inter', sans-serif; font-weight:800; font-size:15px; color:var(--black); }
+.site-nav .site-brand span { color:var(--orange); }
+.site-nav .links { display:flex; gap:8px; flex-wrap:wrap; font-family:'JetBrains Mono', monospace; font-size:10px; }
+.site-nav .links a { color:var(--muted); text-decoration:none; padding:4px 9px; border:1px solid var(--brd); border-radius:3px; }
+.site-nav .links a:hover, .site-nav .links a.on { color:var(--orange); border-color:var(--orange); }
 .masthead {
   border-top:6px solid var(--black);
   padding:28px 0 22px;
@@ -1961,10 +1971,21 @@ __CSS_PLACEHOLDER__
 </head>
 <body>
 
+<div class="site-nav">
+  <div class="site-brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
+  <div class="links">
+    <a href="index.html">&#128308; Live Dashboard</a>
+    <a href="{week_filename}" class="on">&#128202; Weekly</a>
+    <a href="hub.html">&#128200; Monthly + AI</a>
+    <a href="alerts.html">&#128276; Alerts</a>
+    <a href="guide.html">&#128216; Guide</a>
+  </div>
+</div>
+
 <header class="masthead">
   <div class="brand-block">
     <div class="brand">Food Safety <em>&middot;</em> Horizon Scanning</div>
-    <div class="tagline">Food Safety Intelligence System &middot; Weekly Briefing</div>
+    <div class="tagline">Horizon Scanning &middot; Weekly Briefing</div>
   </div>
   <div class="mast-right">
     <div class="report-label">Subscribers Edition</div>
@@ -2295,6 +2316,7 @@ def build_html(week_end, recalls, prev_week, original_published=None):
 
     html = HTML_TEMPLATE.format(
         wnum=wnum, year=year, period=period,
+        week_filename="{}-W{:02d}.html".format(year, wnum),
         published=pub, published_label=published_label, total=total,
         n_jurisdictions=len(stats["country_counts"]), delta_html=dh,
         tier1=stats["tier1"], outbreaks=stats["outbreaks"],

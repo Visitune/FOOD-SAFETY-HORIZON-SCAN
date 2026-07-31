@@ -87,25 +87,31 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
        yearly report currently exists anywhere in docs/. -->
 
 
-  
+  <!-- DATA FIX 2026-07-31: this table used to be baked in at generation time
+       from reports/dashboard.py, which reads the disconnected legacy
+       fsis_global.db (74 rows, 2 sources) instead of the real production
+       data. Now fetched at runtime from data/recalls.json (the real
+       ~1280-row dataset also used by every other part of the pipeline) —
+       see the fetch() block at the bottom of this file. KPI/panel values
+       below are placeholders filled in by that same fetch. -->
     <div class="kpi-row">
-      <div class="kpi"><div class="kv">74</div><div class="kl">Total Recalls in DB</div></div>
-      <div class="kpi r"><div class="kv">31</div><div class="kl">Tier-1 Critical</div></div>
-      <div class="kpi a"><div class="kv">0</div><div class="kl">Active Outbreaks</div></div>
-      <div class="kpi b"><div class="kv">8</div><div class="kl">Distinct Pathogens</div></div>
-      <div class="kpi g"><div class="kv">25</div><div class="kl">Countries</div></div>
-      <div class="kpi p"><div class="kv">63</div><div class="kl">Sources</div></div>
+      <div class="kpi"><div class="kv" id="kpiTotal">–</div><div class="kl">Total Recalls in DB</div></div>
+      <div class="kpi r"><div class="kv" id="kpiTier1">–</div><div class="kl">Tier-1 Critical</div></div>
+      <div class="kpi a"><div class="kv" id="kpiOutbreaks">–</div><div class="kl">Active Outbreaks</div></div>
+      <div class="kpi b"><div class="kv" id="kpiPathogens">–</div><div class="kl">Distinct Pathogens</div></div>
+      <div class="kpi g"><div class="kv" id="kpiCountries">–</div><div class="kl">Countries</div></div>
+      <div class="kpi p"><div class="kv" id="kpiSources">–</div><div class="kl">Sources</div></div>
     </div>
 
   <div class="grid2">
     <div class="panel">
       <div class="sec">Top Pathogens (All Sources)</div>
-      <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Salmonella</span><span style="color:#F97316;font-weight:700;font-family:monospace;">29</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Aflatoxin</span><span style="color:#F97316;font-weight:700;font-family:monospace;">16</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Listeria monocytogenes</span><span style="color:#F97316;font-weight:700;font-family:monospace;">12</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Ochratoxin</span><span style="color:#F97316;font-weight:700;font-family:monospace;">11</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Shiga toxin-producing E. coli (STEC)</span><span style="color:#F97316;font-weight:700;font-family:monospace;">3</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Norovirus</span><span style="color:#F97316;font-weight:700;font-family:monospace;">1</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Escherichia coli (generic)</span><span style="color:#F97316;font-weight:700;font-family:monospace;">1</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">Cronobacter sakazakii</span><span style="color:#F97316;font-weight:700;font-family:monospace;">1</span></div>
+      <div id="topPathogens"></div>
     </div>
     <div class="side-grid">
       <div class="panel">
         <div class="sec">By Source</div>
-        <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #0B1120;"><span style="font-size:11px;">RASFF (EU)</span><span style="color:#F97316;font-weight:700;font-family:monospace;font-size:11px;">72</span></div><div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #0B1120;"><span style="font-size:11px;">FSA (UK)</span><span style="color:#F97316;font-weight:700;font-family:monospace;font-size:11px;">2</span></div>
+        <div id="bySource"></div>
       </div>
       <div class="panel">
         <div class="sec">Bio Risk Tiers</div>
@@ -131,17 +137,23 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       <input type="text" id="srch" placeholder="Search firm, product, country, pathogen, lot...">
       <select id="srcf">
         <option value="">All Sources</option>
-        <option value="fda">FDA (USA)</option>
-        <option value="usda">USDA (USA)</option>
-        <option value="cfia">CFIA (Canada)</option>
-        <option value="rasff">RASFF (EU)</option>
-        <option value="efet">ΕΦΕΤ (Greece)</option>
-        <option value="afsca">AFSCA (Belgium)</option>
-        <option value="bvl">BVL (Germany)</option>
-        <option value="rappelconso">RappelConso (France)</option>
-        <option value="fsa">FSA (UK)</option>
-        <option value="fsanz">FSANZ (AU/NZ)</option>
-        <option value="news">News</option>
+      </select>
+      <select id="ctryf">
+        <option value="">All Countries</option>
+      </select>
+      <select id="regf">
+        <option value="">All Regions</option>
+      </select>
+      <select id="prodf">
+        <option value="">All Product Types</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Meat/Poultry">Meat/Poultry</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Produce">Produce</option>
+        <option value="Grains/Bakery">Grains/Bakery</option>
+        <option value="Confectionery/Snacks">Confectionery/Snacks</option>
+        <option value="Beverages">Beverages</option>
+        <option value="Other">Other</option>
       </select>
       <select id="pathf">
         <option value="">All Pathogens</option>
@@ -188,27 +200,58 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 </div>
 
 <script>
-const ALL=[["2026-07-28", "RASFF (EU)", "Origin: Argentina | Notifying: Netherlands", "Aflatoxins in groundnuts from Argentina", "Aflatoxin", "Argentina", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/862287", 1], ["2026-07-28", "RASFF (EU)", "Origin: France | Notifying: France", "Detection of E. coli STEC in raw milk cheese", "Shiga toxin-producing E. coli (STEC)", "France", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/862277", 1], ["2026-07-28", "RASFF (EU)", "Origin: United States | Notifying: Spain", "Aflatoxinas en almendras procedentes de EEUU /Aflatoxins in almond seeds from US", "Aflatoxin", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859384", 1], ["2026-07-28", "RASFF (EU)", "Origin: Brazil | Notifying: Poland", "Salmonella spp. i Listeria monocytogenes w filecie drobiowym mro\u017conym // Salmone", "Listeria monocytogenes", "Brazil", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/862060", 1], ["2026-07-28", "RASFF (EU)", "Origin: Brazil | Notifying: Poland", "Salmonella z grupy \u201eC\u201d i Listeria monocytogenes w filecie drobiowym mro\u017conym // ", "Listeria monocytogenes", "Brazil", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/862005", 1], ["2026-07-28", "RASFF (EU)", "Origin: India | Notifying: Italy", "High levels of aflatoxin B1 and Sum of B1, B2, G1 in Rice from India", "Aflatoxin", "India", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861989", 1], ["2026-07-28", "RASFF (EU)", "Origin: Poland | Notifying: Poland", "Listeria monocytogenes (2/5 w 25g) w kie\u0142basie surowej/// Listeria monocytogenes", "Listeria monocytogenes", "Poland", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860922", 1], ["2026-07-27", "RASFF (EU)", "Origin: Lithuania | Notifying: Latvia", "STEC stx2 in cold-smoked salami", "Shiga toxin-producing E. coli (STEC)", "Lithuania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861819", 1], ["2026-07-27", "RASFF (EU)", "Origin: Georgia | Notifying: Bulgaria", "aflatoxins in hazelnuts from Georgia", "Aflatoxin", "Georgia", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860249", 1], ["2026-07-24", "RASFF (EU)", "Origin: Poland | Notifying: Poland", "Listeria monocytogenes (1/5 w 25g) w kie\u0142basie surowej- metce \u0142ososiowej // List", "Listeria monocytogenes", "Poland", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860904", 1], ["2026-07-24", "RASFF (EU)", "Origin: Belgium | Notifying: Belgium", "Listeria Monocytogenes in beef carpaccio from Belgium", "Listeria monocytogenes", "Belgium", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861644", 1], ["2026-07-24", "RASFF (EU)", "Origin: India | Notifying: Italy", "PRESENZA DI AFLATOSSINE IN RISO ROTTO DALL'INDIA/High levels of aflatoxin B1 in ", "Aflatoxin", "India", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861297", 1], ["2026-07-24", "RASFF (EU)", "Origin: France | Notifying: France", "Detection of Listeria monocytogenes in cold cuts products", "Listeria monocytogenes", "France", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861501", 1], ["2026-07-23", "RASFF (EU)", "Origin: United States | Notifying: France", "Aflatoxine B1, Ochratoxine A, Aflatoxines B et G et de Chlorpyrifos Pistachios f", "Aflatoxin", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861326", 1], ["2026-07-23", "RASFF (EU)", "Origin: Germany | Notifying: Switzerland", "Listeria monocytogenes in prepared thai dish", "Listeria monocytogenes", "Germany", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860928", 1], ["2026-07-21", "RASFF (EU)", "Origin: Belgium | Notifying: Austria", "Aflatoxin contamination in salted rice cake from Belgium", "Aflatoxin", "Belgium", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860517", 1], ["2026-07-21", "RASFF (EU)", "Origin: Belgium | Notifying: Italy", "Listeria monocytogenes in smoked salmon from Belgium", "Listeria monocytogenes", "Belgium", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860262", 1], ["2026-07-20", "RASFF (EU)", "Origin: United States | Notifying: Netherlands", "Exceedance of aflatoxins in groundnut kernels, from the USA", "Aflatoxin", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860244", 1], ["2026-07-20", "RASFF (EU)", "Origin: Italy | Notifying: Italy", "Listeria Monocytogenes in Tramezzino al kebab di pollo e tacchino con maionese s", "Listeria monocytogenes", "Italy", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859157", 1], ["2026-07-17", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: Italy", "Aflatoxin in dried figs from T\u00fcrkiye", "Aflatoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859883", 1], ["2026-07-17", "RASFF (EU)", "Origin: France | Notifying: Switzerland", "Listeria monocytogenes in raw milk goat cheese", "Listeria monocytogenes", "France", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859514", 1], ["2026-07-17", "RASFF (EU)", "Origin: Italy | Notifying: Italy", "Superaci\u00f3n del nivel de aflatoxinas en pasta de pistacho procedente de Italia//E", "Aflatoxin", "Italy", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859784", 1], ["2026-07-17", "RASFF (EU)", "Origin: Czechia | Notifying: Czechia", "Shigatoxin-producing Eschericha coli (STEC) in beef tartar from Czech Republic", "Shiga toxin-producing E. coli (STEC)", "Czechia", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859776", 1], ["2026-07-16", "RASFF (EU)", "Origin: Argentina | Notifying: Netherlands", "Aflatoxin B1 in groudnutkernels from Argentina", "Aflatoxin", "Argentina", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/858774", 1], ["2026-07-16", "RASFF (EU)", "Origin: Egypt | Notifying: Netherlands", "Groundnuts Egypt Aflatoxin B1", "Aflatoxin", "Egypt", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859290", 1], ["2026-07-16", "RASFF (EU)", "Origin: United States | Notifying: Netherlands", "Aflatoxin in groundnuts from USA", "Aflatoxin", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859028", 1], ["2026-07-16", "RASFF (EU)", "Origin: Indonesia | Notifying: Netherlands", "Exceedance of aflatoxin & ochratoxin in Nutmeg from Indonesia", "Aflatoxin", "Indonesia", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/858816", 1], ["2026-07-16", "RASFF (EU)", "Origin: United States | Notifying: Netherlands", "Aflatoxins in U.S.A. peanuts", "Aflatoxin", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859291", 1], ["2026-07-16", "RASFF (EU)", "Origin: United States | Notifying: Finland", "Too much aflatoxins (aflatoxin B1 and aflatoxins in total) in groundnuts from Un", "Aflatoxin", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859138", 1], ["2026-07-08", "FSA (UK)", "M&S recalls M&S Food Truffle Gouda due to the presence of Li", "M&S recalls M&S Food Truffle Gouda due to the presence of Listeria Monocytogenes", "Listeria monocytogenes", "United Kingdom", 0, "http://data.food.gov.uk/food-alerts/id/FSA-PRIN-33-2026", 1], ["2026-07-01", "FSA (UK)", "O\u2019Brien Fine Foods recalls ham products because of possible ", "O\u2019Brien Fine Foods recalls ham products because of possible contamination with L", "Listeria monocytogenes", "United Kingdom", 0, "http://data.food.gov.uk/food-alerts/id/FSA-PRIN-32-2026", 1], ["2026-07-29", "RASFF (EU)", "Origin: United States | Notifying: Germany", "Salmonella spp. in walnut kernels (raw material) from the USA", "Salmonella", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/862344", 2], ["2026-07-29", "RASFF (EU)", "Origin: Brazil | Notifying: Romania", "Salmonella spp in ficat pasare, origine Brazilia // Salmonella spp. in poultry l", "Salmonella", "Brazil", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861276", 2], ["2026-07-28", "RASFF (EU)", "Origin: Romania | Notifying: Romania", "Salmonella spp in pulpe pui din Romania / Salmonella spp in chicken thighs from ", "Salmonella", "Romania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860718", 2], ["2026-07-27", "RASFF (EU)", "Origin: Poland | Notifying: Latvia", "Salmonella Infantis (in 2 out of 5 units) in chicken gizzards", "Salmonella", "Poland", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860420", 2], ["2026-07-27", "RASFF (EU)", "Origin: Poland | Notifying: Italy", "Salmonella spp. in chicken and turkey kebab from Poland", "Salmonella", "Poland", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861866", 2], ["2026-07-27", "RASFF (EU)", "Origin: Lithuania | Notifying: Lithuania", "Salmonella Enteritidis detected in frozen chicken dumplings from Lithuania", "Salmonella", "Lithuania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861701", 2], ["2026-07-27", "RASFF (EU)", "Origin: Nigeria | Notifying: Greece", "Salmonella spp in sesame seeds from Nigeria", "Salmonella", "Nigeria", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861687", 2], ["2026-07-24", "RASFF (EU)", "Origin: Lithuania | Notifying: Latvia", "Salmonella Agona (in 3 out of 5 units) and Salmonella Infantis (in 2 out of 5 un", "Salmonella", "Lithuania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860998", 2], ["2026-07-24", "RASFF (EU)", "Origin: France | Notifying: France", "Salmonella in merguez with poultry meat", "Salmonella", "France", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861572", 2], ["2026-07-24", "RASFF (EU)", "Origin: Romania | Notifying: Romania", "Salmonella spp in ciocanele pui congelate din Romania ////  Salmonella spp in ch", "Salmonella", "Romania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860867", 2], ["2026-07-24", "RASFF (EU)", "Origin: Romania | Notifying: Italy", "Salmonella spp. in poultry meat originating in Romania", "Salmonella", "Romania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861328", 2], ["2026-07-23", "RASFF (EU)", "Origin: Nigeria | Notifying: Greece", "Salmonella spp in sesame seeds from Nigeria", "Salmonella", "Nigeria", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/853016", 2], ["2026-07-23", "RASFF (EU)", "Origin: Nigeria | Notifying: Greece", "Salmonella spp in sesame seeds from Nigeria", "Salmonella", "Nigeria", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860865", 2], ["2026-07-23", "RASFF (EU)", "Origin: Nigeria | Notifying: Greece", "Salmonella spp in sesame seeds from Nigeria", "Salmonella", "Nigeria", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860856", 2], ["2026-07-23", "RASFF (EU)", "Origin: Estonia | Notifying: Finland", "Salmonella in seed mix from Estonia", "Salmonella", "Estonia", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860797", 2], ["2026-07-22", "RASFF (EU)", "Origin: Germany | Notifying: Germany", "Norovirus RNA in organic frozen mixed berries from Germany", "Norovirus", "Germany", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860140", 2], ["2026-07-22", "RASFF (EU)", "Origin: Romania | Notifying: Romania", "Salmonella spp in carne pasare, origine Romania /// Salmonella spp in chicken me", "Salmonella", "Romania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860529", 2], ["2026-07-21", "RASFF (EU)", "Origin: United States | Notifying: Austria", "Salmonella detected in grated almonds from Austria, manufactured from raw almond", "Salmonella", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860573", 2], ["2026-07-20", "RASFF (EU)", "Origin: France | Notifying: France", "Presence of Salmonella Chester in turkey fillets", "Salmonella", "France", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860114", 2], ["2026-07-20", "RASFF (EU)", "Origin: India | Notifying: France", "Salmonella in betel leaves from India", "Salmonella", "India", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859966", 2], ["2026-07-20", "RASFF (EU)", "Origin: Nigeria | Notifying: Greece", "Salmonella spp in sesame seeds from Nigeria", "Salmonella", "Nigeria", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860041", 2], ["2026-07-20", "RASFF (EU)", "Origin: Botswana | Notifying: Norway", "Salmonella Typhimurium in bovine meat from Botswana", "Salmonella", "Botswana", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/858955", 2], ["2026-07-17", "RASFF (EU)", "Origin: United States | Notifying: Germany", "Salmonella spp. in chopped pistachios from Italy, produced with raw material fro", "Salmonella", "USA", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859413", 2], ["2026-07-17", "RASFF (EU)", "Origin: Nigeria | Notifying: Spain", "Salmonella en semilla de s\u00e9samo de Nigeria // Salmonella in sesame seeds from Ni", "Salmonella", "Nigeria", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/858770", 2], ["2026-07-17", "RASFF (EU)", "Origin: Germany | Notifying: Norway", "Salmonella paratyphi detected in fallow deer from Germany", "Salmonella", "Germany", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/856546", 2], ["2026-07-17", "RASFF (EU)", "Origin: Slovenia | Notifying: Croatia", "Salmonella spp in poultry preparation meat from Slovenia", "Salmonella", "Slovenia", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859756", 2], ["2026-07-17", "RASFF (EU)", "Origin: Poland | Notifying: Italy", "Salmonella Enteritidis , agona, infantis in  kebab, from Poland", "Salmonella", "Poland", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859574", 2], ["2026-07-16", "RASFF (EU)", "Origin: Lithuania | Notifying: Latvia", "Salmonella Enteritidis detected (1 out of 5 samples) in chicken drumsticks", "Salmonella", "Lithuania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859223", 2], ["2026-07-16", "RASFF (EU)", "Origin: Brazil | Notifying: Netherlands", "Salmonella spp. present in 25 g in a poultry meat preparation consignment from B", "Salmonella", "Brazil", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/858865", 2], ["2026-07-16", "RASFF (EU)", "Origin: Lithuania | Notifying: Latvia", "Salmonella Agona detected (1 out of 5 samples) in boneless, skinless chicken thi", "Salmonella", "Lithuania", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/858311", 2], ["2026-07-29", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: Bulgaria", "Ochratoxin A in dried figs from T\u00fcrkiye", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/862264", 3], ["2026-07-28", "RASFF (EU)", "Origin: Uzbekistan | Notifying: Poland", "Stwierdzenie przekroczenia NDP ochratoksyny A w rodzynkach, kraj pochodzenia: Uz", "Ochratoxin", "Uzbekistan", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/849659", 3], ["2026-07-28", "RASFF (EU)", "Origin: Spain | Notifying: Italy", "Ocratossina A oltre i limiti di legge in \"Fichi secchi Bio\", origine Spagna//Och", "Ochratoxin", "Spain", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861274", 3], ["2026-07-28", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: Bulgaria", "Ochratoxin A in dried figs from T\u00fcrkiye", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861955", 3], ["2026-07-27", "RASFF (EU)", "Origin: Netherlands | Notifying: Belgium", "High levels of ochratoxin A in dried grapes from The Netherlands", "Ochratoxin", "Netherlands", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861811", 3], ["2026-07-24", "RASFF (EU)", "Origin: Italy | Notifying: Italy", "E.coli in ostriche /// E. coli in Oysters", "Escherichia coli (generic)", "Italy", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861622", 3], ["2026-07-24", "RASFF (EU)", "Origin: Taiwan | Notifying: Belgium", "Cronobacter sakazakii in human milk oligosaccharides from Taiwan", "Cronobacter sakazakii", "Taiwan", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/861070", 3], ["2026-07-22", "RASFF (EU)", "Origin: Italy | Notifying: Germany", "Ochratoxin A in ice cream from Germany, manufactured in Italy", "Ochratoxin", "Italy", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860697", 3], ["2026-07-21", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: France", "Ochratoxin A in dried figs from Turkiye", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860630", 3], ["2026-07-21", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: France", "Ochratoxin A in dried figs from Turkiye", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860624", 3], ["2026-07-21", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: France", "Ochratoxin A in dried figs from Turkiye", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/860563", 3], ["2026-07-17", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: Germany", "Ochratoxin A in dried organic figs from Turkey", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859839", 3], ["2026-07-17", "RASFF (EU)", "Origin: T\u00fcrkiye | Notifying: Germany", "Ochratoxin A contamination in dried figs from turkey", "Ochratoxin", "Turkey", 0, "https://webgate.ec.europa.eu/rasff-window/screen/notification/859703", 3]];
+let ALL=[],filtered=[],cur=1;
 const SRC_CSS={"FDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "USDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "USDA-FSIS": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "RASFF": "background:rgba(76,175,128,.12);color:#80d4a8;border:1px solid rgba(76,175,128,.25);", "RASFF (EU)": "background:rgba(76,175,128,.12);color:#80d4a8;border:1px solid rgba(76,175,128,.25);", "EFET_GR": "background:rgba(30,136,229,.12);color:#64b5f6;border:1px solid rgba(30,136,229,.25);", "AFSCA_BE": "background:rgba(255,193,7,.12);color:#ffd54f;border:1px solid rgba(255,193,7,.25);", "BVL_DE": "background:rgba(244,67,54,.12);color:#ef9a9a;border:1px solid rgba(244,67,54,.25);", "RAPPELCONSO_FR": "background:rgba(206,147,216,.12);color:#ce93d8;border:1px solid rgba(206,147,216,.25);", "CFIA": "background:rgba(255,112,67,.12);color:#ffab91;border:1px solid rgba(255,112,67,.25);", "FSANZ": "background:rgba(77,182,172,.12);color:#80cbc4;border:1px solid rgba(77,182,172,.25);", "FSA_UK": "background:rgba(158,158,158,.12);color:#bdbdbd;border:1px solid rgba(158,158,158,.25);", "FSN": "background:rgba(255,255,255,.05);color:#777;border:1px solid #2a2a2a;", "NEWS": "background:rgba(255,255,255,.05);color:#777;border:1px solid #2a2a2a;"};
 function pb(p){p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}
 function tb(t){if(t==1)return'<span style="background:rgba(229,57,53,.1);color:#ef5350;border:1px solid rgba(229,57,53,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;">TIER-1</span>';if(t==2)return'<span style="background:rgba(232,96,26,.1);color:#F97316;border:1px solid rgba(232,96,26,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-2</span>';return'<span style="background:rgba(212,160,23,.1);color:#d4a017;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-3</span>';}
-function sc(s){const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#666;border:1px solid #2a2a2a;";const l=s.replace("_GR","").replace("_FR","").replace("_BE","").replace("_DE","").replace("_UK","").replace(" (EU)","");return`<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;${css}">${l}</span>`;}
+function sc(s){const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#666;border:1px solid #2a2a2a;";const l=(s||"").replace("_GR","").replace("_FR","").replace("_BE","").replace("_DE","").replace("_UK","").replace(" (EU)","");return`<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;${css}">${l}</span>`;}
+function prodCat(p){p=(p||"").toLowerCase();if(/milk|cheese|yog|butter|cream|dairy/.test(p))return"Dairy";if(/beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb/.test(p))return"Meat/Poultry";if(/fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam/.test(p))return"Seafood";if(/lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion/.test(p))return"Produce";if(/bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta/.test(p))return"Grains/Bakery";if(/chocolate|candy|sweet|confection|snack|chip|cookie/.test(p))return"Confectionery/Snacks";if(/juice|beverage|drink|water|coffee|tea|soda/.test(p))return"Beverages";return"Other";}
 
-let filtered=[...ALL],cur=1;
+function populateSelect(id,values,allLabel){
+  const el=document.getElementById(id);
+  el.innerHTML=`<option value="">${allLabel}</option>`+values.map(v=>`<option value="${String(v).replace(/"/g,'&quot;')}">${v}</option>`).join('');
+}
 
-document.getElementById('vc').textContent=`(${ALL.length} total records · Tier-1 sorted first)`;
+function computeSummary(data){
+  document.getElementById('kpiTotal').textContent=data.length;
+  document.getElementById('kpiTier1').textContent=data.filter(r=>r.Tier==1).length;
+  document.getElementById('kpiOutbreaks').textContent=data.filter(r=>r.Outbreak).length;
+  const pathCounts={};
+  data.forEach(r=>{const p=r.Pathogen||'Unknown';pathCounts[p]=(pathCounts[p]||0)+1;});
+  document.getElementById('kpiPathogens').textContent=Object.keys(pathCounts).length;
+  document.getElementById('kpiCountries').textContent=new Set(data.map(r=>r.Country).filter(Boolean)).size;
+  const srcCounts={};
+  data.forEach(r=>{srcCounts[r.Source]=(srcCounts[r.Source]||0)+1;});
+  document.getElementById('kpiSources').textContent=Object.keys(srcCounts).length;
+
+  const topPathogens=Object.entries(pathCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  document.getElementById('topPathogens').innerHTML=topPathogens.map(([p,c])=>
+    `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">${p}</span><span style="color:#F97316;font-weight:700;font-family:monospace;">${c}</span></div>`
+  ).join('');
+
+  const topSources=Object.entries(srcCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
+  document.getElementById('bySource').innerHTML=topSources.map(([s,c])=>
+    `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #0B1120;"><span style="font-size:11px;">${s}</span><span style="color:#F97316;font-weight:700;font-family:monospace;font-size:11px;">${c}</span></div>`
+  ).join('');
+}
 
 function applyFilters(){
   const q=document.getElementById('srch').value.toLowerCase();
-  const sf=document.getElementById('srcf').value.toLowerCase();
+  const sf=document.getElementById('srcf').value;
   const pf=document.getElementById('pathf').value.toLowerCase();
   const tf=document.getElementById('tierf').value;
+  const cf=document.getElementById('ctryf').value;
+  const rf=document.getElementById('regf').value;
+  const prf=document.getElementById('prodf').value;
   filtered=ALL.filter(r=>{
-    const hay=(r[2]+' '+r[3]+' '+r[4]+' '+r[5]).toLowerCase();
+    const hay=((r.Company||'')+' '+(r.Product||'')+' '+(r.Pathogen||'')+' '+(r.Country||'')).toLowerCase();
     if(q&&!hay.includes(q))return false;
-    if(sf&&!r[1].toLowerCase().includes(sf))return false;
-    if(pf&&!r[4].toLowerCase().includes(pf))return false;
-    if(tf&&String(r[8])!==tf)return false;
+    if(sf&&r.Source!==sf)return false;
+    if(pf&&!(r.Pathogen||'').toLowerCase().includes(pf))return false;
+    if(tf&&String(r.Tier)!==tf)return false;
+    if(cf&&r.Country!==cf)return false;
+    if(rf&&r.Region!==rf)return false;
+    if(prf&&prodCat(r.Product)!==prf)return false;
     return true;
   });
   cur=1;render();
@@ -223,16 +266,18 @@ function render(){
   document.getElementById('fcnt').textContent=`${tot} records`;
   const tbody=document.getElementById('tbody');
   tbody.innerHTML=filtered.slice(s,e).map(r=>{
-    const ob=r[6]?'<span class="ob">OUTBREAK</span>':'';
-    const link=r[7]&&r[7]!='#'?`<a href="${r[7]}" target="_blank" style="color:#F97316;font-size:11px;text-decoration:none;">↗</a>`:'—';
+    const ob=r.Outbreak?'<span class="ob">OUTBREAK</span>':'';
+    const link=r.URL&&r.URL!=='#'?`<a href="${r.URL}" target="_blank" style="color:#F97316;font-size:11px;text-decoration:none;">↗</a>`:'—';
+    const company=(r.Company||'').replace(/"/g,'&quot;');
+    const product=(r.Product||'').replace(/"/g,'&quot;');
     return`<tr>
-<td style="font-family:monospace;font-size:11px;color:#666;white-space:nowrap;">${r[0]}</td>
-<td>${sc(r[1])}</td>
-<td style="font-weight:500;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;" title="${r[2]}">${r[2]}${ob}</td>
-<td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#bbb;font-size:11px;" title="${r[3]}">${r[3]}</td>
-<td><span class="badge ${pb(r[4])}">${r[4]}</span></td>
-<td>${tb(r[8])}</td>
-<td style="font-size:11px;color:#888;">${r[5]}</td>
+<td style="font-family:monospace;font-size:11px;color:#666;white-space:nowrap;">${r.Date||''}</td>
+<td>${sc(r.Source)}</td>
+<td style="font-weight:500;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;" title="${company}">${r.Company||''}${ob}</td>
+<td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#bbb;font-size:11px;" title="${product}">${r.Product||''}</td>
+<td><span class="badge ${pb(r.Pathogen)}">${r.Pathogen||'—'}</span></td>
+<td>${tb(r.Tier)}</td>
+<td style="font-size:11px;color:#888;">${r.Country||''}</td>
 <td>${link}</td>
 </tr>`;
   }).join('');
@@ -246,8 +291,22 @@ function render(){
   if(cur<pages)btn('›',cur+1,false);btn('»',pages,false);
 }
 
-['srch','srcf','pathf','tierf'].forEach(id=>document.getElementById(id).addEventListener(id==='srch'?'input':'change',applyFilters));
+['srch','srcf','pathf','tierf','ctryf','regf','prodf'].forEach(id=>document.getElementById(id).addEventListener(id==='srch'?'input':'change',applyFilters));
 document.getElementById('rpp').addEventListener('change',applyFilters);
-render();
+
+fetch('data/recalls.json?_='+Date.now()).then(r=>r.json()).then(data=>{
+  data.sort((a,b)=>(a.Tier||9)-(b.Tier||9));
+  ALL=data;
+  filtered=[...ALL];
+  document.getElementById('vc').textContent=`(${ALL.length} total records · Tier-1 sorted first)`;
+  computeSummary(data);
+  populateSelect('srcf',[...new Set(data.map(r=>r.Source).filter(Boolean))].sort(),'All Sources');
+  populateSelect('ctryf',[...new Set(data.map(r=>r.Country).filter(Boolean))].sort(),'All Countries');
+  populateSelect('regf',[...new Set(data.map(r=>r.Region).filter(Boolean))].sort(),'All Regions');
+  render();
+}).catch(err=>{
+  document.getElementById('tbody').innerHTML='<tr><td colspan="8" style="padding:24px;text-align:center;color:#ef5350;">Failed to load data/recalls.json — '+err+'</td></tr>';
+  document.getElementById('fcnt').textContent='load error';
+});
 </script>
 </body></html>

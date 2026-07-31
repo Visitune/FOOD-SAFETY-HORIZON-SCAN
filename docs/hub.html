@@ -121,13 +121,29 @@ a{color:inherit;text-decoration:none;}
 .footer-left a{color:var(--acc);font-weight:700;}
 @media(min-width:640px){.hero h1{font-size:44px;} .sec{padding:36px 32px;}}
 @media(max-width:540px){.month-card,.loading-card{flex:0 0 80vw;} .about-grid{grid-template-columns:1fr;} .site-footer{flex-direction:column;gap:10px;text-align:center;}}
+.site-nav{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
+.site-nav .brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;color:#fff;}.site-nav .brand span{color:#F97316;}
+.site-nav .links{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
+.site-nav .links a{color:#9CA3AF;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}
+.site-nav .links a:hover,.site-nav .links a.on{color:#F97316;border-color:#F97316;}
 </style>
 </head>
 <body>
 
+<div class="site-nav">
+  <div class="brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
+  <div class="links">
+    <a href="index.html">&#128308; Live Dashboard</a>
+    <a href="2026-W30.html">&#128202; Weekly</a>
+    <a href="hub.html" class="on">&#128200; Monthly + AI</a>
+    <a href="alerts.html">&#128276; Alerts</a>
+    <a href="guide.html">&#128216; Guide</a>
+  </div>
+</div>
+
 <section class="hero">
   <p class="hero-eyebrow">AI-Powered Surveillance</p>
-  <h1>Food Safety<br/><span class="hl">Intelligence System</span></h1>
+  <h1>Food Safety<br/><span class="hl">Horizon Scanning</span></h1>
   <p class="hero-sub">A global pathogen recall monitoring platform by Food Safety Horizon Scanning. We track, curate, and rank major food product recalls, market withdrawals, and safety alerts &mdash; every month, worldwide.</p>
   <div class="badges">
     <span class="badge b2">&#x1F9EB; Pathogen-Focused</span>

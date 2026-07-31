@@ -189,13 +189,28 @@ button.secondary:hover{color:var(--ink); border-color:var(--muted);}
   font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--dim);
   text-align:center; letter-spacing:0.06em;}
 .footer a{color:var(--muted);}
+.site-nav{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin:0 -24px 28px;}
+.site-nav .site-brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;color:#fff;}.site-nav .site-brand span{color:#F97316;}
+.site-nav .links{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
+.site-nav .links a{color:#9CA3AF;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}
+.site-nav .links a:hover,.site-nav .links a.on{color:#F97316;border-color:#F97316;}
 </style>
 </head>
 <body>
+<div class="site-nav">
+  <div class="site-brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
+  <div class="links">
+    <a href="index.html">&#128308; Live Dashboard</a>
+    <a href="2026-W30.html">&#128202; Weekly</a>
+    <a href="hub.html">&#128200; Monthly + AI</a>
+    <a href="alerts.html" class="on">&#128276; Alerts</a>
+    <a href="guide.html">&#128216; Guide</a>
+  </div>
+</div>
 <div class="page">
 
 <div class="hdr">
-  <div class="brand">Food Safety Horizon Scanning <em>·</em> Food Safety <em>Intelligence</em> System</div>
+  <div class="brand">Food Safety <em>·</em> Horizon Scanning</div>
   <div class="brand-sub">// Custom Alert Subscription</div>
 </div>
 

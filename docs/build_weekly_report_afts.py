@@ -1977,7 +1977,6 @@ __CSS_PLACEHOLDER__
     <a href="index.html">&#128308; Live Dashboard</a>
     <a href="{week_filename}" class="on">&#128202; Weekly</a>
     <a href="hub.html">&#128200; Monthly + AI</a>
-    <a href="alerts.html">&#128276; Alerts</a>
     <a href="guide.html">&#128216; Guide</a>
   </div>
 </div>

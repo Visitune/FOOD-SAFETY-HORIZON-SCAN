@@ -59,7 +59,6 @@ a.link:hover{text-decoration:underline;}
       <a href="index.html" data-i18n="navDash">🔴 Live Dashboard</a>
       <a href="2026-W30.html" data-i18n="navWeekly">📊 Weekly</a>
       <a href="hub.html" data-i18n="navMonthly">📈 Monthly + AI</a>
-      <a href="alerts.html" data-i18n="navAlerts">🔔 Alerts</a>
       <a href="guide.html" class="on" data-i18n="navGuide">📘 Guide</a>
     </div>
     <div class="langtoggle">
@@ -157,8 +156,7 @@ a.link:hover{text-decoration:underline;}
   <p data-i18n="faq2a">Regulators publish in different formats and levels of detail. Where a field can't be
   reliably determined, it's left blank rather than guessed.</p>
   <div class="faq-q" data-i18n="faq3q">Can I get alerted about a specific country or product?</div>
-  <p><span data-i18n="faq3a1">Yes — use the</span> <a class="link" href="alerts.html" data-i18n="faq3link">Alerts</a> <span data-i18n="faq3a2">page to set up a custom
-  subscription.</span></p>
+  <p><span data-i18n="faq3a1">Custom alert subscriptions are temporarily unavailable. In the meantime, email</span> <a class="link" href="mailto:info@visipilot.com" data-i18n="faq3link">info@visipilot.com</a> <span data-i18n="faq3a2">with your criteria and we'll follow up.</span></p>
   <div class="faq-q" data-i18n="faq4q">Is the underlying data available in French?</div>
   <p data-i18n="faq4a">Product and company names appear in their original language when the source regulator
   publishes in that language (for example, French records from RappelConso). A fully
@@ -181,7 +179,7 @@ try{ const saved = localStorage.getItem('fshs_lang'); if (saved==='fr'||saved===
 
 const I18N = {
   en: {
-    navDash:'🔴 Live Dashboard', navWeekly:'📊 Weekly', navMonthly:'📈 Monthly + AI', navAlerts:'🔔 Alerts', navGuide:'📘 Guide',
+    navDash:'🔴 Live Dashboard', navWeekly:'📊 Weekly', navMonthly:'📈 Monthly + AI', navGuide:'📘 Guide',
     eyebrow:'User Guide',
     title:'How Food Safety Horizon Scanning works',
     lede:'This platform continuously aggregates food safety recalls and alerts from 90+ regulatory agencies worldwide, verifies each record, and publishes it here. This guide explains what you\'re looking at and how to get the most out of it.',
@@ -211,14 +209,14 @@ const I18N = {
     faq2q:'Why do some records have less detail than others?',
     faq2a:'Regulators publish in different formats and levels of detail. Where a field can\'t be reliably determined, it\'s left blank rather than guessed.',
     faq3q:'Can I get alerted about a specific country or product?',
-    faq3a1:'Yes — use the', faq3link:'Alerts', faq3a2:'page to set up a custom subscription.',
+    faq3a1:'Custom alert subscriptions are temporarily unavailable. In the meantime, email', faq3link:'info@visipilot.com', faq3a2:'with your criteria and we\'ll follow up.',
     faq4q:'Is the underlying data available in French?',
     faq4a:'Product and company names appear in their original language when the source regulator publishes in that language (for example, French records from RappelConso). A fully translated French interface is available: switch to FR using the toggle at the top right.',
     closing:'Questions not covered here? Every page links back to index.html — start from the live dashboard and the source link on any record for the full detail.',
     footDash:'Dashboard', footWeekly:'Weekly', footMonthly:'Monthly',
   },
   fr: {
-    navDash:'🔴 Tableau de bord', navWeekly:'📊 Hebdomadaire', navMonthly:'📈 Mensuel + IA', navAlerts:'🔔 Alertes', navGuide:'📘 Guide',
+    navDash:'🔴 Tableau de bord', navWeekly:'📊 Hebdomadaire', navMonthly:'📈 Mensuel + IA', navGuide:'📘 Guide',
     eyebrow:'Guide utilisateur',
     title:'Comment fonctionne Food Safety Horizon Scanning',
     lede:'Cette plateforme agrège en continu les rappels et alertes de sécurité alimentaire de plus de 90 agences de régulation dans le monde, vérifie chaque enregistrement, puis le publie ici. Ce guide explique ce que vous voyez et comment en tirer le meilleur parti.',
@@ -248,7 +246,7 @@ const I18N = {
     faq2q:'Pourquoi certains enregistrements ont-ils moins de détails que d\'autres ?',
     faq2a:'Les régulateurs publient dans des formats et avec des niveaux de détail différents. Lorsqu\'un champ ne peut pas être déterminé de façon fiable, il est laissé vide plutôt que deviné.',
     faq3q:'Puis-je être alerté sur un pays ou un produit spécifique ?',
-    faq3a1:'Oui — utilisez la page', faq3link:'Alertes', faq3a2:'pour configurer un abonnement personnalisé.',
+    faq3a1:'Les abonnements d\'alertes personnalisées sont temporairement indisponibles. En attendant, écrivez à', faq3link:'info@visipilot.com', faq3a2:'avec vos critères et nous vous recontacterons.',
     faq4q:'Les données sous-jacentes sont-elles disponibles en français ?',
     faq4a:'Les noms de produits et d\'entreprises apparaissent dans leur langue d\'origine lorsque le régulateur source publie dans cette langue (par exemple, les enregistrements français du RappelConso). Une interface française entièrement traduite est disponible : passez en FR grâce au sélecteur en haut à droite.',
     closing:'Des questions non couvertes ici ? Chaque page renvoie vers index.html — commencez par le tableau de bord en direct et le lien source de tout enregistrement pour le détail complet.',

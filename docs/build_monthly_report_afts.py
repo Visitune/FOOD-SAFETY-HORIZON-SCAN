@@ -1046,7 +1046,6 @@ font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.06em;margin-l
     <a href="index.html">&#128308; Live Dashboard</a>
     <a href="2026-W30.html">&#128202; Weekly</a>
     <a href="hub.html" class="on">&#128200; Monthly + AI</a>
-    <a href="alerts.html">&#128276; Alerts</a>
     <a href="guide.html">&#128216; Guide</a>
   </div>
 </div>
@@ -1811,7 +1810,6 @@ letter-spacing:0.08em;text-transform:uppercase;}}
     <a href="index.html">&#128308; Live Dashboard</a>
     <a href="2026-W30.html">&#128202; Weekly</a>
     <a href="hub.html" class="on">&#128200; Monthly + AI</a>
-    <a href="alerts.html">&#128276; Alerts</a>
     <a href="guide.html">&#128216; Guide</a>
   </div>
 </div>

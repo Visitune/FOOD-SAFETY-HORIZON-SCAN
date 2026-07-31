@@ -29,10 +29,14 @@ body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:1
 .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:16px;}
 .panel{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:16px;}
 .sec{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;color:#F97316;text-transform:uppercase;margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.05);}
-.breakdown-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;cursor:pointer;border-radius:3px;}
+.breakdown-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;cursor:pointer;border-radius:3px;position:relative;overflow:hidden;}
 .breakdown-row:hover{background:rgba(249,115,22,.08);}
+.breakdown-row .bd-bar{position:absolute;left:0;top:0;bottom:0;background:rgba(249,115,22,.14);border-radius:3px;pointer-events:none;}
+.breakdown-row span{position:relative;padding:0 2px;}
 .breakdown-row span:first-child{font-size:12px;}
 .breakdown-row span:last-child{color:#F97316;font-weight:700;font-family:monospace;}
+.trend-wrap{width:100%;overflow-x:auto;}
+.trend-empty{padding:24px;text-align:center;color:#6B7280;font-size:12px;}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}
 .filters input,.filters select{background:#0B1120;border:1px solid rgba(255,255,255,.10);color:#E5E7EB;padding:7px 10px;border-radius:4px;font-size:12px;font-family:'JetBrains Mono',monospace;outline:none;}
 .filters input{flex:1;min-width:200px;}.filters input::placeholder{color:#4B5563;}
@@ -110,6 +114,11 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       <div class="kpi g"><div class="kv" id="kpiCountries">–</div><div class="kl" data-i18n="kpiCountries">Countries</div></div>
       <div class="kpi p"><div class="kv" id="kpiSources">–</div><div class="kl" data-i18n="kpiSources">Sources</div></div>
     </div>
+
+  <div class="panel" style="margin-bottom:16px;">
+    <div class="sec" data-i18n="panelTrend">Monthly Evolution</div>
+    <div class="trend-wrap"><div id="trendChart"></div></div>
+  </div>
 
   <div class="grid2">
     <div class="panel">
@@ -207,9 +216,10 @@ const I18N = {
   en: {
     navDash:'🔴 Live Dashboard', navWeekly:'📊 Weekly', navMonthly:'📈 Monthly + AI', navAlerts:'🔔 Alerts', navGuide:'📘 Guide', navJson:'↓ JSON Feed',
     dataVerified:'Every record links to its official regulator source', methodology:'See methodology →',
-    mostRecent:'Most recent recall:', checked:'Data checked:',
+    mostRecent:'Most recent recall:', checked:'Data checked:', dataRange:'Data covers:',
     kpiTotal:'Total Recalls in DB', kpiTier1:'Tier-1 Critical', kpiOutbreaks:'Active Outbreaks', kpiPathogens:'Distinct Pathogens', kpiCountries:'Countries', kpiSources:'Sources',
-    panelPathogens:'Top Pathogens (All Sources)', panelSources:'By Source', panelCountries:'By Country', panelProducts:'By Product Type',
+    panelPathogens:'Top Pathogens (All Sources)', panelSources:'By Source', panelCountries:'By Country', panelProducts:'By Product Type', panelTrend:'Monthly Evolution',
+    trendNotEnough:'Not enough monthly data points to plot a trend for the current filters.',
     allRecordsTable:'All Pathogen Recalls', searchPlaceholder:'Search firm, product, country, pathogen, lot...',
     allSources:'All Sources', allCountries:'All Countries', allRegions:'All Regions', allProducts:'All Product Types', allPathogens:'All Pathogens', allTiers:'All Tiers',
     tier1Only:'Tier-1 Critical only', tier2Only:'Tier-2 Serious only', tier3Only:'Tier-3 Moderate only',
@@ -222,9 +232,10 @@ const I18N = {
   fr: {
     navDash:'🔴 Tableau de bord', navWeekly:'📊 Hebdomadaire', navMonthly:'📈 Mensuel + IA', navAlerts:'🔔 Alertes', navGuide:'📘 Guide', navJson:'↓ Flux JSON',
     dataVerified:'Chaque donnée renvoie vers la source officielle du régulateur', methodology:'Voir la méthodologie →',
-    mostRecent:'Rappel le plus récent :', checked:'Données vérifiées :',
+    mostRecent:'Rappel le plus récent :', checked:'Données vérifiées :', dataRange:'Période couverte :',
     kpiTotal:'Rappels au total', kpiTier1:'Niveau 1 critique', kpiOutbreaks:'Épidémies actives', kpiPathogens:'Pathogènes distincts', kpiCountries:'Pays', kpiSources:'Sources',
-    panelPathogens:'Pathogènes principaux (toutes sources)', panelSources:'Par source', panelCountries:'Par pays', panelProducts:'Par type de produit',
+    panelPathogens:'Pathogènes principaux (toutes sources)', panelSources:'Par source', panelCountries:'Par pays', panelProducts:'Par type de produit', panelTrend:'Évolution mensuelle',
+    trendNotEnough:'Pas assez de mois de données pour tracer une tendance avec ces filtres.',
     allRecordsTable:'Tous les rappels', searchPlaceholder:'Rechercher entreprise, produit, pays, pathogène, lot...',
     allSources:'Toutes les sources', allCountries:'Tous les pays', allRegions:'Toutes les régions', allProducts:'Tous les types de produits', allPathogens:'Tous les pathogènes', allTiers:'Tous les niveaux',
     tier1Only:'Niveau 1 critique uniquement', tier2Only:'Niveau 2 sérieux uniquement', tier3Only:'Niveau 3 modéré uniquement',
@@ -255,7 +266,7 @@ function setLang(l){
   document.getElementById('langFr').classList.toggle('on', l==='fr');
   try{ localStorage.setItem('fshs_lang', l); }catch(e){}
   applyI18nStatic();
-  if (ALL.length){ computeSummary(ALL); refreshDynamicText(); render(); }
+  if (ALL.length){ computeSummary(ALL); refreshDynamicText(); render(); renderTrendChart(filtered); }
 }
 
 function pb(p){p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}
@@ -270,9 +281,37 @@ function populateSelect(id,values,allLabel,allKey){
 
 function breakdownPanel(elId, counts, filterId, max){
   const entries=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,max||10);
-  document.getElementById(elId).innerHTML=entries.map(([k,c])=>
-    `<div class="breakdown-row" onclick="setFilterAndScroll('${filterId}', '${String(k).replace(/'/g,"\\'")}')"><span>${k}</span><span>${c}</span></div>`
-  ).join('');
+  const top=entries.length?entries[0][1]:0;
+  document.getElementById(elId).innerHTML=entries.map(([k,c])=>{
+    const w=top?Math.max(4,(c/top)*100):0;
+    return `<div class="breakdown-row" onclick="setFilterAndScroll('${filterId}', '${String(k).replace(/'/g,"\\'")}')"><div class="bd-bar" style="width:${w.toFixed(1)}%"></div><span>${k}</span><span>${c}</span></div>`;
+  }).join('');
+}
+
+function renderTrendChart(data){
+  const el=document.getElementById('trendChart');
+  const counts={};
+  (data||[]).forEach(r=>{ if(!r.Date) return; const ym=r.Date.slice(0,7); counts[ym]=(counts[ym]||0)+1; });
+  const months=Object.keys(counts).sort();
+  if(months.length<2){ el.innerHTML=`<div class="trend-empty">${t('trendNotEnough')}</div>`; return; }
+  const vals=months.map(m=>counts[m]);
+  const max=Math.max(...vals);
+  const W=900,H=180,padL=8,padR=8,padT=16,padB=28;
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+  const x=i=> padL + (months.length===1?plotW/2:(i/(months.length-1))*plotW);
+  const y=v=> padT + plotH - (v/(max||1))*plotH;
+  const pts=vals.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+  const areaPts=`${x(0).toFixed(1)},${(padT+plotH).toFixed(1)} ${pts} ${x(vals.length-1).toFixed(1)},${(padT+plotH).toFixed(1)}`;
+  const monthLabel=ym=>{const parts=ym.split('-');const Y=parseInt(parts[0],10),M=parseInt(parts[1],10);return new Date(Y,M-1,1).toLocaleDateString(lang==='fr'?'fr-FR':'en-US',{month:'short',year:'2-digit'});};
+  const dots=vals.map((v,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="${i===vals.length-1?4:2.5}" fill="#F97316"/>`).join('');
+  const valueLabels=vals.map((v,i)=>`<text x="${x(i).toFixed(1)}" y="${(y(v)-8).toFixed(1)}" font-size="10" fill="#9CA3AF" text-anchor="middle" font-family="JetBrains Mono,monospace">${v}</text>`).join('');
+  const monthLabels=months.map((m,i)=>`<text x="${x(i).toFixed(1)}" y="${H-8}" font-size="10" fill="#6B7280" text-anchor="middle" font-family="JetBrains Mono,monospace">${monthLabel(m)}</text>`).join('');
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:180px;display:block;min-width:480px;">
+<defs><linearGradient id="trendGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F97316" stop-opacity="0.35"/><stop offset="100%" stop-color="#F97316" stop-opacity="0"/></linearGradient></defs>
+<polygon points="${areaPts}" fill="url(#trendGrad)"/>
+<polyline points="${pts}" fill="none" stroke="#F97316" stroke-width="2.5"/>
+${dots}${valueLabels}${monthLabels}
+</svg>`;
 }
 
 function setFilterAndScroll(filterId, value){
@@ -320,8 +359,9 @@ function refreshDynamicText(){
   document.getElementById('vc').textContent = `(${ALL.length} ${t('totalRecordsSuffix')})`;
   if (ALL.length){
     const dates = ALL.map(r=>r.Date).filter(Boolean).sort();
+    const oldest = dates[0] || '—';
     const mostRecent = dates[dates.length-1] || '—';
-    document.getElementById('freshnessMostRecent').innerHTML = `<b>${t('mostRecent')}</b> ${mostRecent}`;
+    document.getElementById('freshnessMostRecent').innerHTML = `<b>${t('dataRange')}</b> ${oldest} → ${mostRecent}`;
   }
   document.getElementById('freshnessChecked').innerHTML = `<b>${t('checked')}</b> ${new Date().toISOString().slice(0,16).replace('T',' ')} UTC`;
   document.getElementById('hdrUpdate').textContent = `${t('checked')} ${new Date().toISOString().slice(0,16).replace('T',' ')} UTC`;
@@ -347,6 +387,7 @@ function applyFilters(){
     return true;
   });
   cur=1;render();
+  renderTrendChart(filtered);
   updateClearButtonVisibility();
 }
 
@@ -406,6 +447,7 @@ fetch('data/recalls.json?_='+Date.now()).then(r=>r.json()).then(data=>{
   populateSelect('regf',[...new Set(data.map(r=>r.Region).filter(Boolean))].sort(),t('allRegions'),'allRegions');
   refreshDynamicText();
   render();
+  renderTrendChart(filtered);
 }).catch(err=>{
   document.getElementById('tbody').innerHTML='<tr><td colspan="8" style="padding:24px;text-align:center;color:#ef5350;">Failed to load data/recalls.json — '+err+'</td></tr>';
   document.getElementById('fcnt').textContent='load error';

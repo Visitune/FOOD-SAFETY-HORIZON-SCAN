@@ -32,10 +32,13 @@ name: VisiPilot Weekly_Review + Weekly_Rejected Wipe
 # ==========================================================================
 
 on:
-  # Scheduling is centralized in Apps Script (FsisScheduler.gs) which
-  # dispatches this workflow every Thursday at 17:30 Athens.
-  # No internal cron block — Apps Script is the single source of truth.
-  workflow_dispatch:        # manual run / catch-up + Apps Script dispatch
+  # Native GitHub cron below, every Thursday at 17:30 Athens.
+  workflow_dispatch:        # manual run / catch-up
+  schedule:
+    # Thursday 17:30 Athens — winter (EET, UTC+2) → Thu 15:30 UTC
+    - cron: "30 15 * 1,2,3,11,12 4"
+    # Thursday 17:30 Athens — summer (EEST, UTC+3) → Thu 14:30 UTC
+    - cron: "30 14 * 4,5,6,7,8,9,10 4"
 
 permissions:
   contents: write

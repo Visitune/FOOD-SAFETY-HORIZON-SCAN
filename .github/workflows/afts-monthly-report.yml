@@ -26,10 +26,7 @@ name: VisiPilot Monthly Report
 # ==========================================================================
 
 on:
-  # Scheduling is centralized in Apps Script (FsisScheduler.gs) which
-  # dispatches this workflow on the 1st of each month at 09:00 Athens.
-  # No internal cron block here — Apps Script is the single source of
-  # truth so we never get DST-cron-skip noise in the run history.
+  # Native GitHub cron below, 1st of each month at 09:00 Athens.
   workflow_dispatch:
     inputs:
       force_month_end:
@@ -39,6 +36,11 @@ on:
         description: "YYYY-MM: oldest month to check in gap-fill (default 2026-03)"
         required: false
         default: "2026-03"
+  schedule:
+    # Day 1, 09:00 Athens — winter (EET, UTC+2) → 07:00 UTC
+    - cron: "0 7 1 1,2,3,11,12 *"
+    # Day 1, 09:00 Athens — summer (EEST, UTC+3) → 06:00 UTC
+    - cron: "0 6 1 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write

@@ -53,6 +53,21 @@ on:
         description: "Skip OpenAI/Claude passes (true/false)"
         required: false
         default: "false"
+  schedule:
+    # Every 4h — 00/04/08/12/16/20 Athens — winter (EET, UTC+2)
+    - cron: "0 22 * 1,2,3,11,12 *"
+    - cron: "0 2 * 1,2,3,11,12 *"
+    - cron: "0 6 * 1,2,3,11,12 *"
+    - cron: "0 10 * 1,2,3,11,12 *"
+    - cron: "0 14 * 1,2,3,11,12 *"
+    - cron: "0 18 * 1,2,3,11,12 *"
+    # Every 4h — 00/04/08/12/16/20 Athens — summer (EEST, UTC+3)
+    - cron: "0 21 * 4,5,6,7,8,9,10 *"
+    - cron: "0 1 * 4,5,6,7,8,9,10 *"
+    - cron: "0 5 * 4,5,6,7,8,9,10 *"
+    - cron: "0 9 * 4,5,6,7,8,9,10 *"
+    - cron: "0 13 * 4,5,6,7,8,9,10 *"
+    - cron: "0 17 * 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write

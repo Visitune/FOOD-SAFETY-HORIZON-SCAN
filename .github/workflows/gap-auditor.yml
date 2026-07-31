@@ -27,6 +27,11 @@ on:
       end:
         description: "End date YYYY-MM-DD"
         required: false
+  schedule:
+    # Monday 11:00 Athens — winter (EET, UTC+2) → Mon 09:00 UTC
+    - cron: "0 9 * 1,2,3,11,12 1"
+    # Monday 11:00 Athens — summer (EEST, UTC+3) → Mon 08:00 UTC
+    - cron: "0 8 * 4,5,6,7,8,9,10 1"
 
 permissions:
   contents: read

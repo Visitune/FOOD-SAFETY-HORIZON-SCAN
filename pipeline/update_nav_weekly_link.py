@@ -3,10 +3,10 @@ update_nav_weekly_link.py
 ==========================
 Keeps every page's "Weekly" nav link pointing at the current latest
 weekly report. The nav bar (added 2026-07-31 to docs/index.html,
-docs/guide.html, docs/hub.html, docs/alerts.html, and every generated
-weekly/monthly report page) hardcodes the latest week's filename at the
-time it was written — without this script that link goes stale the
-moment a new week is published.
+docs/guide.html, docs/hub.html, and every generated weekly/monthly
+report page) hardcodes the latest week's filename at the time it was
+written — without this script that link goes stale the moment a new
+week is published.
 
 Reads docs/data/weekly-index.json (already newest-first) for the
 current filename, then rewrites the "Weekly" nav <a href="..."> on every
@@ -31,8 +31,8 @@ WEEKLY_INDEX = DOCS / "data" / "weekly-index.json"
 
 # Matches the "Weekly" nav link regardless of which icon representation
 # was used (literal emoji in docs/index.html / docs/guide.html, HTML
-# entity in docs/hub.html / docs/alerts.html / the report generators),
-# and regardless of whether it currently carries class="on".
+# entity in docs/hub.html / the report generators), and regardless of
+# whether it currently carries class="on".
 WEEKLY_LINK_RE = re.compile(
     r'(<a href=")[^"]*("(?:\s+class="on")?>\s*(?:\U0001F4CA|&#128202;)\s*Weekly</a>)'
 )

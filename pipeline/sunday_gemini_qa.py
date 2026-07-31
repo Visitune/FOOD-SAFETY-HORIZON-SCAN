@@ -42,13 +42,13 @@ OUTPUTS
   • Deterministic + API + AI fixes applied IN-PLACE to docs/data/recalls.xlsx
   • QA Summary sheet added to the AFTER workbook (first tab)
   • Markdown QA report committed to docs/data/sunday-qa/<date>.md
-  • Email to George with BEFORE + AFTER Excel attachments
+  • Email to QA_EMAIL_TO with BEFORE + AFTER Excel attachments
   • Git commit + push at end
 
 EMAIL SETUP
 ===========
   Requires two GitHub secrets:
-    GMAIL_USER         = georgestof@gmail.com
+    GMAIL_USER         = <sending-gmail-address>
     GMAIL_APP_PASSWORD = <16-char app password from Google>
 
   To create the App Password:
@@ -121,7 +121,7 @@ QA_DIR = ROOT / "docs" / "data" / "sunday-qa"
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
 DEFAULT_AUDIT_DAYS = 14
-QA_EMAIL_TO = os.getenv("QA_EMAIL_TO", "georgestof@gmail.com")
+QA_EMAIL_TO = os.getenv("QA_EMAIL_TO", "info@visipilot.com")
 
 # Dead-URL check timeout (seconds)
 URL_CHECK_TIMEOUT = 10

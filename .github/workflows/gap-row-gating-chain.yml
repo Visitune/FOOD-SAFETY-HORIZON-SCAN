@@ -52,6 +52,7 @@ jobs:
       - name: Step 1 — Gemini URL gate (run #1, pending_gap → v1)
         env:
           GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY:      ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY_1:  ${{ secrets.GEMINI_API_KEY_1 }}
           GEMINI_API_KEY_2:  ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3:  ${{ secrets.GEMINI_API_KEY_3 }}

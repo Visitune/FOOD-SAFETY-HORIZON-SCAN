@@ -100,6 +100,7 @@ jobs:
           GEMINI_API_KEY_3:     ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4:     ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_API_KEY_5:     ${{ secrets.GEMINI_API_KEY_5 }}
+          GROQ_API_KEY:         ${{ secrets.GROQ_API_KEY }}
         run: |
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
             python -m pipeline.synthesis_writer --cadence weekly --force

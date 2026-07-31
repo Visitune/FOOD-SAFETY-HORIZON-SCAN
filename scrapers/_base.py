@@ -399,6 +399,114 @@ def _call_openai(prompt: str, html: str, language: str = "en") -> str:
     return ""
 
 
+# ---------------------------------------------------------------------------
+# Groq fallback (audit 2026-07-31)
+# ---------------------------------------------------------------------------
+# Context: Gemini's free tier caps at 5 requests/minute PER MODEL on a
+# single key (separate from — and much tighter than — the 250/day budget).
+# With ~64 GenericGeminiScraper-based scrapers firing in parallel
+# (MAX_PARALLEL=8), that per-minute cap is exhausted within seconds of a
+# run starting, well before every scraper gets a turn — confirmed in
+# production logs (429 RESOURCE_EXHAUSTED within ~8s of run start).
+# Rotating across multiple Gemini keys helps but each additional free key
+# requires a separate Google account. Groq's OpenAI-compatible API offers
+# 1000 requests/minute on a single key at low per-token cost, so it's a
+# much higher-throughput fallback than OpenAI for this specific failure
+# mode (Gemini succeeding on quality but failing on rate).
+#
+# Activation: zero-config. If GROQ_API_KEY (or GROQ_API_KEY_1..5) is set,
+# fallback engages automatically when Gemini fails and OpenAI either isn't
+# configured or also fails.
+GROQ_MODEL          = os.getenv("GROQ_MODEL",           "llama-3.3-70b-versatile")
+GROQ_URL             = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_TIMEOUT         = int(os.getenv("GROQ_FALLBACK_TIMEOUT",     "60"))
+GROQ_MAX_OUT_TOKENS  = int(os.getenv("GROQ_FALLBACK_MAX_TOKENS",  "16000"))
+
+
+def _groq_api_keys() -> List[str]:
+    """Mirror the Gemini/OpenAI key-rotation pattern for Groq."""
+    keys: List[str] = []
+    legacy = os.getenv("GROQ_API_KEY")
+    if legacy:
+        keys.append(legacy.strip())
+    for i in range(1, 6):
+        k = os.getenv(f"GROQ_API_KEY_{i}")
+        if k:
+            keys.append(k.strip())
+    return list(dict.fromkeys(k for k in keys if k))
+
+
+def _call_groq(prompt: str, html: str, language: str = "en") -> str:
+    """Groq fallback for HTML extraction. Groq's API is OpenAI-compatible
+    (same request/response shape), so this mirrors _call_openai() almost
+    exactly — same signature and return contract, drop-in in the fallback
+    chain.
+    """
+    keys = _groq_api_keys()
+    if not keys:
+        raise RuntimeError(
+            "No GROQ_API_KEY(_1..5) env var set. Configure in GitHub "
+            "Actions secrets to enable this fallback."
+        )
+
+    if len(html) > GEMINI_MAX_HTML_CHARS:
+        html = html[:GEMINI_MAX_HTML_CHARS] + "\n<!-- truncated -->"
+
+    full_prompt = f"{prompt}\n\nLANGUAGE OF PAGE: {language}\n\nHTML:\n{html}"
+
+    payload = {
+        "model":       GROQ_MODEL,
+        "messages":    [{"role": "user", "content": full_prompt}],
+        "temperature": 0.1,
+        "max_tokens":  GROQ_MAX_OUT_TOKENS,
+    }
+
+    last_error: Optional[Exception] = None
+    for api_key in random.sample(keys, k=len(keys)):
+        try:
+            r = requests.post(
+                GROQ_URL,
+                headers={"Authorization": f"Bearer {api_key}",
+                         "Content-Type":  "application/json"},
+                json=payload,
+                timeout=GROQ_TIMEOUT,
+            )
+            if r.status_code == 429:
+                last_error = RuntimeError(
+                    f"Groq 429 rate-limit: {r.text[:200]}")
+                log.warning("Groq 429 on one key — trying next.")
+                continue
+            if r.status_code in (401, 403):
+                last_error = RuntimeError(
+                    f"Groq {r.status_code} auth failure: {r.text[:200]}")
+                log.warning("Groq %d auth on one key — trying next.",
+                            r.status_code)
+                continue
+            if r.status_code != 200:
+                last_error = RuntimeError(
+                    f"Groq HTTP {r.status_code}: {r.text[:200]}")
+                continue
+            data = r.json()
+            text = (data.get("choices", [{}])[0]
+                        .get("message", {})
+                        .get("content") or "").strip()
+            if text:
+                return text
+            last_error = RuntimeError("Groq returned empty content")
+        except Exception as exc:  # noqa: BLE001 - try next key
+            last_error = exc
+            log.warning(
+                "Groq fallback call failed on one key (%s); trying next.",
+                type(exc).__name__,
+            )
+            continue
+
+    if last_error:
+        raise RuntimeError(
+            f"All Groq keys failed: {last_error}") from last_error
+    return ""
+
+
 def _is_quota_or_rate_error(exc: BaseException) -> bool:
     """Return True if the exception looks like a quota / rate-limit issue.
 
@@ -420,53 +528,65 @@ def _is_quota_or_rate_error(exc: BaseException) -> bool:
 
 
 def _call_llm(prompt: str, html: str, language: str = "en") -> str:
-    """Call Gemini first; on failure, fall back to OpenAI if configured.
+    """Call Gemini first; on failure, fall back to OpenAI then Groq, in
+    that order, for whichever of the two have keys configured.
 
     Behavior matrix:
-      - Gemini succeeds                       → return Gemini's text
-      - Gemini quota/rate error + OpenAI set  → try OpenAI; if it succeeds,
-                                                return its text
-      - Gemini other error      + OpenAI set  → try OpenAI; on any failure
-                                                there, raise combined error
-      - Gemini fails + OpenAI not configured  → re-raise original Gemini
-                                                error (pre-fix behavior)
+      - Gemini succeeds                        → return Gemini's text
+      - Gemini fails, a fallback succeeds       → return that fallback's text
+      - Gemini fails, all configured fallbacks
+        fail too                                → raise combined error
+      - Gemini fails, no fallback configured    → re-raise original Gemini
+                                                   error (pre-fix behavior)
 
-    The two-backend strategy is deliberately invisible to callers — they
-    see a single text return as before. Logs make the choice explicit so
-    operators can spot when fallback engages without parsing JSON.
+    Groq (added 2026-07-31) exists specifically for the case Gemini's
+    quality is fine but its free-tier 5 requests/minute cap gets exhausted
+    by parallel scrapers — Groq's 1000 req/min ceiling absorbs that load.
+    OpenAI is tried first (established fallback, matches the codebase's
+    original design); Groq is tried if OpenAI isn't configured or also
+    fails. The multi-backend strategy is deliberately invisible to
+    callers — they see a single text return as before. Logs make the
+    choice explicit so operators can spot when fallback engages without
+    parsing JSON.
     """
     try:
-        text = _call_gemini(prompt, html, language)
-        return text
+        return _call_gemini(prompt, html, language)
     except Exception as gemini_exc:  # noqa: BLE001
-        openai_keys = _openai_api_keys()
-        if not openai_keys:
+        fallbacks = []
+        if _openai_api_keys():
+            fallbacks.append(("OpenAI", _call_openai, OPENAI_MODEL))
+        if _groq_api_keys():
+            fallbacks.append(("Groq", _call_groq, GROQ_MODEL))
+
+        if not fallbacks:
             # No fallback configured — surface original error (pre-fix path)
             raise
 
-        is_quota = _is_quota_or_rate_error(gemini_exc)
-        if is_quota:
-            log.info("Gemini quota exhausted (%s) — switching to OpenAI "
-                     "fallback for this call.", type(gemini_exc).__name__)
-        else:
-            log.info("Gemini failed (%s: %s) — trying OpenAI fallback.",
+        if _is_quota_or_rate_error(gemini_exc):
+            log.info("Gemini quota/rate exhausted (%s) — trying %s.",
                      type(gemini_exc).__name__,
-                     str(gemini_exc)[:120])
+                     " then ".join(name for name, _, _ in fallbacks))
+        else:
+            log.info("Gemini failed (%s: %s) — trying %s.",
+                     type(gemini_exc).__name__, str(gemini_exc)[:120],
+                     " then ".join(name for name, _, _ in fallbacks))
 
-        try:
-            text = _call_openai(prompt, html, language)
-            log.info("OpenAI fallback succeeded (model=%s, %d chars out)",
-                     OPENAI_MODEL, len(text))
-            return text
-        except Exception as openai_exc:  # noqa: BLE001
-            # Both backends failed — raise a combined error so the
-            # _extract_with_gemini layer's single except sees one
-            # exception with full context.
-            raise RuntimeError(
-                f"Both Gemini and OpenAI failed. "
-                f"Gemini: {type(gemini_exc).__name__}: {str(gemini_exc)[:200]}. "
-                f"OpenAI: {type(openai_exc).__name__}: {str(openai_exc)[:200]}."
-            ) from openai_exc
+        errors = [f"Gemini: {type(gemini_exc).__name__}: {str(gemini_exc)[:200]}"]
+        for name, call_fn, model_name in fallbacks:
+            try:
+                text = call_fn(prompt, html, language)
+                log.info("%s fallback succeeded (model=%s, %d chars out)",
+                         name, model_name, len(text))
+                return text
+            except Exception as exc:  # noqa: BLE001
+                errors.append(f"{name}: {type(exc).__name__}: {str(exc)[:200]}")
+                continue
+
+        # Every configured backend failed — raise a combined error so the
+        # _extract_with_gemini layer's single except sees full context.
+        raise RuntimeError(
+            "All configured LLM backends failed. " + " | ".join(errors)
+        ) from gemini_exc
 
 
 def _strip_code_fences(s: str) -> str:

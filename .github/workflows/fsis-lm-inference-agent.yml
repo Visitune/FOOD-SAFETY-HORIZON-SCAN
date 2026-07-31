@@ -58,7 +58,7 @@ permissions:
 
 concurrency:
   # Shares the data-writers group so it never overlaps with merge-master,
-  # claude-check, url-gate, etc. (matches the rest of the AFTS pipeline).
+  # claude-check, url-gate, etc. (matches the rest of the VisiPilot pipeline).
   group: fsis-data-writers
   cancel-in-progress: false
 

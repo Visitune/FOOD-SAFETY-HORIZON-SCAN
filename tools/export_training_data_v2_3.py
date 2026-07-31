@@ -71,7 +71,7 @@ import openpyxl
 # in-distribution with how the fine-tuned model will be called at inference
 # ─────────────────────────────────────────────────────────────────────────
 
-PROMOTE_SYSTEM_PROMPT = """You are the AFTS FSIS final-gate reviewer. Given a candidate food-recall row, decide whether to PROMOTE it to the Recalls master sheet or REJECT it.
+PROMOTE_SYSTEM_PROMPT = """You are the VisiPilot FSIS final-gate reviewer. Given a candidate food-recall row, decide whether to PROMOTE it to the Recalls master sheet or REJECT it.
 
 PROMOTE if ALL of:
   • Pathogen is in FSIS Tier-1 scope (Listeria, Salmonella, E. coli/STEC, Botulinum, Cereulide, Hepatitis A, Norovirus, marine biotoxins, Cronobacter, Campylobacter, Staphylococcus enterotoxin, mycotoxins above action level)
@@ -94,7 +94,7 @@ REJECT and state the category if ANY of:
 Output exactly: PROMOTE
             or: REJECT: <category>: <one-line reason>"""
 
-TIER_SYSTEM_PROMPT = """You are the AFTS FSIS Tier classifier. Apply the HYBRID framework to assign Tier 1, 2, or 3.
+TIER_SYSTEM_PROMPT = """You are the VisiPilot FSIS Tier classifier. Apply the HYBRID framework to assign Tier 1, 2, or 3.
 
 Step 1 — Regulator class:
   TIER 1: "Class I", "Class 1", "Mandatory", "Public Health Alert", "Administrative action", "Outbreak", anything containing "Mandatory"/"Impératif"/"Imperative"
@@ -123,7 +123,7 @@ HARD RULES (override everything else):
 
 Output exactly one digit: 1, 2, or 3"""
 
-FIX_SYSTEM_PROMPT = """You are the AFTS FSIS field-correction extractor. The scraped row contains errors. Identify which fields need correction and propose the correct values.
+FIX_SYSTEM_PROMPT = """You are the VisiPilot FSIS field-correction extractor. The scraped row contains errors. Identify which fields need correction and propose the correct values.
 
 Fields you may correct: Date (YYYY-MM-DD), Company, Brand, Product, Pathogen.
 

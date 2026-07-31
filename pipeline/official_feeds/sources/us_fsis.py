@@ -5,7 +5,7 @@ Endpoint: https://www.fsis.usda.gov/fsis/api/recall/v/1
 Fallback: https://www.fsis.usda.gov/recalls (HTML scrape) when the API is
 blocked by FSIS's WAF (returns 403 from cloud / GitHub Actions IPs).
 
-NOTE: FSIS is already ingested by the AFTS core FSIS platform. This source is
+NOTE: FSIS is already ingested by the VisiPilot core FSIS platform. This source is
 included for architectural completeness; the URL-based dedup in main.py skips
 anything the core pipeline already wrote to Pending/Recalls, so no duplication.
 

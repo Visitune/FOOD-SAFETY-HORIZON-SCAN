@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Moldova (ANSA — Agenția Națională pentru Siguranța Alimentelor /
                 National Food Safety Agency).
 

@@ -6,9 +6,9 @@ Runs hourly from .github/workflows/news-feed.yml:
     python scrapers/news.py docs/data/recalls.xlsx
 
 Pulls recent food-pathogen news from a curated set of RSS feeds, filters by
-the AFTS pathogen whitelist, dedupes against existing NEWS rows by Link, and
+the VisiPilot pathogen whitelist, dedupes against existing NEWS rows by Link, and
 enforces a 7-day rolling retention (rows with Published > 7 days ago are
-dropped on every run — per the AFTS FSIS spec).
+dropped on every run — per the VisiPilot FSIS spec).
 
 Writes back only the NEWS sheet. Recalls and Pending sheets are untouched.
 """
@@ -33,7 +33,7 @@ NEWS_HEADERS = ["Published (UTC)", "Pathogen", "Event", "Source",
 
 RETENTION_DAYS = 7
 HTTP_TIMEOUT = 20
-USER_AGENT = "AFTS-FSIS-NewsFeed/1.0 (+https://advfood.tech)"
+USER_AGENT = "VisiPilot-FSIS-NewsFeed/1.0 (+https://visipilot.com)"
 
 # Curated RSS/Atom feeds — food-safety focused outlets.
 FEEDS = [

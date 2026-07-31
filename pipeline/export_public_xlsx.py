@@ -22,7 +22,7 @@ Audit 2026-04-29 — Notes + internal date columns excluded:
   the regulator's authoritative page where that detail belongs anyway.
 
   Internal date columns (DateAdded/LastUpdated/LastChecked) are also
-  excluded per spec — subscribers don't need to know when AFTS first
+  excluded per spec — subscribers don't need to know when VisiPilot first
   recorded a row, only the regulator's publication Date.
 
 PUBLIC SCHEMA (13 columns):
@@ -163,7 +163,7 @@ def build_public_xlsx(src: Path = SRC_PATH, out: Path = OUT_PATH) -> int:
 
     # Add an "About" sheet with metadata (no Notes, no provenance)
     about = out_wb.create_sheet(title="About")
-    about["A1"] = "AFTS Food Safety Intelligence System"
+    about["A1"] = "VisiPilot Food Safety Intelligence System"
     about["A1"].font = Font(name="Inter", bold=True, size=14, color="0A3D2E")
     about["A2"] = "Public recall dataset"
     about["A2"].font = Font(name="Inter", size=11, color="555555")
@@ -173,8 +173,8 @@ def build_public_xlsx(src: Path = SRC_PATH, out: Path = OUT_PATH) -> int:
     about["A7"] = f"Source: 66 agencies across 60+ countries"
     about["A9"] = "Each row links to the original regulatory notice via the URL column."
     about["A10"] = "For full intelligence narrative, predictive models, and engineering"
-    about["A11"] = "interpretation, subscribe at advfood.tech/fsis-home"
-    about["A13"] = "© 2026 Advanced Food-Tech Solutions · advfood.tech · info@advfood.tech"
+    about["A11"] = "interpretation, subscribe at food-safety-horizon-scan.vercel.app"
+    about["A13"] = "© 2026 VisiPilot · visipilot.com · info@visipilot.com"
     about["A13"].font = Font(name="Inter", size=9, color="888888")
     about.column_dimensions["A"].width = 78
 

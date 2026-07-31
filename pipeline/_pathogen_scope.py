@@ -213,7 +213,7 @@ def enforce_tier1(row: dict) -> dict:
 # ──────────────────────────────────────────────────────────────────────
 # Pet / animal food scope filter (added 2026-05-23)
 # ──────────────────────────────────────────────────────────────────────
-# AFTS-FSIS monitors HUMAN food recalls only. Pet food, dog/cat treats,
+# VisiPilot-FSIS monitors HUMAN food recalls only. Pet food, dog/cat treats,
 # animal feed, and livestock feed are out of scope even when contaminated
 # with a Tier-1 pathogen (Listeria, Salmonella, etc.).
 #

@@ -780,7 +780,7 @@ RELIABLE_DIRECT_SCRAPER_HOSTS = frozenset({
 
 
 def _is_reliable_direct_scraper_host(url: str) -> bool:
-    """True if URL host has a direct AFTS scraper that would catch fresh recalls."""
+    """True if URL host has a direct VisiPilot scraper that would catch fresh recalls."""
     if not url:
         return False
     try:
@@ -868,7 +868,7 @@ def _item_to_recall(item: Dict[str, Any],
     # If Tavily can't establish a fresh date AND the URL belongs to a
     # regulator with reliable direct coverage (FSIS, FDA, CFIA), the result
     # is almost certainly archive content the direct scraper already saw
-    # and dropped (or that pre-dates AFTS coverage). Drop to avoid letting
+    # and dropped (or that pre-dates VisiPilot coverage). Drop to avoid letting
     # year-old recalls land in Pending with Date="" where they sit until
     # a reviewer manually rejects them. See module-level constant block
     # for the full rationale.

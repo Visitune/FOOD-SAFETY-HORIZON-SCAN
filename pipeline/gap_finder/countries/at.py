@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Austria (AGES — Austrian Agency for Health and Food Safety)
 
 REVISION (Batch 2.1 hotfix): The first Austria deployment caught 0 real

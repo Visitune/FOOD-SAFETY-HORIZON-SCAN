@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Estonia (PTA — Põllumajandus- ja Toiduamet /
                 Estonian Agriculture and Food Board).
 

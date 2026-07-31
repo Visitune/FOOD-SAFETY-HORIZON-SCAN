@@ -1,4 +1,4 @@
-name: AFTS Weekly Report
+name: VisiPilot Weekly Report
 
 # ==========================================================================
 # Runs every FRIDAY at 08:00 ATHENS TIME (not UTC).
@@ -128,7 +128,7 @@ jobs:
       - name: Commit outputs
         if: steps.guard.outputs.run == 'true'
         run: |
-          git config --local user.email "fsis-bot@advfood.tech"
+          git config --local user.email "fsis-bot@visipilot.com"
           git config --local user.name  "Food Safety Horizon Scanning Bot"
           # Subscriber PDFs decommissioned 2026-05-02 — HTML is the
           # canonical deliverable. Browser print-to-PDF gives users a

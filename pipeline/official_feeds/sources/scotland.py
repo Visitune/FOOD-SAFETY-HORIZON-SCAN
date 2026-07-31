@@ -1,7 +1,7 @@
 """
 Scotland source — Food Standards Scotland (FSS).
 
-Per AFTS spec, Scotland is tracked SEPARATELY from the rest of the UK.
+Per VisiPilot spec, Scotland is tracked SEPARATELY from the rest of the UK.
 FSS recalls are published through the same FSA Food Alerts API, tagged with
 country=GB-SCT. We reuse the UK fetcher with include_scotland=True so the
 records come out attributed to FSS / Scotland.

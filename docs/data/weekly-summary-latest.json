@@ -1,7 +1,7 @@
 {
   "filename": "2026-W30.html",
-  "report_url": "https://fsis.advfood.tech/2026-W30.html",
-  "dashboard_url": "https://www.advfood.tech/fsis-recalls",
+  "report_url": "https://food-safety-horizon-scan.vercel.app/2026-W30.html",
+  "dashboard_url": "https://food-safety-horizon-scan.vercel.app/",
   "week_num": 30,
   "year": 2026,
   "week_start": "2026-07-17",

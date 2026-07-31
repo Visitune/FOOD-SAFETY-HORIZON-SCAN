@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Poland (GIS — Główny Inspektorat Sanitarny)
 
 REVISION (Batch 2.2): First Poland deployment caught 10 candidates but

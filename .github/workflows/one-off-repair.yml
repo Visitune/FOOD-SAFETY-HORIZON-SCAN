@@ -65,8 +65,8 @@ jobs:
 
       - name: Commit and push repairs
         run: |
-          git config user.name  "AFTS Repair Bot"
-          git config user.email "fsis-bot@advfood.tech"
+          git config user.name  "VisiPilot Repair Bot"
+          git config user.email "fsis-bot@visipilot.com"
           git add -A
           if git diff --cached --quiet; then
             echo "Nothing to commit — repo already in clean state."

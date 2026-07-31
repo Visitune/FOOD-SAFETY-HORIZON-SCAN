@@ -1,7 +1,7 @@
 """VMVT (LT) food safety scraper — uses Gemini for HTML extraction.
 
 Browser fingerprint headers (Batch 4, 2026-05-08):
-The previous AFTS session uses a Chrome 127 User-Agent but omits the
+The previous VisiPilot session uses a Chrome 127 User-Agent but omits the
 Client Hints (sec-ch-ua-*) and Sec-Fetch-* headers that real Chrome
 always sends. vmvt.lt's WAF returns 403 on this combination. Adding
 the full Chrome fingerprint clears the block.

@@ -101,7 +101,7 @@ jobs:
         if: always()
         run: |
           git config user.name  "fsis-health-bot"
-          git config user.email "bot@advfood.tech"
+          git config user.email "bot@visipilot.com"
 
       - name: Commit health report
         if: always()

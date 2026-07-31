@@ -1,5 +1,5 @@
 """
-AFTS Gap Finder — authority-URL finder.
+VisiPilot Gap Finder — authority-URL finder.
 
 PURPOSE
 -------

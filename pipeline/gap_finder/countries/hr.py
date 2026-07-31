@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Croatia (HAPIH — Hrvatska agencija za poljoprivredu i hranu /
                 Croatian Agency for Agriculture and Food; recalls issued by the
                 Ministarstvo poljoprivrede / Državni inspektorat RH).

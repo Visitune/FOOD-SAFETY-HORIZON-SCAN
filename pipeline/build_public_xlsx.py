@@ -3,7 +3,7 @@ pipeline/build_public_xlsx.py
 =================================
 
 Builds the public-facing formatted Excel file shipped to:
-  - the Thursday 17:00 Athens review email (info@advfood.tech)
+  - the Thursday 17:00 Athens review email (info@visipilot.com)
   - the public dashboard's "Download XLSX" button
 
 Reads:  docs/data/recalls.xlsx  (Recalls sheet — operator file, raw)
@@ -145,7 +145,7 @@ def build_public_xlsx(src: Path, dst: Path) -> int:
     # Title row (row 1, merged)
     n_rows = src_ws.max_row - 1  # exclude header
     title_text = (
-        "AFTS · Food Safety Intelligence System — "
+        "VisiPilot · Food Safety Intelligence System — "
         "Recalls Export · "
         f"{n_rows} pathogen recalls"
     )

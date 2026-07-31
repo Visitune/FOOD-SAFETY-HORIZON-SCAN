@@ -1,4 +1,4 @@
-name: AFTS Weekly Updates Check
+name: VisiPilot Weekly Updates Check
 
 # ==========================================================================
 # Runs every WEDNESDAY at 09:00 ATHENS TIME.
@@ -13,7 +13,7 @@ name: AFTS Weekly Updates Check
 # Empty manifest = no email = silent skip.
 #
 # Two DST crons + Athens hour-guard, identical pattern to the rest of
-# AFTS. Athens 09:00 = UTC 06:00 (summer EEST) / 07:00 (winter EET).
+# VisiPilot. Athens 09:00 = UTC 06:00 (summer EEST) / 07:00 (winter EET).
 # Cron uses min/hour/dom/mon/dow with Sunday=0, so Wednesday=3.
 #
 # Hardened 2026-05-09:
@@ -159,8 +159,8 @@ jobs:
         if: steps.guard.outputs.run == 'true'
         env:
           GH_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
-          GIT_USER_NAME:  "AFTS Intelligence System"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
+          GIT_USER_NAME:  "VisiPilot Intelligence System"
         run: |
           git config user.email "$GIT_USER_EMAIL"
           git config user.name  "$GIT_USER_NAME"

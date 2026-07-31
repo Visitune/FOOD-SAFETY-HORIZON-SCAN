@@ -3,7 +3,7 @@ pathogen_italic.py
 ==================
 
 Wraps binomial scientific pathogen names in HTML <em> tags inside prose.
-Used by the weekly + monthly AFTS report builders (docs/build_*_afts.py)
+Used by the weekly + monthly VisiPilot report builders (docs/build_*_afts.py)
 to italicise pathogen mentions like "Salmonella Typhimurium" or
 "Listeria monocytogenes" without italicising the surrounding sentence.
 

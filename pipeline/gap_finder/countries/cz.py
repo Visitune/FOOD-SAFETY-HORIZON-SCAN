@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Czechia (SZPI / CAFIA — Státní zemědělská a potravinářská
                 inspekce / Czech Agriculture and Food Inspection Authority).
 

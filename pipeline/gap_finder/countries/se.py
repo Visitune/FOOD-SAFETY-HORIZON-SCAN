@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Sweden (Livsmedelsverket — National Food Agency)
 
 REVISION (Batch 3.1 hotfix): First Sweden deployment caught 1 Pending

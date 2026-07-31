@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Italy (Ministero della Salute — Italian Ministry of Health)
 
 Italian food-recall regime:

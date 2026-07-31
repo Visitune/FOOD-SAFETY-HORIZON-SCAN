@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Egypt (NFSA — National Food Safety Authority).
 
 ⚠ NEWS-AUTHORITY MODE (news_authority_mode=True).

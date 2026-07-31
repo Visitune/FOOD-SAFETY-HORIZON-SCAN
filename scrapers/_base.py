@@ -1,7 +1,7 @@
 """
 scrapers/_base.py
 =================
-AFTS FSIS — Base scraper classes and shared HTTP utilities.
+VisiPilot FSIS — Base scraper classes and shared HTTP utilities.
 
 Public API (do not change signatures without grepping all callers)
 ------------------------------------------------------------------
@@ -69,7 +69,7 @@ log = logging.getLogger(__name__)
 
 DEFAULT_TIMEOUT = 30
 
-# Audit 2026-04-29 — UA changed from "AFTS-FSIS/1.0" to a real Chrome UA.
+# Audit 2026-04-29 — UA changed from "VisiPilot-FSIS/1.0" to a real Chrome UA.
 # 5 regulators were blocking the bot-style UA with HTTP 403 (ŠVPS-SK,
 # VMVT-LT, FDA-PH, COMESA, MoH-IL). A normal browser UA gets through.
 # This is consistent with how RASFF and other open-data services accept
@@ -103,7 +103,7 @@ def make_session(
     timeout: Optional[int] = None,
 ) -> requests.Session:
     """
-    Build a requests.Session with retry/backoff and the AFTS user-agent.
+    Build a requests.Session with retry/backoff and the VisiPilot user-agent.
 
     The optional `timeout` kwarg is stored on the session as `request_timeout`
     and used by fetch() as the default when no explicit timeout is passed —
@@ -142,7 +142,7 @@ def fetch(
     """
     Fetch a URL. Returns Response on success, None on failure.
 
-    NOTE: session is the FIRST positional argument by AFTS convention.
+    NOTE: session is the FIRST positional argument by VisiPilot convention.
     All regional scrapers call `fetch(self.session, url)` — do not swap.
     A None session is accepted and a default session is built internally.
 

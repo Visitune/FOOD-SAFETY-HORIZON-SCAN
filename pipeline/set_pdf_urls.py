@@ -1,5 +1,5 @@
 """
-AFTS FSIS — monthly-index.json pdf_url patcher.
+VisiPilot FSIS — monthly-index.json pdf_url patcher.
 
 After the monthly builder has written docs/YYYY-MMM.html and html_to_pdf
 has produced docs/YYYY-MMM.pdf, this script patches every
@@ -16,7 +16,7 @@ Usage (called from .github/workflows/afts-monthly-report.yml):
     python -m pipeline.set_pdf_urls \\
         --index docs/data/monthly-index.json \\
         --docs-dir docs \\
-        --site-url "https://fsis.advfood.tech"
+        --site-url "https://food-safety-horizon-scan.vercel.app"
 """
 from __future__ import annotations
 
@@ -79,11 +79,11 @@ def main() -> int:
         # Skip legacy entries that point to a genuinely EXTERNAL PDF (e.g. the
         # Wix-hosted Jan/Feb uploads) — don't overwrite George's manual ones.
         # Auto-managed URLs are those under our own marketing path (either the
-        # old github.io base or the current fsis.advfood.tech domain); those we
+        # old github.io base or the current fsis.visipilot.com domain); those we
         # may refresh. Anything else (Wix _files/ugd, etc.) is left untouched.
         _auto_managed = existing and (
             "/marketing/" in existing
-            and ("fsis.advfood.tech" in existing or "gstoforos.github.io" in existing)
+            and ("fsis.visipilot.com" in existing or "gstoforos.github.io" in existing)
         )
         if existing and not _auto_managed:
             log.info("Keep legacy pdf_url for %s: %s", filename, existing)

@@ -5,7 +5,7 @@
      SETUP (one-time):
        1. Sign in at https://dash.cloudflare.com (free account)
        2. Analytics → Web Analytics → Add a site
-       3. Enter: gstoforos.github.io  (or whatever advfood.tech maps to)
+       3. Enter: food-safety-horizon-scan.vercel.app
        4. Copy the token from the "JavaScript snippet" box
        5. Find-replace __CF_BEACON_TOKEN__ across the repo:
             find . -type f \( -name '*.html' -o -name '*.py' \) \
@@ -19,7 +19,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- Cache-busting: this page is embedded as an iframe inside Wix
-     (advfood.tech/fsistest). Without these tags, Wix's CDN holds a
+     (visipilot.com/fsistest). Without these tags, Wix's CDN holds a
      stale copy of the rendered cards even after weekly-index.json
      updates on GitHub Pages. Telling browsers/proxies not to cache
      the HTML means each pageview re-fetches and the JS then re-fetches
@@ -399,9 +399,9 @@ body.promo-mode .tab[onclick*="alerts.html"]:hover::after{
 @media(max-width:600px){.promo-topbar-continue{font-size:12px;letter-spacing:.10em;}}
 
 </style></head><body class="promo-mode">
-<div class="promo-topbar" id="promo-topbar" role="banner" aria-live="polite">→ Continuing to subscription plans in <b id="promo-counter">30</b>s · <a href="https://www.advfood.tech/fsis-plans" target="_top">Subscribe now →</a></div>
+<div class="promo-topbar" id="promo-topbar" role="banner" aria-live="polite">→ Continuing to subscription plans in <b id="promo-counter">30</b>s · <a href="https://food-safety-horizon-scan.vercel.app/alerts.html" target="_top">Subscribe now →</a></div>
 
-<div class="hdr"><div class="brand"><a href="https://www.advfood.tech" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Food Safety Horizon Scanning <em>·</em> Food Safety <em>Intelligence</em> System</a><span class="promo-tag">Preview</span><small>// AI-Reviewed · AI-Analyzed Food Recall Intelligence · under Food Safety Horizon Scanning process authority · 66 sources · 60+ countries</small><small style="margin-top:3px;color:var(--muted);font-weight:500;letter-spacing:.10em">✓ Verified by 2 independent AI reviewers + Thursday human checkpoint</small></div><div class="hdr-right"><span class="live-pill">LIVE MONITORING</span><a href="https://www.advfood.tech/fsis-plans" target="_top" class="promo-subscribe">Subscribe →</a><div class="hdr-meta" id="meta">Loading…</div></div></div>
+<div class="hdr"><div class="brand"><a href="https://food-safety-horizon-scan.vercel.app" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Food Safety Horizon Scanning <em>·</em> Food Safety <em>Intelligence</em> System</a><span class="promo-tag">Preview</span><small>// AI-Reviewed · AI-Analyzed Food Recall Intelligence · under Food Safety Horizon Scanning process authority · 66 sources · 60+ countries</small><small style="margin-top:3px;color:var(--muted);font-weight:500;letter-spacing:.10em">✓ Verified by 2 independent AI reviewers + Thursday human checkpoint</small></div><div class="hdr-right"><span class="live-pill">LIVE MONITORING</span><a href="https://food-safety-horizon-scan.vercel.app/alerts.html" target="_top" class="promo-subscribe">Subscribe →</a><div class="hdr-meta" id="meta">Loading…</div></div></div>
 
 <div class="verif-strip">
   <div class="verif-status"><span class="verif-pulse"></span><span class="verif-label">AI Verification Engine · Active</span></div>
@@ -486,10 +486,10 @@ body.promo-mode .tab[onclick*="alerts.html"]:hover::after{
     <div class="feat-card"><div class="ft">Full Archive</div><div class="fb">Every recall since project inception, downloadable as XLSX or JSON.</div></div>
     <div class="feat-card"><div class="ft">Two AI Reviewers</div><div class="fb">Plus Thursday human checkpoint — no other feed offers this verification gate.</div></div>
   </div>
-  <a href="https://www.advfood.tech/fsis-plans" target="_top" class="promo-bottom-cta">View Subscription Plans →</a>
+  <a href="https://food-safety-horizon-scan.vercel.app/alerts.html" target="_top" class="promo-bottom-cta">View Subscription Plans →</a>
 </div>
 
-<div class="footer"><div><div class="footer-brand">Food Safety <em>·</em> Horizon Scanning</div><div class="flinks"><a href="https://www.advfood.tech" target="_blank">advfood.tech</a><a href="https://www.advfood.tech/fsis-home" target="_blank" rel="noopener">FSIS Homepage</a><a href="mailto:info@advfood.tech">info@advfood.tech</a><a href="#" onclick="downloadRecallsXlsx();return false;">↓ XLSX</a></div></div><a href="https://www.advfood.tech" target="_blank" style="background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.2);color:var(--ai);font-family:'DM Mono',monospace;font-size:9px;padding:7px 14px;border-radius:2px;text-decoration:none;letter-spacing:.08em;">advfood.tech →</a></div>
+<div class="footer"><div><div class="footer-brand">Food Safety <em>·</em> Horizon Scanning</div><div class="flinks"><a href="https://food-safety-horizon-scan.vercel.app" target="_blank">visipilot.com</a><a href="https://food-safety-horizon-scan.vercel.app/" target="_blank" rel="noopener">FSIS Homepage</a><a href="mailto:info@visipilot.com">info@visipilot.com</a><a href="#" onclick="downloadRecallsXlsx();return false;">↓ XLSX</a></div></div><a href="https://food-safety-horizon-scan.vercel.app" target="_blank" style="background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.2);color:var(--ai);font-family:'DM Mono',monospace;font-size:9px;padding:7px 14px;border-radius:2px;text-decoration:none;letter-spacing:.08em;">visipilot.com →</a></div>
 
 <script>
 let ALL=[],filtered=[],page=1,perPage=50,sortCol='date',sortAsc=false,pillFilter='';
@@ -1340,7 +1340,7 @@ async function loadDaily(){
 // gate.
 // ============================================================================
 
-const PROMO_PLANS_URL = 'https://www.advfood.tech/fsis-plans';
+const PROMO_PLANS_URL = 'https://food-safety-horizon-scan.vercel.app/alerts.html';
 const PROMO_SAMPLE_SIZE = 15;
 const PROMO_LOOKBACK_DAYS = 10;
 

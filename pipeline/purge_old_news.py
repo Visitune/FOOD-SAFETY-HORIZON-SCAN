@@ -1,5 +1,5 @@
 """
-AFTS FSIS — 7-day rolling retention for the NEWS sheet.
+VisiPilot FSIS — 7-day rolling retention for the NEWS sheet.
 
 Opens docs/data/recalls.xlsx, finds the 'NEWS' sheet, and deletes every
 row whose 'Published (UTC)' date is more than 7 days old. Keeps the

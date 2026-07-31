@@ -10,7 +10,7 @@ Two changes in Batch 4 (2026-05-08):
 2. Browser fingerprint headers:
    gov.il is fronted by Akamai. Akamai's bot detection checks for the
    full Chrome Client Hints set (sec-ch-ua-*) and Sec-Fetch-* headers.
-   The AFTS default session sends Chrome's User-Agent but none of those,
+   The VisiPilot default session sends Chrome's User-Agent but none of those,
    producing a 403. Adding the full fingerprint bypasses the bot check.
 
 CAVEAT: gov.il pages are JavaScript-rendered SPAs that show

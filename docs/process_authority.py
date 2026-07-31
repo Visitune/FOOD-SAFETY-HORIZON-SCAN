@@ -2,7 +2,7 @@
 process_authority.py
 ====================
 
-Process Authority (PA) trigger module for the AFTS weekly + monthly
+Process Authority (PA) trigger module for the VisiPilot weekly + monthly
 recall briefings. Surfaces a fixed 4th paragraph in the analysis
 section whenever the reporting window contains thermal-processing,
 low-acid / acidified-food, anaerobic-packaging, or commercial-

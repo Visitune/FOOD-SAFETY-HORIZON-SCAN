@@ -11,7 +11,7 @@ Two changes in Batch 4 (2026-05-08):
    Thermos jars) all live at /case_type/consumer-cases/.
 
 2. Browser fingerprint headers:
-   The previous AFTS session header set passes a Chrome 127 User-Agent but
+   The previous VisiPilot session header set passes a Chrome 127 User-Agent but
    omits the Client Hints (sec-ch-ua-*) and Sec-Fetch-* headers that real
    Chrome always sends. Modern WAFs flag this combination as bot-like and
    return 403. Adding a full Chrome 127 fingerprint bypasses those checks.

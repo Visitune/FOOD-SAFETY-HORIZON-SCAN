@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Greek Gap Finder
+VisiPilot Food Safety Intelligence — Greek Gap Finder
 Module 1: Accept/Reject Rules Engine
 
 Locked rule set (2026-05-15):
@@ -871,7 +871,7 @@ if __name__ == "__main__":
     ]
 
     print("=" * 78)
-    print("AFTS Greek Gap Finder — Rules Engine Self-Test")
+    print("VisiPilot Greek Gap Finder — Rules Engine Self-Test")
     print("=" * 78)
     passed = failed = 0
     for tc in test_cases:

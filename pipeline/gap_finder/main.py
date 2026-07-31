@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Orchestrator (parametric — supports any country via --country flag).
 
 Wires the 4 pipeline stages end-to-end:
@@ -9,7 +9,7 @@ Wires the 4 pipeline stages end-to-end:
   Stage 4: append rows to docs/data/recalls.xlsx          (idempotent, dedupe by URL)
 
 All paths come from the CountryConfig. The xlsx file is shared across countries
-(single AFTS knowledge base); the per-country JSONL outputs are isolated.
+(single VisiPilot knowledge base); the per-country JSONL outputs are isolated.
 
 CLI:
     python -m pipeline.gap_finder.main --country gr
@@ -544,7 +544,7 @@ def stage_extractor(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="AFTS Gap Finder — Orchestrator (parametric)"
+        description="VisiPilot Gap Finder — Orchestrator (parametric)"
     )
     parser.add_argument("--country", required=True,
                         help="ISO2 country code: gr, it, ...")
@@ -568,7 +568,7 @@ def main() -> int:
         started_at=datetime.now(timezone.utc).isoformat(),
     )
 
-    print(f"=== AFTS Gap Finder ({cfg.code}/{cfg.name_en}) "
+    print(f"=== VisiPilot Gap Finder ({cfg.code}/{cfg.name_en}) "
           f"started {state.started_at} ===", file=sys.stderr)
     print(f"  authority: {cfg.authority_short} ({cfg.authority_domain})",
           file=sys.stderr)

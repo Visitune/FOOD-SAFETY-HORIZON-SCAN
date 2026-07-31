@@ -46,15 +46,15 @@ jobs:
       - name: Run merge_master (Pending → Recalls)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
-          GIT_USER_NAME:  "AFTS Intelligence System"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
+          GIT_USER_NAME:  "VisiPilot Intelligence System"
         run: |
           python -m pipeline.merge_master
 
       - name: Commit merged workbook (if changed)
         run: |
-          git config --local user.email "fsis-bot@advfood.tech"
-          git config --local user.name  "AFTS Intelligence System"
+          git config --local user.email "fsis-bot@visipilot.com"
+          git config --local user.name  "VisiPilot Intelligence System"
           git add docs/data/recalls.xlsx docs/data/recalls.json || true
           if git diff --staged --quiet; then
             echo "No merge changes this hour."

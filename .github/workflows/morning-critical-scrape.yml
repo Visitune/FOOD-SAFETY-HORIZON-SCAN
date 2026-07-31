@@ -111,8 +111,8 @@ jobs:
           SKIP_COMMIT:   "false"
 
           AGENCIES_FILTER: "FDA,USDA FSIS,CFIA,RASFF (EU),FSA (UK),FSAI (IE),RappelConso (FR),BVL (DE),AESAN (ES),AGES (AT),FSANZ (AU),MPI (NZ),EFET (GR)"
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
-          GIT_USER_NAME:  "AFTS Intelligence System"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
+          GIT_USER_NAME:  "VisiPilot Intelligence System"
         run: |
           python -m pipeline.run_all
 

@@ -54,7 +54,7 @@ finders missed a regulator update, DDGS fills the gap.
 
 Cost: $0 (DDGS is free + no LLM calls).
 
-Author: AFTS / G. Stoforos
+Author: G. Stoforos
 """
 from __future__ import annotations
 import os

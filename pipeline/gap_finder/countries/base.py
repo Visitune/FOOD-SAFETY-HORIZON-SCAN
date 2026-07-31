@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country configuration base class.
 
 Each country's gap finder is described by a single CountryConfig instance
@@ -58,7 +58,7 @@ class CountryConfig:
     # of these to survive into the candidate set.
     recall_signal_terms: list[str]
 
-    # ── Scheduling (per AFTS rule — local time, EVER UTC) ───────────────────
+    # ── Scheduling (per VisiPilot rule — local time, EVER UTC) ───────────────────
     timezone: str                   # "Europe/Athens", "Europe/Rome"
     run_local_hour: int             # 21 (run at 21:00 local time)
     # Two UTC cron lines — one per DST offset. Generated at workflow-build time.

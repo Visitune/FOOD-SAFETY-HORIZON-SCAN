@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Extractor (parametric — works for any CountryConfig).
 
 Reads authority announcement bodies and converts them into structured
@@ -629,7 +629,7 @@ DRY_RUN_VERIFIED = [
 
 def run_dry_test(cfg: CountryConfig) -> int:
     print("=" * 78)
-    print(f"AFTS Gap Finder — Extractor Dry-Run Test "
+    print(f"VisiPilot Gap Finder — Extractor Dry-Run Test "
           f"({cfg.code} / {cfg.name_en}, MockLlamaClient)")
     print("=" * 78)
 
@@ -731,7 +731,7 @@ def run_dry_test(cfg: CountryConfig) -> int:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="AFTS Gap Finder — Extractor")
+    parser = argparse.ArgumentParser(description="VisiPilot Gap Finder — Extractor")
     parser.add_argument("--country", required=True, help="ISO2 code: gr, it, ...")
     parser.add_argument("--verified", default=None)
     parser.add_argument("--pending-out", default=None)

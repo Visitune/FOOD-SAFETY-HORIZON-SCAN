@@ -1,5 +1,5 @@
 r"""
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 News article fetcher (parametric, parallel, TLS-impersonated).
 
 Replaces the search-engine-based authority verifier. Instead of trying to
@@ -630,7 +630,7 @@ def run_probe(cfg: CountryConfig, url: str) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="AFTS Gap Finder — Article Fetcher"
+        description="VisiPilot Gap Finder — Article Fetcher"
     )
     parser.add_argument("--country", required=True, help="ISO2 code: gr, it, ...")
     parser.add_argument("--candidates", default=None)

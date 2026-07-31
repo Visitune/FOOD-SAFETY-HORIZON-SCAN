@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder (multi-country)
+VisiPilot Food Safety Intelligence — Gap Finder (multi-country)
 
 Discovers food recall news that hasn't yet appeared in our primary FSIS pipeline,
 verifies it against the country's official food authority via search-engine

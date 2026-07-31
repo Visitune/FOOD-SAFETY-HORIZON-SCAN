@@ -3,7 +3,7 @@ UK source — Food Standards Agency (FSA) Food Alerts API.
 
 Endpoint: https://data.food.gov.uk/food-alerts/id  (JSON, OGL v3.0)
 Covers England, Wales, Northern Ireland (Scotland handled separately in
-scotland.py per AFTS spec, using country=GB-SCT).
+scotland.py per VisiPilot spec, using country=GB-SCT).
 
 Alert types:
   PRIN  = Product Recall Information Notice  → alert_type 'recall'

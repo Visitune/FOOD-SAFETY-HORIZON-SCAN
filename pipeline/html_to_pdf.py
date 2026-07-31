@@ -1,5 +1,5 @@
 """
-AFTS FSIS — HTML → PDF converter.
+VisiPilot FSIS — HTML → PDF converter.
 
 Converts docs/20YY-M<MM>.html  → docs/20YY-M<MM>.pdf  (monthly)
          docs/20YY-W<NN>.html  → docs/20YY-W<NN>.pdf  (weekly)

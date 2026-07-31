@@ -284,7 +284,7 @@ jobs:
               # ── Render report ──
               today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
               md = []
-              md.append(f"# AFTS Training Data — Quality Audit Sample — {today}")
+              md.append(f"# VisiPilot Training Data — Quality Audit Sample — {today}")
               md.append("")
               md.append(f"Random samples for hand-review. **Goal: read each, mark ✓ / ✗ / ?**")
               md.append(f"in the verdict checklist below each example.")

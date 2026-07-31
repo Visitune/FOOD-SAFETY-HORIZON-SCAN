@@ -1,4 +1,4 @@
-name: AFTS Monthly Report
+name: VisiPilot Monthly Report
 
 # ==========================================================================
 # Runs 1st of every month at 09:00 ATHENS TIME (not UTC).
@@ -133,8 +133,8 @@ jobs:
       - name: Commit outputs
         if: steps.guard.outputs.run == 'true'
         run: |
-          git config --local user.email "fsis-bot@advfood.tech"
-          git config --local user.name  "AFTS Intelligence System"
+          git config --local user.email "fsis-bot@visipilot.com"
+          git config --local user.name  "VisiPilot Intelligence System"
           # Subscriber monthly PDFs decommissioned 2026-05-02 — HTML
           # is the canonical deliverable; subscribers print-to-PDF in
           # their browser if needed. Marketing one-pager PDF stays as
@@ -149,7 +149,7 @@ jobs:
             echo "No monthly-report changes to commit."
             exit 0
           fi
-          COMMIT_MSG="AFTS Monthly Report build $(TZ=Europe/Athens date +%Y-%m-%d)"
+          COMMIT_MSG="VisiPilot Monthly Report build $(TZ=Europe/Athens date +%Y-%m-%d)"
           git commit -m "$COMMIT_MSG"
 
           for attempt in 1 2 3; do

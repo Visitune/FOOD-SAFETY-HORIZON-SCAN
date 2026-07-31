@@ -25,7 +25,7 @@ from .classify import classify_record
 def run_source(code: str, max_age_days: int = 14, dry_run: bool = False,
                xlsx_path: str = "docs/data/recalls.xlsx") -> dict:
     src = get(code)
-    print(f"=== AFTS Official-Feed Collector ({code}/{src.name_en}) "
+    print(f"=== VisiPilot Official-Feed Collector ({code}/{src.name_en}) "
           f"started {datetime.now(timezone.utc).isoformat()} ===")
     print(f"  authority: {src.authority_short}")
     print(f"  xlsx:      {xlsx_path}")
@@ -112,7 +112,7 @@ def run_source(code: str, max_age_days: int = 14, dry_run: bool = False,
         if use_agent:
             if src.market_agent == "north_america":
                 from .agents.north_america import find_url as agent_find_url
-                print(f"  [Agent] AFTS North America Recall Agent "
+                print(f"  [Agent] VisiPilot North America Recall Agent "
                       f"(regulator: {src.regulator_code})")
             else:
                 # Unknown market agent — fall back to legacy path
@@ -260,7 +260,7 @@ def _merge_dedup(official: list, gnews: list) -> list:
 def _append_xlsx(records, xlsx_path):
     """
     Append accepted records as rows on the 'Pending' sheet, matching the
-    exact AFTS schema. Dedup on URL against BOTH Pending and Recalls sheets
+    exact VisiPilot schema. Dedup on URL against BOTH Pending and Recalls sheets
     (don't re-add something already pending or already promoted).
 
     URL comparison is case-insensitive + whitespace-stripped, matching the

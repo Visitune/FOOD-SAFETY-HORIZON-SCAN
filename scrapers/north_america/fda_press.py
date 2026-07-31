@@ -134,7 +134,7 @@ _PATHOGEN_KEYWORDS = for_languages("en")
 #   2. _RECALL_VERBS — slug must contain a recall verb (recalls, recalled,
 #      voluntary-recall, issues-recall, initiates-voluntary, announces-recall).
 #   3. _OUT_OF_SCOPE_SLUG_TOKENS — reject drug/allergen/quality slugs
-#      (in AFTS scope: pathogens + biotoxins + mycotoxins + foreign material
+#      (in VisiPilot scope: pathogens + biotoxins + mycotoxins + foreign material
 #      + pest + chemical hazards; out of scope: drugs, allergen-only, quality).
 # ─────────────────────────────────────────────────────────────────────────
 
@@ -174,7 +174,7 @@ _RECALL_VERBS = (
 )
 
 # Tokens that mark out-of-scope items (drugs, allergen-only, quality).
-# AFTS scope (per dashboard footer): pathogens + biotoxins + mycotoxins
+# VisiPilot scope (per dashboard footer): pathogens + biotoxins + mycotoxins
 # + foreign material + pest + chemical hazards. Allergen-only and
 # quality/spoilage are excluded — even though the FDA publishes them
 # under the same /safety/recalls-... path.
@@ -189,7 +189,7 @@ _OUT_OF_SCOPE_SLUG_TOKENS = (
     "drug-recall",
     "sensual-enhancement", "sexual-enhancement",
     "weight-loss-product", "erectile",
-    # Allergen-only recalls (out of AFTS scope)
+    # Allergen-only recalls (out of VisiPilot scope)
     "undeclared-peanut", "cross-contact-peanut",
     "undeclared-milk", "undeclared-dairy",
     "undeclared-egg", "undeclared-eggs",

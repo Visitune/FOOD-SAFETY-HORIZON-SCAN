@@ -146,8 +146,8 @@ jobs:
           CLAUDE_CHECK_SKIP_DAYS:         ${{ github.event.inputs.skip_days || '0' }}
           SKIP_COMMIT:                    ${{ github.event.inputs.skip_commit || 'false' }}
           GH_TOKEN:                       ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL:                 "fsis-bot@advfood.tech"
-          GIT_USER_NAME:                  "AFTS Intelligence System"
+          GIT_USER_EMAIL:                 "fsis-bot@visipilot.com"
+          GIT_USER_NAME:                  "VisiPilot Intelligence System"
         run: |
           python -m pipeline.gemini_check
 

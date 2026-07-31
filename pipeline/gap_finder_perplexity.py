@@ -156,7 +156,7 @@ def _call_perplexity_search() -> Optional[List[Dict[str, Any]]]:
                 # OpenRouter attribution headers (required by ToS — they
                 # show up in your OpenRouter dashboard so you can trace
                 # spend per app).
-                "HTTP-Referer":  "https://advfood.tech",
+                "HTTP-Referer":  "https://visipilot.com",
                 "X-Title":       "FSIS Gap-Finder",
             },
             json=body,

@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Netherlands (NVWA — Nederlandse Voedsel- en Warenautoriteit)
 
 REVISION (Batch 2.1 hotfix): The first Netherlands deployment caught 0

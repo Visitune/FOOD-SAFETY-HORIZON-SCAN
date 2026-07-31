@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Finland (Ruokavirasto — Finnish Food Authority)
 
 Finnish food-recall regime:

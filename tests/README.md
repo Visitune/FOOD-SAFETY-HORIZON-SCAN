@@ -1,4 +1,4 @@
-# AFTS FSIS — Test Suite
+# VisiPilot FSIS — Test Suite
 
 End-to-end tests for the highest-blast-radius modules in `pipeline/`.
 Designed to catch the regressions that have hit production in the past

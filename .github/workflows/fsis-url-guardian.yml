@@ -127,7 +127,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git config --local user.email "fsis-bot@advfood.tech"
+          git config --local user.email "fsis-bot@visipilot.com"
           git config --local user.name  "FSIS Bot"
           git add docs/data/recalls.xlsx docs/data/recalls.json || true
           if git diff --staged --quiet; then

@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: North Macedonia (FVA / АХВ — Агенција за храна и ветеринарство /
                 Food and Veterinary Agency).
 

@@ -126,8 +126,8 @@ jobs:
       - name: Commit review output + safe fixes (if changed)
         if: steps.guard.outputs.run == 'true'
         run: |
-          git config --local user.email "fsis-bot@advfood.tech"
-          git config --local user.name  "AFTS Intelligence System"
+          git config --local user.email "fsis-bot@visipilot.com"
+          git config --local user.name  "VisiPilot Intelligence System"
           git add docs/data/recalls.xlsx docs/data/recalls.json \
                   docs/data/weekly-index.json docs/data/weekly-summary-latest.json \
                   docs/data/monthly-index.json docs/data/monthly-summary-latest.json \

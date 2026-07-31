@@ -1,7 +1,7 @@
 """
 scrapers/_models.py
 ===================
-AFTS FSIS — Recall data model + normalization helpers.
+VisiPilot FSIS — Recall data model + normalization helpers.
 
 Schema (14 fields, matches pipeline.merge_master.SCHEMA):
     Date, Source, Company, Brand, Product, Pathogen, Reason, Class,
@@ -327,7 +327,7 @@ _NON_PATHOGEN_MARKERS: Tuple[str, ...] = (
 def normalize_pathogen(raw: Any) -> str:
     """
     Map a free-form string to a canonical pathogen name.
-    Returns "" when the string does NOT describe a pathogen AFTS tracks.
+    Returns "" when the string does NOT describe a pathogen VisiPilot tracks.
     """
     if raw is None:
         return ""
@@ -424,7 +424,7 @@ _RTE_KEYWORDS: List[str] = [
     "frozen berries", "frozen berry", "frozen fruit",   # often eaten raw in smoothies
     "sprouts", "alfalfa sprouts", "bean sprouts",  # eaten raw in salads
     "leafy greens", "lettuce", "spinach", "kale", "arugula", "rocket",
-    # "dry pet food", "kibble" — REMOVED 2026-05-23 (pet food now OUT of AFTS-FSIS scope)
+    # "dry pet food", "kibble" — REMOVED 2026-05-23 (pet food now OUT of VisiPilot-FSIS scope)
     # German
     "verzehrfertig", "rohwurst", "räucherlachs",
     # French

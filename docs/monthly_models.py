@@ -2,7 +2,7 @@
 monthly_models.py
 =================
 
-Predictive-modelling module for the AFTS monthly report.
+Predictive-modelling module for the VisiPilot monthly report.
 Imported by docs/build_monthly_report_afts.py.
 
 Public API:

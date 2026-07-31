@@ -143,7 +143,7 @@ LISTING_DATE_RX = re.compile(r'\b(\d{2})/(\d{2})/(\d{4})\b')
 # HTTP helpers
 # ─────────────────────────────────────────────────────────────────────────
 
-UA = "Mozilla/5.0 (FSIS-html-freshness/1.0; +https://advfood.tech)"
+UA = "Mozilla/5.0 (FSIS-html-freshness/1.0; +https://visipilot.com)"
 
 def _get(url: str, *, timeout: int = 20) -> Optional[str]:
     try:

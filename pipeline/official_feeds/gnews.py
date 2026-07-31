@@ -3,7 +3,7 @@ Google News supplement for the official-feed collector.
 
 Authority websites/RSS have proven flaky (HTML scrapers break, RSS 404s,
 bot-blocks). This module adds a Google News pass as insurance: it queries
-the authority name + recall/pathogen terms, and — per AFTS spec — names the
+the authority name + recall/pathogen terms, and — per VisiPilot spec — names the
 last N calendar dates explicitly (today, today-1, today-2) so Google surfaces
 the most recent recalls rather than historical ones. A `when:7d` operator is
 also appended as a recency belt-and-suspenders.

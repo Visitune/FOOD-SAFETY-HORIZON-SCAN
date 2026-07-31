@@ -52,8 +52,8 @@ jobs:
 
       - name: Commit updated recalls.xlsx if changed
         run: |
-          git config user.name  "AFTS Intelligence System"
-          git config user.email "fsis-bot@advfood.tech"
+          git config user.name  "VisiPilot Intelligence System"
+          git config user.email "fsis-bot@visipilot.com"
           if git diff --quiet docs/data/recalls.xlsx; then
             echo "No news changes this hour."
             exit 0

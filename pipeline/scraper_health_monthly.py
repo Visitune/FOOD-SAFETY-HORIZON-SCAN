@@ -126,7 +126,7 @@ td{{padding:5px 9px;border:1px solid #e0e0e0;vertical-align:top}}
 
 <div class="foot">
 Generated {generated} · Source: docs/data/scraper-health.json<br>
-AFTS Food Safety Intelligence System · advfood.tech
+VisiPilot Food Safety Intelligence System · visipilot.com
 </div>
 </body></html>
 """
@@ -258,7 +258,7 @@ def build_text(report: Dict) -> str:
         lines.append(f"  [{st.replace('FAIL_',''):8}] {name}")
     lines.append("")
     lines.append(f"Generated {report.get('generated_utc','')}")
-    lines.append("AFTS · advfood.tech · info@advfood.tech")
+    lines.append("VisiPilot · visipilot.com · info@visipilot.com")
     return "\n".join(lines)
 
 

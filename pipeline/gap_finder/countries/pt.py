@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Portugal (ASAE — Economic and Food Safety Authority)
 
 Portuguese food-recall regime:

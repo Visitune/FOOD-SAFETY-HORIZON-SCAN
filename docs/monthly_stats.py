@@ -2,7 +2,7 @@
 monthly_stats.py
 ================
 
-Pure-stats foundation module for the AFTS monthly report.
+Pure-stats foundation module for the VisiPilot monthly report.
 Imported by docs/build_monthly_report_afts.py.
 
 Public API (referenced by the report builder):

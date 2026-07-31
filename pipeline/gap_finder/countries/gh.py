@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Ghana (FDA Ghana — Food and Drugs Authority).
 
 VERIFIED 2026-06 (Greece concept): FDA Ghana publishes recalls/alerts under a

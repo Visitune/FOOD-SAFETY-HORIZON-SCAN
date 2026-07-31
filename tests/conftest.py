@@ -1,5 +1,5 @@
 """
-tests/conftest.py — shared pytest fixtures for the AFTS FSIS test suite.
+tests/conftest.py — shared pytest fixtures for the VisiPilot FSIS test suite.
 
 This module exposes fixtures that every test file can use without importing.
 The pytest framework auto-discovers conftest.py in the tests directory.

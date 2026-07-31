@@ -1,4 +1,4 @@
-name: AFTS Synthesis Writer — Monthly
+name: VisiPilot Synthesis Writer — Monthly
 
 # ==========================================================================
 # Day-1 09:30 ATHENS — runs ~30 min after the monthly builder commits at 09:00.
@@ -6,7 +6,7 @@ name: AFTS Synthesis Writer — Monthly
 # ai_lead_paragraph="" ready to be filled.
 #
 # Timeline each Day-1 (all Athens time):
-#   09:00  AFTS Monthly Report builds + commits monthly-summary-latest.json
+#   09:00  VisiPilot Monthly Report builds + commits monthly-summary-latest.json
 #          (ai_lead_paragraph="")
 #   09:30  THIS WORKFLOW → reads the JSON, generates monthly synthesis,
 #          writes back, commits.

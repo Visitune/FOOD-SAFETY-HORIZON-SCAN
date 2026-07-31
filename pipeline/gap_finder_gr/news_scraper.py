@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Greek Gap Finder
+VisiPilot Food Safety Intelligence — Greek Gap Finder
 Module 2: News Scraper
 
 Discovers food-recall candidate articles from Greek news sources:
@@ -110,8 +110,8 @@ PATHOGEN_KEYWORDS = {
 }
 
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; AFTS-FSIS-GapFinder/1.0; "
-    "+https://www.advfood.tech)"
+    "Mozilla/5.0 (compatible; VisiPilot-FSIS-GapFinder/1.0; "
+    "+https://food-safety-horizon-scan.vercel.app)"
 )
 REQUEST_TIMEOUT = 30
 MAX_ENTRIES_PER_FEED = 50  # cap per feed; prevents pulling years of history
@@ -407,7 +407,7 @@ DRY_RUN_FIXTURES = [
 def run_dry_test() -> int:
     """Test filtering + dedup logic against synthetic fixtures. Returns exit code."""
     print("=" * 78)
-    print("AFTS Greek Gap Finder — News Scraper Dry-Run Test")
+    print("VisiPilot Greek Gap Finder — News Scraper Dry-Run Test")
     print("=" * 78)
 
     candidates: list[Candidate] = []
@@ -466,7 +466,7 @@ def run_dry_test() -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="AFTS Greek Gap Finder — News Scraper"
+        description="VisiPilot Greek Gap Finder — News Scraper"
     )
     parser.add_argument("--output", "-o", default=DEFAULT_OUTPUT,
                         help=f"Output JSONL path (default: {DEFAULT_OUTPUT})")
@@ -481,7 +481,7 @@ def main() -> int:
     if args.dry_run:
         return run_dry_test()
 
-    print(f"AFTS Greek Gap Finder — News Scraper", file=sys.stderr)
+    print(f"VisiPilot Greek Gap Finder — News Scraper", file=sys.stderr)
     print(f"Sources: {len(RSS_FEEDS)} sites, "
           f"{sum(len(v) for v in RSS_FEEDS.values())} RSS URLs",
           file=sys.stderr)

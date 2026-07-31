@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Greek Gap Finder
+VisiPilot Food Safety Intelligence — Greek Gap Finder
 Module 3 v3: EFET Fetcher (search-engine BULK index, fast)
 
 WHY THIS VERSION:
@@ -491,7 +491,7 @@ def fetch_announcement_body(url: str, verbose: bool = False) -> str:
 
 def run_probe(query_text: str) -> int:
     print("=" * 78)
-    print(f"AFTS EFET Fetcher v3 — PROBE")
+    print(f"VisiPilot EFET Fetcher v3 — PROBE")
     print(f"  News title: {query_text!r}")
     print("=" * 78)
     print("\nBuilding index...")
@@ -545,7 +545,7 @@ def run_show_index() -> int:
 
 def run_dry_test() -> int:
     print("=" * 78)
-    print("AFTS EFET Fetcher v3 — Dry-Run Test (offline, synthetic index)")
+    print("VisiPilot EFET Fetcher v3 — Dry-Run Test (offline, synthetic index)")
     print("=" * 78)
 
     synthetic_index = []
@@ -621,7 +621,7 @@ def run_dry_test() -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="AFTS Greek Gap Finder — EFET Fetcher v3 (bulk DDG index)"
+        description="VisiPilot Greek Gap Finder — EFET Fetcher v3 (bulk DDG index)"
     )
     parser.add_argument("--candidates", default=DEFAULT_CANDIDATES)
     parser.add_argument("--verified", default=DEFAULT_VERIFIED)

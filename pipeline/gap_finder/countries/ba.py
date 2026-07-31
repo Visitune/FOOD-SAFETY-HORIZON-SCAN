@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Bosnia and Herzegovina (FSA BiH / Agencija za sigurnost hrane
                 Bosne i Hercegovine — Food Safety Agency of BiH).
 

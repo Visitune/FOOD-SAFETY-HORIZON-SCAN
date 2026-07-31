@@ -137,7 +137,7 @@ HTML_TRUNCATE_CHARS = int(os.getenv("CLAUDE_CHECK_PAGE_CHARS", "8000"))
 FETCH_TIMEOUT_S = 25
 SLEEP_BETWEEN_ROWS_S = 0.5    # gentle on the regulator + the API
 # UA + headers updated 2026-05-07 — the previous bot-style UA
-# ("AFTS-FSIS-claude-check/1.0; +https://advfood.tech/fsis-home") was
+# ("VisiPilot-FSIS-claude-check/1.0; +https://food-safety-horizon-scan.vercel.app") was
 # being 403-blocked by USDA FSIS (3 of 11 rows in today's claude-check).
 # Same fix as the 2026-04-29 _base.py audit: use a real Chrome UA so
 # regulator bot-blockers don't drop us. We're not impersonating — we
@@ -780,7 +780,7 @@ INSTRUCTIONS:
          berries) — PET FOOD EXCLUDED, see scope rule below
        • Heavy metals at toxic levels, rodenticide if consumed
        • Foreign body in baby food / vulnerable-population food
-     → OUT OF SCOPE (AFTS-FSIS rule, locked 2026-05-23):
+     → OUT OF SCOPE (VisiPilot-FSIS rule, locked 2026-05-23):
        • Pet food, dog/cat food, dog/cat treats, animal feed, livestock
          feed, poultry/cattle feed — even when contaminated with a
          Tier-1 pathogen (Listeria, Salmonella, etc.). Reject regardless

@@ -58,8 +58,8 @@ HEADERS_BASE = {
     "Content-Type": "application/json",
     # OpenRouter uses these for ranking / abuse prevention; they're optional
     # but recommended.
-    "HTTP-Referer": "https://advfood.tech/food-safety-intelligence",
-    "X-Title": "AFTS FSIS",
+    "HTTP-Referer": "https://visipilot.com/food-safety-intelligence",
+    "X-Title": "VisiPilot FSIS",
 }
 
 if not ENABLED:

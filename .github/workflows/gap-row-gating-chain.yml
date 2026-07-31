@@ -89,7 +89,7 @@ jobs:
 
       - name: Step 4 — Single consolidating commit
         env:
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME:  "FSIS Bot"
         run: |
           git config user.email "$GIT_USER_EMAIL"

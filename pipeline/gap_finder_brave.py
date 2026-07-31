@@ -37,7 +37,7 @@ fills the gap.
 
 Cost: $0 (Brave free tier + no LLM calls).
 
-Author: AFTS / G. Stoforos
+Author: G. Stoforos
 """
 from __future__ import annotations
 import os

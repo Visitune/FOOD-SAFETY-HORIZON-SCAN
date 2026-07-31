@@ -1,5 +1,5 @@
 """
-AFTS FSIS — Weekly report builder, rolling-window edition.
+VisiPilot FSIS — Weekly report builder, rolling-window edition.
 
 Rebuilds the most recent N=VISIBLE_WEEKS Fridays against the current
 Recalls sheet on every run (so retroactive promotions land in the right

@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: South Africa (NCC — National Consumer Commission, the body that
                 publishes product recalls under the Consumer Protection Act 68/2008).
 

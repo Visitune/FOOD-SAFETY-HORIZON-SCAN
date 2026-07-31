@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Switzerland (BLV — Bundesamt für Lebensmittelsicherheit
                 und Veterinärwesen / Office fédéral de la sécurité
                 alimentaire et des affaires vétérinaires)

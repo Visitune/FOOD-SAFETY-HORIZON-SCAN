@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Hungary (NÉBIH — Nemzeti Élelmiszerlánc-biztonsági Hivatal /
                 National Food Chain Safety Office)
 

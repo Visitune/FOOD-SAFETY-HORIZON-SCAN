@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Luxembourg (Sécurité Alimentaire / Lebensmittelsicherheit)
 
 Luxembourg food-recall regime:

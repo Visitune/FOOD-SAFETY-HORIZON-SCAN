@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Search-engine verifier (parametric — works for any CountryConfig).
 
 Replaces the per-country `efet_fetcher` style with a generic module:
@@ -546,7 +546,7 @@ def fetch_announcement_body(url: str, verbose: bool = False) -> str:
 def run_dry_test(cfg: CountryConfig) -> int:
     """Offline test with synthetic index — language-aware."""
     print("=" * 78)
-    print(f"AFTS Search Verifier — Dry-Run Test ({cfg.code} / {cfg.name_en})")
+    print(f"VisiPilot Search Verifier — Dry-Run Test ({cfg.code} / {cfg.name_en})")
     print("=" * 78)
     if cfg.code == "gr":
         fixtures = [
@@ -637,7 +637,7 @@ def run_show_index(cfg: CountryConfig) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="AFTS Gap Finder — Search Verifier (parametric DDG bulk index)"
+        description="VisiPilot Gap Finder — Search Verifier (parametric DDG bulk index)"
     )
     parser.add_argument("--country", required=True,
                         help="ISO2 country code: gr, it, ...")

@@ -787,7 +787,7 @@ def validate_pending_row(
         return False, f"pathogen_out_of_scope: {pathogen_str!r}"
 
     # ── Pet / animal food gate (added 2026-05-23) ──────────────────────
-    # AFTS-FSIS monitors HUMAN food only. Pet food / dog & cat treats /
+    # VisiPilot-FSIS monitors HUMAN food only. Pet food / dog & cat treats /
     # animal feed / livestock feed are rejected regardless of pathogen.
     # Checks Product, Company, Brand, Reason in any language.
     if _is_pet_food is not None and _is_pet_food(
@@ -796,7 +796,7 @@ def validate_pending_row(
         row.get("Brand", ""),
         row.get("Reason", ""),
     ):
-        return False, "pet_food_out_of_scope: pet / animal food not in AFTS-FSIS human-food scope"
+        return False, "pet_food_out_of_scope: pet / animal food not in VisiPilot-FSIS human-food scope"
 
     if is_year_mismatch is not None:
         try:

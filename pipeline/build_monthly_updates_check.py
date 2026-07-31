@@ -1,5 +1,5 @@
 """
-AFTS FSIS — Monthly updates check.
+VisiPilot FSIS — Monthly updates check.
 ====================================
 
 Runs every month on the 8th at 09:00 Athens time (via
@@ -78,9 +78,9 @@ import build_weekly_report_afts as weekly  # noqa: E402
 # CONFIG
 # ---------------------------------------------------------------------------
 LOOKBACK_MONTHS = 3       # check anchor + 2 priors
-SITE_URL_BASE = "https://fsis.advfood.tech"
-DASHBOARD_URL = "https://www.advfood.tech/fsis-recalls"
-INDEX_DASHBOARD_URL = "https://www.advfood.tech/#monthly"
+SITE_URL_BASE = "https://food-safety-horizon-scan.vercel.app"
+DASHBOARD_URL = "https://food-safety-horizon-scan.vercel.app/"
+INDEX_DASHBOARD_URL = "https://food-safety-horizon-scan.vercel.app/#monthly"
 
 XLSX = ROOT / "docs" / "data" / "recalls.xlsx"
 INDEX_JSON = ROOT / "docs" / "data" / "monthly-index.json"

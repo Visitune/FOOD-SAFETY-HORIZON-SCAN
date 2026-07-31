@@ -2,7 +2,7 @@
 # Public XLSX Build — Daily 23:30 Athens
 # =============================================================================
 # Builds the formatted public Excel file shipped via the dashboard's
-# "↓ XLSX" download button at advfood.tech/fsis-home.
+# "↓ XLSX" download button at food-safety-horizon-scan.vercel.app.
 #
 # Reads:  docs/data/recalls.xlsx        (operator file, raw)
 # Writes: docs/data/afts-recalls-public.xlsx

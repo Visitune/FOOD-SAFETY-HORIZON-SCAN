@@ -6,7 +6,7 @@ Renders the single-page FSIS marketing (lead-magnet) PDF in the canonical
 March/April 2026 layout. One entry point: `render_marketing_pdf(out_path, m)`.
 
 Layout contract:
-  · header: tiny letter-spaced AFTS line + "FOOD SAFETY INTELLIGENCE SYSTEM"
+  · header: tiny letter-spaced VisiPilot line + "FOOD SAFETY INTELLIGENCE SYSTEM"
             + huge MONTH YEAR (navy)
   · orange accent line
   · meta strip (six cells: title, period, recalls, tier-1, outbreaks, leading)
@@ -14,7 +14,7 @@ Layout contract:
   · "§ TOP N CRITICAL INCIDENTS · MONTH YEAR" section bar
   · top-N table — black/navy SOURCE labels, orange "view →" link,
                   black/navy OUTBREAK labels (NOT orange)
-  · navy two-column footer (AFTS bold left · two-line tagline right)
+  · navy two-column footer (VisiPilot bold left · two-line tagline right)
 
 Source/Outbreak labels are intentionally black-ink (deviation from earlier
 March prototype). All other styling matches March.
@@ -37,7 +37,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 # =============================================================================
 
 # Sampled from the canonical March 2026 PDF
-ORANGE = HexColor("#E8601A")   # AFTS brand
+ORANGE = HexColor("#E8601A")   # VisiPilot brand
 NAVY   = HexColor("#111827")   # title / footer / source / outbreak
 INK    = HexColor("#1F2937")   # body text
 MUTED  = HexColor("#6B7280")   # secondary labels
@@ -366,14 +366,14 @@ def render_marketing_pdf(out_path: str, m: MonthData) -> str:
 
     c = canvas.Canvas(out_path, pagesize=A4)
     c.setTitle(f"FSIS · Monthly Pathogen Surveillance · {m['month_tag']}")
-    c.setAuthor("Advanced Food-Tech Solutions")
+    c.setAuthor("VisiPilot")
 
     y = PAGE_H
 
     # -------- HEADER ----------------------------------------------------------
     y -= 32
     _draw_letter_spaced(c, MARGIN_L, y,
-                        "ADVANCED FOOD-TECH SOLUTIONS · AFTS",
+                        "VISIPILOT",
                         H_BOLD, 7.2, NAVY, tracking=1.6)
     y -= 22
     c.setFont(H_BOLD, 14); c.setFillColor(NAVY)
@@ -630,10 +630,10 @@ def render_marketing_pdf(out_path: str, m: MonthData) -> str:
     c.setFillColor(NAVY); c.rect(0, 0, PAGE_W, foot_h, fill=1, stroke=0)
     c.setFillColor(WHITE)
     _draw_letter_spaced(c, MARGIN_L, foot_h / 2 - 2,
-                        "ADVANCED FOOD-TECH SOLUTIONS · AFTS",
+                        "VISIPILOT",
                         H_BOLD, 7.0, WHITE, tracking=0.8)
     right_top = "Food Process Engineering · Thermal Processing · Regulatory Compliance"
-    right_bot = "advfood.tech · info@advfood.tech · Athens, Greece"
+    right_bot = "visipilot.com · info@visipilot.com"
     c.setFont(H_REG, 7.0); c.setFillColor(WHITE)
     c.drawString(PAGE_W - MARGIN_R - _text_w(right_top, H_REG, 7.0), foot_h / 2 + 4, right_top)
     c.drawString(PAGE_W - MARGIN_R - _text_w(right_bot, H_REG, 7.0), foot_h / 2 - 8, right_bot)

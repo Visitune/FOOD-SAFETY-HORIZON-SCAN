@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Spain (AESAN — Spanish Food Safety & Nutrition Agency)
 
 Spanish food-recall regime:

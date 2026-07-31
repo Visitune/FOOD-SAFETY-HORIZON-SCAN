@@ -63,7 +63,7 @@ log = logging.getLogger(__name__)
 
 # Default timeout for all calls — sources are sometimes slow but never long
 HTTP_TIMEOUT = 20
-USER_AGENT = "AFTS-FSIS/1.0 (food-safety intelligence; +https://www.advfood.tech/fsis-home)"
+USER_AGENT = "VisiPilot-FSIS/1.0 (food-safety intelligence; +https://food-safety-horizon-scan.vercel.app/)"
 DEFAULT_HEADERS = {
     "User-Agent": USER_AGENT,
     "Accept": "application/json, application/xml, text/xml, */*",

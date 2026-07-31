@@ -80,7 +80,7 @@ jobs:
       - name: Configure git
         run: |
           git config user.name  "fsis-cascade-bot"
-          git config user.email "bot@advfood.tech"
+          git config user.email "bot@visipilot.com"
 
       - name: Run cascade
         run: |

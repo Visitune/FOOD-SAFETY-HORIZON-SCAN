@@ -427,7 +427,7 @@ def git_commit_and_push(repo_dir: Path, files: list[str], message: str) -> bool:
 
         # Configure committer (CI-friendly)
         _run(["git", "-C", cwd, "config", "user.email",
-              os.getenv("GIT_USER_EMAIL", "fsis-bot@advfood.tech")])
+              os.getenv("GIT_USER_EMAIL", "fsis-bot@visipilot.com")])
         _run(["git", "-C", cwd, "config", "user.name",
               os.getenv("GIT_USER_NAME", "FSIS Bot")])
 

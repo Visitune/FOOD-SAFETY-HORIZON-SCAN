@@ -23,7 +23,7 @@ would:
   - bloat already-huge files
   - couple synthesis failures (LLM down, rate-limited) to structural-report
     failures
-  - make provider swaps (Anthropic → AFTS in-house model later this year)
+  - make provider swaps (Anthropic → VisiPilot in-house model later this year)
     a multi-file edit
 
 A separate post-processor decouples those concerns. The builders ship
@@ -38,7 +38,7 @@ ARCHITECTURE — PROVIDER-ABSTRACTED BACKENDS
 ============================================================================
 `_SYNTHESIS_BACKENDS` is an ordered list of `(name, call_fn)` tuples. Each
 backend is tried in order; the first one to return a valid synthesis wins.
-When AFTS ships its in-house model later this year, swapping in is one
+When VisiPilot ships its in-house model later this year, swapping in is one
 line:
 
     _SYNTHESIS_BACKENDS = [
@@ -121,7 +121,7 @@ log = logging.getLogger("synthesis-writer")
 # ============================================================================
 
 _PROMPT_RULES = """\
-You are the food safety analyst for AFTS (Advanced Food-Tech Solutions).
+You are the food safety analyst for VisiPilot.
 Your audience is QA directors, food safety officers, and regulatory affairs
 specialists at food processors.
 
@@ -314,7 +314,7 @@ def _call_anthropic(prompt: str, timeout: int = 60) -> Optional[str]:
             },
             json={
                 "model": os.environ.get(
-                    "AFTS_SYNTHESIS_MODEL", "claude-haiku-4-5-20251001"
+                    "SYNTHESIS_MODEL", "claude-haiku-4-5-20251001"
                 ),
                 "max_tokens": 600,
                 "temperature": 0.4,
@@ -359,7 +359,7 @@ def _call_gemini(prompt: str, timeout: int = 60) -> Optional[str]:
     except ImportError:
         log.warning("gemini backend: google-genai not installed — skipping")
         return None
-    model_name = os.environ.get("AFTS_SYNTHESIS_GEMINI_MODEL", "gemini-2.5-flash")
+    model_name = os.environ.get("SYNTHESIS_GEMINI_MODEL", "gemini-2.5-flash")
     for idx, key in enumerate(keys, 1):
         try:
             client = genai.Client(api_key=key)
@@ -383,7 +383,7 @@ def _call_gemini(prompt: str, timeout: int = 60) -> Optional[str]:
     return None
 
 
-# Ordered backend list. New providers (AFTS in-house model) plug in at the top.
+# Ordered backend list. New providers (VisiPilot in-house model) plug in at the top.
 _SYNTHESIS_BACKENDS: list[Tuple[str, Callable[[str, int], Optional[str]]]] = [
     ("anthropic", _call_anthropic),
     ("gemini",    _call_gemini),

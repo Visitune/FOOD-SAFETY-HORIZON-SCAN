@@ -86,7 +86,7 @@ jobs:
           DAILY_BUDGET_EUR_PER_WEEK: "1.00"
           SKIP_COMMIT: "false"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME: "FSIS Bot"
         run: |
           ARGS=""

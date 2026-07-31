@@ -2035,7 +2035,7 @@ letter-spacing:0.08em;text-transform:uppercase;}}
 <div class="footer">
   <div class="fb">Food Safety <em>·</em> Horizon Scanning</div>
   Food Process Engineering · Thermal Processing · Regulatory Compliance<br>
-  advfood.tech · info@advfood.tech · Athens, Greece<br>
+  visipilot.com · info@visipilot.com<br>
   Generated {(month_end + timedelta(days=1)).strftime('%d %B %Y')}
 </div>
 
@@ -2121,7 +2121,7 @@ Monthly Briefing · {escape(month_name)}</div>
 </div>
 
 <div style="font-size:11px;color:#94a3b8;text-align:center;margin-top:20px">
-Food Safety Horizon Scanning · advfood.tech · info@advfood.tech
+Food Safety Horizon Scanning · visipilot.com · info@visipilot.com
 </div>
 </div>
 </div>
@@ -2342,9 +2342,9 @@ def main() -> int:
     ap.add_argument("--all-output", default=None,
                     help="Path for the companion all-recalls HTML")
     ap.add_argument("--site-url",
-                    default="https://fsis.advfood.tech")
+                    default="https://food-safety-horizon-scan.vercel.app")
     ap.add_argument("--dashboard-url",
-                    default="https://www.advfood.tech/fsis-recalls")
+                    default="https://food-safety-horizon-scan.vercel.app/")
     ap.add_argument("--summary-json",
                     default=str(ROOT / "data" / "monthly-summary-latest.json"))
     ap.add_argument("--monthly-index",

@@ -20,7 +20,7 @@ Cutoff rule (matches the Thursday 17:00 Athens email):
     rolls over to the following Thursday. Each promotion lands in
     exactly one Thursday email.
 
-Author: AFTS / G. Stoforos
+Author: G. Stoforos
 """
 from __future__ import annotations
 

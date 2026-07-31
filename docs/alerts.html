@@ -6,7 +6,7 @@
      SETUP (one-time):
        1. Sign in at https://dash.cloudflare.com (free account)
        2. Analytics → Web Analytics → Add a site
-       3. Enter: gstoforos.github.io  (or whatever advfood.tech maps to)
+       3. Enter: food-safety-horizon-scan.vercel.app
        4. Copy the token from the "JavaScript snippet" box
        5. Find-replace __CF_BEACON_TOKEN__ across the repo:
             find . -type f \( -name '*.html' -o -name '*.py' \) \
@@ -308,9 +308,8 @@ updates your existing rule — we key on your email address.
 <div class="status" id="status"></div>
 
 <div class="footer">
-  Food Safety Horizon Scanning · <a href="https://www.advfood.tech" target="_blank">advfood.tech</a>
-  · <a href="mailto:info@advfood.tech">info@advfood.tech</a>
-  · Athens, Greece
+  Food Safety Horizon Scanning · a <a href="https://food-safety-horizon-scan.vercel.app" target="_blank" rel="noopener">VisiPilot</a> product
+  · <a href="mailto:info@visipilot.com">info@visipilot.com</a>
 </div>
 
 </div>
@@ -509,11 +508,11 @@ async function handleMagicLink(){
         status.textContent = '✓ Unsubscribed. You will no longer receive emails for this alert rule.';
       } else {
         status.className = 'status err';
-        status.textContent = 'Could not unsubscribe — please email info@advfood.tech and we will remove you manually.';
+        status.textContent = 'Could not unsubscribe — please email info@visipilot.com and we will remove you manually.';
       }
     } catch(e) {
       status.className = 'status err';
-      status.textContent = 'Network error during unsubscribe. Please email info@advfood.tech.';
+      status.textContent = 'Network error during unsubscribe. Please email info@visipilot.com.';
     }
     return;
   }
@@ -649,7 +648,7 @@ async function submit(){
     const r = await appsScriptP;
     if (!r.ok) {
       status.className = 'status err';
-      status.textContent = 'Submission failed (' + r.status + '). Please try again or email info@advfood.tech.';
+      status.textContent = 'Submission failed (' + r.status + '). Please try again or email info@visipilot.com.';
       submitBtn.disabled = false;
       return;
     }
@@ -669,11 +668,11 @@ async function submit(){
     } else if (result.status === 'name_mismatch') {
       status.className = 'status err';
       status.innerHTML = 'Email recognised but name does not match your subscriber record.<br>' +
-        '<span style="color:var(--muted);font-size:12px">Please re-submit with the name on your subscription, or contact info@advfood.tech if this is unexpected.</span>';
+        '<span style="color:var(--muted);font-size:12px">Please re-submit with the name on your subscription, or contact info@visipilot.com if this is unexpected.</span>';
       submitBtn.disabled = false;
     } else if (result.status === 'subscriber_inactive') {
       status.className = 'status err';
-      status.textContent = 'Your subscription is marked inactive — please email info@advfood.tech to reactivate.';
+      status.textContent = 'Your subscription is marked inactive — please email info@visipilot.com to reactivate.';
       submitBtn.disabled = false;
     } else {
       status.className = 'status err';
@@ -682,7 +681,7 @@ async function submit(){
     }
   } catch (e) {
     status.className = 'status err';
-    status.textContent = 'Network error — please try again or email info@advfood.tech.';
+    status.textContent = 'Network error — please try again or email info@visipilot.com.';
     submitBtn.disabled = false;
   }
 }

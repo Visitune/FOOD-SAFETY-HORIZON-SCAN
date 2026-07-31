@@ -1,5 +1,5 @@
 """
-AFTS Gap Finder — Google News URL resolver.
+VisiPilot Gap Finder — Google News URL resolver.
 
 PROBLEM
 -------

@@ -1,4 +1,4 @@
-# AFTS Training Data — Quality Audit Sample — 2026-05-14
+# VisiPilot Training Data — Quality Audit Sample — 2026-05-14
 
 Random samples for hand-review. **Goal: read each, mark ✓ / ✗ / ?**
 in the verdict checklist below each example.

@@ -1,5 +1,5 @@
 """
-AFTS FSIS — Monthly report gap-filler.
+VisiPilot FSIS — Monthly report gap-filler.
 
 Reads docs/data/monthly-index.json and figures out which *closed* months
 since the backfill-start are missing real stats (non-null `total`). For

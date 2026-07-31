@@ -717,8 +717,8 @@ jobs:
               "Recall review agent: $(date -u +%Y-%m-%d) verified promotions" \
               docs/data/recalls.xlsx
           else
-            git config user.name "AFTS Intelligence System (review-agent)"
-            git config user.email "fsis-bot@advfood.tech"
+            git config user.name "VisiPilot Intelligence System (review-agent)"
+            git config user.email "fsis-bot@visipilot.com"
             git add docs/data/recalls.xlsx
             git diff --cached --quiet || git commit -m "Recall review agent: $(date -u +%Y-%m-%d)"
             for i in 1 2 3; do git push && break; git pull --rebase; sleep 3; done

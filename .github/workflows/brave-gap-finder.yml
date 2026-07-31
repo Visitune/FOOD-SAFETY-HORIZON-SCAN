@@ -79,8 +79,8 @@ jobs:
           GAP_SINCE_DAYS: ${{ github.event.inputs.since_days || '7' }}
           SKIP_COMMIT:    "false"
           GH_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
-          GIT_USER_NAME:  "AFTS Intelligence System"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
+          GIT_USER_NAME:  "VisiPilot Intelligence System"
         run: |
           python -m pipeline.gap_finder_brave
 

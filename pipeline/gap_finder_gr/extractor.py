@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Greek Gap Finder
+VisiPilot Food Safety Intelligence — Greek Gap Finder
 Module 5: Extractor
 
 Reads EFET announcement bodies (from verified.jsonl) and converts them into
@@ -497,7 +497,7 @@ DRY_RUN_VERIFIED = [
 
 def run_dry_test() -> int:
     print("=" * 78)
-    print("AFTS Greek Gap Finder — Extractor Dry-Run Test (MockLlamaClient)")
+    print("VisiPilot Greek Gap Finder — Extractor Dry-Run Test (MockLlamaClient)")
     print("=" * 78)
 
     client = MockLlamaClient()  # type: ignore[assignment]
@@ -598,7 +598,7 @@ def run_dry_test() -> int:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="AFTS Greek Gap Finder — Extractor")
+    parser = argparse.ArgumentParser(description="VisiPilot Greek Gap Finder — Extractor")
     parser.add_argument("--verified", default=DEFAULT_VERIFIED,
                         help=f"Input JSONL (default: {DEFAULT_VERIFIED})")
     parser.add_argument("--pending-out", default=DEFAULT_PENDING_OUT,

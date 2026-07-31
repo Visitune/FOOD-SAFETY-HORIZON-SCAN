@@ -64,7 +64,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SKIP_COMMIT: "false"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME: "FSIS Bot"
         run: |
           REGION="${{ github.event.inputs.region || 'ALL' }}"
@@ -91,7 +91,7 @@ jobs:
           GEMINI_API_KEY_5:  ${{ secrets.GEMINI_API_KEY_5 }}
           GEMINI_MODEL:      ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME: "FSIS Bot"
         run: |
           python -m pipeline.url_gate_gemini

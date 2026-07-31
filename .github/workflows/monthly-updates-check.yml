@@ -1,4 +1,4 @@
-name: AFTS Monthly Updates Check
+name: VisiPilot Monthly Updates Check
 
 # ==========================================================================
 # Runs on the 8TH OF EVERY MONTH at 09:00 ATHENS TIME.
@@ -158,8 +158,8 @@ jobs:
         if: steps.guard.outputs.run == 'true'
         env:
           GH_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
-          GIT_USER_NAME:  "AFTS Intelligence System"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
+          GIT_USER_NAME:  "VisiPilot Intelligence System"
         run: |
           git config user.email "$GIT_USER_EMAIL"
           git config user.name  "$GIT_USER_NAME"

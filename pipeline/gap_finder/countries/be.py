@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Belgium (FAVV/AFSCA — Federal Agency for the Safety of
                 the Food Chain)
 

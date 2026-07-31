@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 News scraper (parametric — works for any CountryConfig).
 
 Strategy:
@@ -352,7 +352,7 @@ def write_jsonl(records: list[Candidate], path: str) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="AFTS Gap Finder — News Scraper")
+    parser = argparse.ArgumentParser(description="VisiPilot Gap Finder — News Scraper")
     parser.add_argument("--country", required=True,
                         help="ISO2 country code: gr, it, es, ...")
     parser.add_argument("--out", default=None, help="Output path (default per-country)")

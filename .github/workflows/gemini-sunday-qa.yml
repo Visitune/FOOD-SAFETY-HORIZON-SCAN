@@ -98,7 +98,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           QA_EMAIL_TO:       "georgestof@gmail.com"
           GH_TOKEN:          ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL:    "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL:    "fsis-bot@visipilot.com"
           GIT_USER_NAME:     "FSIS Bot"
           QA_DAYS:           ${{ github.event.inputs.days || '14' }}
           QA_DRY_RUN:        ${{ github.event.inputs.dry_run || 'false' }}

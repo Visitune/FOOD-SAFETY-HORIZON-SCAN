@@ -6,7 +6,7 @@
      SETUP (one-time):
        1. Sign in at https://dash.cloudflare.com (free account)
        2. Analytics → Web Analytics → Add a site
-       3. Enter: gstoforos.github.io  (or whatever advfood.tech maps to)
+       3. Enter: food-safety-horizon-scan.vercel.app
        4. Copy the token from the "JavaScript snippet" box
        5. Find-replace __CF_BEACON_TOKEN__ across the repo:
             find . -type f \( -name '*.html' -o -name '*.py' \) \
@@ -20,7 +20,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <!-- Cache-busting (see docs/index.html for full rationale): this page
-     is embedded inside Wix (advfood.tech/2026-recalls-market-withdrawals)
+     is embedded inside Wix (visipilot.com/2026-recalls-market-withdrawals)
      and Wix's CDN aggressively caches iframe contents. -->
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <meta http-equiv="Pragma" content="no-cache"/>
@@ -117,6 +117,8 @@ a{color:inherit;text-decoration:none;}
 .arch-list{display:flex;flex-direction:column;gap:6px;}
 .arch-line{font-size:13px;color:var(--muted);padding:4px 0;}
 .arch-line:hover{color:var(--acc);}
+.arch-line--static{display:block;cursor:default;opacity:.6;}
+.arch-line--static:hover{color:var(--muted);}
 .site-footer{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-top:1px solid var(--border);margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em;}
 .footer-left a{color:var(--acc);font-weight:700;}
 @media(min-width:640px){.hero h1{font-size:44px;} .sec{padding:36px 32px;}}
@@ -188,16 +190,16 @@ a{color:inherit;text-decoration:none;}
 <section class="sec" style="padding-top:0">
   <div class="sec-label">Previous Archives</div>
   <div class="arch-list">
-    <a class="arch-line" href="https://www.advfood.tech/2026-recalls-market-withdrawals" target="_blank" rel="noopener noreferrer">&rsaquo; Recalls, Market Withdrawals &amp; Safety Alerts 2026</a>
-    <a class="arch-line" href="https://www.advfood.tech/2025-recalls-market-withdrawals" target="_blank" rel="noopener noreferrer">&rsaquo; 2025 Recalls, Market Withdrawals &amp; Safety Alerts</a>
-    <a class="arch-line" href="https://www.advfood.tech/recalls-market-withdrawals-2024" target="_blank" rel="noopener noreferrer">&rsaquo; 2024 Recalls, Market Withdrawals &amp; Safety Alerts</a>
-    <a class="arch-line" href="https://www.advfood.tech/recalls-market-withdrawals-2023" target="_blank" rel="noopener noreferrer">&rsaquo; 2023 Recalls, Market Withdrawals &amp; Safety Alerts</a>
+    <span class="arch-line arch-line--static">&rsaquo; Recalls, Market Withdrawals &amp; Safety Alerts 2026</span>
+    <span class="arch-line arch-line--static">&rsaquo; 2025 Recalls, Market Withdrawals &amp; Safety Alerts</span>
+    <span class="arch-line arch-line--static">&rsaquo; 2024 Recalls, Market Withdrawals &amp; Safety Alerts</span>
+    <span class="arch-line arch-line--static">&rsaquo; 2023 Recalls, Market Withdrawals &amp; Safety Alerts</span>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="footer-left">Powered by <a href="https://www.advfood.tech" target="_blank" rel="noopener noreferrer">Food Safety Horizon Scanning</a></div>
-  <div class="footer-right">&copy; 2026 ADVANCED FOOD-TECH SOLUTIONS</div>
+  <div class="footer-left">Powered by <a href="https://food-safety-horizon-scan.vercel.app" target="_blank" rel="noopener noreferrer">Food Safety Horizon Scanning</a></div>
+  <div class="footer-right">&copy; 2026 VISIPILOT</div>
 </footer>
 
 <script>
@@ -211,16 +213,15 @@ var IDX_URL = 'data/monthly-index.json';
 // Public site URL — used to build absolute URLs for thum.io thumbnail
 // previews and any other external integrations. Must match the
 // GitHub Pages deployment target.
-var SITE_URL = 'https://fsis.advfood.tech';
+var SITE_URL = 'https://food-safety-horizon-scan.vercel.app';
 
-/* Legacy Jan/Feb PDFs hosted on Wix (one-time, never changed).
+/* Legacy Jan/Feb PDFs were hosted on the original Wix site and have
+   no VisiPilot equivalent — entries removed, linkFor() below falls
+   back to no PDF link (isPdf:false) for those two months.
    M03 was migrated to the auto-generated marketing PDF on
    2026-05-02 — its pdf_url now lives in monthly-index.json
    alongside April and every future automated month. */
-var LEGACY_PDF = {
-  '2026-M01':'https://www.advfood.tech/_files/ugd/2f8d35_ba11aad7c3b04e628aee49ea60708931.pdf',
-  '2026-M02':'https://www.advfood.tech/_files/ugd/2f8d35_990e8bcb73474933945b1531dd45dbd6.pdf'
-};
+var LEGACY_PDF = {};
 
 function mkey(e){ return e.year+'-M'+String(e.month_num).padStart(2,'0'); }
 

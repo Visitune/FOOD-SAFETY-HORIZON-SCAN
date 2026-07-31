@@ -66,7 +66,7 @@ jobs:
       - name: Run Gemini gap-finder
         if: steps.guard.outputs.run == 'true'
         env:
-          # Gemini: singular key (current AFTS setup) + numbered rotation slots.
+          # Gemini: singular key (current VisiPilot setup) + numbered rotation slots.
           GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY:      ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY_1:  ${{ secrets.GEMINI_API_KEY_1 }}
@@ -77,7 +77,7 @@ jobs:
           GAP_SINCE_DAYS:    ${{ github.event.inputs.since_days || '7' }}
           SKIP_COMMIT:       "false"
           GH_TOKEN:          ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL:    "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL:    "fsis-bot@visipilot.com"
           GIT_USER_NAME:     "FSIS Bot"
         run: |
           python -m pipeline.gap_finder_gemini
@@ -92,7 +92,7 @@ jobs:
           GEMINI_API_KEY_5:  ${{ secrets.GEMINI_API_KEY_5 }}
           GEMINI_MODEL:      ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME: "FSIS Bot"
         run: |
           python -m pipeline.url_gate_gemini

@@ -74,7 +74,7 @@ jobs:
           EXA_FORCE_RUN:  ${{ github.event.inputs.force || 'false' }}
           SKIP_COMMIT:    "false"
           GH_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME:  "FSIS Bot"
         run: |
           python -m pipeline.daily_recall_search_exa
@@ -91,7 +91,7 @@ jobs:
           GEMINI_API_KEY_5:  ${{ secrets.GEMINI_API_KEY_5 }}
           GEMINI_MODEL:      ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
           GH_TOKEN:          ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL:    "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL:    "fsis-bot@visipilot.com"
           GIT_USER_NAME:     "FSIS Bot"
         run: |
           python -m pipeline.url_gate_gemini

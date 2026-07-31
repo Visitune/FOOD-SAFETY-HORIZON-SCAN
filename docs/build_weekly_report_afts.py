@@ -2085,7 +2085,7 @@ __CSS_PLACEHOLDER__
     <h3>Live Dashboard &middot; Full Dataset Access</h3>
     <p>Filter by pathogen, country, tier, and source. Access the cumulative XLSX dataset. Set custom alerts.</p>
   </div>
-  <a class="cta-btn" href="https://www.advfood.tech/fsis-recalls" target="_blank" rel="noopener">Access Portal &rarr;</a>
+  <a class="cta-btn" href="https://food-safety-horizon-scan.vercel.app/" target="_blank" rel="noopener">Access Portal &rarr;</a>
 </div>
 
 <div id="all-recalls" class="sec-head">
@@ -2118,7 +2118,7 @@ __CSS_PLACEHOLDER__
 <footer class="footer">
   <div>
     <div class="foot-brand">Food Safety <em>&middot;</em> Horizon Scanning</div>
-    <div class="foot-meta">Food Safety Validation Intelligence<br>advfood.tech &middot; info@advfood.tech &middot; Athens, Greece<br>&copy; {year} Food Safety Horizon Scanning</div>
+    <div class="foot-meta">Food Safety Validation Intelligence<br>visipilot.com &middot; info@visipilot.com<br>&copy; {year} Food Safety Horizon Scanning</div>
   </div>
   <div class="foot-legal">This briefing is provided for informational purposes only and does not constitute regulatory, legal, or medical advice. Subscribers should verify recall status with the originating regulatory authority before taking action. Next issue: Friday, {next_issue}.</div>
 </footer>
@@ -2440,8 +2440,8 @@ def write_weekly_summary_json(week_end, recalls, stats, data_dir):
             "product":str(r.get("Product","")),"country":str(r.get("Country","")),
             "source":str(r.get("Source","")),"url":str(r.get("URL",""))})
     summary = {"filename":"{}-W{:02d}.html".format(year,wnum),
-        "report_url":"https://fsis.advfood.tech/{}-W{:02d}.html".format(year,wnum),
-        "dashboard_url":"https://www.advfood.tech/fsis-recalls",
+        "report_url":"https://food-safety-horizon-scan.vercel.app/{}-W{:02d}.html".format(year,wnum),
+        "dashboard_url":"https://food-safety-horizon-scan.vercel.app/",
         "week_num":wnum,"year":year,"week_start":ws.isoformat(),"week_end":we_display.isoformat(),
         "week_start_display":ws.strftime("%-d %b"),"week_end_display":we_display.strftime("%-d %b %Y"),
         "generated_utc":datetime.now(timezone.utc).isoformat(),

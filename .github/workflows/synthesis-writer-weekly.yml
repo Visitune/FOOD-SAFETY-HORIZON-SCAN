@@ -1,4 +1,4 @@
-name: AFTS Synthesis Writer — Weekly
+name: VisiPilot Synthesis Writer — Weekly
 
 # ==========================================================================
 # Friday 08:30 ATHENS — runs ~30 min after the weekly builder commits at 08:00.
@@ -7,7 +7,7 @@ name: AFTS Synthesis Writer — Weekly
 # Pages with ai_lead_paragraph="" ready to be filled.
 #
 # Timeline each Friday (all Athens time):
-#   08:00  AFTS Weekly Report builds + commits weekly-summary-latest.json
+#   08:00  VisiPilot Weekly Report builds + commits weekly-summary-latest.json
 #          (ai_lead_paragraph="")
 #   08:30  THIS WORKFLOW → reads the JSON, generates synthesis via LLM,
 #          writes ai_lead_paragraph back, commits.

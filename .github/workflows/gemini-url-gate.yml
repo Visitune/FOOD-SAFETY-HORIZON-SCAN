@@ -82,7 +82,7 @@ jobs:
           GEMINI_MODEL:      ${{ vars.GEMINI_MODEL_URL_GATE || vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
           SKIP_COMMIT: "false"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
           GIT_USER_NAME: "FSIS Bot"
         run: |
           python -m pipeline.url_gate_gemini

@@ -654,8 +654,8 @@ jobs:
           CLAUDE_CHECK_SKIP_DAYS: ${{ inputs.skip_days }}
           SKIP_COMMIT: ${{ inputs.commit == 'true' && 'false' || 'true' }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER_EMAIL: "fsis-bot@advfood.tech"
-          GIT_USER_NAME: "AFTS Intelligence System (FSIS-LM)"
+          GIT_USER_EMAIL: "fsis-bot@visipilot.com"
+          GIT_USER_NAME: "VisiPilot Intelligence System (FSIS-LM)"
           HF_HUB_DISABLE_PROGRESS_BARS: "1"
           TOKENIZERS_PARALLELISM: "false"
         run: |

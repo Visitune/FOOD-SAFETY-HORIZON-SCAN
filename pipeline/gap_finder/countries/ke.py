@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence — Gap Finder
+VisiPilot Food Safety Intelligence — Gap Finder
 Country config: Kenya (KEBS — Kenya Bureau of Standards, with Ministry of Health).
 
 ⚠ NEWS-AUTHORITY MODE (news_authority_mode=True).

@@ -420,7 +420,15 @@ def _call_openai(prompt: str, html: str, language: str = "en") -> str:
 GROQ_MODEL          = os.getenv("GROQ_MODEL",           "llama-3.3-70b-versatile")
 GROQ_URL             = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_TIMEOUT         = int(os.getenv("GROQ_FALLBACK_TIMEOUT",     "60"))
-GROQ_MAX_OUT_TOKENS  = int(os.getenv("GROQ_FALLBACK_MAX_TOKENS",  "16000"))
+GROQ_MAX_OUT_TOKENS  = int(os.getenv("GROQ_FALLBACK_MAX_TOKENS",  "8000"))
+# Audit 2026-07-31: GEMINI_MAX_HTML_CHARS (120,000 chars) was tuned for
+# Gemini's huge context window and caused every single Groq call to fail
+# with "HTTP 413 Request too large" — Groq's on-demand tier caps a single
+# request well below its 131K-token context window. Groq uses its own,
+# much smaller cap. 40,000 chars (~10-13K tokens for HTML-heavy content)
+# plus the ~8K reserved for output comfortably clears that ceiling while
+# still leaving enough of the page for extraction to work.
+GROQ_MAX_HTML_CHARS  = int(os.getenv("GROQ_MAX_HTML_CHARS",       "40000"))
 
 
 def _groq_api_keys() -> List[str]:
@@ -449,8 +457,8 @@ def _call_groq(prompt: str, html: str, language: str = "en") -> str:
             "Actions secrets to enable this fallback."
         )
 
-    if len(html) > GEMINI_MAX_HTML_CHARS:
-        html = html[:GEMINI_MAX_HTML_CHARS] + "\n<!-- truncated -->"
+    if len(html) > GROQ_MAX_HTML_CHARS:
+        html = html[:GROQ_MAX_HTML_CHARS] + "\n<!-- truncated -->"
 
     full_prompt = f"{prompt}\n\nLANGUAGE OF PAGE: {language}\n\nHTML:\n{html}"
 

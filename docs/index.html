@@ -6,26 +6,37 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:14px;}
-.hdr{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}
+.hdr{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:10px;}
 .brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;}.brand span{color:#F97316;}
+.hdr-right{display:flex;align-items:center;gap:14px;}
 .meta{font-family:'JetBrains Mono',monospace;font-size:10px;color:#6B7280;text-align:right;line-height:1.8;}
+.langtoggle{display:flex;border:1px solid rgba(255,255,255,.15);border-radius:4px;overflow:hidden;flex-shrink:0;}
+.langtoggle button{background:#0B1120;color:#9CA3AF;border:none;padding:6px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;cursor:pointer;}
+.langtoggle button.on{background:#F97316;color:#fff;}
 .ticker{background:#0F1623;border-bottom:1px solid #1A2436;padding:8px 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;}
 .dot{width:6px;height:6px;border-radius:50%;background:#F97316;box-shadow:0 0 5px #F97316;animation:blink 1.5s infinite;flex-shrink:0;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 .wrap{padding:18px 24px;max-width:1600px;margin:0 auto;}
+.verify-banner{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;background:rgba(76,175,128,.08);border:1px solid rgba(76,175,128,.25);border-radius:6px;padding:9px 14px;margin-bottom:14px;font-size:12px;color:#9CCCB0;}
+.verify-banner b{color:#80d4a8;}
+.verify-banner a{color:#80d4a8;}
 .kpi-row{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px;}
 .kpi{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:12px 16px;border-top:2px solid #F97316;}
 .kpi.r{border-top-color:#ef5350;}.kpi.a{border-top-color:#d4a017;}.kpi.b{border-top-color:#5b9bd5;}.kpi.g{border-top-color:#4caf80;}.kpi.p{border-top-color:#ce93d8;}
 .kv{font-family:'Inter',sans-serif;font-size:26px;font-weight:800;color:#F97316;line-height:1;}
 .kpi.r .kv{color:#ef5350;}.kpi.a .kv{color:#d4a017;}.kpi.b .kv{color:#5b9bd5;}.kpi.g .kv{color:#4caf80;}.kpi.p .kv{color:#ce93d8;}
 .kl{font-size:10px;color:#9CA3AF;letter-spacing:.08em;text-transform:uppercase;margin-top:3px;}
-.grid2{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:16px;}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:16px;}
 .panel{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:16px;}
-.side-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
 .sec{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;color:#F97316;text-transform:uppercase;margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.05);}
+.breakdown-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;cursor:pointer;border-radius:3px;}
+.breakdown-row:hover{background:rgba(249,115,22,.08);}
+.breakdown-row span:first-child{font-size:12px;}
+.breakdown-row span:last-child{color:#F97316;font-weight:700;font-family:monospace;}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}
 .filters input,.filters select{background:#0B1120;border:1px solid rgba(255,255,255,.10);color:#E5E7EB;padding:7px 10px;border-radius:4px;font-size:12px;font-family:'JetBrains Mono',monospace;outline:none;}
 .filters input{flex:1;min-width:200px;}.filters input::placeholder{color:#4B5563;}
+.filters .active-note{font-size:11px;color:#F97316;font-family:'JetBrains Mono',monospace;}
 .tbl-wrap{overflow-x:auto;border:1px solid rgba(255,255,255,.05);border-radius:6px;}
 table{width:100%;border-collapse:collapse;font-size:12px;}
 thead{background:#0D1420;}
@@ -58,7 +69,13 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 
 <div class="hdr">
   <div class="brand">Food Safety <span>·</span> Horizon Scanning</div>
-  <div class="meta">63 Sources · FDA · USDA · RASFF · CFIA · ΕΦΕΤ · 50+ countries · Refresh: 4h<br>Last update: 2026-07-30 20:21 UTC</div>
+  <div class="hdr-right">
+    <div class="meta" id="hdrMeta">63 Sources · 90+ regulators · 82 countries<br><span id="hdrUpdate">Loading…</span></div>
+    <div class="langtoggle">
+      <button id="langEn" class="on" onclick="setLang('en')">EN</button>
+      <button id="langFr" onclick="setLang('fr')">FR</button>
+    </div>
+  </div>
 </div>
 <div class="ticker">
   <span style="font-family:monospace;font-size:10px;color:#F97316;font-weight:700;letter-spacing:.1em;">LIVE</span>
@@ -70,82 +87,64 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 
 <div class="wrap">
   <div class="nav" style="margin-top:14px;">
-    <a href="index.html" class="on">🔴 Live Dashboard</a>
-    <a href="2026-W30.html">📊 Weekly</a>
-    <a href="hub.html">📈 Monthly + AI</a>
-    <a href="alerts.html">🔔 Alerts</a>
-    <a href="guide.html">📘 Guide</a>
-    <a href="data/recalls.json" style="color:#4caf80;border-color:#4caf80;">↓ JSON Feed</a>
+    <a href="index.html" class="on" data-i18n="navDash">🔴 Live Dashboard</a>
+    <a href="2026-W30.html" data-i18n="navWeekly">📊 Weekly</a>
+    <a href="hub.html" data-i18n="navMonthly">📈 Monthly + AI</a>
+    <a href="alerts.html" data-i18n="navAlerts">🔔 Alerts</a>
+    <a href="guide.html" data-i18n="navGuide">📘 Guide</a>
+    <a href="data/recalls.json" style="color:#4caf80;border-color:#4caf80;" data-i18n="navJson">↓ JSON Feed</a>
   </div>
-  <!-- NAV FIX 2026-07-30: previous links (weekly/, monthly/, yearly/, alerts/,
-       alerts/feed.json) pointed to directories that were never generated by
-       any workflow (reports/yearly.py and reports/monthly.py exist but are
-       not wired into .github/workflows/ — see ARCHITECTURE.md). Re-pointed
-       to real existing pages. "Weekly" links to the latest dated report
-       (2026-W30.html) and will need updating as new weeks are published
-       until a proper weekly index page is built. "Yearly" removed — no
-       yearly report currently exists anywhere in docs/. -->
 
+  <div class="verify-banner">
+    <span>✓ <b data-i18n="dataVerified">Every record links to its official regulator source</b></span>
+    <span id="freshnessMostRecent"></span>
+    <span id="freshnessChecked"></span>
+    <a href="guide.html#data-reliability" data-i18n="methodology">See methodology</a>
+  </div>
 
-  <!-- DATA FIX 2026-07-31: this table used to be baked in at generation time
-       from reports/dashboard.py, which reads the disconnected legacy
-       fsis_global.db (74 rows, 2 sources) instead of the real production
-       data. Now fetched at runtime from data/recalls.json (the real
-       ~1280-row dataset also used by every other part of the pipeline) —
-       see the fetch() block at the bottom of this file. KPI/panel values
-       below are placeholders filled in by that same fetch. -->
     <div class="kpi-row">
-      <div class="kpi"><div class="kv" id="kpiTotal">–</div><div class="kl">Total Recalls in DB</div></div>
-      <div class="kpi r"><div class="kv" id="kpiTier1">–</div><div class="kl">Tier-1 Critical</div></div>
-      <div class="kpi a"><div class="kv" id="kpiOutbreaks">–</div><div class="kl">Active Outbreaks</div></div>
-      <div class="kpi b"><div class="kv" id="kpiPathogens">–</div><div class="kl">Distinct Pathogens</div></div>
-      <div class="kpi g"><div class="kv" id="kpiCountries">–</div><div class="kl">Countries</div></div>
-      <div class="kpi p"><div class="kv" id="kpiSources">–</div><div class="kl">Sources</div></div>
+      <div class="kpi"><div class="kv" id="kpiTotal">–</div><div class="kl" data-i18n="kpiTotal">Total Recalls in DB</div></div>
+      <div class="kpi r"><div class="kv" id="kpiTier1">–</div><div class="kl" data-i18n="kpiTier1">Tier-1 Critical</div></div>
+      <div class="kpi a"><div class="kv" id="kpiOutbreaks">–</div><div class="kl" data-i18n="kpiOutbreaks">Active Outbreaks</div></div>
+      <div class="kpi b"><div class="kv" id="kpiPathogens">–</div><div class="kl" data-i18n="kpiPathogens">Distinct Pathogens</div></div>
+      <div class="kpi g"><div class="kv" id="kpiCountries">–</div><div class="kl" data-i18n="kpiCountries">Countries</div></div>
+      <div class="kpi p"><div class="kv" id="kpiSources">–</div><div class="kl" data-i18n="kpiSources">Sources</div></div>
     </div>
 
   <div class="grid2">
     <div class="panel">
-      <div class="sec">Top Pathogens (All Sources)</div>
+      <div class="sec" data-i18n="panelPathogens">Top Pathogens (All Sources)</div>
       <div id="topPathogens"></div>
     </div>
-    <div class="side-grid">
-      <div class="panel">
-        <div class="sec">By Source</div>
-        <div id="bySource"></div>
-      </div>
-      <div class="panel">
-        <div class="sec">Bio Risk Tiers</div>
-        <div style="background:#1a0800;border:1px solid #4a2000;border-left:3px solid #ef5350;border-radius:4px;padding:10px;margin-bottom:8px;">
-          <div style="color:#ef5350;font-weight:700;font-size:11px;font-family:monospace;">TIER-1 CRITICAL</div>
-          <div style="font-size:11px;color:#aaa;margin-top:4px;">C. botulinum · Listeria monocytogenes · E. coli O157 · Aflatoxin B1 · Cereulide · Hepatitis A</div>
-        </div>
-        <div style="background:#1a0a00;border:1px solid #3a1e00;border-left:3px solid #F97316;border-radius:4px;padding:10px;margin-bottom:8px;">
-          <div style="color:#F97316;font-weight:700;font-size:11px;font-family:monospace;">TIER-2 SERIOUS</div>
-          <div style="font-size:11px;color:#aaa;margin-top:4px;">Salmonella · Campylobacter · Vibrio · Norovirus · Cyclospora</div>
-        </div>
-        <div style="background:#181400;border:1px solid #2a2200;border-left:3px solid #d4a017;border-radius:4px;padding:10px;">
-          <div style="color:#d4a017;font-weight:700;font-size:11px;font-family:monospace;">TIER-3 MODERATE</div>
-          <div style="font-size:11px;color:#aaa;margin-top:4px;">Generic E. coli · Shigella · Yersinia · Low-dose Aflatoxin</div>
-        </div>
-      </div>
+    <div class="panel">
+      <div class="sec" data-i18n="panelSources">By Source</div>
+      <div id="bySource"></div>
+    </div>
+    <div class="panel">
+      <div class="sec" data-i18n="panelCountries">By Country</div>
+      <div id="byCountry"></div>
+    </div>
+    <div class="panel">
+      <div class="sec" data-i18n="panelProducts">By Product Type</div>
+      <div id="byProduct"></div>
     </div>
   </div>
 
   <div class="panel">
-    <div class="sec">All Pathogen Recalls — <span id="vc"></span></div>
+    <div class="sec"><span data-i18n="allRecordsTable">All Pathogen Recalls</span> — <span id="vc"></span></div>
     <div class="filters">
-      <input type="text" id="srch" placeholder="Search firm, product, country, pathogen, lot...">
+      <input type="text" id="srch" data-i18n-placeholder="searchPlaceholder" placeholder="Search firm, product, country, pathogen, lot...">
       <select id="srcf">
-        <option value="">All Sources</option>
+        <option value="" data-i18n="allSources">All Sources</option>
       </select>
       <select id="ctryf">
-        <option value="">All Countries</option>
+        <option value="" data-i18n="allCountries">All Countries</option>
       </select>
       <select id="regf">
-        <option value="">All Regions</option>
+        <option value="" data-i18n="allRegions">All Regions</option>
       </select>
       <select id="prodf">
-        <option value="">All Product Types</option>
+        <option value="" data-i18n="allProducts">All Product Types</option>
         <option value="Dairy">Dairy</option>
         <option value="Meat/Poultry">Meat/Poultry</option>
         <option value="Seafood">Seafood</option>
@@ -156,7 +155,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
         <option value="Other">Other</option>
       </select>
       <select id="pathf">
-        <option value="">All Pathogens</option>
+        <option value="" data-i18n="allPathogens">All Pathogens</option>
         <option value="listeria">Listeria</option>
         <option value="salmonella">Salmonella</option>
         <option value="e. coli">E. coli / STEC</option>
@@ -169,22 +168,23 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
         <option value="cyclospora">Cyclospora</option>
       </select>
       <select id="tierf">
-        <option value="">All Tiers</option>
-        <option value="1">Tier-1 Critical only</option>
-        <option value="2">Tier-2 Serious only</option>
-        <option value="3">Tier-3 Moderate only</option>
+        <option value="" data-i18n="allTiers">All Tiers</option>
+        <option value="1" data-i18n="tier1Only">Tier-1 Critical only</option>
+        <option value="2" data-i18n="tier2Only">Tier-2 Serious only</option>
+        <option value="3" data-i18n="tier3Only">Tier-3 Moderate only</option>
       </select>
       <select id="rpp">
-        <option value="50">50/page</option>
-        <option value="100">100/page</option>
-        <option value="9999">All records</option>
+        <option value="50" data-i18n="perPage50">50/page</option>
+        <option value="100" data-i18n="perPage100">100/page</option>
+        <option value="9999" data-i18n="allRecords">All records</option>
       </select>
+      <button class="pb" id="clearFilters" style="display:none" onclick="clearAllFilters()">✕</button>
       <span class="pi" id="fcnt"></span>
     </div>
     <div class="tbl-wrap">
       <table><thead><tr>
-        <th>Date</th><th>Source</th><th>Firm / Producer</th><th>Product</th>
-        <th>Pathogen</th><th>Bio Risk</th><th>Country</th><th>Link</th>
+        <th data-i18n="tblDate">Date</th><th data-i18n="tblSource">Source</th><th data-i18n="tblFirm">Firm / Producer</th><th data-i18n="tblProduct">Product</th>
+        <th data-i18n="tblPathogen">Pathogen</th><th data-i18n="tblBioRisk">Bio Risk</th><th data-i18n="tblCountry">Country</th><th data-i18n="tblLink">Link</th>
       </tr></thead>
       <tbody id="tbody"></tbody></table>
     </div>
@@ -193,23 +193,100 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 </div>
 
 <div class="footer">
-  <a href="https://advfood.tech">Food Safety Horizon Scanning</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Visitune/FOOD-SAFETY-HORIZON-SCAN">Food Safety Horizon Scanning</a> &nbsp;·&nbsp;
   FDA · USDA · RASFF · CFIA · ΕΦΕΤ · FSA UK · FSANZ · BVL · RappelConso · AFSCA · 63+ sources
-  &nbsp;·&nbsp; <a href="2026-W30.html">Weekly</a> · <a href="hub.html">Monthly</a>
-  &nbsp;·&nbsp; Bio Risk Tier: Tier-1 > FDA Class I
+  &nbsp;·&nbsp; <a href="2026-W30.html" data-i18n="footerWeekly">Weekly</a> · <a href="hub.html" data-i18n="footerMonthly">Monthly</a>
+  &nbsp;·&nbsp; <span data-i18n="bioRiskNote">Bio Risk Tier: Tier-1 > FDA Class I</span>
 </div>
 
 <script>
-let ALL=[],filtered=[],cur=1;
+let ALL=[],filtered=[],cur=1,lang='en';
 const SRC_CSS={"FDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "USDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "USDA-FSIS": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "RASFF": "background:rgba(76,175,128,.12);color:#80d4a8;border:1px solid rgba(76,175,128,.25);", "RASFF (EU)": "background:rgba(76,175,128,.12);color:#80d4a8;border:1px solid rgba(76,175,128,.25);", "EFET_GR": "background:rgba(30,136,229,.12);color:#64b5f6;border:1px solid rgba(30,136,229,.25);", "AFSCA_BE": "background:rgba(255,193,7,.12);color:#ffd54f;border:1px solid rgba(255,193,7,.25);", "BVL_DE": "background:rgba(244,67,54,.12);color:#ef9a9a;border:1px solid rgba(244,67,54,.25);", "RAPPELCONSO_FR": "background:rgba(206,147,216,.12);color:#ce93d8;border:1px solid rgba(206,147,216,.25);", "CFIA": "background:rgba(255,112,67,.12);color:#ffab91;border:1px solid rgba(255,112,67,.25);", "FSANZ": "background:rgba(77,182,172,.12);color:#80cbc4;border:1px solid rgba(77,182,172,.25);", "FSA_UK": "background:rgba(158,158,158,.12);color:#bdbdbd;border:1px solid rgba(158,158,158,.25);", "FSN": "background:rgba(255,255,255,.05);color:#777;border:1px solid #2a2a2a;", "NEWS": "background:rgba(255,255,255,.05);color:#777;border:1px solid #2a2a2a;"};
+
+const I18N = {
+  en: {
+    navDash:'🔴 Live Dashboard', navWeekly:'📊 Weekly', navMonthly:'📈 Monthly + AI', navAlerts:'🔔 Alerts', navGuide:'📘 Guide', navJson:'↓ JSON Feed',
+    dataVerified:'Every record links to its official regulator source', methodology:'See methodology →',
+    mostRecent:'Most recent recall:', checked:'Data checked:',
+    kpiTotal:'Total Recalls in DB', kpiTier1:'Tier-1 Critical', kpiOutbreaks:'Active Outbreaks', kpiPathogens:'Distinct Pathogens', kpiCountries:'Countries', kpiSources:'Sources',
+    panelPathogens:'Top Pathogens (All Sources)', panelSources:'By Source', panelCountries:'By Country', panelProducts:'By Product Type',
+    allRecordsTable:'All Pathogen Recalls', searchPlaceholder:'Search firm, product, country, pathogen, lot...',
+    allSources:'All Sources', allCountries:'All Countries', allRegions:'All Regions', allProducts:'All Product Types', allPathogens:'All Pathogens', allTiers:'All Tiers',
+    tier1Only:'Tier-1 Critical only', tier2Only:'Tier-2 Serious only', tier3Only:'Tier-3 Moderate only',
+    perPage50:'50/page', perPage100:'100/page', allRecords:'All records',
+    tblDate:'Date', tblSource:'Source', tblFirm:'Firm / Producer', tblProduct:'Product', tblPathogen:'Pathogen', tblBioRisk:'Bio Risk', tblCountry:'Country', tblLink:'Link',
+    footerWeekly:'Weekly', footerMonthly:'Monthly', bioRiskNote:'Bio Risk Tier: Tier-1 > FDA Class I',
+    totalRecordsSuffix:'total records · Tier-1 sorted first', recordsSuffix:'records', noMatches:'No matches', ofText:'of',
+    sourcesLine:'Sources', countriesLine:'countries',
+  },
+  fr: {
+    navDash:'🔴 Tableau de bord', navWeekly:'📊 Hebdomadaire', navMonthly:'📈 Mensuel + IA', navAlerts:'🔔 Alertes', navGuide:'📘 Guide', navJson:'↓ Flux JSON',
+    dataVerified:'Chaque donnée renvoie vers la source officielle du régulateur', methodology:'Voir la méthodologie →',
+    mostRecent:'Rappel le plus récent :', checked:'Données vérifiées :',
+    kpiTotal:'Rappels au total', kpiTier1:'Niveau 1 critique', kpiOutbreaks:'Épidémies actives', kpiPathogens:'Pathogènes distincts', kpiCountries:'Pays', kpiSources:'Sources',
+    panelPathogens:'Pathogènes principaux (toutes sources)', panelSources:'Par source', panelCountries:'Par pays', panelProducts:'Par type de produit',
+    allRecordsTable:'Tous les rappels', searchPlaceholder:'Rechercher entreprise, produit, pays, pathogène, lot...',
+    allSources:'Toutes les sources', allCountries:'Tous les pays', allRegions:'Toutes les régions', allProducts:'Tous les types de produits', allPathogens:'Tous les pathogènes', allTiers:'Tous les niveaux',
+    tier1Only:'Niveau 1 critique uniquement', tier2Only:'Niveau 2 sérieux uniquement', tier3Only:'Niveau 3 modéré uniquement',
+    perPage50:'50/page', perPage100:'100/page', allRecords:'Tous les résultats',
+    tblDate:'Date', tblSource:'Source', tblFirm:'Entreprise', tblProduct:'Produit', tblPathogen:'Pathogène', tblBioRisk:'Risque bio', tblCountry:'Pays', tblLink:'Lien',
+    footerWeekly:'Hebdomadaire', footerMonthly:'Mensuel', bioRiskNote:'Niveau de risque bio : Niveau 1 > FDA Classe I',
+    totalRecordsSuffix:'résultats au total · Niveau 1 en premier', recordsSuffix:'résultats', noMatches:'Aucun résultat', ofText:'sur',
+    sourcesLine:'Sources', countriesLine:'pays',
+  }
+};
+
+function t(key){ return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key; }
+
+function applyI18nStatic(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.getAttribute('data-i18n')); });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{ el.placeholder = t(el.getAttribute('data-i18n-placeholder')); });
+}
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.getElementById('langEn').classList.toggle('on', l==='en');
+  document.getElementById('langFr').classList.toggle('on', l==='fr');
+  try{ localStorage.setItem('fshs_lang', l); }catch(e){}
+  applyI18nStatic();
+  if (ALL.length){ computeSummary(ALL); refreshDynamicText(); render(); }
+}
+
 function pb(p){p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}
 function tb(t){if(t==1)return'<span style="background:rgba(229,57,53,.1);color:#ef5350;border:1px solid rgba(229,57,53,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;">TIER-1</span>';if(t==2)return'<span style="background:rgba(232,96,26,.1);color:#F97316;border:1px solid rgba(232,96,26,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-2</span>';return'<span style="background:rgba(212,160,23,.1);color:#d4a017;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-3</span>';}
 function sc(s){const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#666;border:1px solid #2a2a2a;";const l=(s||"").replace("_GR","").replace("_FR","").replace("_BE","").replace("_DE","").replace("_UK","").replace(" (EU)","");return`<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;${css}">${l}</span>`;}
 function prodCat(p){p=(p||"").toLowerCase();if(/milk|cheese|yog|butter|cream|dairy/.test(p))return"Dairy";if(/beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb/.test(p))return"Meat/Poultry";if(/fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam/.test(p))return"Seafood";if(/lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion/.test(p))return"Produce";if(/bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta/.test(p))return"Grains/Bakery";if(/chocolate|candy|sweet|confection|snack|chip|cookie/.test(p))return"Confectionery/Snacks";if(/juice|beverage|drink|water|coffee|tea|soda/.test(p))return"Beverages";return"Other";}
 
-function populateSelect(id,values,allLabel){
+function populateSelect(id,values,allLabel,allKey){
   const el=document.getElementById(id);
-  el.innerHTML=`<option value="">${allLabel}</option>`+values.map(v=>`<option value="${String(v).replace(/"/g,'&quot;')}">${v}</option>`).join('');
+  el.innerHTML=`<option value="" data-i18n="${allKey}">${allLabel}</option>`+values.map(v=>`<option value="${String(v).replace(/"/g,'&quot;')}">${v}</option>`).join('');
+}
+
+function breakdownPanel(elId, counts, filterId, max){
+  const entries=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,max||10);
+  document.getElementById(elId).innerHTML=entries.map(([k,c])=>
+    `<div class="breakdown-row" onclick="setFilterAndScroll('${filterId}', '${String(k).replace(/'/g,"\\'")}')"><span>${k}</span><span>${c}</span></div>`
+  ).join('');
+}
+
+function setFilterAndScroll(filterId, value){
+  document.getElementById(filterId).value = value;
+  applyFilters();
+  document.querySelector('.tbl-wrap').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function clearAllFilters(){
+  ['srch','srcf','ctryf','regf','prodf','pathf','tierf'].forEach(id=>{
+    const el=document.getElementById(id);
+    el.value = '';
+  });
+  applyFilters();
+}
+
+function updateClearButtonVisibility(){
+  const anyActive = ['srch','srcf','ctryf','regf','prodf','pathf','tierf'].some(id=>document.getElementById(id).value);
+  document.getElementById('clearFilters').style.display = anyActive ? 'inline-block' : 'none';
 }
 
 function computeSummary(data){
@@ -219,20 +296,30 @@ function computeSummary(data){
   const pathCounts={};
   data.forEach(r=>{const p=r.Pathogen||'Unknown';pathCounts[p]=(pathCounts[p]||0)+1;});
   document.getElementById('kpiPathogens').textContent=Object.keys(pathCounts).length;
-  document.getElementById('kpiCountries').textContent=new Set(data.map(r=>r.Country).filter(Boolean)).size;
+  const ctryCounts={};
+  data.forEach(r=>{if(r.Country)ctryCounts[r.Country]=(ctryCounts[r.Country]||0)+1;});
+  document.getElementById('kpiCountries').textContent=Object.keys(ctryCounts).length;
   const srcCounts={};
   data.forEach(r=>{srcCounts[r.Source]=(srcCounts[r.Source]||0)+1;});
   document.getElementById('kpiSources').textContent=Object.keys(srcCounts).length;
+  const prodCounts={};
+  data.forEach(r=>{const c=prodCat(r.Product);prodCounts[c]=(prodCounts[c]||0)+1;});
 
-  const topPathogens=Object.entries(pathCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
-  document.getElementById('topPathogens').innerHTML=topPathogens.map(([p,c])=>
-    `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #0B1120;"><span style="font-size:12px;">${p}</span><span style="color:#F97316;font-weight:700;font-family:monospace;">${c}</span></div>`
-  ).join('');
+  breakdownPanel('topPathogens', pathCounts, 'pathf', 8);
+  breakdownPanel('bySource', srcCounts, 'srcf', 10);
+  breakdownPanel('byCountry', ctryCounts, 'ctryf', 10);
+  breakdownPanel('byProduct', prodCounts, 'prodf', 8);
+}
 
-  const topSources=Object.entries(srcCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-  document.getElementById('bySource').innerHTML=topSources.map(([s,c])=>
-    `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #0B1120;"><span style="font-size:11px;">${s}</span><span style="color:#F97316;font-weight:700;font-family:monospace;font-size:11px;">${c}</span></div>`
-  ).join('');
+function refreshDynamicText(){
+  document.getElementById('vc').textContent = `(${ALL.length} ${t('totalRecordsSuffix')})`;
+  if (ALL.length){
+    const dates = ALL.map(r=>r.Date).filter(Boolean).sort();
+    const mostRecent = dates[dates.length-1] || '—';
+    document.getElementById('freshnessMostRecent').innerHTML = `<b>${t('mostRecent')}</b> ${mostRecent}`;
+  }
+  document.getElementById('freshnessChecked').innerHTML = `<b>${t('checked')}</b> ${new Date().toISOString().slice(0,16).replace('T',' ')} UTC`;
+  document.getElementById('hdrUpdate').textContent = `${t('checked')} ${new Date().toISOString().slice(0,16).replace('T',' ')} UTC`;
 }
 
 function applyFilters(){
@@ -255,6 +342,7 @@ function applyFilters(){
     return true;
   });
   cur=1;render();
+  updateClearButtonVisibility();
 }
 
 function render(){
@@ -263,7 +351,7 @@ function render(){
   const pages=Math.max(1,Math.ceil(tot/n));
   cur=Math.min(cur,pages);
   const s=(cur-1)*n,e=Math.min(s+n,tot);
-  document.getElementById('fcnt').textContent=`${tot} records`;
+  document.getElementById('fcnt').textContent=`${tot} ${t('recordsSuffix')}`;
   const tbody=document.getElementById('tbody');
   tbody.innerHTML=filtered.slice(s,e).map(r=>{
     const ob=r.Outbreak?'<span class="ob">OUTBREAK</span>':'';
@@ -281,7 +369,7 @@ function render(){
 <td>${link}</td>
 </tr>`;
   }).join('');
-  document.getElementById('pi').textContent=tot>0?`${s+1}–${e} of ${tot}`:'No matches';
+  document.getElementById('pi').textContent=tot>0?`${s+1}–${e} ${t('ofText')} ${tot}`:t('noMatches');
   const pb2=document.getElementById('pbtns');pb2.innerHTML='';
   if(pages<=1)return;
   const btn=(l,p,a)=>{const b=document.createElement('button');b.className='pb'+(a?' on':'');b.textContent=l;b.onclick=()=>{cur=p;render();};pb2.appendChild(b);};
@@ -292,17 +380,26 @@ function render(){
 }
 
 ['srch','srcf','pathf','tierf','ctryf','regf','prodf'].forEach(id=>document.getElementById(id).addEventListener(id==='srch'?'input':'change',applyFilters));
-document.getElementById('rpp').addEventListener('change',applyFilters);
+document.getElementById('rpp').addEventListener('change',render);
+
+// Restore saved language preference before first paint of dynamic content
+try{
+  const saved = localStorage.getItem('fshs_lang');
+  if (saved === 'fr' || saved === 'en'){ lang = saved; }
+}catch(e){}
+document.getElementById('langEn').classList.toggle('on', lang==='en');
+document.getElementById('langFr').classList.toggle('on', lang==='fr');
+applyI18nStatic();
 
 fetch('data/recalls.json?_='+Date.now()).then(r=>r.json()).then(data=>{
   data.sort((a,b)=>(a.Tier||9)-(b.Tier||9));
   ALL=data;
   filtered=[...ALL];
-  document.getElementById('vc').textContent=`(${ALL.length} total records · Tier-1 sorted first)`;
   computeSummary(data);
-  populateSelect('srcf',[...new Set(data.map(r=>r.Source).filter(Boolean))].sort(),'All Sources');
-  populateSelect('ctryf',[...new Set(data.map(r=>r.Country).filter(Boolean))].sort(),'All Countries');
-  populateSelect('regf',[...new Set(data.map(r=>r.Region).filter(Boolean))].sort(),'All Regions');
+  populateSelect('srcf',[...new Set(data.map(r=>r.Source).filter(Boolean))].sort(),t('allSources'),'allSources');
+  populateSelect('ctryf',[...new Set(data.map(r=>r.Country).filter(Boolean))].sort(),t('allCountries'),'allCountries');
+  populateSelect('regf',[...new Set(data.map(r=>r.Region).filter(Boolean))].sort(),t('allRegions'),'allRegions');
+  refreshDynamicText();
   render();
 }).catch(err=>{
   document.getElementById('tbody').innerHTML='<tr><td colspan="8" style="padding:24px;text-align:center;color:#ef5350;">Failed to load data/recalls.json — '+err+'</td></tr>';

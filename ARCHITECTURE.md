@@ -3,9 +3,9 @@
 This document describes the actual current pipeline. It was written on
 2026-07-30 after a code-level audit (see `EVALUATION_AMELIORATIONS.txt`),
 not from a design spec — every claim below was verified against the code
-and workflows in this repo. `README.md` is a historical patch-bundle note
-describing a past fix; it is not an architecture overview and can be
-confusing if read as one.
+and workflows in this repo. `README.md` (rewritten 2026-07-31) now covers
+the project overview and acknowledgment; this file goes deeper on the
+technical pipeline mechanics for anyone modifying it.
 
 ## Data flow
 

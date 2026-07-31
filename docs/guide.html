@@ -8,6 +8,10 @@
 body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;}
 .hdr{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
 .brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;}.brand span{color:#F97316;}
+.hdr-right{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.langtoggle{display:flex;gap:2px;border:1px solid rgba(255,255,255,.10);border-radius:4px;overflow:hidden;}
+.langtoggle button{background:transparent;border:none;color:#9CA3AF;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;padding:5px 10px;cursor:pointer;}
+.langtoggle button.on{background:#F97316;color:#fff;}
 .nav{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
 .nav a{color:#9CA3AF;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}
 .nav a:hover,.nav a.on{color:#F97316;border-color:#F97316;}
@@ -50,60 +54,66 @@ a.link:hover{text-decoration:underline;}
 
 <div class="hdr">
   <div class="brand">Food Safety <span>·</span> Horizon Scanning</div>
-  <div class="nav">
-    <a href="index.html">🔴 Live Dashboard</a>
-    <a href="2026-W30.html">📊 Weekly</a>
-    <a href="hub.html">📈 Monthly + AI</a>
-    <a href="alerts.html">🔔 Alerts</a>
-    <a href="guide.html" class="on">📘 Guide</a>
+  <div class="hdr-right">
+    <div class="nav">
+      <a href="index.html" data-i18n="navDash">🔴 Live Dashboard</a>
+      <a href="2026-W30.html" data-i18n="navWeekly">📊 Weekly</a>
+      <a href="hub.html" data-i18n="navMonthly">📈 Monthly + AI</a>
+      <a href="alerts.html" data-i18n="navAlerts">🔔 Alerts</a>
+      <a href="guide.html" class="on" data-i18n="navGuide">📘 Guide</a>
+    </div>
+    <div class="langtoggle">
+      <button id="langEn" class="on" onclick="setLang('en')">EN</button>
+      <button id="langFr" onclick="setLang('fr')">FR</button>
+    </div>
   </div>
 </div>
 
 <div class="wrap">
-  <div class="eyebrow"><div class="rule"></div><span>User Guide</span></div>
-  <h1>How Food Safety Horizon Scanning works</h1>
-  <p class="lede">This platform continuously aggregates food safety recalls and alerts from
+  <div class="eyebrow"><div class="rule"></div><span data-i18n="eyebrow">User Guide</span></div>
+  <h1 data-i18n="title">How Food Safety Horizon Scanning works</h1>
+  <p class="lede" data-i18n="lede">This platform continuously aggregates food safety recalls and alerts from
   90+ regulatory agencies worldwide, verifies each record, and publishes it here.
   This guide explains what you're looking at and how to get the most out of it.</p>
 
-  <h2><span class="num">01</span>What this platform does</h2>
-  <p>Food safety incidents (recalls, alerts, border rejections) are published separately by
+  <h2><span class="num">01</span><span data-i18n="s1Title">What this platform does</span></h2>
+  <p data-i18n="s1p1">Food safety incidents (recalls, alerts, border rejections) are published separately by
   dozens of national regulators — the FDA, USDA FSIS, the EU's RASFF network, France's
   RappelConso, Canada's CFIA, the UK's FSA, and 50+ others — each with its own website,
   language, and format. This platform collects those notices automatically, normalizes
   them into a common structure (date, company, product, pathogen, severity, source link),
   and republishes them here as one continuously updated feed.</p>
-  <p>Every record links back to the original regulator notice, so anything you see here
+  <p data-i18n="s1p2">Every record links back to the original regulator notice, so anything you see here
   can be independently verified at the source.</p>
 
-  <h2><span class="num">02</span>Reading the live dashboard</h2>
-  <p>The <a class="link" href="index.html">Live Dashboard</a> is the main entry point. At
-  the top, the KPI tiles summarize the current dataset:</p>
+  <h2><span class="num">02</span><span data-i18n="s2Title">Reading the live dashboard</span></h2>
+  <p><span data-i18n="s2p1">The</span> <a class="link" href="index.html" data-i18n="s2link">Live Dashboard</a> <span data-i18n="s2p2">is the main entry point. At
+  the top, the KPI tiles summarize the current dataset:</span></p>
   <div class="grid2">
     <div class="card">
-      <div class="kv-label">Total Recalls in DB</div>
-      <p style="margin:0">The full count of tracked incidents currently in the system.</p>
+      <div class="kv-label" data-i18n="s2c1label">Total Recalls in DB</div>
+      <p style="margin:0" data-i18n="s2c1text">The full count of tracked incidents currently in the system.</p>
     </div>
     <div class="card">
-      <div class="kv-label">Tier-1 Critical</div>
-      <p style="margin:0">Incidents flagged as the highest severity — see the tier legend below.</p>
+      <div class="kv-label" data-i18n="s2c2label">Tier-1 Critical</div>
+      <p style="margin:0" data-i18n="s2c2text">Incidents flagged as the highest severity — see the tier legend below.</p>
     </div>
   </div>
 
-  <p style="margin-top:18px"><strong>Severity tiers</strong> — every incident is assigned a
+  <p style="margin-top:18px"><strong data-i18n="s2tiersStrong">Severity tiers</strong><span data-i18n="s2tiers"> — every incident is assigned a
   tier based on the regulator's own classification (e.g. FDA Class I/II/III) or, when that's
-  not available, on the pathogen and product type:</p>
+  not available, on the pathogen and product type:</span></p>
   <div class="legend">
-    <span class="badge b-1">TIER 1 · CRITICAL</span>
-    <span class="badge b-2">TIER 2 · MAJOR</span>
-    <span class="badge b-3">TIER 3 · MINOR</span>
+    <span class="badge b-1" data-i18n="tier1">TIER 1 · CRITICAL</span>
+    <span class="badge b-2" data-i18n="tier2">TIER 2 · MAJOR</span>
+    <span class="badge b-3" data-i18n="tier3">TIER 3 · MINOR</span>
   </div>
-  <p>Tier 1 covers cases most likely to cause serious illness (e.g. <em>Listeria</em> in a
+  <p data-i18n="s2tiersP">Tier 1 covers cases most likely to cause serious illness (e.g. <em>Listeria</em> in a
   ready-to-eat product, or any confirmed outbreak). Tier 2 covers moderate risk. Tier 3
   covers lower-risk or precautionary notices.</p>
 
-  <p style="margin-top:18px"><strong>Pathogen badges</strong> — the table's Pathogen column
-  uses a color code so you can scan a page of results at a glance:</p>
+  <p style="margin-top:18px"><strong data-i18n="s2badgesStrong">Pathogen badges</strong><span data-i18n="s2badges"> — the table's Pathogen column
+  uses a color code so you can scan a page of results at a glance:</span></p>
   <div class="legend">
     <span class="badge b-l">Listeria</span>
     <span class="badge b-s">Salmonella</span>
@@ -112,49 +122,49 @@ a.link:hover{text-decoration:underline;}
     <span class="badge b-n">Norovirus</span>
     <span class="badge b-a">Aflatoxin</span>
     <span class="badge b-c">Cereulide / B. cereus</span>
-    <span class="badge b-o">Other</span>
+    <span class="badge b-o" data-i18n="badgeOther">Other</span>
   </div>
 
-  <p style="margin-top:18px"><strong>Filtering and sorting</strong> — use the search box and
+  <p style="margin-top:18px"><strong data-i18n="s2filterStrong">Filtering and sorting</strong><span data-i18n="s2filter"> — use the search box and
   dropdown filters above the table to narrow by keyword, source, or tier. Click any column
   header to sort by it. The red pulsing dot next to a headline in the top ticker marks an
-  active, ongoing incident.</p>
+  active, ongoing incident.</span></p>
 
-  <h2><span class="num">03</span>The other views</h2>
+  <h2><span class="num">03</span><span data-i18n="s3Title">The other views</span></h2>
   <ul>
-    <li><strong>Weekly</strong> — a narrative briefing published each week, summarizing the
+    <li><strong data-i18n="s3weeklyStrong">Weekly</strong> <span data-i18n="s3weekly">— a narrative briefing published each week, summarizing the
     period's incidents with process-engineering interpretation (thermal processing, HACCP
-    control points) rather than just a raw list.</li>
-    <li><strong>Monthly + AI</strong> — a browsable archive of monthly briefings, each with
-    trend charts and a written analysis of the month's activity.</li>
-    <li><strong>Alerts</strong> — subscribe to receive an email whenever a new incident
-    matches criteria you choose (pathogen, product, country, or brand).</li>
-    <li><strong>JSON Feed</strong> (footer link) — the same dataset behind this dashboard,
-    as raw JSON, for anyone who wants to build on top of it directly.</li>
+    control points) rather than just a raw list.</span></li>
+    <li><strong data-i18n="s3monthlyStrong">Monthly + AI</strong> <span data-i18n="s3monthly">— a browsable archive of monthly briefings, each with
+    trend charts and a written analysis of the month's activity.</span></li>
+    <li><strong data-i18n="s3alertsStrong">Alerts</strong> <span data-i18n="s3alerts">— subscribe to receive an email whenever a new incident
+    matches criteria you choose (pathogen, product, country, or brand).</span></li>
+    <li><strong data-i18n="s3jsonStrong">JSON Feed</strong> <span data-i18n="s3json">(footer link) — the same dataset behind this dashboard,
+    as raw JSON, for anyone who wants to build on top of it directly.</span></li>
   </ul>
 
-  <h2><span class="num">04</span>Data reliability</h2>
-  <p>Every record carries the original regulator's source URL. New records go through an
+  <h2><span class="num">04</span><span data-i18n="s4Title">Data reliability</span></h2>
+  <p data-i18n="s4p">Every record carries the original regulator's source URL. New records go through an
   automated verification pass before publication, and a per-record audit trail tracks every
   automated correction. If you ever find a record that looks wrong, the source link is the
   fastest way to check it against the original notice.</p>
 
-  <h2><span class="num">05</span>Frequently asked questions</h2>
-  <div class="faq-q">How often is the dashboard updated?</div>
-  <p>New scraping runs happen several times a day; the dashboard header shows the exact
+  <h2><span class="num">05</span><span data-i18n="s5Title">Frequently asked questions</span></h2>
+  <div class="faq-q" data-i18n="faq1q">How often is the dashboard updated?</div>
+  <p data-i18n="faq1a">New scraping runs happen several times a day; the dashboard header shows the exact
   timestamp of the last update.</p>
-  <div class="faq-q">Why do some records have less detail than others?</div>
-  <p>Regulators publish in different formats and levels of detail. Where a field can't be
+  <div class="faq-q" data-i18n="faq2q">Why do some records have less detail than others?</div>
+  <p data-i18n="faq2a">Regulators publish in different formats and levels of detail. Where a field can't be
   reliably determined, it's left blank rather than guessed.</p>
-  <div class="faq-q">Can I get alerted about a specific country or product?</div>
-  <p>Yes — use the <a class="link" href="alerts.html">Alerts</a> page to set up a custom
-  subscription.</p>
-  <div class="faq-q">Is the underlying data available in French?</div>
-  <p>Product and company names appear in their original language when the source regulator
+  <div class="faq-q" data-i18n="faq3q">Can I get alerted about a specific country or product?</div>
+  <p><span data-i18n="faq3a1">Yes — use the</span> <a class="link" href="alerts.html" data-i18n="faq3link">Alerts</a> <span data-i18n="faq3a2">page to set up a custom
+  subscription.</span></p>
+  <div class="faq-q" data-i18n="faq4q">Is the underlying data available in French?</div>
+  <p data-i18n="faq4a">Product and company names appear in their original language when the source regulator
   publishes in that language (for example, French records from RappelConso). A fully
-  translated French interface is on the roadmap but not available yet.</p>
+  translated French interface is available: switch to FR using the toggle at the top right.</p>
 
-  <p style="margin-top:40px;color:#6B7280;font-size:13px;">Questions not covered here?
+  <p style="margin-top:40px;color:#6B7280;font-size:13px;" data-i18n="closing">Questions not covered here?
   Every page links back to <code>index.html</code> — start from the live dashboard and
   the source link on any record for the full detail.</p>
 </div>
@@ -162,7 +172,108 @@ a.link:hover{text-decoration:underline;}
 <div class="footer">
   Food Safety Horizon Scanning &nbsp;·&nbsp;
   FDA · USDA · RASFF · CFIA · ΕΦΕΤ · FSA UK · FSANZ · BVL · RappelConso · AFSCA · 63+ sources
-  &nbsp;·&nbsp; <a href="index.html">Dashboard</a> · <a href="2026-W30.html">Weekly</a> · <a href="hub.html">Monthly</a>
+  &nbsp;·&nbsp; <a href="index.html" data-i18n="footDash">Dashboard</a> · <a href="2026-W30.html" data-i18n="footWeekly">Weekly</a> · <a href="hub.html" data-i18n="footMonthly">Monthly</a>
 </div>
 
+<script>
+let lang='en';
+try{ const saved = localStorage.getItem('fshs_lang'); if (saved==='fr'||saved==='en'){ lang=saved; } }catch(e){}
+
+const I18N = {
+  en: {
+    navDash:'🔴 Live Dashboard', navWeekly:'📊 Weekly', navMonthly:'📈 Monthly + AI', navAlerts:'🔔 Alerts', navGuide:'📘 Guide',
+    eyebrow:'User Guide',
+    title:'How Food Safety Horizon Scanning works',
+    lede:'This platform continuously aggregates food safety recalls and alerts from 90+ regulatory agencies worldwide, verifies each record, and publishes it here. This guide explains what you\'re looking at and how to get the most out of it.',
+    s1Title:'What this platform does',
+    s1p1:'Food safety incidents (recalls, alerts, border rejections) are published separately by dozens of national regulators — the FDA, USDA FSIS, the EU\'s RASFF network, France\'s RappelConso, Canada\'s CFIA, the UK\'s FSA, and 50+ others — each with its own website, language, and format. This platform collects those notices automatically, normalizes them into a common structure (date, company, product, pathogen, severity, source link), and republishes them here as one continuously updated feed.',
+    s1p2:'Every record links back to the original regulator notice, so anything you see here can be independently verified at the source.',
+    s2Title:'Reading the live dashboard',
+    s2p1:'The', s2link:'Live Dashboard', s2p2:'is the main entry point. At the top, the KPI tiles summarize the current dataset:',
+    s2c1label:'Total Recalls in DB', s2c1text:'The full count of tracked incidents currently in the system.',
+    s2c2label:'Tier-1 Critical', s2c2text:'Incidents flagged as the highest severity — see the tier legend below.',
+    s2tiersStrong:'Severity tiers', s2tiers:' — every incident is assigned a tier based on the regulator\'s own classification (e.g. FDA Class I/II/III) or, when that\'s not available, on the pathogen and product type:',
+    tier1:'TIER 1 · CRITICAL', tier2:'TIER 2 · MAJOR', tier3:'TIER 3 · MINOR',
+    s2tiersP:'Tier 1 covers cases most likely to cause serious illness (e.g. Listeria in a ready-to-eat product, or any confirmed outbreak). Tier 2 covers moderate risk. Tier 3 covers lower-risk or precautionary notices.',
+    s2badgesStrong:'Pathogen badges', s2badges:' — the table\'s Pathogen column uses a color code so you can scan a page of results at a glance:',
+    badgeOther:'Other',
+    s2filterStrong:'Filtering and sorting', s2filter:' — use the search box and dropdown filters above the table to narrow by keyword, source, or tier. Click any column header to sort by it. The red pulsing dot next to a headline in the top ticker marks an active, ongoing incident.',
+    s3Title:'The other views',
+    s3weeklyStrong:'Weekly', s3weekly:'— a narrative briefing published each week, summarizing the period\'s incidents with process-engineering interpretation (thermal processing, HACCP control points) rather than just a raw list.',
+    s3monthlyStrong:'Monthly + AI', s3monthly:'— a browsable archive of monthly briefings, each with trend charts and a written analysis of the month\'s activity.',
+    s3alertsStrong:'Alerts', s3alerts:'— subscribe to receive an email whenever a new incident matches criteria you choose (pathogen, product, country, or brand).',
+    s3jsonStrong:'JSON Feed', s3json:'(footer link) — the same dataset behind this dashboard, as raw JSON, for anyone who wants to build on top of it directly.',
+    s4Title:'Data reliability',
+    s4p:'Every record carries the original regulator\'s source URL. New records go through an automated verification pass before publication, and a per-record audit trail tracks every automated correction. If you ever find a record that looks wrong, the source link is the fastest way to check it against the original notice.',
+    s5Title:'Frequently asked questions',
+    faq1q:'How often is the dashboard updated?',
+    faq1a:'New scraping runs happen several times a day; the dashboard header shows the exact timestamp of the last update.',
+    faq2q:'Why do some records have less detail than others?',
+    faq2a:'Regulators publish in different formats and levels of detail. Where a field can\'t be reliably determined, it\'s left blank rather than guessed.',
+    faq3q:'Can I get alerted about a specific country or product?',
+    faq3a1:'Yes — use the', faq3link:'Alerts', faq3a2:'page to set up a custom subscription.',
+    faq4q:'Is the underlying data available in French?',
+    faq4a:'Product and company names appear in their original language when the source regulator publishes in that language (for example, French records from RappelConso). A fully translated French interface is available: switch to FR using the toggle at the top right.',
+    closing:'Questions not covered here? Every page links back to index.html — start from the live dashboard and the source link on any record for the full detail.',
+    footDash:'Dashboard', footWeekly:'Weekly', footMonthly:'Monthly',
+  },
+  fr: {
+    navDash:'🔴 Tableau de bord', navWeekly:'📊 Hebdomadaire', navMonthly:'📈 Mensuel + IA', navAlerts:'🔔 Alertes', navGuide:'📘 Guide',
+    eyebrow:'Guide utilisateur',
+    title:'Comment fonctionne Food Safety Horizon Scanning',
+    lede:'Cette plateforme agrège en continu les rappels et alertes de sécurité alimentaire de plus de 90 agences de régulation dans le monde, vérifie chaque enregistrement, puis le publie ici. Ce guide explique ce que vous voyez et comment en tirer le meilleur parti.',
+    s1Title:'Ce que fait cette plateforme',
+    s1p1:'Les incidents de sécurité alimentaire (rappels, alertes, rejets aux frontières) sont publiés séparément par des dizaines de régulateurs nationaux — la FDA, l\'USDA FSIS, le réseau RASFF de l\'UE, le RappelConso français, l\'ACIA canadienne, la FSA britannique et plus de 50 autres — chacun avec son propre site, sa langue et son format. Cette plateforme collecte automatiquement ces avis, les normalise dans une structure commune (date, entreprise, produit, pathogène, gravité, lien source), puis les republie ici sous forme de flux mis à jour en continu.',
+    s1p2:'Chaque enregistrement renvoie vers l\'avis réglementaire d\'origine, de sorte que tout ce que vous voyez ici peut être vérifié indépendamment à la source.',
+    s2Title:'Lire le tableau de bord en direct',
+    s2p1:'Le', s2link:'Tableau de bord en direct', s2p2:'est le point d\'entrée principal. En haut, les tuiles KPI résument le jeu de données actuel :',
+    s2c1label:'Rappels au total', s2c1text:'Le nombre total d\'incidents suivis actuellement dans le système.',
+    s2c2label:'Niveau 1 critique', s2c2text:'Incidents signalés comme les plus graves — voir la légende des niveaux ci-dessous.',
+    s2tiersStrong:'Niveaux de gravité', s2tiers:' — chaque incident se voit attribuer un niveau selon la propre classification du régulateur (par ex. FDA Classe I/II/III) ou, à défaut, selon le pathogène et le type de produit :',
+    tier1:'NIVEAU 1 · CRITIQUE', tier2:'NIVEAU 2 · MAJEUR', tier3:'NIVEAU 3 · MINEUR',
+    s2tiersP:'Le niveau 1 couvre les cas les plus susceptibles de provoquer une maladie grave (par ex. Listeria dans un produit prêt à consommer, ou toute épidémie confirmée). Le niveau 2 couvre le risque modéré. Le niveau 3 couvre les avis à risque faible ou de précaution.',
+    s2badgesStrong:'Badges pathogènes', s2badges:' — la colonne Pathogène du tableau utilise un code couleur pour vous permettre de parcourir une page de résultats d\'un coup d\'œil :',
+    badgeOther:'Autre',
+    s2filterStrong:'Filtrage et tri', s2filter:' — utilisez la barre de recherche et les filtres déroulants au-dessus du tableau pour affiner par mot-clé, source ou niveau. Cliquez sur un en-tête de colonne pour trier. Le point rouge pulsant à côté d\'un titre dans le bandeau supérieur signale un incident actif et en cours.',
+    s3Title:'Les autres vues',
+    s3weeklyStrong:'Hebdomadaire', s3weekly:'— un briefing narratif publié chaque semaine, résumant les incidents de la période avec une interprétation d\'ingénierie des procédés (traitement thermique, points de contrôle HACCP) plutôt qu\'une simple liste brute.',
+    s3monthlyStrong:'Mensuel + IA', s3monthly:'— une archive consultable de briefings mensuels, chacun avec des graphiques de tendance et une analyse écrite de l\'activité du mois.',
+    s3alertsStrong:'Alertes', s3alerts:'— abonnez-vous pour recevoir un e-mail à chaque nouvel incident correspondant aux critères de votre choix (pathogène, produit, pays ou marque).',
+    s3jsonStrong:'Flux JSON', s3json:'(lien en pied de page) — le même jeu de données derrière ce tableau de bord, en JSON brut, pour ceux qui souhaitent construire directement dessus.',
+    s4Title:'Fiabilité des données',
+    s4p:'Chaque enregistrement porte l\'URL source du régulateur d\'origine. Les nouveaux enregistrements passent par une vérification automatisée avant publication, et une piste d\'audit par enregistrement suit chaque correction automatique. Si vous trouvez un enregistrement qui semble erroné, le lien source est le moyen le plus rapide de le comparer à l\'avis d\'origine.',
+    s5Title:'Questions fréquentes',
+    faq1q:'À quelle fréquence le tableau de bord est-il mis à jour ?',
+    faq1a:'De nouvelles collectes ont lieu plusieurs fois par jour ; l\'en-tête du tableau de bord affiche l\'horodatage exact de la dernière mise à jour.',
+    faq2q:'Pourquoi certains enregistrements ont-ils moins de détails que d\'autres ?',
+    faq2a:'Les régulateurs publient dans des formats et avec des niveaux de détail différents. Lorsqu\'un champ ne peut pas être déterminé de façon fiable, il est laissé vide plutôt que deviné.',
+    faq3q:'Puis-je être alerté sur un pays ou un produit spécifique ?',
+    faq3a1:'Oui — utilisez la page', faq3link:'Alertes', faq3a2:'pour configurer un abonnement personnalisé.',
+    faq4q:'Les données sous-jacentes sont-elles disponibles en français ?',
+    faq4a:'Les noms de produits et d\'entreprises apparaissent dans leur langue d\'origine lorsque le régulateur source publie dans cette langue (par exemple, les enregistrements français du RappelConso). Une interface française entièrement traduite est disponible : passez en FR grâce au sélecteur en haut à droite.',
+    closing:'Des questions non couvertes ici ? Chaque page renvoie vers index.html — commencez par le tableau de bord en direct et le lien source de tout enregistrement pour le détail complet.',
+    footDash:'Tableau de bord', footWeekly:'Hebdomadaire', footMonthly:'Mensuel',
+  }
+};
+
+function t(key){ return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key; }
+
+function applyI18n(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.getAttribute('data-i18n')); });
+}
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.getElementById('langEn').classList.toggle('on', l==='en');
+  document.getElementById('langFr').classList.toggle('on', l==='fr');
+  try{ localStorage.setItem('fshs_lang', l); }catch(e){}
+  applyI18n();
+}
+
+document.documentElement.lang = lang;
+document.getElementById('langEn').classList.toggle('on', lang==='en');
+document.getElementById('langFr').classList.toggle('on', lang==='fr');
+applyI18n();
+</script>
 </body></html>

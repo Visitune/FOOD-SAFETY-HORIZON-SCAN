@@ -244,6 +244,11 @@ function applyI18nStatic(){
 }
 
 function setLang(l){
+  if (l==='fr'){
+    try{ localStorage.setItem('fshs_lang', 'fr'); }catch(e){}
+    location.href = 'guide.html';
+    return;
+  }
   lang = l;
   document.documentElement.lang = l;
   document.getElementById('langEn').classList.toggle('on', l==='en');

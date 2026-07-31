@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ════════════════════════════════════════════════════════════════════════
-#  AFTS — race-safe xlsx commit + push
+#  VisiPilot — race-safe xlsx commit + push
 # ════════════════════════════════════════════════════════════════════════
 #  Many data-writer workflows push to main concurrently (gap-finders, NA /
 #  Asia / LATAM / Oceania collectors, news-feed, merge-master). A bare

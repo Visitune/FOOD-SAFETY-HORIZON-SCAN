@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # ============================================================================
-# AFTS FSIS — Repo cleanup
+# VisiPilot FSIS — Repo cleanup
 # ============================================================================
 # Deletes scrambled / duplicate files at repo root.
 # Run from the repo root. Creates a git commit with every removal.
 #
 #   cd ~/Food-Safety-Intelligence-System
-#   bash /path/to/AFTS-FIX/cleanup.sh
+#   bash /path/to/VisiPilot-FIX/cleanup.sh
 #
 # Safe: every deleted file has its canonical twin in scrapers/, docs/,
 # docs/data/, pipeline/, reports/, tools/, or .github/workflows/.

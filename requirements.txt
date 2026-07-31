@@ -1,4 +1,4 @@
-# AFTS Food Safety Intelligence System — Python pipeline requirements
+# VisiPilot Food Safety Intelligence System — Python pipeline requirements
 # ---------------------------------------------------------------------
 # Covers: scrapers (70+ agencies), AI review (Gemini + Claude + OpenAI),
 # URL guardian, weekly/monthly report builders, dashboard JSON mirror.

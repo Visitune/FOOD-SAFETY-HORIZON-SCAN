@@ -1,5 +1,5 @@
 """
-AFTS Monthly Report — Statistical Layer
+VisiPilot Monthly Report — Statistical Layer
 ========================================
 
 Pure-statistics module consumed by build_monthly_report_afts.py. Every

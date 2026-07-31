@@ -77,13 +77,13 @@ def main() -> int:
         existing = e.get("pdf_url")
 
         # Skip legacy entries that point to a genuinely EXTERNAL PDF (e.g. the
-        # Wix-hosted Jan/Feb uploads) — don't overwrite George's manual ones.
+        # Wix-hosted Jan/Feb uploads) — don't overwrite manually-set ones.
         # Auto-managed URLs are those under our own marketing path (either the
-        # old github.io base or the current fsis.visipilot.com domain); those we
-        # may refresh. Anything else (Wix _files/ugd, etc.) is left untouched.
+        # old github.io base or the current Vercel domain); those we may
+        # refresh. Anything else (Wix _files/ugd, etc.) is left untouched.
         _auto_managed = existing and (
             "/marketing/" in existing
-            and ("fsis.visipilot.com" in existing or "gstoforos.github.io" in existing)
+            and ("food-safety-horizon-scan.vercel.app" in existing or "gstoforos.github.io" in existing)
         )
         if existing and not _auto_managed:
             log.info("Keep legacy pdf_url for %s: %s", filename, existing)

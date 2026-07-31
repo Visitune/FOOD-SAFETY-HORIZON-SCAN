@@ -1,4 +1,4 @@
-# AFTS FSIS — test runner Makefile
+# VisiPilot FSIS — test runner Makefile
 # ==================================
 # Targets:
 #   make test         — full test suite with verbose output

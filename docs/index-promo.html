@@ -579,7 +579,7 @@ function notifyHeight(){
 // fallback) remains visible.
 async function _fsisUpgradeLastRunFromGitHub() {
   try {
-    const url = 'https://api.github.com/repos/gstoforos/Food-Safety-Intelligence-System/commits'
+    const url = 'https://api.github.com/repos/Visitune/FOOD-SAFETY-HORIZON-SCAN/commits'
               + '?path=docs/data/recalls.xlsx&per_page=1';
     const r = await fetch(url, {cache: 'no-store'});
     if (!r.ok) return;

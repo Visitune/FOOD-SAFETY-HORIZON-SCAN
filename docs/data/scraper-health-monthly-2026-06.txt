@@ -26,4 +26,4 @@ ACTION LIST (failing scrapers)
   [TIMEOUT ] VFA (VN)/Vietnam
 
 Generated 2026-06-01T03:16:23+00:00
-AFTS · visipilot.com · info@visipilot.com
+VisiPilot · visipilot.com · info@visipilot.com

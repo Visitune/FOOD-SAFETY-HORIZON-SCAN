@@ -69,7 +69,7 @@ jobs:
       - name: Configure git
         run: |
           git config user.name  "fsis-export-bot"
-          git config user.email "bot@visipilot.com"
+          git config user.email "fsis-bot@visipilot.com"
 
       - name: Commit if changed
         run: |

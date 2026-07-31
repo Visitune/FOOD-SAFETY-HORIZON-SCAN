@@ -265,7 +265,7 @@ def _build_html(month_name, month_key, year, st, recalls, preds, trend,
     return f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AFTS Monthly Intelligence — {month_name}</title>
+<title>VisiPilot Monthly Intelligence — {month_name}</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0;}}
@@ -336,7 +336,7 @@ tr:hover td{{background:rgba(255,255,255,.025);}}
 </div>
 
 <div class="footer">
-  <a href="https://advfood.tech">AFTS · Advanced Food-Tech Solutions</a> &nbsp;·&nbsp;
+  <a href="https://visipilot.com">VisiPilot · VisiPilot</a> &nbsp;·&nbsp;
   <a href="../index.html">Live Dashboard</a> &nbsp;·&nbsp;
   <a href="../weekly/">Weekly Reports</a> &nbsp;·&nbsp;
   <a href="../yearly/">Yearly Reports</a> &nbsp;·&nbsp; {year}
@@ -352,9 +352,9 @@ def _update_index(month_name, filename, count):
         c = c.replace("</ul>", f"{link}\n</ul>", 1)
         p.write_text(c)
     else:
-        p.write_text(f"""<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Monthly Reports | AFTS</title>
+        p.write_text(f"""<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Monthly Reports | VisiPilot</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans&display=swap" rel="stylesheet">
 <style>body{{background:#0e0e0e;color:#f0f0f0;font-family:'DM Sans',sans-serif;padding:40px;max-width:700px;margin:0 auto;}}
 h1{{font-family:'Syne',sans-serif;font-size:22px;color:#E8601A;margin-bottom:24px;}}
 ul{{list-style:none;padding:0;}}</style></head>
-<body><h1>AFTS · Monthly Intelligence Reports</h1><ul>{link}</ul></body></html>""")
+<body><h1>VisiPilot · Monthly Intelligence Reports</h1><ul>{link}</ul></body></html>""")

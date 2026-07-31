@@ -8,7 +8,6 @@ OpenAI-compatible HTTP client for the AFTS llama-server VPS
 Used by ALL AFTS AI features that share the same €10/month VPS:
   • Greek gap finder field extraction (Module 5: extractor.py)
   • Future EU market gap finders (Italy/Spain/France)
-  • AdvThermaLogic AI assistant
   • FSIS classifier experiments
   • Anything else we build before the Mac migration
 

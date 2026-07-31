@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# AFTS Food Safety Intelligence — VPS Setup Script
+# VisiPilot Food Safety Intelligence — VPS Setup Script
 # Hetzner CCX13 (2 dedicated vCPU, 8 GB RAM, 80 GB NVMe, Falkenstein DC)
 # Hosts: llama.cpp serving Qwen 2.5 7B Instruct Q4_K_M
 # Access: Tailscale-only (no public exposure)
@@ -29,7 +29,7 @@ LLAMA_CONTEXT=8192        # Context window — plenty for EFET pages
 LLAMA_THREADS=2           # CCX13 has 2 dedicated vCPUs
 
 # ─── PREFLIGHT ──────────────────────────────────────────────────────────────
-echo "==> AFTS VPS Setup — $(date -Iseconds)"
+echo "==> VisiPilot VPS Setup — $(date -Iseconds)"
 echo "    Host: $(hostname)  Kernel: $(uname -r)"
 
 if [ "$EUID" -ne 0 ]; then
@@ -105,7 +105,7 @@ systemctl enable --now tailscaled
 echo "==> [6/8] Systemd service: afts-llama.service"
 cat > /etc/systemd/system/afts-llama.service <<EOF
 [Unit]
-Description=AFTS llama.cpp server (Qwen 2.5 7B Instruct)
+Description=VisiPilot llama.cpp server (Qwen 2.5 7B Instruct)
 After=network-online.target tailscaled.service
 Wants=network-online.target
 
@@ -186,7 +186,7 @@ systemctl status afts-llama.service --no-pager || true
 TS_IP=$(tailscale ip -4 | head -n1)
 echo ""
 echo "═════════════════════════════════════════════════════════════════════"
-echo " AFTS VPS Setup Complete"
+echo " VisiPilot VPS Setup Complete"
 echo "═════════════════════════════════════════════════════════════════════"
 echo ""
 echo " Tailscale IP:    ${TS_IP}"

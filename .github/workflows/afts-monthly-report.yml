@@ -17,7 +17,7 @@ name: VisiPilot Monthly Report
 #          docs/data/monthly-summary-latest.json
 #      and refresh docs/data/monthly-index.json.
 #   3. Convert the subscriber HTML to PDF → docs/YYYY-MMM.pdf
-#      (this is the "George PDF" that gets emailed + shown on the hub).
+#      (this is the marketing PDF that gets emailed + shown on the hub).
 #   4. Set pdf_url on each newly-built month's index entry so hub.html
 #      auto-renders the card on next page load.
 #
@@ -130,7 +130,7 @@ jobs:
           python -m pipeline.set_pdf_urls \
             --index docs/data/monthly-index.json \
             --docs-dir docs \
-            --site-url "https://gstoforos.github.io/Food-Safety-Intelligence-System"
+            --site-url "https://food-safety-horizon-scan.vercel.app"
 
       - name: Commit outputs
         if: steps.guard.outputs.run == 'true'

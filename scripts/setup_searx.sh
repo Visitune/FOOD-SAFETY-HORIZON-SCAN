@@ -11,7 +11,7 @@
 #
 # Run it like this on the Hetzner box (as root or via sudo):
 #
-#   curl -fsSL https://raw.githubusercontent.com/gstoforos/Food-Safety-Intelligence-System/main/scripts/setup_searx.sh | sudo bash
+#   curl -fsSL https://raw.githubusercontent.com/Visitune/FOOD-SAFETY-HORIZON-SCAN/main/scripts/setup_searx.sh | sudo bash
 #
 # Or, if you scp'd this file up:
 #
@@ -22,7 +22,7 @@ set -euo pipefail
 INSTALL_DIR="/opt/afts-searx"
 SEARX_PORT_LOCAL=8888    # what GitHub Actions calls over Tailscale
 
-echo "═══ AFTS Searx setup on $(hostname) ═══"
+echo "═══ VisiPilot Searx setup on $(hostname) ═══"
 
 # ─── 1. Docker ──────────────────────────────────────────────────────────────
 if ! command -v docker >/dev/null 2>&1; then
@@ -91,7 +91,7 @@ cat > searxng/settings.yml << SXY
 use_default_settings: true
 
 general:
-  instance_name:  "AFTS Searx"
+  instance_name:  "VisiPilot Searx"
   contact_url:    false
   enable_metrics: false
   debug:          false

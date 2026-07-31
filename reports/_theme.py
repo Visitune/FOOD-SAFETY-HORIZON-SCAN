@@ -165,7 +165,7 @@ def dark_header(report_type: str = "", title: str = "", meta: str = "") -> str:
 
 def dark_footer(year: int | str = "") -> str:
     return f"""<div class="footer">
-  <a href="https://advfood.tech">Food Safety Horizon Scanning &middot; Food Safety Horizon Scanning</a> &nbsp;&middot;&nbsp;
+  <a href="https://visipilot.com">Food Safety Horizon Scanning &middot; Food Safety Horizon Scanning</a> &nbsp;&middot;&nbsp;
   <a href="../index.html">Live Dashboard</a> &nbsp;&middot;&nbsp;
   <a href="../weekly/">Weekly Reports</a> &nbsp;&middot;&nbsp;
   <a href="../monthly/">Monthly Reports</a> &nbsp;&middot;&nbsp;

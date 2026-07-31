@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================================
-# AFTS FSIS — Scraper reconstruction
+# VisiPilot FSIS — Scraper reconstruction
 # ============================================================================
 # Run AFTER fix.sh. Does two things:
 #

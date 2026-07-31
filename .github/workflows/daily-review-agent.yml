@@ -114,7 +114,7 @@ jobs:
               subprocess.run([sys.executable, "-m", "pipeline.set_pdf_urls",
                               "--index", "docs/data/monthly-index.json",
                               "--docs-dir", "docs",
-                              "--site-url", "https://gstoforos.github.io/Food-Safety-Intelligence-System"],
+                              "--site-url", "https://food-safety-horizon-scan.vercel.app"],
                              check=False)
 
           rpt["rebuilt"] = rebuilt
@@ -142,6 +142,6 @@ jobs:
           fi
 
       # The e-mail step is intentionally left as a follow-on (Phase 2):
-      # a mailer reads docs/data/daily_review_digest.md and sends it to George,
+      # a mailer reads docs/data/daily_review_digest.md and sends it to the reviewer,
       # with Approve/Reject links for each proposed_deletion. Kept separate so
       # this workflow never blocks on mail delivery.

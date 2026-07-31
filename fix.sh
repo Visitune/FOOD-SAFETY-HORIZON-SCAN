@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================================
-# AFTS FSIS — Full repo repair, v2
+# VisiPilot FSIS — Full repo repair, v2
 # ============================================================================
 # Runs from the repo root. Makes every fix in the correct order so nothing
 # gets destroyed before it's been copied to its canonical home.
@@ -61,7 +61,7 @@ echo ""
 echo ">> 2/5 Restoring requirements.txt (currently 0 bytes)"
 
 cat > requirements.txt <<'EOF'
-# AFTS FSIS — pinned versions for reproducibility.
+# VisiPilot FSIS — pinned versions for reproducibility.
 # If you hit install friction on any of these, loosen the pin.
 requests>=2.31,<3
 openpyxl>=3.1,<4

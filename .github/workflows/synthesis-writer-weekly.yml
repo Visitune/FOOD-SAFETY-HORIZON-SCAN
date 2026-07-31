@@ -11,8 +11,8 @@ name: VisiPilot Synthesis Writer — Weekly
 #          (ai_lead_paragraph="")
 #   08:30  THIS WORKFLOW → reads the JSON, generates synthesis via LLM,
 #          writes ai_lead_paragraph back, commits.
-#   09:00  Mailer review preview fires (Apps Script) → George sees the
-#          synthesis in the [REVIEW] email body.
+#   09:00  Mailer review preview fires (Apps Script) → the reviewer sees
+#          the synthesis in the [REVIEW] email body.
 #   12:30  Mailer mass send → subscribers see the Intelligence Summary
 #          section populated.
 #
@@ -91,8 +91,8 @@ jobs:
       - name: Git identity (for commit)
         if: steps.guard.outputs.run == '1'
         run: |
-          git config user.name  "afts-bot"
-          git config user.email "afts-bot@users.noreply.github.com"
+          git config user.name  "visipilot-bot"
+          git config user.email "visipilot-bot@users.noreply.github.com"
 
       - name: Run synthesis writer
         if: steps.guard.outputs.run == '1'

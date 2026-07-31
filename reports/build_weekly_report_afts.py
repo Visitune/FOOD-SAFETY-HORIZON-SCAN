@@ -1,5 +1,5 @@
 """
-AFTS Food Safety Intelligence System - Weekly Report Generator
+VisiPilot Food Safety Intelligence System - Weekly Report Generator
 Template: 2026-W16.html (gold standard)
 Output: docs/YYYY-WW.html + data/weekly-summary-latest.json
 Reads: docs/data/recalls.xlsx Recalls sheet ONLY.
@@ -135,7 +135,7 @@ def generate_analysis_claude(stats, recalls):
             "{} ({})".format(r.get("Company",""), _country_display(r.get("Country","")))
             for r in bot[:3])
         pa = "\n4. PROCESS AUTHORITY NOTE paragraph (start with \'This window contains {} incident(s) implicating Clostridium or botulinum toxin, with {} cited.\' Then explain shelf-stable/low-acid/acidified/aseptic/UHT/hot-filled/reduced-O2 products must be reviewed under qualified process authority per FDA 21 CFR 113/114, EU 852/2004, CFIA SFCR, FSANZ Ch.3, Japan FSA. Typical gaps: unfiled scheduled process, deviation without qualified review, seal-integrity lapse, formulation change not re-evaluated. Tier-1/Class-I triggers process-filing audit.)".format(len(bot), co)
-    prompt = """You are a food safety intelligence analyst for AFTS. Generate the Intelligence Analysis section.
+    prompt = """You are a food safety intelligence analyst for VisiPilot. Generate the Intelligence Analysis section.
 
 DATA: Total={}, Tier-1={}, Outbreaks={}, Leading={} ({}, {}%)
 Pathogens: {}
@@ -165,9 +165,9 @@ def _fallback(stats, bot):
     tp, tc = stats["top_pathogen"]; t = stats["total"]
     pct = round(tc/max(t,1)*100)
     paras = [
-        "This week produced {} pathogen-related recall incidents across the AFTS monitoring network, with {} classified as Tier-1 and {} confirmed outbreak event(s). {} dominated the surveillance window, accounting for {} of {} incidents ({}%). The elevated Tier-1 ratio indicates sustained regulatory pressure and should be read by food manufacturers as a signal of tightening enforcement.".format(t, stats["tier1"], stats["outbreaks"], tp, tc, t, pct),
+        "This week produced {} pathogen-related recall incidents across the VisiPilot monitoring network, with {} classified as Tier-1 and {} confirmed outbreak event(s). {} dominated the surveillance window, accounting for {} of {} incidents ({}%). The elevated Tier-1 ratio indicates sustained regulatory pressure and should be read by food manufacturers as a signal of tightening enforcement.".format(t, stats["tier1"], stats["outbreaks"], tp, tc, t, pct),
         "{} at this prevalence points to post-process recontamination in ready-to-eat lines rather than thermal underprocess. The likely failure modes are environmental harbourage, sanitation SOP drift, and post-lethality recontamination.".format(tp),
-        "Regulatory activity this week spanned multiple jurisdictions, signalling continued inspection intensity. AFTS recommends that food manufacturers use this briefing as a prompt to re-verify the single highest-leverage control for their commodity this week.",
+        "Regulatory activity this week spanned multiple jurisdictions, signalling continued inspection intensity. VisiPilot recommends that food manufacturers use this briefing as a prompt to re-verify the single highest-leverage control for their commodity this week.",
     ]
     if bot:
         co = ", ".join("{} ({})".format(r.get("Company",""), _country_display(r.get("Country",""))) for r in bot[:3])
@@ -504,12 +504,12 @@ table.top5 td { word-wrap:break-word; overflow-wrap:break-word; }
 
 @media print {
   /* Running footer on every printed page: process-authority attribution
-     anchors the AFTS differentiator visually throughout the document. */
+     anchors the VisiPilot differentiator visually throughout the document. */
   @page {
     size: A4;
     margin: 14mm 14mm 18mm 14mm;
     @bottom-left {
-      content: "AFTS · Food Safety Validation Intelligence";
+      content: "VisiPilot · Food Safety Validation Intelligence";
       font-family: 'DM Mono', monospace; font-size: 8pt; color: #6b7280;
       letter-spacing: 0.04em;
     }
@@ -686,7 +686,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AFTS Pathogen Intelligence Briefing &middot; Week {wnum}, {year}</title>
+<title>VisiPilot Pathogen Intelligence Briefing &middot; Week {wnum}, {year}</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 __CSS_PLACEHOLDER__
@@ -696,7 +696,7 @@ __CSS_PLACEHOLDER__
 
 <header class="masthead">
   <div class="brand-block">
-    <div class="brand">Advanced Food-Tech Solutions <em>&middot;</em> AFTS</div>
+    <div class="brand">VisiPilot <em>&middot;</em> VisiPilot</div>
     <div class="tagline">Food Safety Intelligence System &middot; Weekly Briefing</div>
   </div>
   <div class="mast-right">
@@ -709,12 +709,12 @@ __CSS_PLACEHOLDER__
   </div>
 </header>
 
-<div class="r-kicker">AFTS <span class="r-kicker-dot">&middot;</span> Food Safety Validation Intelligence</div>
+<div class="r-kicker">VisiPilot <span class="r-kicker-dot">&middot;</span> Food Safety Validation Intelligence</div>
 <h1 class="r-title">Pathogen Surveillance <span class="accent">&middot;</span> Week {wnum}</h1>
 <p class="r-sub">
   AI-powered analysis of <strong>{total}</strong> regulatory recall actions across
   <strong>{n_jurisdictions}</strong> jurisdictions, aggregated from 66 primary sources
-  monitored continuously by the AFTS intelligence platform.
+  monitored continuously by the VisiPilot intelligence platform.
 </p>
 
 <div class="kpi-strip">
@@ -796,7 +796,7 @@ __CSS_PLACEHOLDER__
     <h3>Live Dashboard &middot; Full Dataset Access</h3>
     <p>Filter by pathogen, country, tier, and source. Download the accumulative XLSX dataset. Set custom alerts.</p>
   </div>
-  <a class="cta-btn" href="https://www.advfood.tech/fsis-recalls" target="_blank" rel="noopener">Access Portal &rarr;</a>
+  <a class="cta-btn" href="https://food-safety-horizon-scan.vercel.app/" target="_blank" rel="noopener">Access Portal &rarr;</a>
 </div>
 
 <div id="all-recalls" class="sec-head">
@@ -821,15 +821,15 @@ __CSS_PLACEHOLDER__
   <span class="sec-rule"></span>
 </div>
 <div class="meth">
-  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, pathogen classification, and the engineering interpretation of each recall are developed under the process authority of AFTS, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP. This is what the AFTS platform brings that pure data feeds do not &mdash; data under engineering authority.</p>
+  <p><strong>Process authority.</strong> Analytical frameworks, severity rubrics, pathogen classification, and the engineering interpretation of each recall are developed under the process authority of VisiPilot, drawing on in-house expertise in food process engineering, thermal processing, and regulatory compliance. Every view is grounded in validated process engineering: thermal processing (21 CFR 113/114), pasteurisation (PMO), aseptic and UHT, hold-tube and F-value lethality, and HACCP. This is what the VisiPilot platform brings that pure data feeds do not &mdash; data under engineering authority.</p>
   <p><strong>Data &amp; AI pipeline.</strong> The system aggregates regulatory recall notices from 66 primary sources across 60+ countries (FDA, USDA FSIS, RASFF, FSA, FSANZ, CFIA, RappelConso, BVL, AESAN, EFET, and national authorities) and processes each record through Gemini (extraction), OpenAI GPT (normalisation), and Claude (Tier-1 validation). Records are de-duplicated and harmonised into the accumulative dataset.</p>
-  <p><strong>This briefing.</strong> Statistical analysis filters the accumulative dataset to the reporting week ({period}). AI-generated narrative is produced against AFTS process-authority prompts and edited for publication. Figures and pathogen names are preserved verbatim from source data.</p>
+  <p><strong>This briefing.</strong> Statistical analysis filters the accumulative dataset to the reporting week ({period}). AI-generated narrative is produced against VisiPilot process-authority prompts and edited for publication. Figures and pathogen names are preserved verbatim from source data.</p>
 </div>
 
 <footer class="footer">
   <div>
-    <div class="foot-brand">Advanced Food-Tech Solutions <em>&middot;</em> AFTS</div>
-    <div class="foot-meta">Food Safety Validation Intelligence<br>advfood.tech &middot; info@advfood.tech &middot; Athens, Greece<br>&copy; {year} Advanced Food Tech Solutions</div>
+    <div class="foot-brand">VisiPilot <em>&middot;</em> VisiPilot</div>
+    <div class="foot-meta">Food Safety Validation Intelligence<br>visipilot.com &middot; info@visipilot.com<br>&copy; {year} VisiPilot</div>
   </div>
   <div class="foot-legal">This briefing is provided for informational purposes only and does not constitute regulatory, legal, or medical advice. Subscribers should verify recall status with the originating regulatory authority before taking action. Next issue: Friday, {next_issue}.</div>
 </footer>
@@ -947,8 +947,8 @@ def write_weekly_summary_json(week_end, recalls, stats, data_dir):
             "product":str(r.get("Product","")),"country":str(r.get("Country","")),
             "source":str(r.get("Source","")),"url":str(r.get("URL",""))})
     summary = {"filename":"{}-W{:02d}.html".format(year,wnum),
-        "report_url":"https://gstoforos.github.io/Food-Safety-Intelligence-System/{}-W{:02d}.html".format(year,wnum),
-        "dashboard_url":"https://www.advfood.tech/fsis-recalls",
+        "report_url":"https://food-safety-horizon-scan.vercel.app/{}-W{:02d}.html".format(year,wnum),
+        "dashboard_url":"https://food-safety-horizon-scan.vercel.app/",
         "week_num":wnum,"year":year,"week_start":ws.isoformat(),"week_end":week_end.isoformat(),
         "week_start_display":ws.strftime("%-d %b"),"week_end_display":week_end.strftime("%-d %b %Y"),
         "generated_utc":datetime.now(timezone.utc).isoformat(),
@@ -1014,7 +1014,7 @@ def refresh_stale_weeks(all_recalls, current_week_end, n_previous=1):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Build AFTS weekly report")
+    ap = argparse.ArgumentParser(description="Build VisiPilot weekly report")
     ap.add_argument("--week-end", required=True, help="Friday YYYY-MM-DD")
     ap.add_argument("--xlsx", default=str(ROOT/"docs"/"data"/"recalls.xlsx"))
     ap.add_argument("--output", default=None)

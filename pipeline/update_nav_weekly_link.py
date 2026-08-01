@@ -1,24 +1,29 @@
 """
 update_nav_weekly_link.py
-==========================
-Keeps every page's "Weekly" nav link pointing at the current latest
-weekly report. The nav bar (added 2026-07-31 to docs/index.html,
-docs/guide.html, docs/hub.html, and every generated weekly/monthly
-report page) hardcodes the latest week's filename at the time it was
-written — without this script that link goes stale the moment a new
-week is published.
+
+SUPERSEDED (2026-08-01): the "Weekly" nav link across the site now
+points at the static docs/weekly.html archive page instead of a
+specific week's filename, so it never goes stale and this script is
+no longer invoked by any workflow (removed from
+.github/workflows/afts-weekly-report.yml). Left in place for
+reference only — do not wire it back into a workflow; it would
+overwrite the intentional "weekly.html" links with a specific week's
+filename again.
+
+============================================================================
+ORIGINAL PURPOSE (kept for context)
+============================================================================
+Kept every page's "Weekly" nav link pointing at the current latest
+weekly report. The nav bar hardcoded the latest week's filename at the
+time it was written — without this script that link went stale the
+moment a new week was published.
 
 Reads docs/data/weekly-index.json (already newest-first) for the
 current filename, then rewrites the "Weekly" nav <a href="..."> on every
-docs/*.html page EXCEPT the weekly report pages themselves — each
-weekly report's own "Weekly" link intentionally points to itself
-(dated archive, not a moving target).
+docs/*.html page EXCEPT the weekly report pages themselves.
 
-Usage:
+Usage (historical):
     python pipeline/update_nav_weekly_link.py
-
-Run as the last step of .github/workflows/afts-weekly-report.yml, after
-the new week's HTML has been generated and committed.
 """
 from __future__ import annotations
 import json

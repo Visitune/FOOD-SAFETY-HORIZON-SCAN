@@ -825,11 +825,19 @@ def esc(s):
     return html_mod.escape(str(s))
 
 def _fmt_date(d):
-    try: return datetime.strptime(str(d)[:10],"%Y-%m-%d").strftime("%-d %b %Y")
+    # dt.day sidesteps "%-d" (day-without-leading-zero), a GNU strftime
+    # extension that raises ValueError on Windows — CI runs on ubuntu-latest
+    # so this never surfaced there, but it breaks running the builder
+    # locally on Windows.
+    try:
+        dt = datetime.strptime(str(d)[:10],"%Y-%m-%d")
+        return f"{dt.day} {dt.strftime('%b %Y')}"
     except Exception: return str(d)[:10]
 
 def _fmt_date_short(d):
-    try: return datetime.strptime(str(d)[:10],"%Y-%m-%d").strftime("%-d %b")
+    try:
+        dt = datetime.strptime(str(d)[:10],"%Y-%m-%d")
+        return f"{dt.day} {dt.strftime('%b')}"
     except Exception: return str(d)[:10]
 
 
@@ -2084,7 +2092,7 @@ __CSS_PLACEHOLDER__
   <div class="site-brand">Food Safety <span>&middot;</span> Horizon Scanning</div>
   <div class="links">
     <a href="index.html">&#128308; Live Dashboard</a>
-    <a href="{week_filename}" class="on">&#128202; Weekly</a>
+    <a href="weekly.html" class="on">&#128202; Weekly</a>
     <a href="hub.html">&#128200; Monthly + AI</a>
     <a href="guide.html">&#128216; Guide</a>
   </div>
@@ -2405,7 +2413,8 @@ def build_html(week_end, recalls, prev_week, original_published=None):
     # in the future. Both branches now use today's date — the visible
     # difference is the label (PUBLISHED vs UPDATED), not a synthetic
     # future date.
-    today_str = datetime.now(timezone.utc).strftime("%-d %b %Y")
+    _now_utc = datetime.now(timezone.utc)
+    today_str = f"{_now_utc.day} {_now_utc.strftime('%b %Y')}"
     # Operator rule (2026-06-29): "PUBLISHED" marks ONLY the genuine first
     # issuance of a weekly briefing. Any later regeneration, correction, or
     # back-build is a REVIEW, not a publish — the masthead must read
@@ -2551,7 +2560,8 @@ def write_weekly_summary_json(week_end, recalls, stats, data_dir):
         "report_url":"https://food-safety-horizon-scan.vercel.app/{}-W{:02d}.html".format(year,wnum),
         "dashboard_url":"https://food-safety-horizon-scan.vercel.app/",
         "week_num":wnum,"year":year,"week_start":ws.isoformat(),"week_end":we_display.isoformat(),
-        "week_start_display":ws.strftime("%-d %b"),"week_end_display":we_display.strftime("%-d %b %Y"),
+        "week_start_display":f"{ws.day} {ws.strftime('%b')}",
+        "week_end_display":f"{we_display.day} {we_display.strftime('%b %Y')}",
         "generated_utc":datetime.now(timezone.utc).isoformat(),
         "stats":{"total":stats["total"],"tier1":stats["tier1"],"outbreaks":stats["outbreaks"],
                  "delta":stats.get("delta",0),"delta_pct":stats.get("delta_pct",0)},

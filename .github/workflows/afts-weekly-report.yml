@@ -138,13 +138,7 @@ jobs:
         run: |
           python docs/build_weekly_report_afts.py \
             --week-end "${{ github.event.inputs.force_week_end }}" \
-            --xlsx     docs/data/recalls.xlsx \
-            --index    docs/index.html
-
-      - name: Update Weekly nav link across the site
-        if: steps.guard.outputs.run == 'true'
-        run: |
-          python pipeline/update_nav_weekly_link.py
+            --xlsx     docs/data/recalls.xlsx
 
       - name: Commit outputs
         if: steps.guard.outputs.run == 'true'

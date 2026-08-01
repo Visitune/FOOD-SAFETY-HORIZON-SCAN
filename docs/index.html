@@ -37,6 +37,13 @@ body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:1
 .breakdown-row span:last-child{color:#F97316;font-weight:700;font-family:monospace;}
 .trend-wrap{width:100%;overflow-x:auto;}
 .trend-empty{padding:24px;text-align:center;color:#6B7280;font-size:12px;}
+.tab-bar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+.tab-btn{flex:1;min-width:220px;background:#131B2C;border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:10px 16px;text-align:left;cursor:pointer;transition:border-color .15s,background .15s;}
+.tab-btn:hover{border-color:rgba(249,115,22,.4);background:#1A2436;}
+.tab-btn.on{background:rgba(249,115,22,.10);border-color:#F97316;}
+.tab-title{display:block;font-size:14px;font-weight:800;color:#E5E7EB;}
+.tab-btn.on .tab-title{color:#F97316;}
+.tab-sub{display:block;font-size:11px;color:#9CA3AF;margin-top:2px;}
 .panel-note{font-size:10.5px;color:#6B7280;line-height:1.4;margin-bottom:8px;}
 .bd-rate{font-size:10px;color:#6B7280;font-weight:400;margin-left:4px;}
 .news-list{display:flex;flex-direction:column;}
@@ -128,6 +135,18 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       <div class="kpi p"><div class="kv" id="kpiSources">–</div><div class="kl" data-i18n="kpiSources">Sources</div></div>
     </div>
 
+  <div class="tab-bar">
+    <button type="button" class="tab-btn on" id="tabBtnOverview" onclick="showTab('overview')">
+      <span class="tab-title" data-i18n="tabOverviewTitle">📊 Overview</span>
+      <span class="tab-sub" data-i18n="tabOverviewSub">Trends, breakdowns, industry news</span>
+    </button>
+    <button type="button" class="tab-btn" id="tabBtnExplore" onclick="showTab('explore')">
+      <span class="tab-title" data-i18n="tabExploreTitle">🔍 Explore</span>
+      <span class="tab-sub" data-i18n="tabExploreSub">Filter and browse every recall</span>
+    </button>
+  </div>
+
+  <div id="tabOverview">
   <div class="panel" style="margin-bottom:16px;">
     <div class="sec" data-i18n="panelTrend">Monthly Evolution</div>
     <div class="trend-wrap"><div id="trendChart"></div></div>
@@ -158,7 +177,9 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     <div class="sec" data-i18n="panelNews">Latest Industry News</div>
     <div id="newsFeed"><div class="trend-empty" data-i18n="newsLoading">Loading…</div></div>
   </div>
+  </div>
 
+  <div id="tabExplore" style="display:none">
   <div class="panel">
     <div class="sec"><span data-i18n="allRecordsTable">All Pathogen Recalls</span> — <span id="vc"></span></div>
     <div class="filters">
@@ -220,6 +241,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     </div>
     <div class="pag"><span class="pi" id="pi"></span><div class="pbtns" id="pbtns"></div></div>
   </div>
+  </div>
 </div>
 
 <div class="footer">
@@ -245,6 +267,8 @@ const I18N = {
     exportBtn:'↓ Export this view', tier1RateLbl:'Tier-1 rate',
     panelNews:'Latest Industry News', newsLoading:'Loading…', newsEmpty:'No recent news available.',
     newsCatOutbreak:'Outbreak', newsCatRegulatory:'Regulatory',
+    tabOverviewTitle:'📊 Overview', tabOverviewSub:'Trends, breakdowns, industry news',
+    tabExploreTitle:'🔍 Explore', tabExploreSub:'Filter and browse every recall',
     allRecordsTable:'All Pathogen Recalls', searchPlaceholder:'Search firm, product, country, pathogen, lot...',
     allSources:'All Sources', allCountries:'All Countries', allRegions:'All Regions', allProducts:'All Product Types', allPathogens:'All Pathogens', allTiers:'All Tiers',
     tier1Only:'Tier-1 Critical only', tier2Only:'Tier-2 Serious only', tier3Only:'Tier-3 Moderate only',
@@ -265,6 +289,8 @@ const I18N = {
     exportBtn:'↓ Exporter cette vue', tier1RateLbl:'Taux Tier-1',
     panelNews:'Dernières actualités du secteur', newsLoading:'Chargement…', newsEmpty:'Aucune actualité récente disponible.',
     newsCatOutbreak:'Épidémie', newsCatRegulatory:'Réglementaire',
+    tabOverviewTitle:'📊 Vue d\'ensemble', tabOverviewSub:'Tendances, répartitions, actualités',
+    tabExploreTitle:'🔍 Explorer', tabExploreSub:'Filtrer et parcourir tous les rappels',
     allRecordsTable:'Tous les rappels', searchPlaceholder:'Rechercher entreprise, produit, pays, pathogène, lot...',
     allSources:'Toutes les sources', allCountries:'Tous les pays', allRegions:'Toutes les régions', allProducts:'Tous les types de produits', allPathogens:'Tous les pathogènes', allTiers:'Tous les niveaux',
     tier1Only:'Niveau 1 critique uniquement', tier2Only:'Niveau 2 sérieux uniquement', tier3Only:'Niveau 3 modéré uniquement',
@@ -345,7 +371,16 @@ ${dots}${valueLabels}${monthLabels}
 </svg>`;
 }
 
+function showTab(name){
+  const overview=name==='overview';
+  document.getElementById('tabOverview').style.display=overview?'block':'none';
+  document.getElementById('tabExplore').style.display=overview?'none':'block';
+  document.getElementById('tabBtnOverview').classList.toggle('on',overview);
+  document.getElementById('tabBtnExplore').classList.toggle('on',!overview);
+}
+
 function setFilterAndScroll(filterId, value){
+  showTab('explore');
   document.getElementById(filterId).value = value;
   applyFilters();
   document.querySelector('.tbl-wrap').scrollIntoView({behavior:'smooth', block:'start'});

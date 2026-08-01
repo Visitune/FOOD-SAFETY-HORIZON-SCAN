@@ -3,7 +3,7 @@ Food Safety Horizon Scanning - Weekly Report Generator
 Template: 2026-W16.html (gold standard)
 Output: docs/YYYY-WW.html + data/weekly-summary-latest.json
 Reads: docs/data/recalls.xlsx Recalls sheet ONLY.
-Schedule: Friday 10:00 Athens time (dual-DST cron + TZ guard).
+Schedule: Friday 08:00 Paris time (dual-DST cron + TZ guard).
 """
 
 import json, logging, os, re, requests, sys, argparse, html as html_mod
@@ -18,6 +18,98 @@ sys.path.insert(0, str(ROOT))
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
 CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+
+# ---------------------------------------------------------------------------
+# Gemini / Groq fallbacks for the Intelligence Analysis narrative (§01) and
+# its polish pass. No ANTHROPIC_API_KEY is currently configured for this
+# workflow, so Claude always falls straight through today — these give the
+# narrative a real LLM-written pass (Gemini, then Groq) before the
+# deterministic template is used as the last resort. Same key-rotation and
+# calling pattern already used by pipeline/synthesis_writer.py (Gemini) and
+# scrapers/_base.py (Groq).
+# ---------------------------------------------------------------------------
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GROQ_MODEL   = os.getenv("GROQ_MODEL",   "llama-3.3-70b-versatile")
+GROQ_URL     = "https://api.groq.com/openai/v1/chat/completions"
+
+
+def _gemini_api_keys() -> List[str]:
+    keys: List[str] = []
+    for env in ("GEMINI_API_KEY_FREE", "GEMINI_API_KEY_1", "GEMINI_API_KEY_2",
+                "GEMINI_API_KEY_3", "GEMINI_API_KEY_4", "GEMINI_API_KEY_5",
+                "GEMINI_API_KEY", "GOOGLE_API_KEY"):
+        v = (os.getenv(env) or "").strip()
+        if v and v not in keys:
+            keys.append(v)
+    return keys
+
+
+def _call_gemini_text(prompt: str, timeout: int = 60) -> str | None:
+    keys = _gemini_api_keys()
+    if not keys:
+        return None
+    try:
+        from google import genai
+        from google.genai import types
+    except ImportError:
+        log.warning("Gemini fallback: google-genai not installed")
+        return None
+    for idx, key in enumerate(keys, 1):
+        try:
+            client = genai.Client(api_key=key)
+            resp = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(temperature=0.5, max_output_tokens=1200),
+            )
+            text = (getattr(resp, "text", None) or "").strip()
+            if text:
+                log.info("Gemini fallback: key #%d/%d succeeded (%s)", idx, len(keys), GEMINI_MODEL)
+                return text
+        except Exception as e:
+            log.warning("Gemini fallback key #%d exception: %s", idx, e)
+            continue
+    return None
+
+
+def _groq_api_keys() -> List[str]:
+    keys: List[str] = []
+    legacy = os.getenv("GROQ_API_KEY")
+    if legacy:
+        keys.append(legacy.strip())
+    for i in range(1, 6):
+        k = os.getenv(f"GROQ_API_KEY_{i}")
+        if k:
+            keys.append(k.strip())
+    return list(dict.fromkeys(k for k in keys if k))
+
+
+def _call_groq_text(prompt: str, timeout: int = 60) -> str | None:
+    keys = _groq_api_keys()
+    if not keys:
+        return None
+    payload = {
+        "model": GROQ_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.5,
+        "max_tokens": 1200,
+    }
+    for key in keys:
+        try:
+            r = requests.post(GROQ_URL,
+                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+                json=payload, timeout=timeout)
+            if r.status_code == 200:
+                text = (r.json()["choices"][0]["message"]["content"] or "").strip()
+                if text:
+                    log.info("Groq fallback succeeded (%s)", GROQ_MODEL)
+                    return text
+            else:
+                log.warning("Groq fallback HTTP %d: %s", r.status_code, r.text[:200])
+        except Exception as e:
+            log.warning("Groq fallback exception: %s", e)
+            continue
+    return None
 
 SEVERITY = OrderedDict([
     ("clostridium botulinum",1),("botulinum",1),
@@ -773,20 +865,27 @@ Tone: professional, process-engineering voice, no emojis, no bullets, no colons 
         tp, auth_hint)
 
     claude_out = None
-    try:
-        resp = requests.post("https://api.anthropic.com/v1/messages",
-            headers={"Content-Type":"application/json","x-api-key":CLAUDE_API_KEY},
-            json={"model":"claude-sonnet-4-20250514","max_tokens":1200,
-                  "messages":[{"role":"user","content":prompt}]}, timeout=60)
-        if resp.status_code == 200:
-            claude_out = resp.json()["content"][0]["text"]
-        else:
-            log.error("Claude %d", resp.status_code)
-    except Exception as e:
-        log.error("Claude error: %s", e)
+    if CLAUDE_API_KEY:
+        try:
+            resp = requests.post("https://api.anthropic.com/v1/messages",
+                headers={"Content-Type":"application/json","x-api-key":CLAUDE_API_KEY},
+                json={"model":"claude-sonnet-4-20250514","max_tokens":1200,
+                      "messages":[{"role":"user","content":prompt}]}, timeout=60)
+            if resp.status_code == 200:
+                claude_out = resp.json()["content"][0]["text"]
+            else:
+                log.error("Claude %d", resp.status_code)
+        except Exception as e:
+            log.error("Claude error: %s", e)
 
-    # Deterministic fallback for P1-P3 if Claude failed (tail call to _fallback
-    # without bot so it produces only P1-P3).
+    # Gemini, then Groq, before giving up on an LLM-written narrative.
+    if claude_out is None:
+        claude_out = _call_gemini_text(prompt)
+    if claude_out is None:
+        claude_out = _call_groq_text(prompt)
+
+    # Deterministic fallback for P1-P3 if every LLM failed (tail call to
+    # _fallback without bot so it produces only P1-P3).
     if claude_out is None:
         claude_out = _fallback_p1_to_p3(stats, recalls)
 
@@ -1431,20 +1530,30 @@ def _process_authority_note(recalls, bot):
     return ""
 
 def review_with_claude(text):
-    """Optional grammar polish via Claude Haiku 4.5. Returns text unchanged on failure
-    or when ANTHROPIC_API_KEY is not set. (Replaced OpenAI gpt-4o-mini, Apr 2026.)"""
-    if not CLAUDE_API_KEY: return text
-    try:
-        r = requests.post("https://api.anthropic.com/v1/messages",
-            headers={"x-api-key": CLAUDE_API_KEY, "anthropic-version": "2023-06-01",
-                     "Content-Type": "application/json"},
-            json={"model": "claude-haiku-4-5-20251001", "max_tokens": 1200,
-                  "messages": [{"role": "user",
-                    "content": "Review this food safety analysis. Fix grammar. Keep structure/facts. Return polished version only.\n\n" + text}]},
-            timeout=60)
-        if r.status_code == 200:
-            return r.json()["content"][0]["text"]
-    except Exception as e: log.warning("Claude polish: %s", e)
+    """Optional grammar polish. Tries Claude Haiku 4.5 first (Replaced OpenAI
+    gpt-4o-mini, Apr 2026), then Gemini, then Groq. Returns text unchanged
+    if no key is configured or every backend fails."""
+    if CLAUDE_API_KEY:
+        try:
+            r = requests.post("https://api.anthropic.com/v1/messages",
+                headers={"x-api-key": CLAUDE_API_KEY, "anthropic-version": "2023-06-01",
+                         "Content-Type": "application/json"},
+                json={"model": "claude-haiku-4-5-20251001", "max_tokens": 1200,
+                      "messages": [{"role": "user",
+                        "content": "Review this food safety analysis. Fix grammar. Keep structure/facts. Return polished version only.\n\n" + text}]},
+                timeout=60)
+            if r.status_code == 200:
+                return r.json()["content"][0]["text"]
+        except Exception as e: log.warning("Claude polish: %s", e)
+
+    polish_prompt = ("Review this food safety analysis. Fix grammar. Keep "
+                      "structure/facts. Return polished version only.\n\n" + text)
+    out = _call_gemini_text(polish_prompt)
+    if out:
+        return out
+    out = _call_groq_text(polish_prompt)
+    if out:
+        return out
     return text
 
 

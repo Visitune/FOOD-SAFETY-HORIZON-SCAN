@@ -1,19 +1,19 @@
 name: VisiPilot Weekly Updates Check
 
 # ==========================================================================
-# Runs every WEDNESDAY at 09:00 ATHENS TIME.
+# Runs every WEDNESDAY at 09:00 PARIS TIME.
 #
 # Walks the last 4 Friday-ending weeks. If any week's recall count in the
 # current dataset differs from the count baked into the existing HTML
 # report, that week is rebuilt and listed in
 # docs/data/weekly-updates-pending.json.
 #
-# The Apps Script subscriber mailer reads the manifest at 10:00 Athens
-# (1h later) and sends one combined update email if any weeks changed.
-# Empty manifest = no email = silent skip.
+# The Apps Script subscriber mailer (Athens time, external) reads the
+# manifest about an hour later and sends one combined update email if any
+# weeks changed. Empty manifest = no email = silent skip.
 #
-# Two DST crons + Athens hour-guard, identical pattern to the rest of
-# VisiPilot. Athens 09:00 = UTC 06:00 (summer EEST) / 07:00 (winter EET).
+# Two DST crons + Paris hour-guard, identical pattern to the rest of
+# VisiPilot. Paris 09:00 = UTC 08:00 (winter CET) / UTC 07:00 (summer CEST).
 # Cron uses min/hour/dom/mon/dow with Sunday=0, so Wednesday=3.
 #
 # Hardened 2026-05-09:
@@ -32,13 +32,13 @@ name: VisiPilot Weekly Updates Check
 # ==========================================================================
 
 on:
-  # Native GitHub cron below, every Wednesday at 09:00 Athens.
+  # Native GitHub cron below, every Wednesday at 09:00 Paris.
   workflow_dispatch: {}   # manual run / catch-up
   schedule:
-    # Wednesday 09:00 Athens — winter (EET, UTC+2) → Wed 07:00 UTC
-    - cron: "0 7 * 1,2,3,11,12 3"
-    # Wednesday 09:00 Athens — summer (EEST, UTC+3) → Wed 06:00 UTC
-    - cron: "0 6 * 4,5,6,7,8,9,10 3"
+    # Wednesday 09:00 Paris — winter (CET, UTC+1) → Wed 08:00 UTC
+    - cron: "0 8 * 1,2,3,11,12 3"
+    # Wednesday 09:00 Paris — summer (CEST, UTC+2) → Wed 07:00 UTC
+    - cron: "0 7 * 4,5,6,7,8,9,10 3"
 
 permissions:
   contents: write
@@ -53,21 +53,21 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Athens-time guard (Wednesday 09:xx Athens)
+      - name: Paris-time guard (Wednesday 09:xx Paris)
         id: guard
         run: |
-          HOUR=$(TZ=Europe/Athens date +%H)
-          DOW=$(TZ=Europe/Athens date +%u)   # 1=Mon .. 7=Sun
-          echo "athens_hour=$HOUR dow=$DOW"
+          HOUR=$(TZ=Europe/Paris date +%H)
+          DOW=$(TZ=Europe/Paris date +%u)   # 1=Mon .. 7=Sun
+          echo "paris_hour=$HOUR dow=$DOW"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "Manually dispatched — running."
           elif [ "$HOUR" = "09" ] && [ "$DOW" = "3" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Athens Wednesday 09:xx — running."
+            echo "Paris Wednesday 09:xx — running."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Skip: not Athens Wednesday 09:xx (DOW=$DOW hour=$HOUR)."
+            echo "Skip: not Paris Wednesday 09:xx (DOW=$DOW hour=$HOUR)."
           fi
 
       - name: Checkout
@@ -179,7 +179,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Weekly updates check $(TZ=Europe/Athens date +%Y-%m-%d)"
+          git commit -m "Weekly updates check $(TZ=Europe/Paris date +%Y-%m-%d)"
 
           # Push with retry. On rejection, fetch + rebase WITHOUT autostash
           # (we have no working-tree changes — we already committed). If
@@ -220,7 +220,7 @@ jobs:
       - name: Summary
         if: steps.guard.outputs.run == 'true' && always()
         run: |
-          echo "Weekly updates check complete — Athens $(TZ=Europe/Athens date)"
+          echo "Weekly updates check complete — Paris $(TZ=Europe/Paris date)"
           MANIFEST=docs/data/weekly-updates-pending.json
           if [ ! -f "$MANIFEST" ]; then
             echo "No manifest written."

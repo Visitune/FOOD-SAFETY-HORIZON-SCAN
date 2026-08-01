@@ -83,7 +83,7 @@ output prose.
 ============================================================================
 CADENCE (run from .github/workflows/synthesis-writer-*.yml)
 ============================================================================
-Weekly:  Friday 08:30 Athens — after the 08:00 weekly builder commits at ~08:15
+Weekly:  Friday 08:30 Paris — after the 08:00 weekly builder commits at ~08:15
 Monthly: Day-1 09:30 Athens — after the 09:00 monthly builder commits at ~09:15
 
 ============================================================================
@@ -383,10 +383,60 @@ def _call_gemini(prompt: str, timeout: int = 60) -> Optional[str]:
     return None
 
 
+def _call_groq(prompt: str, timeout: int = 60) -> Optional[str]:
+    """Call Groq (OpenAI-compatible endpoint). Tries GROQ_API_KEY, then
+    GROQ_API_KEY_1..5 — mirrors the rotation used by scrapers/_base.py so
+    this writer benefits from the same key pool."""
+    keys = []
+    legacy = (os.environ.get("GROQ_API_KEY") or "").strip()
+    if legacy:
+        keys.append(legacy)
+    for i in range(1, 6):
+        k = (os.environ.get(f"GROQ_API_KEY_{i}") or "").strip()
+        if k and k not in keys:
+            keys.append(k)
+    if not keys:
+        log.info("groq backend: no API key configured — skipping")
+        return None
+    try:
+        import requests  # type: ignore
+    except ImportError:
+        log.warning("groq backend: requests not installed — skipping")
+        return None
+    model_name = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+    for idx, key in enumerate(keys, 1):
+        try:
+            r = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={"Authorization": f"Bearer {key}",
+                         "Content-Type": "application/json"},
+                json={
+                    "model": model_name,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.4,
+                    "max_tokens": 600,
+                },
+                timeout=timeout,
+            )
+            if r.status_code != 200:
+                log.warning("groq backend HTTP %d: %s", r.status_code, r.text[:200])
+                continue
+            text = (r.json()["choices"][0]["message"]["content"] or "").strip()
+            if text:
+                log.info("groq backend: key #%d/%d succeeded (%s)",
+                         idx, len(keys), model_name)
+                return text
+        except Exception as e:  # noqa: BLE001
+            log.warning("groq backend key #%d exception: %s", idx, e)
+            continue
+    return None
+
+
 # Ordered backend list. New providers (VisiPilot in-house model) plug in at the top.
 _SYNTHESIS_BACKENDS: list[Tuple[str, Callable[[str, int], Optional[str]]]] = [
     ("anthropic", _call_anthropic),
     ("gemini",    _call_gemini),
+    ("groq",      _call_groq),
 ]
 
 

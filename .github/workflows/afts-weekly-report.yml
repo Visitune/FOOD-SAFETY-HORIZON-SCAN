@@ -1,12 +1,14 @@
 name: VisiPilot Weekly Report
 
 # ==========================================================================
-# Runs every FRIDAY at 08:00 ATHENS TIME (not UTC).
-# Two DST crons + hour guard — identical pattern to afts-monthly-report.yml.
+# Runs every FRIDAY at 08:00 PARIS TIME (not UTC).
+# Two DST crons + hour guard, same pattern as the rest of the repo's
+# schedulers (Paris and Athens share the EU DST calendar, so Paris is a
+# constant 1h behind Athens year-round).
 #
-# Timeline each Friday (all Athens time):
-#   08:00  this workflow fires → builds HTML, PDF, updates index
-#   ~08:15 committed + pushed → GitHub Pages rebuilds
+# Timeline each Friday (all Paris time):
+#   08:00  this workflow fires → builds HTML, updates index
+#   ~08:15 committed + pushed → Vercel rebuilds
 #   10:00  report is live on dashboard index (as the new W<nn> card)
 #   12:00  Google Apps Script mailer (EXTERNAL — lives in Apps Script,
 #          not this repo) reads docs/data/weekly-summary-latest.json and
@@ -17,7 +19,7 @@ name: VisiPilot Weekly Report
 # matching the W16 gold standard. Builder's --week-end flag expects a Friday.
 # Builder reads docs/data/recalls.xlsx Recalls sheet ONLY — never Pending,
 # never News. News is displayed separately on the dashboard but NOT in
-# the weekly report (recalls only, per George's spec).
+# the weekly report (recalls only, by design).
 # ==========================================================================
 
 on:
@@ -29,6 +31,11 @@ on:
       backfill_from:
         description: "YYYY-MM-DD (a Friday): oldest week to check in gap-fill"
         required: false
+  schedule:
+    # Friday 08:00 Paris — winter (CET, UTC+1) → 07:00 UTC
+    - cron: "0 7 * 1,2,3,11,12 5"
+    # Friday 08:00 Paris — summer (CEST, UTC+2) → 06:00 UTC
+    - cron: "0 6 * 4,5,6,7,8,9,10 5"
 
 permissions:
   contents: write
@@ -42,20 +49,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Athens-time guard
+      - name: Paris-time guard
         id: guard
         run: |
-          HOUR=$(TZ=Europe/Athens date +%H)
-          DOW=$(TZ=Europe/Athens date +%u)   # 1=Mon .. 7=Sun
-          echo "athens_hour=$HOUR dow=$DOW"
+          HOUR=$(TZ=Europe/Paris date +%H)
+          DOW=$(TZ=Europe/Paris date +%u)   # 1=Mon .. 7=Sun
+          echo "paris_hour=$HOUR dow=$DOW"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           elif [ "$HOUR" -ge "06" ] && [ "$HOUR" -le "12" ] && [ "$DOW" = "5" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Athens Friday 08:xx — running."
+            echo "Paris Friday 08:xx — running."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Not Athens Friday 08:xx (now DOW=$DOW hour=$HOUR). Skipping."
+            echo "Not Paris Friday 08:xx (now DOW=$DOW hour=$HOUR). Skipping."
           fi
 
       - name: Checkout
@@ -80,9 +87,9 @@ jobs:
         id: week
         run: |
           # Weekly reports cover 7 days ending on FRIDAY (Sat..Fri span, per W16 gold standard).
-          # Scheduled runs fire Friday 08:00 Athens, so today IS the week-end Friday.
+          # Scheduled runs fire Friday 08:00 Paris, so today IS the week-end Friday.
           # For manual workflow_dispatch on non-Fridays, snap back to the most recent Friday.
-          WEEK_END=$(TZ=Europe/Athens python -c "
+          WEEK_END=$(TZ=Europe/Paris python -c "
           from datetime import date, timedelta
           t = date.today()
           days_since_friday = (t.weekday() - 4) % 7   # Monday=0, Friday=4; 0 if today is Friday
@@ -96,6 +103,13 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
+          GEMINI_API_KEY_1:  ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2:  ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3:  ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4:  ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_API_KEY_5:  ${{ secrets.GEMINI_API_KEY_5 }}
+          GROQ_API_KEY:      ${{ secrets.GROQ_API_KEY }}
           BACKFILL_FROM:     ${{ github.event.inputs.backfill_from || '' }}
           THIS_WEEK_END:     ${{ steps.week.outputs.week_end }}
           # Number of most-recent Fridays the builder ALWAYS rebuilds against
@@ -114,6 +128,13 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
+          GEMINI_API_KEY_1:  ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2:  ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3:  ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4:  ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_API_KEY_5:  ${{ secrets.GEMINI_API_KEY_5 }}
+          GROQ_API_KEY:      ${{ secrets.GROQ_API_KEY }}
         run: |
           python docs/build_weekly_report_afts.py \
             --week-end "${{ github.event.inputs.force_week_end }}" \
@@ -140,13 +161,12 @@ jobs:
                   docs/index.html \
                   docs/guide.html \
                   docs/hub.html \
-                  docs/alerts.html \
                   'docs/2026-M*.html' || true
           if git diff --staged --quiet; then
             echo "No weekly-report changes to commit."
             exit 0
           fi
-          COMMIT_MSG="Weekly report build $(TZ=Europe/Athens date +%Y-%m-%d)"
+          COMMIT_MSG="Weekly report build $(TZ=Europe/Paris date +%Y-%m-%d)"
           git commit -m "$COMMIT_MSG"
 
           for attempt in 1 2 3; do
@@ -164,5 +184,5 @@ jobs:
       - name: Summary
         if: steps.guard.outputs.run == 'true' && always()
         run: |
-          echo "Weekly run complete — Athens time $(TZ=Europe/Athens date)."
+          echo "Weekly run complete — Paris time $(TZ=Europe/Paris date)."
           echo "Apps Script mailer fires 12:00 Athens reading weekly-summary-latest.json."

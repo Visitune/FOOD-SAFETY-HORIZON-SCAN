@@ -1,23 +1,22 @@
 name: VisiPilot Synthesis Writer — Weekly
 
 # ==========================================================================
-# Friday 08:30 ATHENS — runs ~30 min after the weekly builder commits at 08:00.
-# That window covers: builder build (~5 min) + commit (~30s) + Pages deploy
-# (~10 min) + buffer. By 08:30 the new weekly-summary-latest.json is on
-# Pages with ai_lead_paragraph="" ready to be filled.
+# Friday 08:30 PARIS — runs ~30 min after the weekly builder commits at 08:00
+# Paris. That window covers: builder build (~5 min) + commit (~30s) + Vercel
+# deploy (~10 min) + buffer. By 08:30 the new weekly-summary-latest.json is
+# live with ai_lead_paragraph="" ready to be filled.
 #
-# Timeline each Friday (all Athens time):
+# Timeline each Friday (all Paris time):
 #   08:00  VisiPilot Weekly Report builds + commits weekly-summary-latest.json
 #          (ai_lead_paragraph="")
 #   08:30  THIS WORKFLOW → reads the JSON, generates synthesis via LLM,
 #          writes ai_lead_paragraph back, commits.
-#   09:00  Mailer review preview fires (Apps Script) → the reviewer sees
-#          the synthesis in the [REVIEW] email body.
+#   09:00  Mailer review preview fires (Apps Script, Athens time) → the
+#          reviewer sees the synthesis in the [REVIEW] email body.
 #   12:30  Mailer mass send → subscribers see the Intelligence Summary
 #          section populated.
 #
-# Dispatched by FsisScheduler.gs — add halfHourly slot "08:30": ["synthesis-writer-weekly.yml"]
-# guarded to Friday only.
+# Native cron below (no longer dependent on FsisScheduler.gs).
 #
 # Failure posture: if synthesis fails (LLM down, rate-limited, deterministic
 # fallback also crashes), the field stays "" and the mailer cleanly skips
@@ -32,10 +31,10 @@ on:
         required: false
         default: "false"
   schedule:
-    # Friday 08:30 Athens — winter (EET, UTC+2) → Fri 06:30 UTC
-    - cron: "30 6 * 1,2,3,11,12 5"
-    # Friday 08:30 Athens — summer (EEST, UTC+3) → Fri 05:30 UTC
-    - cron: "30 5 * 4,5,6,7,8,9,10 5"
+    # Friday 08:30 Paris — winter (CET, UTC+1) → Fri 07:30 UTC
+    - cron: "30 7 * 1,2,3,11,12 5"
+    # Friday 08:30 Paris — summer (CEST, UTC+2) → Fri 06:30 UTC
+    - cron: "30 6 * 4,5,6,7,8,9,10 5"
 
 permissions:
   contents: write
@@ -49,19 +48,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Athens-time guard
+      - name: Paris-time guard
         id: guard
         run: |
-          HOUR=$(TZ=Europe/Athens date +%H)
-          MIN=$(TZ=Europe/Athens date +%M)
-          DOW=$(TZ=Europe/Athens date +%u)   # 1=Mon .. 7=Sun
-          echo "athens=${HOUR}:${MIN} dow=${DOW}"
+          HOUR=$(TZ=Europe/Paris date +%H)
+          MIN=$(TZ=Europe/Paris date +%M)
+          DOW=$(TZ=Europe/Paris date +%u)   # 1=Mon .. 7=Sun
+          echo "paris=${HOUR}:${MIN} dow=${DOW}"
           # Manual dispatch is always allowed; scheduled dispatch is gated.
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "manual=1 (skipping guard)"
             echo "run=1" >> "$GITHUB_OUTPUT"
           else
-            # Must be Friday between 08:00 and 11:59 Athens
+            # Must be Friday between 08:00 and 11:59 Paris
             if [ "$DOW" = "5" ] && [ "$HOUR" -ge "08" ] && [ "$HOUR" -lt "12" ]; then
               echo "run=1" >> "$GITHUB_OUTPUT"
             else
@@ -116,4 +115,4 @@ jobs:
       - name: Skip note
         if: steps.guard.outputs.run != '1'
         run: |
-          echo "Outside the Friday 08:00-11:59 Athens window — skipping."
+          echo "Outside the Friday 08:00-11:59 Paris window — skipping."

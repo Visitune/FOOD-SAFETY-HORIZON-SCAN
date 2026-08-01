@@ -37,6 +37,8 @@ body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:1
 .breakdown-row span:last-child{color:#F97316;font-weight:700;font-family:monospace;}
 .trend-wrap{width:100%;overflow-x:auto;}
 .trend-empty{padding:24px;text-align:center;color:#6B7280;font-size:12px;}
+.panel-note{font-size:10.5px;color:#6B7280;line-height:1.4;margin-bottom:8px;}
+.bd-rate{font-size:10px;color:#6B7280;font-weight:400;margin-left:4px;}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}
 .filters input,.filters select{background:#0B1120;border:1px solid rgba(255,255,255,.10);color:#E5E7EB;padding:7px 10px;border-radius:4px;font-size:12px;font-family:'JetBrains Mono',monospace;outline:none;}
 .filters input{flex:1;min-width:200px;}.filters input::placeholder{color:#4B5563;}
@@ -126,10 +128,12 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     </div>
     <div class="panel">
       <div class="sec" data-i18n="panelSources">By Source</div>
+      <div class="panel-note" data-i18n="biasNote">Volume reflects each regulator's publication practice, not necessarily the real-world incident rate. Tier-1 % is a less volume-sensitive comparison.</div>
       <div id="bySource"></div>
     </div>
     <div class="panel">
       <div class="sec" data-i18n="panelCountries">By Country</div>
+      <div class="panel-note" data-i18n="biasNote">Volume reflects each regulator's publication practice, not necessarily the real-world incident rate. Tier-1 % is a less volume-sensitive comparison.</div>
       <div id="byCountry"></div>
     </div>
     <div class="panel">
@@ -187,6 +191,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
         <option value="9999" data-i18n="allRecords">All records</option>
       </select>
       <button class="pb" id="clearFilters" style="display:none" onclick="clearAllFilters()">✕</button>
+      <button class="pb" id="exportBtn" onclick="exportSnapshot()" data-i18n="exportBtn">↓ Export this view</button>
       <span class="pi" id="fcnt"></span>
     </div>
     <div class="tbl-wrap">
@@ -219,6 +224,8 @@ const I18N = {
     kpiTotal:'Total Recalls in DB', kpiTier1:'Tier-1 Critical', kpiOutbreaks:'Active Outbreaks', kpiPathogens:'Distinct Pathogens', kpiCountries:'Countries', kpiSources:'Sources',
     panelPathogens:'Top Pathogens (All Sources)', panelSources:'By Source', panelCountries:'By Country', panelProducts:'By Product Type', panelTrend:'Monthly Evolution',
     trendNotEnough:'Not enough monthly data points to plot a trend for the current filters.',
+    biasNote:"Volume reflects each regulator's publication practice, not necessarily the real-world incident rate. Tier-1 % is a less volume-sensitive comparison.",
+    exportBtn:'↓ Export this view', tier1RateLbl:'Tier-1 rate',
     allRecordsTable:'All Pathogen Recalls', searchPlaceholder:'Search firm, product, country, pathogen, lot...',
     allSources:'All Sources', allCountries:'All Countries', allRegions:'All Regions', allProducts:'All Product Types', allPathogens:'All Pathogens', allTiers:'All Tiers',
     tier1Only:'Tier-1 Critical only', tier2Only:'Tier-2 Serious only', tier3Only:'Tier-3 Moderate only',
@@ -235,6 +242,8 @@ const I18N = {
     kpiTotal:'Rappels au total', kpiTier1:'Niveau 1 critique', kpiOutbreaks:'Épidémies actives', kpiPathogens:'Pathogènes distincts', kpiCountries:'Pays', kpiSources:'Sources',
     panelPathogens:'Pathogènes principaux (toutes sources)', panelSources:'Par source', panelCountries:'Par pays', panelProducts:'Par type de produit', panelTrend:'Évolution mensuelle',
     trendNotEnough:'Pas assez de mois de données pour tracer une tendance avec ces filtres.',
+    biasNote:"Le volume reflète l'exhaustivité de publication de chaque régulateur, pas nécessairement la fréquence réelle des incidents. Le taux Tier-1 est une comparaison moins sensible au volume.",
+    exportBtn:'↓ Exporter cette vue', tier1RateLbl:'Taux Tier-1',
     allRecordsTable:'Tous les rappels', searchPlaceholder:'Rechercher entreprise, produit, pays, pathogène, lot...',
     allSources:'Toutes les sources', allCountries:'Tous les pays', allRegions:'Toutes les régions', allProducts:'Tous les types de produits', allPathogens:'Tous les pathogènes', allTiers:'Tous les niveaux',
     tier1Only:'Niveau 1 critique uniquement', tier2Only:'Niveau 2 sérieux uniquement', tier3Only:'Niveau 3 modéré uniquement',
@@ -278,12 +287,13 @@ function populateSelect(id,values,allLabel,allKey){
   el.innerHTML=`<option value="" data-i18n="${allKey}">${allLabel}</option>`+values.map(v=>`<option value="${String(v).replace(/"/g,'&quot;')}">${v}</option>`).join('');
 }
 
-function breakdownPanel(elId, counts, filterId, max){
+function breakdownPanel(elId, counts, filterId, max, tier1Counts){
   const entries=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,max||10);
   const top=entries.length?entries[0][1]:0;
   document.getElementById(elId).innerHTML=entries.map(([k,c])=>{
     const w=top?Math.max(4,(c/top)*100):0;
-    return `<div class="breakdown-row" onclick="setFilterAndScroll('${filterId}', '${String(k).replace(/'/g,"\\'")}')"><div class="bd-bar" style="width:${w.toFixed(1)}%"></div><span>${k}</span><span>${c}</span></div>`;
+    const rate=tier1Counts&&c?`<span class="bd-rate">(${Math.round((tier1Counts[k]||0)/c*100)}% ${t('tier1RateLbl')})</span>`:'';
+    return `<div class="breakdown-row" onclick="setFilterAndScroll('${filterId}', '${String(k).replace(/'/g,"\\'")}')"><div class="bd-bar" style="width:${w.toFixed(1)}%"></div><span>${k}</span><span>${c}${rate}</span></div>`;
   }).join('');
 }
 
@@ -339,18 +349,18 @@ function computeSummary(data){
   const pathCounts={};
   data.forEach(r=>{const p=r.Pathogen||'Unknown';pathCounts[p]=(pathCounts[p]||0)+1;});
   document.getElementById('kpiPathogens').textContent=Object.keys(pathCounts).length;
-  const ctryCounts={};
-  data.forEach(r=>{if(r.Country)ctryCounts[r.Country]=(ctryCounts[r.Country]||0)+1;});
+  const ctryCounts={}, ctryTier1={};
+  data.forEach(r=>{if(r.Country){ctryCounts[r.Country]=(ctryCounts[r.Country]||0)+1;if(r.Tier==1)ctryTier1[r.Country]=(ctryTier1[r.Country]||0)+1;}});
   document.getElementById('kpiCountries').textContent=Object.keys(ctryCounts).length;
-  const srcCounts={};
-  data.forEach(r=>{srcCounts[r.Source]=(srcCounts[r.Source]||0)+1;});
+  const srcCounts={}, srcTier1={};
+  data.forEach(r=>{srcCounts[r.Source]=(srcCounts[r.Source]||0)+1;if(r.Tier==1)srcTier1[r.Source]=(srcTier1[r.Source]||0)+1;});
   document.getElementById('kpiSources').textContent=Object.keys(srcCounts).length;
   const prodCounts={};
   data.forEach(r=>{const c=prodCat(r.Product);prodCounts[c]=(prodCounts[c]||0)+1;});
 
   breakdownPanel('topPathogens', pathCounts, 'pathf', 8);
-  breakdownPanel('bySource', srcCounts, 'srcf', 10);
-  breakdownPanel('byCountry', ctryCounts, 'ctryf', 10);
+  breakdownPanel('bySource', srcCounts, 'srcf', 10, srcTier1);
+  breakdownPanel('byCountry', ctryCounts, 'ctryf', 10, ctryTier1);
   breakdownPanel('byProduct', prodCounts, 'prodf', 8);
 }
 
@@ -422,6 +432,91 @@ function render(){
   let lo=Math.max(1,cur-2),hi=Math.min(pages,lo+4);lo=Math.max(1,hi-4);
   for(let i=lo;i<=hi;i++)btn(i,i,i===cur);
   if(cur<pages)btn('›',cur+1,false);btn('»',pages,false);
+}
+
+function exportSnapshot(){
+  const now=new Date();
+  const stamp=now.toISOString().slice(0,16).replace('T',' ')+' UTC';
+  const fileStamp=now.toISOString().slice(0,16).replace('T','-').replace(':','');
+
+  const filterLabels={srch:'Search',srcf:'Source',ctryf:'Country',regf:'Region',prodf:'Product Type',pathf:'Pathogen',tierf:'Tier'};
+  const activeFilters=Object.keys(filterLabels)
+    .map(id=>({id,label:filterLabels[id],val:document.getElementById(id).value}))
+    .filter(f=>f.val);
+  const filtersHtml=activeFilters.length
+    ? activeFilters.map(f=>`<span style="display:inline-block;background:#131B2C;border:1px solid rgba(255,255,255,.10);border-radius:4px;padding:3px 9px;margin:0 6px 6px 0;font-size:11px;">${f.label}: <b style="color:#F97316">${String(f.val).replace(/</g,'&lt;')}</b></span>`).join('')
+    : '<span style="color:#6B7280;font-size:12px;">No filters applied — full dataset</span>';
+
+  const total=filtered.length;
+  const tier1=filtered.filter(r=>r.Tier==1).length;
+  const outbreaks=filtered.filter(r=>r.Outbreak).length;
+  const countries=new Set(filtered.map(r=>r.Country).filter(Boolean)).size;
+
+  const rows=filtered.map(r=>{
+    const ob=r.Outbreak?'<span class="ob">OUTBREAK</span>':'';
+    const link=r.URL&&r.URL!=='#'?`<a href="${r.URL}" target="_blank" style="color:#F97316;font-size:11px;text-decoration:none;">Source ↗</a>`:'—';
+    return`<tr>
+<td style="font-family:monospace;font-size:11px;color:#666;white-space:nowrap;">${r.Date||''}</td>
+<td>${sc(r.Source)}</td>
+<td style="font-weight:500;font-size:12px;">${(r.Company||'').replace(/</g,'&lt;')}${ob}</td>
+<td style="color:#bbb;font-size:11px;">${(r.Product||'').replace(/</g,'&lt;')}</td>
+<td><span class="badge ${pb(r.Pathogen)}">${r.Pathogen||'—'}</span></td>
+<td>${tb(r.Tier)}</td>
+<td style="font-size:11px;color:#888;">${r.Country||''}</td>
+<td>${link}</td>
+</tr>`;
+  }).join('');
+
+  const html=`<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8">
+<title>Food Safety Horizon Scanning — Snapshot ${stamp}</title>
+<style>
+*{box-sizing:border-box;}
+body{background:#0B1120;color:#E5E7EB;font-family:'Inter',Arial,sans-serif;font-size:14px;margin:0;padding:24px;}
+h1{font-size:18px;margin:0 0 4px;}
+.meta{font-family:monospace;font-size:11px;color:#6B7280;margin-bottom:18px;}
+.kpi-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px;}
+.kpi{background:#131B2C;border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:10px 16px;min-width:110px;}
+.kv{font-size:22px;font-weight:800;color:#F97316;}
+.kl{font-size:10px;color:#9CA3AF;text-transform:uppercase;letter-spacing:.06em;}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
+th{text-align:left;padding:8px;font-size:10px;color:#6B7280;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.10);}
+td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:middle;}
+.badge{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;white-space:nowrap;font-family:monospace;}
+.b-l{background:rgba(249,115,22,.15);color:#ff8c5a;border:1px solid rgba(249,115,22,.3);}
+.b-e{background:rgba(212,160,23,.15);color:#f0c040;border:1px solid rgba(212,160,23,.3);}
+.b-s{background:rgba(91,155,213,.15);color:#7ab8e8;border:1px solid rgba(91,155,213,.3);}
+.b-b{background:rgba(156,39,176,.15);color:#ce93d8;border:1px solid rgba(156,39,176,.3);}
+.b-n{background:rgba(76,175,128,.15);color:#80d4a8;border:1px solid rgba(76,175,128,.3);}
+.b-a{background:rgba(255,152,0,.15);color:#ffb74d;border:1px solid rgba(255,152,0,.3);}
+.b-c{background:rgba(233,30,99,.15);color:#f48fb1;border:1px solid rgba(233,30,99,.3);}
+.b-o{background:rgba(255,255,255,.05);color:#6B7280;border:1px solid rgba(255,255,255,.10);}
+.ob{display:inline-block;background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.4);color:#F97316;font-size:9px;padding:1px 5px;border-radius:2px;font-family:monospace;font-weight:700;margin-left:4px;}
+.foot{margin-top:20px;font-size:11px;color:#6B7280;font-family:monospace;}
+@media print{body{background:#fff;color:#111;} .kpi{background:#f1f1f1;} th{color:#555;} td{border-color:#ddd;}}
+</style></head><body>
+<h1>Food Safety · Horizon Scanning — Snapshot</h1>
+<div class="meta">Exported ${stamp} · Source: food-safety-horizon-scan.vercel.app · This is a point-in-time export, not a live view</div>
+<div style="margin-bottom:14px;">${filtersHtml}</div>
+<div class="kpi-row">
+<div class="kpi"><div class="kv">${total}</div><div class="kl">Recalls in view</div></div>
+<div class="kpi"><div class="kv">${tier1}</div><div class="kl">Tier-1 Critical</div></div>
+<div class="kpi"><div class="kv">${outbreaks}</div><div class="kl">Active Outbreaks</div></div>
+<div class="kpi"><div class="kv">${countries}</div><div class="kl">Countries</div></div>
+</div>
+<table><thead><tr><th>Date</th><th>Source</th><th>Firm</th><th>Product</th><th>Pathogen</th><th>Bio Risk</th><th>Country</th><th>Link</th></tr></thead>
+<tbody>${rows}</tbody></table>
+<div class="foot">Generated by Food Safety Horizon Scanning · Every record links to its official regulator source · This snapshot reflects the filters active at export time and does not update.</div>
+</body></html>`;
+
+  const blob=new Blob([html],{type:'text/html'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=`fshs-snapshot-${fileStamp}.html`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 ['srch','srcf','pathf','tierf','ctryf','regf','prodf'].forEach(id=>document.getElementById(id).addEventListener(id==='srch'?'input':'change',applyFilters));

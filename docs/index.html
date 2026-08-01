@@ -39,6 +39,18 @@ body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:1
 .trend-empty{padding:24px;text-align:center;color:#6B7280;font-size:12px;}
 .panel-note{font-size:10.5px;color:#6B7280;line-height:1.4;margin-bottom:8px;}
 .bd-rate{font-size:10px;color:#6B7280;font-weight:400;margin-left:4px;}
+.news-list{display:flex;flex-direction:column;}
+.news-item{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:8px 0;border-bottom:1px solid #0B1120;}
+.news-item:last-child{border-bottom:none;}
+.news-main{flex:1;min-width:0;}
+.news-title{font-size:12.5px;color:#E5E7EB;text-decoration:none;}
+.news-title:hover{color:#F97316;text-decoration:underline;}
+.news-meta{display:flex;gap:8px;align-items:center;margin-top:3px;flex-wrap:wrap;}
+.news-src{font-size:10px;color:#9CA3AF;font-family:'JetBrains Mono',monospace;}
+.news-date{font-size:10px;color:#6B7280;font-family:'JetBrains Mono',monospace;white-space:nowrap;flex-shrink:0;}
+.news-cat{font-size:9px;font-weight:700;padding:1px 6px;border-radius:2px;font-family:monospace;text-transform:uppercase;letter-spacing:.04em;}
+.news-cat.outbreak{background:rgba(249,115,22,.15);color:#ff8c5a;border:1px solid rgba(249,115,22,.3);}
+.news-cat.regulatory{background:rgba(91,155,213,.15);color:#7ab8e8;border:1px solid rgba(91,155,213,.3);}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}
 .filters input,.filters select{background:#0B1120;border:1px solid rgba(255,255,255,.10);color:#E5E7EB;padding:7px 10px;border-radius:4px;font-size:12px;font-family:'JetBrains Mono',monospace;outline:none;}
 .filters input{flex:1;min-width:200px;}.filters input::placeholder{color:#4B5563;}
@@ -142,6 +154,11 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     </div>
   </div>
 
+  <div class="panel" style="margin-bottom:16px;">
+    <div class="sec" data-i18n="panelNews">Latest Industry News</div>
+    <div id="newsFeed"><div class="trend-empty" data-i18n="newsLoading">Loading…</div></div>
+  </div>
+
   <div class="panel">
     <div class="sec"><span data-i18n="allRecordsTable">All Pathogen Recalls</span> — <span id="vc"></span></div>
     <div class="filters">
@@ -213,7 +230,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 </div>
 
 <script>
-let ALL=[],filtered=[],cur=1,lang='en';
+let ALL=[],filtered=[],cur=1,lang='en',NEWS_ITEMS=[];
 const SRC_CSS={"FDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "USDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "USDA-FSIS": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px solid rgba(91,155,213,.25);", "RASFF": "background:rgba(76,175,128,.12);color:#80d4a8;border:1px solid rgba(76,175,128,.25);", "RASFF (EU)": "background:rgba(76,175,128,.12);color:#80d4a8;border:1px solid rgba(76,175,128,.25);", "EFET_GR": "background:rgba(30,136,229,.12);color:#64b5f6;border:1px solid rgba(30,136,229,.25);", "AFSCA_BE": "background:rgba(255,193,7,.12);color:#ffd54f;border:1px solid rgba(255,193,7,.25);", "BVL_DE": "background:rgba(244,67,54,.12);color:#ef9a9a;border:1px solid rgba(244,67,54,.25);", "RAPPELCONSO_FR": "background:rgba(206,147,216,.12);color:#ce93d8;border:1px solid rgba(206,147,216,.25);", "CFIA": "background:rgba(255,112,67,.12);color:#ffab91;border:1px solid rgba(255,112,67,.25);", "FSANZ": "background:rgba(77,182,172,.12);color:#80cbc4;border:1px solid rgba(77,182,172,.25);", "FSA_UK": "background:rgba(158,158,158,.12);color:#bdbdbd;border:1px solid rgba(158,158,158,.25);", "FSN": "background:rgba(255,255,255,.05);color:#777;border:1px solid #2a2a2a;", "NEWS": "background:rgba(255,255,255,.05);color:#777;border:1px solid #2a2a2a;"};
 
 const I18N = {
@@ -226,6 +243,8 @@ const I18N = {
     trendNotEnough:'Not enough monthly data points to plot a trend for the current filters.',
     biasNote:"Volume reflects each regulator's publication practice, not necessarily the real-world incident rate. Tier-1 % is a less volume-sensitive comparison.",
     exportBtn:'↓ Export this view', tier1RateLbl:'Tier-1 rate',
+    panelNews:'Latest Industry News', newsLoading:'Loading…', newsEmpty:'No recent news available.',
+    newsCatOutbreak:'Outbreak', newsCatRegulatory:'Regulatory',
     allRecordsTable:'All Pathogen Recalls', searchPlaceholder:'Search firm, product, country, pathogen, lot...',
     allSources:'All Sources', allCountries:'All Countries', allRegions:'All Regions', allProducts:'All Product Types', allPathogens:'All Pathogens', allTiers:'All Tiers',
     tier1Only:'Tier-1 Critical only', tier2Only:'Tier-2 Serious only', tier3Only:'Tier-3 Moderate only',
@@ -244,6 +263,8 @@ const I18N = {
     trendNotEnough:'Pas assez de mois de données pour tracer une tendance avec ces filtres.',
     biasNote:"Le volume reflète l'exhaustivité de publication de chaque régulateur, pas nécessairement la fréquence réelle des incidents. Le taux Tier-1 est une comparaison moins sensible au volume.",
     exportBtn:'↓ Exporter cette vue', tier1RateLbl:'Taux Tier-1',
+    panelNews:'Dernières actualités du secteur', newsLoading:'Chargement…', newsEmpty:'Aucune actualité récente disponible.',
+    newsCatOutbreak:'Épidémie', newsCatRegulatory:'Réglementaire',
     allRecordsTable:'Tous les rappels', searchPlaceholder:'Rechercher entreprise, produit, pays, pathogène, lot...',
     allSources:'Toutes les sources', allCountries:'Tous les pays', allRegions:'Toutes les régions', allProducts:'Tous les types de produits', allPathogens:'Tous les pathogènes', allTiers:'Tous les niveaux',
     tier1Only:'Niveau 1 critique uniquement', tier2Only:'Niveau 2 sérieux uniquement', tier3Only:'Niveau 3 modéré uniquement',
@@ -275,6 +296,7 @@ function setLang(l){
   try{ localStorage.setItem('fshs_lang', l); }catch(e){}
   applyI18nStatic();
   if (ALL.length){ computeSummary(ALL); refreshDynamicText(); render(); renderTrendChart(filtered); }
+  renderNewsFeed(NEWS_ITEMS);
 }
 
 function pb(p){p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}
@@ -530,6 +552,41 @@ try{
 document.getElementById('langEn').classList.toggle('on', lang==='en');
 document.getElementById('langFr').classList.toggle('on', lang==='fr');
 applyI18nStatic();
+
+function timeAgo(iso){
+  if(!iso) return '';
+  const then=Date.parse(iso.replace(' UTC','Z').replace(' ','T'));
+  if(isNaN(then)) return '';
+  const h=Math.max(0,Math.round((Date.now()-then)/3600000));
+  if(h<1) return '<1h';
+  if(h<24) return h+'h';
+  return Math.round(h/24)+'d';
+}
+
+function renderNewsFeed(items){
+  const el=document.getElementById('newsFeed');
+  if(!items||!items.length){ el.innerHTML=`<div class="trend-empty">${t('newsEmpty')}</div>`; return; }
+  const sorted=[...items].sort((a,b)=>String(b['Published (UTC)']||'').localeCompare(String(a['Published (UTC)']||''))).slice(0,15);
+  el.innerHTML='<div class="news-list">'+sorted.map(n=>{
+    const cat=(n.Category||'').toLowerCase()==='regulatory'?'regulatory':'outbreak';
+    const catLbl=cat==='regulatory'?t('newsCatRegulatory'):t('newsCatOutbreak');
+    const title=String(n.Title||'').replace(/</g,'&lt;');
+    const src=String(n.Source||'').replace(/</g,'&lt;');
+    const link=n.Link||'#';
+    return`<div class="news-item">
+<div class="news-main">
+<a class="news-title" href="${link}" target="_blank" rel="noopener">${title}</a>
+<div class="news-meta"><span class="news-src">${src}</span><span class="news-cat ${cat}">${catLbl}</span></div>
+</div>
+<span class="news-date">${timeAgo(n['Published (UTC)'])}</span>
+</div>`;
+  }).join('')+'</div>';
+}
+
+fetch('data/news.json?_='+Date.now()).then(r=>r.ok?r.json():[]).then(items=>{
+  NEWS_ITEMS=Array.isArray(items)?items:[];
+  renderNewsFeed(NEWS_ITEMS);
+}).catch(()=>{ renderNewsFeed([]); });
 
 fetch('data/recalls.json?_='+Date.now()).then(r=>r.json()).then(data=>{
   data.sort((a,b)=>(a.Tier||9)-(b.Tier||9));

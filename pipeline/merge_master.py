@@ -1801,6 +1801,51 @@ def mirror_json_from_xlsx(xlsx_path: Path, json_path: Path) -> int:
     return len(out)
 
 
+# NEWS sheet — industry/regulatory news articles, distinct shape from
+# Recalls (headline/article fields, not recall-record fields). Written by
+# scrapers/news.py. See NEWS_HEADERS there for the authoritative column
+# order; kept in sync manually since scrapers/ and pipeline/ are separate
+# packages by design.
+NEWS_SCHEMA = ["Published (UTC)", "Pathogen", "Event", "Source",
+               "Title", "Link", "Retrieved (UTC)", "Category"]
+
+
+def load_news(xlsx_path: Path) -> List[Dict[str, Any]]:
+    """Read NEWS sheet -> list of dicts. Empty if sheet doesn't exist yet."""
+    out = _load_sheet(xlsx_path, "NEWS", NEWS_SCHEMA)
+    log.info("Loaded %d rows from NEWS", len(out))
+    return out
+
+
+def mirror_news_json_from_xlsx(xlsx_path: Path, json_path: Path) -> int:
+    """
+    Write news.json as a strict mirror of the NEWS sheet in recalls.xlsx.
+
+    Same discipline as mirror_json_from_xlsx() for recalls.json: read the
+    file that was just committed to disk, normalise, serialise. No internal
+    columns to strip here — every NEWS column is already public-facing.
+
+    Returns the number of rows written.
+    """
+    rows = load_news(xlsx_path)
+    out = []
+    for r in rows:
+        rec = {}
+        for k, v in r.items():
+            if hasattr(v, "isoformat"):
+                rec[k] = v.isoformat()
+            elif v is None:
+                rec[k] = ""
+            else:
+                rec[k] = v
+        out.append(rec)
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1, default=str)
+    log.info("Mirrored %d rows from xlsx -> %s", len(out), json_path)
+    return len(out)
+
+
 # ---------------------------------------------------------------------------
 # Daily-brief rebuild helper (used by url_gate, claude_check, merge_master CLI)
 # ---------------------------------------------------------------------------

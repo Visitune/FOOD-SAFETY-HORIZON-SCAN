@@ -50,15 +50,15 @@ jobs:
         run: |
           python -m pipeline.purge_old_news --xlsx docs/data/recalls.xlsx --days 7
 
-      - name: Commit updated recalls.xlsx if changed
+      - name: Commit updated recalls.xlsx + news.json if changed
         run: |
           git config user.name  "VisiPilot Intelligence System"
           git config user.email "fsis-bot@visipilot.com"
-          if git diff --quiet docs/data/recalls.xlsx; then
+          if git diff --quiet docs/data/recalls.xlsx docs/data/news.json; then
             echo "No news changes this hour."
             exit 0
           fi
-          git add docs/data/recalls.xlsx
+          git add docs/data/recalls.xlsx docs/data/news.json
           COMMIT_MSG="auto news update + 7d purge $(TZ=Europe/Athens date '+%Y-%m-%d %H:%M Athens')"
           git commit -m "$COMMIT_MSG"
 
@@ -75,7 +75,11 @@ jobs:
             git pull --ff-only origin main || git pull origin main
             python -m pipeline.xlsx_merge \
               docs/data/recalls.xlsx /tmp/our-recalls.xlsx docs/data/recalls.xlsx
-            git add docs/data/recalls.xlsx
+            # news.json is fully derived from recalls.xlsx — regenerate it
+            # from the just-merged xlsx rather than trying to preserve the
+            # pre-merge copy (which the `git reset --hard` above discarded).
+            python -c "from pipeline.merge_master import mirror_news_json_from_xlsx; from pathlib import Path; mirror_news_json_from_xlsx(Path('docs/data/recalls.xlsx'), Path('docs/data/news.json'))"
+            git add docs/data/recalls.xlsx docs/data/news.json
             if ! git diff --staged --quiet; then
               git commit -m "$COMMIT_MSG (retry $attempt, row-merged)"
             fi

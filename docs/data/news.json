@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-08-03 16:26 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Bettergoods Pistachio Nut Butter Recalled For Possible Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/bettergoods-pistachio-nut-butter-recalled-for-possible-salmonella",
+  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-03 16:20 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Danone doubles down on Argentina as rivals retreat from dairy",
+  "Link": "https://www.dairyreporter.com/Article/2026/08/03/danone-and-arcor-complete-argentina-dairy-venture",
+  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 14:50 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Mars turns mint supply risk into sustainability success",
+  "Link": "https://www.confectionerynews.com/Article/2026/08/03/mars-shubh-mint-programme-boosts-farmer-incomes-and-supply-security",
+  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 14:10 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of nicarbazin (NICACOX®) for chickens for fattening and chickens reared for laying (Huvepharma N.V.)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10251",
+  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 13:52 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Can Uber Eats help regional grocers compete online?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/03/uber-eats-expands-regional-grocery-footprint",
+  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 13:25 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Scientific assessment of the 2024 post-market environmental monitoring report on the cultivation of genetically modified maize MON 810 in the EU",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10278",
+  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-03 13:04 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -768,56 +828,6 @@
   "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/denominations-commerciales-des-produits-de-la-peche-et-de-laquaculture",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 16:03 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Bio-informaticien en nématologie-santé des végétaux - Bioinformatics Project Manager (H/F)",
-  "Link": "http://www.anses.fr/fr/content/bio-informaticien-en-nematologie-sante-des-vegetaux-bioinformatics-project-manager-hf",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 13:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Les règles du démarchage téléphonique s’imposant aux entreprises",
-  "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-regles-du-demarchage-telephonique-simposant-aux-entreprises",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 13:26 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "Nearly 100 Sick in Multistate Salmonella Outbreak, Millions of Eggs Recalled",
-  "Link": "https://www.food-safety.com/articles/11667-nearly-100-sick-in-multistate-salmonella-outbreak-millions-of-eggs-recalled",
-  "Retrieved (UTC)": "2026-07-27 18:09 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-26T12:00:12Z",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Today's Topic: A Directory of Foodborne Diseases",
-  "Link": "https://www.foodsafetynews.com/2026/07/todays-topic-a-directory-of-foodborne-diseases/",
-  "Retrieved (UTC)": "2026-07-26T13:40:21Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-27T04:01:34Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA warns Texas seafood importer about repeat HACCP verification failures",
-  "Link": "https://www.foodsafetynews.com/2026/07/fda-warns-texas-seafood-importer-about-repeat-haccp-verification-failures/",
-  "Retrieved (UTC)": "2026-07-27T10:10:28Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-07-28T00:42:43Z",

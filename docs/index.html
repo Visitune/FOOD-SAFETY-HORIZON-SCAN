@@ -11,7 +11,7 @@ body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;font-s
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 @keyframes skel-pulse{0%,100%{opacity:.5}50%{opacity:1}}
 @keyframes tab-fade{from{opacity:0}to{opacity:1}}
-#tabOverview,#tabExplore{animation:tab-fade .2s ease;}
+#tabOverview,#tabExplore,#tabNews{animation:tab-fade .2s ease;}
 .skeleton{color:transparent!important;background:var(--card2);border-radius:4px;animation:skel-pulse 1.4s ease-in-out infinite;}
 .kv.skeleton{display:inline-block;min-width:44px;height:1em;}
 tr.skeleton-row td{padding:9px 10px;}
@@ -52,14 +52,15 @@ tr.skeleton-row .skeleton{display:block;height:12px;width:100%;}
 .breakdown-row span:last-child{color:var(--acc);font-weight:700;font-family:monospace;}
 .trend-wrap{width:100%;overflow-x:auto;}
 .trend-empty{padding:24px;text-align:center;color:var(--muted);font-size:12px;}
-.tab-bar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
-.tab-btn{flex:1;min-width:220px;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:10px 16px;text-align:left;cursor:pointer;transition:border-color .15s,background .15s;}
-.tab-btn:hover{border-color:rgba(249,115,22,.4);background:var(--card2);}
-.tab-btn.on{background:rgba(249,115,22,.10);border-color:var(--acc);}
-.tab-title{display:flex;align-items:center;font-size:14px;font-weight:800;color:var(--txt);}
+.tab-bar{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap;background:#0F1623;border:1px solid var(--border);border-radius:8px;padding:5px;}
+.tab-btn{flex:1;min-width:170px;background:transparent;border:1px solid transparent;border-radius:6px;padding:10px 16px;text-align:left;cursor:pointer;transition:border-color .15s,background .15s,box-shadow .15s;}
+.tab-btn:hover{background:rgba(255,255,255,.06);}
+.tab-btn.on{background:var(--card2);border-color:var(--acc);box-shadow:0 1px 4px rgba(0,0,0,.35);}
+.tab-title{display:flex;align-items:center;font-size:14px;font-weight:800;color:#9CA3AF;}
 .ic{vertical-align:-2px;margin-right:5px;flex-shrink:0;}
 .tab-btn.on .tab-title{color:var(--acc);}
-.tab-sub{display:block;font-size:11px;color:#9CA3AF;margin-top:2px;}
+.tab-sub{display:block;font-size:11px;color:var(--muted);margin-top:2px;}
+.tab-btn.on .tab-sub{color:#9CA3AF;}
 .panel-note{font-size:10.5px;color:var(--muted);line-height:1.4;margin-bottom:8px;}
 .bd-rate{font-size:10px;color:var(--muted);font-weight:400;margin-left:4px;}
 .news-list{display:flex;flex-direction:column;}
@@ -130,8 +131,9 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
   td{color:#111;border-bottom:1px solid #ddd;}
   .fb-chip{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
   /* Explore tab holds the table — always show it when printing, regardless
-     of which tab was on-screen (Overview's charts don't print usefully). */
-  #tabOverview{display:none!important;}
+     of which tab was on-screen (Overview's charts and the news feed don't
+     print usefully). */
+  #tabOverview,#tabNews{display:none!important;}
   #tabExplore{display:block!important;}
 }
 @media(max-width:480px){
@@ -195,6 +197,10 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       <span class="tab-title"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="6.8" cy="6.8" r="4.3"/><path d="M13.3 13.3l-3-3"/></svg><span data-i18n="tabExploreTitle">Explore</span></span>
       <span class="tab-sub" data-i18n="tabExploreSub">Filter and browse every recall</span>
     </button>
+    <button type="button" class="tab-btn" id="tabBtnNews" onclick="showTab('news')">
+      <span class="tab-title"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 3.5h8v9h-8z"/><path d="M10.5 5.5H13a.5.5 0 0 1 .5.5v6.5a1 1 0 0 1-1 1H3"/><path d="M4.5 6h4M4.5 8h4M4.5 10h2.5"/></svg><span data-i18n="tabNewsTitle">News</span></span>
+      <span class="tab-sub" data-i18n="tabNewsSub">Latest industry stories &amp; regulatory updates</span>
+    </button>
   </div>
 
   <div id="tabOverview">
@@ -224,10 +230,6 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     </div>
   </div>
 
-  <div class="panel" style="margin-bottom:16px;">
-    <div class="sec" data-i18n="panelNews">Latest Industry News</div>
-    <div id="newsFeed"><div class="trend-empty" data-i18n="newsLoading">Loading…</div></div>
-  </div>
   </div>
 
   <div id="tabExplore" style="display:none">
@@ -329,6 +331,13 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     <div class="pag"><span class="pi" id="pi"></span><div class="pbtns" id="pbtns"></div></div>
   </div>
   </div>
+
+  <div id="tabNews" style="display:none">
+  <div class="panel">
+    <div class="sec" data-i18n="panelNews">Latest Industry News</div>
+    <div id="newsFeed"><div class="trend-empty" data-i18n="newsLoading">Loading…</div></div>
+  </div>
+  </div>
 </div>
 
 <div class="footer">
@@ -355,8 +364,9 @@ const I18N = {
     exportBtn:'↓ Export this view', exportCsvBtn:'↓ CSV', tier1RateLbl:'Tier-1 rate',
     panelNews:'Latest Industry News', newsLoading:'Loading…', newsEmpty:'No recent news available.',
     newsCatOutbreak:'Outbreak', newsCatRegulatory:'Regulatory',
-    tabOverviewTitle:'Overview', tabOverviewSub:'Trends, breakdowns, industry news',
+    tabOverviewTitle:'Overview', tabOverviewSub:'Trends and breakdowns by pathogen, source & country',
     tabExploreTitle:'Explore', tabExploreSub:'Filter and browse every recall',
+    tabNewsTitle:'News', tabNewsSub:'Latest industry stories & regulatory updates',
     allRecordsTable:'All Pathogen Recalls', searchPlaceholder:'Search firm, product, country, pathogen, lot...',
     fbActiveLbl:'Active filters:', fbSearch:'Search', fbSource:'Source', fbCountry:'Country', fbRegion:'Region', fbProduct:'Product', fbPathogen:'Pathogen', fbTier:'Tier',
     allSources:'All Sources', allCountries:'All Countries', allRegions:'All Regions', allProducts:'All Product Types', allPathogens:'All Pathogens', allTiers:'All Tiers',
@@ -378,8 +388,9 @@ const I18N = {
     exportBtn:'↓ Exporter cette vue', exportCsvBtn:'↓ CSV', tier1RateLbl:'Taux Tier-1',
     panelNews:'Dernières actualités du secteur', newsLoading:'Chargement…', newsEmpty:'Aucune actualité récente disponible.',
     newsCatOutbreak:'Épidémie', newsCatRegulatory:'Réglementaire',
-    tabOverviewTitle:'Vue d\'ensemble', tabOverviewSub:'Tendances, répartitions, actualités',
+    tabOverviewTitle:'Vue d\'ensemble', tabOverviewSub:'Tendances et répartitions par pathogène, source et pays',
     tabExploreTitle:'Explorer', tabExploreSub:'Filtrer et parcourir tous les rappels',
+    tabNewsTitle:'Actualités', tabNewsSub:'Dernières actus du secteur et mises à jour réglementaires',
     allRecordsTable:'Tous les rappels', searchPlaceholder:'Rechercher entreprise, produit, pays, pathogène, lot...',
     fbActiveLbl:'Filtres actifs :', fbSearch:'Recherche', fbSource:'Source', fbCountry:'Pays', fbRegion:'Région', fbProduct:'Produit', fbPathogen:'Pathogène', fbTier:'Niveau',
     allSources:'Toutes les sources', allCountries:'Tous les pays', allRegions:'Toutes les régions', allProducts:'Tous les types de produits', allPathogens:'Tous les pathogènes', allTiers:'Tous les niveaux',
@@ -480,13 +491,13 @@ ${dots}${valueLabels}${monthLabels}
 </svg>`;
 }
 
+const TAB_IDS={overview:'tabOverview',explore:'tabExplore',news:'tabNews'};
 function showTab(name){
-  const overview=name==='overview';
-  const shown=document.getElementById(overview?'tabOverview':'tabExplore');
-  document.getElementById('tabOverview').style.display=overview?'block':'none';
-  document.getElementById('tabExplore').style.display=overview?'none':'block';
-  document.getElementById('tabBtnOverview').classList.toggle('on',overview);
-  document.getElementById('tabBtnExplore').classList.toggle('on',!overview);
+  const shown=document.getElementById(TAB_IDS[name]);
+  Object.keys(TAB_IDS).forEach(k=>{
+    document.getElementById(TAB_IDS[k]).style.display=(k===name)?'block':'none';
+    document.getElementById('tabBtn'+k[0].toUpperCase()+k.slice(1)).classList.toggle('on',k===name);
+  });
   // Restart the fade-in animation on the newly-shown panel (audit 2026-08-03).
   shown.style.animation='none';
   void shown.offsetHeight;

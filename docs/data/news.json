@@ -20,6 +20,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-08-03 14:51 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Whey demand set to rise with bioethanol breakthrough",
+  "Link": "https://www.dairyreporter.com/Article/2026/08/03/scientists-find-new-use-for-whey-as-demand-pressures-grow",
+  "Retrieved (UTC)": "2026-08-03 20:36 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-03 14:50 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -27,6 +37,16 @@
   "Title": "Mars turns mint supply risk into sustainability success",
   "Link": "https://www.confectionerynews.com/Article/2026/08/03/mars-shubh-mint-programme-boosts-farmer-incomes-and-supply-security",
   "Retrieved (UTC)": "2026-08-03 16:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 14:42 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "GLP-1 beverage innovation outpaces regulation, creating challenges for drinks manufacturers",
+  "Link": "https://www.beveragedaily.com/Article/2026/08/03/glp-1-beverage-innovation-outpaces-regulation-creating-challenges-for-drinks-manufacturers",
+  "Retrieved (UTC)": "2026-08-03 20:36 UTC",
   "Category": "Regulatory"
  },
  {
@@ -820,16 +840,6 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-07-27 16:44 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Dénominations commerciales des produits de la pêche et de l’aquaculture",
-  "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/denominations-commerciales-des-produits-de-la-peche-et-de-laquaculture",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-07-28T00:42:43Z",
   "Pathogen": "Cyclospora cayetanensis",
   "Event": "News",
@@ -950,26 +960,6 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-08-03T04:06:19Z",
-  "Pathogen": "Cyclospora cayetanensis",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: Food safety is not expensive. Outbreaks are expensive.",
-  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-food-safety-is-not-expensive-outbreaks-are-expensive/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-03T04:05:40Z",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Ukraine shares outbreak data and reports deadly botulism cases",
-  "Link": "https://www.foodsafetynews.com/2026/08/ukraine-shares-outbreak-data-and-reports-deadly-botulism-cases/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-03T04:04:52Z",
   "Pathogen": "",
   "Event": "Alert",
@@ -980,42 +970,12 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-08-03T04:02:31Z",
-  "Pathogen": "Vibrio",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Hong Kong warns of severe infections caused by Vibrio",
-  "Link": "https://www.foodsafetynews.com/2026/08/hong-kong-warns-of-severe-infections-caused-by-vibrio/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-03T04:01:52Z",
   "Pathogen": "",
   "Event": "Alert",
   "Source": "Food Safety News",
   "Title": "FDA steps up import enforcement on infant formula, seafood, dried peppers",
   "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-import-enforcement-on-infant-formula-seafood-dried-peppers/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-02T16:45:06Z",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Publisher’s Platform: The T-Shirts Arrived. All of Them Say: Test Infant Formula for Botulism.",
-  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-the-t-shirts-arrived-all-of-them-say-test-infant-formula-for-botulism/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-31T13:48:57Z",
-  "Pathogen": "Cyclospora cayetanensis",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: The Fifty-State Cyclospora count is 20,927 this morning. The President has said one thing about it. The Secretary says it is under control. Here is what they should have said ins",
-  "Link": "https://www.foodsafetynews.com/2026/07/publishers-platform-the-fifty-state-cyclospora-count-is-20-927-this-morning-the-president-has-said-one-thing-about-it-the-secretary-says-it-is-under-control-here-is-what-they-should-hav/",
   "Retrieved (UTC)": "2026-08-03T17:09:31Z",
   "Category": ""
  }

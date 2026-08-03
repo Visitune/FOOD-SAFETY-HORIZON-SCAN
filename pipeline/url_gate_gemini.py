@@ -917,6 +917,12 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
     # here means the model mis-attributed decisions and the guard caught it.
     n_identity_discarded = 0
     n_identity_rehomed = 0
+    # Real (global) indices whose decision was DISCARDED by the identity
+    # check below (audit 2026-08-03) — lets the "gemini silent on this row"
+    # fallback message distinguish "model never answered for this row" from
+    # "model answered but we threw the answer away for an echo mismatch",
+    # which otherwise look identical to the caller.
+    discarded_by_identity: set = set()
 
     # Deterministic baseline — always compute
     det_fail: Dict[int, str] = {}
@@ -1004,6 +1010,7 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                                 "(row claims %r). Cross-row contamination "
                                 "prevented.", j, echo[:120], claimed[:120])
                             n_identity_discarded += 1
+                            discarded_by_identity.add(start + j)
                             continue
                         log.warning(
                             "url-gate: decision claimed row_index %d (%r) but "
@@ -1020,6 +1027,7 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                             "(%r) — no url_echo returned, identity "
                             "unverifiable.", j, claimed[:120])
                         n_identity_discarded += 1
+                        discarded_by_identity.add(start + j)
                         continue
 
                     real_idx = start + j
@@ -1028,24 +1036,44 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                     # Local verification gate — never trust low confidence
                     confidence = float(d.get("confidence", 0.0) or 0.0)
                     v = d.get("verification", {})
-                    if passed and v:
-                        # RASFF SPECIAL CASE (see prompt above): Company/Brand
-                        # are origin/destination ISO-3166 country codes, not a
-                        # real product brand — RASFF notification pages don't
-                        # textually contain e.g. "FRA, DEU, ITA", so brand_match
-                        # is not a meaningful check for this source and was
-                        # silently rejecting well-verified RASFF rows at high
-                        # confidence (audit 2026-08-03).
-                        is_rasff = "rasff" in str(chunk[j].get("Source", "")).lower()
-                        required = [v.get("date_match"), v.get("hazard_match"),
-                                    v.get("is_detail_page")]
-                        if not is_rasff:
-                            required.append(v.get("brand_match"))
-                        all_ok = all(required)
+                    # RASFF SPECIAL CASE (audit 2026-08-03): skip the
+                    # sub-check cross-verification entirely for RASFF.
+                    # Two independent reasons this is safe AND necessary:
+                    #  1. webgate.ec.europa.eu/rasff-window is an Angular
+                    #     single-page app with no server-rendered content —
+                    #     Google's grounded search can't reliably crawl it,
+                    #     so date_match/hazard_match/is_detail_page come back
+                    #     unreliable regardless of whether the row is correct
+                    #     (confirmed: rows rejected at confidence=0.95).
+                    #  2. RASFF rows come from the EU's own structured
+                    #     notification feed (Company="Origin: X | Notifying:
+                    #     Y", a scraper format that doesn't match the 3-letter-
+                    #     code convention this prompt describes) — the URL's
+                    #     numeric notification ID is a validated identifier
+                    #     straight from the official API, not free-text
+                    #     scraped/hallucination-prone like RappelConso HTML.
+                    #     The hallucinated-URL risk this whole gate exists to
+                    #     catch is structurally much lower here.
+                    # Still requires Gemini's own pass=true + confidence>=0.6.
+                    is_rasff = "rasff" in str(chunk[j].get("Source", "")).lower()
+                    if passed and v and not is_rasff:
+                        checks = {
+                            "date_match": v.get("date_match"),
+                            "brand_match": v.get("brand_match"),
+                            "hazard_match": v.get("hazard_match"),
+                            "is_detail_page": v.get("is_detail_page"),
+                        }
+                        all_ok = all(checks.values())
                         if not all_ok or confidence < 0.6:
                             passed = False
+                            failed_checks = [k for k, ok in checks.items() if not ok]
                             d["reason"] = (str(d.get("reason", ""))
-                                           + f" [local gate rejected: conf={confidence:.2f}]")
+                                           + f" [local gate rejected: conf={confidence:.2f}, "
+                                           f"failed={failed_checks or '(none — only low confidence)'}]")
+                    elif is_rasff and confidence < 0.6:
+                        passed = False
+                        d["reason"] = (str(d.get("reason", ""))
+                                       + f" [local gate rejected: conf={confidence:.2f} < 0.6]")
                     # Local extraction-failed sanity check on the extracted block.
                     # Defence in depth — never trust Gemini's self-rejection alone.
                     # Triggers match Layer B HARD REJECT REASONS in the prompt.
@@ -1143,6 +1171,15 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
             elif not got_response:
                 decisions[real_idx] = (False,
                                        "FAIL: gemini parse error (safety default — audit 2026-05-07)",
+                                       None, None, "", {})
+            elif real_idx in discarded_by_identity:
+                # Audit 2026-08-03: distinguish from genuine silence — Gemini
+                # DID answer for this row, but the echo/attribution guard
+                # (audit 2026-07-30) threw the answer away because url_echo
+                # didn't match this row's URL (or was missing entirely).
+                decisions[real_idx] = (False,
+                                       "FAIL: gemini answered but decision was discarded "
+                                       "by the identity/echo guard (safety default — audit 2026-08-03)",
                                        None, None, "", {})
             else:
                 decisions[real_idx] = (False,

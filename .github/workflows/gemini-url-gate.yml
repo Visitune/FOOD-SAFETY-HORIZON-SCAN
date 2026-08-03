@@ -11,6 +11,11 @@ name: FSIS Gemini URL Gate
 
 on:
   workflow_dispatch:
+  schedule:
+    # 07:30 Athens daily — winter (EET, UTC+2) → 05:30 UTC
+    - cron: "30 5 * 1,2,3,11,12 *"
+    # 07:30 Athens daily — summer (EEST, UTC+3) → 04:30 UTC
+    - cron: "30 4 * 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write

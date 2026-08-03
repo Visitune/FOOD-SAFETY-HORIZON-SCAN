@@ -1,5 +1,15 @@
 name: FSIS Claude Check (per-row content verification)
 
+# DISABLED (2026-08-03): no ANTHROPIC_API_KEY is configured for this repo
+# (Claude is not used here) — every scheduled run hard-aborted with exit
+# code 2 ("Claude not enabled. Aborting."), which is why this had 100%
+# failure rate on its daily cron. Promotion of Pending -> Recalls no
+# longer depends on this stage: gemini-url-gate.yml promotes rows on its
+# own using Gemini (see pipeline/url_gate_gemini.py, which calls
+# promote_approved() directly). Schedule removed below; workflow_dispatch
+# is kept in case an ANTHROPIC_API_KEY is added back later.
+#
+# Original doc (kept for context):
 # Daily ~07:45 Athens (FsisScheduler keys this on H=8 for idempotency).
 # Runs after gemini-url-gate (07:00) to do final per-row content
 # verification before promotion. Fetches each Pending row's URL via HTTP,
@@ -38,11 +48,6 @@ on:
         description: "true = run but do not commit/push (dry-run)"
         required: false
         default: "false"
-  schedule:
-    # 08:00 Athens daily — winter (EET, UTC+2) → 06:00 UTC
-    - cron: "0 6 * 1,2,3,11,12 *"
-    # 08:00 Athens daily — summer (EEST, UTC+3) → 05:00 UTC
-    - cron: "0 5 * 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write

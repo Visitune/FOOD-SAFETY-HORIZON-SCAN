@@ -12,6 +12,9 @@ name: FSIS Merge Master (hourly)
 
 on:
   workflow_dispatch:
+  schedule:
+    # Hourly at :05, year-round (Pending janitor pass + json remirror).
+    - cron: "5 * * * *"
 
 permissions:
   contents: write

@@ -1,5 +1,21 @@
 [
  {
+  "Date": "2026-08-03",
+  "Source": "FDA",
+  "Company": "Boticelli Foods",
+  "Brand": "Bettergoods",
+  "Product": "Pistachio Nut Butter",
+  "Pathogen": "Salmonella",
+  "Reason": "Possible Salmonella Contamination",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/boticelli-foods-recalls-bettergoods-pistachio-nut-butter-because-possible-health-risk",
+  "Notes": "FDA listing HTML (Layer 1) [gemini-check 2026-08-03: pass; pass]"
+ },
+ {
   "Date": "2026-07-31",
   "Source": "RASFF (EU)",
   "Company": "Origin: Netherlands | Notifying: France",
@@ -350,6 +366,22 @@
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/861276",
   "Notes": "REJECTED: Gemini gate: None [local gate rejected: conf=0.95] | [RASFF #2026.6732; classification: information notification for follow-up; category: poultry meat and poultry meat products; notifId=861276] [gemini-enrich 2026-08-03: Brand '—'→'ROU'] || gemini-url-gate: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07)"
+ },
+ {
+  "Date": "2026-07-29",
+  "Source": "FDA",
+  "Company": "Publix",
+  "Brand": "GreenWise",
+  "Product": "GreenWise Organic Frozen Blueberries and Whole Mixed Berries, 10 oz and 48 oz",
+  "Pathogen": "Escherichia coli O145",
+  "Reason": "Publix Recalls All Lots Greenwise Organic Frozen Blueberries And Whole Mixed Berries Due Potential E",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/publix-recalls-all-lots-greenwise-organic-frozen-blueberries-and-whole-mixed-berries-due-potential-e",
+  "Notes": "FDA HTML fallback — claude-check needs to enrich Date+Pathogen [gemini-check 2026-08-03: fix; corrections: Date→2026-07-29, Brand→GreenWise, Product→GreenWise Organic Frozen Blueberries and, Pathogen→Escherichia coli O145; fix; product mismatch; pathogen mismatch; date on page=2026-07-29 | Date, Brand, Product, and Pathogen fields need corre] [enrich-gate 2026-08-03: pending_enrichment → pending (Claude verified)] [tier-guard: Escherichia coli O145 is always Tier 1; forced from Tier 3]"
  },
  {
   "Date": "2026-07-28",

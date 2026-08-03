@@ -1029,10 +1029,19 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                     confidence = float(d.get("confidence", 0.0) or 0.0)
                     v = d.get("verification", {})
                     if passed and v:
-                        all_ok = all([
-                            v.get("date_match"), v.get("brand_match"),
-                            v.get("hazard_match"), v.get("is_detail_page"),
-                        ])
+                        # RASFF SPECIAL CASE (see prompt above): Company/Brand
+                        # are origin/destination ISO-3166 country codes, not a
+                        # real product brand — RASFF notification pages don't
+                        # textually contain e.g. "FRA, DEU, ITA", so brand_match
+                        # is not a meaningful check for this source and was
+                        # silently rejecting well-verified RASFF rows at high
+                        # confidence (audit 2026-08-03).
+                        is_rasff = "rasff" in str(chunk[j].get("Source", "")).lower()
+                        required = [v.get("date_match"), v.get("hazard_match"),
+                                    v.get("is_detail_page")]
+                        if not is_rasff:
+                            required.append(v.get("brand_match"))
+                        all_ok = all(required)
                         if not all_ok or confidence < 0.6:
                             passed = False
                             d["reason"] = (str(d.get("reason", ""))

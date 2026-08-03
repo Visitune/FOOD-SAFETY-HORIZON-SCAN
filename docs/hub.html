@@ -32,6 +32,7 @@
 :root{--bg:#0B1120;--card:#131B2C;--card2:#1A2436;--acc:#F97316;--acc2:#8B5CF6;--orange:#F97316;--txt:#E5E7EB;--muted:#6B7280;--border:rgba(255,255,255,.08);--pill-bg:rgba(249,115,22,.10);--pill-border:rgba(249,115,22,.28);}
 html,body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden;margin:0;padding:0;}
 a{color:inherit;text-decoration:none;}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px;}
 .hero{text-align:center;padding:52px 24px 40px;display:flex;flex-direction:column;align-items:center;}
 .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--acc2);margin-bottom:14px;}
 .hero h1{font-size:36px;font-weight:800;line-height:1.15;margin-bottom:14px;}
@@ -109,7 +110,7 @@ a{color:inherit;text-decoration:none;}
 .loading-card{flex:0 0 calc(33.333% - 11px);min-width:220px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;color:var(--muted);font-size:12px;text-align:center;min-height:200px;display:flex;align-items:center;justify-content:center;}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .about-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;}
-.about-icon{font-size:22px;margin-bottom:10px;display:block;}
+.about-icon{margin-bottom:10px;display:block;}
 .about-title{font-size:14px;font-weight:700;margin-bottom:6px;color:#fff;}
 .about-txt{font-size:12px;color:var(--muted);line-height:1.6;}
 .src-row{display:flex;flex-wrap:wrap;gap:8px;}
@@ -122,7 +123,7 @@ a{color:inherit;text-decoration:none;}
 .site-footer{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-top:1px solid var(--border);margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em;}
 .footer-left a{color:var(--acc);font-weight:700;}
 @media(min-width:640px){.hero h1{font-size:44px;} .sec{padding:36px 32px;}}
-@media(max-width:540px){.month-card,.loading-card{flex:0 0 80vw;} .about-grid{grid-template-columns:1fr;} .site-footer{flex-direction:column;gap:10px;text-align:center;}}
+@media(max-width:640px){.month-card,.loading-card{flex:0 0 80vw;} .about-grid{grid-template-columns:1fr;} .site-footer{flex-direction:column;gap:10px;text-align:center;}}
 .site-nav{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
 .site-nav .brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;color:#fff;}.site-nav .brand span{color:#F97316;}
 .site-nav .links{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
@@ -160,8 +161,8 @@ a{color:inherit;text-decoration:none;}
 <section class="sec">
   <div class="sec-label"><span class="dot"></span>Monthly Reports &mdash; 2026</div>
   <div class="carousel-wrap">
-    <button class="carousel-btn prev" onclick="scrollCar(-1)">&#8592;</button>
-    <button class="carousel-btn next" onclick="scrollCar(1)">&#8594;</button>
+    <button class="carousel-btn prev" onclick="scrollCar(-1)" aria-label="Previous month">&#8592;</button>
+    <button class="carousel-btn next" onclick="scrollCar(1)" aria-label="Next month">&#8594;</button>
     <div class="carousel-viewport"><div class="carousel-track" id="cTrack"><div class="loading-card">Loading&hellip;</div></div></div>
     <div class="carousel-dots" id="cDots"></div>
   </div>
@@ -192,10 +193,8 @@ a{color:inherit;text-decoration:none;}
 <section class="sec" style="padding-top:0">
   <div class="sec-label">Previous Archives</div>
   <div class="arch-list">
-    <span class="arch-line arch-line--static">&rsaquo; Recalls, Market Withdrawals &amp; Safety Alerts 2026</span>
-    <span class="arch-line arch-line--static">&rsaquo; 2025 Recalls, Market Withdrawals &amp; Safety Alerts</span>
-    <span class="arch-line arch-line--static">&rsaquo; 2024 Recalls, Market Withdrawals &amp; Safety Alerts</span>
-    <span class="arch-line arch-line--static">&rsaquo; 2023 Recalls, Market Withdrawals &amp; Safety Alerts</span>
+    <span class="arch-line arch-line--static">2026 Recalls, Market Withdrawals &amp; Safety Alerts — see monthly reports above</span>
+    <span class="arch-line arch-line--static">Earlier years not available — Food Safety Horizon Scanning launched in 2026</span>
   </div>
 </section>
 
@@ -321,6 +320,23 @@ function visibleCount(){
   return Math.max(1, Math.round(vw / cw));
 }
 function scrollCar(d){ goTo(_cur+d); }
+
+function _makeCarouselDot(i, isActive){
+  var s = document.createElement('span');
+  if (isActive) s.className = 'active';
+  s.setAttribute('data-i', i);
+  s.setAttribute('role', 'button');
+  s.setAttribute('tabindex', '0');
+  s.setAttribute('aria-label', 'Go to month ' + (i + 1));
+  s.onclick = function(){ goTo(+this.getAttribute('data-i')); };
+  s.onkeydown = function(e){
+    if (e.key === 'Enter' || e.key === ' '){
+      e.preventDefault();
+      goTo(+this.getAttribute('data-i'));
+    }
+  };
+  return s;
+}
 function goTo(i){
   var t = document.getElementById('cTrack');
   var vis = visibleCount();
@@ -342,9 +358,7 @@ function render(index){
   var pages = Math.max(1, track.children.length - vis + 1);
   var dots = document.getElementById('cDots'); dots.innerHTML = '';
   for (var i=0;i<pages;i++){
-    var s = document.createElement('span'); if(i===0) s.className='active';
-    s.setAttribute('data-i',i); s.onclick = function(){ goTo(+this.getAttribute('data-i')); };
-    dots.appendChild(s);
+    dots.appendChild(_makeCarouselDot(i, i===0));
   }
   _cur = 0;
 }
@@ -359,11 +373,7 @@ window.addEventListener('resize', function(){
   if (dots.children.length === pages) return;
   dots.innerHTML = '';
   for (var i=0;i<pages;i++){
-    var s = document.createElement('span');
-    if(i===0) s.className='active';
-    s.setAttribute('data-i',i);
-    s.onclick = function(){ goTo(+this.getAttribute('data-i')); };
-    dots.appendChild(s);
+    dots.appendChild(_makeCarouselDot(i, i===0));
   }
   _cur = 0; goTo(0);
 });

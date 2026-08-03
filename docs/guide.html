@@ -5,31 +5,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;}
-.hdr{background:#0D1420;border-bottom:2px solid #F97316;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
-.brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;}.brand span{color:#F97316;}
+:root{--bg:#0B1120;--card:#131B2C;--card2:#1A2436;--acc:#F97316;--acc2:#8B5CF6;--txt:#E5E7EB;--muted:#6B7280;--border:rgba(255,255,255,.08);}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px;}
+.hdr{background:#0D1420;border-bottom:2px solid var(--acc);padding:14px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
+.brand{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;}.brand span{color:var(--acc);}
 .hdr-right{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
 .langtoggle{display:flex;gap:2px;border:1px solid rgba(255,255,255,.10);border-radius:4px;overflow:hidden;}
 .langtoggle button{background:transparent;border:none;color:#9CA3AF;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;padding:5px 10px;cursor:pointer;}
-.langtoggle button.on{background:#F97316;color:#fff;}
+.langtoggle button.on{background:var(--acc);color:#fff;}
 .nav{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
 .nav a{color:#9CA3AF;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}
-.nav a:hover,.nav a.on{color:#F97316;border-color:#F97316;}
+.nav a:hover,.nav a.on{color:var(--acc);border-color:var(--acc);}
 .ic{vertical-align:-2px;margin-right:5px;flex-shrink:0;}
 .wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px;}
 .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
-.eyebrow .rule{height:2px;width:32px;background:#F97316;}
-.eyebrow span{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#F97316;}
+.eyebrow .rule{height:2px;width:32px;background:var(--acc);}
+.eyebrow span{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);}
 h1{font-size:34px;font-weight:800;letter-spacing:-0.02em;margin-bottom:10px;}
 .lede{color:#9CA3AF;font-size:16px;margin-bottom:44px;max-width:640px;}
 h2{font-size:20px;font-weight:800;margin:44px 0 14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.08);}
-h2 .num{color:#F97316;font-family:'JetBrains Mono',monospace;margin-right:8px;}
+h2 .num{color:var(--acc);font-family:'JetBrains Mono',monospace;margin-right:8px;}
 p{color:#D1D5DB;margin-bottom:14px;}
 p strong{color:#fff;}
-.card{background:#131B2C;border:1px solid rgba(255,255,255,.05);border-radius:8px;padding:18px 20px;margin-bottom:14px;}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:8px;padding:18px 20px;margin-bottom:14px;}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 @media(max-width:640px){.grid2{grid-template-columns:1fr;}}
-.kv-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F97316;margin-bottom:6px;}
+.kv-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-bottom:6px;}
 .legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px;}
 .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:4px;font-size:12px;font-weight:700;font-family:'JetBrains Mono',monospace;}
 .b-1{background:rgba(239,83,80,.15);color:#ef5350;border:1px solid rgba(239,83,80,.3);}
@@ -42,15 +44,15 @@ p strong{color:#fff;}
 .b-n{background:rgba(76,175,128,.15);color:#80d4a8;border:1px solid rgba(76,175,128,.3);}
 .b-a{background:rgba(255,152,0,.15);color:#ffb74d;border:1px solid rgba(255,152,0,.3);}
 .b-c{background:rgba(233,30,99,.15);color:#f48fb1;border:1px solid rgba(233,30,99,.3);}
-.b-o{background:rgba(255,255,255,.05);color:#6B7280;border:1px solid rgba(255,255,255,.10);}
+.b-o{background:rgba(255,255,255,.05);color:var(--muted);border:1px solid rgba(255,255,255,.10);}
 ul{margin:0 0 14px 20px;color:#D1D5DB;}
 li{margin-bottom:6px;}
 code{font-family:'JetBrains Mono',monospace;font-size:.9em;background:rgba(255,255,255,.06);padding:1px 6px;border-radius:3px;color:#ff8c5a;}
-a.link{color:#F97316;text-decoration:none;}
+a.link{color:var(--acc);text-decoration:none;}
 a.link:hover{text-decoration:underline;}
 .faq-q{font-weight:700;color:#fff;margin-top:16px;margin-bottom:4px;}
-.footer{text-align:center;padding:24px;font-size:11px;color:#6B7280;border-top:1px solid rgba(255,255,255,.05);font-family:monospace;margin-top:40px;}
-.footer a{color:#F97316;text-decoration:none;}
+.footer{text-align:center;padding:24px;font-size:11px;color:var(--muted);border-top:1px solid rgba(255,255,255,.05);font-family:monospace;margin-top:40px;}
+.footer a{color:var(--acc);text-decoration:none;}
 </style></head><body>
 
 <div class="hdr">
@@ -163,7 +165,7 @@ a.link:hover{text-decoration:underline;}
   publishes in that language (for example, French records from RappelConso). A fully
   translated French interface is available: switch to FR using the toggle at the top right.</p>
 
-  <p style="margin-top:40px;color:#6B7280;font-size:13px;" data-i18n="closing">Questions not covered here?
+  <p style="margin-top:40px;color:var(--muted);font-size:13px;" data-i18n="closing">Questions not covered here?
   Every page links back to <code>index.html</code> — start from the live dashboard and
   the source link on any record for the full detail.</p>
 </div>

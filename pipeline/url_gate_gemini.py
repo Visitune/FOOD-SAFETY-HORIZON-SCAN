@@ -1554,6 +1554,32 @@ def main() -> int:
             log.info("Gap-gating advanced: %d (pending_gap → v1), %d (v1 → v2)",
                      gap_advances["v0_to_v1"], gap_advances["v1_to_v2"])
 
+        # ── Clear stale Status=rejected on rows this run just re-approved ──
+        # (audit 2026-08-03). promote_approved() has a legacy-migration
+        # guard: "if Status=='rejected' and idx not in rejected_flags, treat
+        # as a stale row from a prior run and DON'T promote it" (kept in
+        # Pending as-is, or archived if archive_immediately). That guard
+        # exists to stop an un-reverified Status flip from silently
+        # resurrecting a bad row — but gemini_gate() DOES re-verify every
+        # alive row every run, so a row not in rejected_flags here was just
+        # freshly and legitimately re-checked, not blindly reset. Without
+        # this clear, a row that failed once (e.g. the RASFF verification
+        # bugs fixed this session) could never be promoted again even after
+        # the underlying bug was fixed and it now passes — its stale
+        # Status='rejected' field would keep vetoing every future PASS
+        # forever, since the guard only compares against THIS run's
+        # rejected_flags, never against the row's own fresh decision.
+        stale_cleared = 0
+        for j in range(len(alive_rows)):
+            if j in rejected_flags:
+                continue
+            if (alive_rows[j].get("Status") or "").strip() == STATUS_REJECTED:
+                alive_rows[j]["Status"] = ""
+                stale_cleared += 1
+        if stale_cleared:
+            log.info("Cleared stale Status=rejected on %d row(s) freshly "
+                     "re-approved this run", stale_cleared)
+
         # SINGLE-REVIEWER PROMOTION (2026-08-03): the original two-reviewer
         # architecture (locked 2026-04-30) required claude_check.py to also
         # pass a row before promote_approved() was ever called — this repo

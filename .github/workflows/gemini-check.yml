@@ -62,11 +62,11 @@ on:
         required: false
         default: "false"
       model:
-        description: "Override GEMINI_REVIEWER_MODEL (default: gemini-2.5-flash)"
+        description: "Override GEMINI_REVIEWER_MODEL (default: repo var GEMINI_MODEL, else gemini-2.5-flash)"
         required: false
         default: ""
       fallback_model:
-        description: "Override GEMINI_REVIEWER_FALLBACK_MODEL (default: gemini-2.5-flash-lite)"
+        description: "Override GEMINI_REVIEWER_FALLBACK_MODEL (default: repo var GEMINI_MODEL_URL_GATE, else gemini-2.5-flash-lite)"
         required: false
         default: ""
   schedule:
@@ -146,8 +146,15 @@ jobs:
         env:
           GEMINI_API_KEY_FREE:            ${{ secrets.GEMINI_API_KEY_FREE }}
           GEMINI_API_KEY_FREE_2:          ${{ secrets.GEMINI_API_KEY_FREE_2 }}
-          GEMINI_REVIEWER_MODEL:          ${{ github.event.inputs.model || 'gemini-2.5-flash' }}
-          GEMINI_REVIEWER_FALLBACK_MODEL: ${{ github.event.inputs.fallback_model || 'gemini-2.5-flash-lite' }}
+          # Audit 2026-08-04: switched from hardcoded literals to the same
+          # vars.GEMINI_MODEL / vars.GEMINI_MODEL_URL_GATE repo variables
+          # every other Gemini workflow already reads (see gemini-url-gate.yml,
+          # daily-scrape.yml, etc.) — one place to bump the model repo-wide
+          # instead of hand-editing every workflow file. GEMINI_MODEL_URL_GATE
+          # is reused here (not a dedicated var) because both call sites want
+          # the same cheap/fast "lite" tier for high-volume per-row calls.
+          GEMINI_REVIEWER_MODEL:          ${{ github.event.inputs.model || vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+          GEMINI_REVIEWER_FALLBACK_MODEL: ${{ github.event.inputs.fallback_model || vars.GEMINI_MODEL_URL_GATE || 'gemini-2.5-flash-lite' }}
           CLAUDE_CHECK_SKIP_DAYS:         ${{ github.event.inputs.skip_days || '0' }}
           SKIP_COMMIT:                    ${{ github.event.inputs.skip_commit || 'false' }}
           GH_TOKEN:                       ${{ secrets.GITHUB_TOKEN }}

@@ -65,7 +65,10 @@ ENV
   GEMINI_API_KEY_1 .. GEMINI_API_KEY_5  — at least one required
   GEMINI_API_KEY                        — fallback if numbered absent
   GEMINI_REVIEWER_MODEL                 — optional, default gemini-2.5-flash
-  GEMINI_REVIEWER_FALLBACK_MODEL        — optional, default gemini-2.0-flash
+  GEMINI_REVIEWER_FALLBACK_MODEL        — optional, default gemini-2.5-flash-lite
+                                           (gemini-2.0-flash was retired by
+                                           Google and must never be used —
+                                           see review/gemini_reviewer.py)
 
 TAGS
 ====

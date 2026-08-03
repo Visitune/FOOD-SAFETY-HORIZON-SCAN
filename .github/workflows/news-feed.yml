@@ -12,6 +12,11 @@ name: FSIS News Feed (every 1h)
 
 on:
   workflow_dispatch:
+  schedule:
+    # Hourly at :00, year-round (matches the "every 1h" name/intent above —
+    # audit 2026-08-03: this had no native cron at all and had run exactly
+    # once, manually, since creation).
+    - cron: "0 * * * *"
 
 permissions:
   contents: write

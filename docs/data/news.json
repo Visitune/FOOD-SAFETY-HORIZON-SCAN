@@ -1,5 +1,105 @@
 [
  {
+  "Published (UTC)": "2026-08-03 13:04 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Benefit stacking, not hero ingredients, is the future of food",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/03/benefit-stacking-is-reshaping-food-innovation-in-post-glp-1-era",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 11:53 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Cyberattacks surge as food and beverage becomes prime target",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/03/cybercrime-escalates-across-the-food-and-beverage-industry",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 11:07 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Can Yili reshape dairy’s future with a new global ecosystem?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/03/yili-calls-for-new-global-dairy-ecosystem",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 10:07 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "From excess to experience: How indulgence is evolving",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/03/indulgence-shifts-to-clean-label-and-premium-foods",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 09:47 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Amende transactionnelle à l’encontre de la SAS TSILAOSA HOTEL située à Cilaos (974)",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-transactionnelle-lencontre-de-la-sas-tsilaosa-hotel-situee-cilaos-974",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-03 09:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Identifies Optimal Poultry Transport Cage Washing Conditions to Reduce Salmonella",
+  "Link": "https://www.food-safety.com/articles/11677-study-identifies-optimal-poultry-transport-cage-washing-conditions-to-reduce-salmonella",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-03 04:06 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: Food safety is not expensive. Outbreaks are expensive.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-food-safety-is-not-expensive-outbreaks-are-expensive",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-03 04:05 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Ukraine shares outbreak data and reports deadly botulism cases",
+  "Link": "https://www.foodsafetynews.com/2026/08/ukraine-shares-outbreak-data-and-reports-deadly-botulism-cases",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-03 04:02 UTC",
+  "Pathogen": "Vibrio",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Hong Kong warns of severe infections caused by Vibrio",
+  "Link": "https://www.foodsafetynews.com/2026/08/hong-kong-warns-of-severe-infections-caused-by-vibrio",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-02 16:45 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Publisher’s Platform: The T-Shirts Arrived. All of Them Say: Test Infant Formula for Botulism.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-the-t-shirts-arrived-all-of-them-say-test-infant-formula-for-botulism",
+  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-07-31 20:22 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",
@@ -700,166 +800,6 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-07-27 12:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance Trichoderma harzianum T78",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10197",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 09:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Setting of import tolerance for folpet in bananas and modification of the existing maximum residue level in honey",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10168",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 09:51 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Modification of the existing maximum residue levels for acequinocyl in celeries, Florence fennel and rhubarb",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10261",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 09:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Potato psyllid: Bactericera cockerelli Webinar 19",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10284",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 09:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "La société GRAND GARAGE FERAY SAE sanctionnée pour ne pas avoir mis à jour le prix de ses carburants sur le site du gouvernement",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/la-societe-grand-garage-feray-sae-sanctionnee-pour-ne-pas-avoir-mis-jour-le-prix-de-ses",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 09:29 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Update of the risk assessment on emerging and novel brominated flame retardants in food",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10187",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 07:06 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance fluazaindolizine",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10194",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 07:06 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance Trichoderma atroviride 77B",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10149",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-27 04:07 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: There is no kill step for Cyclospora",
-  "Link": "https://www.foodsafetynews.com/2026/07/publishers-platform-there-is-no-kill-step-for-cyclospora",
-  "Retrieved (UTC)": "2026-07-27 06:10 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-27 04:00 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Illness",
-  "Source": "Food Safety News",
-  "Title": "Italian data shows HUS decline in 2025",
-  "Link": "https://www.foodsafetynews.com/2026/07/italian-data-shows-hus-decline-in-2025",
-  "Retrieved (UTC)": "2026-07-27 06:10 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-24T01:01:01Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Chicken noodle soup recalled because of lack of import reinspection",
-  "Link": "https://www.foodsafetynews.com/2026/07/chicken-noodle-soup-recalled-because-of-lack-of-import-reinspection/",
-  "Retrieved (UTC)": "2026-07-24T01:10:36Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-24T00:47:14Z",
-  "Pathogen": "Cyclospora cayetanensis",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Outbreak of infections from Cyclospora parasite reaches 41 states",
-  "Link": "https://www.foodsafetynews.com/2026/07/outbreak-of-infections-from-cyclospora-parasite-reaches-41-states/",
-  "Retrieved (UTC)": "2026-07-24T01:10:36Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-24T01:22:35Z",
-  "Pathogen": "Salmonella",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "More than 1.5 million eggs recalled because of Salmonella risk",
-  "Link": "https://www.foodsafetynews.com/2026/07/more-than-1-5-million-eggs-recalled-because-of-salmonella-risk/",
-  "Retrieved (UTC)": "2026-07-24T01:40:25Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-24T04:01:42Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA continues special enforcement of import laws against seafood, mushrooms",
-  "Link": "https://www.foodsafetynews.com/2026/07/fda-continues-special-enforcement-of-import-laws-against-seafood-mushrooms/",
-  "Retrieved (UTC)": "2026-07-24T10:10:26Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-25T00:53:00Z",
-  "Pathogen": "Salmonella",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Recalled eggs linked to Salmonella outbreak spanning 17 states",
-  "Link": "https://www.foodsafetynews.com/2026/07/recalled-eggs-linked-to-salmonella-outbreak-spanning-17-states/",
-  "Retrieved (UTC)": "2026-07-25T01:10:39Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-25T02:23:34Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Two bacon brands recalled for lack of reinspection at the Canadian border",
-  "Link": "https://www.foodsafetynews.com/2026/07/two-bacon-brands-recalled-for-lack-of-reinspection-at-the-canadian-border/",
-  "Retrieved (UTC)": "2026-07-25T08:30:22Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-07-26T12:00:12Z",
   "Pathogen": "",
   "Event": "News",
@@ -977,6 +917,26 @@
   "Title": "Burritos distributed to Costco recalled for undeclared allergen",
   "Link": "https://www.foodsafetynews.com/2026/07/burritos-distributed-to-costco-recalled-for-undeclared-allergen/",
   "Retrieved (UTC)": "2026-07-31T12:37:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-01T02:08:44Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Spaghetti and chicken cobbler recalled because of consumer complaint about metal pieces",
+  "Link": "https://www.foodsafetynews.com/2026/08/spaghetti-and-chicken-cobbler-recalled-because-of-consumer-complaint-about-metal-pieces/",
+  "Retrieved (UTC)": "2026-08-01T11:13:40Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-01T16:17:55Z",
+  "Pathogen": "Cyclospora cayetanensis",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Polls Taken as Cyclospora Cases Passed 20,000 Show U.S. Food Safety Confidence at Record Lows. European, British and Canadian Measures Are Flat or Rising.",
+  "Link": "https://www.foodsafetynews.com/2026/08/polls-taken-as-cyclospora-cases-passed-20-000-show-u-s-food-safety-confidence-at-record-lows-european-british-and-canadian-measures-are-flat-or-rising/",
+  "Retrieved (UTC)": "2026-08-02T11:14:04Z",
   "Category": ""
  }
 ]

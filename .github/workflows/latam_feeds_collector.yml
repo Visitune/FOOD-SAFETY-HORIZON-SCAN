@@ -1,9 +1,7 @@
 # ═══════════════════════════════════════════════════════════════════════
-#  MANUAL-DISPATCH ONLY.
-#  This workflow is triggered EXCLUSIVELY by Apps Script
-#  (FsisScheduler.gs → dispatchScheduled).
-#  Do NOT add a 'schedule:' block here — schedules live in Apps Script
-#  so the entire VisiPilot AI pipeline shares one source of truth.
+#  Was meant to be dispatched by Apps Script (FsisScheduler.gs), which
+#  turned out to never actually fire this (0 total runs since creation —
+#  audit 2026-08-03). Given a native GitHub schedule below instead.
 # ═══════════════════════════════════════════════════════════════════════
 
 name: Latin America official-feed collector
@@ -26,6 +24,11 @@ on:
         description: 'Dry run (no xlsx write)'
         type: boolean
         default: false
+  schedule:
+    - cron: "0 12 * * *"   # 09:00 Brazil/Argentina (UTC-3)
+    - cron: "0 13 * * *"   # 09:00 Chile (UTC-4 winter; runs 1h early in summer, harmless)
+    - cron: "0 14 * * *"   # 09:00 Colombia/Peru (UTC-5)
+    - cron: "0 15 * * *"   # 09:00 Mexico (UTC-6)
 
 permissions:
   contents: write

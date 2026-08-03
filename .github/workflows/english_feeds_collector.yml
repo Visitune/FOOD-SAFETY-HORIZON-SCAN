@@ -1,9 +1,7 @@
 # ═══════════════════════════════════════════════════════════════════════
-#  MANUAL-DISPATCH ONLY.
-#  This workflow is triggered EXCLUSIVELY by Apps Script
-#  (FsisScheduler.gs → dispatchScheduled).
-#  Do NOT add a 'schedule:' block here — schedules live in Apps Script
-#  so the entire VisiPilot AI pipeline shares one source of truth.
+#  Was meant to be dispatched by Apps Script (FsisScheduler.gs), which
+#  turned out to never actually fire this (0 total runs since creation —
+#  audit 2026-08-03). Given a native GitHub schedule below instead.
 # ═══════════════════════════════════════════════════════════════════════
 
 name: English Feeds Collector (FSIS)
@@ -31,6 +29,11 @@ on:
         description: 'Run but do not write to xlsx'
         type: boolean
         default: false
+  schedule:
+    # 09:00 London daily — winter (GMT, UTC+0) → 09:00 UTC
+    - cron: "0 9 * 1,2,3,11,12 *"
+    # 09:00 London daily — summer (BST, UTC+1) → 08:00 UTC
+    - cron: "0 8 * 4,5,6,7,8,9,10 *"
 
 env:
   TZ: Europe/London

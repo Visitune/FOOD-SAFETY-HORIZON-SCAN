@@ -1,9 +1,7 @@
 # ═══════════════════════════════════════════════════════════════════════
-#  MANUAL-DISPATCH ONLY.
-#  This workflow is triggered EXCLUSIVELY by Apps Script
-#  (FsisScheduler.gs → dispatchScheduled).
-#  Do NOT add a 'schedule:' block here — schedules live in Apps Script
-#  so the entire VisiPilot AI pipeline shares one source of truth.
+#  Was meant to be dispatched by Apps Script (FsisScheduler.gs), which
+#  turned out to never actually fire this (0 total runs since creation —
+#  audit 2026-08-03). Given a native GitHub schedule below instead.
 # ═══════════════════════════════════════════════════════════════════════
 
 name: Asia official-feed collector
@@ -30,6 +28,11 @@ on:
         description: 'Dry run (no xlsx write)'
         type: boolean
         default: false
+  schedule:
+    # No DST in any Asian country in scope — static UTC offsets year-round.
+    - cron: "0 0 * * *"   # 09:00 Korea/Japan (UTC+9)
+    - cron: "0 1 * * *"   # 09:00 Singapore/HK/Taiwan/Philippines (UTC+8)
+    - cron: "0 2 * * *"   # 09:00 Indonesia/Thailand/Vietnam (UTC+7)
 
 permissions:
   contents: write

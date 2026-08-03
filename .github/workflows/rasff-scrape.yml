@@ -27,6 +27,15 @@ on:
         description: "true = run but do not commit/push (dry-run)"
         required: false
         default: "false"
+  schedule:
+    # 04:30 Athens — winter (EET, UTC+2) → 02:30 UTC
+    - cron: "30 2 * 1,2,3,11,12 *"
+    # 04:30 Athens — summer (EEST, UTC+3) → 01:30 UTC
+    - cron: "30 1 * 4,5,6,7,8,9,10 *"
+    # 16:30 Athens — winter (EET, UTC+2) → 14:30 UTC
+    - cron: "30 14 * 1,2,3,11,12 *"
+    # 16:30 Athens — summer (EEST, UTC+3) → 13:30 UTC
+    - cron: "30 13 * 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write

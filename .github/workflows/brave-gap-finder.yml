@@ -20,6 +20,11 @@ on:
         description: "Days to look back"
         required: false
         default: "7"
+  schedule:
+    # 02:00 Athens daily — winter (EET, UTC+2) → 00:00 UTC
+    - cron: "0 0 * 1,2,3,11,12 *"
+    # 02:00 Athens daily — summer (EEST, UTC+3) → 23:00 UTC (previous day)
+    - cron: "0 23 * 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write
@@ -47,9 +52,12 @@ jobs:
             else
               echo "Outside scheduled window (now ${HOUR}:xx) but manual dispatch — allowing."
             fi
+          elif [ "$HOUR" -ge "01" ] && [ "$HOUR" -le "04" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Scheduled trigger in 01-04:xx Athens window — allowing."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Not a dispatch event."
+            echo "Not 02:xx Athens (now ${HOUR}:xx) — the other DST cron line handles it."
           fi
 
       - name: Checkout

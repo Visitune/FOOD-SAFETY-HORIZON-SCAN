@@ -1,9 +1,7 @@
 # ═══════════════════════════════════════════════════════════════════════
-#  MANUAL-DISPATCH ONLY.
-#  This workflow is triggered EXCLUSIVELY by Apps Script
-#  (FsisScheduler.gs → dispatchScheduled).
-#  Do NOT add a 'schedule:' block here — schedules live in Apps Script
-#  so the entire VisiPilot AI pipeline shares one source of truth.
+#  Was meant to be dispatched by Apps Script (FsisScheduler.gs), which
+#  turned out to never actually fire this (0 total runs since creation —
+#  audit 2026-08-03). Given a native GitHub schedule below instead.
 # ═══════════════════════════════════════════════════════════════════════
 
 name: Oceania official-feed collector
@@ -29,6 +27,14 @@ on:
         description: 'Dry run (no xlsx write)'
         type: boolean
         default: false
+  schedule:
+    # 4 UTC lines cover 09:00 local in both countries across both DST
+    # regimes — each job's own TZ-aware hour gate (below) picks the one
+    # that actually matches right now and no-ops cleanly on the rest.
+    - cron: "0 20 * * *"   # 09:00 NZDT (UTC+13, Sep-Apr)
+    - cron: "0 21 * * *"   # 09:00 NZST (UTC+12, Apr-Sep)
+    - cron: "0 22 * * *"   # 09:00 AEDT (UTC+11, Oct-Apr)
+    - cron: "0 23 * * *"   # 09:00 AEST (UTC+10, Apr-Oct)
 
 permissions:
   contents: write

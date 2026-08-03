@@ -1,8 +1,10 @@
 name: FSIS Daily Recall Search
 
-# Daily at 10:00 ATHENS TIME — Claude Haiku 4.5 with web search does a
-# comprehensive "yesterday's regulator recalls worldwide" sweep across
-# 5 regions. Real URLs from real search results — not hallucinated.
+# Daily at 10:00 ATHENS TIME — Exa search does a comprehensive
+# "yesterday's regulator recalls worldwide" sweep across 5 regions.
+# Real URLs from real search results — not hallucinated. (Comment
+# corrected 2026-08-03: this runs on EXA_API_KEY per the actual env
+# block below, not Claude — stale from an earlier iteration.)
 #
 # Output:
 #   - New recalls appended to Pending sheet (URL guardian promotes to Recalls)
@@ -26,6 +28,11 @@ on:
         description: "true = don't write/commit"
         required: false
         default: "false"
+  schedule:
+    # 10:00 Athens daily — winter (EET, UTC+2) → 08:00 UTC
+    - cron: "0 8 * 1,2,3,11,12 *"
+    # 10:00 Athens daily — summer (EEST, UTC+3) → 07:00 UTC
+    - cron: "0 7 * 4,5,6,7,8,9,10 *"
 
 permissions:
   contents: write

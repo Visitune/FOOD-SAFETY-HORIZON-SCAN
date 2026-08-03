@@ -88,6 +88,15 @@ JSON_PATH = DATA_DIR / "recalls.json"
 SKIP_COMMIT = os.getenv("SKIP_COMMIT", "").lower() in ("1", "true", "yes")
 
 REQUIRED_FIELDS = ("Date", "Company", "Product", "Pathogen", "URL")
+
+# RASFF notification URL shape (audit 2026-08-03) — used by the deterministic
+# override in gemini_gate() below. Matches the EU RASFF portal's genuine
+# per-notification URL; a numeric ID sourced from the official RASFF feed,
+# not scraped/guessed HTML.
+_RASFF_NOTIFICATION_URL_RE = re.compile(
+    r"rasff-window/screen/notification/\d+", re.IGNORECASE
+)
+
 GEMINI_BATCH_SIZE = 10  # Gemini grounded calls are slower; smaller batches
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
@@ -1033,30 +1042,12 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                     real_idx = start + j
                     passed = bool(d.get("pass"))
                     url_fix = d.get("url_corrected") or None
-                    # Local verification gate — never trust low confidence
+                    # Local verification gate — never trust low confidence.
+                    # (RASFF rows get a deterministic override further below,
+                    # regardless of what happens here — see that block for why.)
                     confidence = float(d.get("confidence", 0.0) or 0.0)
                     v = d.get("verification", {})
-                    # RASFF SPECIAL CASE (audit 2026-08-03): skip the
-                    # sub-check cross-verification entirely for RASFF.
-                    # Two independent reasons this is safe AND necessary:
-                    #  1. webgate.ec.europa.eu/rasff-window is an Angular
-                    #     single-page app with no server-rendered content —
-                    #     Google's grounded search can't reliably crawl it,
-                    #     so date_match/hazard_match/is_detail_page come back
-                    #     unreliable regardless of whether the row is correct
-                    #     (confirmed: rows rejected at confidence=0.95).
-                    #  2. RASFF rows come from the EU's own structured
-                    #     notification feed (Company="Origin: X | Notifying:
-                    #     Y", a scraper format that doesn't match the 3-letter-
-                    #     code convention this prompt describes) — the URL's
-                    #     numeric notification ID is a validated identifier
-                    #     straight from the official API, not free-text
-                    #     scraped/hallucination-prone like RappelConso HTML.
-                    #     The hallucinated-URL risk this whole gate exists to
-                    #     catch is structurally much lower here.
-                    # Still requires Gemini's own pass=true + confidence>=0.6.
-                    is_rasff = "rasff" in str(chunk[j].get("Source", "")).lower()
-                    if passed and v and not is_rasff:
+                    if passed and v:
                         checks = {
                             "date_match": v.get("date_match"),
                             "brand_match": v.get("brand_match"),
@@ -1070,10 +1061,6 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                             d["reason"] = (str(d.get("reason", ""))
                                            + f" [local gate rejected: conf={confidence:.2f}, "
                                            f"failed={failed_checks or '(none — only low confidence)'}]")
-                    elif is_rasff and confidence < 0.6:
-                        passed = False
-                        d["reason"] = (str(d.get("reason", ""))
-                                       + f" [local gate rejected: conf={confidence:.2f} < 0.6]")
                     # Local extraction-failed sanity check on the extracted block.
                     # Defence in depth — never trust Gemini's self-rejection alone.
                     # Triggers match Layer B HARD REJECT REASONS in the prompt.
@@ -1185,6 +1172,43 @@ def gemini_gate(rows: List[Dict[str, Any]]) -> Dict[int, Tuple[bool, str, Option
                 decisions[real_idx] = (False,
                                        "FAIL: gemini silent on this row (safety default — audit 2026-05-07)",
                                        None, None, "", {})
+
+    # ── RASFF deterministic override (audit 2026-08-03) ────────────────
+    # webgate.ec.europa.eu/rasff-window is an Angular single-page app with
+    # no server-rendered content. Google's grounded search cannot crawl
+    # it, so Gemini's content verification for RASFF is structurally
+    # unreliable — confirmed two ways in production: rows rejected by the
+    # local sub-checks at confidence=0.95 (Gemini itself was confident;
+    # the page-content cross-checks weren't answerable), and rows the
+    # model omitted from its response entirely ("gemini silent"), both
+    # independent of whether the row was actually correct.
+    #
+    # RASFF's hallucinated-URL risk — the reason this whole gate exists —
+    # is structurally much lower than free-text-scraped sources: the
+    # notification ID comes straight from the EU's own structured RASFF
+    # feed, not scraped/guessed HTML. So skip Gemini content verification
+    # for RASFF and trust a deterministic check instead: required fields
+    # present (already computed as det_fail above) + URL matches the
+    # genuine RASFF notification pattern. This OVERRIDES whatever Gemini
+    # decided (or failed to decide) for these rows — it does not merely
+    # fill gaps, because Gemini's negative verdicts for this source are
+    # exactly the unreliable signal being routed around here.
+    rasff_overridden = 0
+    for i, r in enumerate(rows):
+        if i in det_fail:
+            continue  # still enforce required-field presence
+        if "rasff" not in str(r.get("Source", "")).lower():
+            continue
+        if not _RASFF_NOTIFICATION_URL_RE.search(str(r.get("URL", "") or "")):
+            continue
+        decisions[i] = (True,
+                        "ok (RASFF deterministic override — JS SPA, Gemini "
+                        "content verification not feasible; audit 2026-08-03)",
+                        None, None, "", {})
+        rasff_overridden += 1
+    if rasff_overridden:
+        log.info("RASFF deterministic override: %d row(s) approved without "
+                 "Gemini content verification", rasff_overridden)
 
     passes = sum(1 for v in decisions.values() if v[0])
     fixed = sum(1 for v in decisions.values() if v[2] is not None)

@@ -264,16 +264,39 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       <label class="sr-only" for="pathf" data-i18n="fbPathogen">Pathogen</label>
       <select id="pathf">
         <option value="" data-i18n="allPathogens">All Pathogens</option>
-        <option value="listeria">Listeria</option>
-        <option value="salmonella">Salmonella</option>
-        <option value="e. coli">E. coli / STEC</option>
-        <option value="o157">E. coli O157</option>
-        <option value="botulinum">C. botulinum</option>
-        <option value="aflatoxin">Aflatoxin</option>
-        <option value="norovirus">Norovirus</option>
-        <option value="cereulide">Cereulide / B. cereus</option>
-        <option value="campylobacter">Campylobacter</option>
-        <option value="cyclospora">Cyclospora</option>
+        <optgroup label="Biological">
+          <option value="listeria">Listeria</option>
+          <option value="salmonella">Salmonella</option>
+          <option value="coli">E. coli / STEC</option>
+          <option value="o157">E. coli O157</option>
+          <option value="botulinum">C. botulinum</option>
+          <option value="cereulide">Cereulide</option>
+          <option value="cereus">Bacillus cereus</option>
+          <option value="norovirus">Norovirus</option>
+          <option value="hepatitis">Hepatitis A</option>
+          <option value="campylobacter">Campylobacter</option>
+          <option value="cronobacter">Cronobacter</option>
+          <option value="staphylococcus">Staphylococcus</option>
+          <option value="cyclospora">Cyclospora</option>
+          <option value="mould">Mould</option>
+        </optgroup>
+        <optgroup label="Mycotoxins">
+          <option value="aflatoxin">Aflatoxin</option>
+          <option value="ochratoxin">Ochratoxin</option>
+          <option value="mycotoxin">Other mycotoxins</option>
+        </optgroup>
+        <optgroup label="Chemical &amp; physical">
+          <option value="rodenticide">Rodenticide</option>
+          <option value="foreign">Foreign body / material</option>
+          <option value="histamine">Histamine</option>
+          <option value="pfas">PFAS / PFOA</option>
+        </optgroup>
+        <optgroup label="Marine biotoxins">
+          <option value="biotoxin">Marine biotoxin</option>
+        </optgroup>
+        <optgroup label="Allergens">
+          <option value="allergen">Undeclared allergen</option>
+        </optgroup>
       </select>
       <label class="sr-only" for="tierf" data-i18n="fbTier">Tier</label>
       <select id="tierf">
@@ -396,7 +419,25 @@ function setLang(l){
 function pb(p){p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}
 function tb(t){if(t==1)return'<span style="background:rgba(229,57,53,.1);color:#ef5350;border:1px solid rgba(229,57,53,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;">TIER-1</span>';if(t==2)return'<span style="background:rgba(232,96,26,.1);color:#F97316;border:1px solid rgba(232,96,26,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-2</span>';return'<span style="background:rgba(212,160,23,.1);color:#d4a017;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-3</span>';}
 function sc(s){const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#666;border:1px solid #2a2a2a;";const l=(s||"").replace("_GR","").replace("_FR","").replace("_BE","").replace("_DE","").replace("_UK","").replace(" (EU)","");return`<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;${css}">${l}</span>`;}
-function prodCat(p){p=(p||"").toLowerCase();if(/milk|cheese|yog|butter|cream|dairy/.test(p))return"Dairy";if(/beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb/.test(p))return"Meat/Poultry";if(/fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam/.test(p))return"Seafood";if(/lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion/.test(p))return"Produce";if(/bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta/.test(p))return"Grains/Bakery";if(/chocolate|candy|sweet|confection|snack|chip|cookie/.test(p))return"Confectionery/Snacks";if(/juice|beverage|drink|water|coffee|tea|soda/.test(p))return"Beverages";return"Other";}
+// Keyword lists include French (and a few English) additions (audit
+// 2026-08-03): RappelConso product names are frequently plain French with
+// no generic English category word, so the EN-only version left ~50% of
+// records in "Other". Substring match on the raw Product text — imprecise
+// by nature (a dropdown classifier, not a taxonomy), but meaningfully
+// reduces the Other bucket. Not exhaustive (specific AOP cheese/pastry
+// names aren't enumerated), by design — diminishing returns past the
+// common generic terms.
+function prodCat(p){
+  p=(p||"").toLowerCase();
+  if(/milk|cheese|yog(?:h)?urt|butter|cream|dairy|formula|fromage|lait|beurre|cr[eè]me|yaourt|brie|camembert|comt[eé]|roquefort|ch[eè]vre|reblochon|picodon/.test(p))return"Dairy";
+  if(/beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb|rib|wing|breast|mince|burger|viande|porc|b[oœ]uf|poulet|volaille|jambon|saucisse|saucisson|agneau|charcuterie|museau|dinde|veau/.test(p))return"Meat/Poultry";
+  if(/fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam|crevette|poisson|saumon|crabe|moule|hu[iî]tre|coquillage|thon|truite/.test(p))return"Seafood";
+  if(/lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion|fig|raisin|grape|almond|microgreen|moringa|l[eé]gume|salade|tomate|oignon|figue|amande/.test(p))return"Produce";
+  if(/bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta|sandwich|onigiri|pistachio|pain|p[aâ]tisserie|g[aâ]teau|farine|c[eé]r[eé]ale|p[aâ]te|riz/.test(p))return"Grains/Bakery";
+  if(/chocolate|candy|sweet|confection|snack|chip|cookie|chocolat|bonbon|confiserie/.test(p))return"Confectionery/Snacks";
+  if(/juice|beverage|drink|water|coffee|soda|boisson|jus|eau|caf[eé]/.test(p))return"Beverages";
+  return"Other";
+}
 
 function populateSelect(id,values,allLabel,allKey){
   const el=document.getElementById(id);

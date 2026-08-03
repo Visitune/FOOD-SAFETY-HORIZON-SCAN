@@ -1184,6 +1184,7 @@ def main() -> int:
         log.info("No surviving rows to gate")
         final_pending_out: List[Dict[str, Any]] = []
         new_approved: List[Dict[str, Any]] = []
+        archived_rejected: List[Dict[str, Any]] = []
     else:
         # ─── AUDIT 2026-05-07 — REMOVED rejection-reset bypass ──────────────
         #
@@ -1483,21 +1484,64 @@ def main() -> int:
             log.info("Gap-gating advanced: %d (pending_gap → v1), %d (v1 → v2)",
                      gap_advances["v0_to_v1"], gap_advances["v1_to_v2"])
 
-        # ARCHITECTURAL RULE (locked 2026-04-30):
-        # url_gate_gemini.py is verify-and-tag-only. It NEVER promotes
-        # rows to Recalls. Promotion only happens via merge_master.py
-        # AFTER claude_check.py has also passed.
-        # Rows that pass this gate stay in Pending with their advanced
-        # Status (pending_gap_v1 / pending_gap_v2 / pending) for Claude.
-        new_approved = []           # nothing promoted from this gate
-        final_pending_out = alive_rows
+        # SINGLE-REVIEWER PROMOTION (2026-08-03): the original two-reviewer
+        # architecture (locked 2026-04-30) required claude_check.py to also
+        # pass a row before promote_approved() was ever called — this repo
+        # has no ANTHROPIC_API_KEY configured and does not use Claude, so
+        # that second reviewer never ran and nothing was ever promoted
+        # (Pending grew without bound; docs/data/recalls.json went stale).
+        #
+        # promote_approved() already supports Gemini as the sole reviewer
+        # by design — see its docstring: "Reviewer 1 = Gemini URL gate ...
+        # Calls this function with archive_immediately=False (default)".
+        # With archive_immediately=False, rejections are NOT evicted
+        # immediately: they're stamped Status=rejected and kept in Pending,
+        # with the existing 2-strike counter (mark_rejected_with_counter)
+        # as a safety net against a single bad Gemini call wiping a row.
+        # pending_gap*/pending_enrichment rows are excluded automatically
+        # (NON_PROMOTABLE_STATUSES) until their own state machine clears.
+        new_approved, kept_in_pending, archived_rejected = promote_approved(
+            pending=alive_rows,
+            approved_existing=approved,
+            rejected_flags=rejected_flags,
+            archive_immediately=False,
+        )
+        if archived_rejected:
+            log.info("2-strike safety net evicted %d row(s) to Rejected",
+                      len(archived_rejected))
+        final_pending_out = kept_in_pending
+        log.info("Gate promotion: %d Pending -> Recalls; %d remain in Pending",
+                  len(new_approved), len(final_pending_out))
 
     # ── Assemble final state + save ────────────────────────────────────
-    final_approved = sort_rows(approved)   # Recalls untouched by this gate
+    # (2026-08-03: this gate now promotes on its own — see the
+    # single-reviewer promotion block above — so new_approved may be
+    # non-empty here and must be folded into Recalls.)
+    final_approved = sort_rows(approved + new_approved)
     final_pending = sort_rows(final_pending_out)
 
-    save_xlsx_with_pending(final_approved, final_pending, XLSX_PATH)
+    save_xlsx_with_pending(final_approved, final_pending, XLSX_PATH,
+                           newly_rejected_rows=archived_rejected)
     mirror_json_from_xlsx(XLSX_PATH, JSON_PATH)
+
+    # Mirror promotions/rejections into the Weekly_Review / Weekly_Rejected
+    # sheets, same as claude_check.py did when it was the promoting reviewer.
+    if new_approved:
+        try:
+            from pipeline.weekly_review_capture import record_promotions  # noqa: E402
+            n_wr = record_promotions(new_approved, xlsx_path=XLSX_PATH)
+            if n_wr:
+                log.info("Weekly_Review: appended %d row(s)", n_wr)
+        except Exception as _wr_err:  # never block promotion on capture failure
+            log.warning("Weekly_Review capture failed: %s", _wr_err)
+    if archived_rejected:
+        try:
+            from pipeline.weekly_rejected_capture import record_rejections  # noqa: E402
+            n_wj = record_rejections(archived_rejected, xlsx_path=XLSX_PATH)
+            if n_wj:
+                log.info("Weekly_Rejected: appended %d row(s)", n_wj)
+        except Exception as _wj_err:  # never block run on capture failure
+            log.warning("Weekly_Rejected capture failed: %s", _wj_err)
 
     # ── Rebuild daily briefs for every date that gained new rows ───────
     # When the gate promotes Pending → Recalls, the daily HTML brief for

@@ -7,10 +7,6 @@ on:
         description: "Skip Gemini PAID tier (cost-sensitive runs)"
         type: boolean
         default: false
-      skip_claude:
-        description: "Skip Claude fallback step"
-        type: boolean
-        default: false
       skip_openai:
         description: "Skip OpenAI fallback step"
         type: boolean
@@ -54,7 +50,6 @@ jobs:
       GEMINI_API_KEY_FREE_2: ${{ secrets.GEMINI_API_KEY_FREE_2 }}
       GEMINI_API_KEY:        ${{ secrets.GEMINI_API_KEY }}
       GROQ_API_KEY:      ${{ secrets.GROQ_API_KEY }}
-      ANTHROPIC_API_KEY:     ${{ secrets.ANTHROPIC_API_KEY }}
       OPENAI_API_KEY:        ${{ secrets.OPENAI_API_KEY }}
       # Lookback window — 7 days covers the gap between Tue/Thu/Sat fires.
       # FsisScheduler.gs now restricts cascade dispatch to Tue/Thu/Sat only
@@ -95,7 +90,6 @@ jobs:
         run: |
           ARGS=""
           if [ "${{ inputs.skip_paid   }}" = "true" ]; then ARGS="$ARGS --skip-paid"; fi
-          if [ "${{ inputs.skip_claude }}" = "true" ]; then ARGS="$ARGS --skip-claude"; fi
           if [ "${{ inputs.skip_openai }}" = "true" ]; then ARGS="$ARGS --skip-openai"; fi
           python -m pipeline.gap_finder_cascade $ARGS
 

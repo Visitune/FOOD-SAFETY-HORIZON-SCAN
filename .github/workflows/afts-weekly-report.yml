@@ -101,7 +101,6 @@ jobs:
       - name: Gap-fill — build weeks missing from docs/
         if: steps.guard.outputs.run == 'true' && github.event.inputs.force_week_end == ''
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
           GEMINI_API_KEY_1:  ${{ secrets.GEMINI_API_KEY_1 }}
@@ -126,7 +125,6 @@ jobs:
       - name: Force-build single week (manual dispatch)
         if: steps.guard.outputs.run == 'true' && github.event.inputs.force_week_end != ''
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY_FREE: ${{ secrets.GEMINI_API_KEY_FREE }}
           GEMINI_API_KEY_1:  ${{ secrets.GEMINI_API_KEY_1 }}

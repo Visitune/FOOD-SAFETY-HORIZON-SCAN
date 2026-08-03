@@ -43,8 +43,8 @@ line:
 
     _SYNTHESIS_BACKENDS = [
         ("afts_v1",   _call_afts_v1),     # ← new line at the top
-        ("anthropic", _call_anthropic),
         ("gemini",    _call_gemini),
+        ("groq",      _call_groq),
     ]
 
 If every LLM backend fails, `_deterministic_synthesis()` writes a
@@ -292,52 +292,6 @@ def _build_monthly_prompt(summary: dict) -> str:
 # LLM BACKENDS — provider-abstracted. Each returns text or None on failure.
 # ============================================================================
 
-def _call_anthropic(prompt: str, timeout: int = 60) -> Optional[str]:
-    """Call Anthropic via the existing REST integration used by the weekly
-    builder's review_with_claude(). Env: CLAUDE_API_KEY or ANTHROPIC_API_KEY."""
-    key = os.environ.get("CLAUDE_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        log.info("anthropic backend: no API key configured — skipping")
-        return None
-    try:
-        import requests  # type: ignore
-    except ImportError:
-        log.warning("anthropic backend: requests not installed — skipping")
-        return None
-    try:
-        r = requests.post(
-            "https://api.anthropic.com/v1/messages",
-            headers={
-                "x-api-key": key,
-                "anthropic-version": "2023-06-01",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": os.environ.get(
-                    "SYNTHESIS_MODEL", "claude-haiku-4-5-20251001"
-                ),
-                "max_tokens": 600,
-                "temperature": 0.4,
-                "messages": [{"role": "user", "content": prompt}],
-            },
-            timeout=timeout,
-        )
-        if r.status_code != 200:
-            log.warning("anthropic backend HTTP %d: %s",
-                        r.status_code, r.text[:200])
-            return None
-        body = r.json()
-        blocks = body.get("content") or []
-        # The first text block is the synthesis (no tool use in this call).
-        for blk in blocks:
-            if blk.get("type") == "text":
-                return blk.get("text", "").strip()
-        return None
-    except Exception as e:  # noqa: BLE001
-        log.warning("anthropic backend exception: %s", e)
-        return None
-
-
 def _call_gemini(prompt: str, timeout: int = 60) -> Optional[str]:
     """Call Gemini via google.genai. Tries GEMINI_API_KEY_FREE first, then
     GEMINI_API_KEY_1..5. Mirrors the rotation used by gap_finder_gemini so
@@ -434,7 +388,6 @@ def _call_groq(prompt: str, timeout: int = 60) -> Optional[str]:
 
 # Ordered backend list. New providers (VisiPilot in-house model) plug in at the top.
 _SYNTHESIS_BACKENDS: list[Tuple[str, Callable[[str, int], Optional[str]]]] = [
-    ("anthropic", _call_anthropic),
     ("gemini",    _call_gemini),
     ("groq",      _call_groq),
 ]
@@ -630,7 +583,7 @@ def _deterministic_synthesis(summary: dict, cadence: str) -> str:
 def generate_synthesis(summary: dict, cadence: str) -> Tuple[str, str]:
     """Try every backend in order; fall back to deterministic template.
     Returns (synthesis_text, source_label) — source_label is the backend
-    that succeeded (e.g. "anthropic", "gemini", "deterministic")."""
+    that succeeded (e.g. "gemini", "groq", "deterministic")."""
     if cadence == "weekly":
         prompt = _build_weekly_prompt(summary)
     elif cadence == "monthly":

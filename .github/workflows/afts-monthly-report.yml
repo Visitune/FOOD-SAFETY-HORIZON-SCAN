@@ -97,7 +97,6 @@ jobs:
       - name: Gap-fill — build only months missing from monthly-index.json
         if: steps.guard.outputs.run == 'true' && github.event.inputs.force_month_end == ''
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
           BACKFILL_FROM:     ${{ github.event.inputs.backfill_from || '2026-03' }}
         run: |
@@ -110,7 +109,6 @@ jobs:
       - name: Force-build single month (manual dispatch override)
         if: steps.guard.outputs.run == 'true' && github.event.inputs.force_month_end != ''
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY:    ${{ secrets.OPENAI_API_KEY }}
         run: |
           python docs/build_monthly_report_afts.py \

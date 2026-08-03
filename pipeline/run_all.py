@@ -51,8 +51,7 @@ from scrapers._base import BaseScraper, make_session  # noqa: E402
 from scrapers._models import Recall                    # noqa: E402
 from enrichment.enrich_rows import enrich_recalls      # noqa: E402
 from review.url_validator import validate_all, should_blank_url  # noqa: E402
-from review.claude_client import review_tier1 as claude_review_tier1   # noqa: E402
-from review.claude_client import review_batch as claude_review_full   # noqa: E402
+from review.claude_client import review_tier1, review_batch  # noqa: E402  (inert — no Claude/Anthropic in this project)
 from pipeline.merge_master import (                    # noqa: E402
     load_existing, load_pending,
     append_to_pending, promote_approved,
@@ -83,9 +82,10 @@ SKIP_REVIEW = os.getenv("SKIP_REVIEW", "").lower() in ("1", "true", "yes")
 SKIP_COMMIT = os.getenv("SKIP_COMMIT", "").lower() in ("1", "true", "yes")
 # SKIP_PROMOTE (audit 2026-05-07): scrape-only mode. New rows go to Pending
 # and stay there. promote_approved is bypassed entirely. The scheduled
-# url-gate / claude-check / merge-master workflows are then the ONLY path
-# to Recalls. Used by morning-critical-scrape and any other workflow whose
-# only job is to populate Pending.
+# gemini-url-gate workflow (pipeline/url_gate_gemini.py, which promotes on
+# its own since 2026-08-03) is then the ONLY path to Recalls. Used by
+# morning-critical-scrape and any other workflow whose only job is to
+# populate Pending.
 SKIP_PROMOTE = os.getenv("SKIP_PROMOTE", "").lower() in ("1", "true", "yes")
 
 # Optional comma-separated list of AGENCY values to include.
@@ -424,8 +424,8 @@ def main() -> int:
     if not SKIP_REVIEW and new_indices:
         new_rows = [pending[i] for i in new_indices]
         log.info("AI review pass on %d new rows", len(new_rows))
-        review_issues = claude_review_full(new_rows) if new_rows else []
-        tier1_flags = claude_review_tier1(new_rows) if new_rows else []
+        review_issues = review_batch(new_rows) if new_rows else []
+        tier1_flags = review_tier1(new_rows) if new_rows else []
 
         # Apply non-destructive fixes to the new rows, then write them back
         fixed_new = apply_reviewer_fixes(new_rows, review_issues, tier1_flags)
@@ -452,8 +452,8 @@ def main() -> int:
     archived_rejected: list = []  # populated only when SKIP_PROMOTE unset
     if SKIP_PROMOTE:
         # Scrape-only mode: new rows stay in Pending. The scheduled
-        # url-gate -> claude-check -> merge-master chain is the only
-        # path to Recalls. (Audit 2026-05-07.)
+        # gemini-url-gate workflow is the only path to Recalls.
+        # (Audit 2026-05-07; url-gate promotion added 2026-08-03.)
         log.info("SKIP_PROMOTE set — leaving %d new rows in Pending; "
                  "Recalls untouched", len(new_indices))
         new_approved = []

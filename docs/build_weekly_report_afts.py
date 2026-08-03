@@ -17,16 +17,13 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
-CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 # ---------------------------------------------------------------------------
 # Gemini / Groq fallbacks for the Intelligence Analysis narrative (§01) and
-# its polish pass. No ANTHROPIC_API_KEY is currently configured for this
-# workflow, so Claude always falls straight through today — these give the
-# narrative a real LLM-written pass (Gemini, then Groq) before the
-# deterministic template is used as the last resort. Same key-rotation and
-# calling pattern already used by pipeline/synthesis_writer.py (Gemini) and
-# scrapers/_base.py (Groq).
+# its polish pass — this project does not use Claude/Anthropic. Gemini is
+# tried first, then Groq, before the deterministic template is used as the
+# last resort. Same key-rotation and calling pattern already used by
+# pipeline/synthesis_writer.py (Gemini) and scrapers/_base.py (Groq).
 # ---------------------------------------------------------------------------
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 GROQ_MODEL   = os.getenv("GROQ_MODEL",   "llama-3.3-70b-versatile")
@@ -841,17 +838,18 @@ def _fmt_date_short(d):
     except Exception: return str(d)[:10]
 
 
-def generate_analysis_claude(stats, recalls):
+def generate_analysis_narrative(stats, recalls):
     """Generate §01 Intelligence Analysis.
-    P1-P3 come from Claude (or the fallback). P4 Process Authority Note is
-    always deterministic — it cites specific CFR/EU/CFIA paragraphs and
-    company names, which must be factually stable (not LLM-generated)."""
+    P1-P3 come from Gemini/Groq (or the deterministic fallback). P4 Process
+    Authority Note is always deterministic — it cites specific CFR/EU/CFIA
+    paragraphs and company names, which must be factually stable (not
+    LLM-generated)."""
     tp, tc = stats["top_pathogen"]; t = stats["total"]
     pct = round(tc/max(t,1)*100)
     bot = [r for r in recalls if "botulinum" in (r.get("Pathogen") or "").lower()
            or "clostridium" in (r.get("Pathogen") or "").lower()]
 
-    # Jurisdictions actually present this week — pass to Claude so P3 names them
+    # Jurisdictions actually present this week — pass to the LLM so P3 names them
     auths = _jurisdictions_from_recalls(recalls)
     auth_hint = ", ".join(auths[:5]) if auths else "multiple jurisdictions"
 
@@ -872,36 +870,21 @@ Tone: professional, process-engineering voice, no emojis, no bullets, no colons 
         dict(stats["pathogen_counts"]), dict(stats["country_counts"]), auth_hint,
         tp, auth_hint)
 
-    claude_out = None
-    if CLAUDE_API_KEY:
-        try:
-            resp = requests.post("https://api.anthropic.com/v1/messages",
-                headers={"Content-Type":"application/json","x-api-key":CLAUDE_API_KEY},
-                json={"model":"claude-sonnet-4-20250514","max_tokens":1200,
-                      "messages":[{"role":"user","content":prompt}]}, timeout=60)
-            if resp.status_code == 200:
-                claude_out = resp.json()["content"][0]["text"]
-            else:
-                log.error("Claude %d", resp.status_code)
-        except Exception as e:
-            log.error("Claude error: %s", e)
-
     # Gemini, then Groq, before giving up on an LLM-written narrative.
-    if claude_out is None:
-        claude_out = _call_gemini_text(prompt)
-    if claude_out is None:
-        claude_out = _call_groq_text(prompt)
+    narrative_out = _call_gemini_text(prompt)
+    if narrative_out is None:
+        narrative_out = _call_groq_text(prompt)
 
     # Deterministic fallback for P1-P3 if every LLM failed (tail call to
     # _fallback without bot so it produces only P1-P3).
-    if claude_out is None:
-        claude_out = _fallback_p1_to_p3(stats, recalls)
+    if narrative_out is None:
+        narrative_out = _fallback_p1_to_p3(stats, recalls)
 
     # Append deterministic P4 Process Authority Note (multi-trigger).
     pa = _process_authority_note(recalls, bot)
     if pa:
-        claude_out = claude_out.rstrip() + "\n\n" + pa
-    return claude_out
+        narrative_out = narrative_out.rstrip() + "\n\n" + pa
+    return narrative_out
 
 
 def _fallback_p1_to_p3(stats, recalls):
@@ -1537,23 +1520,9 @@ def _process_authority_note(recalls, bot):
     # No trigger fired — return empty string (no P4 appended)
     return ""
 
-def review_with_claude(text):
-    """Optional grammar polish. Tries Claude Haiku 4.5 first (Replaced OpenAI
-    gpt-4o-mini, Apr 2026), then Gemini, then Groq. Returns text unchanged
-    if no key is configured or every backend fails."""
-    if CLAUDE_API_KEY:
-        try:
-            r = requests.post("https://api.anthropic.com/v1/messages",
-                headers={"x-api-key": CLAUDE_API_KEY, "anthropic-version": "2023-06-01",
-                         "Content-Type": "application/json"},
-                json={"model": "claude-haiku-4-5-20251001", "max_tokens": 1200,
-                      "messages": [{"role": "user",
-                        "content": "Review this food safety analysis. Fix grammar. Keep structure/facts. Return polished version only.\n\n" + text}]},
-                timeout=60)
-            if r.status_code == 200:
-                return r.json()["content"][0]["text"]
-        except Exception as e: log.warning("Claude polish: %s", e)
-
+def review_with_narrative_llm(text):
+    """Optional grammar polish. Tries Gemini first, then Groq. Returns text
+    unchanged if no key is configured or every backend fails."""
     polish_prompt = ("Review this food safety analysis. Fix grammar. Keep "
                       "structure/facts. Return polished version only.\n\n" + text)
     out = _call_gemini_text(polish_prompt)
@@ -2273,8 +2242,8 @@ def build_html(week_end, recalls, prev_week, original_published=None):
     total = stats["total"]
     sr = sort_by_severity(recalls)
 
-    raw = generate_analysis_claude(stats, recalls)
-    final = review_with_claude(raw)
+    raw = generate_analysis_narrative(stats, recalls)
+    final = review_with_narrative_llm(raw)
 
     paras = [p.strip() for p in final.strip().split("\n\n") if p.strip()]
 

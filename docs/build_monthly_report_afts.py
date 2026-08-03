@@ -62,8 +62,6 @@ from process_authority import (  # noqa: E402
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("monthly")
 
-CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-
 # Brand tokens — mirror the weekly report so the HTML shares a visual identity.
 # If weekly doesn't export them (older versions or current refactored state),
 # fall back to the canonical Food Safety Horizon Scanning palette so the monthly build never crashes
@@ -382,150 +380,17 @@ def generate_monthly_narrative(stats: Dict[str, Any],
                                month_name: str,
                                year: int) -> str:
     """
-    Write 3 paragraphs (+ optional 4th Process Authority Note). Claude is fed
-    the pre-computed analytical signals as authoritative context so it
-    narrates them instead of trying to re-derive from raw counts. Falls back
-    to a deterministic narrative if no ANTHROPIC_API_KEY is present.
+    Write 3 paragraphs (+ optional 4th Process Authority Note). This project
+    does not use Claude/Anthropic — always uses the deterministic narrative
+    template below, which is data-grounded from the pre-computed analytical
+    signals (no LLM call).
     """
     pa_trigger   = detect_process_authority_trigger(month_recalls)
     pa_extension = build_pa_prompt_extension(pa_trigger)
-
-    if not CLAUDE_API_KEY:
-        log.warning("ANTHROPIC_API_KEY missing; using fallback monthly narrative")
-        return _fallback_narrative(stats, signals, models, month_name, year, pa_trigger)
-
-    import requests
-
-    # Compact views of signals for the prompt
-    mom = signals["mom_trend"]
-    hs  = signals["hotspot"]
-    cl  = signals["cluster"]
-    co  = signals["concentration"]
-    gr  = signals["growth"]
-    sv  = signals["severity"]
-    lt  = models["linear_trend"]
-    poi = models["poisson"]
-
-    hotspot_lines = "\n".join(
-        f"  - {h['country']} × {h['pathogen']}: observed={h['observed']} vs "
-        f"expected={h['expected']} (stdres={h['stdres']:+.2f}, ratio={h['ratio']}x)"
-        for h in hs.get("hotspots", [])[:3]
-    ) or "  (no statistically significant hotspots — distribution matches independence baseline)"
-
-    cluster_lines = "\n".join(
-        f"  - {c['pathogen']}: {c['size']} events in {c['span_days']}d "
-        f"across {len(c['countries'])} countries ({', '.join(c['countries'][:3])})"
-        for c in cl.get("clusters", [])[:3]
-    ) or "  (no same-pathogen temporal clusters this month)"
-
-    emerging_lines = "\n".join(
-        f"  - {e['pathogen']}: count={e['count']}, Z={e['z_score']}, MoM={e['growth_pct']}%"
-        for e in gr.get("emerging", [])[:4]
-    ) or "  (no pathogens with >2-sigma growth vs historical share)"
-
-    # Poisson highlights for rare pathogens
-    poisson_lines = []
-    if poi.get("by_pathogen"):
-        for p, f in poi["by_pathogen"].items():
-            if isinstance(f, dict) and f.get("status") == "active":
-                poisson_lines.append(
-                    f"  - {p}: λ̂={f['lambda']}, last={f['last']}, "
-                    f"p90={f['p90']}, p95={f['p95']}"
-                )
-    poisson_block = "\n".join(poisson_lines[:5]) or "  (no rare pathogens with active Poisson fit)"
-
-    lt_block = (
-        f"  Active: next-month point forecast={lt['next_month_point']}, "
-        f"95% CI=[{lt['next_month_ci95'][0]}, {lt['next_month_ci95'][1]}], "
-        f"slope={lt['slope_per_month']:+.1f}/mo, r²={lt['r_squared']}, "
-        f"slope_significant={lt['slope_significant']}"
-        if lt.get("status") == "active"
-        else f"  Inactive: {lt.get('message','(insufficient data)')}"
-    )
-
-    prompt = f"""You are producing the Food Safety Horizon Scanning monthly pathogen surveillance briefing for {month_name} {year}. Your analysis must sound like a practising process authority — not a generic AI — interpreting every finding through validated food process engineering (21 CFR 113/114, PMO, HACCP CCPs, environmental monitoring) and naming specific failure modes and control points.
-
-PRE-COMPUTED ANALYTICAL SIGNALS — treat these as authoritative. Do NOT recompute or second-guess them.
-
-MONTH BASELINE
-  Total recalls:    {stats['total']}
-  Tier-1 critical:  {stats['tier1']}
-  Outbreaks:        {stats['outbreaks']}
-  Leading pathogen: {stats['top_pathogen'][0]} ({stats['top_pathogen'][1]} recall incidents)
-
-MoM TREND
-  Series:           {mom.get('values')}
-  Current:          {mom.get('current')}
-  Rolling mean:     {mom.get('rolling_mean')}
-  Z vs baseline:    {mom.get('z_score')} (|Z|>2 flagged as anomalous; {mom.get('anomaly_flag')})
-  Direction:        {mom.get('direction')} ({mom.get('delta_pct')}% vs prior month)
-
-HOTSPOT CELLS (country × pathogen with observed count >2σ above independence-baseline expected count):
-{hotspot_lines}
-
-CLUSTERS (≥3 same-pathogen outbreaks within 14 days):
-{cluster_lines}
-
-CONCENTRATION
-  Source HHI:          {co.get('hhi_source')} ({co.get('hhi_bucket')})
-  Geographic Gini:     {co.get('gini_country')} ({co.get('gini_bucket')})
-  Tier-1 share:        {co.get('tier1_share')}
-  Baseline Tier-1:     {co.get('baseline_tier1_share')}
-  Tier-1 intensity:    {co.get('tier1_intensity_ratio')}x vs baseline
-
-EMERGING PATHOGENS (>2σ MoM growth vs historical share):
-{emerging_lines}
-
-COMPOSITE SEVERITY INDEX
-  Score: {sv.get('score')}/100 ({sv.get('bucket')})
-  Components: {sv.get('components')}
-
-PREDICTIVE OUTLOOK
-  Linear trend projection:
-{lt_block}
-  Poisson per-pathogen forecasts (rare pathogens, <10/month mean):
-{poisson_block}
-
-TASK. Write exactly THREE paragraphs, each 4–6 sentences, professional-engineering tone. NO headers, NO bullets, NO markdown, NO emoji. Use UK/US business English. Reference specific numbers and named pathogens from the signals above. A separate Process Authority Note may be appended — do NOT reference scheduled-process filings or FDA Form 2541 in your three paragraphs.
-
-Paragraph 1 — MONTH HEADLINE: Anchor on the MoM direction, the Z-score (or "inside baseline" when Z is None), the dominant pathogen and its share. Call out the single most important hotspot by name (country × pathogen combo with the highest standardised residual). Quote the composite severity score and its bucket.
-
-Paragraph 2 — STRUCTURAL INTERPRETATION: Explain WHY the month looks the way it does using the hotspot, cluster, and concentration signals. Commit to a most-likely mechanism — is this a single-country regional event (high Gini), a coordinated multi-jurisdictional signal (low Gini, low HHI), or an agency-concentrated data artefact (high HHI)? Tie the dominant pathogen to a specific production-system failure mode (environmental harbourage, raw-material sourcing, thermal underprocess, post-process recontamination, cold-chain breach).
-
-Paragraph 3 — FORWARD-LOOKING ENGINEERING RECOMMENDATION: Name the single highest-leverage verification step a QA director should take this month, tied to (a) the emerging-pathogen list and (b) the linear-trend and Poisson forecasts. Reference the specific predictive upper bound if material (e.g. "p95 upper bound for C. botulinum sits at N over the next month"). Be specific and commit to a concrete control (CCP re-verification, environmental monitoring intensity increase, supplier verification audit, thermocouple placement check) rather than hedging.
-
-Return only the three paragraphs separated by a single blank line."""
-
     if pa_extension:
-        prompt += "\n\n" + pa_extension
         log.info("Process Authority trigger fired (monthly): %s",
                  _count_phrase(pa_trigger.get("total_matches", 0), "matching incident"))
-
-    try:
-        r = requests.post(
-            "https://api.anthropic.com/v1/messages",
-            headers={
-                "x-api-key":         CLAUDE_API_KEY,
-                "anthropic-version": "2023-06-01",
-                "content-type":      "application/json",
-            },
-            json={
-                "model":      "claude-sonnet-4-20250514",
-                "max_tokens": 2200 if pa_extension else 1600,
-                "messages":   [{"role": "user", "content": prompt}],
-            },
-            timeout=90,
-        )
-        if r.status_code != 200:
-            log.warning("Claude %d: %s", r.status_code, r.text[:200])
-            return _fallback_narrative(stats, signals, models, month_name, year, pa_trigger)
-        data = r.json()
-        parts = [b.get("text", "") for b in data.get("content", []) if b.get("type") == "text"]
-        narrative = "\n\n".join(p for p in parts if p).strip()
-        return narrative or _fallback_narrative(stats, signals, models, month_name, year, pa_trigger)
-    except Exception as e:
-        log.warning("Claude monthly narrative failed: %s", e)
-        return _fallback_narrative(stats, signals, models, month_name, year, pa_trigger)
+    return _fallback_narrative(stats, signals, models, month_name, year, pa_trigger)
 
 
 def _fallback_narrative(stats: Dict[str, Any], signals: Dict[str, Any],

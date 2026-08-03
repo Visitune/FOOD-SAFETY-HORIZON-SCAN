@@ -2,15 +2,14 @@
 Gap-finder cascade — single entry point that tries multiple LLM gap-finders
 in priority order, stopping at the first one that adds rows.
 
-CASCADE ORDER (audit 2026-04-29):
+CASCADE ORDER (audit 2026-08-03 — Claude step removed, no ANTHROPIC_API_KEY
+in this project):
   Call 1   Gemini FREE tier (gemini-2.5-flash + Google Search grounding)
            — €0/run; 250 req/day daily cap; this is the workhorse.
   Call 2   Gemini PAID tier (Tier 1, same code path, different key)
            — €0.10/run; only if free-tier rate-limited or returned no
              usable response.
-  Call 3   Claude (claude-haiku-4-5 + web_search_20250305)
-           — ~$0.005/run; only if both Gemini calls failed or returned 0 rows.
-  Call 4   OpenAI (gpt-4o-mini-search-preview)
+  Call 3   OpenAI (gpt-4o-mini-search-preview)
            — ~$0.10/run; final fallback.
 
 Per-step timeout: 90 seconds. A hung call rolls forward to the next provider
@@ -67,7 +66,6 @@ CLI
 ---
     python -m pipeline.gap_finder_cascade               # default
     python -m pipeline.gap_finder_cascade --skip-paid   # never escalate to paid Gemini
-    python -m pipeline.gap_finder_cascade --skip-claude
     python -m pipeline.gap_finder_cascade --skip-openai
 """
 from __future__ import annotations
@@ -170,18 +168,6 @@ def _try_gemini(force_paid: bool = False) -> Tuple[bool, int, str]:
             os.environ.pop("GAP_GEMINI_DISABLE_FREE", None)
 
 
-def _try_claude() -> Tuple[bool, int, str]:
-    try:
-        from pipeline import gap_finder_claude
-    except ImportError as e:
-        return False, 0, f"import failed: {e}"
-    try:
-        rc = gap_finder_claude.main()
-        return (rc == 0), 0, f"main() returned {rc}"
-    except Exception as e:  # noqa: BLE001
-        return False, 0, f"exception: {type(e).__name__}: {e}"
-
-
 def _try_openai() -> Tuple[bool, int, str]:
     """Call gap_finder_openai.main() — the final fallback. The OpenAI
     finder is OPTIONAL: if the module isn't installed we just skip it
@@ -236,7 +222,7 @@ def _pending_count() -> int:
         return -1
 
 
-def run_cascade(skip_paid: bool = False, skip_claude: bool = False,
+def run_cascade(skip_paid: bool = False,
                 skip_openai: bool = False) -> int:
     """Run the cascade. Exit-code policy (audit 2026-05-13):
 
@@ -261,8 +247,6 @@ def run_cascade(skip_paid: bool = False, skip_claude: bool = False,
     ]
     if not skip_paid:
         steps.append(("Gemini (paid only)", lambda: _try_gemini(force_paid=True)))
-    if not skip_claude:
-        steps.append(("Claude",      _try_claude))
     if not skip_openai:
         steps.append(("OpenAI",      _try_openai))
 
@@ -362,14 +346,11 @@ def main() -> int:
     ap.add_argument("--skip-paid", action="store_true",
                     help="Don't escalate to paid Gemini if free fails "
                          "(useful in cost-sensitive cron slots).")
-    ap.add_argument("--skip-claude", action="store_true",
-                    help="Skip the Claude fallback step.")
     ap.add_argument("--skip-openai", action="store_true",
                     help="Skip the OpenAI fallback step.")
     args = ap.parse_args()
     return run_cascade(
         skip_paid=args.skip_paid,
-        skip_claude=args.skip_claude,
         skip_openai=args.skip_openai,
     )
 

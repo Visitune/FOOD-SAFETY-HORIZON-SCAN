@@ -16,7 +16,7 @@ docs/build_weekly_report_afts.py):
     detect_process_authority_trigger(rows)  — scan recalls; return dict
     build_prompt_extension(trigger)         — text appended to AI prompt
     deterministic_fallback(trigger)         — full PA paragraph for use
-                                              when no Claude API is
+                                              when no LLM narrative is
                                               available
 
 Design rules:
@@ -39,8 +39,8 @@ from typing import Any, Dict, List
 
 # ──────────────────────────────────────────────────────────────────────
 # Public constant — the section label, also used by the report builder
-# to detect the PA paragraph in Claude's response and apply the .pa-note
-# CSS class. Match is case-insensitive.
+# to detect the PA paragraph in the LLM narrative response and apply the
+# .pa-note CSS class. Match is case-insensitive.
 # ──────────────────────────────────────────────────────────────────────
 PROCESS_AUTHORITY_LABEL = "Process Authority Note"
 
@@ -241,7 +241,7 @@ def detect_process_authority_trigger(rows: List[Dict[str, Any]]) -> Dict[str, An
 # Public: build_prompt_extension
 # ──────────────────────────────────────────────────────────────────────
 def build_prompt_extension(trigger: Dict[str, Any]) -> str:
-    """Return a string to APPEND to the Claude narrative prompt.
+    """Return a string to APPEND to the LLM narrative prompt.
 
     Empty string when trigger.fired is False (caller appends unconditionally).
     """
@@ -309,8 +309,8 @@ single blank line separating it from paragraph three.
 # Public: deterministic_fallback
 # ──────────────────────────────────────────────────────────────────────
 # Three deterministic variants keyed off which trigger category fired.
-# Used when there is no ANTHROPIC_API_KEY (the AI narrative path is
-# bypassed entirely). All three lead with the global framing so the
+# Used when no LLM narrative backend is available (the AI narrative path
+# is bypassed entirely). All three lead with the global framing so the
 # tone matches the AI version.
 # ──────────────────────────────────────────────────────────────────────
 _GLOBAL_FRAMING = (

@@ -15,6 +15,7 @@ body{background:#0B1120;color:#E5E7EB;font-family:'Inter',sans-serif;font-size:1
 .nav{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;font-family:'JetBrains Mono',monospace;}
 .nav a{color:#9CA3AF;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.10);border-radius:3px;}
 .nav a:hover,.nav a.on{color:#F97316;border-color:#F97316;}
+.ic{vertical-align:-2px;margin-right:5px;flex-shrink:0;}
 .wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px;}
 .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
 .eyebrow .rule{height:2px;width:32px;background:#F97316;}
@@ -56,10 +57,10 @@ a.link:hover{text-decoration:underline;}
   <div class="brand">Food Safety <span>·</span> Horizon Scanning</div>
   <div class="hdr-right">
     <div class="nav">
-      <a href="index.html" data-i18n="navDash">🔴 Live Dashboard</a>
-      <a href="weekly.html" data-i18n="navWeekly">📊 Weekly</a>
-      <a href="hub.html" data-i18n="navMonthly">📈 Monthly + AI</a>
-      <a href="guide.html" class="on" data-i18n="navGuide">📘 Guide</a>
+      <a href="index.html"><svg class="ic" viewBox="0 0 16 16" width="10" height="10" fill="currentColor"><circle cx="8" cy="8" r="6"/></svg><span data-i18n="navDash">Live Dashboard</span></a>
+      <a href="weekly.html"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 14V9M7.5 14V4M12 14V7"/></svg><span data-i18n="navWeekly">Weekly</span></a>
+      <a href="hub.html"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l4-4 3 3 5-6"/><path d="M10.5 4H14v3.5"/></svg><span data-i18n="navMonthly">Monthly + AI</span></a>
+      <a href="guide.html" class="on"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3.4c1.2-.7 2.7-1 4-.8 1 .1 1.6.5 2 .8v9.2c-.4-.3-1-.7-2-.8-1.3-.2-2.8.1-4 .8V3.4z"/><path d="M14 3.4c-1.2-.7-2.7-1-4-.8-1 .1-1.6.5-2 .8v9.2c.4-.3 1-.7 2-.8 1.3-.2 2.8.1 4 .8V3.4z"/></svg><span data-i18n="navGuide">Guide</span></a>
     </div>
     <div class="langtoggle">
       <button id="langEn" class="on" onclick="setLang('en')">EN</button>
@@ -179,7 +180,7 @@ try{ const saved = localStorage.getItem('fshs_lang'); if (saved==='fr'||saved===
 
 const I18N = {
   en: {
-    navDash:'🔴 Live Dashboard', navWeekly:'📊 Weekly', navMonthly:'📈 Monthly + AI', navGuide:'📘 Guide',
+    navDash:'Live Dashboard', navWeekly:'Weekly', navMonthly:'Monthly + AI', navGuide:'Guide',
     eyebrow:'User Guide',
     title:'How Food Safety Horizon Scanning works',
     lede:'This platform continuously aggregates food safety recalls and alerts from 90+ regulatory agencies worldwide, verifies each record, and publishes it here. This guide explains what you\'re looking at and how to get the most out of it.',
@@ -216,7 +217,7 @@ const I18N = {
     footDash:'Dashboard', footWeekly:'Weekly', footMonthly:'Monthly',
   },
   fr: {
-    navDash:'🔴 Tableau de bord', navWeekly:'📊 Hebdomadaire', navMonthly:'📈 Mensuel + IA', navGuide:'📘 Guide',
+    navDash:'Tableau de bord', navWeekly:'Hebdomadaire', navMonthly:'Mensuel + IA', navGuide:'Guide',
     eyebrow:'Guide utilisateur',
     title:'Comment fonctionne Food Safety Horizon Scanning',
     lede:'Cette plateforme agrège en continu les rappels et alertes de sécurité alimentaire de plus de 90 agences de régulation dans le monde, vérifie chaque enregistrement, puis le publie ici. Ce guide explique ce que vous voyez et comment en tirer le meilleur parti.',

@@ -33,8 +33,10 @@ tr.skeleton-row .skeleton{display:block;height:12px;width:100%;}
 .kpi-row{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px;}
 .kpi{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:12px 16px;border-top:2px solid var(--acc);transition:transform .15s;position:relative;}
 .kpi:hover{transform:translateY(-2px);}
-.kpi-spark{display:block;width:56px;height:18px;margin-top:6px;color:var(--acc);opacity:.7;}
+.kpi-trend{display:flex;align-items:center;gap:6px;margin-top:6px;}
+.kpi-spark{display:block;width:56px;height:18px;color:var(--acc);opacity:.7;flex-shrink:0;}
 .kpi-spark svg{display:block;width:100%;height:100%;}
+.kpi-delta{font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap;}
 .kpi.r{border-top-color:#ef5350;}.kpi.a{border-top-color:#d4a017;}.kpi.b{border-top-color:#5b9bd5;}.kpi.g{border-top-color:#4caf80;}.kpi.p{border-top-color:#ce93d8;}
 .kv{font-family:'Inter',sans-serif;font-size:26px;font-weight:800;color:var(--acc);line-height:1;}
 .kpi.r .kv{color:#ef5350;}.kpi.a .kv{color:#d4a017;}.kpi.b .kv{color:#5b9bd5;}.kpi.g .kv{color:#4caf80;}.kpi.p .kv{color:#ce93d8;}
@@ -116,7 +118,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 @media print{
   body{background:#fff;color:#111;}
   .hdr,.ticker,.langtoggle,.tab-bar,.pag,.pb,.kpi-spark,.sort-arrow,th{cursor:default;}
-  .hdr,.ticker,.tab-bar,.pag,#exportBtn,#clearFilters,.kpi-spark{display:none!important;}
+  .hdr,.ticker,.tab-bar,.pag,#exportBtn,#exportCsvBtn,#clearFilters,.kpi-trend{display:none!important;}
   .filters input,.filters select{display:none;}
   .filters{margin-bottom:6px;}
   .wrap{padding:0;max-width:none;}
@@ -176,12 +178,12 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
   </div>
 
     <div class="kpi-row">
-      <div class="kpi"><div class="kv skeleton" id="kpiTotal">–</div><div class="kl" data-i18n="kpiTotal">Total Recalls in DB</div><span class="kpi-spark" id="skTotal"></span></div>
-      <div class="kpi r"><div class="kv skeleton" id="kpiTier1">–</div><div class="kl" data-i18n="kpiTier1">Tier-1 Critical</div><span class="kpi-spark" id="skTier1"></span></div>
-      <div class="kpi a"><div class="kv skeleton" id="kpiOutbreaks">–</div><div class="kl" data-i18n="kpiOutbreaks">Active Outbreaks</div><span class="kpi-spark" id="skOutbreaks"></span></div>
-      <div class="kpi b"><div class="kv skeleton" id="kpiPathogens">–</div><div class="kl" data-i18n="kpiPathogens">Distinct Pathogens</div><span class="kpi-spark" id="skPathogens"></span></div>
-      <div class="kpi g"><div class="kv skeleton" id="kpiCountries">–</div><div class="kl" data-i18n="kpiCountries">Countries</div><span class="kpi-spark" id="skCountries"></span></div>
-      <div class="kpi p"><div class="kv skeleton" id="kpiSources">–</div><div class="kl" data-i18n="kpiSources">Sources</div><span class="kpi-spark" id="skSources"></span></div>
+      <div class="kpi"><div class="kv skeleton" id="kpiTotal">–</div><div class="kl" data-i18n="kpiTotal">Total Recalls in DB</div><div class="kpi-trend"><span class="kpi-spark" id="skTotal"></span><span class="kpi-delta" id="dTotal"></span></div></div>
+      <div class="kpi r"><div class="kv skeleton" id="kpiTier1">–</div><div class="kl" data-i18n="kpiTier1">Tier-1 Critical</div><div class="kpi-trend"><span class="kpi-spark" id="skTier1"></span><span class="kpi-delta" id="dTier1"></span></div></div>
+      <div class="kpi a"><div class="kv skeleton" id="kpiOutbreaks">–</div><div class="kl" data-i18n="kpiOutbreaks">Active Outbreaks</div><div class="kpi-trend"><span class="kpi-spark" id="skOutbreaks"></span><span class="kpi-delta" id="dOutbreaks"></span></div></div>
+      <div class="kpi b"><div class="kv skeleton" id="kpiPathogens">–</div><div class="kl" data-i18n="kpiPathogens">Distinct Pathogens</div><div class="kpi-trend"><span class="kpi-spark" id="skPathogens"></span><span class="kpi-delta" id="dPathogens"></span></div></div>
+      <div class="kpi g"><div class="kv skeleton" id="kpiCountries">–</div><div class="kl" data-i18n="kpiCountries">Countries</div><div class="kpi-trend"><span class="kpi-spark" id="skCountries"></span><span class="kpi-delta" id="dCountries"></span></div></div>
+      <div class="kpi p"><div class="kv skeleton" id="kpiSources">–</div><div class="kl" data-i18n="kpiSources">Sources</div><div class="kpi-trend"><span class="kpi-spark" id="skSources"></span><span class="kpi-delta" id="dSources"></span></div></div>
     </div>
 
   <div class="tab-bar">
@@ -287,6 +289,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       </select>
       <button class="pb" id="clearFilters" style="display:none" onclick="clearAllFilters()">✕</button>
       <button class="pb" id="exportBtn" onclick="exportSnapshot()" data-i18n="exportBtn">↓ Export this view</button>
+      <button class="pb" id="exportCsvBtn" onclick="exportCsv()" data-i18n="exportCsvBtn">↓ CSV</button>
       <span class="pi" id="fcnt"></span>
     </div>
     <div class="tbl-wrap">
@@ -326,7 +329,7 @@ const I18N = {
     panelPathogens:'Top Pathogens (All Sources)', panelSources:'By Source', panelCountries:'By Country', panelProducts:'By Product Type', panelTrend:'Monthly Evolution',
     trendNotEnough:'Not enough monthly data points to plot a trend for the current filters.',
     biasNote:"Volume reflects each regulator's publication practice, not necessarily the real-world incident rate. Tier-1 % is a less volume-sensitive comparison.",
-    exportBtn:'↓ Export this view', tier1RateLbl:'Tier-1 rate',
+    exportBtn:'↓ Export this view', exportCsvBtn:'↓ CSV', tier1RateLbl:'Tier-1 rate',
     panelNews:'Latest Industry News', newsLoading:'Loading…', newsEmpty:'No recent news available.',
     newsCatOutbreak:'Outbreak', newsCatRegulatory:'Regulatory',
     tabOverviewTitle:'Overview', tabOverviewSub:'Trends, breakdowns, industry news',
@@ -349,7 +352,7 @@ const I18N = {
     panelPathogens:'Pathogènes principaux (toutes sources)', panelSources:'Par source', panelCountries:'Par pays', panelProducts:'Par type de produit', panelTrend:'Évolution mensuelle',
     trendNotEnough:'Pas assez de mois de données pour tracer une tendance avec ces filtres.',
     biasNote:"Le volume reflète l'exhaustivité de publication de chaque régulateur, pas nécessairement la fréquence réelle des incidents. Le taux Tier-1 est une comparaison moins sensible au volume.",
-    exportBtn:'↓ Exporter cette vue', tier1RateLbl:'Taux Tier-1',
+    exportBtn:'↓ Exporter cette vue', exportCsvBtn:'↓ CSV', tier1RateLbl:'Taux Tier-1',
     panelNews:'Dernières actualités du secteur', newsLoading:'Chargement…', newsEmpty:'Aucune actualité récente disponible.',
     newsCatOutbreak:'Épidémie', newsCatRegulatory:'Réglementaire',
     tabOverviewTitle:'Vue d\'ensemble', tabOverviewSub:'Tendances, répartitions, actualités',
@@ -541,13 +544,27 @@ function sparklineSvg(vals){
   return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 }
 
+function formatKpiDelta(trend){
+  if(!trend || trend.length<2) return '';
+  const prev=trend[trend.length-2], last=trend[trend.length-1];
+  if(prev===0) return '—';
+  const pct=Math.round(((last-prev)/prev)*100);
+  const arrow = pct>0?'↑':(pct<0?'↓':'→');
+  return `${arrow} ${Math.abs(pct)}%`;
+}
+
+function renderKpiTrendPair(sparkId, deltaId, trend){
+  document.getElementById(sparkId).innerHTML = sparklineSvg(trend);
+  document.getElementById(deltaId).textContent = formatKpiDelta(trend);
+}
+
 function renderKpiSparklines(data){
-  document.getElementById('skTotal').innerHTML = sparklineSvg(computeKpiTrend(data, rows=>rows.length));
-  document.getElementById('skTier1').innerHTML = sparklineSvg(computeKpiTrend(data, rows=>rows.filter(r=>r.Tier==1).length));
-  document.getElementById('skOutbreaks').innerHTML = sparklineSvg(computeKpiTrend(data, rows=>rows.filter(r=>r.Outbreak).length));
-  document.getElementById('skPathogens').innerHTML = sparklineSvg(computeKpiTrend(data, rows=>new Set(rows.map(r=>r.Pathogen||'Unknown')).size));
-  document.getElementById('skCountries').innerHTML = sparklineSvg(computeKpiTrend(data, rows=>new Set(rows.map(r=>r.Country).filter(Boolean)).size));
-  document.getElementById('skSources').innerHTML = sparklineSvg(computeKpiTrend(data, rows=>new Set(rows.map(r=>r.Source)).size));
+  renderKpiTrendPair('skTotal','dTotal', computeKpiTrend(data, rows=>rows.length));
+  renderKpiTrendPair('skTier1','dTier1', computeKpiTrend(data, rows=>rows.filter(r=>r.Tier==1).length));
+  renderKpiTrendPair('skOutbreaks','dOutbreaks', computeKpiTrend(data, rows=>rows.filter(r=>r.Outbreak).length));
+  renderKpiTrendPair('skPathogens','dPathogens', computeKpiTrend(data, rows=>new Set(rows.map(r=>r.Pathogen||'Unknown')).size));
+  renderKpiTrendPair('skCountries','dCountries', computeKpiTrend(data, rows=>new Set(rows.map(r=>r.Country).filter(Boolean)).size));
+  renderKpiTrendPair('skSources','dSources', computeKpiTrend(data, rows=>new Set(rows.map(r=>r.Source)).size));
 }
 
 function computeSummary(data){
@@ -773,6 +790,30 @@ td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:
   const a=document.createElement('a');
   a.href=url;
   a.download=`fshs-snapshot-${fileStamp}.html`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function _csvField(v){
+  const s=String(v==null?'':v);
+  return /[",\n]/.test(s) ? '"'+s.replace(/"/g,'""')+'"' : s;
+}
+
+function exportCsv(){
+  const cols=['Date','Source','Company','Brand','Product','Pathogen','Tier','Country','URL'];
+  const lines=[cols.join(',')];
+  filtered.forEach(r=>{
+    lines.push(cols.map(c=>_csvField(r[c])).join(','));
+  });
+  const now=new Date();
+  const fileStamp=now.toISOString().slice(0,16).replace('T','-').replace(':','');
+  const blob=new Blob([lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=`recalls-export-${fileStamp}.csv`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

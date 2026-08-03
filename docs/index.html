@@ -207,6 +207,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
   </div>
 
   <div id="tabOverview">
+  <div class="fb-bar" id="overviewFilterBreadcrumb"></div>
   <div class="panel" style="margin-bottom:16px;">
     <div class="sec" data-i18n="panelTrend">Monthly Evolution</div>
     <div class="trend-wrap"><div id="trendChart"></div></div>
@@ -427,7 +428,7 @@ function setLang(l){
   document.getElementById('langFr').classList.toggle('on', l==='fr');
   try{ localStorage.setItem('fshs_lang', l); }catch(e){}
   applyI18nStatic();
-  if (ALL.length){ computeSummary(ALL); refreshDynamicText(); render(); renderTrendChart(filtered); }
+  if (ALL.length){ computeSummary(filtered); refreshDynamicText(); render(); renderTrendChart(filtered); }
   renderNewsFeed(NEWS_ITEMS);
   renderBreadcrumb();
 }
@@ -553,16 +554,20 @@ function removeFilterChip(id){
   applyFilters();
 }
 
+const FB_BAR_IDS = ['filterBreadcrumb','overviewFilterBreadcrumb'];
+
 function renderBreadcrumb(){
-  const bar = document.getElementById('filterBreadcrumb');
   const active = ['srch','srcf','ctryf','regf','prodf','pathf','tierf'].filter(id=>document.getElementById(id).value);
-  if (!active.length){ bar.style.display='none'; bar.innerHTML=''; return; }
-  bar.style.display = 'flex';
-  bar.innerHTML = `<span class="fb-lbl">${t('fbActiveLbl')}</span>` + active.map(id=>{
+  const html = !active.length ? '' : `<span class="fb-lbl">${t('fbActiveLbl')}</span>` + active.map(id=>{
     const label = t(FB_LABEL_KEYS[id]);
     const val = String(filterDisplayValue(id)).replace(/</g,'&lt;');
     return `<span class="fb-chip">${label}: <b>${val}</b><button type="button" class="fb-x" onclick="removeFilterChip('${id}')" aria-label="Remove filter"><svg viewBox="0 0 16 16" width="9" height="9" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M3.2 3.2l9.6 9.6M12.8 3.2L3.2 12.8"/></svg></button></span>`;
   }).join('');
+  FB_BAR_IDS.forEach(barId=>{
+    const bar = document.getElementById(barId);
+    bar.style.display = active.length ? 'flex' : 'none';
+    bar.innerHTML = html;
+  });
 }
 
 let _kpiAnimated=false;
@@ -682,6 +687,7 @@ function applyFilters(){
   });
   applySort();
   cur=1;render();
+  computeSummary(filtered);
   renderTrendChart(filtered);
   updateClearButtonVisibility();
   renderBreadcrumb();

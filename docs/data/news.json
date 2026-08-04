@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-08-04 15:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Nestlé kicks off Christmas countdown with festive Milkybar",
+  "Link": "https://www.confectionerynews.com/Article/2026/08/04/nestle-launches-festive-milkybar-caramel-crunch-sharing-bar",
+  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 15:04 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Colostrum: Functional treasure or cruel wellness fad?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/colostrum-has-functional-food-potential-but-remains-controversial",
+  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 13:27 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Navigator",
+  "Title": "Cyclospora outbreak reshapes grocery shopping and restaurant traffic beyond recalled lettuce",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/cyclospora-outbreak-changes-grocery-shopping-habits",
+  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 13:24 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: Two Countries Are Now Warning Their Citizens About Travel to the United States. Britain Traced Forty-Eight of Its Cases to Mexico. The Cyclospora Count Is Still 22,683.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-27",
+  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-04 13:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Ingredion: Better-for-you foods hinge on texture as much as nutrition",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/ingredion-launches-ai-tool-targets-texture-at-ift-first-2026",
+  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-04 12:05 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -27,6 +77,16 @@
   "Title": "Tyson Foods says value-added chicken playbook shields profits from commodity price swings",
   "Link": "https://www.foodnavigator.com/Article/2026/08/04/tysons-value-added-chicken-strategy-boosts-profits",
   "Retrieved (UTC)": "2026-08-04 10:47 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 08:18 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "A new protein contender emerges as whey prices surge",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/04/adm-and-richs-back-everys-fermented-egg-white-protein",
+  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
   "Category": "Regulatory"
  },
  {
@@ -876,26 +936,6 @@
   "Source": "Food Poisoning Bulletin",
   "Title": "North Carolina Cyclospora Outbreak Linked to Parsley and Cilantro",
   "Link": "https://foodpoisoningbulletin.com/2026/north-carolina-cyclospora-outbreak-linked-to-parsley-and-cilantro",
-  "Retrieved (UTC)": "2026-07-28 21:09 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-28 14:58 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "England Saw 2,500 STEC Cases in 2025, Holding Steady with Previous Year",
-  "Link": "https://www.food-safety.com/articles/11678-england-saw-2-500-stec-cases-in-2025-holding-steady-with-previous-year",
-  "Retrieved (UTC)": "2026-07-28 21:09 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-28 13:24 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "Researchers Propose Listeria Biofilm Colonization Hypothesis to Explain Persistence in Food Processing Plants",
-  "Link": "https://www.food-safety.com/articles/11676-researchers-propose-listeria-biofilm-colonization-hypothesis-to-explain-persistence-in-food-processing-plants",
   "Retrieved (UTC)": "2026-07-28 21:09 UTC",
   "Category": ""
  },

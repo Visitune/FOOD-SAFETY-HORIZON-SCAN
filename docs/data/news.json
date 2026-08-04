@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-08-04 04:04 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Czech officials warn of botulism in pate; more warnings issued in Salmonella outbreak traced to noodles",
+  "Link": "https://www.foodsafetynews.com/2026/08/czech-officials-warn-of-botulism-in-pate-more-warnings-issued-in-salmonella-outbreak-traced-to-noodles",
+  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-04 03:08 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Sustainability Snippets: Coffee strategies, Coca-Cola and food waste",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/sustainability-snippets-coffee-strategies-coca-cola-and-food-waste",
+  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 03:07 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Cultivated beef steak set for global expansion after historic approval",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/cultivated-beef-steak-to-hit-singapore-food-scene-with-historic-approval",
+  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 03:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "PepsiCo flags major gap in women’s sports nutrition",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/pepsico-flags-major-gap-in-womens-sports-nutrition",
+  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 02:10 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Imported pistachio butter sold at Walmart stores recalled because of Salmonella",
+  "Link": "https://www.foodsafetynews.com/2026/08/imported-pistachio-butter-sold-at-walmart-stores-recalled-because-of-salmonella",
+  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-04 00:54 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "First deaths in Cyclospora outbreak reported by Michigan",
+  "Link": "https://www.foodsafetynews.com/2026/08/first-deaths-in-cyclospora-outbreak-reported-by-michigan",
+  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-03 21:36 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Illness",
@@ -858,16 +918,6 @@
   "Link": "http://www.anses.fr/fr/content/stagiaire-hf-projet-dnc-field-evaluation-de-limpact-de-la-dnc-et-de-sa-vaccination-sur-la",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 04:03 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "English E. coli infections steady despite fewer outbreaks",
-  "Link": "https://www.foodsafetynews.com/2026/07/english-e-coli-infections-steady-despite-reduced-outbreak-impact",
-  "Retrieved (UTC)": "2026-07-28 06:10 UTC",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-07-28T00:42:43Z",

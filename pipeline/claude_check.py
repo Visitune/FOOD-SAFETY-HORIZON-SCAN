@@ -98,6 +98,14 @@ _ISO3_COUNTRY_CODES = frozenset({
 from scrapers._akamai_fetch import (  # noqa: E402
     is_akamai_host, fetch_via_curl_cffi,
 )
+# Incomplete-TLS-chain hosts (audit 2026-08-04) — see module docstring for
+# the full rappel.conso.gouv.fr incident. Supplies the specific missing
+# intermediate certificate instead of relying on curl_cffi to recover it,
+# which was found not to happen reliably on the Linux GitHub Actions
+# runners this pipeline actually runs on.
+from scrapers._tls_incomplete_chain import (  # noqa: E402
+    is_incomplete_chain_host, get_combined_ca_bundle,
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -538,20 +546,46 @@ def _fetch_page_text(url: str) -> Tuple[Optional[str], Optional[str]]:
                 allow_redirects=True,
             )
         except _requests.exceptions.SSLError as exc:
-            # ── TLS chain fallback (audit 2026-07-28) ───────────────────
+            # ── TLS chain fallback (audit 2026-07-28, hardened 2026-08-04) ──
             # rappel.conso.gouv.fr serves an INCOMPLETE certificate chain
             # (missing intermediate). Python's ssl cannot build a trust
             # path; browsers recover via the certificate's AIA extension.
             # Unhandled this halted publication for four days — see
             # STATUS_PENDING_RETRY in merge_master for the full incident.
-            # curl follows AIA, so retry through curl_cffi. Verification
-            # stays ON. If curl also fails the row stays in Pending, which
-            # is the correct fail-closed outcome.
-            resp = fetch_via_curl_cffi(
-                url, timeout=FETCH_TIMEOUT_S,
-                headers=_FETCH_HEADERS,
-                allow_redirects=True,
-            )
+            #
+            # First choice: supply the specific missing intermediate
+            # directly (scrapers._tls_incomplete_chain) — deterministic,
+            # same result on every platform. Verification stays fully ON,
+            # it just has one more legitimate CA cert available to build
+            # the chain with.
+            #
+            # curl_cffi stays as a second-line fallback for any host NOT
+            # in the known-incomplete-chain list (audit 2026-08-04: found
+            # curl_cffi does not reliably perform AIA-chasing on the Linux
+            # GitHub Actions runners this pipeline runs on — 7 rows stuck
+            # in pending_retry on 2026-08-03/04 despite this fallback,
+            # while a plain Windows curl — SChannel auto-chases AIA —
+            # fetched the identical URL with no error at all).
+            #
+            # If both fail the row stays in Pending, which is the correct
+            # fail-closed outcome.
+            resp = None
+            if is_incomplete_chain_host(url):
+                try:
+                    resp = _requests.get(
+                        url, timeout=FETCH_TIMEOUT_S,
+                        headers=_FETCH_HEADERS,
+                        allow_redirects=True,
+                        verify=get_combined_ca_bundle(),
+                    )
+                except Exception:
+                    resp = None
+            if resp is None:
+                resp = fetch_via_curl_cffi(
+                    url, timeout=FETCH_TIMEOUT_S,
+                    headers=_FETCH_HEADERS,
+                    allow_redirects=True,
+                )
             if resp is None:
                 return None, (f"fetch error: SSLError (TLS chain) and curl_cffi "
                               f"fallback failed: {str(exc)[:90]}")

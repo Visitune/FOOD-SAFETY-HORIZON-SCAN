@@ -207,6 +207,96 @@ class TestTlsChainFallback:
         text, err = cc._fetch_page_text(RAPPELCONSO)
         assert text is None and "curl_cffi fallback failed" in err
 
+
+# ---------------------------------------------------------------------------
+# 2026-08-04 — curl_cffi's AIA-chasing does not reliably fire on the Linux
+# GitHub Actions runners this pipeline runs on: 7 rows stuck in
+# pending_retry on 2026-08-03/04 with "SSLError (TLS chain) and curl_cffi
+# fallback failed", even though the fallback from the 2026-07-28 fix above
+# is exercised every time. Verified live (openssl s_client + a real
+# requests.get) that rappel.conso.gouv.fr's missing intermediate is a
+# legitimate, long-lived Sectigo cert that already chains to a root
+# certifi trusts — supplying it directly (scrapers._tls_incomplete_chain)
+# is deterministic, unlike hoping curl recovers it via AIA on every
+# platform.
+# ---------------------------------------------------------------------------
+class TestIncompleteChainDirectFix:
+    def test_claude_check_recovers_via_combined_bundle_without_curl(self, monkeypatch):
+        from pipeline import claude_check as cc
+
+        calls = {"plain": 0, "with_verify": 0, "curl": 0}
+
+        def _get(url, **kw):
+            if kw.get("verify"):
+                calls["with_verify"] += 1
+                return _Resp()
+            calls["plain"] += 1
+            raise requests.exceptions.SSLError("unable to get local issuer certificate")
+
+        def _curl(*a, **k):
+            calls["curl"] += 1
+            return _Resp()
+
+        monkeypatch.setattr(cc._requests, "get", _get)
+        monkeypatch.setattr(cc, "fetch_via_curl_cffi", _curl)
+        monkeypatch.setattr(cc, "is_akamai_host", lambda u: False)
+        monkeypatch.setattr(cc, "_is_soft_404", lambda a, b: False)
+
+        text, err = cc._fetch_page_text(RAPPELCONSO)
+
+        assert err is None and text and "Listeria" in text
+        assert calls["plain"] == 1
+        assert calls["with_verify"] == 1
+        # The whole point of the direct fix: curl_cffi is never reached
+        # when the combined-bundle retry already recovered the page.
+        assert calls["curl"] == 0
+
+    def test_non_incomplete_chain_host_skips_straight_to_curl(self, monkeypatch):
+        """A host NOT on the known-incomplete-chain list must behave
+        exactly as before this fix — no verify= retry attempted, straight
+        to the curl_cffi fallback."""
+        from pipeline import claude_check as cc
+
+        other_url = "https://example.com/some-recall-page"
+        calls = {"verify_get": 0, "curl": 0}
+
+        def _get(url, **kw):
+            if kw.get("verify"):
+                calls["verify_get"] += 1
+            raise requests.exceptions.SSLError("unrelated cert problem")
+
+        def _curl(*a, **k):
+            calls["curl"] += 1
+            return _Resp()
+
+        monkeypatch.setattr(cc._requests, "get", _get)
+        monkeypatch.setattr(cc, "fetch_via_curl_cffi", _curl)
+        monkeypatch.setattr(cc, "is_akamai_host", lambda u: False)
+        monkeypatch.setattr(cc, "_is_soft_404", lambda a, b: False)
+
+        text, err = cc._fetch_page_text(other_url)
+
+        assert err is None and text
+        assert calls["verify_get"] == 0
+        assert calls["curl"] == 1
+
+    def test_is_incomplete_chain_host(self):
+        from scrapers._tls_incomplete_chain import is_incomplete_chain_host
+        assert is_incomplete_chain_host(RAPPELCONSO)
+        assert not is_incomplete_chain_host("https://www.fda.gov/recalls")
+
+    def test_combined_bundle_includes_certifi_and_extra_cert(self):
+        from scrapers._tls_incomplete_chain import get_combined_ca_bundle
+        import certifi
+        path = get_combined_ca_bundle()
+        with open(path, encoding="utf-8") as f:
+            combined = f.read()
+        with open(certifi.where(), encoding="utf-8") as f:
+            base = f.read()
+        assert base in combined
+        assert combined.count("BEGIN CERTIFICATE") == base.count("BEGIN CERTIFICATE") + 1
+
+
 # ---------------------------------------------------------------------------
 # 2026-07-29 — a TRANSPORT failure must never count as a reviewer verdict
 # ---------------------------------------------------------------------------

@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-04 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "PIMODINE 5 MG/ML SUSPENSION BUVABLE POUR CHIENS",
+  "Link": "http://www.anses.fr/fr/content/pimodine-5-mgml-suspension-buvable-pour-chiens",
+  "Retrieved (UTC)": "2026-08-04 07:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "LAXASAN 667 MG/ML SIROP POUR CHIENS ET CHATS",
+  "Link": "http://www.anses.fr/fr/content/laxasan-667-mgml-sirop-pour-chiens-et-chats",
+  "Retrieved (UTC)": "2026-08-04 07:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-04 04:04 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -918,26 +938,6 @@
   "Link": "http://www.anses.fr/fr/content/stagiaire-hf-projet-dnc-field-evaluation-de-limpact-de-la-dnc-et-de-sa-vaccination-sur-la",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28T00:42:43Z",
-  "Pathogen": "Cyclospora cayetanensis",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Michigan posts more than 1,000 new Cyclospora cases",
-  "Link": "https://www.foodsafetynews.com/2026/07/michigan-posts-more-than-1-000-new-cyclospora-cases/",
-  "Retrieved (UTC)": "2026-07-28T01:11:35Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-28T04:04:50Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "Lead warning after infant formula testing results",
-  "Link": "https://www.foodsafetynews.com/2026/07/lead-warning-after-infant-formula-testing-results/",
-  "Retrieved (UTC)": "2026-07-28T10:10:26Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-07-28T22:55:54Z",

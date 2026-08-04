@@ -3,69 +3,69 @@
     {
       "date": "2026-08-03",
       "url": "daily/2026-08-03.html",
-      "total": 4,
-      "tier1": 4,
+      "total": 5,
+      "tier1": 5,
       "outbreak": 0,
       "by_region": {
         "North America": 1,
-        "Europe": 3
+        "Europe": 4
       },
-      "generated": "2026-08-04T06:10:33Z"
+      "generated": "2026-08-04T18:50:00Z"
     },
     {
       "date": "2026-07-31",
       "url": "daily/2026-07-31.html",
-      "total": 8,
-      "tier1": 7,
+      "total": 10,
+      "tier1": 9,
       "outbreak": 0,
       "by_region": {
-        "Europe": 7,
+        "Europe": 9,
         "Unknown": 1
       },
-      "generated": "2026-08-04T06:10:33Z"
+      "generated": "2026-08-04T18:50:00Z"
     },
     {
       "date": "2026-07-30",
       "url": "daily/2026-07-30.html",
-      "total": 6,
-      "tier1": 2,
+      "total": 10,
+      "tier1": 6,
       "outbreak": 0,
       "by_region": {
-        "Europe": 4,
+        "Europe": 8,
         "Asia": 2
       },
-      "generated": "2026-08-03T08:52:25Z"
+      "generated": "2026-08-04T18:50:01Z"
     },
     {
       "date": "2026-07-29",
       "url": "daily/2026-07-29.html",
-      "total": 11,
-      "tier1": 8,
+      "total": 13,
+      "tier1": 10,
       "outbreak": 0,
       "by_region": {
-        "Europe": 4,
+        "Europe": 6,
         "Oceania": 1,
         "Latin America": 3,
         "Unknown": 1,
         "Asia": 1,
         "North America": 1
       },
-      "generated": "2026-08-03T18:02:15Z"
+      "generated": "2026-08-04T18:50:01Z"
     },
     {
       "date": "2026-07-28",
       "url": "daily/2026-07-28.html",
-      "total": 25,
-      "tier1": 18,
+      "total": 26,
+      "tier1": 19,
       "outbreak": 0,
       "by_region": {
-        "Europe": 20,
+        "Europe": 21,
         "Unknown": 1,
         "Latin America": 2,
-        "Asia": 1,
+        "Asia-Pacific": 1,
         "North America": 1
       },
-      "generated": "2026-07-30T07:11:25Z"
+      "generated": "2026-08-04T18:50:01Z"
     }
   ]
 }

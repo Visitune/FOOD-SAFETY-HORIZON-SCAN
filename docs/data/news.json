@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-04 09:56 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Assessment of genetically modified RF3 Canola Quality (CQ) Brassica juncea (application EFSA-GMO-NL-2019-158)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10178",
+  "Retrieved (UTC)": "2026-08-04 10:47 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 09:47 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Tyson Foods says value-added chicken playbook shields profits from commodity price swings",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/04/tysons-value-added-chicken-strategy-boosts-profits",
+  "Retrieved (UTC)": "2026-08-04 10:47 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-04 04:35 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -886,56 +906,6 @@
   "Source": "EFSA",
   "Title": "Literature horizon scan for new scientific data on plants, microorganisms and animals, and their products obtained by new genomic techniques (March 2026)",
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10230",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 09:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Nouvelle directive sur la transition verte : l’approche commune des autorités pour contrôler les produits déjà sur le marché",
-  "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/nouvelle-directive-sur-la-transition-verte-lapproche-commune-des-autorites-pour-controler-les-produits-deja-sur-le-marche",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 08:38 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Pesticide active substances that do not require a review of the existing maximum residue levels under Article 12 of Regulation (EC) No 396/2005",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10269",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 08:34 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Avis sur un projet d'arrêté modifiant l'arrêté du 19 octobre 2006 relatif à l'emploi d'auxiliaires technologiques dans la fabrication de certaines denrées alimentaires",
-  "Link": "http://www.anses.fr/fr/content/MATAE-2025-SA-0066",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 08:31 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Stagiaire - (H/F) – Projet DNC-FIELD – Impact de la DNC et de sa vaccination sur la santé et la reproduction des bovins laitiers des deux Savoie",
-  "Link": "http://www.anses.fr/fr/content/stagiaire-hf-projet-dnc-field-impact-de-la-dnc-et-de-sa-vaccination-sur-la-sante-et-la",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 08:29 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Stagiaire - (H/F) - Projet DNC-FIELD – Evaluation de l’impact de la DNC et de sa vaccination sur la production des bovins laitiers des deux Savoie par l’analyse de séries temporelles",
-  "Link": "http://www.anses.fr/fr/content/stagiaire-hf-projet-dnc-field-evaluation-de-limpact-de-la-dnc-et-de-sa-vaccination-sur-la",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
  },

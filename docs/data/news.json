@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-05 07:07 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Is fibermixxing the new fibermaxxing?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/fiber-trend-shifts-to-fibermixxing-for-food-brands",
+  "Retrieved (UTC)": "2026-08-05 07:45 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 05:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Does the future of dairy protein lie in specialisation?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/as-protein-goes-mainstream-dairy-innovation-moves-beyond-muscle-recovery",
+  "Retrieved (UTC)": "2026-08-05 07:45 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 05:47 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "5 trends shaping global energy drink recipes",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/5-trends-shaping-global-energy-drink-recipes",
+  "Retrieved (UTC)": "2026-08-05 07:45 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 04:32 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "33 cheeses recalled in Canada because of Listeria concerns",
+  "Link": "https://www.foodsafetynews.com/2026/08/33-cheeses-recalled-in-canada-because-of-listeria-concerns",
+  "Retrieved (UTC)": "2026-08-05 07:45 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-05 04:06 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Outbreak",

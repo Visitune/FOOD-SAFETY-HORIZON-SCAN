@@ -128,6 +128,38 @@
   "Notes": "marché de chateau gontier, marché de la prairie grez neuville [gemini-check 2026-08-04: pass; pass]"
  },
  {
+  "Date": "2026-08-03",
+  "Source": "RASFF (EU)",
+  "Company": "Origin: Netherlands | Notifying: Netherlands",
+  "Brand": "—",
+  "Product": "Listeria in a rice tuna (triangle) snack, from the Netherlands",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria in a rice tuna (triangle) snack, from the Netherlands; risk: serious; category: prepared dishes and snacks",
+  "Class": "Alert",
+  "Country": "Netherlands",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/863645",
+  "Notes": "[RASFF #2026.6891; classification: alert notification; category: prepared dishes and snacks; notifId=863645]"
+ },
+ {
+  "Date": "2026-08-03",
+  "Source": "RASFF (EU)",
+  "Company": "Origin: Poland | Notifying: Romania",
+  "Brand": "—",
+  "Product": "Salmonella spp in piept curcan bucati origine Polonia// Salmonella spp. in turkey breast pieces of Polish origin",
+  "Pathogen": "Salmonella",
+  "Reason": "Salmonella spp in piept curcan bucati origine Polonia// Salmonella spp. in turkey breast pieces of Polish origin; risk: potential risk; category: poultry meat and poultry meat products",
+  "Class": "Information",
+  "Country": "Poland",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/863489",
+  "Notes": "[RASFF #2026.6876; classification: information notification for follow-up; category: poultry meat and poultry meat products; notifId=863489]"
+ },
+ {
   "Date": "2026-07-31",
   "Source": "RASFF (EU)",
   "Company": "Origin: Netherlands | Notifying: France",
@@ -654,6 +686,22 @@
   "Outbreak": 0,
   "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23007/interne",
   "Notes": "leclerc vermeldis [gemini-check 2026-08-04: pass; pass]"
+ },
+ {
+  "Date": "2026-07-29",
+  "Source": "FSANZ (AU)",
+  "Company": "UPDATED 30.07.26 | Auxico (Perth) Pty Ltd",
+  "Brand": "—",
+  "Product": "LGM HOT CHILLI OIL 275G",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "The recall is due to the presence of an undeclared allergen (peanuts).",
+  "Class": "Recall",
+  "Country": "Australia",
+  "Region": "Oceania",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.foodstandards.gov.au/food-recalls/recall-alert/updated-300726-auxico-perth-pty-ltd-lgm-hot-chilli-oil-275g",
+  "Notes": ""
  },
  {
   "Date": "2026-07-28",

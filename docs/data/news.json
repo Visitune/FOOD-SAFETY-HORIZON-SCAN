@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-05 10:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Germany’s food giants thrive as manufacturers feel the squeeze",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/germany-food-industry-squeezed-by-retail-power",
+  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 10:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Le démarchage téléphonique désormais interdit si vous n’y avez pas consenti",
+  "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/le-demarchage-telephonique-desormais-interdit-si-vous-ny-avez-pas-consenti",
+  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 07:46 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Why are 90% of GLP-1 users still buying ice cream?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/how-ice-cream-is-winning-glp-1-users",
+  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 07:43 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "From Mars to Intersnack: Are family dynasties becoming food’s new dealmakers?",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/05/why-family-owned-food-giants-keep-buying-public-brands",
+  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-05 07:07 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -147,6 +187,16 @@
   "Title": "From Nestlé to Mars: Why Big Food is embracing contract manufacturing",
   "Link": "https://www.foodnavigator.com/Article/2026/08/04/big-food-rethinks-production-the-rise-of-contract-manufacturing",
   "Retrieved (UTC)": "2026-08-04 13:06 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-04 11:37 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "UK CEOs sound the alarm over serious supply chain vulnerabilities",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/08/04/uk-ceos-have-warned-that-any-potential-supply-chain-could-be-disastrous-for-business",
+  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
   "Category": "Regulatory"
  },
  {
@@ -958,36 +1008,6 @@
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10239",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-29 10:33 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Attention aux quantités indiquées sur les produits préemballés",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/attention-aux-quantites-indiquees-sur-les-produits-preemballes",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-29 09:54 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Stagiaire - (H/F) Projet DNC-FIELD – Evaluation de l’impact de la DNC et de sa vaccination sur la production des bovins laitiers",
-  "Link": "http://www.anses.fr/fr/content/stagiaire-hf-projet-dnc-field-evaluation-de-limpact-de-la-dnc-et-de-sa-vaccination-sur-la-0",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-29 09:00 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "Congress Oversight Committee Probes Taylor Farms’ Alleged Attempts to Influence FDA’s Cyclospora Outbreak Investigation",
-  "Link": "https://www.food-safety.com/articles/11684-congress-oversight-committee-probes-taylor-farms-alleged-attempts-to-influence-fdas-cyclospora-outbreak-investigation",
-  "Retrieved (UTC)": "2026-07-29 09:10 UTC",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-07-31T04:06:03Z",

@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-05 12:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Court clears way for lawsuit challenging US ban on FODMAP labeling",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/9th-circuit-revives-fodmap-labeling-lawsuit",
+  "Retrieved (UTC)": "2026-08-05 12:59 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 11:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "The seasonal launch is dead. What comes next?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/how-fast-moving-trends-are-reshaping-food-and-beverage-npd",
+  "Retrieved (UTC)": "2026-08-05 12:59 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 11:13 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "5 food ingredients for bone health – what manufacturers need to know",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/05/bone-health-top-five-ingredients-for-food-manufacturers",
+  "Retrieved (UTC)": "2026-08-05 12:59 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-05 10:28 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1147,6 +1177,26 @@
   "Title": "Lidl expands recall of cookies because of undeclared allergens",
   "Link": "https://www.foodsafetynews.com/2026/08/lidl-expands-recall-of-cookies-because-of-undeclared-allergens/",
   "Retrieved (UTC)": "2026-08-04T16:51:19Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-05T04:02:03Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Petting zoo linked to HUS cases reopens",
+  "Link": "https://www.foodsafetynews.com/2026/08/petting-zoo-linked-to-hus-cases-reopens/",
+  "Retrieved (UTC)": "2026-08-05T11:56:20Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-05T04:01:24Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Scientists highlight food safety angle of dumpster diving",
+  "Link": "https://www.foodsafetynews.com/2026/08/scientists-highlight-food-safety-angle-of-dumpster-diving/",
+  "Retrieved (UTC)": "2026-08-05T11:56:20Z",
   "Category": ""
  }
 ]

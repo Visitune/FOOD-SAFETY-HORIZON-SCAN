@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-05 04:06 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "15 states now implicated in Cyclospora outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/15-states-now-implicated-in-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-08-05 04:17 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-05 03:13 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Organic sliced mushrooms recalled because of Listeria",
+  "Link": "https://www.foodsafetynews.com/2026/08/organic-sliced-mushrooms-recalled-because-of-listeria",
+  "Retrieved (UTC)": "2026-08-05 04:17 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-05 01:07 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Chipotle says its jalapenos are of interest in Salmonella outbreak investigation",
+  "Link": "https://www.foodsafetynews.com/2026/08/chipotle-says-its-jalapenos-are-of-interest-in-salmonella-outbreak-investigation",
+  "Retrieved (UTC)": "2026-08-05 04:17 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-04 20:54 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -917,36 +947,6 @@
   "Title": "Congress Oversight Committee Probes Taylor Farms’ Alleged Attempts to Influence FDA’s Cyclospora Outbreak Investigation",
   "Link": "https://www.food-safety.com/articles/11684-congress-oversight-committee-probes-taylor-farms-alleged-attempts-to-influence-fdas-cyclospora-outbreak-investigation",
   "Retrieved (UTC)": "2026-07-29 09:10 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-29 04:01 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Poultry firm reveals Salmonella contamination cost",
-  "Link": "https://www.foodsafetynews.com/2026/07/poultry-firm-reveals-salmonella-contamination-cost",
-  "Retrieved (UTC)": "2026-07-29 06:10 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-29 02:02 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "CDC reports more than 2,000 more patients in Cyclospora outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/07/cdc-reports-more-than-2-000-more-patients-in-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-07-29 03:10 UTC",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-28T22:55:54Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Cookies recalled because of multiple undeclared allergens",
-  "Link": "https://www.foodsafetynews.com/2026/07/cookies-recalled-because-of-multiple-undeclared-allergens/",
-  "Retrieved (UTC)": "2026-07-29T10:10:31Z",
   "Category": ""
  },
  {

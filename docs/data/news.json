@@ -10,6 +10,46 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-08-06 11:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "How the food giants are protecting their supply chains in the face of El Niño",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/06/nestle-danone-barry-callebaut-kraft-heinz-how-food-giants-are-dealing-with-el-nino",
+  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-06 10:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "L’école d’enseignement supérieur privée ESGM & ProFormat - Pigier Mulhouse enjointe de supprimer plusieurs allégations trompeuses",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/lecole-denseignement-superieur-privee-esgm-proformat-pigier-mulhouse-enjointe-de-supprimer",
+  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-06 10:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Assessment of a feed additive consisting of montmorillonite-illite mixed layer clay mineral (1g557) for all animal species for the renewal of its authorisation (FIM Biotech GmbH)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10244",
+  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-06 09:00 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Shows Promise of Hydrogen Peroxide Treatment for Poultry Decontamination",
+  "Link": "https://www.food-safety.com/articles/11687-study-shows-promise-of-hydrogen-peroxide-treatment-for-poultry-decontamination",
+  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-06 08:08 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -247,6 +287,16 @@
   "Title": "The seasonal launch is dead. What comes next?",
   "Link": "https://www.foodnavigator.com/Article/2026/08/05/how-fast-moving-trends-are-reshaping-food-and-beverage-npd",
   "Retrieved (UTC)": "2026-08-05 12:59 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-05 11:53 UTC",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Navigator",
+  "Title": "Full-fat dairy cleared in new study challenging diet advice",
+  "Link": "https://www.dairyreporter.com/Article/2026/08/05/study-backs-three-daily-servings-of-full-fat-dairy",
+  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
   "Category": "Regulatory"
  },
  {
@@ -1056,27 +1106,7 @@
   "Source": "EFSA",
   "Title": "Evaluation of confirmatory data following the Article 12 MRL review for beta-cyfluthrin",
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10270",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-30 11:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Danone reaps rewards of health-focused strategy",
-  "Link": "https://www.beveragedaily.com/Article/2026/07/30/danone-delivers-strong-sales-as-it-focuses-on-health-focused-portfolio",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-30 10:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Mars invests $3m to empower women cocoa farmers",
-  "Link": "https://www.confectionerynews.com/Article/2026/07/30/mars-invests-3m-to-empower-women-cocoa-farmers",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
+  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
   "Category": "Regulatory"
  },
  {

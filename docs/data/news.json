@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-07 07:27 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Celsius rocked by earnings miss as Pepsi shift backfires",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/07/celsius-stock-drops-18-on-q2-earnings-miss-pepsico-rollout",
+  "Retrieved (UTC)": "2026-08-07 07:36 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 07:18 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Expertise hors évaluation des risques relative à une demande d'avis sur le projet de cahier des charges relatif aux protections périodiques réutilisables prises en charge par l'Assurance Maladie",
+  "Link": "https://www.anses.fr/fr/content/CONSO-2026-SA-0069",
+  "Retrieved (UTC)": "2026-08-07 07:36 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-07 04:18 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Outbreak",
@@ -1268,26 +1288,6 @@
   "Link": "https://www.bakeryandsnacks.com/Article/2026/07/31/the-biggest-mistakes-functional-food-startups-make-before-scaling",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31T04:06:03Z",
-  "Pathogen": "Cyclospora cayetanensis",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Patient counts in Cyclospora outbreak continue to increase",
-  "Link": "https://www.foodsafetynews.com/2026/07/patient-counts-in-cyclospora-outbreak-continue-to-increase/",
-  "Retrieved (UTC)": "2026-07-31T12:37:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-31T04:04:17Z",
-  "Pathogen": "Cyclospora cayetanensis",
-  "Event": "Research",
-  "Source": "Food Safety News",
-  "Title": "UK officials note rise in Cyclospora infections",
-  "Link": "https://www.foodsafetynews.com/2026/07/uk-officials-note-rise-in-cyclospora-infections/",
-  "Retrieved (UTC)": "2026-07-31T12:37:34Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-08-01T02:08:44Z",

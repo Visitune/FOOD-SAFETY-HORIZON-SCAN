@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-07 11:25 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Prix des carburants : la station essence AUCHAN NÎMES sanctionnée d’une amende administrative de 7000 €",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/prix-des-carburants-la-station-essence-auchan-nimes-sanctionnee-dune-amende-administrative-de",
+  "Retrieved (UTC)": "2026-08-07 11:00 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-07 08:50 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1250,26 +1260,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-07-31 10:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Call for data for Talc E 553b",
-  "Link": "https://www.efsa.europa.eu/en/call/call-data-talc-e-553b",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 09:38 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Protocols for the development of the guidance on the risk assessment of PPP to non-target arthropods, in-soil organisms and non-target terrestrial plants",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10228",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-08-01T02:08:44Z",
   "Pathogen": "",
   "Event": "Recall",
@@ -1357,6 +1347,16 @@
   "Title": "Scientists highlight food safety angle of dumpster diving",
   "Link": "https://www.foodsafetynews.com/2026/08/scientists-highlight-food-safety-angle-of-dumpster-diving/",
   "Retrieved (UTC)": "2026-08-05T11:56:20Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-07T04:05:38Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Publisher’s Platform: Recall readiness is assumed, never measured",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-recall-readiness-is-assumed-never-measured/",
+  "Retrieved (UTC)": "2026-08-07T10:48:47Z",
   "Category": ""
  }
 ]

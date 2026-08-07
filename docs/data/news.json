@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-07 04:18 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Publisher’s Platform: I Have Been Told I Am Too Hard on Industry and on the Government. Here Are Fifteen Things They Could Do About Cyclospora.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-i-have-been-told-i-am-too-hard-on-industry-and-on-the-government-here-are-fifteen-things-fda-and-cdc-could-do-about-cyclospora",
+  "Retrieved (UTC)": "2026-08-07 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-07 04:06 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Taylor Farms says it's not responsible for Cyclospora outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/taylor-farms-says-its-not-responsible-for-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-08-07 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-07 04:03 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Illness",
+  "Source": "Food Safety News",
+  "Title": "Korean agency notes spike in illness cases",
+  "Link": "https://www.foodsafetynews.com/2026/08/korean-agency-notes-spike-in-illness-cases",
+  "Retrieved (UTC)": "2026-08-07 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-07 04:00 UTC",
+  "Pathogen": "Hepatitis A",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Four hepatitis A infections linked to deli in Malta",
+  "Link": "https://www.foodsafetynews.com/2026/08/four-hepatitis-a-infections-linked-to-deli-in-malta",
+  "Retrieved (UTC)": "2026-08-07 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-07 02:33 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1246,46 +1286,6 @@
   "Source": "Food Safety News",
   "Title": "UK officials note rise in Cyclospora infections",
   "Link": "https://www.foodsafetynews.com/2026/07/uk-officials-note-rise-in-cyclospora-infections/",
-  "Retrieved (UTC)": "2026-07-31T12:37:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-31T01:48:07Z",
-  "Pathogen": "Escherichia coli (generic)",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "E. coli outbreak linked to frozen organic berries sold at Publix",
-  "Link": "https://www.foodsafetynews.com/2026/07/e-coli-outbreak-linked-to-frozen-organic-berries-sold-at-publix/",
-  "Retrieved (UTC)": "2026-07-31T12:37:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-31T01:26:50Z",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Warning issued for chicken salad because of contamination with Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/07/chicken-salad-recalled-because-of-contamination-with-listeria/",
-  "Retrieved (UTC)": "2026-07-31T12:37:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-31T01:16:19Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Aquafaba Powder recalled because of undeclared egg",
-  "Link": "https://www.foodsafetynews.com/2026/07/aquafaba-powder-recalled-because-of-undeclared-egg/",
-  "Retrieved (UTC)": "2026-07-31T12:37:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-07-31T01:03:13Z",
-  "Pathogen": "Escherichia coli (generic)",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Imported organic berries recalled because of E. coli contamination and outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/07/imported-organic-berries-recalled-because-of-e-coli-contamination-and-outbreak/",
   "Retrieved (UTC)": "2026-07-31T12:37:34Z",
   "Category": ""
  },

@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-07 13:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Issues Emergency Use Authorization for Drug to Prevent New World Screwworm in Multiple Species, Including Sheep, Cattle, Goats, and Swine",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-prevent-new-world-screwworm-multiple-species-including",
+  "Retrieved (UTC)": "2026-08-07 13:21 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-07 11:25 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -7,6 +17,36 @@
   "Title": "Prix des carburants : la station essence AUCHAN NÎMES sanctionnée d’une amende administrative de 7000 €",
   "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/prix-des-carburants-la-station-essence-auchan-nimes-sanctionnee-dune-amende-administrative-de",
   "Retrieved (UTC)": "2026-08-07 11:00 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 11:18 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Assessment of the feed additive consisting of lasalocid A sodium (Avatec® 150G) for turkeys, pheasants, guinea fowl, quails and partridges except laying birds thereof for the renewal of its authorisation (Zoetis Belgium SA)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10247",
+  "Retrieved (UTC)": "2026-08-07 13:21 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 11:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Evaluation of confirmatory data following the Article 12 MRL review and setting of an import tolerance for fluopyram in limes",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10279",
+  "Retrieved (UTC)": "2026-08-07 13:21 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 11:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of sodium nitrite for pigs, bovines, poultry, sheep, goats, rabbits and horses (ADDCON Europe GmbH)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10246",
+  "Retrieved (UTC)": "2026-08-07 13:21 UTC",
   "Category": "Regulatory"
  },
  {
@@ -1198,66 +1238,6 @@
   "Link": "https://www.foodsafetynews.com/2026/07/publishers-platform-the-fifty-state-cyclospora-count-is-20-927-this-morning-the-president-has-said-one-thing-about-it-the-secretary-says-it-is-under-control-here-is-what-they-should-hav",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-07-31 12:36 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Technicien de laboratoire en biologie (H/F)",
-  "Link": "http://www.anses.fr/fr/content/technicien-de-laboratoire-en-biologie-hf-0",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 12:27 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance 8-methyldecan-2-yl propanoate",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10234",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 12:26 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance Trichoderma asperellum T34",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10235",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 12:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "How Mondelēz achieved its mid-year wins",
-  "Link": "https://www.foodnavigator.com/Article/2026/07/31/mondelez-international-q2-analysis",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 11:19 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Why Nestlé’s latest results point to real recovery",
-  "Link": "https://www.foodnavigator.com/Article/2026/07/31/nestles-recovery-strategy-gains-traction-as-volume-led-growth-accelerates",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 11:03 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Prix des carburants : amende de 1 590 € prononcée à l’encontre de la KAM'S DISTRI à AURIGNAC, Haute-Garonne",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/prix-des-carburants-amende-de-1-590-eur-prononcee-lencontre-de-la-kams-distri-aurignac-haute",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-08-01T02:08:44Z",

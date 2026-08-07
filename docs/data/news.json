@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-07 02:33 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Trend Tracker: Clean label, GLP-1 and cultivated meat",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/07/trend-tracker-clean-label-glp-1-and-cultivated-meat",
+  "Retrieved (UTC)": "2026-08-07 03:55 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 01:14 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "FDA On Chipotle and QDOBA Salmonella Jalapeño Outbreak",
+  "Link": "https://foodpoisoningbulletin.com/2026/fda-on-chipotle-and-qdoba-salmonella-jalapeno-outbreak",
+  "Retrieved (UTC)": "2026-08-07 03:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-07 00:41 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "First 5, Then 9, Now 15 States in Lettuce Cyclospora Outbreak",
+  "Link": "https://foodpoisoningbulletin.com/2026/first-5-then-9-now-15-states-in-lettuce-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-08-07 03:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-06 19:56 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1196,16 +1226,6 @@
   "Source": "Food Navigator",
   "Title": "5 hard truths every functional food startup needs to learn",
   "Link": "https://www.bakeryandsnacks.com/Article/2026/07/31/the-biggest-mistakes-functional-food-startups-make-before-scaling",
-  "Retrieved (UTC)": "2026-08-01 07:56 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-31 01:58 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Financial Focus: Updates at Asahi, Unilever and Nestle",
-  "Link": "https://www.foodnavigator.com/Article/2026/07/31/financial-focus-updates-at-asahi-unilever-and-nestle",
   "Retrieved (UTC)": "2026-08-01 07:56 UTC",
   "Category": "Regulatory"
  },

@@ -96,6 +96,38 @@
   "Notes": "pas de distrubuteurs, vendu en direct à nos clients à la fumere du coin ou sur le marché de versailles notre dame [url-gate 2026-08-07: API fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...]"
  },
  {
+  "Date": "2026-08-06",
+  "Source": "RappelConso (FR)",
+  "Company": "Wälchli",
+  "Brand": "Wälchli",
+  "Product": "st nectaire fermier aop wälchli 140g pf",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Presence of Listeria monocytogenes <10 ufc/g dans une portion de ce lot",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23096/Interne",
+  "Notes": "REJECTED: Gemini gate:  [local gate rejected: conf=0.90, failed=['hazard_match']] | intermarché, coopérative u, leclerc, auchan, carrefour [url-gate 2026-08-07: API fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...] [gemini-enrich 2026-08-07: Pathogen ''→'Listeria monocytogenes'] [tier-guard: Listeria monocytogenes is always Tier 1; forced from Tier 3]"
+ },
+ {
+  "Date": "2026-08-06",
+  "Source": "CFIA",
+  "Company": "Kehar International Inc.",
+  "Brand": "Kehar",
+  "Product": "Californian Pistachio Kernel",
+  "Pathogen": "Salmonella",
+  "Reason": "Kehar brand Californian Pistachio Kernel recalled due to Salmonella",
+  "Class": "Class 2",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/kehar-brand-californian-pistachio-kernel-recalled-due-salmonella",
+  "Notes": "CFIA open-data NID=82447 [gemini-enrich 2026-08-07: Company ''→'Kehar International Inc.']"
+ },
+ {
   "Date": "2026-08-05",
   "Source": "FSAI (IE)",
   "Company": "SuperValu",
@@ -336,6 +368,22 @@
   "Notes": "[gemini-enrich 2026-08-07: Brand '—'→'Key-Sun Kids']"
  },
  {
+  "Date": "2026-08-05",
+  "Source": "RappelConso (FR)",
+  "Company": "CARREFOUR FRANCE CARREFOUR",
+  "Brand": "Unbranded",
+  "Product": "crevettes grises cuites vendues au rayon traditionnel",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Presence of listéria",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23100/Interne",
+  "Notes": "REJECTED: Gemini gate: None [local gate rejected: conf=0.95, failed=['brand_match']] | carrefour market argeles gazost uniquement [url-gate 2026-08-07: API fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...] [gemini-enrich 2026-08-07: Company ''→'CARREFOUR FRANCE CARREFOUR']"
+ },
+ {
   "Date": "2026-08-04",
   "Source": "RappelConso (FR)",
   "Company": "STB STB STALAVEN - EURALIS",
@@ -464,6 +512,38 @@
   "Notes": "[RASFF #2026.6910; classification: alert notification; category: cephalopods and products thereof; notifId=863844]"
  },
  {
+  "Date": "2026-08-04",
+  "Source": "RappelConso (FR)",
+  "Company": "Grand Frais",
+  "Brand": "Grand Frais",
+  "Product": "grand frais",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Detection of Listeria monocytogenes",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23077/Interne",
+  "Notes": "REJECTED: Gemini gate: Missing required: Pathogen (gemini unreached) | grands frais, fresh, mon marché [url-gate 2026-08-07: API fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...] [gemini-enrich 2026-08-07: Pathogen ''→'Listeria monocytogenes'] [tier-guard: Listeria monocytogenes is always Tier 1; forced from Tier 3]"
+ },
+ {
+  "Date": "2026-08-04",
+  "Source": "CFIA",
+  "Company": "Highline Mushrooms West Ltd.",
+  "Brand": "Highline",
+  "Product": "Organic Mini Bella Mushrooms Sliced",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Highline brand Organic Mini Bella Mushrooms Sliced recalled due to Listeria monocytogenes",
+  "Class": "Class 1",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/highline-brand-organic-mini-bella-mushrooms-sliced-recalled-due-listeria-monocytogenes",
+  "Notes": "CFIA open-data NID=82439 [gemini-enrich 2026-08-07: Company ''→'Highline Mushrooms West Ltd.']"
+ },
+ {
   "Date": "2026-08-03",
   "Source": "FDA",
   "Company": "Boticelli Foods",
@@ -574,6 +654,22 @@
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/863489",
   "Notes": "[RASFF #2026.6876; classification: information notification for follow-up; category: poultry meat and poultry meat products; notifId=863489]"
+ },
+ {
+  "Date": "2026-08-03",
+  "Source": "CFIA",
+  "Company": "Laiterie de Coaticook Limitée",
+  "Brand": "Coaticook",
+  "Product": "White Cheddar cheeses",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Coaticook brand White Cheddar cheeses recalled due to Listeria monocytogenes",
+  "Class": "Class 1",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/coaticook-brand-white-cheddar-cheeses-recalled-due-listeria-monocytogenes",
+  "Notes": "CFIA open-data NID=82436 [gemini-enrich 2026-08-07: Company ''→'Laiterie de Coaticook Limitée']"
  },
  {
   "Date": "2026-07-31",

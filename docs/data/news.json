@@ -1400,16 +1400,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-08-01T02:08:44Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Spaghetti and chicken cobbler recalled because of consumer complaint about metal pieces",
-  "Link": "https://www.foodsafetynews.com/2026/08/spaghetti-and-chicken-cobbler-recalled-because-of-consumer-complaint-about-metal-pieces/",
-  "Retrieved (UTC)": "2026-08-01T11:13:40Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-01T16:17:55Z",
   "Pathogen": "Cyclospora cayetanensis",
   "Event": "Outbreak",
@@ -1497,6 +1487,26 @@
   "Title": "Publisher’s Platform: Recall readiness is assumed, never measured",
   "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-recall-readiness-is-assumed-never-measured/",
   "Retrieved (UTC)": "2026-08-07T10:48:47Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-08T02:51:44Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Almost 15 tons of imported beef recalled because of lack of reinspection",
+  "Link": "https://www.foodsafetynews.com/2026/08/almost-15-tons-of-imported-beef-recalled-because-of-lack-of-reinspection/",
+  "Retrieved (UTC)": "2026-08-08T02:56:36Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-08T02:39:51Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "More than 2.5 tons of frozen, breaded catfish products recalled because of illegal importation",
+  "Link": "https://www.foodsafetynews.com/2026/08/more-than-2-5-tons-of-frozen-breaded-catfish-products-recalled-because-of-illegal-importation/",
+  "Retrieved (UTC)": "2026-08-08T02:56:36Z",
   "Category": ""
  }
 ]

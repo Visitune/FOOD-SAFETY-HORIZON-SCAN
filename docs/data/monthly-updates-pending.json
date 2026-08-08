@@ -1,42 +1,26 @@
 {
-  "generated_utc": "2026-07-08T01:11:30.510878+00:00",
+  "generated_utc": "2026-08-08T06:45:05.717244+00:00",
   "checked_back_months": 3,
-  "anchor_month_end": "2026-06-30",
+  "anchor_month_end": "2026-07-31",
   "updated_months": [
     {
-      "year_m": "2026-M06",
+      "year_m": "2026-M07",
       "year": 2026,
-      "month_num": 6,
-      "month_name": "June 2026",
-      "month_start": "2026-06-01",
-      "month_end": "2026-06-30",
-      "filename": "2026-M06.html",
-      "report_url": "https://food-safety-horizon-scan.vercel.app/2026-M06.html",
-      "old_total": 243,
-      "new_total": 248,
-      "delta": 5,
-      "first_publish": false
-    },
-    {
-      "year_m": "2026-M05",
-      "year": 2026,
-      "month_num": 5,
-      "month_name": "May 2026",
-      "month_start": "2026-05-01",
-      "month_end": "2026-05-31",
-      "filename": "2026-M05.html",
-      "report_url": "https://food-safety-horizon-scan.vercel.app/2026-M05.html",
-      "old_total": 261,
-      "new_total": 262,
-      "delta": 1,
-      "first_publish": false
+      "month_num": 7,
+      "month_name": "July 2026",
+      "month_start": "2026-07-01",
+      "month_end": "2026-07-31",
+      "filename": "2026-M07.html",
+      "report_url": "https://food-safety-horizon-scan.vercel.app/2026-M07.html",
+      "old_total": 0,
+      "new_total": 298,
+      "delta": 298,
+      "first_publish": true
     }
   ],
-  "label_flips": [
-    "2026-M04"
-  ],
+  "label_flips": [],
   "primary_cta": {
-    "label": "VIEW MONTHLY DASHBOARD",
-    "url": "https://food-safety-horizon-scan.vercel.app/#monthly"
+    "label": "VIEW REFRESHED REPORT",
+    "url": "https://food-safety-horizon-scan.vercel.app/2026-M07.html"
   }
 }

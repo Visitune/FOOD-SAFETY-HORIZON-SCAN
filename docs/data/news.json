@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-10 04:05 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Normalization of deviance: The real lesson of this summer's Cyclospora outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/normalization-of-deviance-the-real-lesson-of-this-summers-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-08-10 04:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-10 01:20 UTC",
   "Pathogen": "Listeria monocytogenes",
   "Event": "Recall",
@@ -1366,36 +1376,6 @@
   "Source": "Food Safety Magazine",
   "Title": "Study Identifies Optimal Poultry Transport Cage Washing Conditions to Reduce Salmonella",
   "Link": "https://www.food-safety.com/articles/11677-study-identifies-optimal-poultry-transport-cage-washing-conditions-to-reduce-salmonella",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-03 04:06 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: Food safety is not expensive. Outbreaks are expensive.",
-  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-food-safety-is-not-expensive-outbreaks-are-expensive",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-03 04:05 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Ukraine shares outbreak data and reports deadly botulism cases",
-  "Link": "https://www.foodsafetynews.com/2026/08/ukraine-shares-outbreak-data-and-reports-deadly-botulism-cases",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-03 04:02 UTC",
-  "Pathogen": "Vibrio",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Hong Kong warns of severe infections caused by Vibrio",
-  "Link": "https://www.foodsafetynews.com/2026/08/hong-kong-warns-of-severe-infections-caused-by-vibrio",
   "Retrieved (UTC)": "2026-08-03 13:14 UTC",
   "Category": "Outbreak"
  },

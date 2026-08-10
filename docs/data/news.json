@@ -1,5 +1,95 @@
 [
  {
+  "Published (UTC)": "2026-08-10 14:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Procès verbal de la réunion du 19 février 2026 du CES \"agents physiques nouvelles technologies et grands aménagements\"",
+  "Link": "https://www.anses.fr/fr/content/proces-verbal-de-la-reunion-du-19-fevrier-2026-du-ces-agents-physiques-nouvelles",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 14:25 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Who really makes the world’s fastest-growing private label foods?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/10/private-labels-global-rise-is-reshaping-food-manufacturing",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 14:25 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Procès verbal de la réunion du 17 mars 2026 du GT évaluation des risques sanitaires et environnementaux des plantes génétiquement modifiées",
+  "Link": "https://www.anses.fr/fr/content/proces-verbal-de-la-reunion-du-17-mars-2026-du-gt-evaluation-des-risques-sanitaires-et",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 13:53 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of l-isoleucine produced with Corynebacterium glutamicum CGMCC 32505 for all animal species (Xinjiang Fufeng Biotechnologies Co., Ltd)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10291",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 13:41 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Functional drinks boom, but can brands prove they actually work?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/10/can-functional-drinks-deliver-on-their-health-claims",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 13:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "ジャパン フォーカス：アサヒの成長戦略、カルビーのパーソナライズド・ニュートリション、フードテックへの投資",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/10/CUJ3IBWWBFCILJUAUZQ55ITP3Y",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 13:34 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Japan Focus: Asahi’s growth plans, Calbee on personalised nutrition, food tech investment, and more",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/10/japan-focus-asahis-growth-plans-calbee-on-personalised-nutrition-food-tech-investment-and-more",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 13:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "ファイナンシャル フォーカス：アサヒ、Unilever、Nestleの最新動向",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/10/34ZD4J65DRE3NFN7ERHQZHTH3M",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 13:24 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Roughly 80% of US food products will be labeled GMO by 2028",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/10/court-orders-usda-to-rewrite-gmo-labeling-by-2028",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-10 13:21 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -417,6 +507,16 @@
   "Title": "Safety and efficacy of a feed additive consisting of sodium nitrite for pigs, bovines, poultry, sheep, goats, rabbits and horses (ADDCON Europe GmbH)",
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10246",
   "Retrieved (UTC)": "2026-08-07 13:21 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 10:29 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "US dairy farm numbers set to fall below 20,000 amid industry consolidation",
+  "Link": "https://www.dairyreporter.com/Article/2026/08/07/us-dairy-farm-numbers-set-to-fall-below-20000-amid-industry-consolidation",
+  "Retrieved (UTC)": "2026-08-10 15:07 UTC",
   "Category": "Regulatory"
  },
  {
@@ -1426,56 +1526,6 @@
   "Source": "Food Navigator",
   "Title": "Danone doubles down on Argentina as rivals retreat from dairy",
   "Link": "https://www.dairyreporter.com/Article/2026/08/03/danone-and-arcor-complete-argentina-dairy-venture",
-  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 14:51 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Whey demand set to rise with bioethanol breakthrough",
-  "Link": "https://www.dairyreporter.com/Article/2026/08/03/scientists-find-new-use-for-whey-as-demand-pressures-grow",
-  "Retrieved (UTC)": "2026-08-03 20:36 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 14:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Mars turns mint supply risk into sustainability success",
-  "Link": "https://www.confectionerynews.com/Article/2026/08/03/mars-shubh-mint-programme-boosts-farmer-incomes-and-supply-security",
-  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 14:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "GLP-1 beverage innovation outpaces regulation, creating challenges for drinks manufacturers",
-  "Link": "https://www.beveragedaily.com/Article/2026/08/03/glp-1-beverage-innovation-outpaces-regulation-creating-challenges-for-drinks-manufacturers",
-  "Retrieved (UTC)": "2026-08-03 20:36 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 14:10 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety and efficacy of a feed additive consisting of nicarbazin (NICACOX®) for chickens for fattening and chickens reared for laying (Huvepharma N.V.)",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10251",
-  "Retrieved (UTC)": "2026-08-03 16:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 13:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Can Uber Eats help regional grocers compete online?",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/03/uber-eats-expands-regional-grocery-footprint",
   "Retrieved (UTC)": "2026-08-03 16:31 UTC",
   "Category": "Regulatory"
  },

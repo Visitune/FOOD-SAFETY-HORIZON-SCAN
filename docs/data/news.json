@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-10 11:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Rupture MASTIJET SUSPENSION INTRAMAMMAIRE POUR BOVINS (VACHES EN LACTATION)",
+  "Link": "https://www.anses.fr/fr/content/rupture-mastijet-suspension-intramammaire-pour-bovins-vaches-en-lactation",
+  "Retrieved (UTC)": "2026-08-10 11:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 10:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "The European Cooperation in Science and Technology (COST) 2026 Funding Calls",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/european-cooperation-science-and-technology-cost-2026-funding-calls",
+  "Retrieved (UTC)": "2026-08-10 11:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-10 08:29 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -347,6 +367,16 @@
   "Title": "Chargé de projet en virologie (H/F)",
   "Link": "https://www.anses.fr/fr/content/charge-de-projet-en-virologie-hf",
   "Retrieved (UTC)": "2026-08-07 09:12 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-07 07:50 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Why chocolate goes wrong in baking",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/07/why-chocolate-goes-wrong-in-baking-process-performance-and-pain-au-chocolat",
+  "Retrieved (UTC)": "2026-08-10 10:25 UTC",
   "Category": "Regulatory"
  },
  {
@@ -1410,56 +1440,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-08-03 11:53 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Cyberattacks surge as food and beverage becomes prime target",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/03/cybercrime-escalates-across-the-food-and-beverage-industry",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 11:07 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Can Yili reshape dairy’s future with a new global ecosystem?",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/03/yili-calls-for-new-global-dairy-ecosystem",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 10:07 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "From excess to experience: How indulgence is evolving",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/03/indulgence-shifts-to-clean-label-and-premium-foods",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 09:47 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende transactionnelle à l’encontre de la SAS TSILAOSA HOTEL située à Cilaos (974)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-transactionnelle-lencontre-de-la-sas-tsilaosa-hotel-situee-cilaos-974",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 09:00 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "Study Identifies Optimal Poultry Transport Cage Washing Conditions to Reduce Salmonella",
-  "Link": "https://www.food-safety.com/articles/11677-study-identifies-optimal-poultry-transport-cage-washing-conditions-to-reduce-salmonella",
-  "Retrieved (UTC)": "2026-08-03 13:14 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-08-04T04:01:53Z",
   "Pathogen": "",
   "Event": "Research",
@@ -1560,13 +1540,43 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-08-07 07:50 UTC",
+  "Published (UTC)": "2026-08-10T04:06:32Z",
   "Pathogen": "",
   "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Why chocolate goes wrong in baking",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/07/why-chocolate-goes-wrong-in-baking-process-performance-and-pain-au-chocolat",
-  "Retrieved (UTC)": "2026-08-10 10:25 UTC",
-  "Category": "Regulatory"
+  "Source": "Food Safety News",
+  "Title": "Calls to suspend school meals plan as illnesses continue",
+  "Link": "https://www.foodsafetynews.com/2026/08/calls-to-suspend-school-meals-plan-as-illnesses-continue/",
+  "Retrieved (UTC)": "2026-08-10T11:04:17Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-10T04:04:16Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Data shows cost of illness claims linked to travel abroad",
+  "Link": "https://www.foodsafetynews.com/2026/08/data-shows-cost-of-illness-claims-linked-to-travel-abroad/",
+  "Retrieved (UTC)": "2026-08-10T11:04:17Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-10T04:02:13Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA warns three California importers about Foreign Supplier Verification Program failures",
+  "Link": "https://www.foodsafetynews.com/2026/08/fda-warns-three-california-importers-about-foreign-supplier-verification-program-failures/",
+  "Retrieved (UTC)": "2026-08-10T11:04:17Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-10T04:00:43Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA steps up import enforcement on seafood, tamarind and other products",
+  "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-import-enforcement-on-seafood-tamarind-and-other-products/",
+  "Retrieved (UTC)": "2026-08-10T11:04:17Z",
+  "Category": ""
  }
 ]

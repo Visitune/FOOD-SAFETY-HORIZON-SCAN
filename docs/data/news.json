@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-10 05:18 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Health Alert For Meat and Poultry With Jalapeños For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/health-alert-for-meat-and-poultry-with-jalapenos-for-salmonella",
+  "Retrieved (UTC)": "2026-08-10 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-10 05:18 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Salsa, Salad, Guacamole With Jalapeños Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/salsa-salad-guacamole-with-jalapenos-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-08-10 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-10 05:17 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "City Foods Pastrami and Corned Beef Recalled For Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/city-foods-pastrami-and-corned-beef-recalled-for-listeria",
+  "Retrieved (UTC)": "2026-08-10 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-10 04:05 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Outbreak",
@@ -1378,26 +1408,6 @@
   "Link": "https://www.food-safety.com/articles/11677-study-identifies-optimal-poultry-transport-cage-washing-conditions-to-reduce-salmonella",
   "Retrieved (UTC)": "2026-08-03 13:14 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-03T04:04:52Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "Seven importers warned about Foreign Supplier Verification Program violations",
-  "Link": "https://www.foodsafetynews.com/2026/08/seven-importers-warned-about-foreign-supplier-verification-program-violations/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-03T04:01:52Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA steps up import enforcement on infant formula, seafood, dried peppers",
-  "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-import-enforcement-on-infant-formula-seafood-dried-peppers/",
-  "Retrieved (UTC)": "2026-08-03T17:09:31Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-08-04T04:01:53Z",

@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-11 09:53 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "EFSA",
+  "Title": "Food contamination incident linked to Salmonella Enteritidis ST11 in egg-based products",
+  "Link": "https://www.efsa.europa.eu/en/supporting/pub/en-10303",
+  "Retrieved (UTC)": "2026-08-11 10:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-11 08:40 UTC",
   "Pathogen": "Mycotoxin",
   "Event": "News",
@@ -1480,26 +1490,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-08-04 09:56 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Assessment of genetically modified RF3 Canola Quality (CQ) Brassica juncea (application EFSA-GMO-NL-2019-158)",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10178",
-  "Retrieved (UTC)": "2026-08-04 10:47 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-04 09:47 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Tyson Foods says value-added chicken playbook shields profits from commodity price swings",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/04/tysons-value-added-chicken-strategy-boosts-profits",
-  "Retrieved (UTC)": "2026-08-04 10:47 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-08-05T04:02:03Z",
   "Pathogen": "",
   "Event": "Outbreak",
@@ -1627,6 +1617,16 @@
   "Title": "Noodles, soup base recalled for undeclared fish",
   "Link": "https://www.foodsafetynews.com/2026/08/noodles-soup-base-recalled-for-undeclared-fish/",
   "Retrieved (UTC)": "2026-08-11T03:06:44Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-11T04:02:51Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Large Trichinella outbreak raises meat sourcing concerns",
+  "Link": "https://www.foodsafetynews.com/2026/08/large-trichinella-outbreak-raises-meat-sourcing-concerns/",
+  "Retrieved (UTC)": "2026-08-11T10:46:55Z",
   "Category": ""
  }
 ]

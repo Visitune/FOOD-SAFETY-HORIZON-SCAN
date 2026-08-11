@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-11 04:05 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Some states say Cyclospora outbreak is slowing",
+  "Link": "https://www.foodsafetynews.com/2026/08/states-say-cyclospora-outbreak-is-slowing",
+  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-11 04:03 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: A White House adviser says the Cyclospora outbreak is manufactured hysteria. Taco Bell’s parent company is on his list of culprits.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-a-white-house-adviser-says-the-cyclospora-outbreak-is-manufactured-hysteria-taco-bells-parent-company-is-on-his-list-of-culprits",
+  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-11 04:01 UTC",
+  "Pathogen": "Norovirus",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Hong Kong outbreak analysis reveals growing role of norovirus",
+  "Link": "https://www.foodsafetynews.com/2026/08/hong-kong-outbreak-analysis-reveals-growing-role-of-norovirus",
+  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-11 03:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Why China should matter to every alt protein company",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/11/why-china-should-matter-to-every-alt-protein-company",
+  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-11 01:50 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -1460,46 +1500,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-08-04 04:04 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Czech officials warn of botulism in pate; more warnings issued in Salmonella outbreak traced to noodles",
-  "Link": "https://www.foodsafetynews.com/2026/08/czech-officials-warn-of-botulism-in-pate-more-warnings-issued-in-salmonella-outbreak-traced-to-noodles",
-  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-04 03:08 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Sustainability Snippets: Coffee strategies, Coca-Cola and food waste",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/04/sustainability-snippets-coffee-strategies-coca-cola-and-food-waste",
-  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-04 03:07 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Cultivated beef steak set for global expansion after historic approval",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/04/cultivated-beef-steak-to-hit-singapore-food-scene-with-historic-approval",
-  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-04 03:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "PepsiCo flags major gap in women’s sports nutrition",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/04/pepsico-flags-major-gap-in-womens-sports-nutrition",
-  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-08-04T04:01:53Z",
   "Pathogen": "",
   "Event": "Research",
@@ -1516,16 +1516,6 @@
   "Source": "Food Safety News",
   "Title": "Europe sees rise in possible fraud alerts in June",
   "Link": "https://www.foodsafetynews.com/2026/08/europe-sees-rise-in-possible-fraud-alerts-in-june/",
-  "Retrieved (UTC)": "2026-08-04T16:51:19Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-03T23:45:18Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Lidl expands recall of cookies because of undeclared allergens",
-  "Link": "https://www.foodsafetynews.com/2026/08/lidl-expands-recall-of-cookies-because-of-undeclared-allergens/",
   "Retrieved (UTC)": "2026-08-04T16:51:19Z",
   "Category": ""
  },
@@ -1637,6 +1627,26 @@
   "Title": "FDA steps up import enforcement on seafood, tamarind and other products",
   "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-import-enforcement-on-seafood-tamarind-and-other-products/",
   "Retrieved (UTC)": "2026-08-10T11:04:17Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-11T00:41:34Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Frozen fudge sandwiches recalled because of undeclared egg",
+  "Link": "https://www.foodsafetynews.com/2026/08/frozen-fudge-sandwiches-recalled-because-of-undeclared-egg/",
+  "Retrieved (UTC)": "2026-08-11T03:06:44Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-11T00:31:57Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Noodles, soup base recalled for undeclared fish",
+  "Link": "https://www.foodsafetynews.com/2026/08/noodles-soup-base-recalled-for-undeclared-fish/",
+  "Retrieved (UTC)": "2026-08-11T03:06:44Z",
   "Category": ""
  }
 ]

@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-11 01:50 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "All Supermarket Jalapeno Product Recalls For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/all-supermarket-jalapeno-product-recalls-for-salmonella",
+  "Retrieved (UTC)": "2026-08-11 02:19 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-11 00:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Taylor Farms recalls 20 products containing jalapeños linked to outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/taylor-farms-recalls-20-products-containing-jalapenos-linked-to-outbreak",
+  "Retrieved (UTC)": "2026-08-11 02:19 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-10 19:25 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1478,26 +1498,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/08/04/pepsico-flags-major-gap-in-womens-sports-nutrition",
   "Retrieved (UTC)": "2026-08-04 04:19 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-04 02:10 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Imported pistachio butter sold at Walmart stores recalled because of Salmonella",
-  "Link": "https://www.foodsafetynews.com/2026/08/imported-pistachio-butter-sold-at-walmart-stores-recalled-because-of-salmonella",
-  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-04 00:54 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "First deaths in Cyclospora outbreak reported by Michigan",
-  "Link": "https://www.foodsafetynews.com/2026/08/first-deaths-in-cyclospora-outbreak-reported-by-michigan",
-  "Retrieved (UTC)": "2026-08-04 04:19 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-04T04:01:53Z",

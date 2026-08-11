@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-11 15:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Mondelēz targets festive growth with Christmas confectionery range",
+  "Link": "https://www.confectionerynews.com/Article/2026/08/11/mondelez-targets-growth-with-cadbury-toblerone-and-oreo-christmas-range",
+  "Retrieved (UTC)": "2026-08-11 17:05 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-11 14:26 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "FAO Reviews Food Safety Risks, Control Challenges of Toxigenic Clostridia",
+  "Link": "https://www.food-safety.com/articles/11716-fao-reviews-food-safety-risks-control-challenges-of-toxigenic-clostridia",
+  "Retrieved (UTC)": "2026-08-11 17:05 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-11 14:08 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1468,16 +1488,6 @@
   "Link": "https://www.food-safety.com/articles/11702-chipotle-identifies-potential-connection-between-salmonella-outbreak-and-jalapenos",
   "Retrieved (UTC)": "2026-08-04 18:50 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-04 15:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Nestlé kicks off Christmas countdown with festive Milkybar",
-  "Link": "https://www.confectionerynews.com/Article/2026/08/04/nestle-launches-festive-milkybar-caramel-crunch-sharing-bar",
-  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-08-05T04:02:03Z",

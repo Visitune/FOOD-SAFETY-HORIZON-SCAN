@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-11 08:40 UTC",
+  "Pathogen": "Mycotoxin",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Stage : Lutter contre les mycotoxines : utiliser l’IA et le text-mining pour automatiser l’extraction de données scientifiques et optimiser MycoCentral.»",
+  "Link": "https://www.anses.fr/fr/content/stage-lutter-contre-les-mycotoxines-utiliser-lia-et-le-text-mining-pour-automatiser",
+  "Retrieved (UTC)": "2026-08-11 09:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-11 08:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Drought hits Europe: How have crops been impacted?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/11/drought-in-europe-how-have-crops-been-impacted",
+  "Retrieved (UTC)": "2026-08-11 09:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-11 08:03 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "One brand, two companies: Who has control when a brand is licensed?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/11/when-a-brand-is-licenced-who-controls-what",
+  "Retrieved (UTC)": "2026-08-11 09:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-11 04:05 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Outbreak",
@@ -1467,16 +1497,6 @@
   "Title": "Tyson Foods says value-added chicken playbook shields profits from commodity price swings",
   "Link": "https://www.foodnavigator.com/Article/2026/08/04/tysons-value-added-chicken-strategy-boosts-profits",
   "Retrieved (UTC)": "2026-08-04 10:47 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-04 08:18 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "A new protein contender emerges as whey prices surge",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/04/adm-and-richs-back-everys-fermented-egg-white-protein",
-  "Retrieved (UTC)": "2026-08-04 16:17 UTC",
   "Category": "Regulatory"
  },
  {

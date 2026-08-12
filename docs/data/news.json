@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-12 23:23 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Whole Foods recalls dozens of jalapeño products because of link to Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/whole-foods-recalls-dozens-of-jalapeno-products-because-of-link-to-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-08-12 23:51 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-12 16:36 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1747,6 +1757,16 @@
   "Title": "Taylor Farms Lettuce Cyclosporiasis Outbreak Expands to Nine States; CDC Reports Nearly 2,000 Cases, State Counts Exceed 10,000",
   "Link": "https://www.food-safety.com/articles/11666-taylor-farms-lettuce-cyclosporiasis-outbreak-expands-to-nine-states-cdc-reports-nearly-2-000-cases-state-counts-exceed-10-000",
   "Retrieved (UTC)": "2026-08-12 20:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-07-24 12:42 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Center for Produce Safety Releases Cyclospora Resources for Industry",
+  "Link": "https://www.food-safety.com/articles/11664-center-for-produce-safety-releases-cyclospora-resources-for-industry",
+  "Retrieved (UTC)": "2026-08-12 23:51 UTC",
   "Category": "Outbreak"
  },
  {

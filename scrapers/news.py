@@ -7,7 +7,7 @@ Runs hourly from .github/workflows/news-feed.yml:
 
 Pulls recent food-pathogen news from a curated set of RSS feeds, filters by
 the VisiPilot pathogen whitelist, dedupes against existing NEWS rows by Link, and
-enforces a 7-day rolling retention (rows with Published > 7 days ago are
+enforces a 30-day rolling retention (rows with Published > 30 days ago are
 dropped on every run — per the VisiPilot FSIS spec).
 
 Writes back only the NEWS sheet. Recalls and Pending sheets are untouched.
@@ -31,7 +31,7 @@ from openpyxl import load_workbook
 NEWS_HEADERS = ["Published (UTC)", "Pathogen", "Event", "Source",
                 "Title", "Link", "Retrieved (UTC)", "Category"]
 
-RETENTION_DAYS = 7
+RETENTION_DAYS = 30
 HTTP_TIMEOUT = 20
 USER_AGENT = "VisiPilot-FSIS-NewsFeed/1.0 (+https://visipilot.com)"
 
@@ -264,7 +264,7 @@ def main() -> int:
         ws = wb.create_sheet("NEWS")
         ws.append(NEWS_HEADERS)
 
-    # Read existing rows, apply 7-day retention, build dedup set.
+    # Read existing rows, apply 30-day retention, build dedup set.
     existing: list[list] = []
     seen_links: set[str] = set()
     dropped_old = 0

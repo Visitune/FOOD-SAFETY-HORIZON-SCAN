@@ -2,7 +2,7 @@ name: FSIS News Feed (every 1h)
 
 # ==========================================================================
 # Runs every hour at :00. Pulls the news feeds, appends new rows to the
-# NEWS sheet of docs/data/recalls.xlsx, then purges rows older than 7
+# NEWS sheet of docs/data/recalls.xlsx, then purges rows older than 30
 # days (rolling window per spec).
 #
 # The NEWS sheet is kept separate from Recalls. The weekly + monthly
@@ -51,9 +51,9 @@ jobs:
         run: |
           python scrapers/news.py docs/data/recalls.xlsx
 
-      - name: Purge NEWS rows older than 7 days
+      - name: Purge NEWS rows older than 30 days
         run: |
-          python -m pipeline.purge_old_news --xlsx docs/data/recalls.xlsx --days 7
+          python -m pipeline.purge_old_news --xlsx docs/data/recalls.xlsx --days 30
 
       - name: Commit updated recalls.xlsx + news.json if changed
         run: |
@@ -64,7 +64,7 @@ jobs:
             exit 0
           fi
           git add docs/data/recalls.xlsx docs/data/news.json
-          COMMIT_MSG="auto news update + 7d purge $(TZ=Europe/Athens date '+%Y-%m-%d %H:%M Athens')"
+          COMMIT_MSG="auto news update + 30d purge $(TZ=Europe/Athens date '+%Y-%m-%d %H:%M Athens')"
           git commit -m "$COMMIT_MSG"
 
           # Safe push retry — row-level union merge instead of binary overwrite

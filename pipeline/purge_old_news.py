@@ -1,18 +1,18 @@
 """
-VisiPilot FSIS — 7-day rolling retention for the NEWS sheet.
+VisiPilot FSIS — 30-day rolling retention for the NEWS sheet.
 
 Opens docs/data/recalls.xlsx, finds the 'NEWS' sheet, and deletes every
-row whose 'Published (UTC)' date is more than 7 days old. Keeps the
+row whose 'Published (UTC)' date is more than 30 days old. Keeps the
 Recalls + Pending sheets untouched.
 
 George's rule (memory): news feed runs every 1h, NEWS sheet keeps only
-the rolling 7-day window. This script is called from the news-feed
+the rolling 30-day window. This script is called from the news-feed
 workflow immediately after the fetch step so expired rows never sit
 around for long.
 
 Usage:
     python -m pipeline.purge_old_news --xlsx docs/data/recalls.xlsx
-    python -m pipeline.purge_old_news --xlsx ... --days 7 --dry-run
+    python -m pipeline.purge_old_news --xlsx ... --days 30 --dry-run
 """
 from __future__ import annotations
 
@@ -65,8 +65,8 @@ def _parse_dt(val) -> datetime | None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--xlsx", required=True)
-    ap.add_argument("--days", type=int, default=7,
-                    help="Rolling retention window in days (default 7)")
+    ap.add_argument("--days", type=int, default=30,
+                    help="Rolling retention window in days (default 30)")
     ap.add_argument("--dry-run", action="store_true",
                     help="Report what would be removed, don't write")
     args = ap.parse_args()

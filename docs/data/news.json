@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-12 09:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "A retail prevalence study to investigate microbiological contamination levels in ready-to-eat (RTE) plant-based dairy, meat and fish substitutes",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10271",
+  "Retrieved (UTC)": "2026-08-12 10:15 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-12 07:49 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1466,16 +1476,6 @@
   "Source": "Food Navigator",
   "Title": "Germany’s food giants thrive as manufacturers feel the squeeze",
   "Link": "https://www.foodnavigator.com/Article/2026/08/05/germany-food-industry-squeezed-by-retail-power",
-  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-05 10:15 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Le démarchage téléphonique désormais interdit si vous n’y avez pas consenti",
-  "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/le-demarchage-telephonique-desormais-interdit-si-vous-ny-avez-pas-consenti",
   "Retrieved (UTC)": "2026-08-05 10:44 UTC",
   "Category": "Regulatory"
  },

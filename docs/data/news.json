@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-12 11:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Krispy Kreme cuts losses, but remains in the red",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/12/krispy-kreme-narrows-losses-as-turnaround-strategy-gains-momentum",
+  "Retrieved (UTC)": "2026-08-12 11:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-12 09:38 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -8,6 +18,16 @@
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10271",
   "Retrieved (UTC)": "2026-08-12 10:15 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-12 09:00 UTC",
+  "Pathogen": "Campylobacter",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Links Industrial Poultry Farming to Increased Spread, Adaptation of Campylobacter",
+  "Link": "https://www.food-safety.com/articles/11720-study-links-industrial-poultry-farming-to-increased-spread-adaptation-of-campylobacter",
+  "Retrieved (UTC)": "2026-08-12 11:53 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-12 07:49 UTC",
@@ -1447,36 +1467,6 @@
   "Title": "The seasonal launch is dead. What comes next?",
   "Link": "https://www.foodnavigator.com/Article/2026/08/05/how-fast-moving-trends-are-reshaping-food-and-beverage-npd",
   "Retrieved (UTC)": "2026-08-05 12:59 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-05 11:53 UTC",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Navigator",
-  "Title": "Full-fat dairy cleared in new study challenging diet advice",
-  "Link": "https://www.dairyreporter.com/Article/2026/08/05/study-backs-three-daily-servings-of-full-fat-dairy",
-  "Retrieved (UTC)": "2026-08-06 12:08 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-05 11:13 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "5 food ingredients for bone health – what manufacturers need to know",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/05/bone-health-top-five-ingredients-for-food-manufacturers",
-  "Retrieved (UTC)": "2026-08-05 12:59 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-05 10:28 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Germany’s food giants thrive as manufacturers feel the squeeze",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/05/germany-food-industry-squeezed-by-retail-power",
-  "Retrieved (UTC)": "2026-08-05 10:44 UTC",
   "Category": "Regulatory"
  },
  {

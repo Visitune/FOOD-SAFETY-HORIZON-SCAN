@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-08-12 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "OPHTALON VET 10 MG/G POMMADE OPHTALMIQUE POUR CHIENS ET CHATS",
+  "Link": "https://www.anses.fr/fr/content/ophtalon-vet-10-mgg-pommade-ophtalmique-pour-chiens-et-chats",
+  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-12 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Polish eggs linked to 4 French Salmonella outbreaks",
+  "Link": "https://www.foodsafetynews.com/2026/08/polish-eggs-linked-to-4-french-salmonella-outbreaks",
+  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-12 03:37 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Publisher’s Platform: On the Day CDC Confirmed 13,895 Cyclospora Cases, the Acting FDA Commissioner Told Americans to Feel Confident About Lettuce. We Need Leadership, Not Cheerleaders.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-on-the-day-cdc-confirmed-13-895-cyclospora-cases-the-acting-fda-commissioner-told-americans-to-feel-confident-about-lettuce-we-need-leadership-not-cheerleaders",
+  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-12 03:37 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Sprig & Sprout Jack & Olive Cibus Salads Recalled For Cyclospora",
+  "Link": "https://foodpoisoningbulletin.com/2026/sprig-sprout-jack-olive-cibus-salads-recalled-for-cyclospora",
+  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-12 03:20 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Taylor Farms Cyclospora Lettuce Went to Restaurants and Walmart",
+  "Link": "https://foodpoisoningbulletin.com/2026/taylor-farms-cyclospora-lettuce-went-to-restaurants-and-walmart",
+  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-12 03:10 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Cyclospora Outbreak Keeps Growing, Says the CDC",
+  "Link": "https://foodpoisoningbulletin.com/2026/cyclospora-outbreak-keeps-growing-says-the-cdc",
+  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-11 15:22 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1428,36 +1488,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/08/05/5-trends-shaping-global-energy-drink-recipes",
   "Retrieved (UTC)": "2026-08-05 07:45 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-05 04:32 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "33 cheeses recalled in Canada because of Listeria concerns",
-  "Link": "https://www.foodsafetynews.com/2026/08/33-cheeses-recalled-in-canada-because-of-listeria-concerns",
-  "Retrieved (UTC)": "2026-08-05 07:45 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-05 04:06 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "15 states now implicated in Cyclospora outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/08/15-states-now-implicated-in-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-08-05 04:17 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-05 03:13 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Organic sliced mushrooms recalled because of Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/08/organic-sliced-mushrooms-recalled-because-of-listeria",
-  "Retrieved (UTC)": "2026-08-05 04:17 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-05T04:02:03Z",

@@ -192,6 +192,22 @@
   "Notes": "[RASFF #2026.7069; classification: alert notification; category: meat and meat products (other than poultry); notifId=865068]"
  },
  {
+  "Date": "2026-08-10",
+  "Source": "FSA (UK)",
+  "Company": "A.Vogel Ltd recalls Rapunzel bioSnacky Das Original Red Clover – Seeds for Sprou",
+  "Brand": "Rapunzel bioSnacky",
+  "Product": "A.Vogel Ltd recalls Rapunzel bioSnacky Das Original Red Clover – Seeds for Sprouts and Seedlings because of contamination with E. coli (STEC)",
+  "Pathogen": "Escherichia coli (generic)",
+  "Reason": "",
+  "Class": "Alert",
+  "Country": "United Kingdom",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "http://data.food.gov.uk/food-alerts/id/FSA-PRIN-39-2026",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | PRIN-39-2026 [gemini-enrich 2026-08-12: Brand '—'→'Rapunzel bioSnacky'] [tier-guard: Escherichia coli (generic) is always Tier 1; forced from Tier 2]"
+ },
+ {
   "Date": "2026-08-09",
   "Source": "FSAI (IE)",
   "Company": "Dunnes Stores Baxter & Greene loose salad",
@@ -238,6 +254,22 @@
   "Outbreak": 0,
   "URL": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-specific-batches-of-supervalu-seed-mix",
   "Notes": "FSAI HTML listing fallback — claude-check please enrich Pathogen+Date+Reason from detail page [gemini-check 2026-08-09: fix; corrections: Date→2026-08-08, Company→SuperValu, Brand→SuperValu, Pathogen→Salmonella; fix; company mismatch; pathogen mismatch | Date, company, brand, and pathogen corrected based on page content.] [enrich-gate 2026-08-09: pending_enrichment → pending (Claude verified)] [tier-guard: Salmonella is always Tier 1; forced from Tier 3]"
+ },
+ {
+  "Date": "2026-08-08",
+  "Source": "USDA FSIS",
+  "Company": "City Foods, Inc.",
+  "Brand": "City Foods, Inc.",
+  "Product": "Ready-To-Eat Pastrami and Corned Beef Products",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fsis.usda.gov/recalls-alerts/city-foods-inc--recalls-ready-eat-pastrami-and-corned-beef-products-due-possible",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | 3 days ago - WASHINGTON, Aug. 8, 2026 – City Foods, Inc., a Chicago, Ill., establishment, is recalling approximately 3,215 pounds of ready-to-eat (RTE) pastrami and corned beef productsthat may be adulterated with Listeria monocytogenes (Lm), the U.S.  [via DDGS gap-finder, deterministic extract]"
  },
  {
   "Date": "2026-08-07",

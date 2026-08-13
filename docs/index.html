@@ -102,7 +102,13 @@ tr.skeleton-row .skeleton{display:block;height:12px;width:100%;}
 .visi-note b{color:#e9d5ff;}
 .visi-group{margin-bottom:14px;}
 .visi-crit{margin-bottom:10px;}
+.visi-crit-hd{display:flex;align-items:baseline;justify-content:space-between;gap:8px;}
 .visi-glabel{font-size:11px;color:#9CA3AF;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;display:block;}
+.visi-crit-hd .visi-glabel{margin-bottom:6px;}
+.visi-allbtns{display:flex;gap:8px;flex-shrink:0;margin-bottom:6px;}
+.visi-allbtn{background:none;border:none;padding:0;color:#a78bfa;font-size:10px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;text-decoration:underline;text-underline-offset:2px;}
+.visi-allbtn:hover{color:#e9d5ff;}
+.visi-allrow{display:flex;justify-content:flex-end;margin-bottom:2px;}
 .visi-chklist{display:flex;flex-wrap:wrap;gap:6px;}
 .visi-chk{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);cursor:pointer;font-size:11px;font-family:monospace;}
 .visi-chk input{accent-color:#a78bfa;cursor:pointer;}
@@ -474,6 +480,7 @@ const I18N = {
     visiGroupTier:'Minimum tier', visiMinAll:'All tiers', visiMinTier2:'Tier-2 or higher', visiMinTier1:'Tier-1 only',
     visiCriteriaCount:'{n} criteria', visiSavedCount:'{n} saved',
     savedToggle:'★ Saved', tblSave:'★', visiSearchPlaceholder:'Search…',
+    visiSelectAll:'All', visiSelectNone:'None',
     visiGroupSources:'Favorite sources',
     visiStarRecallSave:'Save this recall', visiStarRecallRemove:'Remove this recall',
     visiStarNewsSave:'Save this news', visiStarNewsRemove:'Remove this news',
@@ -517,6 +524,7 @@ const I18N = {
     visiGroupTier:'Niveau minimum', visiMinAll:'Tous les niveaux', visiMinTier2:'Niveau 2 ou plus', visiMinTier1:'Niveau 1 uniquement',
     visiCriteriaCount:'{n} critères', visiSavedCount:'{n} enregistrés',
     savedToggle:'★ Mes enregistrements', tblSave:'★', visiSearchPlaceholder:'Rechercher…',
+    visiSelectAll:'Tout', visiSelectNone:'Aucun',
     visiGroupSources:'Sources favorites',
     visiStarRecallSave:'Enregistrer ce rappel', visiStarRecallRemove:'Retirer ce rappel',
     visiStarNewsSave:'Enregistrer cette actualité', visiStarNewsRemove:'Retirer cette actualité',

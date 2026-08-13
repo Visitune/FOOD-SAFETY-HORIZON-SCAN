@@ -221,8 +221,19 @@
     return h + '</div>';
   }
 
+  // "Select all / none" only ever needs to reach the checkboxes currently
+  // visible in its own group — respects an active search filter instead of
+  // fighting it.
+  function _selectAllRow() {
+    return '<span class="visi-allbtns">' +
+      '<button type="button" class="visi-allbtn" onclick="VisiProfile.selectAllChips(this,true)">' + _t('visiSelectAll') + '</button>' +
+      '<button type="button" class="visi-allbtn" onclick="VisiProfile.selectAllChips(this,false)">' + _t('visiSelectNone') + '</button>' +
+      '</span>';
+  }
+
   function _groupHtml(name, label, opts, sel) {
-    return '<div class="visi-crit"><label class="visi-glabel">' + label + '</label>' + _chipsHtml(name, opts, sel) + '</div>';
+    var hd = '<div class="visi-crit-hd"><label class="visi-glabel">' + label + '</label>' + (opts.length ? _selectAllRow() : '') + '</div>';
+    return '<div class="visi-crit">' + hd + _chipsHtml(name, opts, sel) + '</div>';
   }
 
   // Collapsible section for long/dynamic lists (pathogens, sources, countries).
@@ -241,7 +252,8 @@
     var search = opts.search
       ? '<input type="search" class="visi-search" placeholder="' + _esc(_t('visiSearchPlaceholder')) + '" oninput="VisiProfile.filterChips(this)">'
       : '';
-    return '<details class="visi-acc"' + (count ? ' open' : '') + '><summary>' + opts.label + badge + '</summary><div class="visi-acc-body">' + search + body + '</div></details>';
+    var allRow = '<div class="visi-allrow">' + _selectAllRow() + '</div>';
+    return '<details class="visi-acc"' + (count ? ' open' : '') + '><summary>' + opts.label + badge + '</summary><div class="visi-acc-body">' + search + allRow + body + '</div></details>';
   }
 
   // Live-filters the chip labels inside the accordion body that contains
@@ -269,6 +281,21 @@
         var m = !q || all[j].textContent.toLowerCase().indexOf(q) !== -1;
         all[j].style.display = m ? '' : 'none';
       }
+    }
+  }
+
+  // Checks/unchecks every checkbox currently visible in the same group
+  // (flat .visi-crit, or accordion .visi-acc-body) — a chip hidden by an
+  // active search stays untouched, so "select all" means "all matches".
+  function selectAllChips(btn, checked) {
+    var scope = btn.closest('.visi-crit') || btn.closest('.visi-acc-body');
+    if (!scope) return;
+    var boxes = scope.querySelectorAll('.visi-chk input[type="checkbox"]');
+    for (var i = 0; i < boxes.length; i++) {
+      var label = boxes[i].closest('.visi-chk');
+      var subgroup = boxes[i].closest('.visi-subgroup');
+      var visible = (!label || label.style.display !== 'none') && (!subgroup || subgroup.style.display !== 'none');
+      if (visible) boxes[i].checked = checked;
     }
   }
 
@@ -330,7 +357,7 @@
       '<div class="visi-actions">' +
       '<button type="button" class="pb on" onclick="VisiProfile.save()">🔒 ' + (p ? _t('visiUpdate') : _t('visiSave')) + '</button>' +
       '<button type="button" class="pb" onclick="VisiProfile.download()">' + _t('visiDownload') + '</button>' +
-      '<label class="pb visi-filebtn">' + _t('visiImport') + '<input type="file" accept="application/json,.json" onchange="VisiProfile.importFile(this)"></label>' +
+      '<label class="pb visi-filebtn">' + _t('visiImport') + '<input type="file" class="sr-only" accept="application/json,.json" onchange="VisiProfile.importFile(this)"></label>' +
       '<button type="button" class="pb visi-danger" onclick="VisiProfile.reset()">' + _t('visiReset') + '</button>' +
       '</div>' +
       '<div class="visi-subnote">' + _t('visiActionsHint') + '</div>';
@@ -495,7 +522,7 @@
     open: openModal, close: closeModal, save: save, download: download,
     reset: reset, importFile: importFile, removeSavedItem: removeSavedItem,
     toggleSaved: toggleSaved, refreshCounter: refreshCounter, refresh: refresh,
-    hasKey: hasKey, filterChips: filterChips
+    hasKey: hasKey, filterChips: filterChips, selectAllChips: selectAllChips
   };
 
   if (document.readyState === 'loading') {

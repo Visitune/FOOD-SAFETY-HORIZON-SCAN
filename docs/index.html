@@ -1104,7 +1104,7 @@ function timeAgo(iso){
 function renderNewsFeed(items){
   const el=document.getElementById('newsFeed');
   if(!items||!items.length){ el.innerHTML=`<div class="trend-empty">${t('newsEmpty')}</div>`; return; }
-  const sorted=[...items].sort((a,b)=>String(b['Published (UTC)']||'').localeCompare(String(a['Published (UTC)']||''))).slice(0,15);
+  const sorted=[...items].sort((a,b)=>String(b['Published (UTC)']||'').localeCompare(String(a['Published (UTC)']||''))).slice(0,100);
   el.innerHTML='<div class="news-list">'+sorted.map(n=>{
     const cat=(n.Category||'').toLowerCase()==='regulatory'?'regulatory':'outbreak';
     const catLbl=cat==='regulatory'?t('newsCatRegulatory'):t('newsCatOutbreak');

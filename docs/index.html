@@ -243,7 +243,6 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
     <a href="weekly.html"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 14V9M7.5 14V4M12 14V7"/></svg><span data-i18n="navWeekly">Weekly</span></a>
     <a href="hub.html"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l4-4 3 3 5-6"/><path d="M10.5 4H14v3.5"/></svg><span data-i18n="navMonthly">Monthly + AI</span></a>
     <a href="guide.html"><svg class="ic" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3.4c1.2-.7 2.7-1 4-.8 1 .1 1.6.5 2 .8v9.2c-.4-.3-1-.7-2-.8-1.3-.2-2.8.1-4 .8V3.4z"/><path d="M14 3.4c-1.2-.7-2.7-1-4-.8-1 .1-1.6.5-2 .8v9.2c.4-.3 1-.7 2-.8 1.3-.2 2.8.1 4 .8V3.4z"/></svg><span data-i18n="navGuide">Guide</span></a>
-    <a href="data/recalls.json" style="color:#4caf80;border-color:#4caf80;" data-i18n="navJson">↓ JSON Feed</a>
     <a href="#" id="visiNav" onclick="try{return VisiProfile.open(),false}catch(e){return false}" style="border-color:rgba(139,92,246,.35);" title="My key / Ma clé">🔒 <span data-i18n="navVisiKey">Ma clé</span><span id="visiCounter" style="display:none;margin-left:6px;color:#a78bfa;font-weight:600;"></span></a>
   </div>
 
@@ -429,7 +428,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
 <div class="footer">
   <a href="https://github.com/Visitune/FOOD-SAFETY-HORIZON-SCAN">Food Safety Horizon Scanning</a> &nbsp;·&nbsp;
   FDA · USDA · RASFF · CFIA · ΕΦΕΤ · FSA UK · FSANZ · BVL · RappelConso · AFSCA · 63+ sources
-  &nbsp;·&nbsp; <a href="weekly.html" data-i18n="footerWeekly">Weekly</a> · <a href="hub.html" data-i18n="footerMonthly">Monthly</a>
+  &nbsp;·&nbsp; <a href="weekly.html" data-i18n="footerWeekly">Weekly</a> · <a href="hub.html" data-i18n="footerMonthly">Monthly</a> · <a href="data/recalls.json" data-i18n="footerJson">Raw JSON feed</a>
   &nbsp;·&nbsp; <span data-i18n="bioRiskNote">Bio Risk Tier: Tier-1 > FDA Class I</span>
 </div>
 
@@ -465,7 +464,8 @@ const SRC_CSS={"FDA": "background:rgba(91,155,213,.12);color:#5b9bd5;border:1px 
 
 const I18N = {
   en: {
-    navDash:'Live Dashboard', navWeekly:'Weekly', navMonthly:'Monthly + AI', navGuide:'Guide', navJson:'↓ JSON Feed',
+    navDash:'Live Dashboard', navWeekly:'Weekly', navMonthly:'Monthly + AI', navGuide:'Guide',
+    footerJson:'Raw JSON feed',
     dataVerified:'Every record links to its official regulator source', methodology:'See methodology →',
     mostRecent:'Most recent recall:', checked:'Data checked:', dataRange:'Data covers:',
     kpiTotal:'Total Recalls in DB', kpiTier1:'Tier-1 Critical', kpiOutbreaks:'Active Outbreaks', kpiPathogens:'Distinct Pathogens', kpiCountries:'Countries', kpiSources:'Sources',
@@ -527,7 +527,8 @@ const I18N = {
     visiStarNewsSave:'Save this news', visiStarNewsRemove:'Remove this news',
   },
   fr: {
-    navDash:'Tableau de bord', navWeekly:'Hebdomadaire', navMonthly:'Mensuel + IA', navGuide:'Guide', navJson:'↓ Flux JSON',
+    navDash:'Tableau de bord', navWeekly:'Hebdomadaire', navMonthly:'Mensuel + IA', navGuide:'Guide',
+    footerJson:'Flux JSON brut',
     dataVerified:'Chaque donnée renvoie vers la source officielle du régulateur', methodology:'Voir la méthodologie →',
     mostRecent:'Rappel le plus récent :', checked:'Données vérifiées :', dataRange:'Période couverte :',
     kpiTotal:'Rappels au total', kpiTier1:'Niveau 1 critique', kpiOutbreaks:'Épidémies actives', kpiPathogens:'Pathogènes distincts', kpiCountries:'Pays', kpiSources:'Sources',

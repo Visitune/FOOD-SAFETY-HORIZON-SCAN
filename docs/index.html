@@ -23,6 +23,11 @@ tr.skeleton-row .skeleton{display:block;height:12px;width:100%;}
 .langtoggle{display:flex;border:1px solid rgba(255,255,255,.15);border-radius:4px;overflow:hidden;flex-shrink:0;}
 .langtoggle button{background:var(--bg);color:#9CA3AF;border:none;padding:6px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;cursor:pointer;}
 .langtoggle button.on{background:var(--acc);color:#fff;}
+.faq-btn{width:26px;height:26px;flex-shrink:0;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:var(--bg);color:#9CA3AF;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;}
+.faq-btn:hover{border-color:var(--acc);color:var(--acc);}
+.visi-acc.faq-acc summary{color:#9CA3AF;text-transform:none;letter-spacing:normal;font-size:12.5px;font-family:'Inter',sans-serif;font-weight:600;}
+.visi-acc.faq-acc summary:hover{color:var(--txt);}
+.faq-acc .visi-acc-body{font-size:12px;color:#9CA3AF;line-height:1.6;padding-left:1px;}
 .ticker{background:#0F1623;border-bottom:1px solid var(--card2);padding:8px 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 5px var(--acc);animation:blink 1.5s infinite;flex-shrink:0;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
@@ -221,6 +226,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
       <button id="langEn" class="on" onclick="setLang('en')">EN</button>
       <button id="langFr" onclick="setLang('fr')">FR</button>
     </div>
+    <button type="button" class="faq-btn" onclick="openFaq()" data-i18n-title="faqBtnTitle" aria-label="FAQ">?</button>
   </div>
 </div>
 <div class="ticker">
@@ -434,6 +440,23 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
   </div>
 </div>
 
+<div class="visi-overlay" id="faqModal" style="display:none" role="dialog" aria-modal="true" aria-label="FAQ">
+  <div class="visi-dialog">
+    <div class="visi-hd"><span>❓ <span data-i18n="faqTitle">FAQ — Ma clé</span></span><button type="button" id="faqClose" aria-label="Close">×</button></div>
+    <div class="visi-body">
+      <details class="visi-acc faq-acc" open><summary data-i18n="faqQ1"></summary><div class="visi-acc-body" data-i18n="faqA1"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ2"></summary><div class="visi-acc-body" data-i18n="faqA2"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ3"></summary><div class="visi-acc-body" data-i18n="faqA3"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ4"></summary><div class="visi-acc-body" data-i18n="faqA4"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ5"></summary><div class="visi-acc-body" data-i18n="faqA5"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ6"></summary><div class="visi-acc-body" data-i18n="faqA6"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ7"></summary><div class="visi-acc-body" data-i18n="faqA7"></div></details>
+      <details class="visi-acc faq-acc"><summary data-i18n="faqQ8"></summary><div class="visi-acc-body" data-i18n="faqA8"></div></details>
+      <div class="visi-subnote"><a href="guide.html" data-i18n="faqMoreLink">See the full guide →</a></div>
+    </div>
+  </div>
+</div>
+
 <script src="visi-profile.js"></script>
 <script>
 let ALL=[],filtered=[],cur=1,lang='en',NEWS_ITEMS=[],savedOnly=false;
@@ -481,6 +504,24 @@ const I18N = {
     visiCriteriaCount:'{n} criteria', visiSavedCount:'{n} saved',
     savedToggle:'★ Saved', tblSave:'★', visiSearchPlaceholder:'Search…',
     visiSelectAll:'All', visiSelectNone:'None',
+    faqBtnTitle:'Help / FAQ', faqTitle:'FAQ — My key',
+    faqQ1:'What is the .visi key?',
+    faqA1:"A small JSON file kept in this browser's local storage. It remembers your watch criteria and the recalls/news you save. No account, no password — nothing is ever sent over the network.",
+    faqQ2:'How do I save a recall or a news item?',
+    faqA2:'Click the ★ next to any recall (Explore tab) or news item (News tab). It’s added to "My saved items" inside "🔒 My key". If you don’t have a key yet, clicking ★ opens this modal so you can create one first — the item you clicked is kept and added automatically.',
+    faqQ3:'Where is my data stored?',
+    faqA3:"Only in this browser, on this device (localStorage). The only network request this feature makes is reading the public recall/news data — never writing your key or saved items anywhere.",
+    faqQ4:'How do I update my criteria?',
+    faqA4:'Open "🔒 My key", change your checkboxes, then click "Update my key". The dashboard re-filters immediately.',
+    faqQ5:'How do I use my key on another device?',
+    faqA5:'Click "Download key" to save the .json file, then on the other device open "🔒 My key" and use "Import a key" to load it.',
+    faqQ6:"What happens if I clear my browser data?",
+    faqA6:"Your key is lost — it only exists in this browser's storage. Download it first if you want to keep a copy; think of the file as your backup.",
+    faqQ7:'How do I reset or delete my key?',
+    faqA7:'Open "🔒 My key" and click "Reset" (a confirmation is required). This is permanent unless you downloaded your key beforehand.',
+    faqQ8:'Do my key’s criteria override the filters I click manually?',
+    faqA8:'No — a filter you set manually in the Explore tab always takes priority over the matching criterion in your key. Your other key criteria stay active.',
+    faqMoreLink:'See the full guide →',
     visiGroupSources:'Favorite sources',
     visiStarRecallSave:'Save this recall', visiStarRecallRemove:'Remove this recall',
     visiStarNewsSave:'Save this news', visiStarNewsRemove:'Remove this news',
@@ -525,6 +566,24 @@ const I18N = {
     visiCriteriaCount:'{n} critères', visiSavedCount:'{n} enregistrés',
     savedToggle:'★ Mes enregistrements', tblSave:'★', visiSearchPlaceholder:'Rechercher…',
     visiSelectAll:'Tout', visiSelectNone:'Aucun',
+    faqBtnTitle:'Aide / FAQ', faqTitle:'FAQ — Ma clé',
+    faqQ1:'Qu’est-ce que la clé .visi ?',
+    faqA1:'Un petit fichier JSON gardé dans le stockage local de ce navigateur. Elle retient vos critères de veille et les rappels/actualités que vous enregistrez. Pas de compte, pas de mot de passe — rien n’est jamais envoyé sur le réseau.',
+    faqQ2:'Comment enregistrer un rappel ou une actualité ?',
+    faqA2:'Cliquez sur le ★ à côté d’un rappel (onglet Explorer) ou d’une actualité (onglet Actualités). Il est ajouté à "Mes enregistrements" dans "🔒 Ma clé". Si vous n’avez pas encore de clé, cliquer sur ★ ouvre cette modale pour en créer une d’abord — l’élément sur lequel vous avez cliqué est conservé et ajouté automatiquement.',
+    faqQ3:'Où sont stockées mes données ?',
+    faqA3:'Uniquement dans ce navigateur, sur cet appareil (localStorage). La seule requête réseau de cette fonctionnalité est la lecture des données publiques de rappels/actualités — jamais l’écriture de votre clé ou de vos enregistrements où que ce soit.',
+    faqQ4:'Comment mettre à jour mes critères ?',
+    faqA4:'Ouvrez "🔒 Ma clé", modifiez vos cases, puis cliquez sur "Mettre à jour ma clé". Le tableau de bord se refiltre immédiatement.',
+    faqQ5:'Comment utiliser ma clé sur un autre appareil ?',
+    faqA5:'Cliquez sur "Télécharger la clé" pour enregistrer le fichier .json, puis sur l’autre appareil ouvrez "🔒 Ma clé" et utilisez "Importer une clé" pour la charger.',
+    faqQ6:'Que se passe-t-il si j’efface les données de mon navigateur ?',
+    faqA6:'Votre clé est perdue — elle n’existe que dans le stockage de ce navigateur. Téléchargez-la d’abord si vous voulez en garder une copie ; voyez ce fichier comme votre sauvegarde.',
+    faqQ7:'Comment réinitialiser ou supprimer ma clé ?',
+    faqA7:'Ouvrez "🔒 Ma clé" et cliquez sur "Réinitialiser" (une confirmation est demandée). C’est définitif sauf si vous avez téléchargé votre clé au préalable.',
+    faqQ8:'Est-ce que les critères de ma clé remplacent les filtres que je clique manuellement ?',
+    faqA8:'Non — un filtre que vous réglez manuellement dans l’onglet Explorer prend toujours le dessus sur le critère correspondant de votre clé. Les autres critères de votre clé restent actifs.',
+    faqMoreLink:'Voir le guide complet →',
     visiGroupSources:'Sources favorites',
     visiStarRecallSave:'Enregistrer ce rappel', visiStarRecallRemove:'Retirer ce rappel',
     visiStarNewsSave:'Enregistrer cette actualité', visiStarNewsRemove:'Retirer cette actualité',
@@ -556,6 +615,12 @@ function setLang(l){
   renderBreadcrumb();
   if (window.VisiProfile) window.VisiProfile.refreshCounter();
 }
+
+function openFaq(){ const m=document.getElementById('faqModal'); if(m) m.style.display='flex'; }
+function closeFaq(){ const m=document.getElementById('faqModal'); if(m) m.style.display='none'; }
+document.getElementById('faqClose').addEventListener('click', closeFaq);
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeFaq(); });
+document.addEventListener('click', e=>{ if(e.target && e.target.id==='faqModal') closeFaq(); });
 
 function pb(p){p=(p||"").toLowerCase();if(p.includes("listeria"))return"b-l";if(p.includes("salmonella"))return"b-s";if(p.includes("o157")||p.includes("stec")||p.includes("e. coli"))return"b-e";if(p.includes("botulinum"))return"b-b";if(p.includes("norovirus"))return"b-n";if(p.includes("aflatoxin"))return"b-a";if(p.includes("cereulide")||p.includes("bacillus"))return"b-c";return"b-o";}
 function tb(t){if(t==1)return'<span style="background:rgba(229,57,53,.1);color:#ef5350;border:1px solid rgba(229,57,53,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;font-weight:700;">TIER-1</span>';if(t==2)return'<span style="background:rgba(232,96,26,.1);color:#F97316;border:1px solid rgba(232,96,26,.25);padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-2</span>';return'<span style="background:rgba(212,160,23,.1);color:#d4a017;padding:2px 6px;border-radius:3px;font-size:9px;font-family:monospace;">TIER-3</span>';}

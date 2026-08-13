@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-13 11:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Hershey’s push for premiumisation picks up pace",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/13/hersheys-premium-push-innovations-acquisitions-and-growth",
+  "Retrieved (UTC)": "2026-08-13 11:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-13 10:21 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Gestionnaire administratif et financier (H/F)",
+  "Link": "https://www.anses.fr/fr/content/gestionnaire-administratif-et-financier-hf",
+  "Retrieved (UTC)": "2026-08-13 11:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-13 09:00 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Modeling Study Identifies Heat, pH Conditions to Inhibit C. botulinum Growth in Chilled Foods",
+  "Link": "https://www.food-safety.com/articles/11723-modeling-study-identifies-heat-ph-conditions-to-inhibit-c-botulinum-growth-in-chilled-foods",
+  "Retrieved (UTC)": "2026-08-13 11:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-13 07:05 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1987,6 +2017,46 @@
   "Title": "Consumer allergic reactions lead to recall of cheese puffs",
   "Link": "https://www.foodsafetynews.com/2026/08/consumer-allergic-reactions-lead-to-recall-of-cheese-puffs/",
   "Retrieved (UTC)": "2026-08-13T03:28:58Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-13T04:03:37Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Ill food handler caused outbreak despite following protocols",
+  "Link": "https://www.foodsafetynews.com/2026/08/ill-food-handler-caused-outbreak-despite-following-protocols/",
+  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-13T04:01:30Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Austrian outbreaks stable but more people sick",
+  "Link": "https://www.foodsafetynews.com/2026/08/austrian-outbreaks-stable-but-more-people-sick/",
+  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-13T04:01:27Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA warns against more products with toxic yellow oleander",
+  "Link": "https://www.foodsafetynews.com/2026/08/fda-warns-against-more-products-with-toxic-yellow-oleander/",
+  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-13T04:00:54Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA tracking 17 active outbreaks",
+  "Link": "https://www.foodsafetynews.com/2026/08/fda-tracking-17-active-outbreaks/",
+  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
   "Category": ""
  }
 ]

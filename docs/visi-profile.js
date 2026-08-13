@@ -191,16 +191,85 @@
   function _esc(s) { return String(s == null ? '' : s).replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
   function _escSq(s) { return String(s == null ? '' : s).replace(/</g, '&lt;').replace(/'/g, '&#39;').replace(/"/g, '&quot;'); }
 
-  function _groupHtml(name, label, opts, sel) {
-    var h = '<div class="visi-crit"><label class="visi-glabel">' + label + '</label>';
-    if (!opts.length) { h += '<div class="visi-empty">…</div></div>'; return h; }
-    h += '<div class="visi-chklist">';
+  // <select id="pathf"> groups its <option>s under <optgroup> categories
+  // (Biological, Mycotoxins, ...) — read that structure directly so the
+  // modal can show the same categories instead of one flat 26-item wall.
+  function _groupedPathOptions() {
+    var el = document.getElementById('pathf');
+    if (!el) return [];
+    var groups = [];
+    var ogs = el.querySelectorAll('optgroup');
+    for (var g = 0; g < ogs.length; g++) {
+      var opts = [];
+      var os = ogs[g].querySelectorAll('option');
+      for (var i = 0; i < os.length; i++) {
+        if (os[i].value) opts.push({ v: os[i].value, l: os[i].textContent });
+      }
+      if (opts.length) groups.push({ label: ogs[g].getAttribute('label') || '', opts: opts });
+    }
+    return groups;
+  }
+
+  function _chipsHtml(name, opts, sel) {
+    if (!opts.length) return '<div class="visi-empty">…</div>';
+    var h = '<div class="visi-chklist">';
     for (var i = 0; i < opts.length; i++) {
       var o = opts[i];
       var on = sel.indexOf(o.v) !== -1;
       h += '<label class="visi-chk"><input type="checkbox" name="' + name + '" value="' + _esc(o.v) + '"' + (on ? ' checked' : '') + '><span>' + _esc(o.l) + '</span></label>';
     }
-    return h + '</div></div>';
+    return h + '</div>';
+  }
+
+  function _groupHtml(name, label, opts, sel) {
+    return '<div class="visi-crit"><label class="visi-glabel">' + label + '</label>' + _chipsHtml(name, opts, sel) + '</div>';
+  }
+
+  // Collapsible section for long/dynamic lists (pathogens, sources, countries).
+  // Opens by default when the user already has a selection in it, so an
+  // existing key never hides its own active criteria; starts collapsed
+  // otherwise so a fresh key doesn't dump ~180 checkboxes on screen at once.
+  // opts: {name, label, sel, list?, sub?:[{label,opts}], search?:bool}
+  function _accordionGroup(opts) {
+    var count = opts.sel.length;
+    var badge = count ? ' <span class="visi-num">(' + count + ')</span>' : '';
+    var body = opts.sub
+      ? opts.sub.map(function (g) {
+          return '<div class="visi-subgroup"><div class="visi-subhead">' + _esc(g.label) + '</div>' + _chipsHtml(opts.name, g.opts, opts.sel) + '</div>';
+        }).join('')
+      : _chipsHtml(opts.name, opts.list || [], opts.sel);
+    var search = opts.search
+      ? '<input type="search" class="visi-search" placeholder="' + _esc(_t('visiSearchPlaceholder')) + '" oninput="VisiProfile.filterChips(this)">'
+      : '';
+    return '<details class="visi-acc"' + (count ? ' open' : '') + '><summary>' + opts.label + badge + '</summary><div class="visi-acc-body">' + search + body + '</div></details>';
+  }
+
+  // Live-filters the chip labels inside the accordion body that contains
+  // the search input; also hides a whole pathogen subgroup when every chip
+  // inside it is filtered out, so empty category headers don't linger.
+  function filterChips(inputEl) {
+    var scope = inputEl.parentElement;
+    if (!scope) return;
+    var q = (inputEl.value || '').trim().toLowerCase();
+    var subgroups = scope.querySelectorAll('.visi-subgroup');
+    if (subgroups.length) {
+      for (var g = 0; g < subgroups.length; g++) {
+        var any = false;
+        var chks = subgroups[g].querySelectorAll('.visi-chk');
+        for (var i = 0; i < chks.length; i++) {
+          var match = !q || chks[i].textContent.toLowerCase().indexOf(q) !== -1;
+          chks[i].style.display = match ? '' : 'none';
+          if (match) any = true;
+        }
+        subgroups[g].style.display = any ? '' : 'none';
+      }
+    } else {
+      var all = scope.querySelectorAll('.visi-chk');
+      for (var j = 0; j < all.length; j++) {
+        var m = !q || all[j].textContent.toLowerCase().indexOf(q) !== -1;
+        all[j].style.display = m ? '' : 'none';
+      }
+    }
   }
 
   function _radio(v, lbl, cur) {
@@ -233,22 +302,20 @@
     var body = document.getElementById('visiBody');
     if (!body) return;
     var p = profile;
-    var grouped = {
-      product: _optValues('prodf'),
-      hazards: _optValues('pathf'),
-      sources: _optValues('srcf'),
-      countries: _optValues('ctryf'),
-      regions: _optValues('regf')
-    };
+    var selProd = p ? p.profile.product_types : [];
+    var selHaz = p ? p.profile.hazards : [];
+    var selSrc = p ? p.sources.favorites : [];
+    var selCtry = p ? p.profile.countries : [];
+    var selReg = p ? p.profile.regions : [];
     var savedCount = p ? p.saved_items.length : 0;
     body.innerHTML =
-      '<div class="visi-note"><b>🔒 ' + _t('navVisiKey') + '</b> — ' + _t('visiIntro') + '</div>' +
+      '<div class="visi-intro"><span class="visi-intro-ic">🔒</span><div class="visi-intro-txt"><b>' + _t('navVisiKey') + '</b>' + _t('visiIntro') + '</div></div>' +
       '<div class="visi-group"><div class="sec">' + _t('visiSectionProfile') + '</div>' +
-      _groupHtml('visiCkProd', _t('fbProduct'), grouped.product, p ? p.profile.product_types : []) +
-      _groupHtml('visiCkHaz', _t('fbPathogen'), grouped.hazards, p ? p.profile.hazards : []) +
-      _groupHtml('visiCkSrc', _t('visiGroupSources'), grouped.sources, p ? p.sources.favorites : []) +
-      _groupHtml('visiCkCtr', _t('fbCountry'), grouped.countries, p ? p.profile.countries : []) +
-      _groupHtml('visiCkReg', _t('fbRegion'), grouped.regions, p ? p.profile.regions : []) +
+      _groupHtml('visiCkProd', _t('fbProduct'), _optValues('prodf'), selProd) +
+      _accordionGroup({ name: 'visiCkHaz', label: _t('fbPathogen'), sel: selHaz, sub: _groupedPathOptions(), search: true }) +
+      _accordionGroup({ name: 'visiCkSrc', label: _t('visiGroupSources'), sel: selSrc, list: _optValues('srcf'), search: true }) +
+      _accordionGroup({ name: 'visiCkCtr', label: _t('fbCountry'), sel: selCtry, list: _optValues('ctryf'), search: true }) +
+      _groupHtml('visiCkReg', _t('fbRegion'), _optValues('regf'), selReg) +
       '<div class="visi-crit"><label class="visi-glabel">' + _t('visiGroupTier') + '</label>' +
       '<div class="visi-minrow">' +
       _radio('all', _t('visiMinAll'), p ? p.profile.min_tier : 'all') +
@@ -256,6 +323,7 @@
       _radio('tier1', _t('visiMinTier1'), p ? p.profile.min_tier : 'all') +
       '</div></div></div>' +
       '<div class="visi-group"><div class="sec">' + _t('visiSectionSaved') + ' <span class="visi-num">(' + savedCount + ')</span></div>' +
+      '<div class="visi-subnote">' + _t('visiSavedHint') + '</div>' +
       (savedCount ? _savedHtml(p.saved_items) : '<div class="visi-empty">' + _t('visiSavedClean') + '</div>') +
       '</div>' +
       '<div id="visiMsg"></div>' +
@@ -264,7 +332,8 @@
       '<button type="button" class="pb" onclick="VisiProfile.download()">' + _t('visiDownload') + '</button>' +
       '<label class="pb visi-filebtn">' + _t('visiImport') + '<input type="file" accept="application/json,.json" onchange="VisiProfile.importFile(this)"></label>' +
       '<button type="button" class="pb visi-danger" onclick="VisiProfile.reset()">' + _t('visiReset') + '</button>' +
-      '</div>';
+      '</div>' +
+      '<div class="visi-subnote">' + _t('visiActionsHint') + '</div>';
   }
 
   function showMsg(kind, text) {
@@ -426,7 +495,7 @@
     open: openModal, close: closeModal, save: save, download: download,
     reset: reset, importFile: importFile, removeSavedItem: removeSavedItem,
     toggleSaved: toggleSaved, refreshCounter: refreshCounter, refresh: refresh,
-    hasKey: hasKey
+    hasKey: hasKey, filterChips: filterChips
   };
 
   if (document.readyState === 'loading') {

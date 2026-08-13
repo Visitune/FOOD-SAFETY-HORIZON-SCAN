@@ -126,6 +126,22 @@ tr.skeleton-row .skeleton{display:block;height:12px;width:100%;}
 .visi-rm:hover{color:#ef5350;}
 .visi-empty{color:var(--muted);font-size:12px;padding:8px 0;}
 .visi-num{color:#a78bfa;}
+.visi-subnote{font-size:10.5px;color:var(--muted);line-height:1.5;margin:2px 0 8px;}
+.visi-intro{display:flex;gap:10px;align-items:flex-start;background:linear-gradient(135deg,rgba(139,92,246,.16),rgba(249,115,22,.05));border:1px solid rgba(139,92,246,.4);border-radius:8px;padding:12px 14px;margin-bottom:16px;}
+.visi-intro-ic{font-size:19px;line-height:1.3;flex-shrink:0;}
+.visi-intro-txt{font-size:12.5px;color:#d8d2f0;line-height:1.6;}
+.visi-intro-txt b{display:block;color:#fff;font-size:13.5px;margin-bottom:3px;}
+.visi-acc{margin-bottom:8px;border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:0 10px;}
+.visi-acc summary{cursor:pointer;padding:9px 2px;font-size:11px;color:#9CA3AF;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;list-style:none;display:flex;align-items:center;gap:7px;}
+.visi-acc summary::-webkit-details-marker{display:none;}
+.visi-acc summary::before{content:'▸';color:#a78bfa;font-size:9px;display:inline-block;transition:transform .15s;}
+.visi-acc[open] summary::before{transform:rotate(90deg);}
+.visi-acc summary:hover{color:#e9d5ff;}
+.visi-acc-body{padding:0 1px 10px;}
+.visi-search{width:100%;background:var(--bg);border:1px solid rgba(255,255,255,.10);color:var(--txt);padding:6px 10px;border-radius:4px;font-size:11.5px;font-family:'JetBrains Mono',monospace;outline:none;margin-bottom:8px;}
+.visi-search:focus{border-color:#a78bfa;}
+.visi-subhead{font-size:9.5px;color:#a78bfa;text-transform:uppercase;letter-spacing:.06em;margin:8px 0 4px;font-family:'JetBrains Mono',monospace;}
+.visi-subgroup:first-of-type .visi-subhead{margin-top:0;}
 .news-side{display:flex;align-items:center;gap:8px;flex-shrink:0;}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}
 .filters input,.filters select{background:var(--bg);border:1px solid rgba(255,255,255,.10);color:var(--txt);padding:7px 10px;border-radius:4px;font-size:12px;font-family:'JetBrains Mono',monospace;outline:none;}
@@ -370,7 +386,7 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
         <option value="9999" data-i18n="allRecords">All records</option>
       </select>
       <button class="pb" id="clearFilters" style="display:none" onclick="clearAllFilters()">✕</button>
-      <button class="pb" id="savedToggle" onclick="toggleSavedOnly()"><span data-i18n="savedToggle">★ Mes enregistrements</span></button>
+      <button class="pb" id="savedToggle" onclick="toggleSavedOnly()" data-i18n-title="visiSavedToggleHint"><span data-i18n="savedToggle">★ Mes enregistrements</span></button>
       <button class="pb" id="exportBtn" onclick="exportSnapshot()" data-i18n="exportBtn">↓ Export this view</button>
       <button class="pb" id="exportCsvBtn" onclick="exportCsv()" data-i18n="exportCsvBtn">↓ CSV</button>
       <span class="pi" id="fcnt"></span>
@@ -445,8 +461,11 @@ const I18N = {
     sourcesLine:'Sources', countriesLine:'countries',
     navVisiKey:'My key', visiBannerTxt:'Personalize your dashboard — keep your watch criteria and saves in a portable key. No account, stored only in your browser.',
     visiBannerCreate:'🔒 Create my key', visiBannerLater:'Continue without a key',
-    visiIntro:"Your key is a small JSON file kept in your browser. It remembers your watch criteria and the recalls you choose to keep — you'll find everything again at every visit, on this device. Download it to keep or reuse it anywhere else.",
+    visiIntro:"Your key is a small JSON file kept in your browser. Check the criteria below to auto-filter the dashboard, and click ★ on any recall or news item to keep it here — you'll find everything again at every visit, on this device. Download it to keep or reuse it anywhere else.",
     visiSectionProfile:'Your watch criteria', visiSectionSaved:'My saved items',
+    visiSavedHint:'Recalls and news you click ★ on (in the table or the News tab) appear here, all in one place.',
+    visiSavedToggleHint:'Show only the recalls you’ve starred (★)',
+    visiActionsHint:'Download / import includes both your criteria and your saved items.',
     visiSave:'Save my key', visiUpdate:'Update my key', visiSaveOk:'Key saved — criteria applied.',
     visiDownload:'⬇ Download key', visiImport:'⬆ Import a key', visiReset:'Reset',
     visiResetConfirm:'Permanently delete your key and all its saved items?',
@@ -454,7 +473,7 @@ const I18N = {
     visiSavedClean:'Nothing saved yet.',
     visiGroupTier:'Minimum tier', visiMinAll:'All tiers', visiMinTier2:'Tier-2 or higher', visiMinTier1:'Tier-1 only',
     visiCriteriaCount:'{n} criteria', visiSavedCount:'{n} saved',
-    savedToggle:'★ Saved', tblSave:'★',
+    savedToggle:'★ Saved', tblSave:'★', visiSearchPlaceholder:'Search…',
     visiGroupSources:'Favorite sources',
     visiStarRecallSave:'Save this recall', visiStarRecallRemove:'Remove this recall',
     visiStarNewsSave:'Save this news', visiStarNewsRemove:'Remove this news',
@@ -485,8 +504,11 @@ const I18N = {
     sourcesLine:'Sources', countriesLine:'pays',
     navVisiKey:'Ma clé', visiBannerTxt:'Personnalisez votre tableau de bord — gardez vos critères de veille et vos enregistrements dans une clé portable. Sans compte, stockée uniquement dans votre navigateur.',
     visiBannerCreate:'🔒 Créer ma clé', visiBannerLater:'Continuer sans clé',
-    visiIntro:'Votre clé est un petit fichier JSON gardé dans votre navigateur. Elle retient vos critères de veille et les rappels que vous choisissez de garder — retrouvez tout ça à chaque visite, sur cet appareil. Téléchargeable pour la garder ou la réutiliser ailleurs.',
+    visiIntro:'Votre clé est un petit fichier JSON gardé dans votre navigateur. Cochez les critères ci-dessous pour filtrer automatiquement le tableau, et cliquez sur ★ sur un rappel ou une actualité pour le garder ici — retrouvez tout ça à chaque visite, sur cet appareil. Téléchargeable pour la garder ou la réutiliser ailleurs.',
     visiSectionProfile:'Vos critères de veille', visiSectionSaved:'Mes enregistrements',
+    visiSavedHint:'Les rappels et actualités sur lesquels vous cliquez ★ (dans le tableau ou l’onglet Actualités) apparaissent ici, tous ensemble.',
+    visiSavedToggleHint:'Afficher uniquement les rappels que vous avez marqués (★)',
+    visiActionsHint:'Le téléchargement / import inclut à la fois vos critères et vos enregistrements.',
     visiSave:'Enregistrer ma clé', visiUpdate:'Mettre à jour ma clé', visiSaveOk:'Clé enregistrée — critères appliqués.',
     visiDownload:'⬇ Télécharger la clé', visiImport:'⬆ Importer une clé', visiReset:'Réinitialiser',
     visiResetConfirm:'Supprimer définitivement votre clé et tous ses enregistrements ?',
@@ -494,7 +516,7 @@ const I18N = {
     visiSavedClean:'Aucun enregistrement pour l’instant.',
     visiGroupTier:'Niveau minimum', visiMinAll:'Tous les niveaux', visiMinTier2:'Niveau 2 ou plus', visiMinTier1:'Niveau 1 uniquement',
     visiCriteriaCount:'{n} critères', visiSavedCount:'{n} enregistrés',
-    savedToggle:'★ Mes enregistrements', tblSave:'★',
+    savedToggle:'★ Mes enregistrements', tblSave:'★', visiSearchPlaceholder:'Rechercher…',
     visiGroupSources:'Sources favorites',
     visiStarRecallSave:'Enregistrer ce rappel', visiStarRecallRemove:'Retirer ce rappel',
     visiStarNewsSave:'Enregistrer cette actualité', visiStarNewsRemove:'Retirer cette actualité',
@@ -506,6 +528,7 @@ function t(key){ return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key; 
 function applyI18nStatic(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.getAttribute('data-i18n')); });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{ el.placeholder = t(el.getAttribute('data-i18n-placeholder')); });
+  document.querySelectorAll('[data-i18n-title]').forEach(el=>{ el.title = t(el.getAttribute('data-i18n-title')); });
 }
 
 function setLang(l){
@@ -878,7 +901,8 @@ function _rowHtml(r){
   const product=(r.Product||'').replace(/"/g,'&quot;');
   const sid=visiItemId(r);
   const saved=isSavedRecall(r);
-  const star=`<button type="button" class="visi-star ${saved?'on':''}" data-sid="${String(sid).replace(/"/g,'&quot;')}" onclick="toggleSaveRow(this)" aria-label="${saved?t('visiStarRecallRemove'):t('visiStarRecallSave')}" aria-pressed="${saved}">${saved?'★':'☆'}</button>`;
+  const starLbl=saved?t('visiStarRecallRemove'):t('visiStarRecallSave');
+  const star=`<button type="button" class="visi-star ${saved?'on':''}" data-sid="${String(sid).replace(/"/g,'&quot;')}" onclick="toggleSaveRow(this)" aria-label="${starLbl}" title="${starLbl}" aria-pressed="${saved}">${saved?'★':'☆'}</button>`;
   return`<tr>
 <td style="text-align:center;">${star}</td>
 <td style="font-family:monospace;font-size:11px;color:#666;white-space:nowrap;">${r.Date||''}</td>
@@ -1113,7 +1137,8 @@ function renderNewsFeed(items){
     const link=n.Link||'#';
     const nid=n.Link||('news:'+String(n.Title||''));
     const nSaved=window.VISI_SAVED&&window.VISI_SAVED.some(it=>it.type==='news'&&it.id===nid);
-    const star=`<button type="button" class="visi-star ${nSaved?'on':''}" data-nid="${String(nid).replace(/"/g,'&quot;')}" onclick="toggleNewsSave(this)" aria-label="${nSaved?t('visiStarNewsRemove'):t('visiStarNewsSave')}" aria-pressed="${nSaved}">${nSaved?'★':'☆'}</button>`;
+    const nStarLbl=nSaved?t('visiStarNewsRemove'):t('visiStarNewsSave');
+    const star=`<button type="button" class="visi-star ${nSaved?'on':''}" data-nid="${String(nid).replace(/"/g,'&quot;')}" onclick="toggleNewsSave(this)" aria-label="${nStarLbl}" title="${nStarLbl}" aria-pressed="${nSaved}">${nSaved?'★':'☆'}</button>`;
     return`<div class="news-item">
 <div class="news-main">
 <a class="news-title" href="${link}" target="_blank" rel="noopener">${title}</a>

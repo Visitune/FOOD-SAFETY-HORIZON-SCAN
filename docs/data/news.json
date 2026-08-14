@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-14 04:06 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "CDC adds more than 3,000 more patients to count in Cyclospora outbreak linked to lettuce",
+  "Link": "https://www.foodsafetynews.com/2026/08/cdc-adds-more-than-3-000-more-patients-to-count-in-cyclospora-outbreak-linked-to-lettuce",
+  "Retrieved (UTC)": "2026-08-14 04:56 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-14 04:04 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Coalition wants Congress to rescind delay of food traceability rule",
+  "Link": "https://www.foodsafetynews.com/2026/08/coalition-wants-congress-to-rescind-delay-of-food-traceability-rule",
+  "Retrieved (UTC)": "2026-08-14 04:56 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-13 22:37 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Recall",
@@ -2157,6 +2177,16 @@
   "Title": "FDA tracking 17 active outbreaks",
   "Link": "https://www.foodsafetynews.com/2026/08/fda-tracking-17-active-outbreaks/",
   "Retrieved (UTC)": "2026-08-13T10:58:27Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-14T02:57:22Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Publisher’s Platform: Frank Yiannas Wants an Independent Board to Investigate Foodborne Outbreaks. Set the Airplanes Aside.",
+  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-frank-yiannas-wants-an-independent-board-to-investigate-foodborne-outbreaks-set-the-airplanes-aside-fda-wrote-the-right-recommendation-about-this-lettuce-in-2013-and/",
+  "Retrieved (UTC)": "2026-08-14T03:26:02Z",
   "Category": ""
  }
 ]

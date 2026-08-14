@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-14 16:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Ferrero Group to buy better-for-you US breakfast company Purely Elizabeth",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/14/ferrero-group-to-buy-better-for-you-us-breakfast-company-purely-elizabeth",
+  "Retrieved (UTC)": "2026-08-14 18:01 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-14 15:49 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -18,6 +28,16 @@
   "Link": "https://www.confectionerynews.com/Article/2026/08/14/pladis-brings-pumpkin-spice-to-flipz-in-new-dunkin-partnership",
   "Retrieved (UTC)": "2026-08-14 16:01 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-14 13:41 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "FDA Begins Inspection at Taylor Farms Mexico as Official Cyclospora Outbreak Case Count Nears 10,000",
+  "Link": "https://www.food-safety.com/articles/11732-fda-begins-inspection-at-taylor-farms-mexico-as-official-cyclospora-outbreak-case-count-nears-10-000",
+  "Retrieved (UTC)": "2026-08-14 19:06 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-14 13:27 UTC",
@@ -2318,15 +2338,5 @@
   "Link": "https://www.foodsafetynews.com/2026/08/report-assesses-food-controls-in-norway-and-iceland/",
   "Retrieved (UTC)": "2026-08-14T10:55:23Z",
   "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-14 16:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Ferrero Group to buy better-for-you US breakfast company Purely Elizabeth",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/14/ferrero-group-to-buy-better-for-you-us-breakfast-company-purely-elizabeth",
-  "Retrieved (UTC)": "2026-08-14 18:01 UTC",
-  "Category": "Regulatory"
  }
 ]

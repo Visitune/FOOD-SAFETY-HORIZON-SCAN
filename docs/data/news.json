@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-14 11:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Private label goes premium as brands fight to keep up",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/14/the-rise-of-premium-private-label-in-food-and-beverage",
+  "Retrieved (UTC)": "2026-08-14 11:51 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-14 09:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Plant Health Newsletter on HORIZON SCANNING July 2026",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10298",
+  "Retrieved (UTC)": "2026-08-14 10:12 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-14 09:00 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "Congress Urged to Prevent FDA Traceability Rule Delay, Which Could Have Helped Cyclospora Outbreak Investigation",
+  "Link": "https://www.food-safety.com/articles/11727-congress-urged-to-prevent-fda-traceability-rule-delay-which-could-have-helped-cyclospora-outbreak-investigation",
+  "Retrieved (UTC)": "2026-08-14 11:51 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-14 07:56 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -2220,13 +2250,13 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-08-14 09:44 UTC",
+  "Published (UTC)": "2026-08-14T04:01:08Z",
   "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Plant Health Newsletter on HORIZON SCANNING July 2026",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10298",
-  "Retrieved (UTC)": "2026-08-14 10:12 UTC",
-  "Category": "Regulatory"
+  "Event": "Research",
+  "Source": "Food Safety News",
+  "Title": "Report assesses food controls in Norway and Iceland",
+  "Link": "https://www.foodsafetynews.com/2026/08/report-assesses-food-controls-in-norway-and-iceland/",
+  "Retrieved (UTC)": "2026-08-14T10:55:23Z",
+  "Category": ""
  }
 ]

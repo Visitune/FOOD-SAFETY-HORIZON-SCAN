@@ -12,7 +12,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23187/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23187/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -28,7 +28,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23188/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23188/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -44,7 +44,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23189/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23189/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: fix; corrections: Company→Leclerc Dinan; fix; company mismatch | Company in row is the brand, but the recalling firm ('Origine de la fiche') on the page is Lecle]"
  },
  {
@@ -60,7 +60,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23190/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23190/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -76,7 +76,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23191/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23191/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -92,7 +92,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23196/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23196/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: fix; corrections: Company→DINAN DISTRIBUTION CENTRE LECLERC CENTRE, Brand→marque repère et biovillage; fix; company mismatch | Company in row is a brand; corrected to recalling firm (distributor) from page.]"
  },
  {
@@ -108,7 +108,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23197/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23197/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: fix; corrections: Company→DINAN DISTRIBUTION CENTRE LECLERC CENTRE; fix; company mismatch | Row's Company 'Marque Repère' does not match the recalling firm 'DINAN DISTRIBUTION CENTRE LECLE]"
  },
  {
@@ -124,7 +124,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23198/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23198/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: fix; corrections: Company→DINAN DISTRIBUTION CENTRE LECLERC CENTRE; fix; company mismatch | Company name corrected from brand to recalling firm 'Origine de la fiche'.]"
  },
  {
@@ -140,7 +140,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23199/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23199/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: fix; corrections: Company→DINAN DISTRIBUTION CENTRE LECLERC CENTRE; fix; company mismatch | Company name on row does not match recalling firm on page.]"
  },
  {
@@ -156,7 +156,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23200/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23200/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -172,7 +172,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23202/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23202/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -188,7 +188,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23203/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23203/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -204,7 +204,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23204/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23204/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass | All fields match the page, and tier/outbreak are verified.]"
  },
  {
@@ -220,7 +220,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23205/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23205/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -236,7 +236,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23206/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23206/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; corrections: Pathogen→Listeria monocytogenes; pass]"
  },
  {
@@ -252,7 +252,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23207/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23207/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -268,7 +268,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23208/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23208/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass | All fields match the page content, and the tier/outbreak verification is consistent.]"
  },
  {
@@ -284,7 +284,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23209/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23209/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass | All fields match the page content, and no cross-check failures were found.]"
  },
  {
@@ -300,7 +300,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23210/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23210/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass | All fields match the page content, and no issues were found.]"
  },
  {
@@ -316,7 +316,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23211/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23211/Interne",
   "Notes": "leclerc dinan [gemini-check 2026-08-15: pass; pass]"
  },
  {
@@ -332,7 +332,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23160/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23160/Interne",
   "Notes": "metro france [gemini-check 2026-08-14: fix; corrections: Company→METRO FRANCE; fix; company mismatch | Company in row is the brand; corrected to the recalling firm 'METRO FRANCE' found on page.]"
  },
  {
@@ -348,7 +348,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23158/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23158/Interne",
   "Notes": "intermarché hyper annemasse [gemini-check 2026-08-14: fix; corrections: Company→LEMAN DAITOMI, Pathogen→Salmonella; placeholder_company_filled_from_page | fix; company mismatch; pathogen mismatch | Company and Pathogen fields were empty] [enrich-gate 2026-08-14: pending_enrichment → pending (Claude verified)] [tier-guard: Salmonella is always Tier 1; forced from Tier 3]"
  },
  {
@@ -364,7 +364,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23149/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23149/Interne",
   "Notes": "intermarche 54170 colombey les belles [gemini-check 2026-08-14: fix; corrections: Company→SAINTIS INTERMARCHE, Pathogen→Listeria monocytogenes, Tier→1; placeholder_company_filled_from_page | fix; company mismatch; pathogen mismatch | Company and Pathogen corrected from pa] [enrich-gate 2026-08-14: pending_enrichment → pending (Claude verified)]"
  },
  {
@@ -380,7 +380,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23153/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23153/Interne",
   "Notes": "carrefour market tournan en brie uniquement [gemini-check 2026-08-14: fix; corrections: Company→CARREFOUR FRANCE CARREFOUR MARKET; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty and corrected from page.]"
  },
  {
@@ -508,7 +508,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23168/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23168/Interne",
   "Notes": "enseignes magasins biologiques [gemini-check 2026-08-15: fix; corrections: Company→ATLANTIQUE SAUMON FUME, Pathogen→Listeria monocytogenes; fix; company mismatch | Company name corrected from brand to recalling firm 'ATLANTIQUE SAUMON FUME'.]"
  },
  {
@@ -537,7 +537,7 @@
   "Reason": "Norovirus RNA in frozen strawberries from Egypt, via Germany; risk: serious; category: fruits and vegetables",
   "Class": "Alert",
   "Country": "Egypt",
-  "Region": "Africa",
+  "Region": "Middle East & Africa",
   "Tier": 2,
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/866266",
@@ -604,7 +604,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23150/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23150/Interne",
   "Notes": "monoprix [gemini-check 2026-08-13: fix; corrections: Company→MONOPRIX HOLDING MONOPRIX, Brand→DAILY MONOP; fix; company mismatch | Company in row is the brand; corrected to recalling firm 'MONOPRIX HOLDING MONOPRIX'.]"
  },
  {
@@ -620,7 +620,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23152/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23152/Interne",
   "Notes": "intermarché etauliers [gemini-check 2026-08-13: fix; corrections: Company→ORECA INTERMARCHE etauliers, Pathogen→Listeria monocytogenes, Tier→1; placeholder_company_filled_from_page | fix; company mismatch; pathogen mismatch | Corrected company and pathogen based o] [enrich-gate 2026-08-13: pending_enrichment → pending (Claude verified)]"
  },
  {
@@ -636,7 +636,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23156/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23156/Interne",
   "Notes": "gueuleton lille, au 235, jardin hilde, au pain de la bouche, pizza armand [gemini-check 2026-08-13: pass; pass]"
  },
  {
@@ -665,7 +665,7 @@
   "Reason": "Ochratoxine A in coffee from Ethiopia; risk: serious; category: cocoa and cocoa preparations, coffee and tea",
   "Class": "Information",
   "Country": "Ethiopia",
-  "Region": "Africa",
+  "Region": "Middle East & Africa",
   "Tier": 2,
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/865540",
@@ -729,7 +729,7 @@
   "Reason": "Aflatoxins B1 in groundnuts from India; risk: serious; category: nuts, nut products and seeds",
   "Class": "Border Rejection",
   "Country": "India",
-  "Region": "Asia",
+  "Region": "Asia-Pacific",
   "Tier": 2,
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/854599",
@@ -780,7 +780,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23136/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23136/Interne",
   "Notes": "ferme de la pâturelle [gemini-check 2026-08-12: fix; corrections: Company→GAEC DE LA PATURELLE Ferme de la Pâturel; fix; company mismatch | Company name on row does not match recalling firm on page; corrected.]"
  },
  {
@@ -796,7 +796,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23137/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23137/Interne",
   "Notes": "e. leclerc sainte-eulalie (33560) uniquement [gemini-check 2026-08-12: fix; corrections: Company→SODIA AQUITAINE E.Leclerc, Brand→Unbranded, Product→Crevettes entières cuites réfrigérées él, Pathogen→Listeria monocytogenes, Tier→1; placeholder_company_filled_from_page | fix; company mismatch; pathogen mismatch | Company and Pathogen were empty in the] [enrich-gate 2026-08-12: pending_enrichment → pending (Claude verified)]"
  },
  {
@@ -812,7 +812,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23147/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23147/Interne",
   "Notes": "bir can [gemini-check 2026-08-12: fix; corrections: Company→BIR CAN, Brand→QUALIKO, Pathogen→Salmonella; fix; company mismatch | Company name corrected from brand to recalling firm; Tier corrected based on regulator class and]"
  },
  {
@@ -908,7 +908,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23132/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23132/Interne",
   "Notes": "alliance maree, auvergne maree, bam atac poitiers (auchan bureau achats maree), bam atac tresses 33 (auchan bureau achat [gemini-check 2026-08-11: fix; corrections: Company→UNIMA DISTRIBUTION UD; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but found on the page;]"
  },
  {
@@ -924,7 +924,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23133/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23133/Interne",
   "Notes": "cremcentre (worldmarechal (wma)), cremlog (worldmarechal (wma)), plateforme 2clog (worldmarechal (wma)), sudlog (worldma [gemini-check 2026-08-11: fix; corrections: Company→UNIMA DISTRIBUTION UD; fix; company mismatch | Company in row is the brand, but page identifies 'UNIMA DISTRIBUTION UD' as the origin of the fi]"
  },
  {
@@ -937,7 +937,7 @@
   "Reason": "Aflatoxinas en cacahuetes con cáscara de China // Aflatoxins in unshelled peanuts from China; risk: serious; category: nuts, nut products and seeds",
   "Class": "Border Rejection",
   "Country": "China",
-  "Region": "Asia",
+  "Region": "Asia-Pacific",
   "Tier": 2,
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/847056",
@@ -1052,7 +1052,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23111/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23111/Interne",
   "Notes": "intermarché buzet sur tarn [gemini-check 2026-08-10: fix; corrections: Company→SEYNET; placeholder_company_filled_from_page | fix; company mismatch | Company field was blank but identified on page; tier mism]"
  },
  {
@@ -1068,7 +1068,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23124/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23124/Interne",
   "Notes": "leclerc perigueux exclusivement [gemini-check 2026-08-10: fix; corrections: Company→DISPER E.LECLERC, Pathogen→Listeria monocytogenes, Tier→1; placeholder_company_filled_from_page | fix; company mismatch; pathogen mismatch | Company and Pathogen fields were empty] [enrich-gate 2026-08-10: pending_enrichment → pending (Claude verified)]"
  },
  {
@@ -1084,7 +1084,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23128/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23128/Interne",
   "Notes": "voir liste des magasins grand frais concernés en pièce jointe [gemini-check 2026-08-10: fix; corrections: Company→BCT 500; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but identified on the ]"
  },
  {
@@ -1100,7 +1100,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23130/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23130/Interne",
   "Notes": "fromagerie en vente directe [gemini-check 2026-08-10: fix; corrections: Company→LE CABRAS FROMAGERIE, Brand→SANS MARQUE, Product→Fromage frais égoutté, fromage frais cen, Pathogen→Escherichia coli STEC; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but found on the page;]"
  },
  {
@@ -1449,7 +1449,7 @@
   "Reason": "Salmonella in sesame seeds; risk: serious; category: nuts, nut products and seeds",
   "Class": "Alert",
   "Country": "Pakistan",
-  "Region": "Asia",
+  "Region": "Asia-Pacific",
   "Tier": 1,
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/864557",

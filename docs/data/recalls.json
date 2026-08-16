@@ -576,6 +576,22 @@
   "Notes": "[RASFF #2026.7224; classification: alert notification; category: poultry meat and poultry meat products; notifId=865882]"
  },
  {
+  "Date": "2026-08-14",
+  "Source": "CFIA",
+  "Company": "Boucherie Charcuterie Lyn Tremblay Inc.",
+  "Brand": "Clément le Gourmand",
+  "Product": "Country-Style Pâté, Duck Liver Mousse with Port, Liver Pâté with Cognac",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Clément le Gourmand brand meat products recalled due to Listeria monocytogenes",
+  "Class": "Class 1",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/clement-gourmand-brand-meat-products-recalled-due-listeria-monocytogenes",
+  "Notes": "CFIA open-data NID=82491 [gemini-check 2026-08-16: fix; corrections: Company→Boucherie Charcuterie Lyn Tremblay Inc.; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but found on the page.]"
+ },
+ {
   "Date": "2026-08-13",
   "Source": "RappelConso (FR)",
   "Company": "MONOPRIX HOLDING MONOPRIX",
@@ -862,6 +878,22 @@
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/865542",
   "Notes": "[RASFF #2026.7150; classification: information notification for attention; category: fruits and vegetables; notifId=865542]"
+ },
+ {
+  "Date": "2026-08-12",
+  "Source": "RappelConso",
+  "Company": "PATURAGES COMTOIS",
+  "Brand": "PATURAGES COMTOIS",
+  "Product": "BRIE KG 50% (Brie cheese, 1kg format)",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Preventive recall following Listeria detection in another lot manufactured the same day",
+  "Class": "Rappel",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23138/Interne",
+  "Notes": "GTIN: 3324040112149, Lots: 000000ZRAA1, 000000ZSAB1, 000000ZVAD1, DDM 19/08/2026. Commercialized from 22/05/2026 to 11/08/2026. Distributed by LECLERC Restaurateurs nationwide.  [via Gemini gap-finder + Google Search] [url-gate 2026-08-16: Gemini fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...] [gap-gate 2026-08-16: pending_gap → pending_gap_v1] [gemini-check 2026-08-16: pass; pass] [gap-gate 2026-08-16: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
  },
  {
   "Date": "2026-08-11",

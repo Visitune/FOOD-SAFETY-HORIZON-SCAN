@@ -896,6 +896,22 @@
   "Notes": "GTIN: 3324040112149, Lots: 000000ZRAA1, 000000ZSAB1, 000000ZVAD1, DDM 19/08/2026. Commercialized from 22/05/2026 to 11/08/2026. Distributed by LECLERC Restaurateurs nationwide.  [via Gemini gap-finder + Google Search] [url-gate 2026-08-16: Gemini fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...] [gap-gate 2026-08-16: pending_gap → pending_gap_v1] [gemini-check 2026-08-16: pass; pass] [gap-gate 2026-08-16: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
  },
  {
+  "Date": "2026-08-12",
+  "Source": "FSANZ (AU)",
+  "Company": "UPDATED 13.08.26 |  Edesia Enterprises Pty Ltd T/A noosa GOURMET",
+  "Brand": "noosa GOURMET",
+  "Product": "Brioche Rolls - 320g",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "The presence of undeclared allergens (milk and egg).",
+  "Class": "Recall",
+  "Country": "Australia",
+  "Region": "Oceania",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.foodstandards.gov.au/food-recalls/recall-alert/updated-130826-edesia-enterprises-pty-ltd-ta-noosa-gourmet-brioche-rolls",
+  "Notes": "[gemini-enrich 2026-08-17: Brand '—'→'noosa GOURMET']"
+ },
+ {
   "Date": "2026-08-11",
   "Source": "RappelConso (FR)",
   "Company": "UNIMA DISTRIBUTION UD",

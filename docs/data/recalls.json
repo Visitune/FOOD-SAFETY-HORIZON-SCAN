@@ -1,5 +1,37 @@
 [
  {
+  "Date": "2026-08-17",
+  "Source": "RappelConso (FR)",
+  "Company": "NATURENVIE",
+  "Brand": "Jardin Bio étic",
+  "Product": "Purée de sésame - Tahin, Pot 350 g",
+  "Pathogen": "Salmonella",
+  "Reason": "Détection salmonelle",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23178/interne",
+  "Notes": "intermarché, franprix, auchan, leclerc, monoprix, systeme u, casino, carrefour [gemini-check 2026-08-17: fix; corrections: Company→NATURENVIE, Brand→Jardin Bio étic, Product→Purée de sésame - Tahin, Pot 350 g, Pathogen→Salmonella; fix; company mismatch | Company field needs correction to recalling firm; brand and product also corrected for specifici]"
+ },
+ {
+  "Date": "2026-08-17",
+  "Source": "RappelConso (FR)",
+  "Company": "CARREFOUR FRANCE CARREFOUR",
+  "Brand": "Unbranded",
+  "Product": "saucisse au fromage comtesse de vichy",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Presence of Listeria monocytogenes",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23177/interne",
+  "Notes": "carrefour vichy uniquement [gemini-check 2026-08-17: fix; corrections: Company→CARREFOUR FRANCE CARREFOUR; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but found on the page.]"
+ },
+ {
   "Date": "2026-08-15",
   "Source": "RappelConso (FR)",
   "Company": "Pêcheries Sétoises",

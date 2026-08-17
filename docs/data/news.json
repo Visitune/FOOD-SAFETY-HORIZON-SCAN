@@ -240,6 +240,16 @@
   "Category": "Outbreak"
  },
  {
+  "Published (UTC)": "2026-08-14 12:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Saputo sells UK dairy division to Lactalis",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/08/14/cathedral-city-and-clover-owner-sells-off-uk-dairy-operations",
+  "Retrieved (UTC)": "2026-08-17 09:51 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-14 11:30 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1077,6 +1087,16 @@
   "Title": "The European Cooperation in Science and Technology (COST) 2026 Funding Calls",
   "Link": "https://www.efsa.europa.eu/en/funding-calls/european-cooperation-science-and-technology-cost-2026-funding-calls",
   "Retrieved (UTC)": "2026-08-10 11:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-10 08:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Comprendre les consignes données aux populations lors des feux de forêt",
+  "Link": "https://www.anses.fr/fr/content/comprendre-les-consignes-donnees-aux-populations-lors-des-feux-de-foret",
+  "Retrieved (UTC)": "2026-08-17 09:51 UTC",
   "Category": "Regulatory"
  },
  {

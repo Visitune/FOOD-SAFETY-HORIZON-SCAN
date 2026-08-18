@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-18 06:30 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Food Safety Five Ep. 36: Listeria, E. coli, Biofilms, Plastics, and Oil Adulteration",
+  "Link": "https://www.food-safety.com/articles/11733-food-safety-five-ep-36-listeria-e-coli-biofilms-plastics-and-oil-adulteration",
+  "Retrieved (UTC)": "2026-08-18 09:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-18 04:35 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -757,6 +767,16 @@
   "Title": "Surveillance of West Nile virus infections in humans and animals in Europe, monthly report – data submitted up to 5 August 2026",
   "Link": "https://www.efsa.europa.eu/en/efsajournal/pub/10304",
   "Retrieved (UTC)": "2026-08-12 13:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-12 12:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Surveillance of West Nile virus infections in humans and animals in Europe, monthly report - data submitted up to 5 August 2026",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10304",
+  "Retrieved (UTC)": "2026-08-18 09:41 UTC",
   "Category": "Regulatory"
  },
  {

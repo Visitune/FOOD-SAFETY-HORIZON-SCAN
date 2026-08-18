@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-17T09:36:55+03:00",
-  "date": "2026-08-17",
+  "generated": "2026-08-18T09:29:17+03:00",
+  "date": "2026-08-18",
   "mode": "live",
   "in_progress_week": "W34",
   "counts": {
-    "recalls_rows": 1455,
+    "recalls_rows": 1457,
     "duplicate_url_groups": 0,
     "shared_nonspecific_urls": 0,
     "blank_field_rows": 7,
@@ -566,15 +566,11 @@
     "max_links": 25
   },
   "stale_reports": {
-    "weeklies": [
-      "W33"
-    ],
+    "weeklies": [],
     "monthlies": []
   },
   "rebuilt": {
-    "weeklies": [
-      "W33"
-    ],
+    "weeklies": [],
     "monthlies": []
   }
 }

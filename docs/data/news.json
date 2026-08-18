@@ -1,5 +1,85 @@
 [
  {
+  "Published (UTC)": "2026-08-18 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "ZEEL VET SOLUTION INJECTABLE",
+  "Link": "https://www.anses.fr/fr/content/zeel-vet-solution-injectable",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "ZEEL VET COMPRIMES",
+  "Link": "https://www.anses.fr/fr/content/zeel-vet-comprimes",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "TRAUMEEL VET SOLUTION INJECTABLE",
+  "Link": "https://www.anses.fr/fr/content/traumeel-vet-solution-injectable",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "TRAUMEEL VET COMPRIMES",
+  "Link": "https://www.anses.fr/fr/content/traumeel-vet-comprimes",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 04:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "ENGYSTOL VET COMPRIMES",
+  "Link": "https://www.anses.fr/fr/content/engystol-vet-comprimes",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 04:03 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Swiss scientists reveal Listeria trends",
+  "Link": "https://www.foodsafetynews.com/2026/08/swiss-scientists-reveal-listeria-trends",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-18 04:00 UTC",
+  "Pathogen": "Campylobacter",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Proposals put forward to boost Croatian surveillance",
+  "Link": "https://www.foodsafetynews.com/2026/08/proposals-put-forward-to-boost-croatian-surveillance",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-18 03:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Beyond calories: Why food brands must rethink ‘eating well’ for kids",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/18/why-food-brands-must-rethink-eating-well-for-kids",
+  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-18 02:24 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Recall",

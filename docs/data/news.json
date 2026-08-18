@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-18 16:50 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "The three forces rewriting the food industry playbook",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/18/the-trends-redefining-food-industry-growth",
+  "Retrieved (UTC)": "2026-08-18 17:42 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-18 15:59 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -8,6 +18,16 @@
   "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/information-sur-le-prix-des-carburants-la-station-essence-de-mas-cheylon-total-nimes-sanctionnee",
   "Retrieved (UTC)": "2026-08-18 14:40 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 15:57 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Shows How Spray Application Affects Sanitizer Efficacy Against Listeria on Food-Contact Surfaces",
+  "Link": "https://www.food-safety.com/articles/11739-study-shows-how-spray-application-affects-sanitizer-efficacy-against-listeria-on-food-contact-surfaces",
+  "Retrieved (UTC)": "2026-08-18 18:49 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-18 15:00 UTC",
@@ -2908,15 +2928,5 @@
   "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-enforcement-on-imported-seafood-candy-canned-foods/",
   "Retrieved (UTC)": "2026-08-17T10:27:58Z",
   "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-18 16:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The three forces rewriting the food industry playbook",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/18/the-trends-redefining-food-industry-growth",
-  "Retrieved (UTC)": "2026-08-18 17:42 UTC",
-  "Category": "Regulatory"
  }
 ]

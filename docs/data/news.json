@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-08-18 15:59 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Information sur le prix des carburants : la station essence de MAS CHEYLON TOTAL à Nîmes sanctionnée d’une amende administrative de 500 euros",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/information-sur-le-prix-des-carburants-la-station-essence-de-mas-cheylon-total-nimes-sanctionnee",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 14:10 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Seeks Public Feedback to Inform Regulatory Approach for Generative AI-Enabled Medical Devices",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 13:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "FDA tracks progress as brands ditch artificial colors",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/18/fda-tracking-cpgs-accelerate-artificial-dye-removal",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 13:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Gen Alpha’s early eating habits offer a roadmap for the future of snacking",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/18/what-gen-alpha-wants-from-snacks-according-to-niq",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 13:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "13th Meeting of the Food Contact Materials Network",
+  "Link": "https://www.efsa.europa.eu/en/events/13th-meeting-food-contact-materials-network",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-18 13:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "9th Meeting of the Chemical Monitoring Data Collection Network",
+  "Link": "https://www.efsa.europa.eu/en/events/9th-meeting-chemical-monitoring-data-collection-network",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-18 12:16 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -30,6 +90,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-08-18 08:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Grupo Bimbo bets on the net-zero bakery",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/18/how-grupo-bimbo-is-decarbonising-industrial-bakeries-with-hydrogen-and-regenerative-agriculture",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-18 06:30 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "News",
@@ -38,6 +108,16 @@
   "Link": "https://www.food-safety.com/articles/11733-food-safety-five-ep-36-listeria-e-coli-biofilms-plastics-and-oil-adulteration",
   "Retrieved (UTC)": "2026-08-18 09:41 UTC",
   "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-18 06:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Canadian dairy groups urge Government to protect food sovereignty in US trade talks",
+  "Link": "https://www.dairyreporter.com/Article/2026/08/18/canadian-dairy-groups-urge-government-to-protect-food-sovereignty-in-us-trade-talks",
+  "Retrieved (UTC)": "2026-08-18 14:40 UTC",
+  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-08-18 04:35 UTC",

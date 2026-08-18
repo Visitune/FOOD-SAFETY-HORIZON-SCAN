@@ -1,5 +1,21 @@
 [
  {
+  "Date": "2026-08-18",
+  "Source": "RappelConso (FR)",
+  "Company": "La Fourche",
+  "Brand": "La Fourche",
+  "Product": "figues calabacita bio en sachet kraft  500g - la fourche",
+  "Pathogen": "Ochratoxin A",
+  "Reason": "Une analyse de contrôle a révélé la présence d'ochratoxine a à un niveau supérieur à la limite réglementaire.",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 3,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23217/interne",
+  "Notes": "la fourche [gemini-check 2026-08-18: fix; corrections: Pathogen→Ochratoxin A; fix; pathogen mismatch | Pathogen was empty in the row but identified on the page; Tier mismatch found.] [enrich-gate 2026-08-18: pending_enrichment → pending (Claude verified)]"
+ },
+ {
   "Date": "2026-08-17",
   "Source": "RappelConso (FR)",
   "Company": "NATURENVIE",

@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-19 12:20 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Review of the existing maximum residue levels for clopyralid according to Article 12 of Regulation (EC) No 396/2005",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10297",
+  "Retrieved (UTC)": "2026-08-19 13:01 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-19 12:19 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Advancing the environmental risk assessment of non-target arthropods for plant protection products by accounting for the impact on ecosystem services and on the ecological function. Experimental work on inter-species sensitivity",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10191",
+  "Retrieved (UTC)": "2026-08-19 13:01 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-19 12:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Advancing the environmental risk assessment of non-target arthropods for plant protection products by accounting for the impact on ecosystem services and on the ecological function. Final report",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10192",
+  "Retrieved (UTC)": "2026-08-19 13:01 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-19 12:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Advancing the environmental risk assessment of non-target arthropods for plant protection products by accounting for the impact on ecosystem services and on the ecological function. Experimental work on exposure",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10190",
+  "Retrieved (UTC)": "2026-08-19 13:01 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-19 10:27 UTC",
   "Pathogen": "",
   "Event": "Outbreak",

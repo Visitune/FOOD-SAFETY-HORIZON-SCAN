@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-19 01:51 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "NatureBest Recalls Jalapeño Products For Possible Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/naturebest-recalls-jalapeno-products-for-possible-salmonella",
+  "Retrieved (UTC)": "2026-08-19 03:05 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-19 01:15 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Recall",
@@ -2967,6 +2977,26 @@
   "Title": "FDA steps up enforcement on imported seafood, candy, canned foods",
   "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-enforcement-on-imported-seafood-candy-canned-foods/",
   "Retrieved (UTC)": "2026-08-17T10:27:58Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-19T01:06:41Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Bread recalled after pallet nail found in product",
+  "Link": "https://www.foodsafetynews.com/2026/08/bread-recalled-after-pallet-nail-found-in-product/",
+  "Retrieved (UTC)": "2026-08-19T02:25:35Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-19T00:52:21Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Almond spread recalled after allergic reaction reported",
+  "Link": "https://www.foodsafetynews.com/2026/08/almond-spread-recalled-after-allergic-reaction-reported/",
+  "Retrieved (UTC)": "2026-08-19T02:25:35Z",
   "Category": ""
  }
 ]

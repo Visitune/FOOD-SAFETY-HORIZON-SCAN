@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-19 04:05 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Belgian Salmonella outbreak climbs to 300 cases",
+  "Link": "https://www.foodsafetynews.com/2026/08/belgian-salmonella-outbreak-climbs-to-300-cases",
+  "Retrieved (UTC)": "2026-08-19 04:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-19 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "UK reports Salmonella outbreak with 200 sick and one dead",
+  "Link": "https://www.foodsafetynews.com/2026/08/uk-reports-salmonella-outbreak-with-200-sick-and-one-dead",
+  "Retrieved (UTC)": "2026-08-19 04:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-19 03:19 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "CDC reports more than 1,800 additional Cyclospora patients in past week",
+  "Link": "https://www.foodsafetynews.com/2026/08/cdc-reports-more-than-1-800-additional-cyclospora-patients-in-past-week",
+  "Retrieved (UTC)": "2026-08-19 04:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-19 01:51 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",

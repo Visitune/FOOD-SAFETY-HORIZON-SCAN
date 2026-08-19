@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-19 10:27 UTC",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Navigator",
+  "Title": "Xanthan gum linked to gut inflammation, putting manufacturers on alert",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/19/xanthan-gum-faces-scrutiny-despite-use-in-thousands-of-food-and-beverage-products",
+  "Retrieved (UTC)": "2026-08-19 10:36 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-19 09:10 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Navigator",
+  "Title": "One dead in UK-wide salmonella outbreak linked to imported eggs",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/08/19/one-person-dies-in-uk-wide-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-08-19 10:36 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-19 06:47 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -3057,6 +3077,26 @@
   "Title": "Almond spread recalled after allergic reaction reported",
   "Link": "https://www.foodsafetynews.com/2026/08/almond-spread-recalled-after-allergic-reaction-reported/",
   "Retrieved (UTC)": "2026-08-19T02:25:35Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-19T04:01:45Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "The last mile of a food safety recall: It is not complete until consumers are protected",
+  "Link": "https://www.foodsafetynews.com/2026/08/the-last-mile-of-a-food-safety-recall-it-is-not-complete-until-consumers-are-protected/",
+  "Retrieved (UTC)": "2026-08-19T10:24:03Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-19T03:48:38Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Frozen fruit bars recalled after consumers find glass pieces",
+  "Link": "https://www.foodsafetynews.com/2026/08/frozen-fruit-bars-recalled-after-consumers-find-glass-pieces/",
+  "Retrieved (UTC)": "2026-08-19T10:24:03Z",
   "Category": ""
  }
 ]

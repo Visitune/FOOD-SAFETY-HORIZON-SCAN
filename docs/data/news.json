@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-19 01:15 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Jalapeno dressing recalled because of potential Salmonella contamination",
+  "Link": "https://www.foodsafetynews.com/2026/08/jalapeno-dressing-recalled-because-of-potential-salmonella-contamination",
+  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-19 01:11 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Cyclospora Outbreak Sickens  27,557 People in 47 States",
+  "Link": "https://foodpoisoningbulletin.com/2026/cyclospora-outbreak-sickens-27557-people-in-47-states",
+  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-19 00:40 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Jalapenos recalled from Costco stores because of Salmonella",
+  "Link": "https://www.foodsafetynews.com/2026/08/jalapenos-recalled-from-costco-stores-because-of-salmonella",
+  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-19 00:37 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Dairyland Produce Jalapeños Recalled For Possible Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/dairyland-produce-jalapenos-recalled-for-possible-salmonella",
+  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-18 16:50 UTC",
   "Pathogen": "",
   "Event": "News",

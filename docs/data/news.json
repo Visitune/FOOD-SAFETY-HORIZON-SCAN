@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-19 22:44 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Jalapeño Salmonella Outbreak Grows to 431 Sick in 32 States",
+  "Link": "https://foodpoisoningbulletin.com/2026/jalapeno-salmonella-outbreak-grows-to-431-sick-in-32-states",
+  "Retrieved (UTC)": "2026-08-19 23:29 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-19 22:13 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Outbreak",
@@ -17,6 +27,16 @@
   "Title": "FDA considers new natural food color petitions as synthetic dye phaseout looms",
   "Link": "https://www.foodnavigator.com/Article/2026/08/19/fda-weighs-petitions-for-natural-food-colors",
   "Retrieved (UTC)": "2026-08-19 22:32 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-19 21:33 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Therapy for Patients aged 8 years and older with Glycogen Storage Disease Type Ia",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-therapy-patients-aged-8-years-and-older-glycogen-storage-disease-type-ia",
+  "Retrieved (UTC)": "2026-08-19 23:29 UTC",
   "Category": "Regulatory"
  },
  {

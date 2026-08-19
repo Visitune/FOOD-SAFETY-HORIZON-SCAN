@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-19 16:48 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Authorizes First-Of-Its-Kind Robotic Blood Draw Device",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-authorizes-first-its-kind-robotic-blood-draw-device",
+  "Retrieved (UTC)": "2026-08-19 17:47 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-19 15:50 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -127,6 +137,16 @@
   "Title": "Can culturally rooted snacks survive industrial scale?",
   "Link": "https://www.bakeryandsnacks.com/Article/2026/08/19/how-snack-brands-can-scale-regional-foods-without-losing-authenticity",
   "Retrieved (UTC)": "2026-08-19 14:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-19 06:56 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Britain can’t afford to lose control of its wheat",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/08/19/why-uk-wheat-production-needs-a-precision-breeding-revolution",
+  "Retrieved (UTC)": "2026-08-19 18:46 UTC",
   "Category": "Regulatory"
  },
  {
@@ -3208,15 +3228,5 @@
   "Link": "https://www.foodsafetynews.com/2026/08/frozen-fruit-bars-recalled-after-consumers-find-glass-pieces/",
   "Retrieved (UTC)": "2026-08-19T10:24:03Z",
   "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-19 16:48 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Authorizes First-Of-Its-Kind Robotic Blood Draw Device",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-authorizes-first-its-kind-robotic-blood-draw-device",
-  "Retrieved (UTC)": "2026-08-19 17:47 UTC",
-  "Category": "Regulatory"
  }
 ]

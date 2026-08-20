@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-20 16:18 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Jalapeño Salmonella outbreak grows to 431 sick in 32 states; illnesses ran into August and the grower is still unnamed",
+  "Link": "https://www.foodsafetynews.com/2026/08/jalapeno-salmonella-outbreak-grows-to-431-sick-in-32-states-illnesses-ran-into-august-and-the-grower-is-still-unnamed",
+  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-20 16:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Hershey goes beyond confectionery with biggest ever Halloween push",
+  "Link": "https://www.confectionerynews.com/Article/2026/08/20/hershey-launches-biggest-ever-halloween-range-with-confectionery-and-snack-innovations",
+  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-20 16:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Europeans finally care about GLP-1s",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/20/glp-1-conversation-in-europe-grows",
+  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-20 13:30 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "Salmonella Outbreak Linked to Jalapeños Now Includes 431 People in 32 States",
+  "Link": "https://www.food-safety.com/articles/11748-salmonella-outbreak-linked-to-jalapenos-now-includes-431-people-in-32-states",
+  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-20 13:28 UTC",
   "Pathogen": "",
   "Event": "News",

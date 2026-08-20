@@ -80,6 +80,22 @@
   "Notes": "la fourche [gemini-check 2026-08-18: fix; corrections: Pathogen→Ochratoxin A; fix; pathogen mismatch | Pathogen was empty in the row but identified on the page; Tier mismatch found.] [enrich-gate 2026-08-18: pending_enrichment → pending (Claude verified)]"
  },
  {
+  "Date": "2026-08-18",
+  "Source": "RASFF (EU)",
+  "Company": "Origin: Brazil | Notifying: Czechia",
+  "Brand": "—",
+  "Product": "Salmonella spp. in frozen chicken breast fillets from Brazil, via Germany",
+  "Pathogen": "Salmonella",
+  "Reason": "Salmonella spp. in frozen chicken breast fillets from Brazil, via Germany; risk: potentially serious; category: poultry meat and poultry meat products",
+  "Class": "Information",
+  "Country": "Brazil",
+  "Region": "Latin America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/867077",
+  "Notes": "[RASFF #2026.7322; classification: information notification for follow-up; category: poultry meat and poultry meat products; notifId=867077]"
+ },
+ {
   "Date": "2026-08-17",
   "Source": "RappelConso (FR)",
   "Company": "NATURENVIE",

@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-08-22 07:58 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Everything Sprouts Salmonella Outbreak Grows to 55 Sick",
+  "Link": "https://foodpoisoningbulletin.com/2026/everything-sprouts-salmonella-outbreak-grows-to-55-sick",
+  "Retrieved (UTC)": "2026-08-22 08:39 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-22 07:57 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Everything Sprouts Recalls Alfalfa Sprouts For Salmonella & E. coli",
+  "Link": "https://foodpoisoningbulletin.com/2026/everything-sprouts-recalls-alfalfa-sprouts-for-salmonella-e-coli",
+  "Retrieved (UTC)": "2026-08-22 08:39 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-22 00:20 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",

@@ -144,6 +144,22 @@
   "Notes": "PRIN-40-2026 [gemini-enrich 2026-08-22: Brand '—'→'Summit Foods'] [tier-guard: Escherichia coli (generic) is always Tier 1; forced from Tier 2]"
  },
  {
+  "Date": "2026-08-21",
+  "Source": "CFIA",
+  "Company": "O Mets Chinois",
+  "Brand": "Compliments",
+  "Product": "Corn Dogs, Chicken and Pork Corn Dog",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Compliments brand and Selection brand Corn Dogs recalled due to Listeria monocytogenes",
+  "Class": "Class 2",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/compliments-brand-and-selection-brand-corn-dogs-recalled-due-listeria-monocytogenes",
+  "Notes": "CFIA open-data NID=82519 [gemini-enrich 2026-08-22: Company ''→'O Mets Chinois']"
+ },
+ {
   "Date": "2026-08-20",
   "Source": "RASFF (EU)",
   "Company": "Origin: Spain | Notifying: France",

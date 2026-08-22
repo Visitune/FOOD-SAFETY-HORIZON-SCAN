@@ -3,13 +3,14 @@
     {
       "date": "2026-08-21",
       "url": "daily/2026-08-21.html",
-      "total": 9,
-      "tier1": 9,
+      "total": 10,
+      "tier1": 10,
       "outbreak": 0,
       "by_region": {
-        "Europe": 9
+        "Europe": 9,
+        "North America": 1
       },
-      "generated": "2026-08-22T05:01:38Z"
+      "generated": "2026-08-22T11:12:15Z"
     },
     {
       "date": "2026-08-20",

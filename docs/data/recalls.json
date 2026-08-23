@@ -416,6 +416,22 @@
   "Notes": "[RASFF #2026.7336; classification: information notification for attention; category: poultry meat and poultry meat products; notifId=866951]"
  },
  {
+  "Date": "2026-08-19",
+  "Source": "CFS Hong Kong",
+  "Company": "City Super Limited",
+  "Brand": "L'atelier Blini",
+  "Product": "Ktipiti Extra Red Pepper & Feta Cheese Spread, 175g, batch 12262661, best before 2026-08-30",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Possible Listeria contamination due to suspected cold chain issue (from French Rappel Conso notification)",
+  "Class": "Food Alert",
+  "Country": "Hong Kong",
+  "Region": "Asia",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.cfs.gov.hk/tc_chi/whatsnew/whatsnew_fa/2026_625.html",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini parse error (safety default — audit 2026-05-07) | Importer City Super Limited initiated recall.  [via Gemini gap-finder + Google Search] || gemini-url-gate: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07)"
+ },
+ {
   "Date": "2026-08-18",
   "Source": "RappelConso (FR)",
   "Company": "La Fourche",

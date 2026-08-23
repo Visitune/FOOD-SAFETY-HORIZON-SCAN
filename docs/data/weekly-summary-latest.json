@@ -5,21 +5,21 @@
   "week_num": 34,
   "year": 2026,
   "week_start": "2026-08-14",
-  "week_end": "2026-08-19",
+  "week_end": "2026-08-20",
   "week_start_display": "14 Aug",
-  "week_end_display": "19 Aug 2026",
-  "generated_utc": "2026-08-21T06:43:15.665093+00:00",
+  "week_end_display": "20 Aug 2026",
+  "generated_utc": "2026-08-23T06:27:09.143736+00:00",
   "stats": {
-    "total": 55,
-    "tier1": 48,
+    "total": 64,
+    "tier1": 51,
     "outbreaks": 0,
-    "delta": -1,
-    "delta_pct": -2
+    "delta": 8,
+    "delta_pct": 14
   },
   "leading_pathogen": {
     "name": "Listeria monocytogenes",
-    "cases": 36,
-    "pct": 65
+    "cases": 38,
+    "pct": 59
   },
   "ai_lead_paragraph": "",
   "top_threats": [
@@ -53,6 +53,34 @@
     },
     {
       "rank": 3,
+      "date": "2026-08-18",
+      "pathogen": "Listeria monocytogenes",
+      "pathogen_raw": "Listeria monocytogenes",
+      "tier": 1,
+      "outbreak": false,
+      "company": "Chen Foods",
+      "brand": "Mr Chen's",
+      "product": "Mr Chen's Szechuan Chilli Oil - 250g",
+      "country": "Australia",
+      "source": "FSANZ (AU)",
+      "url": "https://www.foodstandards.gov.au/food-recalls/recall-alert/chen-foods-mr-chens-szechuan-chilli-oil-250g"
+    },
+    {
+      "rank": 4,
+      "date": "2026-08-18",
+      "pathogen": "Listeria monocytogenes",
+      "pathogen_raw": "Listeria monocytogenes",
+      "tier": 1,
+      "outbreak": false,
+      "company": "Walter's Artisan Produce Pty Ltd",
+      "brand": "Walter’s Artisan Bread",
+      "product": "Walter’s Artisan Bread - Banana Loaf - 430g",
+      "country": "Australia",
+      "source": "FSANZ (AU)",
+      "url": "https://www.foodstandards.gov.au/food-recalls/recall-alert/walters-artisan-produce-pty-ltd-walters-artisan-bread-banana-loaf-430g"
+    },
+    {
+      "rank": 5,
       "date": "2026-08-14",
       "pathogen": "Listeria monocytogenes",
       "pathogen_raw": "Listeria monocytogenes",
@@ -64,35 +92,7 @@
       "country": "Canada",
       "source": "CFIA",
       "url": "https://recalls-rappels.canada.ca/en/alert-recall/coaticook-brand-mild-cheddar-curds-white-frozen-recalled-due-listeria-monocytogenes"
-    },
-    {
-      "rank": 4,
-      "date": "2026-08-14",
-      "pathogen": "Listeria monocytogenes",
-      "pathogen_raw": "Listeria monocytogenes",
-      "tier": 1,
-      "outbreak": false,
-      "company": "Boucherie Charcuterie Lyn Tremblay Inc.",
-      "brand": "Clément le Gourmand",
-      "product": "Country-Style Pâté, Duck Liver Mousse with Port, Liver Pâté with Cognac",
-      "country": "Canada",
-      "source": "CFIA",
-      "url": "https://recalls-rappels.canada.ca/en/alert-recall/clement-gourmand-brand-meat-products-recalled-due-listeria-monocytogenes"
-    },
-    {
-      "rank": 5,
-      "date": "2026-08-19",
-      "pathogen": "Salmonella",
-      "pathogen_raw": "Salmonella",
-      "tier": 1,
-      "outbreak": false,
-      "company": "Origin: Brazil | Notifying: Lithuania",
-      "brand": "—",
-      "product": "Salmonella Heidelberg has been detected in frozen chicken fillet",
-      "country": "Brazil",
-      "source": "RASFF (EU)",
-      "url": "https://webgate.ec.europa.eu/rasff-window/screen/notification/866951"
     }
   ],
-  "country_count": 10
+  "country_count": 16
 }

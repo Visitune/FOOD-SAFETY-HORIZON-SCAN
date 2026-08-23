@@ -1,15 +1,15 @@
 {
-  "generated": "2026-08-18T09:29:17+03:00",
-  "date": "2026-08-18",
+  "generated": "2026-08-23T09:27:08+03:00",
+  "date": "2026-08-23",
   "mode": "live",
-  "in_progress_week": "W34",
+  "in_progress_week": "W35",
   "counts": {
-    "recalls_rows": 1457,
+    "recalls_rows": 1494,
     "duplicate_url_groups": 0,
     "shared_nonspecific_urls": 0,
-    "blank_field_rows": 7,
+    "blank_field_rows": 8,
     "mistiered_rows": 0,
-    "date_issue_rows": 4,
+    "date_issue_rows": 5,
     "lane_a_changes": 0,
     "proposed_deletions": 20,
     "ledger_resolved": 0,
@@ -109,6 +109,19 @@
         "missing": [
           "Date"
         ]
+      },
+      {
+        "Date": "",
+        "Source": "CDC",
+        "Company": "Outbreak linked to alfalfa sprouts; people sickened with",
+        "Product": "23 hours ago · For more information about coli, see the About Escherichia coli Infection page",
+        "Pathogen": "Escherichia coli (generic)",
+        "Country": "USA",
+        "Tier": 1,
+        "URL": "https://www.cdc.gov/media/releases/2026/outbreak-linked-to-alfalfa-sprouts-people-sickened-with-e-coli-and-salmonella.html",
+        "missing": [
+          "Date"
+        ]
       }
     ],
     "mistiered": [],
@@ -155,6 +168,17 @@
         "Country": "United Kingdom",
         "Tier": 1,
         "URL": "https://alerts.food.gov.uk/news-alerts/alert/FSA-PRIN-39-2026",
+        "issue": "blank Date"
+      },
+      {
+        "Date": "",
+        "Source": "CDC",
+        "Company": "Outbreak linked to alfalfa sprouts; people sickened with",
+        "Product": "23 hours ago · For more information about coli, see the About Escherichia coli Infection page",
+        "Pathogen": "Escherichia coli (generic)",
+        "Country": "USA",
+        "Tier": 1,
+        "URL": "https://www.cdc.gov/media/releases/2026/outbreak-linked-to-alfalfa-sprouts-people-sickened-with-e-coli-and-salmonella.html",
         "issue": "blank Date"
       }
     ]
@@ -566,11 +590,15 @@
     "max_links": 25
   },
   "stale_reports": {
-    "weeklies": [],
+    "weeklies": [
+      "W34"
+    ],
     "monthlies": []
   },
   "rebuilt": {
-    "weeklies": [],
+    "weeklies": [
+      "W34"
+    ],
     "monthlies": []
   }
 }

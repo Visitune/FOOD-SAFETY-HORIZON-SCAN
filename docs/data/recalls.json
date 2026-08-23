@@ -12,7 +12,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23300/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23300/Interne",
   "Notes": "boutique d’usine des salaisons dijonnaises [gemini-check 2026-08-21: fix; corrections: Company→CHARCU-PAC LES PROVINCES NO NAME; fix; company mismatch | Company name on row is 'No Name' but page identifies 'CHARCU-PAC LES PROVINCES NO NAME' as the o]"
  },
  {
@@ -28,7 +28,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23301/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23301/Interne",
   "Notes": "boutique d’usine des salaisons dijonnaises¤calidel¤prix miam¤ [gemini-check 2026-08-21: fix; corrections: Company→CHARCU-PAC LES PROVINCES NO NAME, Brand→NO NAME; fix; company mismatch | Company and Brand values in the row do not match the specific names on the page.]"
  },
  {
@@ -44,7 +44,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23306/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23306/Interne",
   "Notes": "scapmaree [gemini-check 2026-08-21: fix; corrections: Company→UNIMA DISTRIBUTION UD; fix; company mismatch | Company in row is the brand, not the recalling firm 'UNIMA DISTRIBUTION UD' as stated on the pag]"
  },
  {
@@ -60,7 +60,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23305/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23305/Interne",
   "Notes": "cormaree, creno impex (creno impex sas), demarne freres entrepot, homards acadiens, maree pour tous, pomona, profish, pr [gemini-check 2026-08-21: fix; corrections: Company→UNIMA DISTRIBUTION UD; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but identified on the ]"
  },
  {
@@ -76,7 +76,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23304/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23304/Interne",
   "Notes": "carrefour [gemini-check 2026-08-21: fix; corrections: Company→CARREFOUR FRANCE CARREFOUR; fix; company mismatch | Row's Company 'Reflets de France' does not match the recalling firm 'CARREFOUR FRANCE CARREFOUR']"
  },
  {
@@ -92,7 +92,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23303/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23303/Interne",
   "Notes": "carrefour [gemini-check 2026-08-21: fix; corrections: Company→CARREFOUR FRANCE, Product→JAMBON CUIT A L'OS - Reflets de France -, Pathogen→Listeria monocytogenes; fix; company mismatch | Company in row is the brand, not the recalling firm (Carrefour); product description has minor c]"
  },
  {
@@ -108,7 +108,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23294/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23294/Interne",
   "Notes": "intermarche ventabren [gemini-check 2026-08-21: fix; corrections: Company→SA SOFIANE INTERMARCHE, Product→BROCHETTE DE POULET MARINEE A LA PROVENÇ, Pathogen→Salmonella; fix; company mismatch; product mismatch; pathogen mismatch | Company, Product, and Pathogen fields require correction ba] [enrich-gate 2026-08-21: pending_enrichment → pending (Claude verified)] [tier-guard: Salmonella is always Tier 1; forced from Tier 3]"
  },
  {
@@ -284,7 +284,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23224/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23224/Interne",
   "Notes": "vente directe à la ferme [gemini-check 2026-08-19: fix; corrections: Company→GAEC LA MAISON BLANCHE; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty but found on page.]"
  },
  {
@@ -300,7 +300,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23235/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23235/Interne",
   "Notes": "intermarché hyper annemasse [gemini-check 2026-08-19: fix; corrections: Company→LEMAN DAITOMI INTERMARCHE HYPER ANNEMASS; placeholder_company_filled_from_page | fix; company mismatch | Company was empty in the row but identified on the page a]"
  },
  {
@@ -316,7 +316,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23221/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23221/Interne",
   "Notes": "magasin ferme scharrenberger [gemini-check 2026-08-19: pass; pass | All fields match the page, and no cross-check failures or mismatches were found.]"
  },
  {
@@ -332,7 +332,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23275/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23275/Interne",
   "Notes": "carrefour [gemini-check 2026-08-19: fix; corrections: Company→CARREFOUR FRANCE CARREFOUR, Brand→CARREFOUR Le Marché, Product→MESCLUN Carrefour Le Marché - Sachet 125, Pathogen→Salmonella; fix; company mismatch | Company name on row does not match the recalling firm on the page; corrected to 'CARREFOUR FRANC]"
  },
  {
@@ -393,7 +393,7 @@
   "Reason": "Aflatoxin B1 in Groundnut flours originating from China; risk: potentially serious; category: nuts, nut products and seeds",
   "Class": "Border Rejection",
   "Country": "China",
-  "Region": "Asia",
+  "Region": "Asia-Pacific",
   "Tier": 2,
   "Outbreak": 0,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/867015",
@@ -425,7 +425,7 @@
   "Reason": "Possible Listeria contamination due to suspected cold chain issue (from French Rappel Conso notification)",
   "Class": "Food Alert",
   "Country": "Hong Kong",
-  "Region": "Asia",
+  "Region": "Asia-Pacific",
   "Tier": 1,
   "Outbreak": 0,
   "URL": "https://www.cfs.gov.hk/tc_chi/whatsnew/whatsnew_fa/2026_625.html",
@@ -444,7 +444,7 @@
   "Region": "Europe",
   "Tier": 3,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23217/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23217/Interne",
   "Notes": "la fourche [gemini-check 2026-08-18: fix; corrections: Pathogen→Ochratoxin A; fix; pathogen mismatch | Pathogen was empty in the row but identified on the page; Tier mismatch found.] [enrich-gate 2026-08-18: pending_enrichment → pending (Claude verified)]"
  },
  {
@@ -508,7 +508,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23178/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23178/Interne",
   "Notes": "intermarché, franprix, auchan, leclerc, monoprix, systeme u, casino, carrefour [gemini-check 2026-08-17: fix; corrections: Company→NATURENVIE, Brand→Jardin Bio étic, Product→Purée de sésame - Tahin, Pot 350 g, Pathogen→Salmonella; fix; company mismatch | Company field needs correction to recalling firm; brand and product also corrected for specifici]"
  },
  {
@@ -524,7 +524,7 @@
   "Region": "Europe",
   "Tier": 1,
   "Outbreak": 0,
-  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23177/interne",
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23177/Interne",
   "Notes": "carrefour vichy uniquement [gemini-check 2026-08-17: fix; corrections: Company→CARREFOUR FRANCE CARREFOUR; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but found on the page.]"
  },
  {

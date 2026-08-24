@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "date": "2026-08-23",
+      "url": "daily/2026-08-23.html",
+      "total": 1,
+      "tier1": 1,
+      "outbreak": 0,
+      "by_region": {
+        "Europe": 1
+      },
+      "generated": "2026-08-24T05:20:34Z"
+    },
+    {
       "date": "2026-08-21",
       "url": "daily/2026-08-21.html",
       "total": 10,
@@ -62,17 +73,6 @@
         "North America": 1
       },
       "generated": "2026-08-19T17:46:51Z"
-    },
-    {
-      "date": "2026-08-16",
-      "url": "daily/2026-08-16.html",
-      "total": 1,
-      "tier1": 1,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 1
-      },
-      "generated": "2026-08-20T11:17:19Z"
     }
   ]
 }

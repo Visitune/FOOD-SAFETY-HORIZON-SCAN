@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-08-24 08:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Procès verbal de la réunion du 26 mars 2026 du CES \"Substances et produits biocides\"",
+  "Link": "https://www.anses.fr/fr/content/BIOCIDES_Pv_2026-03-26",
+  "Retrieved (UTC)": "2026-08-24 08:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-24 08:51 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Procès verbal de la réunion du 20 novembre 2025 du CES \"Substances et produits biocides\"",
+  "Link": "https://www.anses.fr/fr/content/BIOCIDES_Pv1_2025-11-20",
+  "Retrieved (UTC)": "2026-08-24 08:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-24 08:47 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Appel à manifestation d'intérêt pour la mise en place d’un système de caractérisation des pathogènes alimentaires à partir d’outils d’analyses moléculaires dans les sites de production de l’agro-industrie laitière",
+  "Link": "https://www.anses.fr/fr/content/appel-manifestation-dinteret-pour-la-mise-en-place-dun-systeme-de-caracterisation-des",
+  "Retrieved (UTC)": "2026-08-24 08:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-24 07:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Avis relatif à une demande de renouvellement d’autorisation d’introduction dans l’environnement d’un macro-organisme non indigène utile aux végétaux - Souche non indigène de Orius laevigatus - Demande déposée par la société AGROBIO S.L.",
+  "Link": "https://www.anses.fr/fr/content/Oriuslaevi_MO25-014_Ans",
+  "Retrieved (UTC)": "2026-08-24 08:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-24 07:48 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Avis relatif à une demande de renouvellement d’autorisation d’introduction dans l’environnement d’un macro-organisme non indigène utile aux végétaux - Souche non indigène de Neoseiulus cucumeris - Demande déposée par la société AGROBIO S.L",
+  "Link": "https://www.anses.fr/fr/content/Neoseiulus_MO25-013_Ans",
+  "Retrieved (UTC)": "2026-08-24 08:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-24 07:46 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Avis relatif à une demande de renouvellement d’autorisation d’introduction dans l’environnement d’un macro-organisme utilisé dans le cadre de la lutte autocide et utile aux végétaux - Souche stérilisée de Bactrocera dorsalis - Demande déposée par le CIRAD",
+  "Link": "https://www.anses.fr/fr/content/Bactrocera_MO25-011_Ans",
+  "Retrieved (UTC)": "2026-08-24 08:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-24 05:29 UTC",
   "Pathogen": "",
   "Event": "News",

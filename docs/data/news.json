@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-08-24 04:06 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "UK most affected in multi-country Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/uk-most-affected-in-multi-country-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-08-24 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-24 04:04 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "FDA warns California raw pet food maker after Listeria found in products",
+  "Link": "https://www.foodsafetynews.com/2026/08/fda-warns-california-raw-pet-food-maker-after-listeria-found-in-products",
+  "Retrieved (UTC)": "2026-08-24 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-24 04:03 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "High-risk food linked to fatal Belgian E. coli outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/high-risk-food-linked-to-fatal-belgian-e-coli-outbreak",
+  "Retrieved (UTC)": "2026-08-24 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-24 04:02 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Home-delivered meals linked to UK Listeria death",
+  "Link": "https://www.foodsafetynews.com/2026/08/home-delivered-meals-linked-to-uk-listeria-death",
+  "Retrieved (UTC)": "2026-08-24 04:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-24 03:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Will Iraq become PepsiCo’s next Middle East manufacturing hub?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/24/will-iraq-become-pepsicos-next-middle-east-manufacturing-hub",
+  "Retrieved (UTC)": "2026-08-24 04:54 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-23 01:12 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",

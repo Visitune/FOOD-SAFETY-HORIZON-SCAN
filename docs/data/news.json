@@ -3998,5 +3998,25 @@
   "Link": "https://www.foodsafetynews.com/2026/08/the-sunday-edition-gmos/",
   "Retrieved (UTC)": "2026-08-23T13:51:12Z",
   "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-25 09:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Modification of the existing maximum residue levels for potassium phosphonates in various crops",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10290",
+  "Retrieved (UTC)": "2026-08-25 09:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-25 09:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Modification of the existing maximum residue levels for flupyradifurone and difluoroacetic acid (DFA) in various crops",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10287",
+  "Retrieved (UTC)": "2026-08-25 09:43 UTC",
+  "Category": "Regulatory"
  }
 ]

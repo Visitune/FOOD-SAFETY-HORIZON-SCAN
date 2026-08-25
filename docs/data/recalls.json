@@ -1,5 +1,37 @@
 [
  {
+  "Date": "2026-08-25",
+  "Source": "RappelConso (FR)",
+  "Company": "LOUSSOUARN",
+  "Brand": "Unbranded",
+  "Product": "riz au crabe vendu au stand traiteur :¤produit élaboré par la société loussouarn, manipulé et vendu au rayon traditionnel du magasin e.leclerc de larmor-plage.",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Presence of listéria monocytogenes",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23324/interne",
+  "Notes": "e.leclerc de larmor-plage [gemini-check 2026-08-25: fix; corrections: Company→LOUSSOUARN; placeholder_company_filled_from_page | fix; company mismatch | Company field was empty in the row but 'LOUSSOUARN' is id]"
+ },
+ {
+  "Date": "2026-08-25",
+  "Source": "RappelConso (FR)",
+  "Company": "Chêne D'Argent",
+  "Brand": "Chêne D'Argent",
+  "Product": "petit brie 500g",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Détection Listeria monocytogenes",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23325/interne",
+  "Notes": "listes des supermarchés concernés (voir pj) [gemini-check 2026-08-25: pass; pass]"
+ },
+ {
   "Date": "2026-08-23",
   "Source": "RappelConso (FR)",
   "Company": "Le Baron",

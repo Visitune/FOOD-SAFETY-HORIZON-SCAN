@@ -634,16 +634,29 @@ function sc(s){const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#66
 // reduces the Other bucket. Not exhaustive (specific AOP cheese/pastry
 // names aren't enumerated), by design — diminishing returns past the
 // common generic terms.
+//
+// Word-boundary audit (2026-08-25): short keywords used to match as bare
+// substrings, so e.g. "salmon" false-hit inside "Salmonella" (the most
+// common pathogen name in the feed) and sent eggs/sesame seeds/almonds into
+// Seafood; "eau" false-hit inside "dindonneau"/"épeautre" and sent
+// turkey/spelt recalls into Beverages; "riz" false-hit inside "chorizo".
+// wb() requires a non-letter (or string start/end) on both sides, with one
+// optional plural suffix (s/x/es) so real plurals ("crevettes", "seeds",
+// "nuts") still match.
+function wb(alt){ return new RegExp('(?<!\\p{L})(?:'+alt+')(?:es|x|s)?(?!\\p{L})','iu'); }
+const PROD_CAT_RULES=[
+  ['Dairy', wb('milk|cheese|yog(?:h)?urt|butter|cream|dairy|formula|fromage|lait|beurre|cr[eè]me|yaourt|brie|camembert|comt[eé]|roquefort|ch[eè]vre|reblochon|picodon')],
+  ['Meat/Poultry', wb('beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb|rib|wing|breast|mince|burger|chorizo|viande|porc|b[oœ]uf|poulet|volaille|jambon|saucisse|saucisson|agneau|charcuterie|museau|dinde|veau')],
+  ['Seafood', wb('fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam|crevette|poisson|saumon|crabe|moule|hu[iî]tre|coquillage|thon|truite')],
+  ['Produce', wb('lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion|fig|raisin|grape|almond|microgreen|moringa|l[eé]gume|salade|tomate|oignon|figue|amande')],
+  ['Grains/Bakery', wb('bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta|sandwich|onigiri|pistachio|pain|p[aâ]tisserie|g[aâ]teau|farine|c[eé]r[eé]ale|p[aâ]te|riz')],
+  ['Confectionery/Snacks', wb('chocolate|candy|sweet|confection|snack|chip|cookie|chocolat|bonbon|confiserie')],
+  ['Beverages', wb('juice|beverage|drink|water|coffee|soda|boisson|jus|eau|caf[eé]')],
+];
 function prodCat(p){
   p=(p||"").toLowerCase();
-  if(/milk|cheese|yog(?:h)?urt|butter|cream|dairy|formula|fromage|lait|beurre|cr[eè]me|yaourt|brie|camembert|comt[eé]|roquefort|ch[eè]vre|reblochon|picodon/.test(p))return"Dairy";
-  if(/beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb|rib|wing|breast|mince|burger|viande|porc|b[oœ]uf|poulet|volaille|jambon|saucisse|saucisson|agneau|charcuterie|museau|dinde|veau/.test(p))return"Meat/Poultry";
-  if(/fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam|crevette|poisson|saumon|crabe|moule|hu[iî]tre|coquillage|thon|truite/.test(p))return"Seafood";
-  if(/lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion|fig|raisin|grape|almond|microgreen|moringa|l[eé]gume|salade|tomate|oignon|figue|amande/.test(p))return"Produce";
-  if(/bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta|sandwich|onigiri|pistachio|pain|p[aâ]tisserie|g[aâ]teau|farine|c[eé]r[eé]ale|p[aâ]te|riz/.test(p))return"Grains/Bakery";
-  if(/chocolate|candy|sweet|confection|snack|chip|cookie|chocolat|bonbon|confiserie/.test(p))return"Confectionery/Snacks";
-  if(/juice|beverage|drink|water|coffee|soda|boisson|jus|eau|caf[eé]/.test(p))return"Beverages";
-  return"Other";
+  for(const [name,re] of PROD_CAT_RULES){ if(re.test(p)) return name; }
+  return "Other";
 }
 
 function populateSelect(id,values,allLabel,allKey){

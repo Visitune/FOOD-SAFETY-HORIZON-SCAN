@@ -341,9 +341,13 @@ tr:last-child td{border-bottom:none;}tr:hover td{background:rgba(249,115,22,.06)
         <option value="Dairy">Dairy</option>
         <option value="Meat/Poultry">Meat/Poultry</option>
         <option value="Seafood">Seafood</option>
+        <option value="Nuts/Oilseeds">Nuts/Oilseeds</option>
+        <option value="Confectionery/Snacks">Confectionery/Snacks</option>
+        <option value="Spices/Herbs">Spices/Herbs</option>
         <option value="Produce">Produce</option>
         <option value="Grains/Bakery">Grains/Bakery</option>
-        <option value="Confectionery/Snacks">Confectionery/Snacks</option>
+        <option value="Eggs">Eggs</option>
+        <option value="Prepared Meals">Prepared Meals</option>
         <option value="Beverages">Beverages</option>
         <option value="Other">Other</option>
       </select>
@@ -643,14 +647,31 @@ function sc(s){const css=SRC_CSS[s]||"background:rgba(255,255,255,.05);color:#66
 // wb() requires a non-letter (or string start/end) on both sides, with one
 // optional plural suffix (s/x/es) so real plurals ("crevettes", "seeds",
 // "nuts") still match.
+//
+// Taxonomy expansion (2026-08-25): added Nuts/Oilseeds, Spices/Herbs, Eggs
+// and Prepared Meals — before this, ~30% of records fell into "Other"
+// mostly because of missing buckets (peanuts/hazelnuts, paprika/chili,
+// eggs) rather than matching bugs, per a word-frequency audit of the
+// "Other" bucket. Category order matters (first match wins): Eggs and
+// Prepared Meals are deliberately tested LAST among the specific buckets
+// so a composite product ("Tuna, egg, cucumber salad", "chicken and turkey
+// kebab ... egg-free mayonnaise") resolves to its primary ingredient
+// instead of a secondary one; Confectionery/Snacks is tested before
+// Spices/Herbs and Produce so a flavor name in a snack/chocolate ingredient
+// list (e.g. "Mango Chili", "Mixed Berry") doesn't steal the record from
+// its real category.
 function wb(alt){ return new RegExp('(?<!\\p{L})(?:'+alt+')(?:es|x|s)?(?!\\p{L})','iu'); }
 const PROD_CAT_RULES=[
-  ['Dairy', wb('milk|cheese|yog(?:h)?urt|butter|cream|dairy|formula|fromage|lait|beurre|cr[eè]me|yaourt|brie|camembert|comt[eé]|roquefort|ch[eè]vre|reblochon|picodon')],
-  ['Meat/Poultry', wb('beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb|rib|wing|breast|mince|burger|chorizo|viande|porc|b[oœ]uf|poulet|volaille|jambon|saucisse|saucisson|agneau|charcuterie|museau|dinde|veau')],
-  ['Seafood', wb('fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam|crevette|poisson|saumon|crabe|moule|hu[iî]tre|coquillage|thon|truite')],
-  ['Produce', wb('lettuce|spinach|produce|vegetable|fruit|berry|melon|sprout|herb|salad|tomato|onion|fig|raisin|grape|almond|microgreen|moringa|l[eé]gume|salade|tomate|oignon|figue|amande')],
-  ['Grains/Bakery', wb('bread|bakery|pastry|cake|flour|grain|cereal|rice|nut|seed|pasta|sandwich|onigiri|pistachio|pain|p[aâ]tisserie|g[aâ]teau|farine|c[eé]r[eé]ale|p[aâ]te|riz')],
+  ['Dairy', wb('milk|cheese|yog(?:h)?urt|butter|cream|dairy|formula|fromage|lait|beurre|cr[eè]me|yaourt|brie|camembert|comt[eé]|roquefort|ch[eè]vre|reblochon|picodon|gorgonzola|brebis|mozzarella|parmesan|ricotta|feta|cheddar|edam|gouda|emmental|mascarpone')],
+  ['Meat/Poultry', wb('beef|pork|poultry|chicken|turkey|sausage|ham|meat|bacon|salami|lamb|rib|wing|breast|mince|burger|chorizo|pepperoni|steak|bifsteck|merguez|andouille|rillette|boudin|confit|magret|lardon|jarret|viande|porc|b[oœ]uf|poulet|volaille|jambon|saucisse|saucisson|agneau|charcuterie|museau|dinde|veau|foie gras|p[aâ]t[eé] de campagne|p[aâ]t[eé] en cro[uû]te|liver p[aâ]t[eé]')],
+  ['Seafood', wb('fish|salmon|shrimp|shellfish|oyster|seafood|tuna|crab|mussel|clam|crevette|poisson|saumon|crabe|moule|hu[iî]tre|coquillage|thon|truite|trout|octopus|poulpe|langoustine|langostino|produits de la p[eê]che')],
+  ['Nuts/Oilseeds', wb('nut|peanut|groundnut|hazelnut|walnut|cashew|macadamia|pistachio|sesame|tahini?|cacahu[eè]te|noisette|s[eé]same')],
   ['Confectionery/Snacks', wb('chocolate|candy|sweet|confection|snack|chip|cookie|chocolat|bonbon|confiserie')],
+  ['Spices/Herbs', wb('spice|paprika|chil{1,2}i|pepper|cinnamon|turmeric|cumin|nutmeg|[eé]pice|piment|poivre|curcuma|cannelle')],
+  ['Produce', wb('lettuce|spinach|produce|vegetable|fruit|berry|berries|melon|sprout|herb|salad|tomato|onion|fig|raisin|grape|almond|microgreen|moringa|mushroom|champignon|enoki|l[eé]gume|salade|tomate|oignon|figue|amande')],
+  ['Grains/Bakery', wb('bread|bakery|pastry|cake|flour|grain|cereal|rice|seed|pasta|sandwich|onigiri|biscuit|cracker|brioche|pain|p[aâ]tisserie|g[aâ]teau|farine|c[eé]r[eé]ale|p[aâ]te|riz')],
+  ['Eggs', wb('egg|[oœ]euf')],
+  ['Prepared Meals', wb('ready meal|prepared meal|meal kit|plat pr[eé]par[eé]|plat cuisin[eé]|repas pr[eé]par[eé]')],
   ['Beverages', wb('juice|beverage|drink|water|coffee|soda|boisson|jus|eau|caf[eé]')],
 ];
 function prodCat(p){

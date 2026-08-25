@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-25 10:01 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Could dropping ‘vegan’ unlock growth?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/25/should-plant-based-brands-stop-marketing-themselves-as-vegan",
+  "Retrieved (UTC)": "2026-08-25 10:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-08-25 09:44 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -7,6 +17,26 @@
   "Title": "Annonces de réduction de prix : ce que vous devez savoir !",
   "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/annonces-de-reduction-de-prix-ce-que-vous-devez-savoir",
   "Retrieved (UTC)": "2026-08-25 08:52 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-25 09:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Modification of the existing maximum residue levels for potassium phosphonates in various crops",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10290",
+  "Retrieved (UTC)": "2026-08-25 09:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-25 09:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Modification of the existing maximum residue levels for flupyradifurone and difluoroacetic acid (DFA) in various crops",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10287",
+  "Retrieved (UTC)": "2026-08-25 09:43 UTC",
   "Category": "Regulatory"
  },
  {
@@ -4000,23 +4030,13 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-08-25 09:40 UTC",
+  "Published (UTC)": "2026-08-25T04:03:49Z",
   "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Modification of the existing maximum residue levels for potassium phosphonates in various crops",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10290",
-  "Retrieved (UTC)": "2026-08-25 09:43 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-25 09:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Modification of the existing maximum residue levels for flupyradifurone and difluoroacetic acid (DFA) in various crops",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10287",
-  "Retrieved (UTC)": "2026-08-25 09:43 UTC",
-  "Category": "Regulatory"
+  "Event": "Enforcement",
+  "Source": "Food Safety News",
+  "Title": "Contractor sentenced for faking food hygiene checks",
+  "Link": "https://www.foodsafetynews.com/2026/08/contractor-sentenced-for-faking-food-hygiene-checks/",
+  "Retrieved (UTC)": "2026-08-25T10:26:55Z",
+  "Category": ""
  }
 ]

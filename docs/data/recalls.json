@@ -1,5 +1,37 @@
 [
  {
+  "Date": "2026-08-26",
+  "Source": "RappelConso (FR)",
+  "Company": "ETS LUCIEN",
+  "Brand": "Pas de Marque",
+  "Product": "boudin noir antillais bn 80g",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Detection of Listeria",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23330/interne",
+  "Notes": "saveurs créoles [gemini-check 2026-08-26: fix; corrections: Company→ETS LUCIEN; fix; company mismatch | Company mismatch; corrected to 'ETS LUCIEN'.]"
+ },
+ {
+  "Date": "2026-08-26",
+  "Source": "RappelConso (FR)",
+  "Company": "LES FROMAGERS DE SAINT OMER CIPF CODIPAL",
+  "Brand": "Casa Azzurra",
+  "Product": "gorgonzola aop doux ¤casa azzurra",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Presence of listéria",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23340/interne",
+  "Notes": "intermarché , carrefour, leclerc, casino, monoprix , vival, franprix et spar [gemini-check 2026-08-26: fix; corrections: Company→LES FROMAGERS DE SAINT OMER CIPF CODIPAL; fix; company mismatch | Company name corrected to the recalling firm mentioned on the page.]"
+ },
+ {
   "Date": "2026-08-25",
   "Source": "RappelConso (FR)",
   "Company": "LOUSSOUARN",

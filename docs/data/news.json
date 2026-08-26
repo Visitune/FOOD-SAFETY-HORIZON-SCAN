@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-08-26 02:14 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "The 48 State Cyclospora Outbreak Grows to 29,024 Cases",
+  "Link": "https://foodpoisoningbulletin.com/2026/the-48-state-cyclospora-outbreak-grows-to-29024-cases",
+  "Retrieved (UTC)": "2026-08-26 03:13 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-26 01:13 UTC",
   "Pathogen": "Cyclospora",
   "Event": "News",
@@ -4197,6 +4207,36 @@
   "Title": "Contractor sentenced for faking food hygiene checks",
   "Link": "https://www.foodsafetynews.com/2026/08/contractor-sentenced-for-faking-food-hygiene-checks/",
   "Retrieved (UTC)": "2026-08-25T10:26:55Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-26T01:44:52Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Pickled goat and chicken recalled because of lack of USDA inspection",
+  "Link": "https://www.foodsafetynews.com/2026/08/pickled-goat-and-chicken-recalled-because-of-lack-of-usda-inspection/",
+  "Retrieved (UTC)": "2026-08-26T02:26:32Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-25T23:43:57Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Doughnuts recalled after consumer has reaction to undeclared allergen",
+  "Link": "https://www.foodsafetynews.com/2026/08/doughnuts-recalled-after-consumer-has-reaction-to-undeclared-allergen/",
+  "Retrieved (UTC)": "2026-08-26T02:26:32Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-08-25T23:34:58Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Canadian company recalls veggie chips in U.S. because of undeclared wheat",
+  "Link": "https://www.foodsafetynews.com/2026/08/canadian-company-recalls-veggie-chips-in-u-s-because-of-undeclared-wheat/",
+  "Retrieved (UTC)": "2026-08-26T02:26:32Z",
   "Category": ""
  }
 ]

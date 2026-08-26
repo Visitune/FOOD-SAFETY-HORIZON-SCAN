@@ -32,6 +32,22 @@
   "Notes": "listes des supermarchés concernés (voir pj) [gemini-check 2026-08-25: pass; pass]"
  },
  {
+  "Date": "2026-08-25",
+  "Source": "FSA (UK)",
+  "Company": "Tesco recalls Tesco Finest Mozzarella Pearls & Pesto Orzo Salad because of possi",
+  "Brand": "Tesco Finest",
+  "Product": "Tesco recalls Tesco Finest Mozzarella Pearls & Pesto Orzo Salad because of possible contamination with E. coli (STEC)",
+  "Pathogen": "Escherichia coli (generic)",
+  "Reason": "",
+  "Class": "Alert",
+  "Country": "United Kingdom",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-41-2026",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | PRIN-41-2026 [url-gate 2026-08-26: Gemini fixed http://data.food.gov.uk/food-alerts/id/F... -> https://www.food.gov.uk/news-alerts/aler...] [gemini-enrich 2026-08-26: Brand '—'→'Tesco Finest'] [tier-guard: Escherichia coli (generic) is always Tier 1; forced from Tier 2]"
+ },
+ {
   "Date": "2026-08-24",
   "Source": "RASFF (EU)",
   "Company": "Origin: Ukraine | Notifying: Romania",

@@ -1,7 +1,22 @@
 {
-  "generated_utc": "2026-08-19T07:31:50.213098+00:00",
+  "generated_utc": "2026-08-26T07:39:30.316201+00:00",
   "checked_back_weeks": 4,
-  "anchor_friday": "2026-08-14",
-  "updated_weeks": [],
-  "primary_cta": null
+  "anchor_friday": "2026-08-21",
+  "updated_weeks": [
+    {
+      "year": 2026,
+      "week_num": 34,
+      "filename": "2026-W34.html",
+      "report_url": "https://food-safety-horizon-scan.vercel.app/2026-W34.html",
+      "week_start": "2026-08-15",
+      "week_end": "2026-08-21",
+      "old_total": 64,
+      "new_total": 65,
+      "delta": 1
+    }
+  ],
+  "primary_cta": {
+    "label": "VIEW REFRESHED REPORT",
+    "url": "https://food-safety-horizon-scan.vercel.app/2026-W34.html"
+  }
 }

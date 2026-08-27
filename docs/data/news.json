@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-08-27 10:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Le BRICOMARCHÉ D'HOMÉCOURT (54) sanctionné pour défaut de publicité des prix",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/le-bricomarche-dhomecourt-54-sanctionne-pour-defaut-de-publicite-des-prix",
+  "Retrieved (UTC)": "2026-08-27 09:22 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-27 09:25 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "L'Intermarché hyper de Neuves-Maisons (54) sanctionné pour défaut de publicité des prix",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/lintermarche-hyper-de-neuves-maisons-54-sanctionne-pour-defaut-de-publicite-des-prix",
+  "Retrieved (UTC)": "2026-08-27 09:22 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-27 07:29 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Which food trends are big in Africa?",
+  "Link": "https://www.foodnavigator.com/Article/2026/08/27/big-food-trends-in-africa",
+  "Retrieved (UTC)": "2026-08-27 09:22 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-27 04:05 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "More than 80 patients reported in new Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/08/more-than-80-patients-reported-in-new-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-08-27 09:22 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-27 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Salmonella sickens 29 people in Spain",
+  "Link": "https://www.foodsafetynews.com/2026/08/salmonella-sickens-29-people-in-spain",
+  "Retrieved (UTC)": "2026-08-27 09:22 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-26 20:35 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -28,6 +78,16 @@
   "Link": "https://foodpoisoningbulletin.com/2026/deadly-clover-hill-soft-cheese-listeria-outbreak-ends-with-15-sick",
   "Retrieved (UTC)": "2026-08-26 23:18 UTC",
   "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-26 15:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "New Managing Director for Nestlé Waters & Premium Beverages UK",
+  "Link": "https://www.beveragedaily.com/Article/2026/08/26/new-managing-director-for-nestle-waters-premium-beverages-uk",
+  "Retrieved (UTC)": "2026-08-27 09:22 UTC",
+  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-08-26 14:52 UTC",
@@ -4046,16 +4106,6 @@
   "Source": "EFSA",
   "Title": "Literature horizon scan for new scientific data on plants, microorganisms and animals, and their products obtained by new genomic techniques (March 2026)",
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10230",
-  "Retrieved (UTC)": "2026-08-12 20:55 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-07-28 08:38 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Pesticide active substances that do not require a review of the existing maximum residue levels under Article 12 of Regulation (EC) No 396/2005",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10269",
   "Retrieved (UTC)": "2026-08-12 20:55 UTC",
   "Category": "Regulatory"
  },

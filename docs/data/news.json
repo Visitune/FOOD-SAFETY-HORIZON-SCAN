@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-08-28 04:06 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Illness",
+  "Source": "Food Safety News",
+  "Title": "Hundreds sick and two dead in UK Salmonella outbreaks",
+  "Link": "https://www.foodsafetynews.com/2026/08/hundreds-sick-and-two-dead-in-uk-salmonella-outbreaks",
+  "Retrieved (UTC)": "2026-08-28 05:12 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-28 04:04 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Source unknown as Salmonella sickens 13 in Denmark",
+  "Link": "https://www.foodsafetynews.com/2026/08/source-unknown-as-salmonella-sickens-13-in-denmark",
+  "Retrieved (UTC)": "2026-08-28 05:12 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-28 04:03 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Federal officials close investigation into outbreak of infant botulism traced to formula",
+  "Link": "https://www.foodsafetynews.com/2026/08/federal-officials-close-investigation-into-outbreak-of-infant-botulism-traced-to-formula",
+  "Retrieved (UTC)": "2026-08-28 05:12 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-27 23:14 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Cyclospora patients in outbreak linked to lettuce top 11,000; three more states added",
+  "Link": "https://www.foodsafetynews.com/2026/08/cyclospora-patients-in-outbreak-linked-to-lettuce-top-11-000",
+  "Retrieved (UTC)": "2026-08-28 05:12 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-27 19:51 UTC",
   "Pathogen": "",
   "Event": "News",

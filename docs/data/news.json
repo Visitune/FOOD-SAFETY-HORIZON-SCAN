@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-08-28 21:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Drug of Its Kind for Polycythemia Vera, a Rare Blood Disorder",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-28 20:46 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Three More States Added to Taylor Farms Iceberg Lettuce Cyclospora Outbreak",
+  "Link": "https://foodpoisoningbulletin.com/2026/three-more-states-added-to-taylor-farms-iceberg-lettuce-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-28 20:17 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Nara Organics Infant Formula Botulism Outbreak Ends With 4 Sick",
+  "Link": "https://foodpoisoningbulletin.com/2026/nara-organics-infant-formula-botulism-outbreak-ends-with-4-sick",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-08-28 15:27 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -8,6 +38,26 @@
   "Link": "https://www.confectionerynews.com/Article/2026/08/28/lindt-turns-confectionery-into-couture-with-joe-ando-collaboration",
   "Retrieved (UTC)": "2026-08-28 18:32 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-28 14:58 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "474 Cases, Two Deaths in Three UK Salmonella Outbreaks Likely Linked to Imported Eggs",
+  "Link": "https://www.food-safety.com/articles/11774-474-cases-two-deaths-in-three-uk-salmonella-outbreaks-likely-linked-to-imported-eggs",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-28 14:14 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "FDA Explains Recall Classifications to Get Ahead of Cyclospora Outbreak Panic",
+  "Link": "https://www.food-safety.com/articles/11773-fda-explains-recall-classifications-to-get-ahead-of-cyclospora-outbreak-panic",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-28 13:39 UTC",
@@ -68,6 +118,16 @@
   "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-1-220-000-eur-prononcee-lencontre-de-la-societe-ge-medical-systems-numero-de-siret",
   "Retrieved (UTC)": "2026-08-28 18:32 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-08-28 09:15 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "FDA Details Investigation Into 2026 Salmonella Outbreak Linked to Moringa Powder",
+  "Link": "https://www.food-safety.com/articles/11772-fda-details-investigation-into-2026-salmonella-outbreak-linked-to-moringa-powder",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-28 08:28 UTC",
@@ -2497,6 +2557,16 @@
   "Title": "FDA Begins Inspection at Taylor Farms Mexico as Official Cyclospora Outbreak Case Count Nears 10,000",
   "Link": "https://www.food-safety.com/articles/11732-fda-begins-inspection-at-taylor-farms-mexico-as-official-cyclospora-outbreak-case-count-nears-10-000",
   "Retrieved (UTC)": "2026-08-14 19:06 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-08-14 13:41 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "FDA Begins Inspection at Taylor Farms Mexico as Official Cyclospora Outbreak Case Count Exceeds 10,000",
+  "Link": "https://www.food-safety.com/articles/11732-fda-begins-inspection-at-taylor-farms-mexico-as-official-cyclospora-outbreak-case-count-exceeds-10-000",
+  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
   "Category": "Outbreak"
  },
  {

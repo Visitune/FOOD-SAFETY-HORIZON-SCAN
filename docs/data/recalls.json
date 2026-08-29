@@ -112,6 +112,22 @@
   "Notes": "[RASFF #2026.7530; classification: information notification for attention; category: poultry meat and poultry meat products; notifId=868818]"
  },
  {
+  "Date": "2026-08-26",
+  "Source": "NVWA",
+  "Company": "Jumbo Supermarkten",
+  "Brand": "Jumbo",
+  "Product": "Gorgonzola Dolce",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Possible presence of Listeria",
+  "Class": "Recall",
+  "Country": "Netherlands",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.nvwa.nl/nieuws-en-media/nieuws/2026/08/26/veiligheidswaarschuwing-gorgonzola-dolce-van-jumbo",
+  "Notes": "Product with THT dates 03-09-2026, 08-09-2026, 10-09-2026. Also distributed in Belgium.  [via Gemini gap-finder + Google Search] [gap-gate 2026-08-29: pending_gap → pending_gap_v1] [gemini-check 2026-08-29: pass; corrections: Pathogen→Listeria monocytogenes; pass] [gap-gate 2026-08-29: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
   "Date": "2026-08-25",
   "Source": "RappelConso (FR)",
   "Company": "LOUSSOUARN",

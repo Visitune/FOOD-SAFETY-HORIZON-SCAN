@@ -15,13 +15,13 @@
     {
       "date": "2026-08-26",
       "url": "daily/2026-08-26.html",
-      "total": 5,
-      "tier1": 5,
+      "total": 6,
+      "tier1": 6,
       "outbreak": 0,
       "by_region": {
-        "Europe": 5
+        "Europe": 6
       },
-      "generated": "2026-08-29T15:25:34Z"
+      "generated": "2026-08-29T19:40:17Z"
     },
     {
       "date": "2026-08-25",

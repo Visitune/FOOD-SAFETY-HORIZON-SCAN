@@ -16,6 +16,22 @@
   "Notes": "REJECTED: http_error | Production date 2026-07-31. Best-by dates into early September 2026. Sold in Brandenburg, Hessen, Niedersachsen, Nordrhein-Westfalen, Sachsen-Anhalt, Thüringen.  [via Gemini gap-finder + Google Search] [gemini-enrich 2026-09-01: Brand '—'→'Wulff']"
  },
  {
+  "Date": "2026-08-28",
+  "Source": "RappelConso",
+  "Company": "ALIMENTATION GROS IMPORT DIFFUS RHONE-A EPICERIE",
+  "Brand": "SANS MARQUE",
+  "Product": "Graines de courge (pumpkin seeds) (various packaging: bulk, 2.5kg bags, 70g punnets, 70g IDS punnets; various lots, sold between 01/03/2026 and 28/08/2026)",
+  "Pathogen": "Salmonella",
+  "Reason": "Detection of Salmonella",
+  "Class": "Recall",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23359/Interne",
+  "Notes": "Distributed by Agidra Grand Frais across France. Consumers advised not to consume and return to point of sale.  [via Gemini gap-finder + Google Search] [gap-gate 2026-09-02: pending_gap → pending_gap_v1] [gemini-check 2026-09-02: fix; corrections: Company→ALIMENTATION GROS IMPORT DIFFUS RHONE-A , Brand→SANS MARQUE, Pathogen→Salmonella; fix; company mismatch | Company and Brand need correction based on page content; Agidra and Grand Frais are distributors] [gap-gate 2026-09-02: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
   "Date": "2026-08-27",
   "Source": "RASFF (EU)",
   "Company": "Origin: Iran | Notifying: Italy",

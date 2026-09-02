@@ -12,6 +12,17 @@
       "generated": "2026-09-01T15:16:37Z"
     },
     {
+      "date": "2026-08-28",
+      "url": "daily/2026-08-28.html",
+      "total": 1,
+      "tier1": 1,
+      "outbreak": 0,
+      "by_region": {
+        "Europe": 1
+      },
+      "generated": "2026-09-02T19:42:18Z"
+    },
+    {
       "date": "2026-08-27",
       "url": "daily/2026-08-27.html",
       "total": 2,

@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-09-02 08:33 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Nestlé sheds mainstream VMS business in $1bn deal",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/02/nestle-sells-mainstream-vms-business-to-yellow-wood-partners-in-1bn-deal",
+  "Retrieved (UTC)": "2026-09-02 09:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-02 07:32 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Sécurité sanitaire de la chaîne alimentaire (dangers, procédés, maîtrise)",
+  "Link": "https://www.anses.fr/fr/content/securite-sanitaire-de-la-chaine-alimentaire",
+  "Retrieved (UTC)": "2026-09-02 09:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-02 07:19 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Carob cracks gluten-free pasta’s biggest challenges",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/09/02/how-carob-flour-could-improve-gluten-free-pasta",
+  "Retrieved (UTC)": "2026-09-02 09:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-02 06:58 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Panel statement on young pine plants used for afforestation or reforestation as pathway for pinewood nematode (PWN) Bursaphelenchus xylophilus",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10277",
+  "Retrieved (UTC)": "2026-09-02 09:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-02 06:56 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety of S-acetyl glutathione as an novel food pursuant to Regulation (EU) 2015/2283",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10258",
+  "Retrieved (UTC)": "2026-09-02 09:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-02 04:06 UTC",
   "Pathogen": "Cyclospora",
   "Event": "Outbreak",
@@ -4948,16 +4998,6 @@
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10278",
   "Retrieved (UTC)": "2026-08-12 20:55 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-03 09:00 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "Study Identifies Optimal Poultry Transport Cage Washing Conditions to Reduce Salmonella",
-  "Link": "https://www.food-safety.com/articles/11677-study-identifies-optimal-poultry-transport-cage-washing-conditions-to-reduce-salmonella",
-  "Retrieved (UTC)": "2026-08-12 20:55 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-07T04:05:38Z",

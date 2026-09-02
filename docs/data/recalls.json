@@ -24206,5 +24206,53 @@
   "Outbreak": 1,
   "URL": "https://www.cdc.gov/media/releases/2026/outbreak-linked-to-alfalfa-sprouts-people-sickened-with-e-coli-and-salmonella.html",
   "Notes": "REJECTED: http_error | 23 hours ago · For more information about coli, see the About Escherichia coli Infection page. Symptoms of Salmonella Most people infected with Salmonella experience diarrhea, fever, and stomach cramps. Symptoms usually start 6 hours to 6 days after swallowing the bacteria. Most people recover witho  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
+ },
+ {
+  "Date": "",
+  "Source": "FSAI",
+  "Company": "Macroom Buffalo Cheese Mozzarella ...",
+  "Brand": "Macroom Buffalo Cheese Mozzarella ...",
+  "Product": "5 days ago · Recall of a specific batch of Macroom Buffalo Cheese Mozzarella, Bocconcini and Burrata products due to the presence of Listeria monocytogenes",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "Ireland",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-specific-batch-of-various-macroom-buffal",
+  "Notes": "REJECTED: Gemini gate: extraction_failed | 5 days ago · Recall of a specific batch of Macroom Buffalo Cheese Mozzarella, Bocconcini and Burrata products due to the presence of Listeria monocytogenes. Thursday, 27 ...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
+ },
+ {
+  "Date": "",
+  "Source": "NVWA",
+  "Company": "Veiligheidswaarschuwing Biologische brie van Jumbo | NVWA",
+  "Brand": "Veiligheidswaarschuwing Biologische brie van Jumbo | NVWA",
+  "Product": "6 days ago · Jumbo Supermarkten waarschuwt voor Jumbo Biologische brie",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "Netherlands",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-jumbo",
+  "Notes": "REJECTED: Gemini gate: None [local gate rejected: conf=0.90, failed=['date_match']] | 6 days ago · Jumbo Supermarkten waarschuwt voor Jumbo Biologische brie. Hierin is mogelijk de bacterie Listeria aanwezig. Listeria kan gevaarlijk zijn voor de gezondheid, vooral voor zwangere vrouwen, jonge kinderen, ouderen en mensen met een verzwakt...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
+ },
+ {
+  "Date": "",
+  "Source": "NVWA",
+  "Company": "Veiligheidswaarschuwing Biologische brie van PLUS | NVWA",
+  "Brand": "Veiligheidswaarschuwing Biologische brie van PLUS | NVWA",
+  "Product": "6 days ago · PLUS waarschuwt voor Biologisch PLUS Brie",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "Netherlands",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-plus",
+  "Notes": "REJECTED: Gemini gate: None [local gate rejected: conf=0.90, failed=['date_match']] | 6 days ago · PLUS waarschuwt voor Biologisch PLUS Brie. Hierin is mogelijk de bacterie Listeria aanwezig. Listeria kan gevaarlijk zijn voor de gezondheid, vooral voor zwangere vrouwen, jonge kinderen, ouderen en mensen met een verzwakt afweersysteem. Eet de...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
  }
 ]

@@ -1,5 +1,21 @@
 [
  {
+  "Date": "2026-09-01",
+  "Source": "CFIA",
+  "Company": "Coaticook",
+  "Brand": "Coaticook",
+  "Product": "Aged Cheddar Cheese",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Possible Listeria monocytogenes contamination",
+  "Class": "Recall",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/coaticook-brand-aged-cheddar-cheese-recalled-due-listeria-monocytogenes",
+  "Notes": "Related recalls for Coaticook brand White Cheddar cheeses and Mild Cheddar Curds - White, Frozen also due to Listeria monocytogenes.  [via Gemini gap-finder + Google Search] [gap-gate 2026-09-03: pending_gap → pending_gap_v1] [gemini-check 2026-09-03: pass; pass] [gap-gate 2026-09-03: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
   "Date": "2026-08-31",
   "Source": "Lebensmittelwarnung.de",
   "Company": "Fleischwaren Wulff GmbH & Co KG",

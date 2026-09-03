@@ -24270,5 +24270,21 @@
   "Outbreak": 0,
   "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-plus",
   "Notes": "REJECTED: Gemini gate: None [local gate rejected: conf=0.90, failed=['date_match']] | 6 days ago · PLUS waarschuwt voor Biologisch PLUS Brie. Hierin is mogelijk de bacterie Listeria aanwezig. Listeria kan gevaarlijk zijn voor de gezondheid, vooral voor zwangere vrouwen, jonge kinderen, ouderen en mensen met een verzwakt afweersysteem. Eet de...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
+ },
+ {
+  "Date": "",
+  "Source": "FSA",
+  "Company": "Macroom Buffalo Cheese Products",
+  "Brand": "Macroom Buffalo Cheese Products",
+  "Product": "Macroom ... - Alerts",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "United Kingdom",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://alerts.food.gov.uk/article/6846/Macroom-Buffalo-Cheese-Products-recalls-Macroom-Buffalo-Cheese-Mozzarella-and-Macroom-Buffalo-Cheese-Bocconcini-because-of-contamination-with-Listeria-monocytogenes",
+  "Notes": "REJECTED: http_error | 6 days ago · Macroom Buffalo Cheese Products recalls Macroom Buffalo Cheese Mozzarella and Macroom Buffalo Cheese Bocconcini because of contamination with Listeria ...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
  }
 ]

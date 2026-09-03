@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-09-03 19:48 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Drug to Treat Alexander Disease",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+  "Retrieved (UTC)": "2026-09-03 22:29 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-03 16:43 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "7 ingredients European food manufacturers are quietly falling out of love with",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/03/the-ingredients-food-makers-are-dropping",
+  "Retrieved (UTC)": "2026-09-03 19:45 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-03 15:39 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5290,16 +5310,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-08-04 17:30 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "Chipotle Identifies Potential Connection Between Salmonella Outbreak and Jalapeños",
-  "Link": "https://www.food-safety.com/articles/11702-chipotle-identifies-potential-connection-between-salmonella-outbreak-and-jalapenos",
-  "Retrieved (UTC)": "2026-08-12 20:55 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-08-07T04:05:38Z",
   "Pathogen": "",
   "Event": "Recall",
@@ -5698,15 +5708,5 @@
   "Link": "https://www.foodsafetynews.com/2026/08/boston-company-recalls-more-than-12-tons-of-buffalo-chicken-products-because-of-lack-of-inspection/",
   "Retrieved (UTC)": "2026-08-28T13:12:19Z",
   "Category": ""
- },
- {
-  "Published (UTC)": "2026-09-03 16:43 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "7 ingredients European food manufacturers are quietly falling out of love with",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/03/the-ingredients-food-makers-are-dropping",
-  "Retrieved (UTC)": "2026-09-03 19:45 UTC",
-  "Category": "Regulatory"
  }
 ]

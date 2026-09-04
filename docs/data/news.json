@@ -1,5 +1,95 @@
 [
  {
+  "Published (UTC)": "2026-09-04 04:37 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Brand New: PepsiCo in Iraq, Carlsberg alliance and Kirin’s catch-22",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/04/brand-new-pepsico-in-iraq-carlsberg-alliance-and-kirins-catch-22",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-04 04:05 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Patient count in Cyclospora outbreak in Michigan at more than 14,700",
+  "Link": "https://www.foodsafetynews.com/2026/09/patient-count-in-cyclospora-outbreak-in-michigan-at-more-than-14-700",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 04:05 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "50 more people sick in UK Salmonella outbreak; total count tops 500",
+  "Link": "https://www.foodsafetynews.com/2026/09/50-more-people-sick-in-uk-salmonella-outbreak-total-count-tops-500",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 04:04 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Salmonella outbreak traced to eggs declared over with more than 130 patients",
+  "Link": "https://www.foodsafetynews.com/2026/09/salmonella-outbreak-traced-to-eggs-declared-over-with-more-than-130-patients",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 04:03 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Illness",
+  "Source": "Food Safety News",
+  "Title": "Young girl dies after contracting HUS",
+  "Link": "https://www.foodsafetynews.com/2026/09/young-girl-dies-after-contracting-hus",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 03:05 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Great Value Frozen Organic Berry Blend Recalled For E. coli O145",
+  "Link": "https://foodpoisoningbulletin.com/2026/great-value-frozen-organic-berry-blend-recalled-for-e-coli-o145",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 02:45 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Food To Live Greens and Powders Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/food-to-live-greens-and-powders-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 02:22 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Salmonella outbreak linked to Evergreen Sprouts",
+  "Link": "https://www.foodsafetynews.com/2026/09/salmonella-outbreak-linked-to-evergreen-sprouts",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-04 01:28 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "More people sick in outbreak traced to frozen imported berries",
+  "Link": "https://www.foodsafetynews.com/2026/09/more-people-sick-in-outbreak-traced-to-frozen-imported-berries",
+  "Retrieved (UTC)": "2026-09-04 05:43 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-03 19:48 UTC",
   "Pathogen": "",
   "Event": "News",

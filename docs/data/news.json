@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-09-05 03:48 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "GreenWise Frozen Blueberries E. coli O145 Outbreak Sickens 17",
+  "Link": "https://foodpoisoningbulletin.com/2026/greenwise-frozen-blueberries-e-coli-o145-outbreak-sickens-17",
+  "Retrieved (UTC)": "2026-09-05 05:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-05 03:15 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Midwest Poultry Eggs Salmonella Outbreak Ends With 134 Sick",
+  "Link": "https://foodpoisoningbulletin.com/2026/midwest-poultry-eggs-salmonella-outbreak-ends-with-134-sick",
+  "Retrieved (UTC)": "2026-09-05 05:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-05 02:50 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Evergreen Fresh Broccoli Sprouts Salmonella Outbreak Sickens 16",
+  "Link": "https://foodpoisoningbulletin.com/2026/evergreen-fresh-broccoli-sprouts-salmonella-outbreak-sickens-16",
+  "Retrieved (UTC)": "2026-09-05 05:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-04 20:18 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5328,196 +5358,6 @@
   "Link": "https://www.confectionerynews.com/Article/2026/08/06/ferrara-launches-trolli-spicy-crawlers-with-free-jeff-cole-designed-trainers",
   "Retrieved (UTC)": "2026-08-06 09:45 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "More than 6,000 patients identified in Cyclospora outbreak linked to Taylor Farms lettuce",
-  "Link": "https://www.foodsafetynews.com/2026/08/more-than-6-000-patients-identified-in-cyclospora-outbreak-linked-to-taylor-farms-lettuce",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Retrait Produit MFSC par l'autorité de décision - DIGESTAT SECHE",
-  "Link": "http://www.anses.fr/fr/content/decision-retrait-produit-mfsc-par-lautorite-de-decision-digestat-seche",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification de l'autorisation avec instruction administrative d'un produit phytopharmaceutique - PADELLI",
-  "Link": "http://www.anses.fr/fr/content/decision-modification-de-lautorisation-avec-instruction-administrative-dun-produit-345",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - JUBILE",
-  "Link": "http://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-32",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification de l'autorisation avec instruction administrative d'un produit phytopharmaceutique - ZOXIS NEO",
-  "Link": "http://www.anses.fr/fr/content/decision-modification-de-lautorisation-avec-instruction-administrative-dun-produit-344",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - FLEXITY",
-  "Link": "http://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-31",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Autorisation de mise sur le marché d'un produit phytopharmaceutique de revente - BALIZOR VITAL",
-  "Link": "http://www.anses.fr/fr/content/decision-autorisation-de-mise-sur-le-marche-dun-produit-phytopharmaceutique-de-revente-25",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - DELAN WG",
-  "Link": "http://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-30",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification de l'autorisation avec instruction administrative d'un produit phytopharmaceutique - LS PROTHIO/SPIROX",
-  "Link": "http://www.anses.fr/fr/content/decision-modification-de-lautorisation-avec-instruction-administrative-dun-produit-343",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification produit phytopharmaceutique par l'autorité de décision - PREVICUR ENERGY",
-  "Link": "http://www.anses.fr/fr/content/decision-modification-produit-phytopharmaceutique-par-lautorite-de-decision-previcur-energy",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Retrait produit phytopharmaceutique par l'autorité de décision - STYLLIA SC",
-  "Link": "http://www.anses.fr/fr/content/decision-retrait-produit-phytopharmaceutique-par-lautorite-de-decision-styllia-sc",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Retrait Produit MFSC par l'autorité de décision - DIGESTAT SECHE",
-  "Link": "https://www.anses.fr/fr/content/decision-retrait-produit-mfsc-par-lautorite-de-decision-digestat-seche",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification de l'autorisation avec instruction administrative d'un produit phytopharmaceutique - PADELLI",
-  "Link": "https://www.anses.fr/fr/content/decision-modification-de-lautorisation-avec-instruction-administrative-dun-produit-345",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - JUBILE",
-  "Link": "https://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-32",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification de l'autorisation avec instruction administrative d'un produit phytopharmaceutique - ZOXIS NEO",
-  "Link": "https://www.anses.fr/fr/content/decision-modification-de-lautorisation-avec-instruction-administrative-dun-produit-344",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - FLEXITY",
-  "Link": "https://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-31",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Autorisation de mise sur le marché d'un produit phytopharmaceutique de revente - BALIZOR VITAL",
-  "Link": "https://www.anses.fr/fr/content/decision-autorisation-de-mise-sur-le-marche-dun-produit-phytopharmaceutique-de-revente-25",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - DELAN WG",
-  "Link": "https://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-30",
-  "Retrieved (UTC)": "2026-08-06 15:22 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-06 04:03 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Illness",
-  "Source": "Food Safety News",
-  "Title": "Italian child dies after decade-long E. coli battle",
-  "Link": "https://www.foodsafetynews.com/2026/08/italian-child-dies-after-decade-long-e-coli-battle",
-  "Retrieved (UTC)": "2026-08-06 06:39 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-07T04:05:38Z",

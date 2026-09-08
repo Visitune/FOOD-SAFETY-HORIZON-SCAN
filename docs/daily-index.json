@@ -56,6 +56,18 @@
         "Europe": 1
       },
       "generated": "2026-09-01T15:16:37Z"
+    },
+    {
+      "date": "2026-07-22",
+      "url": "daily/2026-07-22.html",
+      "total": 7,
+      "tier1": 5,
+      "outbreak": 2,
+      "by_region": {
+        "Europe": 5,
+        "North America": 2
+      },
+      "generated": "2026-09-08T14:51:48Z"
     }
   ]
 }

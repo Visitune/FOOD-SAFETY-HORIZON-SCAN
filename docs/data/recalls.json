@@ -5456,6 +5456,22 @@
   "Notes": "leclerc fontenay tresigny en charcuterie trad [url-gate 2026-07-22: API fixed https://rappel.conso.gouv.fr/fiche-rappe... -> https://rappel.conso.gouv.fr/fiche-rappe...] [gemini-check 2026-07-22: fix; corrections: Company→TRESIGNY DISTRIBUTION LECLERC, Product→JAMBON CUIT SUP AVEC SON OS AC, PATE DE ; placeholder_company_filled_from_page | fix; company mismatch | Company was empty in the row but identified on the page; ]"
  },
  {
+  "Date": "2026-07-22",
+  "Source": "CDC",
+  "Company": "Salmonella Outbreak Linked to Shell Eggs | Salmonella ...",
+  "Brand": "Salmonella Outbreak Linked to Shell Eggs | Salmonella ...",
+  "Product": "5 days ago · On July 22, 2026, Midwest Poultry Services, L.P",
+  "Pathogen": "Salmonella",
+  "Reason": "Salmonella — outbreak",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 1,
+  "URL": "https://www.cdc.gov/salmonella/outbreaks/shell-eggs-07-26/index.html",
+  "Notes": "REJECTED: http_error | 5 days ago · On July 22, 2026, Midwest Poultry Services, L.P. recalled more than 1.5 million dozen shell eggs due to possible Salmonellacontamination. This outbreak investigation was closed on September 3, 2026. What you should do Always follow the four steps to food safety to prevent getting sick f  [via DDGS gap-finder, deterministic extract]"
+ },
+ {
   "Date": "2026-07-21",
   "Source": "RappelConso (FR)",
   "Company": "LIDL",
@@ -24974,5 +24990,21 @@
   "Outbreak": 0,
   "URL": "https://alerts.food.gov.uk/article/6846/Macroom-Buffalo-Cheese-Products-recalls-Macroom-Buffalo-Cheese-Mozzarella-and-Macroom-Buffalo-Cheese-Bocconcini-because-of-contamination-with-Listeria-monocytogenes",
   "Notes": "REJECTED: http_error | 6 days ago · Macroom Buffalo Cheese Products recalls Macroom Buffalo Cheese Mozzarella and Macroom Buffalo Cheese Bocconcini because of contamination with Listeria ...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
+ },
+ {
+  "Date": "",
+  "Source": "FSA",
+  "Company": "Sainsbury's",
+  "Brand": "Sainsbury's",
+  "Product": "Inspired to Cook by Sainsbury's Pitted ...",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "United Kingdom",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://alerts.food.gov.uk/news-alerts/alert/FSA-PRIN-43-2026",
+  "Notes": "REJECTED: http_error | 4 days ago · Food Alert, 4 September 202600:00 Sainsbury's is recalling Inspired to Cook by Sainsbury's Pitted Black Olives because Listeria monocytogenes has been found in the product.  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date]"
  }
 ]

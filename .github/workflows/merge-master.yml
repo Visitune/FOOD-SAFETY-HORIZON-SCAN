@@ -1,4 +1,4 @@
-name: FSIS Merge Master (hourly)
+name: FSIS Merge Master (every 12h)
 
 # ==========================================================================
 # Runs every hour at :05 minutes past — merges the Pending sheet into the
@@ -13,8 +13,11 @@ name: FSIS Merge Master (hourly)
 on:
   workflow_dispatch:
   schedule:
-    # Hourly at :05, year-round (Pending janitor pass + json remirror).
-    - cron: "5 * * * *"
+    # Every 12h at :05, year-round (Pending janitor pass + json remirror).
+    # Reduced from hourly 2026-09-10: each push here triggers a full Vercel
+    # deployment, and hourly cadence combined with news-feed.yml was
+    # exhausting the Vercel project's deployment resources.
+    - cron: "5 */12 * * *"
 
 permissions:
   contents: write

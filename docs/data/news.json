@@ -1,5 +1,155 @@
 [
  {
+  "Published (UTC)": "2026-09-10 04:06 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "CDC reporting almost 20,000 confirmed patients in Cyclospora outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/09/cdc-reporting-almost-20-000-confirmed-patients-in-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - NOCORON",
+  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-modification-des-informations-declarees-dans-une-demande-en-60",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Extension d'usages majeurs et mineurs d'un produit phytopharmaceutique - BACIX",
+  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-extension-dusages-majeurs-et-mineurs-dun-produit-29",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'une matière fertilisante ou d'un support de culture (Produit simple) - FIELD UP",
+  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-59",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'une matière fertilisante ou d'un support de culture (Produit simple) - NUELLO UP",
+  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-58",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit générique d'un produit phytopharmaceutique - NOCORON",
+  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-dun-produit-generique-dun-94",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - NOCORON",
+  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-modification-des-informations-declarees-dans-une-demande-en-59",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - NOVALL GOLD",
+  "Link": "https://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-51",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Décision: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - NOCORON",
+  "Link": "https://www.anses.fr/fr/content/decision-modification-des-informations-declarees-dans-une-demande-en-cours-devaluation-62",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Décision: Autorisation de mise sur le marché par reconnaissance mutuelle d'une matière fertilisante ou d'un support de culture (Produit simple) - FIELD UP",
+  "Link": "https://www.anses.fr/fr/content/decision-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-dune-matiere-52",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Décision: Ajout d'une nouvelle dénomination commerciale au produit phytopharmaceutique - EMDEE",
+  "Link": "https://www.anses.fr/fr/content/decision-ajout-dune-nouvelle-denomination-commerciale-au-produit-phytopharmaceutique-88",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 04:03 UTC",
+  "Pathogen": "Aflatoxin",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "EU notes improvement in U.S. aflatoxin situation",
+  "Link": "https://www.foodsafetynews.com/2026/09/eu-notes-improvement-in-u-s-aflatoxin-situation",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-10 02:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "New Salmonella outbreak traced to Evergreen Sprouts",
+  "Link": "https://www.foodsafetynews.com/2026/09/new-salmonella-outbreak-traced-to-evergreen-sprouts",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-10 01:31 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Prime Line Guanciale Recalled For Possible Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/prime-line-guanciale-recalled-for-possible-listeria",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-10 01:17 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Fi Dog Supplements Recalled For Possible Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/fi-dog-supplements-recalled-for-possible-salmonella",
+  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-09 16:44 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5208,66 +5358,6 @@
   "Link": "https://www.bakeryandsnacks.com/Article/2026/08/11/lotus-bakeries-500m-biscoff-expansion-explained",
   "Retrieved (UTC)": "2026-08-12 08:24 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-11 04:05 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Some states say Cyclospora outbreak is slowing",
-  "Link": "https://www.foodsafetynews.com/2026/08/states-say-cyclospora-outbreak-is-slowing",
-  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-11 04:03 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: A White House adviser says the Cyclospora outbreak is manufactured hysteria. Taco Bell’s parent company is on his list of culprits.",
-  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-a-white-house-adviser-says-the-cyclospora-outbreak-is-manufactured-hysteria-taco-bells-parent-company-is-on-his-list-of-culprits",
-  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-11 04:01 UTC",
-  "Pathogen": "Norovirus",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Hong Kong outbreak analysis reveals growing role of norovirus",
-  "Link": "https://www.foodsafetynews.com/2026/08/hong-kong-outbreak-analysis-reveals-growing-role-of-norovirus",
-  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-11 03:55 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Why China should matter to every alt protein company",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/11/why-china-should-matter-to-every-alt-protein-company",
-  "Retrieved (UTC)": "2026-08-11 04:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-11 01:50 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "All Supermarket Jalapeno Product Recalls For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/all-supermarket-jalapeno-product-recalls-for-salmonella",
-  "Retrieved (UTC)": "2026-08-11 02:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-11 00:00 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Taylor Farms recalls 20 products containing jalapeños linked to outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/08/taylor-farms-recalls-20-products-containing-jalapenos-linked-to-outbreak",
-  "Retrieved (UTC)": "2026-08-11 02:19 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-11T00:41:34Z",

@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-09-11 02:11 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Peanuts recalled because of Salmonella contamination",
+  "Link": "https://www.foodsafetynews.com/2026/09/peanuts-recalled-because-of-salmonella-contamination",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-11 00:50 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "PK Roasted Lemon N’ Chilli Peanuts Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/pk-roasted-lemon-n-chilli-peanuts-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-10 20:45 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Food inflation may look tame, but rising CPG input costs suggest otherwise",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/10/cpg-input-costs-rise-in-august",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 16:04 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Twinings and Ovaltine expected to impact profit for Associated British Foods",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/10/hot-summer-hits-twinings-sales",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 15:45 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "EFSA approves sweetener aspartame-acesulfame salt",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/10/efsa-approves-sweetener-salt-of-aspartame-acesulfame",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-10 15:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Cadbury x Oreo: Do collaborations and health claims still drive growth?",
+  "Link": "https://www.confectionerynews.com/Article/2026/09/10/cadbury-launches-oreo-packed-delights-bar-but-health-claims-raise-questions",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-10 13:43 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -497,6 +557,16 @@
   "Title": "Manquement à l'information tarifaire pour l'établissement B&M de Bessoncourt",
   "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/manquement-linformation-tarifaire-pour-letablissement-bm-de-bessoncourt",
   "Retrieved (UTC)": "2026-09-09 12:55 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-09 10:13 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Amende de 8 700 € pour manquement à l'information tarifaire pour l'établissement B&M de Bessoncourt",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-8-700-eur-pour-manquement-linformation-tarifaire-pour-letablissement-bm-de-bessoncourt",
+  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
   "Category": "Regulatory"
  },
  {
@@ -5290,46 +5360,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-08-12 03:20 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Taylor Farms Cyclospora Lettuce Went to Restaurants and Walmart",
-  "Link": "https://foodpoisoningbulletin.com/2026/taylor-farms-cyclospora-lettuce-went-to-restaurants-and-walmart",
-  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-12 03:10 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Cyclospora Outbreak Keeps Growing, Says the CDC",
-  "Link": "https://foodpoisoningbulletin.com/2026/cyclospora-outbreak-keeps-growing-says-the-cdc",
-  "Retrieved (UTC)": "2026-08-12 04:54 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-11 15:22 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Mondelēz targets festive growth with Christmas confectionery range",
-  "Link": "https://www.confectionerynews.com/Article/2026/08/11/mondelez-targets-growth-with-cadbury-toblerone-and-oreo-christmas-range",
-  "Retrieved (UTC)": "2026-08-11 17:05 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-11 14:26 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "FAO Reviews Food Safety Risks, Control Challenges of Toxigenic Clostridia",
-  "Link": "https://www.food-safety.com/articles/11716-fao-reviews-food-safety-risks-control-challenges-of-toxigenic-clostridia",
-  "Retrieved (UTC)": "2026-08-11 17:05 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-08-12T23:00:41Z",
   "Pathogen": "",
   "Event": "Recall",
@@ -5627,6 +5657,56 @@
   "Title": "Asian countries rehearse food incident response",
   "Link": "https://www.foodsafetynews.com/2026/09/asian-countries-rehearse-food-incident-response/",
   "Retrieved (UTC)": "2026-09-04T18:02:49Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-10T03:59:56Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: Want to Put Us Out of Business? Come Help Us Try.",
+  "Link": "https://www.foodsafetynews.com/2026/09/pu-2/",
+  "Retrieved (UTC)": "2026-09-10T18:02:39Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-10T02:34:20Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Pork cracklings products recalled because of production in Colombia",
+  "Link": "https://www.foodsafetynews.com/2026/09/pork-cracklings-products-recalled-because-of-production-in-colombia/",
+  "Retrieved (UTC)": "2026-09-10T18:02:39Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-09T04:04:23Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Singapore expands role of WHO collaborating center",
+  "Link": "https://www.foodsafetynews.com/2026/09/singapore-expands-role-of-who-collaborating-center/",
+  "Retrieved (UTC)": "2026-09-10T18:02:39Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-09T04:02:36Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA steps enforcement on imported food including dried peppers, seafood",
+  "Link": "https://www.foodsafetynews.com/2026/09/fda-steps-enforcement-on-imported-food-including-dried-peppers-seafood/",
+  "Retrieved (UTC)": "2026-09-10T18:02:39Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-08T04:02:04Z",
+  "Pathogen": "Cereulide (B. cereus toxin)",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "EU opens comments on cereulide limit proposals",
+  "Link": "https://www.foodsafetynews.com/2026/09/eu-opens-comments-on-cereulide-limit-proposals/",
+  "Retrieved (UTC)": "2026-09-10T18:02:39Z",
   "Category": ""
  }
 ]

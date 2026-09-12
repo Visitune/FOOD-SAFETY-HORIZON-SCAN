@@ -32,6 +32,22 @@
   "Notes": "ferme des aubriais [gemini-check 2026-09-10: fix; corrections: Company→LA FERME DES AUBRIAIS; fix; company mismatch | Company name corrected from 'Pas Concerné' to 'LA FERME DES AUBRIAIS' based on page content.]"
  },
  {
+  "Date": "2026-09-10",
+  "Source": "CFIA",
+  "Company": "PK brand Roasted Lemon N’ Chilli Peanuts",
+  "Brand": "PK brand Roasted Lemon N’ Chilli Peanuts",
+  "Product": "due to ...",
+  "Pathogen": "Salmonella",
+  "Reason": "Salmonella",
+  "Class": "Recall",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/pk-brand-roasted-lemon-n-chilli-peanuts-recalled-due-salmonella",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | 1 day ago · The food recall warning issued on 2026-09-10 has been updated to correctly identify the code. The correction is marked by an asterisk (*). The affected product is being recalled from the marketplace due to possible Salmonella contamination.  [via DDGS gap-finder, deterministic extract]"
+ },
+ {
   "Date": "2026-09-09",
   "Source": "RappelConso (FR)",
   "Company": "Le Petit Fume Dromois",
@@ -206,6 +222,22 @@
   "Outbreak": 0,
   "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23463/interne",
   "Notes": "leclerc [gemini-check 2026-09-10: fix; corrections: Company→ETABLISSEMENTS PUIGRENIER PUIGRENIER, Brand→Filière Alliance Locale - Nos Éleveurs C, Product→Viande hachée de race Charolaise façon b, Pathogen→Escherichia coli STEC, Tier→1; fix; company mismatch | Company in row is the brand, not the recalling firm; product has minor trailing character; patho] [enrich-gate 2026-09-10: pending_enrichment → pending (Claude verified)]"
+ },
+ {
+  "Date": "2026-09-06",
+  "Source": "USDA FSIS",
+  "Company": "Prime Line Distributors, Inc. and Ferrarini USA, Inc.",
+  "Brand": "Prime Line Distributors, Inc., Ferrarini USA, Inc., DOK GUANCIALE",
+  "Product": "Imported ready-to-eat (RTE) pork guanciale (dry-cured pork jowl)",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Possible Listeria monocytogenes contamination",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fsis.usda.gov/recalls-alerts/prime-line-distributors-inc-and-ferrarini-usa-inc-recall-imported-ready-eat-pork",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | Approximately 1,513 pounds. Lot: 263311US, Best if Use By Date: 05.16.27. Establishment number “IT 1937 L CE”. Distributed to food service and retail in FL, CA, ID, IL, MI, NJ, NY, TX.  [via Gemini gap-finder + Google Search]"
  },
  {
   "Date": "2026-09-04",
@@ -462,6 +494,22 @@
   "Outbreak": 0,
   "URL": "https://alerts.food.gov.uk/article/6857/Sainsburys-recalls-Inspired-to-Cook-by-Sainsburys-Pitted-Black-Olives-because-of-contamination-with-Listeria-monocytogenes",
   "Notes": "REJECTED: http_error | 2 days ago · Sainsbury's recalls Inspired to Cook by Sainsbury's Pitted Black Olives because of contamination with Listeria monocytogenes. Food Alert , 4 September 2026 00: ...  [via DDGS gap-finder, deterministic extract]"
+ },
+ {
+  "Date": "2026-09-04",
+  "Source": "Ministère de l'Agriculture",
+  "Company": "Not explicitly named",
+  "Brand": "Grand Frais, various other distributors",
+  "Product": "Graines de courge (raw pumpkin seeds), also mixtures containing contaminated pumpkin seeds",
+  "Pathogen": "Salmonella",
+  "Reason": "Cas groupés de Salmonella Enteritidis",
+  "Class": "Retrait-rappel",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 1,
+  "URL": "https://agriculture.gouv.fr/cas-groupes-de-salmonellose-retrait-rappel-de-graines-de-courge",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | 81 cases, 6 hospitalizations. Strains isolated between May 3 and August 12, 2026. Distributed mainly in Grand Frais network, other stores also concerned.  [via Gemini gap-finder + Google Search] [gemini-enrich 2026-09-12: Brand 'Various'→'Grand Frais, various other distributors']"
  },
  {
   "Date": "2026-09-03",

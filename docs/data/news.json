@@ -1,5 +1,85 @@
 [
  {
+  "Published (UTC)": "2026-09-12 01:22 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Vermont farm recalls eggs because of link to Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/09/vermont-farm-recalls-eggs-because-of-link-to-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-12 01:07 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "California issues pubic warning about Happy Hens eggs because of link to Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/09/california-issues-pubic-warning-about-happy-hens-eggs-because-of-link-to-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-12 00:44 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Iceberg Lettuce Cyclospora Outbreak Ends With 12,883 Sick",
+  "Link": "https://foodpoisoningbulletin.com/2026/iceberg-lettuce-cyclospora-outbreak-ends-with-12883-sick",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-12 00:18 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Evergreen Fresh Broccoli Sprouts Salmonella Outbreak Sickens 22",
+  "Link": "https://foodpoisoningbulletin.com/2026/evergreen-fresh-broccoli-sprouts-salmonella-outbreak-sickens-22",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-11 23:41 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Evergreen Fresh Broccoli Sprouts Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/evergreen-fresh-broccoli-sprouts-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-11 22:36 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "CDC says Cyclospora outbreak linked to iceberg lettuce is over",
+  "Link": "https://www.foodsafetynews.com/2026/09/cdc-says-cyclospora-outbreak-linked-to-iceberg-lettuce-is-over",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-11 21:55 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Idaho company recalls sprouts linked to Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/09/idaho-company-recalls-sprouts-linked-to-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-11 16:34 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "Cyclospora Outbreak Linked to Taylor Farms Lettuce Ends with Nearly 13,000 Illnesses, Two Deaths",
+  "Link": "https://www.food-safety.com/articles/11818-cyclospora-outbreak-linked-to-taylor-farms-lettuce-ends-with-nearly-13-000-illnesses-two-deaths",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-11 15:56 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -107,6 +187,16 @@
   "Title": "New Protein Watch: Dairy-free ice cream, China plans and EU ‘meaty’ ban",
   "Link": "https://www.foodnavigator.com/Article/2026/09/11/new-protein-watch-dairy-free-ice-cream-china-plans-and-eu-meaty-ban",
   "Retrieved (UTC)": "2026-09-11 15:59 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-11 06:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Unilever veteran joins Kraft Heinz as CFO",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/09/11/lucy-hovey-appointed-as-cfo-at-kraft-heinz",
+  "Retrieved (UTC)": "2026-09-12 03:28 UTC",
   "Category": "Regulatory"
  },
  {
@@ -5287,56 +5377,6 @@
   "Title": "Gay Lea Foods invests $200m to boost cottage cheese production amid Canadian shortage",
   "Link": "https://www.dairyreporter.com/Article/2026/08/13/gay-lea-foods-invests-200m-to-boost-cottage-cheese-production-amid-canadian-shortage",
   "Retrieved (UTC)": "2026-08-13 15:05 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-13 01:38 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Vitasia Asian Wok Spice Mix Recalled For Possible Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/vitasia-asian-wok-spice-mix-recalled-for-possible-salmonella",
-  "Retrieved (UTC)": "2026-08-13 02:35 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-13 01:06 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Whole Foods Recalls 43 Products For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/whole-foods-recalls-43-products-for-salmonella",
-  "Retrieved (UTC)": "2026-08-13 02:35 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-13 00:38 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "More Cyclospora infections confirmed",
-  "Link": "https://www.foodsafetynews.com/2026/08/more-cyclospora-infections-confirmed",
-  "Retrieved (UTC)": "2026-08-13 02:35 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-12 23:23 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Whole Foods recalls dozens of jalapeño products because of link to Salmonella outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/08/whole-foods-recalls-dozens-of-jalapeno-products-because-of-link-to-salmonella-outbreak",
-  "Retrieved (UTC)": "2026-08-12 23:51 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-12 16:36 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "PPWR implementation timeline: What manufacturers need to know",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/12/ppwr-timeline",
-  "Retrieved (UTC)": "2026-08-12 17:04 UTC",
   "Category": "Regulatory"
  },
  {

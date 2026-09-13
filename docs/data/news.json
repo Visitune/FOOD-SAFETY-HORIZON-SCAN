@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-09-13 01:05 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Sauce company refuses to comply with cease and desist order issued because of botulism risk",
+  "Link": "https://www.foodsafetynews.com/2026/09/sauce-company-refuses-to-comply-with-cease-and-desist-order-issued-because-of-botulism-risk",
+  "Retrieved (UTC)": "2026-09-13 03:34 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-12 01:22 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -5240,96 +5250,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-08-13 22:37 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Woof Complete Canine Chicken Recipe Recalled For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/woof-complete-canine-chicken-recipe-recalled-for-salmonella",
-  "Retrieved (UTC)": "2026-08-13 22:52 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-13 19:31 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "Repeated European Salmonella Outbreaks Traced to Polish Egg Firm",
-  "Link": "https://www.food-safety.com/articles/11730-repeated-european-salmonella-outbreaks-traced-to-polish-egg-firm",
-  "Retrieved (UTC)": "2026-08-13 21:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-13 17:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Issues Emergency Use Authorization for Drug to Treat New World Screwworm in Dogs and Puppies",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-treat-new-world-screwworm-dogs-and-puppies",
-  "Retrieved (UTC)": "2026-08-13 19:13 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-13 15:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Global Top 100 confectionery companies announced",
-  "Link": "https://www.confectionerynews.com/Article/2026/08/13/global-top-100-candy-companies-2026-announced",
-  "Retrieved (UTC)": "2026-08-13 17:04 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-13 15:19 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Beyond Nutri-Score: Europe’s other front-of-pack labelling schemes",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/13/europes-front-of-pack-labelling-schemes-explained",
-  "Retrieved (UTC)": "2026-08-13 17:04 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-13T04:03:37Z",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Ill food handler caused outbreak despite following protocols",
-  "Link": "https://www.foodsafetynews.com/2026/08/ill-food-handler-caused-outbreak-despite-following-protocols/",
-  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-13T04:01:30Z",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Austrian outbreaks stable but more people sick",
-  "Link": "https://www.foodsafetynews.com/2026/08/austrian-outbreaks-stable-but-more-people-sick/",
-  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-13T04:01:27Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA warns against more products with toxic yellow oleander",
-  "Link": "https://www.foodsafetynews.com/2026/08/fda-warns-against-more-products-with-toxic-yellow-oleander/",
-  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-13T04:00:54Z",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "FDA tracking 17 active outbreaks",
-  "Link": "https://www.foodsafetynews.com/2026/08/fda-tracking-17-active-outbreaks/",
-  "Retrieved (UTC)": "2026-08-13T10:58:27Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-14T02:57:22Z",
   "Pathogen": "",
   "Event": "Outbreak",
@@ -5627,6 +5547,16 @@
   "Title": "EU opens comments on cereulide limit proposals",
   "Link": "https://www.foodsafetynews.com/2026/09/eu-opens-comments-on-cereulide-limit-proposals/",
   "Retrieved (UTC)": "2026-09-10T18:02:39Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-11T04:02:30Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Sprout seed supplier recalled product amid outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/09/sprout-seed-supplier-recalled-product-amid-outbreak/",
+  "Retrieved (UTC)": "2026-09-12T17:42:48Z",
   "Category": ""
  }
 ]

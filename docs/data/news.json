@@ -5010,96 +5010,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-08-15 03:30 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Lactation granola recalled because of Salmonella",
-  "Link": "https://www.foodsafetynews.com/2026/08/lactation-granola-recalled-because-of-salmonella",
-  "Retrieved (UTC)": "2026-08-15 03:49 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-15 02:51 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "FDA begins inspection of Taylor Farms lettuce operation in Mexico",
-  "Link": "https://www.foodsafetynews.com/2026/08/fda-begins-inspection-of-taylor-farms-lettuce-operation-in-mexico",
-  "Retrieved (UTC)": "2026-08-15 02:59 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-15 01:38 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Wok spice mix recalled after testing shows Salmonella",
-  "Link": "https://www.foodsafetynews.com/2026/08/wok-spice-mix-recalled-after-testing-shows-salmonella",
-  "Retrieved (UTC)": "2026-08-15 01:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-15 01:27 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Dog food recalled because of illnesses",
-  "Link": "https://www.foodsafetynews.com/2026/08/dog-food-recalled-because-of-illnesses",
-  "Retrieved (UTC)": "2026-08-15 01:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-15 01:12 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Walmart Marketside tomato soup mix recalled because of Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/08/walmart-marketside-tomato-soup-mix-recalled-because-of-listeria",
-  "Retrieved (UTC)": "2026-08-15 01:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-15 01:02 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Texas company recalls jalapeño products because of Salmonella outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/08/texas-company-recalls-jalapeno-products-because-of-salmonella-outbreak",
-  "Retrieved (UTC)": "2026-08-15 01:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-14 16:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Ferrero Group to buy better-for-you US breakfast company Purely Elizabeth",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/14/ferrero-group-to-buy-better-for-you-us-breakfast-company-purely-elizabeth",
-  "Retrieved (UTC)": "2026-08-14 18:01 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-14 15:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Can PFAS be kept out of food?",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/14/pfas-how-to-keep-them-out-of-food",
-  "Retrieved (UTC)": "2026-08-14 16:01 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-14T04:01:08Z",
-  "Pathogen": "",
-  "Event": "Research",
-  "Source": "Food Safety News",
-  "Title": "Report assesses food controls in Norway and Iceland",
-  "Link": "https://www.foodsafetynews.com/2026/08/report-assesses-food-controls-in-norway-and-iceland/",
-  "Retrieved (UTC)": "2026-08-14T10:55:23Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-17T04:05:48Z",
   "Pathogen": "",
   "Event": "Research",
@@ -5387,6 +5297,16 @@
   "Title": "Sprout seed supplier recalled product amid outbreak",
   "Link": "https://www.foodsafetynews.com/2026/09/sprout-seed-supplier-recalled-product-amid-outbreak/",
   "Retrieved (UTC)": "2026-09-12T17:42:48Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-13T12:00:17Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "The Sunday Edition: Antibiotics",
+  "Link": "https://www.foodsafetynews.com/2026/09/the-sunday-edition-antibiotics/",
+  "Retrieved (UTC)": "2026-09-13T17:54:27Z",
   "Category": ""
  }
 ]

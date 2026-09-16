@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-09-16 03:35 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Olymel Chicken Breast Strips Recalled in Canada For Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/olymel-chicken-breast-strips-recalled-in-canada-for-listeria",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-16 03:12 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Leaping Bear Eggs Salmonella Outbreak Sickens 14 in Vermont",
+  "Link": "https://foodpoisoningbulletin.com/2026/leaping-bear-eggs-salmonella-outbreak-sickens-14-in-vermont",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-16 02:45 UTC",
+  "Pathogen": "Norovirus",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Frozen raspberries recalled because of norovirus; illnesses reported",
+  "Link": "https://www.foodsafetynews.com/2026/09/frozen-raspberries-recalled-because-of-norovirus-illnesses-reported",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-16 01:10 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Indonesia formalises halal rules for GM food imports",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/16/indonesia-formalises-halal-rules-for-gm-food-imports",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-16 01:09 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Carlsberg Malaysia makes revenue revival with Somersby, Sapporo boosts",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/16/carlsberg-malaysia-makes-revenue-revival-with-somersby-sapporo-boosts",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-16 01:08 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "From trend-chasing to execution: 5 lessons for the food industry",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/16/5-lessons-for-the-food-industry",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-15 15:18 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -100,6 +160,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-09-15 09:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Shows Potential of Thymol for Controlling Salmonella Biofilms on Food-Contact Surfaces",
+  "Link": "https://www.food-safety.com/articles/11824-study-shows-potential-of-thymol-for-controlling-salmonella-biofilms-on-food-contact-surfaces",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-15 08:17 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -128,6 +198,16 @@
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10293",
   "Retrieved (UTC)": "2026-09-15 16:25 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-15 06:30 UTC",
+  "Pathogen": "Campylobacter",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Food Safety Five Ep. 37: Sanitizer Spray Efficacy, ROI of WGS, Emulsifier Health Effects, and More",
+  "Link": "https://www.food-safety.com/articles/11820-food-safety-five-ep-37-sanitizer-spray-efficacy-roi-of-wgs-emulsifier-health-effects-and-more",
+  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-15 02:39 UTC",
@@ -5308,86 +5388,6 @@
   "Link": "https://www.foodsafetynews.com/2026/08/initial-source-unknown-in-dutch-hepatitis-a-outbreak",
   "Retrieved (UTC)": "2026-08-17 04:52 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-17 02:43 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "聚焦中国：可口可乐本土化战略、蛋白质创新与可持续发展推进",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/VKWODNU42VHWDJWKUAW5KGZJQU",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:40 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "China Focus: Coca-Cola’s localisation strategy, protein innovation and sustainability push",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/china-focus-coca-colas-localisation-strategy-protein-innovation-and-sustainability-push",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:37 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "China puts alternative proteins at heart of future food strategy",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/china-puts-alternative-proteins-at-heart-of-future-food-strategy",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:35 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Coca-Cola doubles down on localisation in China as sales grow",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/coca-cola-doubles-down-on-localisation-in-china-as-sales-grow",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:28 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "聚焦财务：朝日、联合利华与雀巢等公司动态",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/R7A3TQ5O7RACTITT6DLOV27Z6E",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:24 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "聚焦中东：Agthia 推出 Fuell 饮料、美伊战争与阿联酋 Nutri-Mark",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/L6L3SZ6FBNFTBLKOJHGJA2Q7JA",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:18 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "科学短报：远东食品科技、智能标签与健康老龄化",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/OO7JR3AQMJGGBGZBNNMFNPJAIM",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-17 02:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "更健康的选择：卡乐比格兰诺拉麦片、百事可乐营养科学与无咖啡因茶",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/17/XO3IPCBEHREOVACOF4IUWOCT7Y",
-  "Retrieved (UTC)": "2026-08-17 03:07 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-08-17T04:05:48Z",

@@ -1,5 +1,21 @@
 [
  {
+  "Date": "2026-09-15",
+  "Source": "CFIA",
+  "Company": "New Alasko L.P.",
+  "Brand": "Alasko",
+  "Product": "Frozen Whole Raspberries, 1 kg and 5 kg",
+  "Pathogen": "Norovirus",
+  "Reason": "Potential Norovirus contamination",
+  "Class": "Recall",
+  "Country": "Canada",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 1,
+  "URL": "https://recalls-rappels.canada.ca/en/alert-recall/alasko-brand-frozen-whole-raspberries-recalled-due-norovirus",
+  "Notes": "Several people reportedly affected.  [via Gemini gap-finder + Google Search] [gap-gate 2026-09-17: pending_gap → pending_gap_v1] [gemini-check 2026-09-17: fix; corrections: Company→New Alasko L.P.; fix; company mismatch | Company name on row differs slightly from recalling firm on page.] [gap-gate 2026-09-17: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
   "Date": "2026-09-12",
   "Source": "RappelConso (FR)",
   "Company": "MONOPRIX HOLDING MONOPRIX",
@@ -110,6 +126,22 @@
   "Outbreak": 0,
   "URL": "https://recalls-rappels.canada.ca/en/alert-recall/pk-brand-roasted-lemon-n-chilli-peanuts-recalled-due-salmonella",
   "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | 1 day ago · The food recall warning issued on 2026-09-10 has been updated to correctly identify the code. The correction is marked by an asterisk (*). The affected product is being recalled from the marketplace due to possible Salmonella contamination.  [via DDGS gap-finder, deterministic extract]"
+ },
+ {
+  "Date": "2026-09-10",
+  "Source": "NVWA",
+  "Company": "Dorfkäserei Geifertshofen AG",
+  "Brand": "Peperkaas van Geifertshofen",
+  "Product": "Peperkaas van Geifertshofen",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "Netherlands",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.nvwa.nl/actueel/nieuws/2026/09/10/veiligheidswaarschuwing-peperkaas-van-geifertshofen",
+  "Notes": "6 days ago · Odin waarschuwt voor Peperkaas van Dorfkäserei Geifertshofen AG. Hierin is mogelijk de bacterie Listeria aanwezig. Listeria kan gevaarlijk zijn voor de gezondheid, vooral voor zwangere vrouwen, jonge kinderen, ouderen en mensen met een verzwakt...  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date] [gap-gate 2026-09-17: pending_gap → pending_gap_v1] [gemini-check 2026-09-17: pass; pass] [gap-gate 2026-09-17: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
  },
  {
   "Date": "2026-09-09",

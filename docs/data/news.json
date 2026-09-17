@@ -130,6 +130,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-09-16 09:00 UTC",
+  "Pathogen": "Campylobacter",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Explores qPCR Campylobacter Monitoring in Fecal, Air Samples on Poultry Farms",
+  "Link": "https://www.food-safety.com/articles/11825-study-explores-qpcr-campylobacter-monitoring-in-fecal-air-samples-on-poultry-farms",
+  "Retrieved (UTC)": "2026-09-17 03:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-16 08:10 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5378,66 +5388,6 @@
   "Link": "https://www.foodsafetynews.com/2026/08/proposals-put-forward-to-boost-croatian-surveillance",
   "Retrieved (UTC)": "2026-08-18 04:43 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-18 03:38 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Beyond calories: Why food brands must rethink ‘eating well’ for kids",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/18/why-food-brands-must-rethink-eating-well-for-kids",
-  "Retrieved (UTC)": "2026-08-18 04:43 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-18 02:24 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Lacnola Lactation Granola Recalled For Possible Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/lacnola-lactation-granola-recalled-for-possible-salmonella",
-  "Retrieved (UTC)": "2026-08-18 03:03 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-18 00:29 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Ramona Family Market Salmonella Outbreak Grows To 21 Sick",
-  "Link": "https://foodpoisoningbulletin.com/2026/ramona-family-market-salmonella-outbreak-grows-to-21-sick",
-  "Retrieved (UTC)": "2026-08-18 01:43 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-17T04:05:48Z",
-  "Pathogen": "",
-  "Event": "Research",
-  "Source": "Food Safety News",
-  "Title": "EU countries test safety of plant-based products",
-  "Link": "https://www.foodsafetynews.com/2026/08/eu-countries-test-safety-of-plant-based-products/",
-  "Retrieved (UTC)": "2026-08-17T10:27:58Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-17T04:05:30Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA warns California farm after inspectors find untreated manure on growing oranges",
-  "Link": "https://www.foodsafetynews.com/2026/08/fda-warns-california-farm-after-inspectors-find-untreated-manure-on-growing-oranges/",
-  "Retrieved (UTC)": "2026-08-17T10:27:58Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-17T04:01:59Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA steps up enforcement on imported seafood, candy, canned foods",
-  "Link": "https://www.foodsafetynews.com/2026/08/fda-steps-up-enforcement-on-imported-seafood-candy-canned-foods/",
-  "Retrieved (UTC)": "2026-08-17T10:27:58Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-08-19T01:06:41Z",

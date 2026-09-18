@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-09-18 01:13 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Pasta sold at Walmart stores nationwide recalled because of Listeria",
+  "Link": "https://www.foodsafetynews.com/2026/09/pasta-sold-at-walmart-stores-nationwide-recalled-because-of-listeria",
+  "Retrieved (UTC)": "2026-09-18 03:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-17 23:54 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Fresh & Local and Fresh Bites Sandwiches Recalled For Possible Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/fresh-local-and-fresh-bites-sandwiches-recalled-for-possible-listeria",
+  "Retrieved (UTC)": "2026-09-18 03:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-17 18:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Gene Therapy for Pediatric Patients with Sanfilippo Syndrome Type A",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-pediatric-patients-sanfilippo-syndrome-type",
+  "Retrieved (UTC)": "2026-09-18 03:33 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-17 16:04 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5308,76 +5338,6 @@
   "Link": "https://www.foodsafetynews.com/2026/08/uk-reports-salmonella-outbreak-with-200-sick-and-one-dead",
   "Retrieved (UTC)": "2026-08-19 04:44 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 03:19 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "CDC reports more than 1,800 additional Cyclospora patients in past week",
-  "Link": "https://www.foodsafetynews.com/2026/08/cdc-reports-more-than-1-800-additional-cyclospora-patients-in-past-week",
-  "Retrieved (UTC)": "2026-08-19 04:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 01:51 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "NatureBest Recalls Jalapeño Products For Possible Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/naturebest-recalls-jalapeno-products-for-possible-salmonella",
-  "Retrieved (UTC)": "2026-08-19 03:05 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 01:15 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Jalapeno dressing recalled because of potential Salmonella contamination",
-  "Link": "https://www.foodsafetynews.com/2026/08/jalapeno-dressing-recalled-because-of-potential-salmonella-contamination",
-  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 01:11 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Cyclospora Outbreak Sickens  27,557 People in 47 States",
-  "Link": "https://foodpoisoningbulletin.com/2026/cyclospora-outbreak-sickens-27557-people-in-47-states",
-  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 00:40 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Jalapenos recalled from Costco stores because of Salmonella",
-  "Link": "https://www.foodsafetynews.com/2026/08/jalapenos-recalled-from-costco-stores-because-of-salmonella",
-  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 00:37 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Dairyland Produce Jalapeños Recalled For Possible Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/dairyland-produce-jalapenos-recalled-for-possible-salmonella",
-  "Retrieved (UTC)": "2026-08-19 01:45 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-18 16:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The three forces rewriting the food industry playbook",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/18/the-trends-redefining-food-industry-growth",
-  "Retrieved (UTC)": "2026-08-18 17:42 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-08-19T01:06:41Z",

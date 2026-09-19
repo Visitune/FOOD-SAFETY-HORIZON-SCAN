@@ -2400,6 +2400,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-09-07 08:54 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "68th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/68th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-09-19 15:29 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-07 01:13 UTC",
   "Pathogen": "Listeria monocytogenes",
   "Event": "Recall",
@@ -5118,176 +5128,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/08/20/glp-1-conversation-in-europe-grows",
   "Retrieved (UTC)": "2026-08-20 16:42 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 13:30 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "Salmonella Outbreak Linked to Jalapeños Now Includes 431 People in 32 States",
-  "Link": "https://www.food-safety.com/articles/11748-salmonella-outbreak-linked-to-jalapenos-now-includes-431-people-in-32-states",
-  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-20 13:28 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Target’s tariff refund reaches nearly $1 billion",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/target-stock-rises-on-tariff-refund-and-q2-growth",
-  "Retrieved (UTC)": "2026-08-20 14:43 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 13:23 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Feds threaten prosecution over undisclosed digital surveillance pricing",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/ftc-warns-businesses-on-surveillance-pricing",
-  "Retrieved (UTC)": "2026-08-20 14:43 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 13:11 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Barilla Group: How the world’s biggest pasta company survived a century",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/barilla-group-strengths-and-weaknesses-in-the-pasta-market",
-  "Retrieved (UTC)": "2026-08-20 14:43 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 12:24 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Actualisation rupture  MAGNESIO CALCIQUE SOLUTION INJECTABLE",
-  "Link": "https://www.anses.fr/fr/content/actualisation-rupture-magnesio-calcique-solution-injectable",
-  "Retrieved (UTC)": "2026-08-20 13:03 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 12:22 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Actualisation rupture BIOVEINE CALCIUM G.M.C.",
-  "Link": "https://www.anses.fr/fr/content/actualisation-rupture-bioveine-calcium-gmc",
-  "Retrieved (UTC)": "2026-08-20 13:03 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 12:21 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Actualisation rupture BIOVEINE GLUCONATE DE CALCIUM",
-  "Link": "https://www.anses.fr/fr/content/actualisation-rupture-bioveine-gluconate-de-calcium",
-  "Retrieved (UTC)": "2026-08-20 13:03 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 12:19 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Actualisation rupture THERACALCIUM SOLUTION INJECTABLE",
-  "Link": "https://www.anses.fr/fr/content/actualisation-rupture-theracalcium-solution-injectable",
-  "Retrieved (UTC)": "2026-08-20 13:03 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 11:26 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Confectionery fraud surges as manufacturers struggle to stay ahead",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/from-cocoa-to-pistachios-confectionery-fraud-surges-as-manufacturers-fight-to-keep-up",
-  "Retrieved (UTC)": "2026-08-20 11:34 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 09:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance choline hydrogen phosphonate",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10288",
-  "Retrieved (UTC)": "2026-08-20 09:42 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 09:32 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Technicien de laboratoire en parasitologie (H/F)",
-  "Link": "https://www.anses.fr/fr/content/technicien-de-laboratoire-en-parasitologie-hf",
-  "Retrieved (UTC)": "2026-08-20 09:42 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 08:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Danone granted greenlight for £860M Huel acquisition",
-  "Link": "https://www.foodmanufacture.co.uk/Article/2026/08/20/danone-granted-greenlight-for-860-million-huel-acquisition",
-  "Retrieved (UTC)": "2026-08-20 08:49 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 08:23 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "PepsiCo bets on healthier versions of legacy brands",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/pepsi-expands-lower-sugar-high-protein-and-fiber-offerings",
-  "Retrieved (UTC)": "2026-08-20 08:49 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 08:22 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Avo oil under pressure: Science and lawsuits challenge the premium halo",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/08/20/avocado-oil-in-snacks-study-and-lawsuits-allegedly-exposes-purity-problem",
-  "Retrieved (UTC)": "2026-08-21 14:43 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 07:40 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Unilever is offloading its food businesses – but keeping ice tea",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/lipton-ice-tea-to-remain-co-owned-by-unilever",
-  "Retrieved (UTC)": "2026-08-20 07:49 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 05:07 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Publisher’s Platform: The President Has Nominated Dr. Heidi Overton to Run FDA. She Would Inherit the Largest Cyclospora Outbreak Ever Recorded, and Here Is the To-Do List I Would Put on Her Desk.",
-  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-the-president-has-nominated-dr-heidi-overton-to-run-fda-she-would-inherit-the-largest-cyclospora-outbreak-ever-recorded-and-here-is-the-to-do-list-i-would-put-on-her",
-  "Retrieved (UTC)": "2026-08-20 05:37 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-20 04:01 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Eggs blamed in Chinese Salmonella outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/08/eggs-blamed-in-chinese-salmonella-outbreak",
-  "Retrieved (UTC)": "2026-08-20 04:45 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-08-20T04:03:15Z",

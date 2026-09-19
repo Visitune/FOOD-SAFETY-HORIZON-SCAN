@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-09-19 01:36 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Bettergoods Italian Lemon Alfredo Fettuccine Recalled For Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/bettergoods-italian-lemon-alfredo-fettuccine-recalled-for-listeria",
+  "Retrieved (UTC)": "2026-09-19 03:30 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-18 20:39 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "USDA-FSIS to Roll Out Listeria Environmental Sampling Program Nationwide at RTE Facilities",
+  "Link": "https://www.food-safety.com/articles/11846-usda-fsis-to-roll-out-listeria-environmental-sampling-program-nationwide-at-rte-facilities",
+  "Retrieved (UTC)": "2026-09-19 03:30 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-18 16:42 UTC",
+  "Pathogen": "Campylobacter",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Researchers Identify Molecule in Gut that Inhibits Campylobacter Growth",
+  "Link": "https://www.food-safety.com/articles/11844-researchers-identify-molecule-in-gut-that-inhibits-campylobacter-growth",
+  "Retrieved (UTC)": "2026-09-19 03:30 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-18 15:07 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5258,76 +5288,6 @@
   "Link": "https://www.foodsafetynews.com/2026/08/eggs-blamed-in-chinese-salmonella-outbreak",
   "Retrieved (UTC)": "2026-08-20 04:45 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 22:44 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Jalapeño Salmonella Outbreak Grows to 431 Sick in 32 States",
-  "Link": "https://foodpoisoningbulletin.com/2026/jalapeno-salmonella-outbreak-grows-to-431-sick-in-32-states",
-  "Retrieved (UTC)": "2026-08-19 23:29 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 22:13 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Cyclospora Outbreak Grows From 5 to 9 to 15 to 17 States",
-  "Link": "https://foodpoisoningbulletin.com/2026/cyclospora-outbreak-grows-from-5-to-9-to-15-to-17-states",
-  "Retrieved (UTC)": "2026-08-19 22:32 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-19 21:48 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "FDA considers new natural food color petitions as synthetic dye phaseout looms",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/19/fda-weighs-petitions-for-natural-food-colors",
-  "Retrieved (UTC)": "2026-08-19 22:32 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-19 21:33 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Approves First Therapy for Patients aged 8 years and older with Glycogen Storage Disease Type Ia",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-therapy-patients-aged-8-years-and-older-glycogen-storage-disease-type-ia",
-  "Retrieved (UTC)": "2026-08-19 23:29 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-19 16:48 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Authorizes First-Of-Its-Kind Robotic Blood Draw Device",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-authorizes-first-its-kind-robotic-blood-draw-device",
-  "Retrieved (UTC)": "2026-08-19 17:47 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-19T04:01:45Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "The last mile of a food safety recall: It is not complete until consumers are protected",
-  "Link": "https://www.foodsafetynews.com/2026/08/the-last-mile-of-a-food-safety-recall-it-is-not-complete-until-consumers-are-protected/",
-  "Retrieved (UTC)": "2026-08-19T10:24:03Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-08-19T03:48:38Z",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Frozen fruit bars recalled after consumers find glass pieces",
-  "Link": "https://www.foodsafetynews.com/2026/08/frozen-fruit-bars-recalled-after-consumers-find-glass-pieces/",
-  "Retrieved (UTC)": "2026-08-19T10:24:03Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-08-20T04:03:15Z",

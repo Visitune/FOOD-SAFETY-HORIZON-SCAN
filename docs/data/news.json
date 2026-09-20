@@ -5080,66 +5080,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-08-20 22:40 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Calco and Everything Sprouts E. coli & Salmonella Outbreak in MN",
-  "Link": "https://foodpoisoningbulletin.com/2026/calco-and-everything-sprouts-e-coli-salmonella-outbreak-in-mn",
-  "Retrieved (UTC)": "2026-08-20 23:32 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-20 22:23 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "The 17 State Cyclospora Outbreak Grows to 10,930 Sick",
-  "Link": "https://foodpoisoningbulletin.com/2026/the-17-state-cyclospora-outbreak-grows-to-10930-sick",
-  "Retrieved (UTC)": "2026-08-20 22:35 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-20 16:18 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Jalapeño Salmonella outbreak grows to 431 sick in 32 states; illnesses ran into August and the grower is still unnamed",
-  "Link": "https://www.foodsafetynews.com/2026/08/jalapeno-salmonella-outbreak-grows-to-431-sick-in-32-states-illnesses-ran-into-august-and-the-grower-is-still-unnamed",
-  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-20 16:15 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Hershey goes beyond confectionery with biggest ever Halloween push",
-  "Link": "https://www.confectionerynews.com/Article/2026/08/20/hershey-launches-biggest-ever-halloween-range-with-confectionery-and-snack-innovations",
-  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20 16:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Europeans finally care about GLP-1s",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/20/glp-1-conversation-in-europe-grows",
-  "Retrieved (UTC)": "2026-08-20 16:42 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-20T04:03:15Z",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Cheese and lettuce behind French Cryptosporidium outbreaks",
-  "Link": "https://www.foodsafetynews.com/2026/08/cheese-and-lettuce-behind-french-cryptosporidium-outbreaks/",
-  "Retrieved (UTC)": "2026-08-20T10:24:43Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-21T00:51:13Z",
   "Pathogen": "",
   "Event": "Recall",
@@ -5357,6 +5297,76 @@
   "Title": "The Sunday Edition: Antibiotics",
   "Link": "https://www.foodsafetynews.com/2026/09/the-sunday-edition-antibiotics/",
   "Retrieved (UTC)": "2026-09-13T17:54:27Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-19T03:40:18Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: This FDA official got it right",
+  "Link": "https://www.foodsafetynews.com/2026/09/publishers-platform-this-fda-official-got-it-right/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-19T03:05:27Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Potato chips recalled because of  undeclared soy",
+  "Link": "https://www.foodsafetynews.com/2026/09/potato-chips-recalled-because-of-undeclared-soy/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-18T04:03:20Z",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Scottish testing finds Listeria and allergen issues",
+  "Link": "https://www.foodsafetynews.com/2026/09/scottish-testing-finds-listeria-and-allergen-issues/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-18T04:01:03Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA steps up enforcement on importers because of illegal colors, pesticides and unsafe additives",
+  "Link": "https://www.foodsafetynews.com/2026/09/fda-steps-up-enforcement-on-importers-because-of-illegal-colors-pesticides-and-unsafe-additives/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-18T00:44:42Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA issues public warning about more products containing toxic yellow oleander",
+  "Link": "https://www.foodsafetynews.com/2026/09/fda-issues-public-warning-about-more-products-containing-toxic-yellow-oleander/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-17T04:04:50Z",
+  "Pathogen": "",
+  "Event": "Research",
+  "Source": "Food Safety News",
+  "Title": "FDA report on food safety in delis stresses personal hygiene",
+  "Link": "https://www.foodsafetynews.com/2026/09/fda-report-on-food-safety-in-delis-stresses-personal-hygiene/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-16T04:05:04Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Supplier in sprout outbreak recalls seed",
+  "Link": "https://www.foodsafetynews.com/2026/09/supplier-in-sprout-outbreak-recalls-seed/",
+  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
   "Category": ""
  }
 ]

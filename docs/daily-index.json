@@ -3,13 +3,14 @@
     {
       "date": "2026-09-18",
       "url": "daily/2026-09-18.html",
-      "total": 11,
+      "total": 12,
       "tier1": 11,
       "outbreak": 0,
       "by_region": {
-        "Europe": 11
+        "Europe": 11,
+        "North America": 1
       },
-      "generated": "2026-09-19T19:25:39Z"
+      "generated": "2026-09-20T19:29:04Z"
     },
     {
       "date": "2026-09-17",
@@ -24,15 +25,27 @@
       "generated": "2026-09-19T19:25:39Z"
     },
     {
-      "date": "2026-09-15",
-      "url": "daily/2026-09-15.html",
+      "date": "2026-09-16",
+      "url": "daily/2026-09-16.html",
       "total": 1,
       "tier1": 1,
+      "outbreak": 0,
+      "by_region": {
+        "Europe": 1
+      },
+      "generated": "2026-09-20T19:29:04Z"
+    },
+    {
+      "date": "2026-09-15",
+      "url": "daily/2026-09-15.html",
+      "total": 5,
+      "tier1": 4,
       "outbreak": 1,
       "by_region": {
-        "North America": 1
+        "North America": 1,
+        "Europe": 4
       },
-      "generated": "2026-09-17T20:10:17Z"
+      "generated": "2026-09-20T19:29:04Z"
     }
   ]
 }

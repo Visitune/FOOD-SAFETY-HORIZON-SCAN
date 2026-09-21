@@ -4910,76 +4910,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-08-22 00:20 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Sprouts outbreak grows to 55 patients in 15 states; company declines to issue recall",
-  "Link": "https://www.foodsafetynews.com/2026/08/sprouts-outbreak-grows-to-55-patients-in-15-states-company-declines-to-issue-recall",
-  "Retrieved (UTC)": "2026-08-22 01:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-21 19:32 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Physicians group sues USDA and HHS over Dietary Guidelines for Americans",
-  "Link": "https://www.foodnavigator.com/Article/2026/08/21/doctors-sue-usda-and-hhs-over-2025-dietary-guidelines-for-americans",
-  "Retrieved (UTC)": "2026-08-21 20:33 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-21 19:01 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "Alfalfa Sprouts Contaminated with Both E. coli, Salmonella Sicken 55 People in 15 States",
-  "Link": "https://www.food-safety.com/articles/11755-alfalfa-sprouts-contaminated-with-both-e-coli-salmonella-sicken-55-people-in-15-states",
-  "Retrieved (UTC)": "2026-08-21 21:31 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-21 16:40 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Complaint Filed To Stop Darwin’s Natural From Making Pet Food",
-  "Link": "https://foodpoisoningbulletin.com/2026/complaint-filed-to-stop-darwins-natural-from-making-pet-food",
-  "Retrieved (UTC)": "2026-08-21 16:42 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-21 16:36 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "FDA’s Listeria Prevention Public Meeting: Experts Debate Zero Tolerance, Emphasize Environmental Monitoring and Fundamental Controls",
-  "Link": "https://www.food-safety.com/articles/11754-fdas-listeria-prevention-public-meeting-experts-debate-zero-tolerance-emphasize-environmental-monitoring-and-fundamental-controls",
-  "Retrieved (UTC)": "2026-08-21 19:31 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-21 15:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Hershey joins confectionery megatrend with coffee crossover",
-  "Link": "https://www.confectionerynews.com/Article/2026/08/21/hershey-joins-confectionery-megatrend-with-coffee-crossover",
-  "Retrieved (UTC)": "2026-08-21 16:42 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-21T04:02:28Z",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Scientists push for toxoplasmosis recognition",
-  "Link": "https://www.foodsafetynews.com/2026/08/scientists-push-for-toxoplasmosis-recognition/",
-  "Retrieved (UTC)": "2026-08-21T10:25:09Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-08-22T00:38:48Z",
   "Pathogen": "",
   "Event": "Outbreak",
@@ -5237,6 +5167,16 @@
   "Title": "Supplier in sprout outbreak recalls seed",
   "Link": "https://www.foodsafetynews.com/2026/09/supplier-in-sprout-outbreak-recalls-seed/",
   "Retrieved (UTC)": "2026-09-19T17:44:34Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-09-20T12:00:39Z",
+  "Pathogen": "Cronobacter sakazakii",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Sunday Edition: Sodium",
+  "Link": "https://www.foodsafetynews.com/2026/09/sunday-edition-sodium-2/",
+  "Retrieved (UTC)": "2026-09-20T17:55:56Z",
   "Category": ""
  }
 ]

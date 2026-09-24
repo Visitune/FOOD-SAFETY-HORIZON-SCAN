@@ -1,5 +1,37 @@
 [
  {
+  "Date": "2026-09-22",
+  "Source": "RappelConso",
+  "Company": "BERETTA",
+  "Brand": "BERETTA",
+  "Product": "Jambon italien désossé",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Suspicion of Salmonella contamination.",
+  "Class": "Recall",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23577/Interne",
+  "Notes": "Commercialized between Sept 8 and Sept 14, 2026. Distributed nationwide.  [via Gemini gap-finder + Google Search] [gap-gate 2026-09-24: pending_gap → pending_gap_v1] [gemini-check 2026-09-24: fix; corrections: Date→2026-09-22, Company→BERETTA, Brand→BERETTA, Product→Jambon italien désossé, Pathogen→Listeria monocytogenes; placeholder_company_filled_from_page | fail; company mismatch; product mismatch; pathogen mismatch; date on page=2026-09] [gap-gate 2026-09-24: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
+  "Date": "2026-09-21",
+  "Source": "RappelConso",
+  "Company": "CARREFOUR FRANCE",
+  "Brand": "CARREFOUR EXTRA",
+  "Product": "VIANDE DE BOEUF SECHEE DANS LES ALPES ITALIENNES - 12 Tranches - 80g",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Suspicion of bacterial contamination (Listeria monocytogenes).",
+  "Class": "Recall",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23561/Interne",
+  "Notes": "GTIN 3560070621712, Lot Commencant par 240, DLC 26/11/2026. Sold in Carrefour, Carrefour Market, Carrefour Proximité.  [via Gemini gap-finder + Google Search] [gap-gate 2026-09-24: pending_gap → pending_gap_v1] [gemini-check 2026-09-24: pass; pass] [gap-gate 2026-09-24: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
   "Date": "2026-09-18",
   "Source": "FSAI (IE)",
   "Company": "Kilbride Classic Cuisine",

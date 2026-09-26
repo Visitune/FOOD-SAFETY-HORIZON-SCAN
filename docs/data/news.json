@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-09-26 03:33 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Miyoko’s Creamery Recalls Plant Butter For E. coli Contamination",
+  "Link": "https://foodpoisoningbulletin.com/2026/miyokos-creamery-recalls-plant-butter-for-e-coli-contamination",
+  "Retrieved (UTC)": "2026-09-26 03:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-26 01:49 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "New E. coli outbreak linked to raw milk cheese",
+  "Link": "https://www.foodsafetynews.com/2026/09/new-e-coli-outbreak-linked-to-raw-milk-cheese",
+  "Retrieved (UTC)": "2026-09-26 03:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-25 16:20 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5487,36 +5507,6 @@
   "Title": "Salmonella sickens 29 people in Spain",
   "Link": "https://www.foodsafetynews.com/2026/08/salmonella-sickens-29-people-in-spain",
   "Retrieved (UTC)": "2026-08-27 09:22 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-26 20:35 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Axtell Days Salmonella Outbreak Sickens Five, Two Hospitalized",
-  "Link": "https://foodpoisoningbulletin.com/2026/axtell-days-salmonella-outbreak-sickens-five-two-hospitalized",
-  "Retrieved (UTC)": "2026-08-26 23:18 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-26 20:16 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Compliments and Selection Corn Dogs Recalled For Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/compliments-and-selection-corn-dogs-recalled-for-listeria",
-  "Retrieved (UTC)": "2026-08-26 23:18 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-26 19:52 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Deadly Clover Hill Soft Cheese Listeria Outbreak Ends With 15 Sick",
-  "Link": "https://foodpoisoningbulletin.com/2026/deadly-clover-hill-soft-cheese-listeria-outbreak-ends-with-15-sick",
-  "Retrieved (UTC)": "2026-08-26 23:18 UTC",
   "Category": "Outbreak"
  },
  {

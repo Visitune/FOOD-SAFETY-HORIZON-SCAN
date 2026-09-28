@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-09-28 04:04 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Salmonella outbreak linked to Italian tomatoes again",
+  "Link": "https://www.foodsafetynews.com/2026/09/salmonella-outbreak-linked-to-italian-tomatoes-again",
+  "Retrieved (UTC)": "2026-09-28 04:04 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-28 04:02 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Salmonella found in French pumpkin seed outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/09/salmonella-found-in-french-pumpkin-seed-outbreak",
+  "Retrieved (UTC)": "2026-09-28 04:04 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-28 03:56 UTC",
+  "Pathogen": "Mycotoxin",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Climate change fuelling mycotoxin risks with ‘no known solution’",
+  "Link": "https://www.foodnavigator.com/Article/2026/09/28/climate-change-fuelling-mycotoxin-risks-with-no-known-solution",
+  "Retrieved (UTC)": "2026-09-28 04:04 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-26 03:52 UTC",
   "Pathogen": "Cyclospora",
   "Event": "News",
@@ -4957,46 +4987,6 @@
   "Title": "Mangoes sold at Walmart recalled because of Salmonella risk",
   "Link": "https://www.foodsafetynews.com/2026/08/mangoes-sold-at-walmart-recalled-because-of-salmonella-risk",
   "Retrieved (UTC)": "2026-08-31 05:18 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-29 03:10 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: Hamburger E. coli was 95 percent of my practice until federal inspection ended it. On-farm slaughter would bring it back.",
-  "Link": "https://www.foodsafetynews.com/2026/08/publishers-platform-28",
-  "Retrieved (UTC)": "2026-08-29 09:57 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-28 21:22 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Approves First Drug of Its Kind for Polycythemia Vera, a Rare Blood Disorder",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder",
-  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-28 20:46 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Three More States Added to Taylor Farms Iceberg Lettuce Cyclospora Outbreak",
-  "Link": "https://foodpoisoningbulletin.com/2026/three-more-states-added-to-taylor-farms-iceberg-lettuce-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-28 20:17 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Nara Organics Infant Formula Botulism Outbreak Ends With 4 Sick",
-  "Link": "https://foodpoisoningbulletin.com/2026/nara-organics-infant-formula-botulism-outbreak-ends-with-4-sick",
-  "Retrieved (UTC)": "2026-08-29 02:03 UTC",
   "Category": "Outbreak"
  },
  {

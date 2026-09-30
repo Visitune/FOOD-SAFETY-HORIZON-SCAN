@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-09-30 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "CDC declares end to Salmonella outbreak traced to backyard flocks",
+  "Link": "https://www.foodsafetynews.com/2026/09/cdc-declares-end-to-salmonella-outbreak-traced-to-backyard-flocks",
+  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-30 03:17 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Sierra Nevada Graziers Raw Milk Cheese Recalled For E. coli",
+  "Link": "https://foodpoisoningbulletin.com/2026/sierra-nevada-graziers-raw-milk-cheese-recalled-for-e-coli",
+  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-09-29 21:01 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
+  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-09-29 16:02 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -1177,6 +1207,16 @@
   "Title": "Rupture BUPAQ MULTIDOSE 0,3 MG/ML SOLUTION INJECTABLE POUR CHIENS ET CHATS",
   "Link": "https://www.anses.fr/fr/document/rupture-bupaq-multidose-03-mgml-solution-injectable-chiens-chats",
   "Retrieved (UTC)": "2026-09-22 16:25 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-09-22 13:44 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "EFSA",
+  "Title": "Public health advice on prevention of diarrhoeal illness with special focus on Shiga toxin - producing Escherichia coli (STEC), also called verotoxin - producing E. coli (VTEC) or enterohaemorrhagic E. coli (EHEC)",
+  "Link": "https://www.efsa.europa.eu/en/press/news/110601a",
+  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
   "Category": "Regulatory"
  },
  {
@@ -5358,26 +5398,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/08/31/japan-earthquake-2026-food-labels-relaxed-but-safety-still-paramount",
   "Retrieved (UTC)": "2026-08-31 13:29 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-08-31 04:06 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Polish analysis finds outbreaks increasing",
-  "Link": "https://www.foodsafetynews.com/2026/08/polish-analysis-finds-outbreaks-increasing",
-  "Retrieved (UTC)": "2026-08-31 05:18 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-08-31 01:54 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Mangoes sold at Walmart recalled because of Salmonella risk",
-  "Link": "https://www.foodsafetynews.com/2026/08/mangoes-sold-at-walmart-recalled-because-of-salmonella-risk",
-  "Retrieved (UTC)": "2026-08-31 05:18 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-03T04:04:10Z",

@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-10-01 04:05 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "New Listeria outbreak under investigation",
+  "Link": "https://www.foodsafetynews.com/2026/10/new-listeria-outbreak-under-investigation",
+  "Retrieved (UTC)": "2026-10-01 04:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-01 03:49 UTC",
+  "Pathogen": "Norovirus",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Summerhill Market Raspberries and Products Recalled For Norovirus",
+  "Link": "https://foodpoisoningbulletin.com/2026/summerhill-market-raspberries-and-products-recalled-for-norovirus",
+  "Retrieved (UTC)": "2026-10-01 04:33 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-09-30 15:16 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5338,56 +5358,6 @@
   "Link": "https://www.anses.fr/fr/content/composil-150-mgml-suspension-injectable-pour-bovins-et-porcins",
   "Retrieved (UTC)": "2026-09-01 04:53 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-01 04:03 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Another sprout product under recall; seed supplier refuses to issue recall",
-  "Link": "https://www.foodsafetynews.com/2026/09/another-sprout-product-under-recall-seed-supplier-refuses-to-issue-recall",
-  "Retrieved (UTC)": "2026-09-01 04:53 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-01 03:40 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Northwest Naturals Raw Pet Food Recalled For Salmonella, Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/northwest-naturals-raw-pet-food-recalled-for-salmonella-listeria",
-  "Retrieved (UTC)": "2026-09-01 04:53 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-01 03:25 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Everything Sprouts Recalls Recall to Include Robust Radish Mix",
-  "Link": "https://foodpoisoningbulletin.com/2026/everything-sprouts-recalls-recall-to-include-robust-radish-mix",
-  "Retrieved (UTC)": "2026-09-01 04:53 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-01 03:07 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Martina Mangoes Recalled For Possible Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/martina-mangoes-recalled-for-possible-salmonella",
-  "Retrieved (UTC)": "2026-09-01 04:53 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-01 02:14 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Pet food recalled because of contamination with Listeria and Salmonella",
-  "Link": "https://www.foodsafetynews.com/2026/09/pet-food-recalled-because-of-contamination-with-listeria-and-salmonella",
-  "Retrieved (UTC)": "2026-09-01 04:53 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-03T04:04:10Z",

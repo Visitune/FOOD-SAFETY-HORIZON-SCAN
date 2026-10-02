@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-10-02 03:45 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Illness",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Big Brook Farm Raw Milk May Have Listeria Contamination",
+  "Link": "https://foodpoisoningbulletin.com/2026/big-brook-farm-raw-milk-may-have-listeria-contamination",
+  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-02 03:31 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Bettergoods Lemon Alfredo Fettuccine Recall For Listeria Expanded",
+  "Link": "https://foodpoisoningbulletin.com/2026/bettergoods-lemon-alfredo-fettuccine-recall-for-listeria-expanded",
+  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-02 01:19 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "New York farm barred from selling raw milk because of positive test for Listeria",
+  "Link": "https://www.foodsafetynews.com/2026/10/new-york-farm-barred-from-selling-raw-milk-because-of-positive-test-for-listeria",
+  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-01 19:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Heart Valve Designed to Grow with Children",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
+  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-01 16:01 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5308,86 +5348,6 @@
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10258",
   "Retrieved (UTC)": "2026-09-02 09:26 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-02 04:06 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Confusion has been the constant in the Cyclospora outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/09/confusion-has-been-the-constant-in-the-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-02 04:04 UTC",
-  "Pathogen": "Campylobacter",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "New Zealand and French studies call attention to Campylobacter",
-  "Link": "https://www.foodsafetynews.com/2026/09/small-new-zealand-study-calls-attention-to-campylobacter-in-chicken",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-02 04:02 UTC",
-  "Pathogen": "Mycotoxin",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "German survey finds limited mycotoxin awareness",
-  "Link": "https://www.foodsafetynews.com/2026/09/german-survey-finds-limited-mycotoxin-awareness",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-02 02:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Start-up Spotlight: Bebop, Zenko and biobased packaging",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/02/start-up-spotlight-bebop-zenko-and-biobased-packaging",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-02 02:48 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Grass-fed dairy: Ireland eyes Asia’s premium nutrition boom",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/02/grass-fed-dairy-ireland-eyes-asias-premium-nutrition-boom",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-02 02:13 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Cheese recalled in Canada because of Listeria contamination",
-  "Link": "https://www.foodsafetynews.com/2026/09/cheese-recalled-in-canada-because-of-listeria-contamination-2",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-02 02:01 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Public health officials investigating Salmonella outbreak in Utah",
-  "Link": "https://www.foodsafetynews.com/2026/09/public-health-officials-investigating-salmonella-outbreak-in-utah",
-  "Retrieved (UTC)": "2026-09-02 04:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-01 22:26 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "FDA Sent Everything Sprouts A Warning Letter In 2025",
-  "Link": "https://foodpoisoningbulletin.com/2026/fda-sent-everything-sprouts-a-warning-letter-in-2025",
-  "Retrieved (UTC)": "2026-09-01 23:57 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-03T04:04:10Z",

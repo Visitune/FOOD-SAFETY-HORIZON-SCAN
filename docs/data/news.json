@@ -1,5 +1,85 @@
 [
  {
+  "Published (UTC)": "2026-10-03 03:11 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Sprouting seeds recalled because of potential contamination with Salmonella, E. coli",
+  "Link": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-potential-contamination-with-salmonella-e-coli",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-03 02:55 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "FDA Core Outbreak Table Has 17 Investigations; Six Have Ended",
+  "Link": "https://foodpoisoningbulletin.com/2026/fda-core-outbreak-table-has-17-investigations-six-have-ended",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-03 02:49 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Salmonella Jalapeño Outbreak Ends With 488 Sick in 34 States",
+  "Link": "https://foodpoisoningbulletin.com/2026/salmonella-jalapeno-outbreak-ends-with-488-sick-in-34-states",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-03 01:47 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Starfish Seafood Cold Smoked Trio Recalled For Possible Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/starfish-seafood-cold-smoked-trio-recalled-for-possible-listeria",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-03 01:29 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA found Cyclospora at Taylor Farms lettuce operation",
+  "Link": "https://www.foodsafetynews.com/2026/10/fda-found-cyclospora-at-taylor-farms-lettuce-operation",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-03 00:59 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Berry recall expanded for Walmart, Trader Joe's brands",
+  "Link": "https://www.foodsafetynews.com/2026/10/berry-recall-expanded-for-walmart-trader-joes-brands",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-03 00:37 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Pasta recall expanded to include all lots sold at Walmart stores",
+  "Link": "https://www.foodsafetynews.com/2026/10/pasta-recall-expanded-to-include-all-lots-sold-at-walmart-stores",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-02 19:56 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "FDA Closes Taylor Farms Lettuce Investigation, Announces Action Plan to Prevent Future Cyclospora Outbreaks",
+  "Link": "https://www.food-safety.com/articles/11889-fda-closes-taylor-farms-lettuce-investigation-announces-action-plan-to-prevent-future-cyclospora-outbreaks",
+  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-02 16:10 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -5226,156 +5306,6 @@
   "Source": "ANSES",
   "Title": "Conclusions: Retrait produit phytopharmaceutique par l'autorité de décision - SUNBRIGHT",
   "Link": "https://www.anses.fr/fr/content/conclusions-retrait-produit-phytopharmaceutique-par-lautorite-de-decision-sunbright",
-  "Retrieved (UTC)": "2026-09-03 11:04 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'un produit phytopharmaceutique - FLUGOL BLANC",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-57",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification d'un permis de commerce parallèle d'un produit phytopharmaceutique - LEGACY PRO",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-modification-dun-permis-de-commerce-parallele-dun-produit",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Changement de composition non significatif (mineur) d'un produit phytopharmaceutique - TARTAROS",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-changement-de-composition-non-significatif-mineur-dun-produit-77",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Changement de composition non significatif (mineur) d'un produit phytopharmaceutique - REVUS",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-changement-de-composition-non-significatif-mineur-dun-produit-76",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit générique d'un produit phytopharmaceutique - CTPR SC",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-dun-produit-generique-dun-93",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - PHOSTYON PRO SC",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-nouveau-permis-de-commerce-parallele-dun-produit-60",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Changement de composition non significatif (mineur) d'un produit phytopharmaceutique - LIFE SCIENTIFIC CYPRODINIL/FLUDIOXONIL",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-changement-de-composition-non-significatif-mineur-dun-produit-75",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Ajout de nouveaux emballages à un produit phytopharmaceutique - KEMIFAM FLOW",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-ajout-de-nouveaux-emballages-un-produit-phytopharmaceutique-kemifam",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit générique d'un produit phytopharmaceutique - HERBITRIN",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-dun-produit-generique-dun-92",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit générique d'un produit phytopharmaceutique - NEOLA",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-dun-produit-generique-dun-91",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 04:03 UTC",
-  "Pathogen": "Bacillus cereus",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Fatal Bacillus cereus outbreak tied to restaurant",
-  "Link": "https://www.foodsafetynews.com/2026/09/fatal-bacillus-cereus-outbreak-tied-to-restaurant",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-03 02:57 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Global Food Tech Awards APAC heat opens: Why startups should apply and how to stand out",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/03/global-food-tech-awards-apac-heat-opens",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-03 01:47 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "FDA Focuses on Seed Supplier In Everything Sprouts Outbreak",
-  "Link": "https://foodpoisoningbulletin.com/2026/fda-focuses-on-seed-supplier-in-everything-sprouts-outbreak",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-03 01:14 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Cache and Box Elder County Salmonella Outbreak in Utah; 21 Sick",
-  "Link": "https://foodpoisoningbulletin.com/2026/cache-and-box-elder-county-salmonella-outbreak-in-utah-21-sick",
-  "Retrieved (UTC)": "2026-09-03 05:38 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-03 00:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Inscrivez-vous à partir du 14 septembre au concours 2027 d’inspecteur de la DGCCRF",
-  "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/inscrivez-vous-partir-du-14-septembre-au-concours-2027-dinspecteur-de-la-dgccrf",
   "Retrieved (UTC)": "2026-09-03 11:04 UTC",
   "Category": "Regulatory"
  },

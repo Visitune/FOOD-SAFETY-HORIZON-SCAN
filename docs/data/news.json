@@ -1,5 +1,415 @@
 [
  {
+  "Published (UTC)": "2026-10-06 04:58 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Home Grown Broccoli Seeds Recalled For Possible Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/home-grown-broccoli-seeds-recalled-for-possible-salmonella",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-06 04:43 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Recall of Great Value and Trader Joe’s Frozen Berries Expanded",
+  "Link": "https://foodpoisoningbulletin.com/2026/recall-of-great-value-and-trader-joes-frozen-berries-expanded",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-06 04:05 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA announces plan to address Cyclospora on fresh produce",
+  "Link": "https://www.foodsafetynews.com/2026/10/fda-announces-plan-to-address-cyclospora-on-fresh-produce",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-06 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Tomatoes off the menu after Salmonella cases in Italy",
+  "Link": "https://www.foodsafetynews.com/2026/10/tomatoes-off-the-menu-after-salmonella-cases-in-italy",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-06 01:24 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Sprouting seeds recalled because of Salmonella risk",
+  "Link": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-salmonella-risk",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-05 17:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "The EUDR is on the horizon – could it change again?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/eudr-will-it-be-simplified-further",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 16:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Responding to climate change is no longer about rhetoric",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/industry-response-to-climate-change-no-longer-about-rhetoric",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 16:19 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "What one food system problem would you solve tomorrow?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/what-one-food-system-problem-would-you-solve-tomorrow",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 16:12 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Mars gives Skittles a crystal crunch as texture trend accelerates",
+  "Link": "https://www.confectionerynews.com/Article/2026/10/05/mars-gives-skittles-crystal-crunch-as-texture-trend-accelerates",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 14:36 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Note AST révisée relative à la mise en œuvre du plan d’action du Gouvernement visant à évaluer les risques pour la santé humaine et le milieu aquatique liés à la culture des variétés rendues tolérantes aux herbicides",
+  "Link": "https://www.anses.fr/fr/content/PPV-2025-AST-0134",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Chobani ranks higher in AI referrals than e-commerce sales: Euromonitor explains how",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/why-chobani-ranks-higher-in-ai-referrals-than-e-commerce-sales",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "California’s UPF label raises a bigger question: What is a UPF?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/what-counts-as-an-ultra-processed-food-the-debate-continues",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:25 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Outcome of the consultation with Member States, the applicant and EFSA on the pesticide risk assessment for isoxaflutole in light of confirmatory information",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10328",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:24 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of methyl salicylate [09.749] obtained from the leaves of Gaultheria procumbens L. for use in all animal species except cats (FEFANA asbl)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10358",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of cocoa absolute from the dried seeds of Theobroma cacao L. in propylene glycol for use in all animal species except cats (FEFANA asbl)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10355",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of a tincture derived from the aerial parts of Filipendula ulmaria (L.) Maxim. (meadowsweet tincture) for use in all animal species (FEFANA asbl)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10344",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety of frozen paste from blanched, whole migratory locust (Locusta migratoria) as a novel food pursuant to Regulation (EU) 2015/2283",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10317",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 13:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Seeks Public Input to Support Ibogaine Research",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-support-ibogaine-research",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 11:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Livraison : quelles sont les obligations du professionnel et les recours ?",
+  "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/livraison-quelles-sont-les-obligations-du-professionnel-et-les-recours",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:56 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Creatine moves into weight management",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/creatine-enters-weight-management-space-as-research-reveals-fat-loss-potential",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Health of ecosystems and wild species, predictions and impacts on human health, in the face of existing and emerging stressors, from a One Health approach",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/health-ecosystems-and-wild-species-predictions-and-impacts-human-health-face-1",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Technical innovation to protect ecosystems and to scale up their restoration",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/technical-innovation-protect-ecosystems-and-scale-their-restoration",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Improving understanding of the contribution of the organic farming sector to sustainability",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/improving-understanding-contribution-organic-farming-sector-sustainability",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:13 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Assessing direct and indirect drivers of biodiversity decline of invertebrates",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/assessing-direct-and-indirect-drivers-biodiversity-decline-invertebrates",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:07 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Strengthening the resilience of European farmers through improved capacity in coping with risks and crises",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/strengthening-resilience-european-farmers-through-improved-capacity-coping-risks-and",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:04 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Long-term drivers and consequences of soil degradation: learning from the past to improve future soil health",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/long-term-drivers-and-consequences-soil-degradation-learning-past-improve-future-0",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Strengthening plant health: addressing emerging plant pest risks",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/strengthening-plant-health-addressing-emerging-plant-pest-risks",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 10:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Strengthening evidence-based policies for the resilience of European agriculture and forestry and related supply chains against crises and systemic risks",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/strengthening-evidence-based-policies-resilience-european-agriculture-and-forestry",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 09:13 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "China’s alternative protein investment offers lessons for the UK",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/uk-alternative-protein-sector-needs-backing",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:50 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Improve the capacity to monitor and reduce air pollution from agriculture",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/improve-capacity-monitor-and-reduce-air-pollution-agriculture",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "The food power list: 25 people shaping what the world eats",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/05/25-leaders-defining-foods-future",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Enhancing farmer's profitability and resilience through innovations for diversified crops and value chains",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/enhancing-farmers-profitability-and-resilience-through-innovations-diversified-crops",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:24 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Increasing the resilience of agriculture in water and nutrient-scarce environments through digital innovations",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/increasing-resilience-agriculture-water-and-nutrient-scarce-environments-through-0",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:21 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Fostering common farmland birds and mammals for resilient food production systems",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/fostering-common-farmland-birds-and-mammals-resilient-food-production-systems",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:08 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Developing novel recycling technologies for complex plastic materials applying biotech solutions",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/developing-novel-recycling-technologies-complex-plastic-materials-applying-biotech",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "International dimension of the circular bio-based economy: seeking win-win opportunities",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/international-dimension-circular-bio-based-economy-seeking-win-win-opportunities",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 08:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Innovative biotechnologies to restore soil health and improve agricultural competitiveness and resilience",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/innovative-biotechnologies-restore-soil-health-and-improve-agricultural-0",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 07:59 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Advancing promising results from Pillar II collaborative research through the innovation journey",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/advancing-promising-results-pillar-ii-collaborative-research-through-innovation",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 07:56 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Valorising Horizon project results via innovation ecosystems",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/valorising-horizon-project-results-innovation-ecosystems",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 07:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Towards commercialization of food systems microbiome solutions",
+  "Link": "https://www.efsa.europa.eu/en/funding-calls/towards-commercialization-food-systems-microbiome-solutions",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-05 06:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Yeast-derived fat fools consumers in cocoa butter test",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/10/05/sun-bear-biofuture-develops-fat-derived-from-yeast-cells-which-shows-promise-as-an-alternative-to-cocoa-butter",
+  "Retrieved (UTC)": "2026-10-06 05:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-05 04:06 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -4887,16 +5297,6 @@
   "Title": "Ready-to-eat pork jowls recalled because of Listeria contamination",
   "Link": "https://www.foodsafetynews.com/2026/09/ready-to-eat-pork-jowls-recalled-because-of-listeria-contamination",
   "Retrieved (UTC)": "2026-09-07 05:56 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-06 02:04 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Foods Alive moringa powder recalled because of Salmonella contamination",
-  "Link": "https://www.foodsafetynews.com/2026/09/foods-alive-moringa-powder-recalled-because-of-salmonella-contamination",
-  "Retrieved (UTC)": "2026-09-06 04:21 UTC",
   "Category": "Outbreak"
  },
  {

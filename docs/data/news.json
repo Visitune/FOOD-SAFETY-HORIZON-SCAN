@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-10-07 04:05 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Before next season, show us what will be different",
+  "Link": "https://www.foodsafetynews.com/2026/10/before-next-season-show-us-what-will-be-different",
+  "Retrieved (UTC)": "2026-10-07 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-07 04:03 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Salmonella sickens 16 in Sweden",
+  "Link": "https://www.foodsafetynews.com/2026/10/salmonella-sickens-16-in-sweden",
+  "Retrieved (UTC)": "2026-10-07 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-06 17:44 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5518,16 +5538,6 @@
   "Link": "https://www.efsa.europa.eu/en/events/68th-plenary-meeting-faf-panel",
   "Retrieved (UTC)": "2026-09-19 15:29 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-07 01:13 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Ready-to-eat pork jowls recalled because of Listeria contamination",
-  "Link": "https://www.foodsafetynews.com/2026/09/ready-to-eat-pork-jowls-recalled-because-of-listeria-contamination",
-  "Retrieved (UTC)": "2026-09-07 05:56 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-10T03:59:56Z",

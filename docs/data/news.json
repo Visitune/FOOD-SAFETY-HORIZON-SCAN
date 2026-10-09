@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-10-09 04:05 UTC",
+  "Pathogen": "Campylobacter",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Light technique shows promise in tackling Campylobacter",
+  "Link": "https://www.foodsafetynews.com/2026/10/light-technique-shows-promise-in-tackling-campylobacter",
+  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-09 03:23 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Coco G’s Spicy Cheddar Cheese Popcorn Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/coco-gs-spicy-cheddar-cheese-popcorn-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-09 03:11 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "FDA Finds Cyclospora on Taylor Farms Iceberg Lettuce Farm",
+  "Link": "https://foodpoisoningbulletin.com/2026/fda-finds-cyclospora-on-taylor-farms-iceberg-lettuce-farm",
+  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-09 02:50 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Gardeners Basics Broccoli Seeds Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/gardeners-basics-broccoli-seeds-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-09 01:42 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Miami company recalls sprouts in Florida, New Hampshire because of E. coli contamination",
+  "Link": "https://www.foodsafetynews.com/2026/10/miami-company-recalls-sprouts-in-florida-new-hampshire-because-of-e-coli-contamination",
+  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-08 23:51 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Taylor Farms leader says his company is taking steps in wake of huge Cyclospora outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/10/taylor-farms-leader-says-his-company-is-taking-steps-in-wake-of-huge-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-08 17:52 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5728,46 +5788,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/09/09/martell-taps-asian-food-culture-to-broaden-cognac-consumption",
   "Retrieved (UTC)": "2026-09-09 07:19 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-09 04:05 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Largest Salmonella outbreak this year traced to backyard flocks",
-  "Link": "https://www.foodsafetynews.com/2026/09/largest-salmonella-outbreak-this-year-traced-to-backyard-flocks",
-  "Retrieved (UTC)": "2026-09-09 07:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-09 03:37 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Made Fresh Salads and Cream Cheese Recalled For Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/made-fresh-salads-and-cream-cheese-recalled-for-listeria",
-  "Retrieved (UTC)": "2026-09-09 07:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-09 03:19 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Foods Alive Moringa Leaf Powder Recalled For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/foods-alive-moringa-leaf-powder-recalled-for-salmonella",
-  "Retrieved (UTC)": "2026-09-09 07:19 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-08 21:29 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Dozens of varieties of deli style salads recalled because of Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/09/dozens-of-varieties-of-deli-style-salads-recalled-because-of-listeria",
-  "Retrieved (UTC)": "2026-09-08 22:32 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-10T03:59:56Z",

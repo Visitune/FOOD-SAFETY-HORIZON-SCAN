@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-10-10 02:52 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Nestlé launches its first-ever cookie Advent calendar",
+  "Link": "https://www.confectionerynews.com/Article/2026/10/10/nestle-launches-its-first-ever-cookie-advent-calendar",
+  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-09 23:51 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Pumpkin juice recalled because of botulism risk",
+  "Link": "https://www.foodsafetynews.com/2026/10/pumpkin-juice-recalled-because-of-botulism-risk",
+  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-09 22:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "More sprouting seeds linked to outbreak recalled; FDA still won't name supplier",
+  "Link": "https://www.foodsafetynews.com/2026/10/more-sprouting-seeds-linked-to-outbreak-recalled-fda-still-wont-name-supplier",
+  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-09 16:43 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "With Cyclospora Lettuce Outbreak Over, Taylor Farms Speaks Up as FDA is Questioned",
+  "Link": "https://www.food-safety.com/articles/11914-with-cyclospora-lettuce-outbreak-over-taylor-farms-speaks-up-as-fda-is-questioned",
+  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-09 16:11 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -168,6 +208,16 @@
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10162",
   "Retrieved (UTC)": "2026-10-09 18:02 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-09 09:15 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "FAO Responds to Cyclospora Outbreak With Agrifood Water Safety Resource",
+  "Link": "https://www.food-safety.com/articles/11912-fao-responds-to-cyclospora-outbreak-with-agrifood-water-safety-resource",
+  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-09 09:03 UTC",
@@ -5548,156 +5598,6 @@
   "Link": "https://www.efsa.europa.eu/en/funding-calls/towards-commercialization-food-systems-microbiome-solutions-horizon-cl6-2027-02-0",
   "Retrieved (UTC)": "2026-09-10 09:34 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:06 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "CDC reporting almost 20,000 confirmed patients in Cyclospora outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/09/cdc-reporting-almost-20-000-confirmed-patients-in-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - NOCORON",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-modification-des-informations-declarees-dans-une-demande-en-60",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Extension d'usages majeurs et mineurs d'un produit phytopharmaceutique - BACIX",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-extension-dusages-majeurs-et-mineurs-dun-produit-29",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'une matière fertilisante ou d'un support de culture (Produit simple) - FIELD UP",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-59",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'une matière fertilisante ou d'un support de culture (Produit simple) - NUELLO UP",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-58",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit générique d'un produit phytopharmaceutique - NOCORON",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-autorisation-de-mise-sur-le-marche-dun-produit-generique-dun-94",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - NOCORON",
-  "Link": "https://www.anses.fr/fr/content/conclusions-devaluation-modification-des-informations-declarees-dans-une-demande-en-59",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Transfert d'une autorisation de mise sur le marché à un autre titulaire d'un produit phytopharmaceutique - NOVALL GOLD",
-  "Link": "https://www.anses.fr/fr/content/decision-transfert-dune-autorisation-de-mise-sur-le-marche-un-autre-titulaire-dun-51",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - NOCORON",
-  "Link": "https://www.anses.fr/fr/content/decision-modification-des-informations-declarees-dans-une-demande-en-cours-devaluation-62",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Autorisation de mise sur le marché par reconnaissance mutuelle d'une matière fertilisante ou d'un support de culture (Produit simple) - FIELD UP",
-  "Link": "https://www.anses.fr/fr/content/decision-autorisation-de-mise-sur-le-marche-par-reconnaissance-mutuelle-dune-matiere-52",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Ajout d'une nouvelle dénomination commerciale au produit phytopharmaceutique - EMDEE",
-  "Link": "https://www.anses.fr/fr/content/decision-ajout-dune-nouvelle-denomination-commerciale-au-produit-phytopharmaceutique-88",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-10 04:03 UTC",
-  "Pathogen": "Aflatoxin",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "EU notes improvement in U.S. aflatoxin situation",
-  "Link": "https://www.foodsafetynews.com/2026/09/eu-notes-improvement-in-u-s-aflatoxin-situation",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-10 02:00 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "New Salmonella outbreak traced to Evergreen Sprouts",
-  "Link": "https://www.foodsafetynews.com/2026/09/new-salmonella-outbreak-traced-to-evergreen-sprouts",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-10 01:31 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Prime Line Guanciale Recalled For Possible Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/prime-line-guanciale-recalled-for-possible-listeria",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-10 01:17 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Fi Dog Supplements Recalled For Possible Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/fi-dog-supplements-recalled-for-possible-salmonella",
-  "Retrieved (UTC)": "2026-09-10 04:23 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-10T03:59:56Z",

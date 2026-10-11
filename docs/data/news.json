@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-10-11 01:51 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Oysters, clams linked to Salmonella outbreak; river closed to harvesting",
+  "Link": "https://www.foodsafetynews.com/2026/10/oysters-clams-linked-to-salmonella-outbreak-river-closed-to-harvesting",
+  "Retrieved (UTC)": "2026-10-11 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-11 01:11 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Cold smoked fish recalled because of Listeria risk",
+  "Link": "https://www.foodsafetynews.com/2026/10/cold-smoked-fish-recalled-because-of-listeria-risk",
+  "Retrieved (UTC)": "2026-10-11 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-10 02:52 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5407,66 +5427,6 @@
   "Title": "Unilever veteran joins Kraft Heinz as CFO",
   "Link": "https://www.foodmanufacture.co.uk/Article/2026/09/11/lucy-hovey-appointed-as-cfo-at-kraft-heinz",
   "Retrieved (UTC)": "2026-09-12 03:28 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-11 04:05 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "UK Salmonella outbreak appears to be easing",
-  "Link": "https://www.foodsafetynews.com/2026/09/uk-salmonella-outbreak-appears-to-be-easing",
-  "Retrieved (UTC)": "2026-09-11 15:59 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-11 04:03 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "FDA quietly closes outbreak investigation naming romaine lettuce as cause",
-  "Link": "https://www.foodsafetynews.com/2026/09/fda-outbreak-investigations-continue-4",
-  "Retrieved (UTC)": "2026-09-11 15:59 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-11 04:01 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Pesto linked to botulism cases in Poland",
-  "Link": "https://www.foodsafetynews.com/2026/09/pesto-linked-to-botulism-cases-in-poland",
-  "Retrieved (UTC)": "2026-09-11 15:59 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-11 02:11 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Peanuts recalled because of Salmonella contamination",
-  "Link": "https://www.foodsafetynews.com/2026/09/peanuts-recalled-because-of-salmonella-contamination",
-  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-11 00:50 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "PK Roasted Lemon N’ Chilli Peanuts Recalled For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/pk-roasted-lemon-n-chilli-peanuts-recalled-for-salmonella",
-  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-10 20:45 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Food inflation may look tame, but rising CPG input costs suggest otherwise",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/10/cpg-input-costs-rise-in-august",
-  "Retrieved (UTC)": "2026-09-11 03:23 UTC",
   "Category": "Regulatory"
  },
  {

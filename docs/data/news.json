@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-10-13 04:05 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "USDA to expand testing at deli counters",
+  "Link": "https://www.foodsafetynews.com/2026/10/usda-to-expand-testing-at-deli-counters",
+  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-13 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "EU-wide seasonal Salmonella outbreak strikes again",
+  "Link": "https://www.foodsafetynews.com/2026/10/eu-wide-seasonal-salmonella-outbreak-strikes-again",
+  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-13 04:01 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Mixed picture of Salmonella in UK animals and pet food",
+  "Link": "https://www.foodsafetynews.com/2026/10/mixed-picture-of-salmonella-in-uk-animals-and-pet-food",
+  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-13 03:55 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Salmonella Outbreak Linked to Shellfish From Wicomico River, VA",
+  "Link": "https://foodpoisoningbulletin.com/2026/salmonella-outbreak-linked-to-shellfish-from-wicomico-river-va",
+  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-13 01:06 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Deschutes County Oregon Salmonella Outbreak Investigated",
+  "Link": "https://foodpoisoningbulletin.com/2026/deschutes-county-oregon-salmonella-outbreak-investigated",
+  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-12 16:27 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -5677,16 +5727,6 @@
   "Title": "Deadly Listeria outbreak highlights risk from traditional foods",
   "Link": "https://www.foodsafetynews.com/2026/09/deadly-listeria-outbreak-highlights-risk-from-traditional-foods",
   "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-13 01:05 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Sauce company refuses to comply with cease and desist order issued because of botulism risk",
-  "Link": "https://www.foodsafetynews.com/2026/09/sauce-company-refuses-to-comply-with-cease-and-desist-order-issued-because-of-botulism-risk",
-  "Retrieved (UTC)": "2026-09-13 03:34 UTC",
   "Category": "Outbreak"
  },
  {

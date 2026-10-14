@@ -1,5 +1,455 @@
 [
  {
+  "Published (UTC)": "2026-10-14 15:12 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Ad hoc meeting of the EFSA Scientific Network for Risk Assessment in Plant Health (PLH Risk assessment): draft reports on X. fastidiosa for public consultation",
+  "Link": "https://www.efsa.europa.eu/en/events/ad-hoc-meeting-efsa-scientific-network-risk-assessment-plant-health-plh-risk-assessment",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:49 UTC",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Navigator",
+  "Title": "Processed food diet could worsen vaccine side effects",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/processed-food-may-worsen-vaccine-side-effects",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:18 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Analysis of toxic microalgal communities involved in ciguatera in the Canary Islands and the Mediterranean: identification of drivers and associated risk",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10313",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:18 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Analysis of toxic fish involved in ciguatera in the Canary Islands and assessment in the Mediterranean: identification of drivers and associated risk",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10312",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:18 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Ciguatoxins in imported Fish",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10315",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Epidemiology of ciguatera poisoning in the European Union",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10314",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Integrative approach to modelling of ciguatera in the Canary Islands and the Mediterranean",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10311",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "An integrated approach to characterize the human health risks of ciguatoxin in fish in Europe - EuroCigua II Final Scientific Report",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10305",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 14:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Characterization of ciguatoxins in microalgae and fish from EU risk areas: microalgae culture, LC-MS characterization, preparation of reference materials and capacity building",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10310",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 13:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Less is more for food brands trying to meet modern shoppers’ health & safety needs",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/consumers-willing-to-pay-more-for-simpler-food",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 13:13 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Why more retail doors don’t always mean more growth",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/why-more-retail-doors-dont-always-mean-more-growth",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 13:11 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "As Thanksgiving budgets tighten, brands must justify their price",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/why-brands-must-prove-value-this-thanksgiving-season",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 11:31 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Mars bets big on confectionery and snacking’s hottest trends",
+  "Link": "https://www.confectionerynews.com/Article/2026/10/14/mars-bets-big-on-confectionery-and-snackings-hottest-trends",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 10:01 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Episode 44 – Forever chemicals: what are the health risks of PFAS?",
+  "Link": "https://www.efsa.europa.eu/en/podcast/episode-44-forever-chemicals-what-are-health-risks-pfas",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 09:59 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Rapport activité 2025 - Nutrivigilance",
+  "Link": "https://www.anses.fr/fr/document/rapport-activite-2025-nutrivigilance",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 08:53 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "22nd Meeting of the Communications Experts Network (CEN)",
+  "Link": "https://www.efsa.europa.eu/en/events/22nd-meeting-communications-experts-network-cen",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 08:31 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Greece’s food export boom: A €10bn success story",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/how-greece-built-a-10bn-food-export-engine",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:59 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Can AI stop seasonal promotions wasting money?",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/10/14/how-ai-can-cut-waste-in-seasonal-marketing",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:32 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "81st plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/81st-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:31 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "80th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/80th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:31 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "79th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/79th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "78th plenary meeting of the FAF Panel - Open for observers",
+  "Link": "https://www.efsa.europa.eu/en/events/78th-plenary-meeting-faf-panel-open-observers",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:29 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "77th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/77th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:29 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "76th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/76th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "75th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/75th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "74th plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/74th-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:27 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "73rd plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/73rd-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "72nd plenary meeting of the FAF Panel",
+  "Link": "https://www.efsa.europa.eu/en/events/72nd-plenary-meeting-faf-panel",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "138th Plenary meeting of the Scientific Committee - Open to observers",
+  "Link": "https://www.efsa.europa.eu/en/events/138th-plenary-meeting-scientific-committee-open-observers",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "137th Plenary meeting of the Scientific Committee",
+  "Link": "https://www.efsa.europa.eu/en/events/137th-plenary-meeting-scientific-committee",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "136th Plenary meeting of the Scientific Committee",
+  "Link": "https://www.efsa.europa.eu/en/events/136th-plenary-meeting-scientific-committee",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "135th Plenary meeting of the Scientific Committee",
+  "Link": "https://www.efsa.europa.eu/en/events/135th-plenary-meeting-scientific-committee",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:20 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "134th Plenary meeting of the Scientific Committee",
+  "Link": "https://www.efsa.europa.eu/en/events/134th-plenary-meeting-scientific-committee",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "23rd Plenary meeting of the Panel on Food Contact Materials (FCM)",
+  "Link": "https://www.efsa.europa.eu/en/events/23rd-plenary-meeting-panel-food-contact-materials-fcm",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "22nd Plenary meeting of the Panel on Food Contact Materials (FCM)",
+  "Link": "https://www.efsa.europa.eu/en/events/22nd-plenary-meeting-panel-food-contact-materials-fcm",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:16 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "21st Plenary meeting of the Panel on Food Contact Materials (FCM)",
+  "Link": "https://www.efsa.europa.eu/en/events/21st-plenary-meeting-panel-food-contact-materials-fcm",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "20th Plenary meeting of the Panel on Food Contact Materials (FCM)",
+  "Link": "https://www.efsa.europa.eu/en/events/20th-plenary-meeting-panel-food-contact-materials-fcm",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "19th Plenary meeting of the Panel on Food Contact Materials (FCM)",
+  "Link": "https://www.efsa.europa.eu/en/events/19th-plenary-meeting-panel-food-contact-materials-fcm",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 07:04 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Chargé(e) de projet européen « coordinateur de communication » H/F",
+  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/chargee-projet-europeen-coordinateur-communication-hf",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 04:40 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "LEASA Living Alfalfa Sprouts Recalled For E. coli",
+  "Link": "https://foodpoisoningbulletin.com/2026/leasa-living-alfalfa-sprouts-recalled-for-e-coli",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-14 04:24 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Salmonella Outbreak in Monongalia County, WV",
+  "Link": "https://foodpoisoningbulletin.com/2026/salmonella-outbreak-in-monongalia-county-wv",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-14 04:19 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Nongshim taps K-pop for global Shin Ramyun growth",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/nongshim-taps-k-pop-to-grow-shin-ramyun-globally",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 04:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Trend Tracker: GLP-1, protein and flavour trends",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/trend-tracker-glp-1-protein-and-flavour-trends",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 04:05 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "FAO puts focus on Cyclospora prevention",
+  "Link": "https://www.foodsafetynews.com/2026/10/fao-puts-focus-on-cyclospora-prevention",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-14 04:01 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Middle East war on obesity: Can food and diet policies reverse the trend?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/14/middle-east-war-on-obesity-can-food-and-diet-policies-reverse-the-trend",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-13 16:10 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -90,6 +540,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-10-13 12:11 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Global milk supply forecast to rise 2.2% in 2026 despite drought and El Niño risks",
+  "Link": "https://www.dairyreporter.com/Article/2026/10/13/global-milk-supply-forecast-to-rise-22-in-2026-despite-drought-and-el-nino-risks",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-13 11:34 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -97,6 +557,16 @@
   "Title": "Publication de l'AFNOR spec One Health, un cadre opérationnel partagé pour agir ensemble au service de la santé",
   "Link": "https://www.anses.fr/fr/actualite/publication-lafnor-spec-one-health-cadre-operationnel-partage-agir-ensemble-service-sante",
   "Retrieved (UTC)": "2026-10-13 18:58 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-13 07:51 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Are snack suppliers stuck between meals?",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/10/13/gen-zs-meal-habits-challenge-bakery-and-snack-suppliers",
+  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
   "Category": "Regulatory"
  },
  {
@@ -5708,186 +6178,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/09/14/10-climate-bottlenecks-in-food-supply-chains",
   "Retrieved (UTC)": "2026-09-15 03:44 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 13:13 UTC",
-  "Pathogen": "",
-  "Event": "Recall",
-  "Source": "Food Navigator",
-  "Title": "How brands can rebuild trust after a recall",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/why-transparency-matters-after-a-food-recall",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 13:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Plant-based milk brands double down on simplified ingredient lists amid processing scrutiny",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/clean-label-demands-reshape-plant-based-milk-innovation",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 11:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Beverages dominate the fastest growing brands in US",
-  "Link": "https://www.beveragedaily.com/Article/2026/09/14/beverages-dominate-the-fastest-growing-brands-in-us",
-  "Retrieved (UTC)": "2026-09-15 16:25 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 10:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "ジャパン フォーカス：熊本県の食品表示規制猶予、キリンの脱炭素化コスト、ROKU〈六〉の夏物語",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/WAXWDOSEFJCI5CTTTX5MMMAVI4",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 10:10 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Kroger’s sales growth slows as Cyclospora, drug-price changes weigh on Q2",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/kroger-q2-e-commerce-growth-offsets-weak-store-sales",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 10:08 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Japan Focus: Kumamoto’s food label reprieve, the cost of decarbonisation for Kirin, Roku Gin’s summer story, and more",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/japan-focus-kumamotos-food-label-reprieve-the-cost-of-decarbonisation-for-kirin-roku-gins-summer-story-and-more",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 10:04 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "スタートアップ スポットライト：Bebop、Zenko、そしてバイオベースのパッケージ",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/H4XRGKZAPJHEVPKHCZU6OBPYXI",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 09:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "中東フォーカス：UAEのより健全な食料システム、OSKの発展、イランの食糧難による犠牲者",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/5WHTHFY56FCRNGMGCLC6TB3UEM",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 09:53 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "La société SAS BAAS enjointe de cesser ses pratiques commerciales trompeuses à l’égard des consommateurs",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/la-societe-sas-baas-enjointe-de-cesser-ses-pratiques-commerciales-trompeuses-legard-des",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 09:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "ANZフォーカス：プレミアム シリアル、GLP-1、世界貿易",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/UPJZ36FQMRAUZH3GQ2BWNOIMDQ",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 09:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "トレンドトラッカー：クリーンラベル、GLP-1、培養肉",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/RENHB4ZMV5CDZOOHTGENWPNTGU",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 09:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Salons des entrepreneurs : la DGCCRF sera présente à Lyon et Bordeaux",
-  "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/salons-des-entrepreneurs-la-dgccrf-sera-presente-lyon-et-bordeaux",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 08:55 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Speed obsession is killing food innovation",
-  "Link": "https://www.foodmanufacture.co.uk/Article/2026/09/14/how-food-manufacturers-can-improve-innovation-success",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 08:43 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The race to perfect gluten-free",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/inside-europes-gluten-free-boom",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 05:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Beyond innovation: Why adoption is the real challenge for Asia’s food future",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/beyond-innovation-why-adoption-is-the-real-challenge-for-asias-food-future",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 05:47 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "McVitie’s latest global brand to bet on localisation for China growth",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/mcvities-latest-global-brand-to-bet-on-localisation-for-china-growth",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-14 04:06 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "We must stick to a zero tolerance policy for listeria",
-  "Link": "https://www.foodsafetynews.com/2026/09/we-must-stick-to-a-zero-tolerance-policy-for-listeria",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-14 04:02 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Deadly Listeria outbreak highlights risk from traditional foods",
-  "Link": "https://www.foodsafetynews.com/2026/09/deadly-listeria-outbreak-highlights-risk-from-traditional-foods",
-  "Retrieved (UTC)": "2026-09-14 17:50 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-09-19T03:40:18Z",

@@ -1,9 +1,52 @@
 {
   "week_end": "2026-10-15",
-  "generated_utc": "2026-10-11T20:53:33+00:00",
-  "row_count": 0,
-  "tier1_count": 0,
+  "generated_utc": "2026-10-14T20:33:47+00:00",
+  "row_count": 2,
+  "tier1_count": 2,
   "outbreak_count": 0,
   "dissent_count": 0,
-  "rows": []
+  "rows": [
+    {
+      "Date": "2026-10-08",
+      "Source": "FSAI",
+      "Company": "Greencore",
+      "Brand": "Marks and Spencer",
+      "Product": "4 days ago · Message: Greencore is recalling the below Marks and Spencer ready-to-eat products due to the possible presence of Salmonella in pistachios",
+      "Pathogen": "Salmonella",
+      "Reason": "Salmonella",
+      "Class": "Recall",
+      "Country": "Ireland",
+      "Region": "Europe",
+      "Tier": 1,
+      "Outbreak": 0,
+      "URL": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-various-ready-to-eat-products",
+      "Notes": "4 days ago · Message: Greencore is recalling the below Marks and Spencer ready-to-eat products due to the possible presence of Salmonella in pistachios. Recall notices will be displayed at point-of-sale.  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date] [gap-gate 2026-10-14: pending_gap → pending_gap_v1] [gemini-check 2026-10-14: fix; corrections: Date→2026-10-08, Company→Greencore, Brand→Marks and Spencer, Pathogen→Salmonella; fix; company mismatch; date on page=2026-10-08 | Date and Company/Brand corrected based on page content.] [gap-gate 2026-10-14: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]",
+      "DateAdded": "2026-10-14",
+      "LastUpdated": "2026-10-14",
+      "LastChecked": "",
+      "Week_Added": "2026-10-15",
+      "Reviewed": "N"
+    },
+    {
+      "Date": "2026-09-30",
+      "Source": "NVWA",
+      "Company": "Lidl",
+      "Brand": "Deluxe",
+      "Product": "Deluxe – Eendenborstfilet",
+      "Pathogen": "Salmonella",
+      "Reason": "Salmonella",
+      "Class": "Recall",
+      "Country": "Netherlands",
+      "Region": "Europe",
+      "Tier": 1,
+      "Outbreak": 0,
+      "URL": "https://www.nvwa.nl/actueel/nieuws/2026/09/30/veiligheidswaarschuwing-deluxe-eendenborstfilet-van-lidl",
+      "Notes": "5 days ago · Lidl waarschuwt voor Deluxe – Eendenborstfilet. Er kan salmonella in zitten. Eet de eendenborstfilet niet. Zie de website van Lidl.  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date] [gap-gate 2026-10-14: pending_gap → pending_gap_v1] [gemini-check 2026-10-14: pass; pass | All verification checks passed.] [gap-gate 2026-10-14: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]",
+      "DateAdded": "2026-10-14",
+      "LastUpdated": "2026-10-14",
+      "LastChecked": "",
+      "Week_Added": "2026-10-15",
+      "Reviewed": "N"
+    }
+  ]
 }

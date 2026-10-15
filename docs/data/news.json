@@ -1,5 +1,65 @@
 [
  {
+  "Published (UTC)": "2026-10-15 00:29 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "More Information on Sierra Nevada Graziers Raw Cheese Outbreak",
+  "Link": "https://foodpoisoningbulletin.com/2026/more-information-on-sierra-nevada-graziers-raw-cheese-outbreak",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-14 23:58 UTC",
+  "Pathogen": "Bacillus cereus",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Outbreak at Walmart Distribution Center in Lebanon, Tennessee",
+  "Link": "https://foodpoisoningbulletin.com/2026/outbreak-at-walmart-distribution-center-in-lebanon-tennessee",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-14 21:54 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Guide méthodologique pour l’élaboration de l’expertise en vue de la création ou de la modification de tableaux de maladies professionnelles, ou de recommandations aux comités régionaux de reconnaissance des maladies professionnelles",
+  "Link": "https://www.anses.fr/fr/document/guide-methodologique-lelaboration-lexpertise-vue-creation-modification-tableaux-maladies",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 21:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Avis et rapport relatifs à l'expertise sur les facteurs de risques professionnels à l'origine des cancers cutanés liés aux rayons ultra-violets",
+  "Link": "https://www.anses.fr/fr/document/avis-rapport-relatifs-lexpertise-facteurs-risques-professionnels-lorigine-cancers-cutanes",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 15:50 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 15:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-14 15:12 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -147,6 +207,16 @@
   "Title": "Rapport activité 2025 - Nutrivigilance",
   "Link": "https://www.anses.fr/fr/document/rapport-activite-2025-nutrivigilance",
   "Retrieved (UTC)": "2026-10-14 16:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-14 09:42 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Cancers de la peau : mieux prendre en compte l’exposition professionnelle aux UV",
+  "Link": "https://www.anses.fr/fr/actualite/cancers-peau-mieux-prendre-compte-lexposition-professionnelle-aux-uv",
+  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
   "Category": "Regulatory"
  },
  {
@@ -6108,76 +6178,6 @@
   "Link": "https://www.food-safety.com/articles/11820-food-safety-five-ep-37-sanitizer-spray-efficacy-roi-of-wgs-emulsifier-health-effects-and-more",
   "Retrieved (UTC)": "2026-09-16 03:41 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-15 02:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Policy Picks: India energy drinks, Japan earthquake and Aussie food fraud",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/15/policy-picks-india-energy-drinks-japan-earthquake-and-aussie-food-fraud",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-15 02:36 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Australia food labelling under scrutiny as FSANZ weighs reforms",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/15/australia-food-labelling-under-scrutiny-as-fsanz-weighs-reforms",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-15 02:31 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Africa beckons: 3 key insights for food firms eyeing the next billion",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/15/africa-beckons-3-key-insights-for-food-firms-eyeing-the-next-billion",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-15 00:56 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Happy Hens Eggs Recalled in Ramona Family Market Salmonella Outbreak",
-  "Link": "https://foodpoisoningbulletin.com/2026/happy-hens-eggs-recalled-in-ramona-family-market-salmonella-outbreak",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-15 00:28 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "News",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Cease-and-Desist Order To Phire in the Hole Hot Sauce Maker",
-  "Link": "https://foodpoisoningbulletin.com/2026/cease-and-desist-order-to-phire-in-the-hole-hot-sauce-maker",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-15 00:00 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "International Sprout Holding Recalls Seeds For E. coli and Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/international-sprout-holding-recalls-seeds-for-e-coli-and-salmonella",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-14 18:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "From farm to fork: 10 climate bottlenecks threatening food supply chains",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/14/10-climate-bottlenecks-in-food-supply-chains",
-  "Retrieved (UTC)": "2026-09-15 03:44 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-09-19T03:40:18Z",

@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-10-16 02:19 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Raw milk cheese recalled after testing finds E. coli",
+  "Link": "https://www.foodsafetynews.com/2026/10/raw-milk-cheese-recalled-after-testing-finds-e-coli",
+  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-16 00:42 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "ANZ Focus: COA protein chocolate, Australia labels and Food Top 25",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/16/anz-focus-coa-protein-chocolate-australia-labels-and-food-top-25",
+  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-15 18:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Inside plant-based meat’s big manufacturing shift",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/15/inside-plant-based-meats-manufacturing-shift",
+  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-15 16:12 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -70,6 +100,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-10-15 13:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Why is Saputo saying farewell to UK dairy?",
+  "Link": "https://www.foodmanufacture.co.uk/Article/2026/10/15/why-has-saputo-exited-the-uk-dairy-market",
+  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-15 12:14 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -118,6 +158,16 @@
   "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/stagiaire-exploration-suspicions-resistance-strongles-gastro",
   "Retrieved (UTC)": "2026-10-15 16:26 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-15 09:00 UTC",
+  "Pathogen": "Bacillus cereus",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Study Reveals Bacillus cereus as Underrecognized Risk to Food Safety in Africa",
+  "Link": "https://www.food-safety.com/articles/11922-study-reveals-bacillus-cereus-as-underrecognized-risk-to-food-safety-in-africa",
+  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-15 07:46 UTC",
@@ -6238,66 +6288,6 @@
   "Link": "https://foodpoisoningbulletin.com/2026/olymel-chicken-breast-strips-recalled-in-canada-for-listeria",
   "Retrieved (UTC)": "2026-09-16 03:41 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-16 03:12 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Leaping Bear Eggs Salmonella Outbreak Sickens 14 in Vermont",
-  "Link": "https://foodpoisoningbulletin.com/2026/leaping-bear-eggs-salmonella-outbreak-sickens-14-in-vermont",
-  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-16 02:45 UTC",
-  "Pathogen": "Norovirus",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Frozen raspberries recalled because of norovirus; illnesses reported",
-  "Link": "https://www.foodsafetynews.com/2026/09/frozen-raspberries-recalled-because-of-norovirus-illnesses-reported",
-  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-16 01:10 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Indonesia formalises halal rules for GM food imports",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/16/indonesia-formalises-halal-rules-for-gm-food-imports",
-  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-16 01:09 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Carlsberg Malaysia makes revenue revival with Somersby, Sapporo boosts",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/16/carlsberg-malaysia-makes-revenue-revival-with-somersby-sapporo-boosts",
-  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-16 01:08 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "From trend-chasing to execution: 5 lessons for the food industry",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/16/5-lessons-for-the-food-industry",
-  "Retrieved (UTC)": "2026-09-16 03:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-15 17:30 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Carlsberg Britvic and Danone spearhead calls for mandatory health reporting in UK",
-  "Link": "https://www.beveragedaily.com/Article/2026/09/15/carlsberg-britvic-and-danone-spearhead-calls-for-mandatory-health-reporting-in-uk",
-  "Retrieved (UTC)": "2026-09-16 16:17 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-09-19T03:40:18Z",

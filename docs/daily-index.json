@@ -13,6 +13,17 @@
       "generated": "2026-10-15T20:15:58Z"
     },
     {
+      "date": "2026-10-13",
+      "url": "daily/2026-10-13.html",
+      "total": 1,
+      "tier1": 1,
+      "outbreak": 0,
+      "by_region": {
+        "Europe": 1
+      },
+      "generated": "2026-10-16T19:53:55Z"
+    },
+    {
       "date": "2026-10-08",
       "url": "daily/2026-10-08.html",
       "total": 1,

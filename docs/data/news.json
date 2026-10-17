@@ -130,6 +130,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-10-16 09:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Novel Bacteriophage-Based Biosensor Test Method Shows Potential for Rapid Detection of Viable Foodborne Pathogens",
+  "Link": "https://www.food-safety.com/articles/11924-novel-bacteriophage-based-biosensor-test-method-shows-potential-for-rapid-detection-of-viable-foodborne-pathogens",
+  "Retrieved (UTC)": "2026-10-17 03:18 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-16 07:43 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6606,16 +6616,6 @@
   "Source": "Food Safety News",
   "Title": "FDA report on food safety in delis stresses personal hygiene",
   "Link": "https://www.foodsafetynews.com/2026/09/fda-report-on-food-safety-in-delis-stresses-personal-hygiene/",
-  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-09-16T04:05:04Z",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Supplier in sprout outbreak recalls seed",
-  "Link": "https://www.foodsafetynews.com/2026/09/supplier-in-sprout-outbreak-recalls-seed/",
   "Retrieved (UTC)": "2026-09-19T17:44:34Z",
   "Category": ""
  },

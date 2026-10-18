@@ -6320,76 +6320,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-09-18 01:13 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Pasta sold at Walmart stores nationwide recalled because of Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/09/pasta-sold-at-walmart-stores-nationwide-recalled-because-of-listeria",
-  "Retrieved (UTC)": "2026-09-18 03:33 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-17 23:54 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Fresh & Local and Fresh Bites Sandwiches Recalled For Possible Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/fresh-local-and-fresh-bites-sandwiches-recalled-for-possible-listeria",
-  "Retrieved (UTC)": "2026-09-18 03:33 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-17 18:26 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Approves First Gene Therapy for Pediatric Patients with Sanfilippo Syndrome Type A",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-pediatric-patients-sanfilippo-syndrome-type",
-  "Retrieved (UTC)": "2026-09-18 03:33 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-17 16:04 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Ingénieur en écologie des communautés et analyse de données (H/F)",
-  "Link": "https://www.anses.fr/fr/content/ingenieur-en-ecologie-des-communautes-et-analyse-de-donnees-hf",
-  "Retrieved (UTC)": "2026-09-17 16:24 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-17 15:58 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Technicien en culture de végétaux (H/F)",
-  "Link": "https://www.anses.fr/fr/content/technicien-en-culture-de-vegetaux-hf",
-  "Retrieved (UTC)": "2026-09-17 16:24 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-17 15:57 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Stagiaire « Validation d’une méthode ELISA pour la détection des entérotoxines SEA et SEB dans les matrices alimentaires et étude des effets de matrice sur leur production et leur stabilité, incluant de nouvelles matrices végétales » – équipe Staphylococcus, unité SBCL (H/F)",
-  "Link": "https://www.anses.fr/fr/content/stagiaire-validation-dune-methode-elisa-pour-la-detection-des-enterotoxines-sea-et-seb-dans",
-  "Retrieved (UTC)": "2026-09-17 16:24 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-17 15:27 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The race to reinvent confectionery is on",
-  "Link": "https://www.confectionerynews.com/Article/2026/09/17/the-future-of-confectionery-innovation-and-new-product-development",
-  "Retrieved (UTC)": "2026-09-17 16:24 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-09-19T03:40:18Z",
   "Pathogen": "",
   "Event": "News",
@@ -6440,16 +6370,6 @@
   "Category": ""
  },
  {
-  "Published (UTC)": "2026-09-17T04:04:50Z",
-  "Pathogen": "",
-  "Event": "Research",
-  "Source": "Food Safety News",
-  "Title": "FDA report on food safety in delis stresses personal hygiene",
-  "Link": "https://www.foodsafetynews.com/2026/09/fda-report-on-food-safety-in-delis-stresses-personal-hygiene/",
-  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
-  "Category": ""
- },
- {
   "Published (UTC)": "2026-09-20T12:00:39Z",
   "Pathogen": "Cronobacter sakazakii",
   "Event": "Outbreak",
@@ -6457,6 +6377,26 @@
   "Title": "Sunday Edition: Sodium",
   "Link": "https://www.foodsafetynews.com/2026/09/sunday-edition-sodium-2/",
   "Retrieved (UTC)": "2026-09-20T17:55:56Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-10-15T04:02:00Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "CSPI expanding staff; hiring campaign manager",
+  "Link": "https://www.foodsafetynews.com/2026/10/cspi-expanding-staff-hiring-campaign-manager/",
+  "Retrieved (UTC)": "2026-10-17T17:45:11Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-10-14T04:03:00Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "When risk management and consumer trust collide",
+  "Link": "https://www.foodsafetynews.com/2026/10/when-risk-management-and-consumer-trust-collide/",
+  "Retrieved (UTC)": "2026-10-17T17:45:11Z",
   "Category": ""
  }
 ]

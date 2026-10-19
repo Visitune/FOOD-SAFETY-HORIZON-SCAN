@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-10-19 02:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Fibre on fire: Next-gen functional yet convenient instant noodles and snacks",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/19/taking-fibre-beyond-supplements-into-instant-noodles-and-snacks",
+  "Retrieved (UTC)": "2026-10-19 03:34 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-18 22:19 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Lidl recalls gelato because of Listeria contamination",
+  "Link": "https://www.foodsafetynews.com/2026/10/lidl-recalls-gelato-because-of-listeria-contamination",
+  "Retrieved (UTC)": "2026-10-19 03:34 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-18 12:00 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",
@@ -6130,36 +6150,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-09-19 01:36 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Bettergoods Italian Lemon Alfredo Fettuccine Recalled For Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/bettergoods-italian-lemon-alfredo-fettuccine-recalled-for-listeria",
-  "Retrieved (UTC)": "2026-09-19 03:30 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-18 20:39 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Outbreak",
-  "Source": "Food Safety Magazine",
-  "Title": "USDA-FSIS to Roll Out Listeria Environmental Sampling Program Nationwide at RTE Facilities",
-  "Link": "https://www.food-safety.com/articles/11846-usda-fsis-to-roll-out-listeria-environmental-sampling-program-nationwide-at-rte-facilities",
-  "Retrieved (UTC)": "2026-09-19 03:30 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-18 16:42 UTC",
-  "Pathogen": "Campylobacter",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "Researchers Identify Molecule in Gut that Inhibits Campylobacter Growth",
-  "Link": "https://www.food-safety.com/articles/11844-researchers-identify-molecule-in-gut-that-inhibits-campylobacter-growth",
-  "Retrieved (UTC)": "2026-09-19 03:30 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-09-19T03:40:18Z",
   "Pathogen": "",
   "Event": "News",
@@ -6176,26 +6166,6 @@
   "Source": "Food Safety News",
   "Title": "Potato chips recalled because of  undeclared soy",
   "Link": "https://www.foodsafetynews.com/2026/09/potato-chips-recalled-because-of-undeclared-soy/",
-  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-09-18T04:03:20Z",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Scottish testing finds Listeria and allergen issues",
-  "Link": "https://www.foodsafetynews.com/2026/09/scottish-testing-finds-listeria-and-allergen-issues/",
-  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-09-18T04:01:03Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA steps up enforcement on importers because of illegal colors, pesticides and unsafe additives",
-  "Link": "https://www.foodsafetynews.com/2026/09/fda-steps-up-enforcement-on-importers-because-of-illegal-colors-pesticides-and-unsafe-additives/",
   "Retrieved (UTC)": "2026-09-19T17:44:34Z",
   "Category": ""
  },
@@ -6227,6 +6197,16 @@
   "Title": "When risk management and consumer trust collide",
   "Link": "https://www.foodsafetynews.com/2026/10/when-risk-management-and-consumer-trust-collide/",
   "Retrieved (UTC)": "2026-10-17T17:45:11Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-10-17T23:10:40Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "More than 1.5 million pounds of hot dogs, bacon, sausage, turkey breasts and more meat products of various brands recalled",
+  "Link": "https://www.foodsafetynews.com/2026/10/more-than-1-5-million-pounds-of-hot-dogs-bacon-sausage-turkey-breasts-and-more-meat-products-of-various-brands-recalled/",
+  "Retrieved (UTC)": "2026-10-18T17:46:35Z",
   "Category": ""
  }
 ]

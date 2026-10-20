@@ -58,12 +58,13 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "Dispatched at Athens ${HOUR}:xx — running."
-          elif [ "$HOUR" = "04" ] || [ "$HOUR" = "05" ] || [ "$HOUR" = "16" ] || [ "$HOUR" = "17" ]; then
+          elif [ "$HOUR" -ge 03 ] && [ "$HOUR" -le 10 ] || [ "$HOUR" -ge 15 ] && [ "$HOUR" -le 22 ]; then
+            # Tolérant au retard de planification GitHub (cron parfois décalé de plusieurs heures)
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "Inside RASFF window (now ${HOUR}:xx Athens)."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Outside RASFF windows (04-05 / 16-17 Athens; now ${HOUR}:xx). Skipping."
+            echo "Outside RASFF windows (03-10 / 15-22 Athens; now ${HOUR}:xx). Skipping."
           fi
 
       - name: Checkout

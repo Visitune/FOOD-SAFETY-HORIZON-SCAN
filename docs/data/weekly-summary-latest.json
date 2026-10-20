@@ -4,22 +4,22 @@
   "dashboard_url": "https://food-safety-horizon-scan.vercel.app/",
   "week_num": 42,
   "year": 2026,
-  "week_start": "2026-10-14",
-  "week_end": "2026-10-14",
-  "week_start_display": "14 Oct",
-  "week_end_display": "14 Oct 2026",
-  "generated_utc": "2026-10-16T10:43:35.557927+00:00",
+  "week_start": "2026-10-11",
+  "week_end": "2026-10-15",
+  "week_start_display": "11 Oct",
+  "week_end_display": "15 Oct 2026",
+  "generated_utc": "2026-10-20T05:34:05.942064+00:00",
   "stats": {
-    "total": 2,
-    "tier1": 2,
+    "total": 9,
+    "tier1": 8,
     "outbreaks": 0,
-    "delta": 1,
-    "delta_pct": 100
+    "delta": 7,
+    "delta_pct": 350
   },
   "leading_pathogen": {
     "name": "Listeria monocytogenes",
-    "cases": 2,
-    "pct": 100
+    "cases": 5,
+    "pct": 56
   },
   "ai_lead_paragraph": "",
   "top_threats": [
@@ -50,7 +50,49 @@
       "country": "Ireland",
       "source": "FSAI",
       "url": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-centra-inspired-by-supervalu-smoked-salm"
+    },
+    {
+      "rank": 3,
+      "date": "2026-10-13",
+      "pathogen": "Listeria monocytogenes",
+      "pathogen_raw": "Listeria monocytogenes",
+      "tier": 1,
+      "outbreak": false,
+      "company": "COOPERATIVE U ENSEIGNE",
+      "brand": "Unbranded",
+      "product": "paupiette chorizo",
+      "country": "France",
+      "source": "RappelConso (FR)",
+      "url": "https://rappel.conso.gouv.fr/fiche-rappel/23764/Interne"
+    },
+    {
+      "rank": 4,
+      "date": "2026-10-12",
+      "pathogen": "Listeria monocytogenes",
+      "pathogen_raw": "Listeria monocytogenes",
+      "tier": 1,
+      "outbreak": false,
+      "company": "The Good Fish Company",
+      "brand": "Skellig Bay Smoked Salmon Slices",
+      "product": "Skellig Bay Smoked Salmon Slices; pack size 200g",
+      "country": "Ireland",
+      "source": "FSAI (IE)",
+      "url": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-a-batch-of-smoked-slamon"
+    },
+    {
+      "rank": 5,
+      "date": "2026-10-14",
+      "pathogen": "Escherichia coli STEC",
+      "pathogen_raw": "Escherichia coli STEC",
+      "tier": 1,
+      "outbreak": false,
+      "company": "SCAMARK E.LECLERC",
+      "brand": "NOS REGIONS ONT DU TALENT",
+      "product": "tome des bauges aop (vendu au rayon coupe)",
+      "country": "France",
+      "source": "RappelConso (FR)",
+      "url": "https://rappel.conso.gouv.fr/fiche-rappel/23788/Interne"
     }
   ],
-  "country_count": 2
+  "country_count": 4
 }

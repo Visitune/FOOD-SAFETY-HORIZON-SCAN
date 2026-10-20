@@ -1,16 +1,16 @@
 {
-  "generated": "2026-08-23T09:27:08+03:00",
-  "date": "2026-08-23",
+  "generated": "2026-10-20T08:34:02+03:00",
+  "date": "2026-10-20",
   "mode": "live",
-  "in_progress_week": "W35",
+  "in_progress_week": "W43",
   "counts": {
-    "recalls_rows": 1494,
+    "recalls_rows": 1632,
     "duplicate_url_groups": 0,
     "shared_nonspecific_urls": 0,
-    "blank_field_rows": 8,
+    "blank_field_rows": 14,
     "mistiered_rows": 0,
-    "date_issue_rows": 5,
-    "lane_a_changes": 0,
+    "date_issue_rows": 10,
+    "lane_a_changes": 2,
     "proposed_deletions": 20,
     "ledger_resolved": 0,
     "asset_issues": 0
@@ -19,6 +19,19 @@
     "duplicate_urls": [],
     "shared_nonspecific_urls": [],
     "blank_fields": [
+      {
+        "Date": "2026-09-02",
+        "Source": "RappelConso (FR)",
+        "Company": "Vertufood",
+        "Product": "mélange sportif - vertufood",
+        "Pathogen": "",
+        "Country": "France",
+        "Tier": 3,
+        "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23402/interne",
+        "missing": [
+          "Pathogen"
+        ]
+      },
       {
         "Date": "2026-08-06",
         "Source": "RappelConso (FR)",
@@ -122,6 +135,71 @@
         "missing": [
           "Date"
         ]
+      },
+      {
+        "Date": "",
+        "Source": "FSAI",
+        "Company": "Macroom Buffalo Cheese Mozzarella ...",
+        "Product": "5 days ago · Recall of a specific batch of Macroom Buffalo Cheese Mozzarella, Bocconcini and Burrata products due to the presence of Listeria monocytogenes",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "Ireland",
+        "Tier": 1,
+        "URL": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-specific-batch-of-various-macroom-buffal",
+        "missing": [
+          "Date"
+        ]
+      },
+      {
+        "Date": "",
+        "Source": "NVWA",
+        "Company": "Veiligheidswaarschuwing Biologische brie van Jumbo | NVWA",
+        "Product": "6 days ago · Jumbo Supermarkten waarschuwt voor Jumbo Biologische brie",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "Netherlands",
+        "Tier": 1,
+        "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-jumbo",
+        "missing": [
+          "Date"
+        ]
+      },
+      {
+        "Date": "",
+        "Source": "NVWA",
+        "Company": "Veiligheidswaarschuwing Biologische brie van PLUS | NVWA",
+        "Product": "6 days ago · PLUS waarschuwt voor Biologisch PLUS Brie",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "Netherlands",
+        "Tier": 1,
+        "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-plus",
+        "missing": [
+          "Date"
+        ]
+      },
+      {
+        "Date": "",
+        "Source": "FSA",
+        "Company": "Macroom Buffalo Cheese Products",
+        "Product": "Macroom ... - Alerts",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "United Kingdom",
+        "Tier": 1,
+        "URL": "https://alerts.food.gov.uk/article/6846/Macroom-Buffalo-Cheese-Products-recalls-Macroom-Buffalo-Cheese-Mozzarella-and-Macroom-Buffalo-Cheese-Bocconcini-because-of-contamination-with-Listeria-monocytogenes",
+        "missing": [
+          "Date"
+        ]
+      },
+      {
+        "Date": "",
+        "Source": "FSA",
+        "Company": "Sainsbury's",
+        "Product": "Inspired to Cook by Sainsbury's Pitted ...",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "United Kingdom",
+        "Tier": 1,
+        "URL": "https://alerts.food.gov.uk/news-alerts/alert/FSA-PRIN-43-2026",
+        "missing": [
+          "Date"
+        ]
       }
     ],
     "mistiered": [],
@@ -180,14 +258,88 @@
         "Tier": 1,
         "URL": "https://www.cdc.gov/media/releases/2026/outbreak-linked-to-alfalfa-sprouts-people-sickened-with-e-coli-and-salmonella.html",
         "issue": "blank Date"
+      },
+      {
+        "Date": "",
+        "Source": "FSAI",
+        "Company": "Macroom Buffalo Cheese Mozzarella ...",
+        "Product": "5 days ago · Recall of a specific batch of Macroom Buffalo Cheese Mozzarella, Bocconcini and Burrata products due to the presence of Listeria monocytogenes",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "Ireland",
+        "Tier": 1,
+        "URL": "https://www.fsai.ie/news-and-alerts/food-alerts/recall-of-specific-batch-of-various-macroom-buffal",
+        "issue": "blank Date"
+      },
+      {
+        "Date": "",
+        "Source": "NVWA",
+        "Company": "Veiligheidswaarschuwing Biologische brie van Jumbo | NVWA",
+        "Product": "6 days ago · Jumbo Supermarkten waarschuwt voor Jumbo Biologische brie",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "Netherlands",
+        "Tier": 1,
+        "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-jumbo",
+        "issue": "blank Date"
+      },
+      {
+        "Date": "",
+        "Source": "NVWA",
+        "Company": "Veiligheidswaarschuwing Biologische brie van PLUS | NVWA",
+        "Product": "6 days ago · PLUS waarschuwt voor Biologisch PLUS Brie",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "Netherlands",
+        "Tier": 1,
+        "URL": "https://www.nvwa.nl/actueel/nieuws/2026/08/27/veiligheidswaarschuwing-biologische-brie-van-plus",
+        "issue": "blank Date"
+      },
+      {
+        "Date": "",
+        "Source": "FSA",
+        "Company": "Macroom Buffalo Cheese Products",
+        "Product": "Macroom ... - Alerts",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "United Kingdom",
+        "Tier": 1,
+        "URL": "https://alerts.food.gov.uk/article/6846/Macroom-Buffalo-Cheese-Products-recalls-Macroom-Buffalo-Cheese-Mozzarella-and-Macroom-Buffalo-Cheese-Bocconcini-because-of-contamination-with-Listeria-monocytogenes",
+        "issue": "blank Date"
+      },
+      {
+        "Date": "",
+        "Source": "FSA",
+        "Company": "Sainsbury's",
+        "Product": "Inspired to Cook by Sainsbury's Pitted ...",
+        "Pathogen": "Listeria monocytogenes",
+        "Country": "United Kingdom",
+        "Tier": 1,
+        "URL": "https://alerts.food.gov.uk/news-alerts/alert/FSA-PRIN-43-2026",
+        "issue": "blank Date"
       }
     ]
   },
   "asset_issues": [],
   "lane_a": {
     "applied": true,
-    "summary": {},
-    "changes": []
+    "summary": {
+      "recover_date": 2
+    },
+    "changes": [
+      {
+        "row": 1628,
+        "field": "Date",
+        "fix": "recover_date",
+        "before": "",
+        "after": "2026-08-27",
+        "reason": "recovered Date from URL slug"
+      },
+      {
+        "row": 1629,
+        "field": "Date",
+        "fix": "recover_date",
+        "before": "",
+        "after": "2026-08-27",
+        "reason": "recovered Date from URL slug"
+      }
+    ]
   },
   "lane_b": {
     "proposed_deletions": [
@@ -591,13 +743,21 @@
   },
   "stale_reports": {
     "weeklies": [
-      "W34"
+      "W30",
+      "W40",
+      "W41",
+      "W42"
     ],
-    "monthlies": []
+    "monthlies": [
+      "M07"
+    ]
   },
   "rebuilt": {
     "weeklies": [
-      "W34"
+      "W30",
+      "W40",
+      "W41",
+      "W42"
     ],
     "monthlies": []
   }

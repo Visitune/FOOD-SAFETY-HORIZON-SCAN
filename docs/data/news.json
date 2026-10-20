@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-10-20 01:46 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Lidl Gelatelli Coffee & Vanilla Gelato Recalled For Possible Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/lidl-gelatelli-coffee-vanilla-gelato-recalled-for-possible-listeria",
+  "Retrieved (UTC)": "2026-10-20 03:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-20 01:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "More than 2 dozen patients identified in outbreak linked to oysters",
+  "Link": "https://www.foodsafetynews.com/2026/10/more-than-2-dozen-patients-identified-in-outbreak-linked-to-oysters",
+  "Retrieved (UTC)": "2026-10-20 03:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-20 00:47 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Frozen smoked salmon recalled after positive test for Listeria",
+  "Link": "https://www.foodsafetynews.com/2026/10/frozen-smoked-salmon-recalled-after-positive-test-for-listeria",
+  "Retrieved (UTC)": "2026-10-20 03:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-19 16:19 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6308,16 +6338,6 @@
   "Link": "https://www.foodsafetynews.com/2026/09/finland-assesses-safety-of-plant-based-dairy-products",
   "Retrieved (UTC)": "2026-09-21 17:56 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-19T03:40:18Z",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: This FDA official got it right",
-  "Link": "https://www.foodsafetynews.com/2026/09/publishers-platform-this-fda-official-got-it-right/",
-  "Retrieved (UTC)": "2026-09-19T17:44:34Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-09-20T12:00:39Z",

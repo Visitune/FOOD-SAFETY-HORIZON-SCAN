@@ -99,7 +99,7 @@ jobs:
           pip install --quiet --upgrade pip
           pip install --quiet --extra-index-url https://download.pytorch.org/whl/cpu \
             torch
-          pip install --quiet transformers datasets scikit-learn accelerate \
+          pip install --quiet "transformers>=4.46,<5" datasets scikit-learn accelerate \
             sentencepiece protobuf
 
       - name: Write training script

@@ -48,11 +48,13 @@ jobs:
         run: |
           H=$(TZ=Europe/Athens date +%H)
           echo "Athens hour = $H"
-          if [ "$H" != "09" ]; then
-            echo "Not 09:00 Athens — skipping this DST-offset run."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          else
+          # Tolérant au retard de planification GitHub : fenêtre 07h-12h Athènes
+          if [ "$H" -ge 7 ] && [ "$H" -le 12 ]; then
+            echo "Inside review window (Athens ${H}:xx) — running."
             echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Outside review window (07-12 Athens; now ${H}:xx) — skipping."
+            echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Set up Python 3.11

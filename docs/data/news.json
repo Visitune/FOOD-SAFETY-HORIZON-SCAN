@@ -1,5 +1,275 @@
 [
  {
+  "Published (UTC)": "2026-10-20 15:57 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves Once-Weekly Generic Hormone Therapy Patch for Women",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 15:33 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "M&M’s at 85: How Mars built a billion-dollar confectionery icon",
+  "Link": "https://www.confectionerynews.com/Article/2026/10/20/mars-celebrates-85-years-of-mms-innovation-growth-and-global-success",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 15:10 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "La société BUT INTERNATIONAL enjointe de cesser les manquements relatifs au défaut d’information précontractuelle dans le cadre de la location longue durée",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/la-societe-international-enjointe-de-cesser-les-manquements-relatifs-au-defaut-dinformation",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 13:11 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "4 strategies Coca-Cola, PepsiCo, Spindrift and others are using to revitalize RTD tea",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/rtd-tea-4-strategies-to-revitalize-category-growth",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 13:03 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 13:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Mars’ analysis reveals where retail emissions add up",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/mars-identifies-key-drivers-of-retail-greenhouse-gas-emissions",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Appethyl® as part of a meal prolongs satiety/reduces cravings after that meal: Evaluation of a health claim pursuant to Article 13(5) of Regulation (EC) No 1924/2006",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10384",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Assessment of the feed additive consisting of l-threonine produced with Escherichia coli CGMCC 7.58 for all animal species for the renewal of its authorisation (Langfang Meihua Bio-Technology Co., Ltd.)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10349",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety and efficacy of a feed additive consisting of Bacillus paralicheniformis DSM 33806 and Heyndrickxia faecalis DSM 32016 (TechnoCare® 50) for piglets (suckling and weaned), pigs for fattening, sows (in order to have benefit in piglets) and all minor…",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10343",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:36 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Survey parameters to support detection survey design for Bactrocera zonata",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10406",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:34 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Survey parameters to support detection survey design for Anastrepha ludens",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10408",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:34 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Survey parameters to support detection survey design for Bactrocera dorsalis",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10407",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:27 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Survey parameters to support detection survey design for Rhagoletis pomonella",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10405",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 11:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Forget breakfast: The battle for the morning snack is on",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/the-rise-of-morning-snacking-what-it-means-for-food-and-beverage-brands",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Dairy’s fight for growth and shelf space",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/letter-from-the-editor-what-is-driving-dairy-innovation",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:45 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Danone’s AI commerce goal: ‘Trusted by machines and desired by humans’",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/danones-ai-commerce-strategy-building-machine-trust",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Creamers move beyond coffee with flavors, cold foams and café-inspired experiences",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/creamers-move-beyond-coffee-with-flavors-cold-foams-and-cafe-inspired-experiences",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Can plant proteins help ease the whey squeeze?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/whey-protein-shortage-drives-interest-in-plant-proteins",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "New data platform reveals opportunities for dairy milk to win back shelf space",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/milkpep-launches-milkscape-to-boost-milk-sales",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:37 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "As consumers rethink fat, whole milk gets a second look",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/why-full-fat-dairy-is-making-a-comeback",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 10:37 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Better Dairy self-affirms GRAS status for lactopontin",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/better-dairy-self-affirms-gras-status-for-lactopontin",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 07:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Chef du service développement des Ressources Humaines (H/F)",
+  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/chef-du-service-developpement-ressources-humaines-hf",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 07:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Cueillette et consommation des champignons : attention aux risques d'intoxications",
+  "Link": "https://www.anses.fr/fr/actualite/cueillette-consommation-champignons-attention-aux-risques-dintoxications",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 07:03 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Surveillance saisonnière des intoxications accidentelles par des champignons en France hexagonale et Corse - Bilan des cas enregistrés par les Centres antipoison entre le 1er juillet 2025 et le 31 décembre 2025",
+  "Link": "https://www.anses.fr/fr/document/intoxications-champignons-en-France-hexagonale-et-Corse-Bilan-2025",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 06:30 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "Food Safety Five Ep. 38: Regulatory and Research Updates on Cyclospora, Listeria, Microplastics, and More",
+  "Link": "https://www.food-safety.com/articles/11930-food-safety-five-ep-38-regulatory-and-research-updates-on-cyclospora-listeria-microplastics-and-more",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-20 05:50 UTC",
+  "Pathogen": "Mycotoxin",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Safety First: Food supply risks, mycotoxins and COVID-19 side effects",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/safety-first-food-supply-risks-mycotoxins-and-covid-19-side-effects",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-20 05:47 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "APAC cocoa trends: ‘Worst is past’, but risks remain",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/20/apac-cocoa-trends-worst-is-past-but-risks-remain",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-20 01:46 UTC",
   "Pathogen": "Listeria monocytogenes",
   "Event": "Recall",
@@ -77,6 +347,16 @@
   "Title": "Is functional food killing low carb – or absorbing it?",
   "Link": "https://www.foodnavigator.com/Article/2026/10/19/low-carb-vs-functional-health-can-they-coexist",
   "Retrieved (UTC)": "2026-10-19 18:25 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-19 12:17 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Autumn flavours: How drinks brands are reimagining seasonal favourites",
+  "Link": "https://www.beveragedaily.com/Article/2026/10/19/autumn-flavours-how-drinks-brands-are-reimagining-seasonal-favourites",
+  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
   "Category": "Regulatory"
  },
  {
@@ -6407,6 +6687,26 @@
   "Title": "FDA warns importers about Salmonella, recalls and supplier verification failures",
   "Link": "https://www.foodsafetynews.com/2026/10/fda-warns-importers-about-salmonella-recalls-and-supplier-verification-failures/",
   "Retrieved (UTC)": "2026-10-19T17:55:52Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-10-20T04:05:00Z",
+  "Pathogen": "Salmonella",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "Austrian tomato warning follows Salmonella infections",
+  "Link": "https://www.foodsafetynews.com/2026/10/austrian-tomato-warning-follows-salmonella-infections/",
+  "Retrieved (UTC)": "2026-10-20T05:30:46Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-10-20T04:03:00Z",
+  "Pathogen": "Salmonella",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA steps up import enforcement because of Salmonella, pesticides, illegal colors",
+  "Link": "https://www.foodsafetynews.com/2026/10/fda-steps-up-import-enforcement-because-of-salmonella-pesticides-illegal-colors/",
+  "Retrieved (UTC)": "2026-10-20T05:30:46Z",
   "Category": ""
  }
 ]

@@ -642,10 +642,10 @@ jobs:
           # 3. Neutralize the hard CLAUDE_ENABLED guard in main() when the
           #    FSIS-LM reviewer is active (claude_client.ENABLED is permanently
           #    False in this project, so main() would abort before reviewing).
-          old_guard = ('    if not CLAUDE_ENABLED: ' + chr(10) +
+          old_guard = ('    if not CLAUDE_ENABLED:' + chr(10) +
                        '        log.error("Claude not enabled (no ANTHROPIC_API_KEY). Aborting.") ' + chr(10) +
                        '        return 2')
-          new_guard = ('    if not (CLAUDE_ENABLED or FSIS_LM_ENABLED): ' + chr(10) +
+          new_guard = ('    if not (CLAUDE_ENABLED or FSIS_LM_ENABLED):' + chr(10) +
                        '        log.error("No reviewer enabled (Claude off, FSIS-LM off). Aborting.") ' + chr(10) +
                        '        return 2')
           if old_guard in src:

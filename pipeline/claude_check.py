@@ -1329,6 +1329,23 @@ def check_row(row: Dict[str, Any]) -> Tuple[str, Dict[str, str], Optional[str]]:
     if _was_recently_verified(row):
         return "pass", {}, "recently verified — skipping"
 
+    # ── Audit 2026-10-20: RASFF auto-approve shortcut ────────────────────
+    # RASFF rows come straight from the official EU Rapid Alert System API
+    # (webgate.ec.europa.eu, POST /notification/search/consolidated/en/).
+    # The webgate notification pages block the page-fetcher, so every RASFF
+    # row ended in "fetch failed" and was parked in Pending forever — that
+    # is why RASFF data stalled at 2026-09-04 while the EC API kept
+    # publishing. The EU system already validates these notifications
+    # (they ARE the source of truth), so we auto-approve without page
+    # verification. Tier-1 pathogen scope is still enforced.
+    if "rasff" in str(row.get("Source", "")).lower():
+        final_pathogen = str(row.get("Pathogen") or "")
+        if not is_tier1_pathogen(final_pathogen):
+            return ("fail", {},
+                    f"pathogen_out_of_scope: {final_pathogen!r} | "
+                    f"rasff shortcut: out of Tier-1 scope")
+        return "pass", {}, "rasff auto-approve (official EU source, no public page to fetch)"
+
     # ── Audit 2026-05-08: deterministic clean-row shortcut ───────────────
     # Skip the API call entirely if the row is provably clean — saves
     # ~25-30% of Claude calls = ~$3-5/month. See _is_clean_row comment.

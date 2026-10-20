@@ -51,6 +51,11 @@ on:
         required: false
         default: "train-promote-classifier.yml"
 
+  schedule:
+    # Daily after the morning RASFF scrape (01:30 UTC + GitHub drift margin).
+    # 08:00 Athens summer / 07:00 winter.
+    - cron: "0 5 * * *"
+
 permissions:
   contents: write
   actions: read

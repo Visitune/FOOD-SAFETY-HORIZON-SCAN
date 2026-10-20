@@ -1,5 +1,5 @@
 {
-  "trained_at_utc": "2026-06-22T21:09:18.276630+00:00",
+  "trained_at_utc": "2026-10-20T05:56:31.264271+00:00",
   "base_model": "microsoft/MiniLM-L12-H384-uncased",
   "n_train": 866,
   "n_val": 94,
@@ -19,36 +19,36 @@
     1.0,
     1.0
   ],
-  "epochs": 8,
+  "epochs": 4,
   "lr": 2e-05,
   "batch_size": 16,
   "max_length": 128,
   "seed": 42,
-  "final_train_loss": 0.5500089992176402,
+  "final_train_loss": 0.6708179300481623,
   "eval": {
-    "eval_loss": 0.40282025933265686,
+    "eval_loss": 0.4569947123527527,
     "eval_accuracy": 0.8723404255319149,
-    "eval_f1_macro": 0.5636024513722355,
-    "eval_f1_weighted": 0.8553089443338945,
-    "eval_runtime": 2.3306,
-    "eval_samples_per_second": 40.334,
-    "eval_steps_per_second": 2.574,
-    "epoch": 8.0
+    "eval_f1_macro": 0.5678549093183239,
+    "eval_f1_weighted": 0.8519420382419863,
+    "eval_runtime": 2.3591,
+    "eval_samples_per_second": 39.845,
+    "eval_steps_per_second": 2.543,
+    "epoch": 4.0
   },
   "confusion_matrix": [
     [
-      65,
-      4,
-      0
-    ],
-    [
-      4,
-      17,
-      0
-    ],
-    [
-      1,
+      66,
       3,
+      0
+    ],
+    [
+      5,
+      16,
+      0
+    ],
+    [
+      3,
+      1,
       0
     ]
   ]

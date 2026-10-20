@@ -638,6 +638,23 @@ jobs:
                  "        result = _verify_with_claude(row, text)")
           if old not in src:
               print("::error::could not find the _verify_with_claude call site")
+
+          # 3. Neutralize the hard CLAUDE_ENABLED guard in main() when the
+          #    FSIS-LM reviewer is active (claude_client.ENABLED is permanently
+          #    False in this project, so main() would abort before reviewing).
+                       '        return 2')
+          new_guard = ('    if not (CLAUDE_ENABLED or FSIS_LM_ENABLED): ' + chr(10) +
+                       '        log.error("No reviewer enabled (Claude off, FSIS-LM off). Aborting.") ' + chr(10) +
+                       '        return 2')
+                       '        log.error("No reviewer enabled (Claude off, FSIS-LM off). Aborting.")
+                       '        return 2')
+          if old_guard in src:
+              src = src.replace(old_guard, new_guard, 1)
+              print("main() guard patched for FSIS-LM.")
+          elif "FSIS_LM_ENABLED):" in src or "CLAUDE_ENABLED or FSIS_LM_ENABLED" in src:
+              print("main() guard already patched.")
+          else:
+              print("::warning::main() guard pattern not found — reviewer may still abort.")
               sys.exit(1)
           src = src.replace(old, new, 1)
 

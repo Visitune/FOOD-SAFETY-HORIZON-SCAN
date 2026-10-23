@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-10-23 03:14 UTC",
+  "Pathogen": "Norovirus",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Bentwood Elementary School Norovirus Outbreak in Kansas",
+  "Link": "https://foodpoisoningbulletin.com/2026/bentwood-elementary-school-norovirus-outbreak-in-kansas",
+  "Retrieved (UTC)": "2026-10-23 03:41 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-22 16:58 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Launches New Program to Advance Neuroscience Medical Product Development",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-program-advance-neuroscience-medical-product-development",
+  "Retrieved (UTC)": "2026-10-23 03:41 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-22 16:21 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -18,6 +38,16 @@
   "Link": "https://www.foodnavigator.com/Article/2026/10/22/fermented-food-and-drink-europe-has-a-clear-favourite",
   "Retrieved (UTC)": "2026-10-22 16:44 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-22 15:31 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Researchers Developing Risk Assessment Model to Evaluate Food Safety Impacts of Produce Defects",
+  "Link": "https://www.food-safety.com/articles/11952-researchers-developing-risk-assessment-model-to-evaluate-food-safety-impacts-of-produce-defects",
+  "Retrieved (UTC)": "2026-10-23 03:41 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-22 14:09 UTC",

@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-10-24 00:53 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "FDA issues warning about cold smoked fish because of botulism risk; company refuses to recall product",
+  "Link": "https://www.foodsafetynews.com/2026/10/fda-issues-warning-about-cold-smoked-fish-because-of-botulism-risk-company-refuses-to-recall-product",
+  "Retrieved (UTC)": "2026-10-24 03:35 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-23 16:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "How functional became food’s future",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/23/how-functional-became-foods-future",
+  "Retrieved (UTC)": "2026-10-24 03:35 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-23 15:22 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6348,36 +6368,6 @@
   "Link": "https://foodpoisoningbulletin.com/2026/black-clams-hepatitis-a-outbreak-sickens-37-with-30-hospitalized",
   "Retrieved (UTC)": "2026-09-24 16:37 UTC",
   "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-24 03:22 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Sprouting seeds recalled because of link to outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/09/sprouting-seeds-recalled-because-of-link-to-outbreak",
-  "Retrieved (UTC)": "2026-09-24 03:30 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-24 03:03 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Berlin Seeds Alfalfa Sprouting Seeds Recalled For Pathogens",
-  "Link": "https://foodpoisoningbulletin.com/2026/berlin-seeds-alfalfa-sprouting-seeds-recalled-for-pathogens",
-  "Retrieved (UTC)": "2026-09-24 03:30 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-23 19:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "Federal Court Enters Consent Decree Against Gold Star Distribution, Inc. Following Persistent Insanitary Warehouse Conditions",
-  "Link": "http://www.fda.gov/news-events/press-announcements/federal-court-enters-consent-decree-against-gold-star-distribution-inc-following-persistent",
-  "Retrieved (UTC)": "2026-09-24 03:30 UTC",
-  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-10-15T04:02:00Z",

@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-10-24 04:18 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Gardeners Basics Broccoli Sprouting Seeds Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/gardeners-basics-broccoli-sprouting-seeds-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-10-24 15:29 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-24 00:53 UTC",
   "Pathogen": "Clostridium botulinum",
   "Event": "Recall",
@@ -6206,166 +6216,6 @@
   "Source": "Food Safety Magazine",
   "Title": "Scotland Updates Foodborne Illness Reduction Strategy; Challenged by Highest STEC O157 Rate in UK",
   "Link": "https://www.food-safety.com/articles/11867-scotland-updates-foodborne-illness-reduction-strategy-challenged-by-highest-stec-o157-rate-in-uk",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-24 14:56 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Gestionnaire dépenses H/F",
-  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/gestionnaire-depenses-hf",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 14:09 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety evaluation of the food enzyme oryzin from the non-genetically modified Aspergillus sp. strain LP 4-1281",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10334",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 13:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Aldi lowers fall food prices despite cost pressures ahead",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/aldi-sharpens-discount-edge-with-86m-in-new-price-cuts",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 13:21 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "General Mills rebuilds retail momentum with price cuts, innovation & marketing",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/general-mills-builds-momentum-with-price-cuts-innovation",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 11:08 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Protein, coffee and convenience drive Chobani’s next phase of expansion",
-  "Link": "https://www.dairyreporter.com/Article/2026/09/24/chobani-targets-protein-and-coffee-growth-as-demand-for-natural-foods-rises",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 10:58 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Are consumers really asking AI what snacks to eat?",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/09/24/how-ai-is-influencing-snack-discovery-and-shopping",
-  "Retrieved (UTC)": "2026-09-25 03:47 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 09:22 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Foodex Ingredients on why flavour still matters in snacking",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/foodex-ingredients-on-why-flavour-still-matters-in-snacking",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 09:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Looking beyond healthy: Why better-for-you isn’t enough for snacks",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/looking-beyond-healthy-why-better-for-you-isnt-enough-for-snacks",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 09:13 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Smöoy India on balancing health, indulgence and personalisation",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/smooy-india-on-balancing-health-indulgence-and-personalisation",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 09:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "COA expands high-protein chocolate range with matcha and coconut",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/coa-expands-high-protein-chocolate-range-with-matcha-and-coconut",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 08:11 UTC",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "Food Navigator",
-  "Title": "Cutting UPFs linked to lower depression",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/cutting-upfs-linked-to-depression-reduction",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 08:09 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Les recommandations alimentaires sont utiles… mais ne peuvent‑elles pas, dans certains cas, impacter la santé mentale ?",
-  "Link": "https://www.anses.fr/fr/actualite/recommandations-alimentaires-sont-utiles-ne-peuvent-elles-pas-certains-cas-impacter-sante",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 04:35 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "CUBOLAC SUSPENSION INJECTABLE POUR BOVINS OVINS ET CAPRINS",
-  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/cubolac-suspension-injectable-bovins-ovins-caprins",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Modification de l'autorisation avec instruction administrative d'un produit phytopharmaceutique. - C5SUN",
-  "Link": "https://www.anses.fr/fr/decisions/phytosanitaire/decision-modification-lautorisation-instruction-administrative-dun-produit",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 04:02 UTC",
-  "Pathogen": "Campylobacter",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Study findings challenge Campylobacter coli knowledge",
-  "Link": "https://www.foodsafetynews.com/2026/09/study-findings-challenge-campylobacter-coli-knowledge",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-24 03:39 UTC",
-  "Pathogen": "Hepatitis A",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Black Clams Hepatitis A Outbreak Sickens 37 With 30 Hospitalized",
-  "Link": "https://foodpoisoningbulletin.com/2026/black-clams-hepatitis-a-outbreak-sickens-37-with-30-hospitalized",
   "Retrieved (UTC)": "2026-09-24 16:37 UTC",
   "Category": "Outbreak"
  },

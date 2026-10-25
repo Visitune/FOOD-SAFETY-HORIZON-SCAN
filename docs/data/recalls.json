@@ -304,6 +304,22 @@
   "Notes": "au comptoir des producteurs\t2 rue gustave eiffel\t11200\tlezignan¤la ferme côté producteurs\t21 rue rené panhard\t11100\tnarb [gemini-check 2026-10-24: fix; corrections: Company→EARL CUCUILLERE LE COCHON DU MADRES; fix; company mismatch | Company name on row is a shortened version of the recalling firm on the page.]"
  },
  {
+  "Date": "2026-10-22",
+  "Source": "NVWA",
+  "Company": "Albert Heijn",
+  "Brand": "AH",
+  "Product": "AH ossenworst (plakjes)",
+  "Pathogen": "Shiga toxin-producing E. coli (STEC)",
+  "Reason": "E. coli STEC",
+  "Class": "Recall",
+  "Country": "Netherlands",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.nvwa.nl/actueel/nieuws/2026/10/22/veiligheidswaarschuwing-ah-ossenworst-van-albert-heijn",
+  "Notes": "5 days ago · Albert Heijn waarschuwt voor hun plakjes ossenworst. De shigatoxine-producerende E. coli-bacterie (STEC) kan aanwezig zijn in het product. Eet de ossenworst niet Bekijk de waarschuwing op de website van Albert Heijn  [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date] [gap-gate 2026-10-25: pending_gap → pending_gap_v1] [gap-gate 2026-10-25: pending_gap_v1 → pending_gap_v2] [gemini-check 2026-10-25: fix; corrections: Date→2026-10-22, Company→Albert Heijn, Brand→AH, Product→AH ossenworst (plakjes), Pathogen→Shiga toxin-producing E. coli (STEC); fix; company mismatch; product mismatch; date on page=2026-10-22 | Date, Company, Brand, and Product fields corrected ba] [gap-gate 2026-10-25: pending_gap_v2 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
   "Date": "2026-10-21",
   "Source": "RASFF (EU)",
   "Company": "Origin: Italy | Notifying: Belgium",
@@ -430,6 +446,22 @@
   "Outbreak": 0,
   "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23784/interne",
   "Notes": "uniquement le hypermarché auchan mantes [gemini-check 2026-10-24: pass; pass | All fields match the page; tier mismatch noted.]"
+ },
+ {
+  "Date": "2026-10-21",
+  "Source": "RappelConso (FR)",
+  "Company": "CARREFOUR FRANCE CARREFOUR",
+  "Brand": "Filière Qualité Carrefour",
+  "Product": "moules de bouchot stg vendues au rayon traditionnel",
+  "Pathogen": "Escherichia coli (generic)",
+  "Reason": "Analyse non conforme en e. coli",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23898/interne",
+  "Notes": "carrefour [gemini-check 2026-10-25: fix; corrections: Company→CARREFOUR FRANCE CARREFOUR; fix; company mismatch | Company name corrected from page.] [tier-guard: Escherichia coli (generic) is always Tier 1; forced from Tier 2]"
  },
  {
   "Date": "2026-10-20",
@@ -960,6 +992,54 @@
   "Notes": "cantal direct ¤maison marie severac [gemini-check 2026-10-24: pass; pass | All fields match the page, and no cross-check failures were found.]"
  },
  {
+  "Date": "2026-10-19",
+  "Source": "RappelConso (FR)",
+  "Company": "CRUSTA C",
+  "Brand": "Auchan le Poissonnier",
+  "Product": "mr10ae, mr41ck",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Presence of Listeria monocytogenes",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23850/interne",
+  "Notes": "auchan [gemini-check 2026-10-25: fix; corrections: Company→CRUSTA C; fix; company mismatch | Company in row is the brand/distributor; corrected to recalling firm 'CRUSTA C'.]"
+ },
+ {
+  "Date": "2026-10-19",
+  "Source": "RappelConso (FR)",
+  "Company": "ALBI BOUCHERIE",
+  "Brand": "Filet de Poulet",
+  "Product": "POULET MARINEE THYM CETRON",
+  "Pathogen": "Salmonella",
+  "Reason": "Salmonelle trouvee dans un preparation de  poulet marinee thym cetron",
+  "Class": "Voluntary",
+  "Country": "France",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23842/interne",
+  "Notes": "client privee [gemini-check 2026-10-25: fix; corrections: Company→ALBI BOUCHERIE, Product→POULET MARINEE THYM CETRON, Pathogen→Salmonella; fix; company mismatch; pathogen mismatch | Company, Product, and Pathogen fields need correction based on page content; ] [enrich-gate 2026-10-25: pending_enrichment → pending (Claude verified)] [tier-guard: Salmonella is always Tier 1; forced from Tier 3]"
+ },
+ {
+  "Date": "2026-10-17",
+  "Source": "FDA",
+  "Company": "Lidl Us",
+  "Brand": "Gelatelli",
+  "Product": "Gelatelli Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Lidl Us Recalls Gelatelli Coffee Vanilla Gelato Due Possible Health Risk",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/lidl-us-recalls-gelatelli-coffee-vanilla-gelato-due-possible-health-risk",
+  "Notes": "FDA HTML fallback — claude-check needs to enrich Date+Pathogen [gemini-check 2026-10-25: fix; corrections: Date→2026-10-17, Brand→Gelatelli, Product→Gelatelli Coffee & Vanilla Gelato with C, Pathogen→Listeria monocytogenes, Tier→1; fix; product mismatch; pathogen mismatch; date on page=2026-10-17 | Date, Brand, Product, and Pathogen corrected based o] [enrich-gate 2026-10-25: pending_enrichment → pending (Claude verified)]"
+ },
+ {
   "Date": "2026-10-16",
   "Source": "RappelConso (FR)",
   "Company": "METRO FRANCE",
@@ -1200,6 +1280,22 @@
   "Notes": "REJECTED: Claude check: fail; not a recall page; company mismatch; product mismatch; pathogen mismatch; date on page= | Page content is insufficient to verify any claims; it appears to be a generic application title page. | [RASFF #2026.9204; classification: border rejection notification; category: fruits and vegetables; notifId=880345] [gemini-check 2026-10-17: fail; fail; not a recall page; company mismatch; product mismatch; pathogen mismatch; date on page= | Page content is insuffic] [claude-check 2026-10-20: pass; rasff auto-approve (official EU source, no public page to fetch)]"
  },
  {
+  "Date": "2026-10-16",
+  "Source": "FDA",
+  "Company": "Krasnyi Oktyabr Inc",
+  "Brand": "Starfish Seafood",
+  "Product": "STARFISH SEAFOOD PREMIUM COLD SMOKED NORWEGIAN SALMON SLICED (227g/8oz)",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Krasnyi Oktyabr Inc Recalls Starfish Seafood Premium Cold Smoked Norwegian Salmon Sliced 227G8Oz",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/krasnyi-oktyabr-inc-recalls-starfish-seafood-premium-cold-smoked-norwegian-salmon-sliced-227g8oz",
+  "Notes": "FDA HTML fallback — claude-check needs to enrich Date+Pathogen [gemini-check 2026-10-25: fix; corrections: Date→2026-10-16, Brand→Starfish Seafood, Product→STARFISH SEAFOOD PREMIUM COLD SMOKED NOR, Pathogen→Listeria monocytogenes, Tier→1; fix; pathogen mismatch; date on page=2026-10-16 | Date, Brand, Product, and Pathogen fields corrected based on page cont] [enrich-gate 2026-10-25: pending_enrichment → pending (Claude verified)]"
+ },
+ {
   "Date": "2026-10-15",
   "Source": "RappelConso (FR)",
   "Company": "Bialetti",
@@ -1374,6 +1470,22 @@
   "Outbreak": 0,
   "URL": "https://rappel.conso.gouv.fr/fiche-rappel/23793/Interne",
   "Notes": "Sold in Auvergne-Rhône-Alpes at Carrefour, Super U, etc. DLCs are prior to the recall publication date.  [via Gemini gap-finder + Google Search] [gap-gate 2026-10-22: pending_gap → pending_gap_v1] [gemini-check 2026-10-23: pass; pass] [gap-gate 2026-10-23: pending_gap_v1 → pending (Claude verified, 2nd reviewer pass)]"
+ },
+ {
+  "Date": "2026-10-15",
+  "Source": "FDA",
+  "Company": "Family Farmstead Dairy, LLC",
+  "Brand": "Family Farmstead",
+  "Product": "Raw Mild Cheddar Cheese",
+  "Pathogen": "Escherichia coli STEC",
+  "Reason": "Family Farmstead Dairy Announces Recall Raw Mild Cheddar Cheese Due Potential E Coli O26H11 And",
+  "Class": "Recall",
+  "Country": "USA",
+  "Region": "North America",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-raw-mild-cheddar-cheese-due-potential-e-coli-o26h11-and",
+  "Notes": "FDA HTML fallback — claude-check needs to enrich Date+Pathogen [gemini-check 2026-10-25: fix; corrections: Date→2026-10-15, Company→Family Farmstead Dairy, LLC, Brand→Family Farmstead, Product→Raw Mild Cheddar Cheese, Pathogen→Escherichia coli STEC; fix; company mismatch; product mismatch; date on page=2026-10-15 | Date, Company, and Product fields in the row were emp]"
  },
  {
   "Date": "2026-10-14",

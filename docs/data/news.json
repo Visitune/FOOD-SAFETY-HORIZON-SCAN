@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-10-25 01:49 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: USDA finally on the record; names Trader Joe's in E. coli outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/10/publishers-platform-usda-finally-on-the-record-names-trader-joes-in-e-coli-outbreak",
+  "Retrieved (UTC)": "2026-10-25 03:31 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-24 04:18 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Recall",
@@ -6177,46 +6187,6 @@
   "Title": "Rare E. coli type behind large outbreak in Japan",
   "Link": "https://www.foodsafetynews.com/2026/09/rare-e-coli-type-behind-large-outbreak-in-japan",
   "Retrieved (UTC)": "2026-09-25 16:43 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-24 20:28 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Growth by acquisition: 5 megadeals transforming food and drink",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/growth-by-acquisition-5-megadeals-transforming-food-and-drink",
-  "Retrieved (UTC)": "2026-09-25 03:47 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 19:28 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Big Food warns growing scrutiny of ultra-processed foods could hit sales and costs",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/24/big-food-warns-of-risks-from-ultra-processed-foods",
-  "Retrieved (UTC)": "2026-09-25 03:47 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 16:53 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Comme Emilie, devenez inspectrice à la DGCCRF !",
-  "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/comme-emilie-devenez-inspectrice-la-dgccrf",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-24 16:02 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Illness",
-  "Source": "Food Safety Magazine",
-  "Title": "Scotland Updates Foodborne Illness Reduction Strategy; Challenged by Highest STEC O157 Rate in UK",
-  "Link": "https://www.food-safety.com/articles/11867-scotland-updates-foodborne-illness-reduction-strategy-challenged-by-highest-stec-o157-rate-in-uk",
-  "Retrieved (UTC)": "2026-09-24 16:37 UTC",
   "Category": "Outbreak"
  },
  {

@@ -1,101 +1,15 @@
 {
   "entries": [
     {
-      "date": "2026-10-23",
-      "url": "daily/2026-10-23.html",
-      "total": 14,
-      "tier1": 9,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 13,
-        "North America": 1
-      },
-      "generated": "2026-10-24T19:31:33Z"
-    },
-    {
-      "date": "2026-10-22",
-      "url": "daily/2026-10-22.html",
-      "total": 5,
-      "tier1": 3,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 3,
-        "Asia": 2
-      },
-      "generated": "2026-10-25T19:35:58Z"
-    },
-    {
-      "date": "2026-10-21",
-      "url": "daily/2026-10-21.html",
-      "total": 9,
-      "tier1": 9,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 9
-      },
-      "generated": "2026-10-25T19:35:58Z"
-    },
-    {
-      "date": "2026-10-20",
-      "url": "daily/2026-10-20.html",
-      "total": 11,
-      "tier1": 8,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 9,
-        "Asia": 1,
-        "Latin America": 1
-      },
-      "generated": "2026-10-24T19:31:33Z"
-    },
-    {
-      "date": "2026-10-19",
-      "url": "daily/2026-10-19.html",
-      "total": 24,
-      "tier1": 23,
-      "outbreak": 0,
-      "by_region": {
-        "Latin America": 3,
-        "Europe": 21
-      },
-      "generated": "2026-10-25T19:35:58Z"
-    },
-    {
-      "date": "2026-10-17",
-      "url": "daily/2026-10-17.html",
+      "date": "2026-11-20",
+      "url": "daily/2026-11-20.html",
       "total": 1,
       "tier1": 1,
       "outbreak": 0,
       "by_region": {
-        "North America": 1
+        "Europe": 1
       },
-      "generated": "2026-10-25T19:35:58Z"
-    },
-    {
-      "date": "2026-10-16",
-      "url": "daily/2026-10-16.html",
-      "total": 16,
-      "tier1": 14,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 14,
-        "Asia": 1,
-        "North America": 1
-      },
-      "generated": "2026-10-25T19:35:58Z"
-    },
-    {
-      "date": "2026-10-15",
-      "url": "daily/2026-10-15.html",
-      "total": 12,
-      "tier1": 9,
-      "outbreak": 0,
-      "by_region": {
-        "Europe": 10,
-        "Asia": 1,
-        "North America": 1
-      },
-      "generated": "2026-10-25T19:35:58Z"
+      "generated": "2026-10-27T16:07:04Z"
     }
   ]
 }

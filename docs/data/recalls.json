@@ -1,5 +1,21 @@
 [
  {
+  "Date": "2026-11-20",
+  "Source": "AESAN",
+  "Company": "Alerta por presencia de Listeria monocytogenes en mejillones ...",
+  "Brand": "Alerta por presencia de Listeria monocytogenes en mejillones ...",
+  "Product": "5 days ago · La Agencia Española de Seguridad Alimentaria y Nutrición (AESAN) ha sido informada por las autoridades sanitarias de la Comunidad de Madrid, a través del Sistema Coordinado de Intercambio",
+  "Pathogen": "Listeria monocytogenes",
+  "Reason": "Listeria monocytogenes",
+  "Class": "Recall",
+  "Country": "Spain",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.aesan.gob.es/alertas/2026_72",
+  "Notes": "REJECTED: Gemini gate: FAIL: gemini silent on this row (safety default — audit 2026-05-07) | 5 days ago · La Agencia Española de Seguridad Alimentaria y Nutrición (AESAN) ha sido informada por las autoridades sanitarias de la Comunidad de Madrid, a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), de la presencia de Listeria monocytogenes en mejillones cocidos de l  [via DDGS gap-finder, deterministic extract]"
+ },
+ {
   "Date": "2026-10-24",
   "Source": "FSAI (IE)",
   "Company": "Bialetti",
@@ -29342,5 +29358,21 @@
   "Outbreak": 1,
   "URL": "https://webgate.ec.europa.eu/rasff-window/screen/notification/821744",
   "Notes": "REJECTED: Claude check: fail; not a recall page; company mismatch; product mismatch; pathogen mismatch; date on page= | Page is inaccessible or returns only metadata stub (title='Application name'). No recall content, dates, company, product, or pathogen detai | Notification 2026.1008. Cereulide in base powder ingredient used to manufacture infant formula, follow on formula and FSMP from Ireland.  [via Tavily gap-finder, deterministic extract] [date-unknown: claude-check please verify Date] [outbreak 2026-07-23: 0→1 — ECDC has received reports of diarrhoea in infants following consumption of the recalled products.] [claude-check 2026-10-20: pass; rasff auto-approve (official EU source, no public page to fetch)]"
+ },
+ {
+  "Date": "",
+  "Source": "AESAN",
+  "Company": "Alerta por presencia de Salmonella spp. en clara de huevo ...",
+  "Brand": "Alerta por presencia de Salmonella spp. en clara de huevo ...",
+  "Product": "4 days ago · La Agencia Española de Seguridad Alimentaria y Nutrición (AESAN) ha tenido conocimiento a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), de una notificación d",
+  "Pathogen": "Salmonella",
+  "Reason": "Salmonella",
+  "Class": "Recall",
+  "Country": "Spain",
+  "Region": "Europe",
+  "Tier": 1,
+  "Outbreak": 0,
+  "URL": "https://www.aesan.gob.es/AECOSAN/web/alertas_alimentarias/detalles/2026_74.htm",
+  "Notes": "REJECTED: Gemini gate: Missing required: Date (gemini unreached) | 4 days ago · La Agencia Española de Seguridad Alimentaria y Nutrición (AESAN) ha tenido conocimiento a través del Sistema Coordinado de Intercambio Rápido de Información (SCIRI), de una notificación de alerta trasladada por las autoridades sanitarias de la Junta de Andalucía relativa a la presencia   [via DDGS gap-finder, deterministic extract] [date-unknown: claude-check please verify Date] [url-gate 2026-10-27: Gemini fixed htt"
  }
 ]

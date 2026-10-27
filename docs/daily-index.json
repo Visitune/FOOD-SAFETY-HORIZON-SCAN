@@ -10,6 +10,28 @@
         "Europe": 1
       },
       "generated": "2026-10-27T16:07:04Z"
+    },
+    {
+      "date": "2026-10-26",
+      "url": "daily/2026-10-26.html",
+      "total": 4,
+      "tier1": 1,
+      "outbreak": 0,
+      "by_region": {
+        "Europe": 4
+      },
+      "generated": "2026-10-27T21:12:21Z"
+    },
+    {
+      "date": "2026-09-30",
+      "url": "daily/2026-09-30.html",
+      "total": 2,
+      "tier1": 2,
+      "outbreak": 0,
+      "by_region": {
+        "Europe": 2
+      },
+      "generated": "2026-10-27T21:12:21Z"
     }
   ]
 }

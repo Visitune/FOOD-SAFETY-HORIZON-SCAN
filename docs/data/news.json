@@ -1,5 +1,75 @@
 [
  {
+  "Published (UTC)": "2026-10-28 03:35 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Illness",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "FDA Warns Against Two Lots of Darwin’s Natural Chicken Cat Food",
+  "Link": "https://foodpoisoningbulletin.com/2026/fda-warns-against-two-lots-of-darwins-natural-chicken-cat-food",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-28 03:01 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Haifa Cold Smoked Sprats Recalled For Possible Botulism Risk",
+  "Link": "https://foodpoisoningbulletin.com/2026/haifa-cold-smoked-sprats-recalled-for-possible-botulism-risk",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-28 02:57 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "E. coli infections reported among children who visited pumpkin patches, petting zoos",
+  "Link": "https://www.foodsafetynews.com/2026/10/e-coli-infections-reported-among-children-who-visited-pumpkin-patches-petting-zoos",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-28 02:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Indonesia delays halal law again: Will industry ever be ready?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/28/indonesia-delays-halal-law-again-will-industry-ever-be-ready",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-28 00:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "FDA issues another warning against Darwin's pet food; firm refuses to initiate recall",
+  "Link": "https://www.foodsafetynews.com/2026/10/fda-issues-another-warning-against-darwins-pet-food-firm-refuses-to-initiate-recall",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-27 19:27 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Coca-Cola Co’s growth strategy delivered in Q3, but can it last?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/27/coca-cola-q3-growth-sets-high-bar-for-2027",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-27 17:35 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Energy drinks are outpacing soft drinks: What’s behind the boom?",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/27/energy-drinks-market-driven-by-functional-beverage-demand",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-27 15:39 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -48,6 +118,16 @@
   "Link": "https://www.foodnavigator.com/Article/2026/10/27/wk-kellogg-bets-on-nutrition-to-revitalize-cereal-sales",
   "Retrieved (UTC)": "2026-10-27 17:35 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-27 13:26 UTC",
+  "Pathogen": "Mycotoxin",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "USDA Researchers Use Crickets to Convert Mycotoxin-Contaminated Corn Into High-Protein Animal Feed",
+  "Link": "https://www.food-safety.com/articles/11961-usda-researchers-use-crickets-to-convert-mycotoxin-contaminated-corn-into-high-protein-animal-feed",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-27 13:22 UTC",
@@ -138,6 +218,16 @@
   "Link": "https://www.bakeryandsnacks.com/Article/2026/10/27/snack-marketing-psychology-and-the-power-of-seasonal-treats",
   "Retrieved (UTC)": "2026-10-27 17:35 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-27 09:00 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "USDA Study Explores Enzyme-Bacteriocin Treatments to Control Listeria Biofilms in Food Processing Environments",
+  "Link": "https://www.food-safety.com/articles/11950-usda-study-explores-enzyme-bacteriocin-treatments-to-control-listeria-biofilms-in-food-processing-environments",
+  "Retrieved (UTC)": "2026-10-28 04:24 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-27 08:54 UTC",
@@ -6417,46 +6507,6 @@
   "Title": "Gluten-free claims in the Middle East face tougher regulations",
   "Link": "https://www.foodnavigator.com/Article/2026/09/28/gluten-free-claims-in-the-middle-east-face-tougher-regulations",
   "Retrieved (UTC)": "2026-09-28 19:20 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-28 04:23 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Saudi’s Kinza on why localisation is key to ASEAN Success",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/28/saudis-kinza-on-why-localisation-is-key-to-asean-success",
-  "Retrieved (UTC)": "2026-09-28 19:20 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-28 04:04 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Salmonella outbreak linked to Italian tomatoes again",
-  "Link": "https://www.foodsafetynews.com/2026/09/salmonella-outbreak-linked-to-italian-tomatoes-again",
-  "Retrieved (UTC)": "2026-09-28 04:04 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-28 04:02 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Salmonella found in French pumpkin seed outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/09/salmonella-found-in-french-pumpkin-seed-outbreak",
-  "Retrieved (UTC)": "2026-09-28 04:04 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-28 03:56 UTC",
-  "Pathogen": "Mycotoxin",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Climate change fuelling mycotoxin risks with ‘no known solution’",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/28/climate-change-fuelling-mycotoxin-risks-with-no-known-solution",
-  "Retrieved (UTC)": "2026-09-28 04:04 UTC",
   "Category": "Regulatory"
  },
  {

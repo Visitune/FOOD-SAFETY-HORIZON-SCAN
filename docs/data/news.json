@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-10-29 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Salmonella sickens 60 at hospital in Costa Rica",
+  "Link": "https://www.foodsafetynews.com/2026/10/salmonella-sickens-60-at-hospital-in-costa-rica",
+  "Retrieved (UTC)": "2026-10-29 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-29 04:01 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Botulism risk prompts warning in Czech Republic",
+  "Link": "https://www.foodsafetynews.com/2026/10/botulism-risk-prompts-warning-in-czech-republic",
+  "Retrieved (UTC)": "2026-10-29 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-29 03:27 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Lucky Hook Farm Pasteurized Goat Milk Recalled In Washington",
+  "Link": "https://foodpoisoningbulletin.com/2026/lucky-hook-farm-pasteurized-goat-milk-recalled-in-washington",
+  "Retrieved (UTC)": "2026-10-29 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-29 03:24 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Possible E. coli Outbreak at Brookshire Farms in San Luis Obispo",
+  "Link": "https://foodpoisoningbulletin.com/2026/possible-e-coli-outbreak-at-brookshire-farms-in-san-luis-obispo",
+  "Retrieved (UTC)": "2026-10-29 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-28 18:36 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "No cows, no questions: FDA greenlights animal-free casein",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/28/those-vegan-cowboys-get-fda-letter-for-animal-free-casein",
+  "Retrieved (UTC)": "2026-10-29 04:42 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-28 16:47 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6547,66 +6597,6 @@
   "Title": "Safety evaluation of a food enzyme containing carboxypeptidase C, oryzin and leucyl aminopeptidase activities from the non-genetically modified Aspergillus sp. strain FP 12-385",
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10337",
   "Retrieved (UTC)": "2026-09-29 17:46 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-29 04:05 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Italian reports cover Cyclospora and Salmonella cases",
-  "Link": "https://www.foodsafetynews.com/2026/09/italian-reports-cover-cyclospora-and-salmonella-cases",
-  "Retrieved (UTC)": "2026-09-29 04:37 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-29 03:46 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Sierra Nevada Graziers Raw Milk Cheese E. coli Outbreak Sickens 13",
-  "Link": "https://foodpoisoningbulletin.com/2026/sierra-nevada-graziers-raw-milk-cheese-e-coli-outbreak-sickens-13",
-  "Retrieved (UTC)": "2026-09-29 04:37 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-29 02:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "3 underestimated sustainability risks to global food supply",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/29/3-underestimated-sustainability-risks-to-global-food-supply",
-  "Retrieved (UTC)": "2026-09-29 04:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-28 21:43 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Approves First Treatment for MCT8 Deficiency",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-mct8-deficiency",
-  "Retrieved (UTC)": "2026-09-29 04:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-28 21:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA intends to evaluate changes to the PMTA regulatory framework",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
-  "Retrieved (UTC)": "2026-09-29 04:37 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-28 20:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "California signs voluntary non-UPF label into law",
-  "Link": "https://www.foodnavigator.com/Article/2026/09/28/california-is-the-first-state-to-pass-a-voluntary-non-upf-label-program",
-  "Retrieved (UTC)": "2026-09-29 04:37 UTC",
   "Category": "Regulatory"
  },
  {

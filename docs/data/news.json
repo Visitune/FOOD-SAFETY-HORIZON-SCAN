@@ -1,5 +1,35 @@
 [
  {
+  "Published (UTC)": "2026-10-30 02:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "From cultivated beef to fermented soy: Bezos-backed protein innovators target cost and scale",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/30/aleph-farms-among-bezos-backed-protein-innovators-targeting-scale",
+  "Retrieved (UTC)": "2026-10-30 04:42 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-30 01:13 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Possible E. coli Outbreak at State Fair of Texas Sickens Seven",
+  "Link": "https://foodpoisoningbulletin.com/2026/possible-e-coli-outbreak-at-state-fair-of-texas-sickens-seven",
+  "Retrieved (UTC)": "2026-10-30 04:42 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-29 22:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Hershey hopes Halloween candy can ward off declining volume fears",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/29/hershey-halloween-sales-face-test-as-candy-volumes-slide",
+  "Retrieved (UTC)": "2026-10-30 04:42 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-29 16:29 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6577,36 +6607,6 @@
   "Title": "Chocolate giant sets up base near Magnum Ice Cream",
   "Link": "https://www.foodmanufacture.co.uk/Article/2026/09/30/barry-callebaut-has-established-a-base-at-gastronomica-next-to-the-magnum-ice-cream-company",
   "Retrieved (UTC)": "2026-09-30 17:42 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-09-30 04:03 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "CDC declares end to Salmonella outbreak traced to backyard flocks",
-  "Link": "https://www.foodsafetynews.com/2026/09/cdc-declares-end-to-salmonella-outbreak-traced-to-backyard-flocks",
-  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-30 03:17 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Sierra Nevada Graziers Raw Milk Cheese Recalled For E. coli",
-  "Link": "https://foodpoisoningbulletin.com/2026/sierra-nevada-graziers-raw-milk-cheese-recalled-for-e-coli",
-  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-09-29 21:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
-  "Retrieved (UTC)": "2026-09-30 04:21 UTC",
   "Category": "Regulatory"
  },
  {

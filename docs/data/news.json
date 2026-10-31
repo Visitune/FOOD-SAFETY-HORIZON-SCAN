@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-10-31 04:38 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "West Virginia Salmonella Outbreak Sickens 41, Source Unknown",
+  "Link": "https://foodpoisoningbulletin.com/2026/west-virginia-salmonella-outbreak-sickens-41-source-unknown",
+  "Retrieved (UTC)": "2026-10-31 16:55 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-10-31 04:17 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -6390,186 +6400,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-01 16:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Food leaders warn resilience risks are being ignored by board members",
-  "Link": "https://www.foodmanufacture.co.uk/Article/2026/10/01/food-leaders-warn-resilience-risks-are-being-ignored-by-board-members",
-  "Retrieved (UTC)": "2026-10-02 17:33 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 16:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Is the food and drink industry innovating fast enough?",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/is-the-food-and-drink-industry-innovating-fast-enough",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 15:56 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "‘The world is changing faster than we can keep up with’: Arthur D Little’s Simon Guoyard-Norman on food innovation’s next steps",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/arthur-d-littles-simon-guoyard-norman-on-food-innovation",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 14:57 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety evaluation of the food enzyme cellulase from the genetically modified Trichoderma reesei strain NZYM-FS",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10331",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 14:56 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Modification of the existing maximum residue levels for propyzamide in oilseeds and honey",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10324",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 14:34 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Hershey appoints new international president as CPG sets industry standard",
-  "Link": "https://www.confectionerynews.com/Article/2026/10/01/hershey-appoints-amanda-almond-as-international-president-as-cpg-sets-industry-standard",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 13:47 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Nestlé’s Coffee mate doubles down on flavor and texture with brand refresh",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/coffee-mates-packaging-refresh-and-campaign-center-around-coffee-customization",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 13:26 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "What nutrition education in medical schools could mean for CPG",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/how-healthcares-nutrition-focus-could-impact-food-brands",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 11:53 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Mondelēz reveals the trends shaping the future of confectionery and snacking",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/mondelez-reveals-the-trends-shaping-the-future-of-confectionery-and-snacking",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 11:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Beyond sugar reduction: The next challenge for food manufacturers",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/why-low-sugar-is-no-longer-enough-for-health-conscious-consumers",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 11:15 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Skimpflation or sustainability? The debate behind the tinned mackerel row",
-  "Link": "https://www.foodmanufacture.co.uk/Article/2026/10/01/are-manufacturers-being-unfairly-accused-of-skimpflation-over-mackerel",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 09:25 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "APC GT reco alim - environnement formulaire",
-  "Link": "https://www.anses.fr/fr/document/apc-gt-reco-alim-environnement-formulaire",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 09:20 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Directeur de l'évaluation des produits réglementés (H/F)",
-  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/directeur-levaluation-produits-reglementes-hf",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 09:15 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "APC GT reco alim - environnement compétences recherchées",
-  "Link": "https://www.anses.fr/fr/document/apc-gt-reco-alim-environnement-competences-recherchees",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 09:07 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Arla to pump €63M into high-protein dairy production",
-  "Link": "https://www.foodmanufacture.co.uk/Article/2026/10/01/arla-to-invest-63m-into-high-protein-options",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 08:20 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Adjoint à la Cheffe du service budget et contrôle de gestion (H/F)",
-  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/adjoint-cheffe-du-service-budget-controle-gestion-hf",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 07:47 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Coordinateur d’études pour l’analyse de données sur la qualité nutritionnelle dans cadre d’un projet européen H/F",
-  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/coordinateur-detudes-lanalyse-donnees-qualite-nutritionnelle-cadre-dun",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 07:37 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Agentic AI in food boosts decision-making – but can enhance risks too",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/01/agentic-ai-can-make-food-more-efficient-but-risks-remain",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-10-15T04:02:00Z",
   "Pathogen": "",
   "Event": "News",
@@ -6837,6 +6667,16 @@
   "Title": "Fraud alerts at steady levels in Europe; 13 alerts mention the United States",
   "Link": "https://www.foodsafetynews.com/2026/10/fraud-alerts-at-steady-levels-in-europe-13-alerts-mention-the-united-states/",
   "Retrieved (UTC)": "2026-10-30T07:33:52Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-10-31T02:16:09Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "Reports of infants choking result in FDA warning about Once Upon a Time snacks",
+  "Link": "https://www.foodsafetynews.com/2026/10/reports-of-infants-choking-result-in-fda-warning-about-once-upon-a-time-snacks/",
+  "Retrieved (UTC)": "2026-10-31T07:21:06Z",
   "Category": ""
  }
 ]

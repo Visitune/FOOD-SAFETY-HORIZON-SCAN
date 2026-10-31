@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-10-31 04:17 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Wicomico River Raw Oysters Salmonella Outbreak Case Count Grows",
+  "Link": "https://foodpoisoningbulletin.com/2026/wicomico-river-raw-oysters-salmonella-outbreak-case-count-grows",
+  "Retrieved (UTC)": "2026-10-31 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-31 03:55 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "365 Whole Foods Ashwagandha Capsules Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/365-whole-foods-ashwagandha-capsules-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-10-31 04:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-10-30 20:32 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Plasmid DNA-based Immunotherapy for Adults with Recurrent Respiratory Papillomatosis",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
+  "Retrieved (UTC)": "2026-10-31 04:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-30 17:45 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "7 consumer shifts that will define food and drink in 2027",
+  "Link": "https://www.foodnavigator.com/Article/2026/10/30/the-consumer-shifts-defining-2027",
+  "Retrieved (UTC)": "2026-10-31 04:26 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-30 15:09 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -88,6 +128,16 @@
   "Link": "https://www.bakeryandsnacks.com/Article/2026/10/30/thanksgiving-snack-trends-flavours-sides-and-new-uses",
   "Retrieved (UTC)": "2026-10-30 17:46 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-30 09:00 UTC",
+  "Pathogen": "Yersinia",
+  "Event": "Illness",
+  "Source": "Food Safety Magazine",
+  "Title": "Unique Yersinia enterocolitica Type May Cause Illness Through Inflammatory Response",
+  "Link": "https://www.food-safety.com/articles/11963-unique-yersinia-enterocolitica-type-may-cause-illness-through-inflammatory-response",
+  "Retrieved (UTC)": "2026-10-31 04:26 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-30 08:42 UTC",
@@ -6518,76 +6568,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/10/01/agentic-ai-can-make-food-more-efficient-but-risks-remain",
   "Retrieved (UTC)": "2026-10-01 18:07 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 04:10 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Extension d'usages par reconnaissance mutuelle d'un produit phytopharmaceutique - EUSKATEL",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-extension-dusages-reconnaissance-mutuelle-dun",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 04:10 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification d'une autorisation de mise sur le marche d'une matière fertilisante ou d'un support de culture (autre modification) - ANGIO STRESS",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-dune-autorisation-mise-marche-0",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 04:10 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification d'une autorisation de mise sur le marche d'une matière fertilisante ou d'un support de culture (autre modification) - TURN ON NG",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-dune-autorisation-mise-marche-dune",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 04:05 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "New Listeria outbreak under investigation",
-  "Link": "https://www.foodsafetynews.com/2026/10/new-listeria-outbreak-under-investigation",
-  "Retrieved (UTC)": "2026-10-01 04:33 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-01 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit phytopharmaceutique - ARVALIN FORTE",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-autorisation-mise-marche-dun-produit",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification de l'autorisation nécessitant une évaluation d'un produit phytopharmaceutique - PROWL 400",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-lautorisation-necessitant-0",
-  "Retrieved (UTC)": "2026-10-01 18:07 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-01 03:49 UTC",
-  "Pathogen": "Norovirus",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Summerhill Market Raspberries and Products Recalled For Norovirus",
-  "Link": "https://foodpoisoningbulletin.com/2026/summerhill-market-raspberries-and-products-recalled-for-norovirus",
-  "Retrieved (UTC)": "2026-10-01 04:33 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-15T04:02:00Z",

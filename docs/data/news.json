@@ -6360,46 +6360,6 @@
   "Category": "Outbreak"
  },
  {
-  "Published (UTC)": "2026-10-02 03:45 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Illness",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Big Brook Farm Raw Milk May Have Listeria Contamination",
-  "Link": "https://foodpoisoningbulletin.com/2026/big-brook-farm-raw-milk-may-have-listeria-contamination",
-  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-02 03:31 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Bettergoods Lemon Alfredo Fettuccine Recall For Listeria Expanded",
-  "Link": "https://foodpoisoningbulletin.com/2026/bettergoods-lemon-alfredo-fettuccine-recall-for-listeria-expanded",
-  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-02 01:19 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "New York farm barred from selling raw milk because of positive test for Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/10/new-york-farm-barred-from-selling-raw-milk-because-of-positive-test-for-listeria",
-  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-01 19:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "FDA Press Releases",
-  "Title": "FDA Approves First Heart Valve Designed to Grow with Children",
-  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
-  "Retrieved (UTC)": "2026-10-02 04:25 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-10-15T04:02:00Z",
   "Pathogen": "",
   "Event": "News",

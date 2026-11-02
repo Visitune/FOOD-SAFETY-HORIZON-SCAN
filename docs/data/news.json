@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-11-02 02:14 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Coca-Cola, Pepsi lose brand value as Nongfu Spring surges",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/02/coca-cola-pepsi-lose-brand-value-as-nongfu-spring-surges",
+  "Retrieved (UTC)": "2026-11-02 04:47 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-10-31 04:38 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Outbreak",
@@ -6137,96 +6147,6 @@
   "Title": "Publisher’s Platform: Put Me Out of the Lettuce Business. Please.",
   "Link": "https://www.foodsafetynews.com/2026/10/publishers-platform-put-me-out-of-the-lettuce-business-please",
   "Retrieved (UTC)": "2026-10-03 15:50 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 04:35 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "FUROSAN 50 MG/ML SOLUTION INJECTABLE POUR BOVINS, CHEVAUX, CHIENS ET CHATS",
-  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/furosan-50-mgml-solution-injectable-bovins-chevaux-chiens-chats",
-  "Retrieved (UTC)": "2026-10-03 15:50 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-03 03:11 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Sprouting seeds recalled because of potential contamination with Salmonella, E. coli",
-  "Link": "https://www.foodsafetynews.com/2026/10/sprouting-seeds-recalled-because-of-potential-contamination-with-salmonella-e-coli",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 02:55 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "FDA Core Outbreak Table Has 17 Investigations; Six Have Ended",
-  "Link": "https://foodpoisoningbulletin.com/2026/fda-core-outbreak-table-has-17-investigations-six-have-ended",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 02:49 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Salmonella Jalapeño Outbreak Ends With 488 Sick in 34 States",
-  "Link": "https://foodpoisoningbulletin.com/2026/salmonella-jalapeno-outbreak-ends-with-488-sick-in-34-states",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 01:47 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Starfish Seafood Cold Smoked Trio Recalled For Possible Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/starfish-seafood-cold-smoked-trio-recalled-for-possible-listeria",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 01:29 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "FDA found Cyclospora at Taylor Farms lettuce operation",
-  "Link": "https://www.foodsafetynews.com/2026/10/fda-found-cyclospora-at-taylor-farms-lettuce-operation",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 00:59 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Berry recall expanded for Walmart, Trader Joe's brands",
-  "Link": "https://www.foodsafetynews.com/2026/10/berry-recall-expanded-for-walmart-trader-joes-brands",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 00:37 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Pasta recall expanded to include all lots sold at Walmart stores",
-  "Link": "https://www.foodsafetynews.com/2026/10/pasta-recall-expanded-to-include-all-lots-sold-at-walmart-stores",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-02 19:56 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "FDA Closes Taylor Farms Lettuce Investigation, Announces Action Plan to Prevent Future Cyclospora Outbreaks",
-  "Link": "https://www.food-safety.com/articles/11889-fda-closes-taylor-farms-lettuce-investigation-announces-action-plan-to-prevent-future-cyclospora-outbreaks",
-  "Retrieved (UTC)": "2026-10-03 04:08 UTC",
   "Category": "Outbreak"
  },
  {

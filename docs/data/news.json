@@ -1,5 +1,195 @@
 [
  {
+  "Published (UTC)": "2026-11-02 14:28 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Mondelēz sues British chocolate brand in Toblerone trademark dispute",
+  "Link": "https://www.confectionerynews.com/Article/2026/11/02/mondelez-sues-british-chocolate-brand-over-alleged-toblerone-trademark-infringement",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 14:11 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "European supermarket fridges hit with suspected cyber attack",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/02/cyber-attacks-raise-supermarket-fridge-temperatures",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 13:56 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Provides Clarity to Support Cell and Gene Therapy Development and Quality",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 13:52 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Whole Foods leads Amazon’s fresh push as delivery gets faster, cheaper",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/02/amazon-bets-on-faster-grocery-delivery-and-whole-foods",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 13:43 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Oatly to raise US prices in 2027, weighs increases in Europe",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/02/oatly-to-raise-us-prices-in-2027-weighs-europe-hikes",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 12:12 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "The race to replace artificial colours intensifies",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/02/the-race-to-replace-artificial-colours-is-on",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "TOLTRAMAX 25 MG/ML SOLUTION POUR ADMINISTRATION DANS L'EAU DE BOISSON POUR POULES ET DINDES",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/toltramax-25-mgml-solution-administration-leau-boisson-poules",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "RELEASE 500, 500 MG/ML SOLUTION INJECTABLE",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/release-500-500-mgml-solution-injectable",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "INTERTRIM VET 200 MG/ML + 40 MG/ML SOLUTION INJECTABLE POUR CHEVAUX BOVINS CAPRINS OVINS ET PORCINS",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/intertrim-vet-200-mgml-40-mgml-solution-injectable-chevaux-bovins",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "HOMEOTHERM, SOLUTION BUVABLE",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/homeotherm-solution-buvable",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "HOMEOSTEO, SOLUTION POUR ADMINISTRATION DANS L'EAU DE BOISSON",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/homeosteo-solution-administration-leau-boisson",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "HOMEOPART, SOLUTION BUVABLE",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/homeopart-solution-buvable",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "HOMEODIGEST, SOLUTION BUVABLE",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/homeodigest-solution-buvable",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "HOMEOCALM, SOLUTION POUR ADMINISTRATION DANS L'EAU DE BOISSON",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/homeocalm-solution-administration-leau-boisson",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "DORVEXA VET 20 MG/ML SOLUTION INJECTABLE POUR BOVINS, CHEVAUX, CHIENS, CHATS",
+  "Link": "https://www.anses.fr/fr/decisions/medicament-veterinaire/dorvexa-vet-20-mgml-solution-injectable-bovins-chevaux-chiens",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:10 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Amende de 88000 euros prononcée par la DDETSPP de Lot-et-Garonne à l'encontre de la SAS IDELEC.",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-88000-euros-prononcee-par-la-ddetspp-de-lot-et-garonne-lencontre-de-la-sas-idelec",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 10:00 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Seasonal Salmonella Meat Contamination Patterns Disappearing in U.S., Except for Ground Beef",
+  "Link": "https://www.food-safety.com/articles/11965-seasonal-salmonella-meat-contamination-patterns-disappearing-in-us-except-for-ground-beef",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-02 07:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Gut as core: Danone advances health span, early life nutrition in new China lab",
+  "Link": "https://www.nutraingredients.com/Article/2026/11/02/danone-advances-health-span-early-life-nutrition-in-new-china-lab",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-02 05:00 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Illness",
+  "Source": "Food Safety News",
+  "Title": "UK links illnesses in 2025 and 2026 to eggs from Ukraine",
+  "Link": "https://www.foodsafetynews.com/2026/11/uk-links-illnesses-in-2025-and-2026-to-eggs-from-ukraine",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-02 02:14 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -107,6 +297,16 @@
   "Title": "Peer review of the pesticide risk assessment of the active substance Trichoderma atroviride I-1237",
   "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10370",
   "Retrieved (UTC)": "2026-10-30 17:46 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-10-30 10:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Deposit Return Scheme: What drinks businesses need to know",
+  "Link": "https://www.beveragedaily.com/Article/2026/10/30/deposit-return-scheme-what-drinks-businesses-should-know",
+  "Retrieved (UTC)": "2026-11-02 21:28 UTC",
   "Category": "Regulatory"
  },
  {
@@ -6137,16 +6337,6 @@
   "Title": "Czech testing finds Salmonella problem in poultry meat",
   "Link": "https://www.foodsafetynews.com/2026/10/czech-testing-finds-salmonella-problem-in-poultry-meat",
   "Retrieved (UTC)": "2026-10-05 04:27 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-03 12:36 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Publisher’s Platform: Put Me Out of the Lettuce Business. Please.",
-  "Link": "https://www.foodsafetynews.com/2026/10/publishers-platform-put-me-out-of-the-lettuce-business-please",
-  "Retrieved (UTC)": "2026-10-03 15:50 UTC",
   "Category": "Outbreak"
  },
  {

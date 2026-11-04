@@ -10,6 +10,46 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-04 05:05 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "UK records two raw milk outbreaks",
+  "Link": "https://www.foodsafetynews.com/2026/11/uk-records-two-raw-milk-outbreaks",
+  "Retrieved (UTC)": "2026-11-04 05:07 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-04 05:03 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Congresswoman has concerns about sale of infant formula company",
+  "Link": "https://www.foodsafetynews.com/2026/11/congresswoman-has-concerns-about-sale-of-infant-formula-company",
+  "Retrieved (UTC)": "2026-11-04 05:07 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-04 05:01 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Slovenia sees rise in E. coli but fall in Salmonella cases",
+  "Link": "https://www.foodsafetynews.com/2026/11/slovenia-sees-rise-in-e-coli-but-fall-in-salmonella-cases",
+  "Retrieved (UTC)": "2026-11-04 05:07 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-04 04:03 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "FDA Issues Safety Alert for Little Wicomico Company Oysters",
+  "Link": "https://foodpoisoningbulletin.com/2026/fda-issues-safety-alert-for-little-wicomico-company-oysters",
+  "Retrieved (UTC)": "2026-11-04 05:07 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-03 16:24 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -17,6 +57,16 @@
   "Title": "Inside Nestlé’s brand-building machine",
   "Link": "https://www.foodnavigator.com/Article/2026/11/03/how-nestle-builds-billion-dollar-brands",
   "Retrieved (UTC)": "2026-11-03 19:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-03 16:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "139th Plenary meeting of the Panel on Plant Protection Products and their Residues (PPR)",
+  "Link": "https://www.efsa.europa.eu/en/events/139th-plenary-meeting-panel-plant-protection-products-and-their-residues-ppr",
+  "Retrieved (UTC)": "2026-11-04 05:07 UTC",
   "Category": "Regulatory"
  },
  {
@@ -6550,16 +6600,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-05 04:06 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Czech testing finds Salmonella problem in poultry meat",
-  "Link": "https://www.foodsafetynews.com/2026/10/czech-testing-finds-salmonella-problem-in-poultry-meat",
-  "Retrieved (UTC)": "2026-10-05 04:27 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-10-15T04:02:00Z",
   "Pathogen": "",
   "Event": "News",
@@ -6837,6 +6877,26 @@
   "Title": "Reports of infants choking result in FDA warning about Once Upon a Time snacks",
   "Link": "https://www.foodsafetynews.com/2026/10/reports-of-infants-choking-result-in-fda-warning-about-once-upon-a-time-snacks/",
   "Retrieved (UTC)": "2026-10-31T07:21:06Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-03T05:01:00Z",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Woman’s compensation doubled after drinking contaminated beer",
+  "Link": "https://www.foodsafetynews.com/2026/11/womans-compensation-doubled-after-drinking-contaminated-beer/",
+  "Retrieved (UTC)": "2026-11-03T20:32:45Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-02T05:02:00Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA warns rice noodle maker about sanitation failures",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-warns-rice-noodle-maker-about-sanitation-failures/",
+  "Retrieved (UTC)": "2026-11-03T20:32:45Z",
   "Category": ""
  }
 ]

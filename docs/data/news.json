@@ -10,6 +10,46 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-07 11:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Technicien de laboratoire en biologie moléculaire (H/F)",
+  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/technicien-laboratoire-biologie-moleculaire-hf",
+  "Retrieved (UTC)": "2026-11-07 17:30 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-07 10:57 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Chargé de projets sur le bien-être et la santé des porcs (H/F)",
+  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/charge-projets-bien-etre-sante-porcs-hf",
+  "Retrieved (UTC)": "2026-11-07 17:30 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-07 10:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Technicien de laboratoire en virologie aviaire et cunicole (H/F)",
+  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/technicien-laboratoire-virologie-aviaire-cunicole-hf",
+  "Retrieved (UTC)": "2026-11-07 17:30 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-07 10:43 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Stage sur l’Etudes des lagovirus responsables de la maladie hémorragique du lapin : optimisation d’un modèle organoïde hépatique permissif et caractérisation moléculaire des souches  - (H/F)",
+  "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/stage-letudes-lagovirus-responsables-maladie-hemorragique-du-lapin",
+  "Retrieved (UTC)": "2026-11-07 17:30 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-07 03:41 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",
@@ -6076,206 +6116,6 @@
   "Source": "Food Navigator",
   "Title": "McCormick-Unilever deal clears US antitrust hurdle as UK review deadline looms",
   "Link": "https://www.foodnavigator.com/Article/2026/10/08/mccormick-unilever-deal-clears-us-antitrust-hurdle",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 15:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The minification of beverages",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/mini-drinks-gain-traction-across-categories",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:32 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment for the active substance cyazofamid in light of confirmatory data submitted",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10325",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:32 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety evaluation of the food enzyme containing endo-polygalacturonase, pectinesterase, pectin lyase and arabinan endo-1,5-α-l-arabinanase activities from the non-genetically modified Aspergillus sp. strain ASNSC",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10330",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:31 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Modification of the terms of the authorisation of ammonium chloride (Amoklor) for sows (Latochema Co Ltd)",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10356",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:31 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "What makes a snack worth the price?",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/what-value-seeking-consumers-want-from-snack-brands-according-to-deloitte",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:30 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Modification of the existing maximum residue levels for flupyradifurone and difluoroacetic acid (DFA) in tomatoes",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10361",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:30 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Assessment of the application for modification of the terms of authorisation of the feed additive consisting of Heyndrickxia faecalis DSM 32016 (TechnoSpore50®) (Biochem Zusatzstoffe Handels- und Produktionsges. mbH)",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10350",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:29 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety evaluation of an extension of use of the food enzyme non-reducing end α-l-arabinofuranosidase from the genetically modified Trichoderma reesei strain NZYM-GV",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10340",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:28 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety evaluation of the food enzyme cyclomaltodextrin glucanotransferase from the genetically modified Escherichia coli K12 strain DSM 34230",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10342",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:27 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Relevé de décisions de septembre 2026",
-  "Link": "https://www.anses.fr/fr/document/releve-decisions-septembre-2026",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Lost confidence in nutrition information offers CPG makers opening to rebuild trust",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/ific-survey-americans-lose-confidence-in-nutrition-information",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 13:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The GLP-1 effect: How weight-loss drugs are changing food and drink",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/how-glp-1-weight-loss-drugs-are-reshaping-food-and-beverage-innovation",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 12:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Food tech: 5 trends growing and 5 declining",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/food-tech-5-trends-growing-and-5-seeing-decline",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 09:50 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Facturation des professionnels et établissements de santé : qu'est ce qui peut vous être facturé ?",
-  "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/facturation-des-professionnels-et-etablissements-de-sante-quest-ce-qui-peut-vous-etre-facture",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 09:17 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Démarchage téléphonique – Rénovation énergétique - Sanction à l’encontre de la SAS HCS ENERGIE (JOUE-LES-TOURS)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/demarchage-telephonique-renovation-energetique-sanction-lencontre-de-la-sas-hcs-energie-joue-les",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 09:00 UTC",
-  "Pathogen": "Campylobacter",
-  "Event": "News",
-  "Source": "Food Safety Magazine",
-  "Title": "Researchers Raise Concerns About Multidrug-Resistant Campylobacter Circulating Across Sectors and Countries in Europe",
-  "Link": "https://www.food-safety.com/articles/11900-researchers-raise-concerns-about-multidrug-resistant-campylobacter-circulating-across-sectors-and-countries-in-europe",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-08 08:27 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Procès verbal de la réunion du 18 décembre 2025 du CES \"Substances et produits biocides\"",
-  "Link": "https://www.anses.fr/fr/document/proces-verbal-reunion-du-18-decembre-2025-du-ces-substances-produits-biocides",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 07:31 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "15 most influential private label players in the world today",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/15-most-influential-private-label-players-in-the-world-today",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 07:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Mars’ vision for 2036: The trends set to transform food and nutrition",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/mars-maps-the-future-of-food-fibre-ai-and-personalised-nutrition-set-to-reshape-eating-habits",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-08 06:27 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "AI’s booming, but execute it right to win – Agrifood experts",
-  "Link": "https://www.nutraingredients.com/Article/2026/10/08/ais-booming-but-execute-it-right-to-win-agrifood-experts",
   "Retrieved (UTC)": "2026-10-08 18:31 UTC",
   "Category": "Regulatory"
  },

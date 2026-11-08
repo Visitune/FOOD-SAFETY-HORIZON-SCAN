@@ -10,6 +10,16 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-08 02:48 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "County closes investigation into pumpkin patch linked to E. coli outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/11/county-closes-investigation-into-pumpkin-patch-linked-to-e-coli-outbreak",
+  "Retrieved (UTC)": "2026-11-08 04:49 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-07 11:00 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6050,76 +6060,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-09 04:05 UTC",
-  "Pathogen": "Campylobacter",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Light technique shows promise in tackling Campylobacter",
-  "Link": "https://www.foodsafetynews.com/2026/10/light-technique-shows-promise-in-tackling-campylobacter",
-  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-09 03:23 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Coco G’s Spicy Cheddar Cheese Popcorn Recalled For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/coco-gs-spicy-cheddar-cheese-popcorn-recalled-for-salmonella",
-  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-09 03:11 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "FDA Finds Cyclospora on Taylor Farms Iceberg Lettuce Farm",
-  "Link": "https://foodpoisoningbulletin.com/2026/fda-finds-cyclospora-on-taylor-farms-iceberg-lettuce-farm",
-  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-09 02:50 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Gardeners Basics Broccoli Seeds Recalled For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/gardeners-basics-broccoli-seeds-recalled-for-salmonella",
-  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-09 01:42 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Miami company recalls sprouts in Florida, New Hampshire because of E. coli contamination",
-  "Link": "https://www.foodsafetynews.com/2026/10/miami-company-recalls-sprouts-in-florida-new-hampshire-because-of-e-coli-contamination",
-  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-08 23:51 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Taylor Farms leader says his company is taking steps in wake of huge Cyclospora outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/10/taylor-farms-leader-says-his-company-is-taking-steps-in-wake-of-huge-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-10-09 04:55 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-08 17:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "McCormick-Unilever deal clears US antitrust hurdle as UK review deadline looms",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/08/mccormick-unilever-deal-clears-us-antitrust-hurdle",
-  "Retrieved (UTC)": "2026-10-08 18:31 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-10-15T04:02:00Z",
   "Pathogen": "",
   "Event": "News",
@@ -6467,6 +6407,16 @@
   "Title": "FDA updates list of cinnamon with high lead levels to include 21st product",
   "Link": "https://www.foodsafetynews.com/2026/11/fda-updates-list-of-cinnamon-with-high-lead-levels-to-include-21st-product/",
   "Retrieved (UTC)": "2026-11-06T20:29:15Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-07T02:36:12Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "USDA issues warning about Betterballen beef and chicken products because of undeclared allergens",
+  "Link": "https://www.foodsafetynews.com/2026/11/usda-issues-warning-about-betterballen-beef-and-chicken-products-because-of-undeclared-allergens/",
+  "Retrieved (UTC)": "2026-11-07T18:54:42Z",
   "Category": ""
  }
 ]

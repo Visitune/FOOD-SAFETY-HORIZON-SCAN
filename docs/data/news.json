@@ -10,6 +10,26 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-09 03:29 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Premium K-spirits: CJ CheilJedang takes new soju brand to US",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/09/cj-cheiljedang-takes-premium-korean-spirits-brand-jari-to-us",
+  "Retrieved (UTC)": "2026-11-09 04:57 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-08 23:13 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Biscuit sandwiches recalled because of Listeria risk",
+  "Link": "https://www.foodsafetynews.com/2026/11/biscuit-sandwiches-recalled-because-of-listeria-risk",
+  "Retrieved (UTC)": "2026-11-09 04:57 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-08 13:00 UTC",
   "Pathogen": "Clostridium botulinum",
   "Event": "Outbreak",
@@ -5747,36 +5767,6 @@
   "Title": "Cold smoked fish recalled because of Listeria risk",
   "Link": "https://www.foodsafetynews.com/2026/10/cold-smoked-fish-recalled-because-of-listeria-risk",
   "Retrieved (UTC)": "2026-10-11 04:26 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-10 02:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Nestlé launches its first-ever cookie Advent calendar",
-  "Link": "https://www.confectionerynews.com/Article/2026/10/10/nestle-launches-its-first-ever-cookie-advent-calendar",
-  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-09 23:51 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Pumpkin juice recalled because of botulism risk",
-  "Link": "https://www.foodsafetynews.com/2026/10/pumpkin-juice-recalled-because-of-botulism-risk",
-  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-09 22:00 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "More sprouting seeds linked to outbreak recalled; FDA still won't name supplier",
-  "Link": "https://www.foodsafetynews.com/2026/10/more-sprouting-seeds-linked-to-outbreak-recalled-fda-still-wont-name-supplier",
-  "Retrieved (UTC)": "2026-10-10 04:41 UTC",
   "Category": "Outbreak"
  },
  {

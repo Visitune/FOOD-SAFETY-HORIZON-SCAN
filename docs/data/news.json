@@ -10,6 +10,46 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-11 04:53 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "One death reported in relation to pumpkin patch outbreak in California",
+  "Link": "https://www.foodsafetynews.com/2026/11/one-death-reported-in-relation-to-pumpkin-patch-outbreak-in-california",
+  "Retrieved (UTC)": "2026-11-11 04:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-11 04:50 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Family Farmstead Raw Cheddar Cheese Recalled For Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/family-farmstead-raw-cheddar-cheese-recalled-for-listeria",
+  "Retrieved (UTC)": "2026-11-11 04:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-11 04:23 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Baby goat found to be cause of E. coli outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/11/baby-goat-found-to-be-cause-of-e-coli-outbreak",
+  "Retrieved (UTC)": "2026-11-11 04:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-10 21:51 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "General Mills restructures into three segments",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/10/general-mills-reorganizes-and-names-new-leadership-in-restructured-company",
+  "Retrieved (UTC)": "2026-11-11 04:59 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-10 18:03 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6500,36 +6540,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-12 04:06 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "UK egg sampling discovers different Salmonella outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/10/uk-egg-sampling-discovers-different-salmonella-outbreak",
-  "Retrieved (UTC)": "2026-10-12 04:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-12 04:03 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Illness",
-  "Source": "Food Safety News",
-  "Title": "Kebab shop owners convicted in fatal Salmonella case",
-  "Link": "https://www.foodsafetynews.com/2026/10/kebab-shop-owners-convicted-in-fatal-salmonella-case",
-  "Retrieved (UTC)": "2026-10-12 04:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-12 04:02 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Oregon public health officials investigating possible foodborne outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/10/oregon-public-health-officials-investigating-possible-foodborne-outbreak",
-  "Retrieved (UTC)": "2026-10-12 04:41 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-10-15T04:02:00Z",
   "Pathogen": "",
   "Event": "News",
@@ -6887,6 +6897,16 @@
   "Title": "USDA issues warning about Betterballen beef and chicken products because of undeclared allergens",
   "Link": "https://www.foodsafetynews.com/2026/11/usda-issues-warning-about-betterballen-beef-and-chicken-products-because-of-undeclared-allergens/",
   "Retrieved (UTC)": "2026-11-07T18:54:42Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-09T05:03:00Z",
+  "Pathogen": "",
+  "Event": "Research",
+  "Source": "Food Safety News",
+  "Title": "WHO evaluation finds parasite milestones missed",
+  "Link": "https://www.foodsafetynews.com/2026/11/who-evaluation-finds-parasite-milestones-missed/",
+  "Retrieved (UTC)": "2026-11-10T20:55:32Z",
   "Category": ""
  }
 ]

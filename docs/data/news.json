@@ -10,6 +10,36 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-12 05:04 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Oysters from Virginia river continue to test positive for Salmonella",
+  "Link": "https://www.foodsafetynews.com/2026/11/oysters-from-virginia-river-continue-to-test-positive-for-salmonella",
+  "Retrieved (UTC)": "2026-11-12 06:02 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-12 04:42 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "More sprouting seeds recalled because of possible contamination with E. coli and Salmonella",
+  "Link": "https://www.foodsafetynews.com/2026/11/more-sprouting-seeds-recalled-because-of-possible-contamination-with-e-coli-and-salmonella",
+  "Retrieved (UTC)": "2026-11-12 06:02 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-12 01:45 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Family Farmstead recalls more raw cheese; this time because of Listeria",
+  "Link": "https://www.foodsafetynews.com/2026/11/family-farmstead-recalls-more-raw-cheese-this-time-because-of-listeria",
+  "Retrieved (UTC)": "2026-11-12 06:02 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-11 18:03 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -108,6 +138,16 @@
   "Link": "https://www.foodnavigator.com/Article/2026/11/11/nestle-growth-strategy-coffee-petcare-and-nutrition-drive-growth",
   "Retrieved (UTC)": "2026-11-11 19:18 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-11 13:12 UTC",
+  "Pathogen": "Mycotoxin",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "EFSA Identifies Five Alternaria Mycotoxins in Food as Genotoxic, Finds Children Have Highest Exposure",
+  "Link": "https://www.food-safety.com/articles/12018-efsa-identifies-five-alternaria-mycotoxins-in-food-as-genotoxic-finds-children-have-highest-exposure",
+  "Retrieved (UTC)": "2026-11-12 06:02 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-11-11 10:10 UTC",
@@ -6258,86 +6298,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/10/13/china-india-and-middle-east-dairy-brands-outperform-global-rivals",
   "Retrieved (UTC)": "2026-10-13 18:58 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-13 06:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Plant Health Newsletter on Horizon Scanning September 2026",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10375",
-  "Retrieved (UTC)": "2026-10-13 18:58 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-13 06:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Plant Health Newsletter on HORIZON SCANNING August 2026",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10376",
-  "Retrieved (UTC)": "2026-10-13 18:58 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-13 06:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Safety and efficacy of a feed additive consisting of Heyndrickxia faecalis DSM 32016 (TechnoSpore50®) for calves for fattening/rearing, and other bovines, ovines, caprines, cervids and camelids at the corresponding developmental stage (Biochem…",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10353",
-  "Retrieved (UTC)": "2026-10-13 18:58 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-13 04:05 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "USDA to expand testing at deli counters",
-  "Link": "https://www.foodsafetynews.com/2026/10/usda-to-expand-testing-at-deli-counters",
-  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-13 04:03 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "EU-wide seasonal Salmonella outbreak strikes again",
-  "Link": "https://www.foodsafetynews.com/2026/10/eu-wide-seasonal-salmonella-outbreak-strikes-again",
-  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-13 04:01 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Mixed picture of Salmonella in UK animals and pet food",
-  "Link": "https://www.foodsafetynews.com/2026/10/mixed-picture-of-salmonella-in-uk-animals-and-pet-food",
-  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-13 03:55 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Salmonella Outbreak Linked to Shellfish From Wicomico River, VA",
-  "Link": "https://foodpoisoningbulletin.com/2026/salmonella-outbreak-linked-to-shellfish-from-wicomico-river-va",
-  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-13 01:06 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Deschutes County Oregon Salmonella Outbreak Investigated",
-  "Link": "https://foodpoisoningbulletin.com/2026/deschutes-county-oregon-salmonella-outbreak-investigated",
-  "Retrieved (UTC)": "2026-10-13 05:46 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-15T04:02:00Z",

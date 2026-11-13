@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-11-13 05:03 UTC",
+  "Pathogen": "Bacillus cereus",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Analysis of cereulide incident reveals persistent challenges in infant formula",
+  "Link": "https://www.foodsafetynews.com/2026/11/analysis-of-cereulide-incident-reveals-persistent-challenges-in-infant-formula",
+  "Retrieved (UTC)": "2026-11-13 05:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-13 04:37 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "One Death In Brookshire Farms E. coli Outbreak",
+  "Link": "https://foodpoisoningbulletin.com/2026/one-death-in-brookshire-farms-e-coli-outbreak",
+  "Retrieved (UTC)": "2026-11-13 05:26 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-12 16:00 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6366,66 +6386,6 @@
   "Source": "ANSES",
   "Title": "Chargé(e) de projet européen « coordinateur de communication » H/F",
   "Link": "https://www.anses.fr/fr/rejoignez-nous/offre-emploi/chargee-projet-europeen-coordinateur-communication-hf",
-  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-14 04:40 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "LEASA Living Alfalfa Sprouts Recalled For E. coli",
-  "Link": "https://foodpoisoningbulletin.com/2026/leasa-living-alfalfa-sprouts-recalled-for-e-coli",
-  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-14 04:24 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Salmonella Outbreak in Monongalia County, WV",
-  "Link": "https://foodpoisoningbulletin.com/2026/salmonella-outbreak-in-monongalia-county-wv",
-  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-14 04:19 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Nongshim taps K-pop for global Shin Ramyun growth",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/14/nongshim-taps-k-pop-to-grow-shin-ramyun-globally",
-  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-14 04:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Trend Tracker: GLP-1, protein and flavour trends",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/14/trend-tracker-glp-1-protein-and-flavour-trends",
-  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-14 04:05 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "FAO puts focus on Cyclospora prevention",
-  "Link": "https://www.foodsafetynews.com/2026/10/fao-puts-focus-on-cyclospora-prevention",
-  "Retrieved (UTC)": "2026-10-14 16:41 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-14 04:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Middle East war on obesity: Can food and diet policies reverse the trend?",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/14/middle-east-war-on-obesity-can-food-and-diet-policies-reverse-the-trend",
   "Retrieved (UTC)": "2026-10-14 16:41 UTC",
   "Category": "Regulatory"
  },

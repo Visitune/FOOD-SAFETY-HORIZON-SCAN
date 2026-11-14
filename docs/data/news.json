@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-11-14 04:45 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Heirloom Homegrown Calabrese Broccoli Seeds Recalled",
+  "Link": "https://foodpoisoningbulletin.com/2026/heirloom-homegrown-calabrese-broccoli-seeds-recalled",
+  "Retrieved (UTC)": "2026-11-14 05:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-14 04:37 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Wild West Broccoli Seeds Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/wild-west-broccoli-seeds-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-11-14 05:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-14 04:27 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "ZestiGreens Broccoli Seeds Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/zestigreens-broccoli-seeds-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-11-14 05:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-14 03:58 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "E. coli outbreak at Ohio University spreading",
+  "Link": "https://www.foodsafetynews.com/2026/11/e-coli-outbreak-at-ohio-university-spreading",
+  "Retrieved (UTC)": "2026-11-14 05:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-14 03:22 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA final report on Salmonella outbreak traced to japalenos fails to reveal grower, exporter",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-final-report-on-salmonella-outbreak-traced-to-japalenos-fails-to-reveal-grower-exporter",
+  "Retrieved (UTC)": "2026-11-14 05:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-13 16:57 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6080,146 +6130,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-15 04:06 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Spanish authorities urged to share Salmonella outbreak details",
-  "Link": "https://www.foodsafetynews.com/2026/10/spanish-authorities-urged-to-share-salmonella-outbreak-details",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Consumer Reports wants FDA official to explain the agency's response to the Cyclospora outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/10/consumer-reports-wants-fda-official-to-explain-the-agencys-response-to-the-cyclospora-outbreak",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - ENORIA SC",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-70",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - AREMUS",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-69",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - CIDETRAK-OFM",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-informations-declarees-demande-64",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - MUAYTHAI",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-68",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - CAPVER",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-informations-declarees-demande-63",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Suivi post-autorisation d'un produit phytopharmaceutique - CIDETRAK-OFM",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-suivi-post-autorisation-dun-produit-14",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Extension d'origine d'un permis de commerce parallèle d'un produit phytopharmaceutique - HM BASA",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-extension-dorigine-dun-permis-commerce-4",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - OBSERVER",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-informations-declarees-demande-62",
-  "Retrieved (UTC)": "2026-10-15 16:26 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 00:29 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "More Information on Sierra Nevada Graziers Raw Cheese Outbreak",
-  "Link": "https://foodpoisoningbulletin.com/2026/more-information-on-sierra-nevada-graziers-raw-cheese-outbreak",
-  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-14 23:58 UTC",
-  "Pathogen": "Bacillus cereus",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Outbreak at Walmart Distribution Center in Lebanon, Tennessee",
-  "Link": "https://foodpoisoningbulletin.com/2026/outbreak-at-walmart-distribution-center-in-lebanon-tennessee",
-  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-14 21:54 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Guide méthodologique pour l’élaboration de l’expertise en vue de la création ou de la modification de tableaux de maladies professionnelles, ou de recommandations aux comités régionaux de reconnaissance des maladies professionnelles",
-  "Link": "https://www.anses.fr/fr/document/guide-methodologique-lelaboration-lexpertise-vue-creation-modification-tableaux-maladies",
-  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-14 21:38 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Avis et rapport relatifs à l'expertise sur les facteurs de risques professionnels à l'origine des cancers cutanés liés aux rayons ultra-violets",
-  "Link": "https://www.anses.fr/fr/document/avis-rapport-relatifs-lexpertise-facteurs-risques-professionnels-lorigine-cancers-cutanes",
-  "Retrieved (UTC)": "2026-10-15 03:31 UTC",
-  "Category": "Regulatory"
- },
- {
   "Published (UTC)": "2026-10-15T04:02:00Z",
   "Pathogen": "",
   "Event": "News",
@@ -6577,6 +6487,66 @@
   "Title": "WHO evaluation finds parasite milestones missed",
   "Link": "https://www.foodsafetynews.com/2026/11/who-evaluation-finds-parasite-milestones-missed/",
   "Retrieved (UTC)": "2026-11-10T20:55:32Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-13T05:05:00Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Four sentenced in Taiwan after deadly outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/11/four-sentenced-in-taiwan-after-deadly-outbreak/",
+  "Retrieved (UTC)": "2026-11-13T20:56:26Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-13T05:02:00Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA increases enforcement of import rules for canned goods, mushrooms, seafood and more",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-increases-enforcement-of-import-rules-for-canned-goods-mushrooms-seafood-and-more/",
+  "Retrieved (UTC)": "2026-11-13T20:56:26Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-12T05:05:00Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "Europe on alert as cyberattacks lead to spoiled food",
+  "Link": "https://www.foodsafetynews.com/2026/11/europe-on-alert-as-cyberattacks-lead-to-spoiled-food/",
+  "Retrieved (UTC)": "2026-11-13T20:56:26Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-12T05:03:00Z",
+  "Pathogen": "",
+  "Event": "Research",
+  "Source": "Food Safety News",
+  "Title": "Research shows link between feedlot runoff and produce contamination",
+  "Link": "https://www.foodsafetynews.com/2026/11/research-shows-link-between-feedlot-runoff-and-produce-contamination/",
+  "Retrieved (UTC)": "2026-11-13T20:56:26Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-12T05:01:00Z",
+  "Pathogen": "",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Pork products linked to rise in Swiss hepatitis E cases",
+  "Link": "https://www.foodsafetynews.com/2026/11/pork-products-linked-to-rise-in-swiss-hepatitis-e-cases/",
+  "Retrieved (UTC)": "2026-11-13T20:56:26Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-11T05:08:00Z",
+  "Pathogen": "",
+  "Event": "Research",
+  "Source": "Food Safety News",
+  "Title": "Researchers find little if any progress toward reducing foodborne illness",
+  "Link": "https://www.foodsafetynews.com/2026/11/researchers-find-little-if-any-progress-toward-reducing-foodborne-illness/",
+  "Retrieved (UTC)": "2026-11-13T20:56:26Z",
   "Category": ""
  }
 ]

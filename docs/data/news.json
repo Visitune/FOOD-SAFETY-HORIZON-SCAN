@@ -1,5 +1,45 @@
 [
  {
+  "Published (UTC)": "2026-11-15 04:54 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Bengston’s Pumpkin Farm E. coli Outbreak Updated",
+  "Link": "https://foodpoisoningbulletin.com/2026/bengstons-pumpkin-farm-e-coli-outbreak-updated",
+  "Retrieved (UTC)": "2026-11-15 05:11 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-15 04:36 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Country Creek Acres Alfalfa Sprouts Recalled For Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/country-creek-acres-alfalfa-sprouts-recalled-for-salmonella",
+  "Retrieved (UTC)": "2026-11-15 05:11 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-15 03:57 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "County reports new E. coli patient who did not visit pumpkin farm; classroom to be closed",
+  "Link": "https://www.foodsafetynews.com/2026/11/county-reports-new-e-coli-patient-who-did-not-visit-pumpkin-farm",
+  "Retrieved (UTC)": "2026-11-15 05:11 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-15 03:31 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "USDA issues alert for biscuit and sausage gravy products because of Listeria risk",
+  "Link": "https://www.foodsafetynews.com/2026/11/usda-issues-alert-for-biscuit-and-sausage-gravy-products-because-of-listeria-risk",
+  "Retrieved (UTC)": "2026-11-15 05:11 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-14 04:45 UTC",
   "Pathogen": "Salmonella spp.",
   "Event": "Recall",
@@ -5847,106 +5887,6 @@
   "Title": "Will Vandemoortele and Délifrance’s integration squeeze bakery buyers?",
   "Link": "https://www.bakeryandsnacks.com/Article/2026/10/16/vandemoortele-delifrance-puts-bakery-buying-power-to-the-test",
   "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-16 04:05 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Patient count in E. coli outbreak traced to chicken wraps growing",
-  "Link": "https://www.foodsafetynews.com/2026/10/patient-count-in-e-coli-outbreak-traced-to-chicken-wraps-growing",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-16 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Retrait produit phytopharmaceutique par l'autorité de décision - SHUNGNAK",
-  "Link": "https://www.anses.fr/fr/decisions/phytosanitaire/decision-retrait-produit-phytopharmaceutique-lautorite-decision-shungnak",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-16 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision: Retrait produit phytopharmaceutique par l'autorité de décision - TOKAD",
-  "Link": "https://www.anses.fr/fr/decisions/phytosanitaire/decision-retrait-produit-phytopharmaceutique-lautorite-decision-tokad",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-16 04:03 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "Ukrainian egg firm comments on UK Salmonella link",
-  "Link": "https://www.foodsafetynews.com/2026/10/ukrainian-egg-firm-comments-on-uk-salmonella-link",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-16 04:01 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Illness",
-  "Source": "Food Safety News",
-  "Title": "French HUS cases passed 100 in 2025",
-  "Link": "https://www.foodsafetynews.com/2026/10/french-hus-cases-passed-100-in-2025",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-16 03:49 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Farm Boy L’Ancetre Life Smart Cheese Recalled For Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/farm-boy-lancetre-life-smart-cheese-recalled-for-listeria",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-16 03:19 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Family Farmstead Raw Mild Cheddar Recalled For E. coli O157:H7",
-  "Link": "https://foodpoisoningbulletin.com/2026/family-farmstead-raw-mild-cheddar-recalled-for-e-coli-o157h7",
-  "Retrieved (UTC)": "2026-10-16 16:12 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-16 02:19 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Raw milk cheese recalled after testing finds E. coli",
-  "Link": "https://www.foodsafetynews.com/2026/10/raw-milk-cheese-recalled-after-testing-finds-e-coli",
-  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-16 00:42 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "ANZ Focus: COA protein chocolate, Australia labels and Food Top 25",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/16/anz-focus-coa-protein-chocolate-australia-labels-and-food-top-25",
-  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-15 18:39 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Inside plant-based meat’s big manufacturing shift",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/15/inside-plant-based-meats-manufacturing-shift",
-  "Retrieved (UTC)": "2026-10-16 03:27 UTC",
   "Category": "Regulatory"
  },
  {

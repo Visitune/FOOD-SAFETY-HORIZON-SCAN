@@ -1,5 +1,15 @@
 [
  {
+  "Published (UTC)": "2026-11-16 05:05 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA investigating two new Salmonella outbreaks",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-investigating-two-new-salmonella-outbreaks",
+  "Retrieved (UTC)": "2026-11-16 05:07 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-15 05:12 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",
@@ -5517,26 +5527,6 @@
   "Title": "Sunday Edition: NSW",
   "Link": "https://www.foodsafetynews.com/2026/10/sunday-edition-nsw",
   "Retrieved (UTC)": "2026-10-18 15:29 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-17 03:38 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Starfish Cold Smoked Norwegian Salmon Recalled For Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/starfish-cold-smoked-norwegian-salmon-recalled-for-listeria",
-  "Retrieved (UTC)": "2026-10-17 15:05 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-17 03:19 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Chicken Wraps E. coli O157:H7 Outbreak Sickens 38",
-  "Link": "https://foodpoisoningbulletin.com/2026/chicken-wraps-e-coli-o157h7-outbreak-sickens-38",
-  "Retrieved (UTC)": "2026-10-17 15:05 UTC",
   "Category": "Outbreak"
  },
  {

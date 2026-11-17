@@ -1,5 +1,115 @@
 [
  {
+  "Published (UTC)": "2026-11-17 12:03 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Antibiorésistance en santé animale : les principaux résultats de la surveillance en 2025",
+  "Link": "https://www.anses.fr/fr/actualite/antibioresistance-sante-animale-principaux-resultats-surveillance-2025",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-17 06:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "CREAPHARM INDUSTRY",
+  "Link": "https://www.anses.fr/fr/decisions/etablissement-veterinaire/creapharm-industry",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-17 05:52 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Francisco Family Foods Alfalfa Sprouts Recalled For E. coli and Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/francisco-family-foods-alfalfa-sprouts-recalled-for-e-coli-and-salmonella",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 05:44 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "New Illness in Brookshire Farms E. coli Outbreak Announced",
+  "Link": "https://foodpoisoningbulletin.com/2026/new-illness-in-brookshire-farms-e-coli-outbreak-announced",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 05:30 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Health Alert For Mmm! Meals Made in Minutes Biscuit & Sausage Gravy",
+  "Link": "https://foodpoisoningbulletin.com/2026/health-alert-for-mmm-meals-made-in-minutes-biscuit-sausage-gravy",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 05:04 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "More E. coli patients confirmed in Ohio University outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/11/more-e-coli-patients-confirmed-in-ohio-university-outbreak",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 05:03 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Cheese linked to Swiss Listeria infections",
+  "Link": "https://www.foodsafetynews.com/2026/11/cheese-linked-to-swiss-listeria-infections",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 03:33 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Cocoa complications: Senior leaders warn of complex challenges ahead",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/17/cocoa-supply-recovers-but-demand-and-resilience-remain-challenges",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-17 03:32 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "New Protein Watch: Asia growth, yoghurt and cultivated meat",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/17/new-protein-focus-asia-growth-yoghurt-and-cultivated-meat",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-16 22:55 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Médicaments antimicrobiens chez l’animal : Surveillance des ventes et des usages - Rapport 2025",
+  "Link": "https://www.anses.fr/fr/document/Medicaments-antimicrobiens-chez-animal-rapport-annuel-2025",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-16 22:53 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Bilan 2025 du réseau d'épidémiosurveillance de l'antibiorésistance des bactéries pathogènes animales (Résapath)",
+  "Link": "https://www.anses.fr/fr/document/Resapath-rapport-annuel-2025",
+  "Retrieved (UTC)": "2026-11-17 06:53 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-16 15:23 UTC",
   "Pathogen": "",
   "Event": "News",

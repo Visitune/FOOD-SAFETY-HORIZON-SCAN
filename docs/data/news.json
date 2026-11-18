@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-11-24 09:43 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "L'Anses au Salon des Maires et des Collectivités locales 2026",
+  "Link": "https://www.anses.fr/fr/actualite/lanses-salon-maires-collectivites-locales-2026",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-18 05:55 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Priano Protein Carbonara Tortelloni Recalled For Botulism",
+  "Link": "https://foodpoisoningbulletin.com/2026/priano-protein-carbonara-tortelloni-recalled-for-botulism",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-18 05:31 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Herb to Body Yellow Dock Root Recalled For Possible Salmonella",
+  "Link": "https://foodpoisoningbulletin.com/2026/herb-to-body-yellow-dock-root-recalled-for-possible-salmonella",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-18 05:03 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "California plans research project to investigate Cyclospora contamination of lettuce",
+  "Link": "https://www.foodsafetynews.com/2026/11/california-plans-research-project-to-investigate-cyclospora-contamination-of-lettuce",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 20:32 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Launches the Global Reliance Disclosure Program to Expand Patient Access to Medicines Worldwide",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-launches-global-reliance-disclosure-program-expand-patient-access-medicines-worldwide",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-17 19:15 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -47,6 +97,16 @@
   "Title": "Why e-commerce brands are rethinking pack sizes",
   "Link": "https://www.foodnavigator.com/Article/2026/11/17/finding-the-sweet-spot-for-e-commerce-pack-sizes",
   "Retrieved (UTC)": "2026-11-17 20:31 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-17 15:02 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Ventes et usages d’antimicrobiens en médecine vétérinaire : rapports et graphiques interactifs en ligne",
+  "Link": "https://www.anses.fr/fr/actualite/ventes-usages-dantimicrobiens-medecine-veterinaire-rapports-graphiques-interactifs-0",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
   "Category": "Regulatory"
  },
  {
@@ -220,6 +280,26 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-17 11:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "SELARL RAYNAL BENOIT",
+  "Link": "https://www.anses.fr/fr/selarl-raynal-benoit",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-17 11:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "SELARL DEREGNAUCOURT CLAIRE",
+  "Link": "https://www.anses.fr/fr/selarl-deregnaucourt-claire",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-17 10:31 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -258,6 +338,16 @@
   "Link": "https://www.food-safety.com/articles/12022-food-safety-five-ep-39-microbial-meat-contamination-research-an-international-food-pyramid-and-fda-updates",
   "Retrieved (UTC)": "2026-11-17 20:31 UTC",
   "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-17 07:12 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Attestation relative à la signature électronique des certificats BPs",
+  "Link": "https://www.anses.fr/fr/document/attestation-relative-signature-electronique-certificats-bps",
+  "Retrieved (UTC)": "2026-11-18 06:14 UTC",
+  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-11-17 06:05 UTC",
@@ -6028,26 +6118,6 @@
   "Link": "https://www.anses.fr/fr/actualite/analyse-socio-economique-lanses-publie-ses-neuf-premiers-referentiels-methodologiques",
   "Retrieved (UTC)": "2026-10-19 18:25 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-19 02:02 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Fibre on fire: Next-gen functional yet convenient instant noodles and snacks",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/19/taking-fibre-beyond-supplements-into-instant-noodles-and-snacks",
-  "Retrieved (UTC)": "2026-10-19 03:34 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-18 22:19 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Lidl recalls gelato because of Listeria contamination",
-  "Link": "https://www.foodsafetynews.com/2026/10/lidl-recalls-gelato-because-of-listeria-contamination",
-  "Retrieved (UTC)": "2026-10-19 03:34 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-19T04:05:00Z",

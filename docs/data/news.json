@@ -10,6 +10,216 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-19 05:24 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Sierra Nevada Graziers Raw Cheese E. coli Outbreak Ends",
+  "Link": "https://foodpoisoningbulletin.com/2026/sierra-nevada-graziers-raw-cheese-e-coli-outbreak-ends",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:08 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA report fails to name restaurants, packing house, farms behind Salmonella outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-report-fails-to-name-restaurants-packing-house-farms-behind-salmonella-outbreak",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:06 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA report on romaine outbreak has much information redacted",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-report-on-romaine-outbreak-has-much-information-redacted",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:06 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Senators ask HHS Inspector General to investigate Cyclospora outbreak response",
+  "Link": "https://www.foodsafetynews.com/2026/11/senators-ask-hhs-inspector-general-to-investigate-cyclospora-outbreak-response",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA report withholds information on what produce sickened more than 100",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-report-withholds-information-on-what-produce-sickened-more-than-100",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Produit (usages ou partie traités par un autre RMS) - TEPPEKI ULTRA",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-produit-usages-partie-traites-autre-rms-teppeki",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché d'un produit générique d'un produit phytopharmaceutique - DEDALUS",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-autorisation-mise-marche-dun-produit-175",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Modification d'une autorisation de mise sur le marche d'une matière fertilisante ou d'un support de culture (autre modification) - KSC I PHYT-ACTYL",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-dune-autorisation-mise-marche-35",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - SI 4923",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-informations-declarees-demande-68",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - CYANTHRIA 100 OD",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-82",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - ACLODEF",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-81",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - KERLOHAS WG",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-80",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Nouveau permis de commerce parallèle d'un produit phytopharmaceutique - TERPOMA",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-nouveau-permis-commerce-parallele-dun-produit-79",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:05 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "ANSES",
+  "Title": "Conclusions d'évaluation: Extension d'origine d'un permis de commerce parallèle d'un produit phytopharmaceutique - MARAVE",
+  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-extension-dorigine-dun-permis-commerce-5",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:04 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Tomato restrictions eased in Italy after Salmonella concerns",
+  "Link": "https://www.foodsafetynews.com/2026/11/tomato-restrictions-eased-in-italy-after-salmonella-concerns",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:03 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FDA reports one outbreak has ended; investigations into others continue",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-reports-one-outbreak-has-ended-investigations-into-others-continue",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 05:01 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Case Count in Ohio University’s E. coli Outbreak Increases to 16",
+  "Link": "https://foodpoisoningbulletin.com/2026/case-count-in-ohio-universitys-e-coli-outbreak-increases-to-16",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 04:46 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Fresh To You Biscuit Sandwiches Recall For Listeria Expands",
+  "Link": "https://foodpoisoningbulletin.com/2026/fresh-to-you-biscuit-sandwiches-recall-for-listeria-expands",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 00:37 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Aldi recalls pasta because of botulism risk",
+  "Link": "https://www.foodsafetynews.com/2026/11/aldi-recalls-tortelloni-because-of-botulism-risk",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-18 22:26 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Chomps deal: Sixth Street buys $350 million minority stake in meat snack co",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/18/chomps-deal-sixth-street-buys-350-million-minority-stake",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-18 19:13 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "FDA Press Releases",
+  "Title": "FDA Approves First Drug to Treat Neurological Symptoms of Type 3 Gaucher Disease",
+  "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-neurological-symptoms-type-3-gaucher-disease",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-18 17:41 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -68,6 +278,16 @@
   "Link": "https://www.foodnavigator.com/Article/2026/11/18/fda-clarifies-expectations-for-managing-cadmium-and-other-chemical-risks",
   "Retrieved (UTC)": "2026-11-18 20:03 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-18 13:59 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "Congress Pushes for Investigation Into Impact of Trump Admin Cuts at FDA, CDC on Cyclospora Outbreak",
+  "Link": "https://www.food-safety.com/articles/12031-congress-pushes-for-investigation-into-impact-of-trump-admin-cuts-at-fda-cdc-on-cyclospora-outbreak",
+  "Retrieved (UTC)": "2026-11-19 06:16 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-11-18 12:13 UTC",
@@ -6217,56 +6437,6 @@
   "Title": "Food Safety Five Ep. 38: Regulatory and Research Updates on Cyclospora, Listeria, Microplastics, and More",
   "Link": "https://www.food-safety.com/articles/11930-food-safety-five-ep-38-regulatory-and-research-updates-on-cyclospora-listeria-microplastics-and-more",
   "Retrieved (UTC)": "2026-10-20 16:27 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-20 05:50 UTC",
-  "Pathogen": "Mycotoxin",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Safety First: Food supply risks, mycotoxins and COVID-19 side effects",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/20/safety-first-food-supply-risks-mycotoxins-and-covid-19-side-effects",
-  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-20 05:47 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "APAC cocoa trends: ‘Worst is past’, but risks remain",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/20/apac-cocoa-trends-worst-is-past-but-risks-remain",
-  "Retrieved (UTC)": "2026-10-20 16:27 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-20 01:46 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Lidl Gelatelli Coffee & Vanilla Gelato Recalled For Possible Listeria",
-  "Link": "https://foodpoisoningbulletin.com/2026/lidl-gelatelli-coffee-vanilla-gelato-recalled-for-possible-listeria",
-  "Retrieved (UTC)": "2026-10-20 03:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-20 01:03 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "More than 2 dozen patients identified in outbreak linked to oysters",
-  "Link": "https://www.foodsafetynews.com/2026/10/more-than-2-dozen-patients-identified-in-outbreak-linked-to-oysters",
-  "Retrieved (UTC)": "2026-10-20 03:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-20 00:47 UTC",
-  "Pathogen": "Listeria monocytogenes",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "Frozen smoked salmon recalled after positive test for Listeria",
-  "Link": "https://www.foodsafetynews.com/2026/10/frozen-smoked-salmon-recalled-after-positive-test-for-listeria",
-  "Retrieved (UTC)": "2026-10-20 03:44 UTC",
   "Category": "Outbreak"
  },
  {

@@ -10,6 +10,86 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-20 16:46 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "GLP-1 vision warning: Could demand be affected?",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/20/glp-1-vision-loss-warnings-could-they-impact-demand",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 15:24 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Amende de 1 260 000 € prononcée à l’encontre de la société ALTRAN TECHNOLOGIES (numéro de SIRET : 70201295600935)",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-1-260-000-eur-prononcee-lencontre-de-la-societe-altran-technologies-numero-de-siret",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 15:23 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Amende de 2 390 000 € prononcée à l’encontre de la société LAFARGE BETONS (numéro de SIRET : 41481504303184",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-2-390-000-eur-prononcee-lencontre-de-la-societe-lafarge-betons-numero-de-siret",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 14:40 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Food industry braces for rising prices as consumers reach affordability limits",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/20/food-prices-set-to-rise-as-el-nino-threatens-supply-and-higher-input-costs-trickle-down",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 13:30 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Nestlé Deep Tech Center signals new era of innovation",
+  "Link": "https://www.confectionerynews.com/Article/2026/11/20/nestle-deep-tech-center-to-accelerate-ai-innovation-and-personalised-nutrition",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 11:44 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "The race to turn TikTok trends into supermarket sales",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/20/the-viral-food-economy-is-reshaping-food-innovation",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 09:10 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "FAQ - Encadrement des soins esthétiques et de la coiffure",
+  "Link": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/faq-encadrement-des-soins-esthetiques-et-de-la-coiffure",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-20 09:08 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Conformité des produits–ACTION FRANCE SAS enjointe d’informer les consommateurs de la présence d‘OGM autorisés dans un produit commercialisé",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/conformite-des-produits-action-france-sas-enjointe-dinformer-les-consommateurs-de-la-presence",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-20 05:05 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",
@@ -50,6 +130,16 @@
   "Category": "Outbreak"
  },
  {
+  "Published (UTC)": "2026-11-19 20:26 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Capitola Beach in California Closed For E. coli Contamination",
+  "Link": "https://foodpoisoningbulletin.com/2026/capitola-beach-in-california-closed-for-e-coli-contamination",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-19 18:31 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -57,6 +147,26 @@
   "Title": "Le site SignalConso est en maintenance",
   "Link": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/le-site-signalconso-est-en-maintenance",
   "Retrieved (UTC)": "2026-11-19 20:02 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 18:10 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Grand Strand Biscuits Recalled For Possible Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/grand-strand-biscuits-recalled-for-possible-listeria",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-19 17:19 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Is the future of food colour changing the flavour game?",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/11/19/natural-food-colours-the-flavour-challenge-for-bakery-and-snacks",
+  "Retrieved (UTC)": "2026-11-20 19:40 UTC",
   "Category": "Regulatory"
  },
  {
@@ -6128,236 +6238,6 @@
   "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-autorisation-mise-marche-reconnaissance-75",
   "Retrieved (UTC)": "2026-10-22 16:44 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 16:13 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "When will El Niño peak?",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/el-nino-peak-and-industry-preperation",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 15:53 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Quality Street gets Monopoly makeover amid collaboration craze",
-  "Link": "https://www.confectionerynews.com/Article/2026/10/21/nestle-quality-street-enters-gaming-with-monopoly-christmas-collaboration",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 13:33 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "CP-g-26-07 Direct grant to Member States’ authorities to enhance public health security in the Union (DG SANTE)",
-  "Link": "https://www.efsa.europa.eu/en/funding-calls/cp-g-26-07-direct-grant-member-states-authorities-enhance-public-health-security",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 13:33 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "UPF classification doesn’t tell the whole story about nutrition, study reveals",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/upfs-and-nutrition-does-processing-predict-quality",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 13:29 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "The new rules of climate-smart food",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/building-resilient-food-systems-for-tomorrow",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 13:26 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Kroger bets on lower prices and simpler deals to drive growth",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/kroger-plans-5-billion-value-push-through-2029",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 13:13 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Mars joins Hershey and Ferrero in race for the digital impulse purchases",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/mars-launches-instagramshop-joining-hershey-ferrero-in-social-commerce-shopping",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 11:41 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Chocolate has a new problem. And it’s not cocoa prices",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/how-heatwaves-are-reshaping-the-future-of-chocolate",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 10:53 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Global dairy blends market forecast to reach $15.4bn by 2035",
-  "Link": "https://www.dairyreporter.com/Article/2026/10/21/global-dairy-blends-market-forecast-to-reach-154bn-by-2035",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 10:35 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Allplants sold to French food manufacturer",
-  "Link": "https://www.foodmanufacture.co.uk/Article/2026/10/21/allplants-sold-to-french-food-manufacturer-fleury-michon",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 09:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions de l’évaluation relatives à une demande d'autorisation de mise à disposition sur le marché pour le produit biocide LEUCILLIN",
-  "Link": "https://www.anses.fr/fr/evaluations/biocide/conclusions-levaluation-relatives-demande-dautorisation-mise-disposition-374",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 09:11 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision relative à une demande d'autorisation de mise à disposition sur le marché du produit biocide LEUCILLIN",
-  "Link": "https://www.anses.fr/fr/decisions/biocide/decision-relative-demande-dautorisation-mise-disposition-marche-du-produit-594",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 09:09 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision relative à une notification de mise à disposition sur le marché du produit biocide FRUITFLYSTOP",
-  "Link": "https://www.anses.fr/fr/decisions/biocide/decision-relative-notification-mise-disposition-marche-du-produit-biocide-59",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 09:06 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision relative à une notification de mise à disposition sur le marché du produit biocide CLIMA-BACT",
-  "Link": "https://www.anses.fr/fr/decisions/biocide/decision-relative-notification-mise-disposition-marche-du-produit-biocide-clima-0",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 08:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision relative à une notification de mise à disposition sur le marché du produit biocide CLIMA CLEAN",
-  "Link": "https://www.anses.fr/fr/decisions/biocide/decision-relative-notification-mise-disposition-marche-du-produit-biocide-clima",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 08:58 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions de l’évaluation relatives à des données post-autorisation du produit biocide AXIL PAL",
-  "Link": "https://www.anses.fr/fr/evaluations/biocide/conclusions-levaluation-relatives-donnees-post-autorisation-du-produit-biocide",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 08:56 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Décision de retrait de l’autorisation de mise à disposition sur le marché du produit biocide AXIL PAL",
-  "Link": "https://www.anses.fr/fr/decisions/biocide/decision-retrait-lautorisation-mise-disposition-marche-du-produit-biocide-axil",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 08:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "What neuroscience reveals about functional bread",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/10/21/how-brain-science-can-guide-functional-bread-development",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 08:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Exposing the mistakes that sink healthier snacks",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/10/21/why-healthier-snack-development-goes-wrong",
-  "Retrieved (UTC)": "2026-10-22 03:36 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 07:31 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "10 big ingredients concentrated in a single region",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/10-ingredients-concentred-in-one-region",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 07:10 UTC",
-  "Pathogen": "",
-  "Event": "Outbreak",
-  "Source": "ANSES",
-  "Title": "Fièvre Q : harmoniser sa gestion pour mieux protéger les humains et les animaux",
-  "Link": "https://www.anses.fr/fr/actualite/fievre-q-harmoniser-sa-gestion-mieux-proteger-humains-animaux",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21T04:03:00Z",
-  "Pathogen": "Salmonella",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "UK links Salmonella outbreak to Moroccan tomatoes",
-  "Link": "https://www.foodsafetynews.com/2026/10/uk-links-salmonella-outbreak-to-moroccan-tomatoes/",
-  "Retrieved (UTC)": "2026-10-21T06:21:26Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-10-21T04:01:00Z",
-  "Pathogen": "Salmonella",
-  "Event": "News",
-  "Source": "Food Safety News",
-  "Title": "New South Wales misses Salmonella reduction target",
-  "Link": "https://www.foodsafetynews.com/2026/10/new-south-wales-misses-salmonella-reduction-target/",
-  "Retrieved (UTC)": "2026-10-21T06:21:26Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-10-22T04:05:00Z",

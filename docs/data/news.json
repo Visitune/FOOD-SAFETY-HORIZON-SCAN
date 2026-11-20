@@ -10,6 +10,46 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-20 05:05 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "FSIS announces outbreak with ground beef as suspected source",
+  "Link": "https://www.foodsafetynews.com/2026/11/fsis-announces-outbreak-with-ground-beef-as-suspected-source",
+  "Retrieved (UTC)": "2026-11-20 05:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-20 05:04 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "E. coli outbreak at Ohio University continues to grow",
+  "Link": "https://www.foodsafetynews.com/2026/11/e-coli-outbreak-at-ohio-university-continues-to-grow",
+  "Retrieved (UTC)": "2026-11-20 05:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-20 05:03 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Scotland sees drop in major pathogen reports",
+  "Link": "https://www.foodsafetynews.com/2026/11/scotland-sees-drop-in-major-pathogen-reports",
+  "Retrieved (UTC)": "2026-11-20 05:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-20 05:01 UTC",
+  "Pathogen": "Hepatitis A",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Outbreaks and infections in focus at ESCAIDE",
+  "Link": "https://www.foodsafetynews.com/2026/11/outbreaks-and-infections-in-focus-at-escaide",
+  "Retrieved (UTC)": "2026-11-20 05:59 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-19 18:31 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -88,6 +128,16 @@
   "Link": "https://www.foodnavigator.com/Article/2026/11/19/trade-mark-protection-becomes-business-critical-for-food-and-drink-brands",
   "Retrieved (UTC)": "2026-11-19 20:02 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-19 10:15 UTC",
+  "Pathogen": "Cyclospora",
+  "Event": "Outbreak",
+  "Source": "Food Safety Magazine",
+  "Title": "California to Research Cyclospora Prevention",
+  "Link": "https://www.food-safety.com/articles/12036-california-to-research-cyclospora-prevention",
+  "Retrieved (UTC)": "2026-11-20 05:59 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-11-19 08:33 UTC",
@@ -6288,36 +6338,6 @@
   "Link": "https://www.anses.fr/fr/actualite/fievre-q-harmoniser-sa-gestion-mieux-proteger-humains-animaux",
   "Retrieved (UTC)": "2026-10-21 16:44 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 05:49 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Less heat, more appeal: Samyang bets on swicy noodles and protein pasta",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/21/samyang-bets-on-swicy-noodles-and-protein-pasta",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-21 04:20 UTC",
-  "Pathogen": "Cyclospora",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Consumer Reports Wants Cyclospora Outbreak Answers From FDA and CDC",
-  "Link": "https://foodpoisoningbulletin.com/2026/consumer-reports-wants-cyclospora-outbreak-answers-from-fda-and-cdc",
-  "Retrieved (UTC)": "2026-10-21 16:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-21 03:23 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Raw Oysters Salmonella Outbreak Sickens 27 in 12 States",
-  "Link": "https://foodpoisoningbulletin.com/2026/raw-oysters-salmonella-outbreak-sickens-27-in-12-states",
-  "Retrieved (UTC)": "2026-10-21 03:36 UTC",
-  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-10-21T04:03:00Z",

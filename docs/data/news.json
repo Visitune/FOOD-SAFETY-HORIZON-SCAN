@@ -10,6 +10,56 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-21 05:31 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "E. coli Outbreak at Tufts University Fresh at Carmichael Dining Center",
+  "Link": "https://foodpoisoningbulletin.com/2026/e-coli-outbreak-at-tufts-university-fresh-at-carmichael-dining-center",
+  "Retrieved (UTC)": "2026-11-21 05:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-21 04:58 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Recall of Fresh & Ready Foods Biscuit Sandwiches Expanded",
+  "Link": "https://foodpoisoningbulletin.com/2026/recall-of-fresh-ready-foods-biscuit-sandwiches-expanded",
+  "Retrieved (UTC)": "2026-11-21 05:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-21 03:51 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "E. coli infections documented at Tufts University",
+  "Link": "https://www.foodsafetynews.com/2026/11/e-coli-infections-documented-at-tufts-university",
+  "Retrieved (UTC)": "2026-11-21 05:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-21 01:55 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Fresh & Ready expands recall of biscuit sandwiches because of Listeria risk",
+  "Link": "https://www.foodsafetynews.com/2026/11/fresh-ready-expands-recall-of-biscuit-sandwiches-because-of-listeria-risk",
+  "Retrieved (UTC)": "2026-11-21 05:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-21 01:43 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Safety News",
+  "Title": "Lunch Box brand biscuit sandwiches recalled because of Listeria risk",
+  "Link": "https://www.foodsafetynews.com/2026/11/lunch-box-brand-biscuit-sandwiches-recalled-because-of-listeria-risk",
+  "Retrieved (UTC)": "2026-11-21 05:54 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-20 16:46 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6156,86 +6206,6 @@
   "Source": "ANSES",
   "Title": "Brucellose : un abattage partiel du troupeau est-il possible ?",
   "Link": "https://www.anses.fr/fr/actualite/brucellose-abattage-partiel-du-troupeau-est-il-possible",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-22 04:28 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Raw Oysters Salmonella Outbreak Sickens 55 People",
-  "Link": "https://foodpoisoningbulletin.com/2026/raw-oysters-salmonella-outbreak-sickens-55-people",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-22 04:12 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Chicken Wraps E. coli O157:H7 Outbreak Sickens 50",
-  "Link": "https://foodpoisoningbulletin.com/2026/chicken-wraps-e-coli-o157h7-outbreak-sickens-50",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-22 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Changement de composition non significatif (mineur) d'un produit phytopharmaceutique - HORTIMEC",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-changement-composition-non-significatif-79",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-22 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Changement de composition non significatif (mineur) d'un produit phytopharmaceutique - PICTOR ACTIVE",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-changement-composition-non-significatif-78",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-22 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Modification des informations déclarées dans une demande en cours d'évaluation d'un produit phytopharmaceutique - HORTIMEC",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-modification-informations-declarees-demande-66",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-22 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'un produit phytopharmaceutique - AMMARI",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-autorisation-mise-marche-reconnaissance-76",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-22 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Extension d'usages mineurs d'un produit phytopharmaceutique - INSIGNIA",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-extension-dusages-mineurs-dun-produit-15",
-  "Retrieved (UTC)": "2026-10-22 16:44 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-22 04:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Conclusions d'évaluation: Autorisation de mise sur le marché par reconnaissance mutuelle d'un produit phytopharmaceutique - TOTSEC",
-  "Link": "https://www.anses.fr/fr/evaluations/phytosanitaire/conclusions-devaluation-autorisation-mise-marche-reconnaissance-75",
   "Retrieved (UTC)": "2026-10-22 16:44 UTC",
   "Category": "Regulatory"
  },

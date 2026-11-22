@@ -6040,26 +6040,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-23 05:00 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Packaging Happenings: McVitie’s China, Aussie labels and mini drinks",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/23/packaging-happenings-mcvities-china-aussie-labels-and-mini-drinks",
-  "Retrieved (UTC)": "2026-10-23 16:35 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-23 03:14 UTC",
-  "Pathogen": "Norovirus",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Bentwood Elementary School Norovirus Outbreak in Kansas",
-  "Link": "https://foodpoisoningbulletin.com/2026/bentwood-elementary-school-norovirus-outbreak-in-kansas",
-  "Retrieved (UTC)": "2026-10-23 03:41 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-10-23T04:18:29Z",
   "Pathogen": "Salmonella",
   "Event": "Recall",
@@ -6357,6 +6337,126 @@
   "Title": "Researchers find little if any progress toward reducing foodborne illness",
   "Link": "https://www.foodsafetynews.com/2026/11/researchers-find-little-if-any-progress-toward-reducing-foodborne-illness/",
   "Retrieved (UTC)": "2026-11-13T20:56:26Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-21T05:54:42Z",
+  "Pathogen": "Escherichia coli (generic)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "Three E. coli Outbreaks at a Petting Zoo, a Pumpkin Patch and a State Fair: What We Know and What We Do Not as of November 20",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/three-e-coli-outbreaks-at-a-petting-zoo-a-pumpkin-patch-and-a-state-fair-what-we-know-and-what-we-do-not-as-of-november-20/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-20T06:11:37Z",
+  "Pathogen": "Escherichia coli (generic)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "Tufts University Reports Five Illnesses in Suspected E. coli Outbreak Tied to Carmichael Dining Center: What Kind of E. coli, and 12 Questions for Health Officials",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/tufts-university-reports-five-illnesses-in-suspected-e-coli-outbreak-tied-to-carmichael-dining-center-what-kind-of-e-coli-and-12-questions-for-health-officials/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-18T16:15:59Z",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Poison Journal",
+  "Title": "ALDI Recalls Priano Protein Tortelloni in Four Southern States Over Botulism Risk",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/aldi-recalls-priano-protein-tortelloni-in-four-southern-states-over-botulism-risk/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-18T16:14:14Z",
+  "Pathogen": "Salmonella",
+  "Event": "Recall",
+  "Source": "Food Poison Journal",
+  "Title": "Herb To Body Yellow Dock Root Recalled Nationwide for Possible Salmonella",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/herb-to-body-yellow-dock-root-recalled-nationwide-for-possible-salmonella/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-18T15:09:58Z",
+  "Pathogen": "Shiga toxin-producing E. coli (STEC)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "USDA Has Opened an Active E. coli O157:H7 Investigation With Ground Beef as the Suspect. No Recall, No Alert, No Case Count. The Same Morning CDC Added Three E. coli Files to Its Dashboard, None With ",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/usda-has-opened-an-active-e-coli-o157h7-investigation-with-ground-beef-as-the-suspect-no-recall-no-alert-no-case-count-the-same-morning-cdc-added-three-e-coli-files-to-its-d/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-18T08:26:13Z",
+  "Pathogen": "Escherichia coli (generic)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "Three E. coli Outbreaks a Month On: Will County Found the Goat, San Luis Obispo Closed Its File Before a Preschooler Got Sick, and Dallas Has Said Nothing Since October 28",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/three-e-coli-outbreaks-a-month-on-will-county-found-the-goat-san-luis-obispo-closed-its-file-before-a-preschooler-got-sick-and-dallas-has-said-nothing-since-october-28/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-18T08:13:41Z",
+  "Pathogen": "Escherichia coli (generic)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "Ohio University E. coli Outbreak: What We Know and What We Don’t",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/ohio-university-e-coli-outbreak-what-we-know-and-what-we-dont/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-17T16:53:37Z",
+  "Pathogen": "Escherichia coli (generic)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "Ohio University E. coli Outbreak: 16 Students Confirmed, the Health Department Says the Onset Dates Line Up, and No Source Is Named. What That Means, What Should Be Published Next, and What Students S",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/ohio-university-e-coli-outbreak-16-students-confirmed-the-health-department-says-the-onset-dates-line-up-and-no-source-is-named-what-that-means-what-should-be-published-next-and-what/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-16T15:18:29Z",
+  "Pathogen": "Shiga toxin-producing E. coli (STEC)",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "CDC and FDA Closed the Graziers Raw Milk Cheese E. coli O26 Outbreak at 18 Sick in Ten States, Nine Hospitalized and Three Children With Kidney Failure. The Last Illness Began Four Days Before the Rec",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/cdc-and-fda-closed-the-graziers-raw-milk-cheese-e-coli-o26-outbreak-at-18-sick-in-ten-states-nine-hospitalized-and-three-children-with-kidney-failure-the-last-illness-began-four-days-befo/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-16T15:15:37Z",
+  "Pathogen": "Salmonella",
+  "Event": "Outbreak",
+  "Source": "Food Poison Journal",
+  "Title": "Virginia’s Fourth Round of Little Wicomico Oyster Tests Is Positive for Salmonella: Ten of Ten Samples From Five Leases. Four Rounds in Five Weeks, Zero Clean, No Serotypes Since October 21, and the W",
+  "Link": "https://www.foodpoisonjournal.com/food-poisoning-information/virginias-fourth-round-of-little-wicomico-oyster-tests-is-positive-for-salmonella-ten-of-ten-samples-from-five-leases-four-rounds-in-five-weeks-zero-clean-no-serotypes-since-october/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-20T05:02:00Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "New Zealand issues chicken washing reminder",
+  "Link": "https://www.foodsafetynews.com/2026/11/new-zealand-issues-chicken-washing-reminder/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-20T02:02:05Z",
+  "Pathogen": "",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Health officials issue warning about parasites in Wethington Farms raw milk amid outbreak",
+  "Link": "https://www.foodsafetynews.com/2026/11/health-officials-issue-warning-about-parasites-in-wethington-farms-raw-milk/",
+  "Retrieved (UTC)": "2026-11-21T20:36:38Z",
   "Category": ""
  }
 ]

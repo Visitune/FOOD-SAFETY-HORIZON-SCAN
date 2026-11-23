@@ -10,6 +10,36 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-23 05:07 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Illness",
+  "Source": "Food Safety News",
+  "Title": "Publisher's Platform: Thirty years of progress against E. coli in hamburger, and how to use it",
+  "Link": "https://www.foodsafetynews.com/2026/11/publishers-platform-thirty-years-of-progress-against-e-coli-in-hamburger-and-how-to-use-it",
+  "Retrieved (UTC)": "2026-11-23 06:06 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-23 05:04 UTC",
+  "Pathogen": "Yersinia",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Yersinia outbreak serves as reminder of risks of raw milk cheese",
+  "Link": "https://www.foodsafetynews.com/2026/11/yersinia-outbreak-serves-as-reminder-of-risks-of-raw-milk-cheese",
+  "Retrieved (UTC)": "2026-11-23 06:06 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-23 05:01 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "Outbreak",
+  "Source": "Food Safety News",
+  "Title": "Spotlight on Salmonella outbreaks at ESCAIDE",
+  "Link": "https://www.foodsafetynews.com/2026/11/spotlight-on-salmonella-outbreaks-at-escaide",
+  "Retrieved (UTC)": "2026-11-23 06:06 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-21 05:31 UTC",
   "Pathogen": "E. coli / STEC",
   "Event": "Outbreak",
@@ -5847,26 +5877,6 @@
   "Title": "Publisher's Platform: USDA finally on the record; names Trader Joe's in E. coli outbreak",
   "Link": "https://www.foodsafetynews.com/2026/10/publishers-platform-usda-finally-on-the-record-names-trader-joes-in-e-coli-outbreak",
   "Retrieved (UTC)": "2026-10-25 03:31 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-24 04:18 UTC",
-  "Pathogen": "Salmonella spp.",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Gardeners Basics Broccoli Sprouting Seeds Recalled For Salmonella",
-  "Link": "https://foodpoisoningbulletin.com/2026/gardeners-basics-broccoli-sprouting-seeds-recalled-for-salmonella",
-  "Retrieved (UTC)": "2026-10-24 15:29 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-24 00:53 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Recall",
-  "Source": "Food Safety News",
-  "Title": "FDA issues warning about cold smoked fish because of botulism risk; company refuses to recall product",
-  "Link": "https://www.foodsafetynews.com/2026/10/fda-issues-warning-about-cold-smoked-fish-because-of-botulism-risk-company-refuses-to-recall-product",
-  "Retrieved (UTC)": "2026-10-24 03:35 UTC",
   "Category": "Outbreak"
  },
  {

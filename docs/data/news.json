@@ -10,6 +10,46 @@
   "Category": "Regulatory"
  },
  {
+  "Published (UTC)": "2026-11-24 08:15 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Coca-Cola bottler placed under EU antitrust investigation",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/24/eu-launches-antitrust-probe-into-coca-cola-bottler-ccep",
+  "Retrieved (UTC)": "2026-11-24 08:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-24 05:21 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Prime Food Dried Croaker Fish Recalled For Possible Botulism",
+  "Link": "https://foodpoisoningbulletin.com/2026/prime-food-dried-croaker-fish-recalled-for-possible-botulism",
+  "Retrieved (UTC)": "2026-11-24 08:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-24 05:01 UTC",
+  "Pathogen": "Norovirus",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "Korean health agency warns of rising norovirus risk",
+  "Link": "https://www.foodsafetynews.com/2026/11/korean-health-agency-warns-of-rising-norovirus-risk",
+  "Retrieved (UTC)": "2026-11-24 08:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-24 04:47 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Prime Food Dried Herring Recalled For Possible Botulism",
+  "Link": "https://foodpoisoningbulletin.com/2026/prime-food-dried-herring-recalled-for-possible-botulism",
+  "Retrieved (UTC)": "2026-11-24 08:44 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-23 18:25 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -48,6 +88,16 @@
   "Link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-new-hormone-therapy-early-stage-breast-cancer-more-20-years",
   "Retrieved (UTC)": "2026-11-23 23:28 UTC",
   "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-23 15:38 UTC",
+  "Pathogen": "Vibrio",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "Codex Committee on Food Hygiene Green-Lights New Work on Infant Formula Standards at 56th Session",
+  "Link": "https://www.food-safety.com/articles/12044-codex-committee-on-food-hygiene-green-lights-new-work-on-infant-formula-standards-at-56th-session",
+  "Retrieved (UTC)": "2026-11-24 08:44 UTC",
+  "Category": "Outbreak"
  },
  {
   "Published (UTC)": "2026-11-23 15:32 UTC",
@@ -6150,16 +6200,6 @@
   "Category": "Regulatory"
  },
  {
-  "Published (UTC)": "2026-10-25 01:49 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Publisher's Platform: USDA finally on the record; names Trader Joe's in E. coli outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/10/publishers-platform-usda-finally-on-the-record-names-trader-joes-in-e-coli-outbreak",
-  "Retrieved (UTC)": "2026-10-25 03:31 UTC",
-  "Category": "Outbreak"
- },
- {
   "Published (UTC)": "2026-10-25T01:36:26Z",
   "Pathogen": "",
   "Event": "Recall",
@@ -6547,6 +6587,26 @@
   "Title": "Health officials issue warning about parasites in Wethington Farms raw milk amid outbreak",
   "Link": "https://www.foodsafetynews.com/2026/11/health-officials-issue-warning-about-parasites-in-wethington-farms-raw-milk/",
   "Retrieved (UTC)": "2026-11-21T20:36:38Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-23T05:03:00Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA flags sanitation, allergen and labeling problems at noodle maker and supplement company",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-flags-sanitation-allergen-and-labeling-problems-at-noodle-maker-and-supplement-company/",
+  "Retrieved (UTC)": "2026-11-24T01:45:16Z",
+  "Category": ""
+ },
+ {
+  "Published (UTC)": "2026-11-23T05:02:00Z",
+  "Pathogen": "",
+  "Event": "Alert",
+  "Source": "Food Safety News",
+  "Title": "FDA reinforces import rules on soft cheese, fish, pet treats and more",
+  "Link": "https://www.foodsafetynews.com/2026/11/fda-reinforces-import-rules-on-soft-cheese-fish-pet-treats-and-more/",
+  "Retrieved (UTC)": "2026-11-24T01:45:16Z",
   "Category": ""
  }
 ]

@@ -1,5 +1,25 @@
 [
  {
+  "Published (UTC)": "2026-11-25 06:00 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "John Farmer deepens health focus amid pistachio squeeze",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/25/john-farmer-deepens-health-focus-amid-pistachio-squeeze",
+  "Retrieved (UTC)": "2026-11-25 07:19 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 05:40 UTC",
+  "Pathogen": "Clostridium botulinum",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "D & M Smoked Fish Cold Smoked Sprats Recalled For Botulism",
+  "Link": "https://foodpoisoningbulletin.com/2026/d-m-smoked-fish-cold-smoked-sprats-recalled-for-botulism",
+  "Retrieved (UTC)": "2026-11-25 07:19 UTC",
+  "Category": "Outbreak"
+ },
+ {
   "Published (UTC)": "2026-11-24 15:45 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6267,36 +6287,6 @@
   "Title": "How do you modernise a heritage brand without killing what made it famous?",
   "Link": "https://www.bakeryandsnacks.com/Article/2026/10/26/heritage-brands-how-food-icons-can-innovate-without-losing-consumers",
   "Retrieved (UTC)": "2026-10-27 17:35 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 05:33 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Middle East Focus: Gluten-free, local soft drinks and halal rules",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/middle-east-focus-gluten-free-local-soft-drinks-and-halal-rules",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 05:33 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Chocolake targets APAC markets as Dubai chocolate trend endures",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/chocolake-targets-apac-markets-as-dubai-chocolate-trend-endures",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 05:07 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Rethinking snacks: APAC foods for weight management",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/rethinking-snacks-apac-foods-for-weight-management",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
   "Category": "Regulatory"
  },
  {

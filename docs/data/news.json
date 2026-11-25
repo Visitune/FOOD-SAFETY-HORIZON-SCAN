@@ -1,5 +1,105 @@
 [
  {
+  "Published (UTC)": "2026-11-25 16:46 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "5 emerging GLP-1 trends that F&B needs to know about",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/25/five-food-and-drink-trends-emerging-from-glp-1-use",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 15:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Godiva blends chocolate, art and dessert for centenary celebrations",
+  "Link": "https://www.confectionerynews.com/Article/2026/11/25/godiva-centenary-inspires-new-christmas-chocolate-collections-and-collaborations",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 14:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "How Kroger, Sam’s Club signal retail media’s future",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/25/as-retail-media-matures-kroger-sams-club-look-to-shopper-behavior-for-growth",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 14:19 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Uncrustables, Café Bustelo hit milestones as Smucker lifts profit forecast",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/25/smucker-earnings-uncrustables-demand-outpaces-supply",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 12:06 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Food waste: The industry’s untapped goldmine",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/25/food-waste-goldmine-unlocking-billions-in-hidden-value",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 10:30 UTC",
+  "Pathogen": "Salmonella spp.",
+  "Event": "News",
+  "Source": "Food Safety Magazine",
+  "Title": "UK Researchers Show the Potential of Bacteriophages for Controlling Drug-Resistant Salmonella in Poultry",
+  "Link": "https://www.food-safety.com/articles/12049-uk-researchers-show-the-potential-of-bacteriophages-for-controlling-drug-resistant-salmonella-in-poultry",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-25 09:50 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "McCormick proposes Colman’s sale to clear CMA hurdle",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/25/mccormick-offers-colmans-sale-to-address-cma-concerns",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 09:22 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "DGCCRF",
+  "Title": "Surveillance du marché de l’écoconception et de l’étiquetage énergétique : premiers résultats de l’action conjointe européenne (EEPLIANT4)",
+  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/surveillance-du-marche-de-lecoconception-et-de-letiquetage-energetique-premiers-resultats",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 08:39 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Smallest diameter of young trees for Bursaphelenchus xylophilus spread and their survival after infestation",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10420",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-25 08:38 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "EFSA",
+  "Title": "Safety of 31 flavouring compounds providing a toasted-cereal flavour and belonging to different chemical groups for use as feed additives in all animal species (FEFANA asbl)",
+  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10418",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-25 06:00 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -18,6 +118,16 @@
   "Link": "https://foodpoisoningbulletin.com/2026/d-m-smoked-fish-cold-smoked-sprats-recalled-for-botulism",
   "Retrieved (UTC)": "2026-11-25 07:19 UTC",
   "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-24 16:32 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Why Mondelēz’s unwanted brands make sense for Princes",
+  "Link": "https://www.bakeryandsnacks.com/Article/2026/11/24/princes-mondelez-80m-deal-the-strategy-behind-the-acquisition",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
+  "Category": "Regulatory"
  },
  {
   "Published (UTC)": "2026-11-24 15:45 UTC",
@@ -137,6 +247,16 @@
   "Title": "Coca-Cola bottler placed under EU antitrust investigation",
   "Link": "https://www.foodnavigator.com/Article/2026/11/24/eu-launches-antitrust-probe-into-coca-cola-bottler-ccep",
   "Retrieved (UTC)": "2026-11-24 08:44 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-24 08:04 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Dairy sector welcomes EU-UK deal but urges clarity on implementation",
+  "Link": "https://www.dairyreporter.com/Article/2026/11/24/dairy-sector-welcomes-eu-uk-deal-but-urges-clarity-on-implementation",
+  "Retrieved (UTC)": "2026-11-25 21:10 UTC",
   "Category": "Regulatory"
  },
  {
@@ -6008,316 +6128,6 @@
   "Link": "https://www.foodnavigator.com/Article/2026/10/27/3-food-ingredients-with-surprising-hidden-benefits-that-consumers-want",
   "Retrieved (UTC)": "2026-10-27 17:35 UTC",
   "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 15:44 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Lindt chairman rules out resignation following shock CEO exit",
-  "Link": "https://www.confectionerynews.com/Article/2026/10/26/lindt-chairman-rejects-resignation-speculation-following-ceo-shake-up",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 14:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Trump tariffs challenged: Cheese importer case follows similar Burlap & Barrel bid",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/gellert-global-sues-over-trumps-canada-tariff-authority",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 13:59 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Kraft Heinz, Gerber, Once Upon a Farm are pouring into kids’ hydration",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/kraft-heinz-gerber-once-upon-a-farm-are-pouring-into-kids-hydration",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 13:54 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Are CPG founders of color being undervalued?",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/are-cpg-founders-of-color-being-undervalued",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 13:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "AI startups raise $198.7M for marketing, commerce and CPG operations",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/ai-startups-raise-1987m-for-marketing-and-cpg-tools",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 12:32 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "Beyond cocoa: The race to futureproof chocolate",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/the-future-of-chocolate-how-cocoa-alternatives-are-reshaping-confectionery",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 11:13 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Peer review of the pesticide risk assessment of the active substance Trichoderma atroviride T11",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10388",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 11:13 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Assessment of genetically modified soybean MON 94313 × MON 89788 (application GMFF-2023-17394)",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10366",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 11:12 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "EFSA",
-  "Title": "Pine wood nematode: Bursapehelenchus xylophilus Webinar 20",
-  "Link": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2026.EN-10422",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "What diets are consumers following?",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/26/diets-shaping-fb",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "ANSES",
-  "Title": "Note AST relative à une « Demande d'avis relatif à l'élaboration d'un document de synthèse, à destination de la population, des connaissances relatives à l'exposition aux rayonnements électromagnétiques et aux effets sanitaires associés à cette exposition »",
-  "Link": "https://www.anses.fr/fr/document/synthese-des-connaissances-relatives-a-exposition-rayonnements-electromagnetiques-et-effets-sanitaires-associes",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 830 000 € prononcée à l’encontre de la société BECTON DICKINSON France (numéro de SIRET : 05650171100115)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-830-000-eur-prononcee-lencontre-de-la-societe-becton-dickinson-france-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:14 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 845 000 € prononcée à l’encontre de la société AOSTE (numéro de SIRET : 38881872600027)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-845-000-eur-prononcee-lencontre-de-la-societe-aoste-numero-de-siret-38881872600027",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 300 000 € prononcée à l’encontre de la société SUEZ RV CENTRE EST (numéro de SIRET : 34348850800924)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-300-000-eur-prononcee-lencontre-de-la-societe-suez-rv-centre-est-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 114 000 € prononcée à l’encontre de la société LVMH FASHION GROUP SUPPORT (numéro de SIRET : 80204618500053)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-114-000-eur-prononcee-lencontre-de-la-societe-lvmh-fashion-group-support-numero-de",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 277 000 € prononcée à l’encontre de la société AUTOGRILL COTE France (numéro de SIRET : 39137823900258)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-277-000-eur-prononcee-lencontre-de-la-societe-autogrill-cote-france-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 115 000 € prononcée à l’encontre de la société SQLI (numéro de SIRET : 35386190900458)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-115-000-eur-prononcee-lencontre-de-la-societe-sqli-numero-de-siret-35386190900458",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 10:01 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 115 000 € prononcée à l’encontre de la société BBL SERVICES (numéro de SIRET : 87940061200088)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-115-000-eur-prononcee-lencontre-de-la-societe-bbl-services-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 13 000 € prononcée à l’encontre de la société ZP France (numéro de SIRET : 31966519600014)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-13-000-eur-prononcee-lencontre-de-la-societe-zp-france-numero-de-siret-31966519600014",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 15 000 € prononcée à l’encontre de la société JOURDAN ET MARZE SUCCESSEURS (numéro de SIRET : 41255269700028)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-15-000-eur-prononcee-lencontre-de-la-societe-jourdan-et-marze-successeurs-numero-de",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 25 000 € prononcée à l’encontre de la société POTASSE ET PRODUITS CHIMIQUES SAS (numéro de SIRET : 77564285300011)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-25-000-eur-prononcee-lencontre-de-la-societe-potasse-et-produits-chimiques-sas-numero",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 15 900 € prononcée à l’encontre de la société COSMEUROP (numéro de SIRET : 77573002100034)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-15-900-eur-prononcee-lencontre-de-la-societe-cosmeurop-numero-de-siret-77573002100034",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 13 000 € prononcée à l’encontre de la société SOCIETE LOUIS VUITTON SERVICES (numéro de SIRET : 34766245400110)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-13-000-eur-prononcee-lencontre-de-la-societe-societe-louis-vuitton-services-numero-de",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 65 000 € prononcée à l’encontre de la société STUDIO CANAL (numéro de SIRET : 05680129300129)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-65-000-eur-prononcee-lencontre-de-la-societe-studio-canal-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 83 000 € prononcée à l’encontre de la société SNADEC ENVIRONNEMENT SOCIETE NATIONALE (numéro de SIRET : 31159591200024)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-83-000-eur-prononcee-lencontre-de-la-societe-snadec-environnement-societe-nationale",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 5 000 € prononcée à l’encontre de la société PRAXY CENTRE (numéro de SIRET : 51820597600021)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-5-000-eur-prononcee-lencontre-de-la-societe-praxy-centre-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 09:05 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "DGCCRF",
-  "Title": "Amende de 15 000 € prononcée à l’encontre de la société CIRIL GROUP (numéro de SIRET : 30516304000119)",
-  "Link": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/injonctions-et-sanctions/amende-de-15-000-eur-prononcee-lencontre-de-la-societe-ciril-group-numero-de-siret",
-  "Retrieved (UTC)": "2026-10-26 18:21 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26 08:52 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "How do you modernise a heritage brand without killing what made it famous?",
-  "Link": "https://www.bakeryandsnacks.com/Article/2026/10/26/heritage-brands-how-food-icons-can-innovate-without-losing-consumers",
-  "Retrieved (UTC)": "2026-10-27 17:35 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-26T04:05:00Z",
-  "Pathogen": "Salmonella",
-  "Event": "Outbreak",
-  "Source": "Food Safety News",
-  "Title": "Tomato use suspended as Italy tackles Salmonella outbreak",
-  "Link": "https://www.foodsafetynews.com/2026/10/tomato-use-suspended-as-italy-tackles-salmonella-outbreak/",
-  "Retrieved (UTC)": "2026-10-26T06:44:17Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-10-26T04:03:00Z",
-  "Pathogen": "",
-  "Event": "Alert",
-  "Source": "Food Safety News",
-  "Title": "FDA warns fermented cabbage maker about pathogen risks, labeling violations",
-  "Link": "https://www.foodsafetynews.com/2026/10/fda-warns-fermented-cabbage-maker-about-pathogen-risks-labeling-violations/",
-  "Retrieved (UTC)": "2026-10-26T06:44:17Z",
-  "Category": ""
- },
- {
-  "Published (UTC)": "2026-10-26T04:01:00Z",
-  "Pathogen": "Campylobacter",
-  "Event": "Research",
-  "Source": "Food Safety News",
-  "Title": "Campylobacter response in chickens not enough for elimination",
-  "Link": "https://www.foodsafetynews.com/2026/10/campylobacter-response-in-chickens-not-enough-for-elimination/",
-  "Retrieved (UTC)": "2026-10-26T06:44:17Z",
-  "Category": ""
  },
  {
   "Published (UTC)": "2026-10-27T04:03:00Z",

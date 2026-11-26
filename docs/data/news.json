@@ -1,5 +1,55 @@
 [
  {
+  "Published (UTC)": "2026-11-26 05:50 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Seattle’s Favorite Biscuit Sandwiches Recalled For Listeria",
+  "Link": "https://foodpoisoningbulletin.com/2026/seattles-favorite-biscuit-sandwiches-recalled-for-listeria",
+  "Retrieved (UTC)": "2026-11-26 07:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-26 05:35 UTC",
+  "Pathogen": "E. coli / STEC",
+  "Event": "Recall",
+  "Source": "Food Poisoning Bulletin",
+  "Title": "Burattina Fresh Stretched Curd Cheese Recalled For E. coli",
+  "Link": "https://foodpoisoningbulletin.com/2026/burattina-fresh-stretched-curd-cheese-recalled-for-e-coli",
+  "Retrieved (UTC)": "2026-11-26 07:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-26 05:01 UTC",
+  "Pathogen": "Listeria monocytogenes",
+  "Event": "News",
+  "Source": "Food Safety News",
+  "Title": "UKHSA reviews antimicrobial resistance of Listeria",
+  "Link": "https://www.foodsafetynews.com/2026/11/ukhsa-reviews-antimicrobial-resistance-of-listeria",
+  "Retrieved (UTC)": "2026-11-26 07:08 UTC",
+  "Category": "Outbreak"
+ },
+ {
+  "Published (UTC)": "2026-11-26 02:49 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Colours and flavours: How APAC is shaping the next wave of food innovation",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/26/colours-and-flavours-how-apac-is-shaping-the-next-wave-of-food-innovation",
+  "Retrieved (UTC)": "2026-11-26 07:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
+  "Published (UTC)": "2026-11-26 02:48 UTC",
+  "Pathogen": "",
+  "Event": "News",
+  "Source": "Food Navigator",
+  "Title": "Calbee takes Harvest Snaps into US mainstream snack aisle",
+  "Link": "https://www.foodnavigator.com/Article/2026/11/26/calbee-takes-harvest-snaps-into-us-mainstream-snack-aisle",
+  "Retrieved (UTC)": "2026-11-26 07:08 UTC",
+  "Category": "Regulatory"
+ },
+ {
   "Published (UTC)": "2026-11-25 16:46 UTC",
   "Pathogen": "",
   "Event": "News",
@@ -6096,36 +6146,6 @@
   "Source": "Food Navigator",
   "Title": "EU’s ‘meaty names’ ban could include meat-flavoured crisps",
   "Link": "https://www.foodnavigator.com/Article/2026/10/27/eu-meaty-names-ban-may-include-crisps",
-  "Retrieved (UTC)": "2026-10-27 17:35 UTC",
-  "Category": "Regulatory"
- },
- {
-  "Published (UTC)": "2026-10-27 04:47 UTC",
-  "Pathogen": "E. coli / STEC",
-  "Event": "Outbreak",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "Possible E. coli Outbreak at Bengtson’s Pumpkin Farm in Illinois",
-  "Link": "https://foodpoisoningbulletin.com/2026/possible-e-coli-outbreak-at-bengtsons-pumpkin-farm-in-illinois",
-  "Retrieved (UTC)": "2026-10-27 17:35 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-27 04:18 UTC",
-  "Pathogen": "Clostridium botulinum",
-  "Event": "Recall",
-  "Source": "Food Poisoning Bulletin",
-  "Title": "FDA Warns About Possible Botulism in Haifa Cold Smoked Sprats",
-  "Link": "https://foodpoisoningbulletin.com/2026/fda-warns-about-possible-botulism-in-haifa-cold-smoked-sprats",
-  "Retrieved (UTC)": "2026-10-27 17:35 UTC",
-  "Category": "Outbreak"
- },
- {
-  "Published (UTC)": "2026-10-27 04:09 UTC",
-  "Pathogen": "",
-  "Event": "News",
-  "Source": "Food Navigator",
-  "Title": "3 food ingredients with surprising hidden benefits that consumers want",
-  "Link": "https://www.foodnavigator.com/Article/2026/10/27/3-food-ingredients-with-surprising-hidden-benefits-that-consumers-want",
   "Retrieved (UTC)": "2026-10-27 17:35 UTC",
   "Category": "Regulatory"
  },
